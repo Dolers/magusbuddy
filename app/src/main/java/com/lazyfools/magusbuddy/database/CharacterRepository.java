@@ -12,7 +12,7 @@ import java.util.List;
  * https://developer.android.com/topic/libraries/architecture/guide.html
  */
 
-public class DatabaseRepository {
+public class CharacterRepository {
 
     enum Operation {INSERT, DELETE, DELETE_ALL}
     private CharacterDao mCharacterDao;
@@ -26,7 +26,7 @@ public class DatabaseRepository {
     // dependency. This adds complexity and much more code, and this sample is not about testing.
     // See the BasicSample in the android-architecture-components repository at
     // https://github.com/googlesamples
-    public DatabaseRepository(Application application) {
+    public CharacterRepository(Application application) {
         AppDatabase db = AppDatabase.getDatabase(application);
         mCharacterDao = db.characterDao();
         mAllCharacter = mCharacterDao.getLiveAll();
@@ -63,7 +63,7 @@ public class DatabaseRepository {
         private CharacterAPIRelationDao mAsyncTaskDao;
         private Operation mOp;
 
-        CharacterAPIRelationAsyncTask(CharacterAPIRelationDao dao,DatabaseRepository.Operation op) {
+        CharacterAPIRelationAsyncTask(CharacterAPIRelationDao dao,CharacterRepository.Operation op) {
             mAsyncTaskDao = dao;
             mOp = op;
         }
@@ -86,7 +86,7 @@ public class DatabaseRepository {
         }
     }
 
-    public void deleteAllCharacter(){new CharacterAsyncTask(mCharacterDao,Operation.INSERT).execute();}
+    public void deleteAllCharacter(){new CharacterAsyncTask(mCharacterDao,Operation.DELETE_ALL).execute();}
     private void insert(CharacterEntity character) {new CharacterAsyncTask(mCharacterDao,Operation.INSERT).execute(character);}
 
     private static class CharacterAsyncTask extends AsyncTask<CharacterEntity, Void, Void> {
@@ -94,7 +94,7 @@ public class DatabaseRepository {
         private CharacterDao mAsyncTaskDao;
         private Operation mOp;
 
-        CharacterAsyncTask(CharacterDao dao,DatabaseRepository.Operation op) {
+        CharacterAsyncTask(CharacterDao dao, CharacterRepository.Operation op) {
             mAsyncTaskDao = dao;
             mOp = op;
         }
@@ -122,7 +122,7 @@ public class DatabaseRepository {
         private APIKeyDao mAsyncTaskDao;
         private Operation mOp;
 
-        APIKeyAsyncTask(APIKeyDao dao,DatabaseRepository.Operation op) {
+        APIKeyAsyncTask(APIKeyDao dao,CharacterRepository.Operation op) {
             mAsyncTaskDao = dao;
             mOp = op;
         }

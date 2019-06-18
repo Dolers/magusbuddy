@@ -9,19 +9,19 @@ import android.arch.persistence.room.Query;
 import java.util.List;
 
 @Dao
-public interface APIKeyDao {
+public abstract class APIKeyDao {
     @Insert
-    void insert(APIKeyEntity apiKey);
+    abstract void insert(APIKeyEntity apiKey);
 
     @Insert
-    void insertAll(APIKeyEntity... apiKey);
+    abstract void insertAll(APIKeyEntity... apiKey);
 
     @Delete
-    void delete(APIKeyEntity apiKey);
+    abstract void delete(APIKeyEntity apiKey);
 
     @Query("DELETE FROM apikeys")
-    void deleteAll();
+    abstract void deleteAll();
 
     @Query("SELECT * FROM apikeys")
-    LiveData<List<APIKeyEntity>> getLiveAll();
+    abstract LiveData<List<APIKeyEntity>> getLiveAll();
 }
