@@ -4,7 +4,7 @@ import android.app.Application;
 import android.arch.lifecycle.LiveData;
 import android.util.Log;
 
-import com.lazyfools.magusbuddy.database.APIKeyEntity;
+import com.lazyfools.magusbuddy.database.entity.APIKeyEntity;
 import com.lazyfools.magusbuddy.database.CharacterRepository;
 import com.lazyfools.magusbuddy.utility.HTMLPageDownloader;
 

@@ -5,15 +5,15 @@ import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.MenuItem;
 import android.widget.TextView;
 
 import android.arch.lifecycle.ViewModelProviders;
 
-import com.lazyfools.magusbuddy.battle.BattleFragment;
-import com.lazyfools.magusbuddy.character.CharacterListFragment;
+import com.lazyfools.magusbuddy.page.battle.BattleFragment;
+import com.lazyfools.magusbuddy.page.character.CharacterListFragment;
 import com.lazyfools.magusbuddy.dreonar.DreonarCharacterHandler;
+import com.lazyfools.magusbuddy.page.skill.QualificationCategoryListFragment;
 
 
 public class HomeActivity extends AppCompatActivity {
@@ -36,13 +36,12 @@ public class HomeActivity extends AppCompatActivity {
                     break;
                 }
                 case R.id.navigation_skills:{
-
+                    viewPager.setCurrentItem(2);
                 }
             }
             return true;
         }
     };
-    private CharacterListFragment characterListFragment;
     private BottomNavigationView bottomNavigation;
     private DatabaseViewModel mViewModel;
     private DreonarCharacterHandler mDreonarCharacterHandler;
@@ -65,10 +64,14 @@ public class HomeActivity extends AppCompatActivity {
     private void setupViewPager()
     {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
-        characterListFragment= CharacterListFragment.newInstance(mViewModel);
+
+        CharacterListFragment characterListFragment= CharacterListFragment.newInstance(mViewModel);
         BattleFragment battleFragment = BattleFragment.newInstance(mViewModel);
+        QualificationCategoryListFragment qualificationCategoryListFragment = QualificationCategoryListFragment.newInstance(mViewModel);
+
         adapter.addFragment(characterListFragment);
         adapter.addFragment(battleFragment);
+        adapter.addFragment(qualificationCategoryListFragment);
         viewPager.setAdapter(adapter);
 
         viewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
@@ -77,19 +80,9 @@ public class HomeActivity extends AppCompatActivity {
 
             @Override
             public void onPageSelected(int position) {
-                switch (bottomNavigation.getSelectedItemId()){
-                    case R.id.navigation_home:{
-                        bottomNavigation.getMenu().getItem(0).setChecked(false);
-                        break;
-                    }
-                    case R.id.navigation_battle:{
-                        bottomNavigation.getMenu().getItem(1).setChecked(false);
-                        break;
-                    }
-                    case R.id.navigation_skills:{
-                        //bottomNavigation.getMenu().getItem(2).setChecked(false);
-                    }
-                }
+                for (int i =0; i<viewPager.getAdapter().getCount();i++)
+                    bottomNavigation.getMenu().getItem(i).setChecked(false);
+
                 bottomNavigation.getMenu().getItem(position).setChecked(true);
             }
 

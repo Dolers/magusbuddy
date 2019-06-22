@@ -1,21 +1,17 @@
-package com.lazyfools.magusbuddy.character;
+package com.lazyfools.magusbuddy.page.character;
 
 import android.arch.lifecycle.Observer;
-import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import com.lazyfools.magusbuddy.DatabaseViewModel;
-import com.lazyfools.magusbuddy.R;
-import com.lazyfools.magusbuddy.database.CharacterEntity;
+import com.lazyfools.magusbuddy.database.entity.CharacterEntity;
 
 import java.util.List;
 
@@ -30,7 +26,6 @@ public class CharacterListFragment extends Fragment {
     // TODO: Customize parameter argument names
     private static final String ARG_COLUMN_COUNT = "column-count";
     // TODO: Customize parameters
-    private int mColumnCount = 1;
     private onListFragmentLongClickListener mListener;
     private DatabaseViewModel mViewModel;
 
@@ -54,55 +49,30 @@ public class CharacterListFragment extends Fragment {
     }
 
     @Override
-    public void onCreate(Bundle savedInstanceState) {
-        Log.i("","onCreate");
-        super.onCreate(savedInstanceState);
-
-        if (getArguments() != null) {
-            mColumnCount = getArguments().getInt(ARG_COLUMN_COUNT);
-        }
-    }
-
-    @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_characterlist_list, container, false);
 
-        // Set the adapter
-        if (view instanceof RecyclerView) {
-            Context context = view.getContext();
-            RecyclerView recyclerView = (RecyclerView) view;
-            if (mColumnCount <= 1) {
-                recyclerView.setLayoutManager(new LinearLayoutManager(context));
-            } else {
-                recyclerView.setLayoutManager(new GridLayoutManager(context, mColumnCount));
+        RecyclerView recyclerView = new RecyclerView(container.getContext());
+        recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
+
+        mListener = new onListFragmentLongClickListener(){
+            @Override
+            public void onListFragmentLongClick(CharacterEntity item) {
+                //TODO define interaction
             }
+        };
 
-            mListener = new onListFragmentLongClickListener(){
-                @Override
-                public void onListFragmentLongClick(CharacterEntity item) {
-                    //TODO define interaction
-                }
-            };
+        final MyCharacterListRecyclerViewAdapter adapter = new MyCharacterListRecyclerViewAdapter(mListener);
+        recyclerView.setAdapter(adapter);
 
-            final MyCharacterListRecyclerViewAdapter adapter = new MyCharacterListRecyclerViewAdapter(mListener);
-            recyclerView.setAdapter(adapter);
-
-            mViewModel.getAllCharacter().observe(this, new Observer<List<CharacterEntity>>() {
-                @Override
-                public void onChanged(@Nullable final List<CharacterEntity> characters) {
-                    // Update the cached copy of the words in the adapter.
-                    adapter.setItems(characters);
-                }
-            });
-        }
-        return view;
-    }
-
-
-    @Override
-    public void onAttach(Context context) {
-        super.onAttach(context);
+        mViewModel.getAllCharacters().observe(this, new Observer<List<CharacterEntity>>() {
+            @Override
+            public void onChanged(@Nullable final List<CharacterEntity> characters) {
+                // Update the cached copy of the words in the adapter.
+                adapter.setItems(characters);
+            }
+        });
+        return recyclerView;
     }
 
     @Override
@@ -122,7 +92,6 @@ public class CharacterListFragment extends Fragment {
      * >Communicating with Other Fragments</a> for more information.
      */
     public interface onListFragmentLongClickListener {
-        // TODO: Update argument type and name
         void onListFragmentLongClick(CharacterEntity item);
     }
 }

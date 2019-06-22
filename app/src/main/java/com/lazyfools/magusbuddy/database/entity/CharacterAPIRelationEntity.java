@@ -1,8 +1,9 @@
-package com.lazyfools.magusbuddy.database;
+package com.lazyfools.magusbuddy.database.entity;
 
 import android.arch.persistence.room.ColumnInfo;
 import android.arch.persistence.room.Entity;
 import android.arch.persistence.room.ForeignKey;
+import android.arch.persistence.room.Ignore;
 import android.arch.persistence.room.Index;
 import android.arch.persistence.room.PrimaryKey;
 
@@ -38,7 +39,7 @@ public class CharacterAPIRelationEntity {
     public int getCharacterId() {return mCharacterId;}
     public int getApiKeyId() {return mApiKeyId;}
 
-    CharacterAPIRelationEntity(int characterId, int apiKeyId){
+    public CharacterAPIRelationEntity(int characterId, int apiKeyId){
         mCharacterId = characterId;
         mApiKeyId = apiKeyId;
     }

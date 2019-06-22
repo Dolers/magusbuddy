@@ -1,4 +1,4 @@
-package com.lazyfools.magusbuddy.database;
+package com.lazyfools.magusbuddy.database.entity;
 
 import android.arch.persistence.room.ColumnInfo;
 import android.arch.persistence.room.Entity;
@@ -9,19 +9,19 @@ import android.support.annotation.NonNull;
 public class CharacterEntity {
     @PrimaryKey
     @ColumnInfo(name = "id")
-    private int mId;
+    private Integer mId;
 
     @ColumnInfo(name = "name")
     private String mName;
 
     //TODO extend with additional paramters
-    public int getId() {return mId;}
-    public void setId(int id) {this.mId = id;}
+    public Integer getId() {return mId;}
+    public void setId(Integer id) {this.mId = id;}
 
     public String getName() { return mName;}
     public void setName(String name) {this.mName = name;}
 
-    CharacterEntity(@NonNull int id, String name){
+    public CharacterEntity(@NonNull Integer id, String name){
         mId = id;
         mName = name;
     }

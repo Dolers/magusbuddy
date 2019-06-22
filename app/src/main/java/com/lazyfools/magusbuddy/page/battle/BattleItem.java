@@ -1,10 +1,6 @@
-package com.lazyfools.magusbuddy.battle;
+package com.lazyfools.magusbuddy.page.battle;
 
-import com.lazyfools.magusbuddy.character.CharacterItem;
-import com.lazyfools.magusbuddy.database.CharacterEntity;
-
-import java.util.ArrayList;
-import java.util.List;
+import com.lazyfools.magusbuddy.database.entity.CharacterEntity;
 
 public class BattleItem {
     private CharacterEntity character;

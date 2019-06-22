@@ -1,7 +1,4 @@
-package com.lazyfools.magusbuddy.character;
-
-import java.util.ArrayList;
-import java.util.List;
+package com.lazyfools.magusbuddy.page.character;
 
 public class CharacterItem {
     private Integer id;

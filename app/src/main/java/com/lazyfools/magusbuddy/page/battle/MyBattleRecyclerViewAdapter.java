@@ -1,7 +1,6 @@
-package com.lazyfools.magusbuddy.battle;
+package com.lazyfools.magusbuddy.page.battle;
 
 import android.graphics.Color;
-import android.support.v4.view.MotionEventCompat;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -12,7 +11,7 @@ import android.widget.SeekBar;
 import android.widget.TextView;
 
 import com.lazyfools.magusbuddy.R;
-import com.lazyfools.magusbuddy.database.CharacterEntity;
+import com.lazyfools.magusbuddy.database.entity.CharacterEntity;
 import com.lazyfools.magusbuddy.utility.BasicCallback;
 
 import co.paulburke.android.itemtouchhelper.helper.ItemTouchHelperAdapter;
@@ -44,7 +43,7 @@ public class MyBattleRecyclerViewAdapter extends RecyclerView.Adapter<MyBattleRe
 
     @Override
     public ItemViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.fragment_battle, parent, false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.fragment_battle_item, parent, false);
         return new ItemViewHolder(view);
     }
 
@@ -58,6 +57,7 @@ public class MyBattleRecyclerViewAdapter extends RecyclerView.Adapter<MyBattleRe
             @Override
             public boolean onTouch(View v, MotionEvent event) {
                 Log.i("", "onTouch: ");
+                //TODO it should be long touch
                 if (!mASeekBarIsActive) {
                     mDragStartListener.onStartDrag(holder);
                 }

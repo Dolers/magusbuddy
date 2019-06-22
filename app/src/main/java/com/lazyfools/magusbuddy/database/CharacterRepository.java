@@ -5,6 +5,13 @@ import android.arch.lifecycle.LiveData;
 import android.os.AsyncTask;
 import android.util.Log;
 
+import com.lazyfools.magusbuddy.database.dao.APIKeyDao;
+import com.lazyfools.magusbuddy.database.dao.CharacterAPIRelationDao;
+import com.lazyfools.magusbuddy.database.dao.CharacterDao;
+import com.lazyfools.magusbuddy.database.entity.APIKeyEntity;
+import com.lazyfools.magusbuddy.database.entity.CharacterAPIRelationEntity;
+import com.lazyfools.magusbuddy.database.entity.CharacterEntity;
+
 import java.util.List;
 
 /**
@@ -63,7 +70,7 @@ public class CharacterRepository {
         private CharacterAPIRelationDao mAsyncTaskDao;
         private Operation mOp;
 
-        CharacterAPIRelationAsyncTask(CharacterAPIRelationDao dao,CharacterRepository.Operation op) {
+        CharacterAPIRelationAsyncTask(CharacterAPIRelationDao dao, CharacterRepository.Operation op) {
             mAsyncTaskDao = dao;
             mOp = op;
         }

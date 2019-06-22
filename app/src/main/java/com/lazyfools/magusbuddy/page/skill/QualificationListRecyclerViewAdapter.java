@@ -1,41 +1,36 @@
-package com.lazyfools.magusbuddy.character;
+package com.lazyfools.magusbuddy.page.skill;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.lazyfools.magusbuddy.R;
-import com.lazyfools.magusbuddy.character.CharacterListFragment.onListFragmentLongClickListener;
-import com.lazyfools.magusbuddy.database.CharacterEntity;
+import com.lazyfools.magusbuddy.database.entity.QualificationType;
 
 import java.util.List;
 
-/**
- * {@link RecyclerView.Adapter} that can display a (@link CharacterItem) and makes a call to the
- * specified {@link onListFragmentLongClickListener}.
- */
-public class MyCharacterListRecyclerViewAdapter extends RecyclerView.Adapter<MyCharacterListRecyclerViewAdapter.ViewHolder> {
+public class QualificationListRecyclerViewAdapter extends RecyclerView.Adapter<QualificationListRecyclerViewAdapter.ViewHolder> {
+    private List<QualificationType> mItems;
+    private QualificationCategoryListFragment.onClickListener mListener;
 
-    private List<CharacterEntity> mItems;
-    private final onListFragmentLongClickListener mListener;
-
-    public MyCharacterListRecyclerViewAdapter(onListFragmentLongClickListener listener) {
+    public QualificationListRecyclerViewAdapter(QualificationCategoryListFragment.onClickListener listener) {
         mListener = listener;
     }
 
     @Override
-    public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    public QualificationListRecyclerViewAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.fragment_characterlist, parent, false);
-        return new ViewHolder(view);
+                .inflate(R.layout.skills_item, parent, false);
+        return new QualificationListRecyclerViewAdapter.ViewHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(final ViewHolder holder, int position) {
+    public void onBindViewHolder(final QualificationListRecyclerViewAdapter.ViewHolder holder, int position) {
         holder.mItem = mItems.get(position);
-        holder.mContentView.setText(mItems.get(position).getName());
+        holder.mContentView.setText(mItems.get(position).getType().toString());
 
         holder.mView.setOnLongClickListener(new View.OnLongClickListener() {
             @Override
@@ -43,7 +38,7 @@ public class MyCharacterListRecyclerViewAdapter extends RecyclerView.Adapter<MyC
                 if (null != mListener) {
                     // Notify the active callbacks interface (the activity, if the
                     // fragment is attached to one) that an item has been selected.
-                    mListener.onListFragmentLongClick(holder.mItem);
+                    mListener.onClick(holder.mItem);
                     return true;
                 }
                 return false;
@@ -59,7 +54,7 @@ public class MyCharacterListRecyclerViewAdapter extends RecyclerView.Adapter<MyC
         return mItems.size();
     }
 
-    public void setItems(List<CharacterEntity> items) {
+    public void setItems(List<QualificationType> items) {
         this.mItems = items;
         notifyDataSetChanged();
     }
@@ -67,12 +62,14 @@ public class MyCharacterListRecyclerViewAdapter extends RecyclerView.Adapter<MyC
     public class ViewHolder extends RecyclerView.ViewHolder {
         public final View mView;
         public final TextView mContentView;
-        public CharacterEntity mItem;
+        public final ImageView mImageView;
+        public QualificationType mItem;
 
         public ViewHolder(View view) {
             super(view);
             mView = view;
-            mContentView = (TextView) view.findViewById(R.id.content);
+            mContentView = (TextView) view.findViewById(R.id.text);
+            mImageView = (ImageView) view.findViewById(R.id.image);
         }
 
         @Override
