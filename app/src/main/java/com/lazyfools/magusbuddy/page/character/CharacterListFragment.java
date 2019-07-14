@@ -1,6 +1,7 @@
 package com.lazyfools.magusbuddy.page.character;
 
 import android.arch.lifecycle.Observer;
+import android.arch.lifecycle.ViewModelProviders;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -22,14 +23,9 @@ import java.util.List;
  * interface.
  */
 public class CharacterListFragment extends Fragment {
-
-    // TODO: Customize parameter argument names
-    private static final String ARG_COLUMN_COUNT = "column-count";
-    // TODO: Customize parameters
     private onListFragmentLongClickListener mListener;
     private DatabaseViewModel mViewModel;
-
-    public void setViewModel(DatabaseViewModel viewModel) { this.mViewModel = viewModel;}
+    private MyCharacterListRecyclerViewAdapter mAdapter;
 
     /**
      * Mandatory empty constructor for the fragment manager to instantiate the
@@ -38,14 +34,19 @@ public class CharacterListFragment extends Fragment {
     public CharacterListFragment() {
     }
 
-    // TODO: Customize parameter initialization
-    public static CharacterListFragment newInstance(DatabaseViewModel ViewModel) {
-        CharacterListFragment fragment = new CharacterListFragment();
-        Bundle args = new Bundle();
-        args.putInt(ARG_COLUMN_COUNT, 1);
-        fragment.setArguments(args);
-        fragment.setViewModel(ViewModel);
-        return fragment;
+    @Override
+    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+
+        mViewModel = ViewModelProviders.of(this).get(DatabaseViewModel.class);
+
+        mViewModel.getAllCharacters().observe(this, new Observer<List<CharacterEntity>>() {
+            @Override
+            public void onChanged(@Nullable final List<CharacterEntity> characters) {
+                // Update the cached copy of the words in the adapter.
+                mAdapter.setItems(characters);
+            }
+        });
     }
 
     @Override
@@ -62,16 +63,9 @@ public class CharacterListFragment extends Fragment {
             }
         };
 
-        final MyCharacterListRecyclerViewAdapter adapter = new MyCharacterListRecyclerViewAdapter(mListener);
-        recyclerView.setAdapter(adapter);
+        mAdapter = new MyCharacterListRecyclerViewAdapter(mListener);
+        recyclerView.setAdapter(mAdapter);
 
-        mViewModel.getAllCharacters().observe(this, new Observer<List<CharacterEntity>>() {
-            @Override
-            public void onChanged(@Nullable final List<CharacterEntity> characters) {
-                // Update the cached copy of the words in the adapter.
-                adapter.setItems(characters);
-            }
-        });
         return recyclerView;
     }
 

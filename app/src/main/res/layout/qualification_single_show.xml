@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:navGraph="@navigation/nav_graph">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/qualification_single_show"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="10sp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/skill_name_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Skill"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/skill_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+
+        <hakobastvatsatryan.DropdownTextView
+            android:id="@+id/first_level_dropdown_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:arrow_drawable="@drawable/ic_arrow"
+            app:title_text_color="#000000"
+            app:title_text_size="14pt"/>
+        <!--app:title_font="@font/your-title-font"
+            app:title_text_size="@dimen/your-title-text-size"
+            app:content_font="@font/your-font"
+            app:content_padding="@dimen/your-content-padding"
+            app:content_text_size="@color/your-content-text-size"
+            app:bg_drawable_regular="@drawable/your-regular-background"
+            app:bg_drawable_expanded="@drawable/your-expanded-background"
+            app:expand_duration="@integer/your-expand-duration"
+            app:panel_padding="@dimen/your-panel-padding"-->
+
+        <hakobastvatsatryan.DropdownTextView
+            android:id="@+id/second_level_dropdown_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:arrow_drawable="@drawable/ic_arrow"
+            app:title_text_color="#000000"
+            app:title_text_size="14pt"/>
+
+        <hakobastvatsatryan.DropdownTextView
+            android:id="@+id/third_level_dropdown_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:arrow_drawable="@drawable/ic_arrow"
+            app:title_text_color="#000000"
+            app:title_text_size="14pt"/>
+
+        <hakobastvatsatryan.DropdownTextView
+            android:id="@+id/fourth_level_dropdown_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:arrow_drawable="@drawable/ic_arrow"
+            app:title_text_color="#000000"
+            app:title_text_size="14pt"/>
+
+        <hakobastvatsatryan.DropdownTextView
+            android:id="@+id/fifth_level_dropdown_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:arrow_drawable="@drawable/ic_arrow"
+            app:title_text_color="#000000"
+            app:title_text_size="14pt"/>
+    </LinearLayout>
+</ScrollView>

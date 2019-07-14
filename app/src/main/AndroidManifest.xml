@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.lazyfools.magusbuddy">
 
     <application
@@ -14,10 +15,24 @@
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+            <meta-data android:name="android.app.default_searchable" android:value=".SkillSearchActivity" />
         </activity>
+        <activity
+        android:name=".SkillSearchActivity"
+        android:launchMode="singleTop">
+        <intent-filter>
+            <action android:name="android.intent.action.SEARCH" />
+        </intent-filter>
+        <meta-data android:name="android.app.searchable"
+            android:resource="@xml/searchable" />
+    </activity>
+        <activity android:name=".page.skill.QualificationActivity" />
     </application>
-
+    <!-- Tested locally, it works with API 15-->
+    <uses-sdk tools:overrideLibrary="hakobastvatsatryan.dropdowntextview"/>
 </manifest>

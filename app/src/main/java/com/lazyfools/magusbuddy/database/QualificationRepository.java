@@ -6,6 +6,7 @@ import android.os.AsyncTask;
 
 import com.lazyfools.magusbuddy.database.dao.QualificationDao;
 import com.lazyfools.magusbuddy.database.entity.QualificationEntity;
+import com.lazyfools.magusbuddy.database.entity.QualificationName;
 import com.lazyfools.magusbuddy.database.entity.QualificationType;
 
 import java.util.List;
@@ -21,9 +22,23 @@ public class QualificationRepository {
     public LiveData<List<QualificationEntity>> getAllQualifications() {
         return mQualificationDao.getLiveAll();
     }
+
+    public LiveData<List<QualificationName>> getAllNames() {
+        return mQualificationDao.getAllNames();
+    }
+
+    public LiveData<QualificationEntity> getOneByFilter(String name) {
+        return mQualificationDao.getOneByFilter(name);
+    }
+
+    public LiveData<List<QualificationName>> getNamesOfFilter(String name) {
+        return mQualificationDao.getNamesByFilter(name);
+    }
+
     public LiveData<List<QualificationEntity>> getAllQualificationsOfType(QualificationEntity.QualificationTypeEnum type) {
         return mQualificationDao.getLiveAllOfType(type);
     }
+
     public LiveData<List<QualificationType>> getAllTypes() {
         return mQualificationDao.getTypes();
     }

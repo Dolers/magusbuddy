@@ -3,4 +3,10 @@
     <string name="menu_home">Home</string>
     <string name="menu_battle">Battle</string>
     <string name="menu_skills">Skills</string>
+    <string name="search_hint">Képzettség neve</string>
+    <string name="first_level">1. fok</string>
+    <string name="second_level">2. fok</string>
+    <string name="third_level">3. fok</string>
+    <string name="fourth_level">4. fok</string>
+    <string name="fifth_level">5. fok</string>
 </resources>

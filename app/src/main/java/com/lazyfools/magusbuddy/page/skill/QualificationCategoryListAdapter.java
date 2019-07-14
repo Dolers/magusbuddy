@@ -12,36 +12,34 @@ import com.lazyfools.magusbuddy.database.entity.QualificationType;
 
 import java.util.List;
 
-public class QualificationListRecyclerViewAdapter extends RecyclerView.Adapter<QualificationListRecyclerViewAdapter.ViewHolder> {
+public class QualificationCategoryListAdapter extends RecyclerView.Adapter<QualificationCategoryListAdapter.ViewHolder> {
     private List<QualificationType> mItems;
     private QualificationCategoryListFragment.onClickListener mListener;
 
-    public QualificationListRecyclerViewAdapter(QualificationCategoryListFragment.onClickListener listener) {
+    public QualificationCategoryListAdapter(QualificationCategoryListFragment.onClickListener listener) {
         mListener = listener;
     }
 
     @Override
-    public QualificationListRecyclerViewAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    public QualificationCategoryListAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.skills_item, parent, false);
-        return new QualificationListRecyclerViewAdapter.ViewHolder(view);
+                .inflate(R.layout.skills_category_item, parent, false);
+        return new QualificationCategoryListAdapter.ViewHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(final QualificationListRecyclerViewAdapter.ViewHolder holder, int position) {
+    public void onBindViewHolder(final QualificationCategoryListAdapter.ViewHolder holder, int position) {
         holder.mItem = mItems.get(position);
         holder.mContentView.setText(mItems.get(position).getType().toString());
 
-        holder.mView.setOnLongClickListener(new View.OnLongClickListener() {
+        holder.mView.setOnClickListener(new View.OnClickListener() {
             @Override
-            public boolean onLongClick(View v) {
+            public void onClick(View v) {
                 if (null != mListener) {
                     // Notify the active callbacks interface (the activity, if the
                     // fragment is attached to one) that an item has been selected.
                     mListener.onClick(holder.mItem);
-                    return true;
                 }
-                return false;
             }
         });
     }

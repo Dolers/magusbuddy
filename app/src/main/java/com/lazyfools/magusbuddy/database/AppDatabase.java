@@ -25,6 +25,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.InputStream;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 @Database(
@@ -34,7 +35,7 @@ import java.util.Scanner;
             CharacterAPIRelationEntity.class,
             QualificationEntity.class
         },
-        version = 2,
+        version = 3,
         exportSchema = false
 )
 @TypeConverters({Converters.class})
@@ -125,8 +126,7 @@ public abstract class AppDatabase extends RoomDatabase {
                 for (int i = 0; i< qualificationsJson.length();i++) {
                     JSONObject qJson = (JSONObject)qualificationsJson.get(i);
                     Log.i("AppDatabase", "képzettség: "+i+" név: "+qJson.getString("képzettség"));
-                    qualificationEntities[i] =
-                        new QualificationEntity(
+                    QualificationEntity entity = new QualificationEntity(
                             qJson.getString("képzettség"),
                             QualificationEntity.QualificationTypeEnum.valueOf(qJson.getString("tipus")),
                             qJson.getInt("nehézség"),
@@ -141,13 +141,46 @@ public abstract class AppDatabase extends RoomDatabase {
                             qJson.getBoolean("asztrál"),
                             qJson.getBoolean("érzékelés"),
                             qJson.getString("leírás")
-                        );
+                    );
+
+                    parseDescriptionLevels(qJson, entity);
+                    parseDescriptionTables(qJson, entity);
+                    parseSpecialDescription(qJson, entity);
+
+                    qualificationEntities[i] = entity;
                 }
             } catch (JSONException e) {
                 e.printStackTrace();
             }
 
             return qualificationEntities;
+        }
+    }
+
+    private static void parseSpecialDescription(JSONObject qJson, QualificationEntity entity) throws JSONException {
+        if (qJson.has("specialis")){
+            entity.setSpecialDesc(qJson.getString("specialis"));
+        }
+    }
+
+    private static void parseDescriptionLevels(JSONObject qJson, QualificationEntity entity) throws JSONException {
+        if (qJson.has("1_fok")){
+            entity.setFirstLevelDesc(qJson.getString("1_fok"));
+            entity.setSecondLevelDesc(qJson.getString("2_fok"));
+            entity.setThirdLevelDesc(qJson.getString("3_fok"));
+            entity.setFourthLevelDesc(qJson.getString("4_fok"));
+            entity.setFifthLevelDesc(qJson.getString("5_fok"));
+        }
+    }
+
+    private static void parseDescriptionTables(JSONObject qJson, QualificationEntity entity) throws JSONException {
+        if (qJson.has("tablazatok")){
+            ArrayList<String> listdata = new ArrayList<String>();
+            JSONArray jArray = qJson.getJSONArray("tablazatok");
+            for (int j=0;j<jArray.length();j++){
+                listdata.add(jArray.getString(j));
+            }
+            entity.setDescriptionTables(listdata);
         }
     }
 

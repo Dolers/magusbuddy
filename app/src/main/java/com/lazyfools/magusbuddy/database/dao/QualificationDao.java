@@ -7,6 +7,7 @@ import android.arch.persistence.room.Insert;
 import android.arch.persistence.room.Query;
 
 import com.lazyfools.magusbuddy.database.entity.QualificationEntity;
+import com.lazyfools.magusbuddy.database.entity.QualificationName;
 import com.lazyfools.magusbuddy.database.entity.QualificationType;
 
 import java.util.List;
@@ -22,8 +23,11 @@ public abstract class QualificationDao {
     @Query("SELECT DISTINCT type FROM qualifications")
     public abstract LiveData<List<QualificationType>> getTypes();
 
-    @Query("SELECT * FROM qualifications WHERE name LIKE :name LIMIT 1")
-    public abstract QualificationEntity findByName(String name);
+    @Query("SELECT name FROM qualifications")
+    public abstract LiveData<List<QualificationName>> getAllNames();
+
+    @Query("SELECT name FROM qualifications WHERE name LIKE  '%' || :name || '%'")
+    public abstract LiveData<List<QualificationName>> getNamesByFilter(String name);
 
     @Insert
     public abstract void insert(QualificationEntity qualification);
@@ -36,4 +40,7 @@ public abstract class QualificationDao {
 
     @Query("DELETE FROM qualifications")
     public abstract void deleteAll();
+
+    @Query("SELECT * FROM qualifications WHERE name LIKE :name LIMIT 1")
+    public abstract LiveData<QualificationEntity> getOneByFilter(String name);
 }

@@ -8,10 +8,12 @@ import com.lazyfools.magusbuddy.database.QualificationRepository;
 import com.lazyfools.magusbuddy.database.entity.CharacterEntity;
 import com.lazyfools.magusbuddy.database.CharacterRepository;
 import com.lazyfools.magusbuddy.database.entity.QualificationEntity;
+import com.lazyfools.magusbuddy.database.entity.QualificationName;
 import com.lazyfools.magusbuddy.database.entity.QualificationType;
 
 import java.util.List;
 
+//TODO split viewmodel into smaller viewmodels
 public class DatabaseViewModel extends AndroidViewModel {
     private CharacterRepository mCharacterRepository;
     private QualificationRepository mQualificationRepository;
@@ -46,5 +48,17 @@ public class DatabaseViewModel extends AndroidViewModel {
 
     public LiveData<List<QualificationType>> getAllQualificationTypes() {
         return mQualificationRepository.getAllTypes();
+    }
+
+    public LiveData<List<QualificationName>> getAllQualificationNames() {
+        return mQualificationRepository.getAllNames();
+    }
+
+    public LiveData<List<QualificationName>> getQualificationNamesOfFilter(String name) {
+        return mQualificationRepository.getNamesOfFilter(name);
+    }
+
+    public LiveData<QualificationEntity> getOneQualificationOfFilter(String name) {
+        return mQualificationRepository.getOneByFilter(name);
     }
 }

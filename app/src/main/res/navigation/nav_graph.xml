@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/nav_graph"
+    app:startDestination="@id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_skills"
+        android:name="com.lazyfools.magusbuddy.page.skill.QualificationCategoryListFragment"
+        android:label="QualificationCategoryListFragment" >
+        <action
+            android:id="@+id/action_qualificationCategoryListFragment_to_qualificationListFragment"
+            app:destination="@id/qualificationListFragment" />
+        <action
+            android:id="@+id/action_qualificationCategoryListFragment_to_battleFragment"
+            app:destination="@id/navigation_battle" />
+    </fragment>
+    <fragment
+        android:id="@+id/qualificationListFragment"
+        android:name="com.lazyfools.magusbuddy.page.skill.QualificationListFragment"
+        android:label="QualificationListFragment" >
+        <action
+            android:id="@+id/action_qualificationListFragment_to_qualificationActivity"
+            app:destination="@id/qualificationActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_battle"
+        android:name="com.lazyfools.magusbuddy.page.battle.BattleFragment"
+        android:label="@string/menu_battle">
+        <action
+            android:id="@+id/action_battleFragment_to_qualificationCategoryListFragment"
+            app:destination="@+id/navigation_skills" />
+        <action
+            android:id="@+id/action_battleFragment_to_characterListFragment"
+            app:destination="@id/navigation_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.lazyfools.magusbuddy.page.character.CharacterListFragment"
+        android:label="@string/menu_home">
+        <action
+            android:id="@+id/action_characterListFragment_to_battleFragment"
+            app:destination="@id/navigation_battle"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <activity
+        android:id="@+id/qualificationActivity"
+        android:name="com.lazyfools.magusbuddy.page.skill.QualificationActivity"
+        android:label="QualificationActivity" >
+        <argument
+            android:name="QUALIFICATION_NAME"
+            app:argType="string"
+            android:defaultValue='""' />
+    </activity>
+</navigation>

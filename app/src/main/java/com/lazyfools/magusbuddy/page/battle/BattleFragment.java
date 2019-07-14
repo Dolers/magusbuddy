@@ -1,6 +1,7 @@
 package com.lazyfools.magusbuddy.page.battle;
 
 import android.arch.lifecycle.Observer;
+import android.arch.lifecycle.ViewModelProviders;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -29,13 +30,9 @@ import co.paulburke.android.itemtouchhelper.helper.SimpleItemTouchHelperCallback
  * interface.
  */
 public class BattleFragment extends Fragment implements OnStartDragListener {
-
-    // TODO: Customize parameter argument names
-    private static final String ARG_COLUMN_COUNT = "column-count";
-    // TODO: Customize parameters
-    private int mColumnCount = 1;
     private ItemTouchHelper mItemTouchHelper;
     private DatabaseViewModel mViewModel;
+    private MyBattleRecyclerViewAdapter mAdapter;
 
     /**
      * Mandatory empty constructor for the fragment manager to instantiate the
@@ -44,26 +41,20 @@ public class BattleFragment extends Fragment implements OnStartDragListener {
     public BattleFragment() {
     }
 
-    // TODO: Customize parameter initialization
-    @SuppressWarnings("unused")
-    public static BattleFragment newInstance(DatabaseViewModel viewModel) {
-        BattleFragment fragment = new BattleFragment();
-        Bundle args = new Bundle();
-        args.putInt(ARG_COLUMN_COUNT, 1);
-        fragment.setArguments(args);
-        fragment.setViewModel(viewModel);
-        return fragment;
-    }
-
-    public void setViewModel(DatabaseViewModel viewModel) {this.mViewModel = viewModel;}
 
     @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
 
-        if (getArguments() != null) {
-            mColumnCount = getArguments().getInt(ARG_COLUMN_COUNT);
-        }
+        mViewModel = ViewModelProviders.of(this).get(DatabaseViewModel.class);
+
+        mViewModel.getAllCharacters().observe(this, new Observer<List<CharacterEntity>>() {
+            @Override
+            public void onChanged(@Nullable final List<CharacterEntity> characters) {
+                // Update the cached copy of the words in the adapter.
+                mAdapter.setItems(characters);
+            }
+        });
     }
 
     @Nullable
@@ -81,25 +72,17 @@ public class BattleFragment extends Fragment implements OnStartDragListener {
         if (view instanceof RecyclerView) {
             final RecyclerView recyclerView = (RecyclerView) view;
 
-            final MyBattleRecyclerViewAdapter adapter = new MyBattleRecyclerViewAdapter(this,
+            mAdapter = new MyBattleRecyclerViewAdapter(this,
                     new BasicCallback(){
                         @Override
                         public void callback() {updateNextCharacterHighlight(recyclerView);}
                     });
 
             recyclerView.setHasFixedSize(true);
-            recyclerView.setAdapter(adapter);
+            recyclerView.setAdapter(mAdapter);
             recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
 
-            mViewModel.getAllCharacters().observe(this, new Observer<List<CharacterEntity>>() {
-                @Override
-                public void onChanged(@Nullable final List<CharacterEntity> characters) {
-                    // Update the cached copy of the words in the adapter.
-                    adapter.setItems(characters);
-                }
-            });
-
-            ItemTouchHelper.Callback callback = new SimpleItemTouchHelperCallback(adapter,false);
+            ItemTouchHelper.Callback callback = new SimpleItemTouchHelperCallback(mAdapter,false);
             mItemTouchHelper = new ItemTouchHelper(callback);
             mItemTouchHelper.attachToRecyclerView(recyclerView);
             Log.i("", "onViewCreated: ");
