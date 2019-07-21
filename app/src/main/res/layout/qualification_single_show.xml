@@ -18,8 +18,8 @@
             android:layout_height="wrap_content"
             android:text="Skill"
             android:textAlignment="center"
-            android:textSize="24sp"
-            android:textStyle="bold" />
+            android:textSize="32sp"
+            app:fontFamily="@font/eden_mills_bold"/>
 
         <TextView
             android:id="@+id/skill_description"

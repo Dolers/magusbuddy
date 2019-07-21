@@ -88,7 +88,9 @@ public class QualificationCategoryListFragment extends Fragment {
         mListener = new onClickListener(){
             @Override
             public void onClick(QualificationType item) {
-                Navigation.findNavController(recyclerView).navigate(R.id.action_qualificationCategoryListFragment_to_qualificationListFragment);
+                Bundle bundle = new Bundle();
+                bundle.putString(getResources().getString(R.string.QUALIFICATION_TYPENAME), item.getType().toString());
+                Navigation.findNavController(recyclerView).navigate(R.id.action_qualificationCategoryListFragment_to_qualificationListFragment,bundle);
             }
         };
         mAdapter = new QualificationCategoryListAdapter(mListener,container.getContext());

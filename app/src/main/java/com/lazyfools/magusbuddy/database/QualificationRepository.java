@@ -27,8 +27,12 @@ public class QualificationRepository {
         return mQualificationDao.getAllNames();
     }
 
-    public LiveData<QualificationEntity> getOneByFilter(String name) {
-        return mQualificationDao.getOneByFilter(name);
+    public LiveData<QualificationEntity> getOneByName(String name) {
+        return mQualificationDao.getOneByName(name);
+    }
+
+    public LiveData<QualificationEntity> getOneByID(Integer id) {
+        return mQualificationDao.getOneByID(id);
     }
 
     public LiveData<List<QualificationName>> getNamesOfFilter(String name) {

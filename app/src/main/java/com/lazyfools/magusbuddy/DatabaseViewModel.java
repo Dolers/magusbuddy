@@ -42,6 +42,7 @@ public class DatabaseViewModel extends AndroidViewModel {
         }
         return mAllQualifications;
     }
+
     public LiveData<List<QualificationEntity>> getAllQualificationsOfType(QualificationEntity.QualificationTypeEnum type) {
         return mQualificationRepository.getAllQualificationsOfType(type);
     }
@@ -58,7 +59,11 @@ public class DatabaseViewModel extends AndroidViewModel {
         return mQualificationRepository.getNamesOfFilter(name);
     }
 
-    public LiveData<QualificationEntity> getOneQualificationOfFilter(String name) {
-        return mQualificationRepository.getOneByFilter(name);
+    public LiveData<QualificationEntity> getOneQualificationByID(Integer id) {
+        return mQualificationRepository.getOneByID(id);
+    }
+
+    public LiveData<QualificationEntity> getOneQualificationByName(String name) {
+        return mQualificationRepository.getOneByName(name);
     }
 }

@@ -16,7 +16,6 @@ import hakobastvatsatryan.DropdownTextView;
 
 
 public class QualificationActivity extends AppCompatActivity {
-    public static final String QUALIFICATION_NAME = "QUALIFICATION_NAME";
     private DatabaseViewModel mViewModel;
 
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,8 +24,8 @@ public class QualificationActivity extends AppCompatActivity {
 
 
         mViewModel = ViewModelProviders.of(this).get(DatabaseViewModel.class);
-        String name = getIntent().getStringExtra(QUALIFICATION_NAME);
-        mViewModel.getOneQualificationOfFilter(name).observe(this, new Observer<QualificationEntity>() {
+        Integer id = getIntent().getIntExtra(getResources().getString(R.string.QUALIFICATION_ID),0);
+        mViewModel.getOneQualificationByID(id).observe(this, new Observer<QualificationEntity>() {
             @Override
             public void onChanged(@Nullable final QualificationEntity qualification) {
                 populateWith(qualification);

@@ -13,7 +13,6 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.navigation.Navigation;
-import androidx.navigation.fragment.NavHostFragment;
 
 import com.lazyfools.magusbuddy.DatabaseViewModel;
 import com.lazyfools.magusbuddy.R;
@@ -22,14 +21,7 @@ import com.lazyfools.magusbuddy.database.entity.QualificationEntity;
 import java.util.List;
 
 public class QualificationListFragment extends Fragment {
-
     private QualificationListAdapter mAdapter;
-
-    public void setTypeFilter(QualificationEntity.QualificationTypeEnum mTypeFilter) {
-        this.mTypeFilter = mTypeFilter;
-    }
-
-    private QualificationEntity.QualificationTypeEnum mTypeFilter = QualificationEntity.QualificationTypeEnum.HARCI;
     private QualificationListFragment.onClickListener mListener;
 
     // TODO: Customize parameters
@@ -42,8 +34,11 @@ public class QualificationListFragment extends Fragment {
         super.onActivityCreated(savedInstanceState);
 
         mViewModel = ViewModelProviders.of(this).get(DatabaseViewModel.class);
+        String typeName = getArguments().getString(getResources().getString(R.string.QUALIFICATION_TYPENAME));
 
-        mViewModel.getAllQualificationsOfType(mTypeFilter).observe(this, new Observer<List<QualificationEntity>>() {
+        QualificationEntity.QualificationTypeEnum typeFilter = QualificationEntity.QualificationTypeEnum.valueOf(typeName);
+
+        mViewModel.getAllQualificationsOfType(typeFilter).observe(this, new Observer<List<QualificationEntity>>() {
             @Override
             public void onChanged(@Nullable final List<QualificationEntity> qualifications) {
                 // Update the cached copy of the words in the adapter.
@@ -59,12 +54,11 @@ public class QualificationListFragment extends Fragment {
 
         final RecyclerView recyclerView = new RecyclerView(container.getContext());
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
-
         mListener = new onClickListener(){
             @Override
             public void onClick(QualificationEntity item) {
                 Bundle bundle = new Bundle();
-                bundle.putString("QUALIFICATION_NAME", item.getName());
+                bundle.putInt(getResources().getString(R.string.QUALIFICATION_ID), item.getId());
                 Navigation.findNavController(recyclerView).navigate(R.id.action_qualificationListFragment_to_qualificationActivity,bundle);
             }
         };

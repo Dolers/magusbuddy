@@ -42,5 +42,8 @@ public abstract class QualificationDao {
     public abstract void deleteAll();
 
     @Query("SELECT * FROM qualifications WHERE name LIKE :name LIMIT 1")
-    public abstract LiveData<QualificationEntity> getOneByFilter(String name);
+    public abstract LiveData<QualificationEntity> getOneByName(String name);
+
+    @Query("SELECT * FROM qualifications WHERE id=:id LIMIT 1")
+    public abstract LiveData<QualificationEntity> getOneByID(Integer id);
 }
