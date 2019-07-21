@@ -91,7 +91,7 @@ public class QualificationCategoryListFragment extends Fragment {
                 Navigation.findNavController(recyclerView).navigate(R.id.action_qualificationCategoryListFragment_to_qualificationListFragment);
             }
         };
-        mAdapter = new QualificationCategoryListAdapter(mListener);
+        mAdapter = new QualificationCategoryListAdapter(mListener,container.getContext());
         recyclerView.setAdapter(mAdapter);
 
         return recyclerView;

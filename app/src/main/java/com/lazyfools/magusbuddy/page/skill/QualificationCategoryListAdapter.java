@@ -1,6 +1,10 @@
 package com.lazyfools.magusbuddy.page.skill;
 
+import android.content.Context;
+import android.graphics.drawable.Drawable;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.widget.RecyclerView;
+import android.util.ArrayMap;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -8,16 +12,31 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.lazyfools.magusbuddy.R;
+import com.lazyfools.magusbuddy.database.entity.QualificationEntity;
 import com.lazyfools.magusbuddy.database.entity.QualificationType;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class QualificationCategoryListAdapter extends RecyclerView.Adapter<QualificationCategoryListAdapter.ViewHolder> {
+    private final Context mContext;
     private List<QualificationType> mItems;
     private QualificationCategoryListFragment.onClickListener mListener;
+    private final Map<QualificationEntity.QualificationTypeEnum,Integer> qualificationDrawableIds = new HashMap<QualificationEntity.QualificationTypeEnum, Integer>(){
+        {
+            put(QualificationEntity.QualificationTypeEnum.HARCI,R.drawable.kepzettseg_harci);
+            put(QualificationEntity.QualificationTypeEnum.VILAGI, R.drawable.kepzettseg_vilagi);
+            put(QualificationEntity.QualificationTypeEnum.SZOCIALIS, R.drawable.kepzettseg_szocialis);
+            put(QualificationEntity.QualificationTypeEnum.ALVILAGI, R.drawable.kepzettseg_alvilagi);
+            put(QualificationEntity.QualificationTypeEnum.TUDOMANYOS, R.drawable.kepzettseg_tudomanyos);
+            put(QualificationEntity.QualificationTypeEnum.MISZTIKUS, R.drawable.kepzettseg_misztikus);
+        }
+    };
 
-    public QualificationCategoryListAdapter(QualificationCategoryListFragment.onClickListener listener) {
+    public QualificationCategoryListAdapter(QualificationCategoryListFragment.onClickListener listener, Context context) {
         mListener = listener;
+        mContext = context;
     }
 
     @Override
@@ -31,6 +50,7 @@ public class QualificationCategoryListAdapter extends RecyclerView.Adapter<Quali
     public void onBindViewHolder(final QualificationCategoryListAdapter.ViewHolder holder, int position) {
         holder.mItem = mItems.get(position);
         holder.mContentView.setText(mItems.get(position).getType().toString());
+        holder.mImageView.setImageDrawable(getDrawable(holder.mItem.type));
 
         holder.mView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -42,6 +62,10 @@ public class QualificationCategoryListAdapter extends RecyclerView.Adapter<Quali
                 }
             }
         });
+    }
+
+    private Drawable getDrawable(QualificationEntity.QualificationTypeEnum type) {
+        return mContext.getResources().getDrawable(qualificationDrawableIds.get(type));
     }
 
     @Override
