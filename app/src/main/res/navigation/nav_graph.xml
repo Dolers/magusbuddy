@@ -20,7 +20,7 @@
         android:label="QualificationListFragment" >
         <action
             android:id="@+id/action_qualificationListFragment_to_qualificationActivity"
-            app:destination="@id/qualificationActivity" />
+            app:destination="@id/qualificationActivity"/>
     </fragment>
     <fragment
         android:id="@+id/navigation_battle"

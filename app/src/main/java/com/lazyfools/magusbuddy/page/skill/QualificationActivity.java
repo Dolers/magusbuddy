@@ -5,12 +5,15 @@ import android.arch.lifecycle.ViewModelProviders;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.TextView;
 
 import com.lazyfools.magusbuddy.DatabaseViewModel;
 import com.lazyfools.magusbuddy.R;
 import com.lazyfools.magusbuddy.database.entity.QualificationEntity;
+
+import java.util.ArrayList;
 
 import hakobastvatsatryan.DropdownTextView;
 
@@ -40,15 +43,29 @@ public class QualificationActivity extends AppCompatActivity {
         TextView descriptionTextView = findViewById(R.id.skill_description);
         descriptionTextView.setText(qualification.getDescription());
 
+        populateWithTables(qualification);
         populateLevelDescriptionDropdownViews(qualification);
     }
 
+    private void populateWithTables(QualificationEntity qualification) {
+        RecyclerView tableListView = findViewById(R.id.table_listview);
+        ArrayList<String> descriptionTables = qualification.getDescriptionTables();
+        if (descriptionTables.isEmpty()){
+            tableListView.setVisibility(View.INVISIBLE);
+        }
+        else {
+            QualificationDescTableAdapter adapter = new QualificationDescTableAdapter(getApplicationContext());
+            adapter.setItems(qualification.getDescriptionTables());
+            tableListView.setAdapter(adapter);
+        }
+    }
+
     private void populateLevelDescriptionDropdownViews(QualificationEntity qualification) {
-        DropdownTextView firstLevelTextView = findViewById(R.id.first_level_dropdown_textview);
-        DropdownTextView secondLevelTextView = findViewById(R.id.second_level_dropdown_textview);
-        DropdownTextView thirdLevelTextView = findViewById(R.id.third_level_dropdown_textview);
-        DropdownTextView fourthLevelTextView = findViewById(R.id.fourth_level_dropdown_textview);
-        DropdownTextView fifthLevelTextView = findViewById(R.id.fifth_level_dropdown_textview);
+        DropdownTextView firstLevelTextView = findLevelDropdownTextviewById(R.id.first_level_dropdown_textview);
+        DropdownTextView secondLevelTextView = findLevelDropdownTextviewById(R.id.second_level_dropdown_textview);
+        DropdownTextView thirdLevelTextView = findLevelDropdownTextviewById(R.id.third_level_dropdown_textview);
+        DropdownTextView fourthLevelTextView = findLevelDropdownTextviewById(R.id.fourth_level_dropdown_textview);
+        DropdownTextView fifthLevelTextView = findLevelDropdownTextviewById(R.id.fifth_level_dropdown_textview);
 
         if (qualification.getFirstLevelDesc() == null){
             firstLevelTextView.setVisibility(View.INVISIBLE);
@@ -73,5 +90,9 @@ public class QualificationActivity extends AppCompatActivity {
             fifthLevelTextView.setTitleText(R.string.fifth_level);
             fifthLevelTextView.setContentText(qualification.getFifthLevelDesc());
         }
+    }
+    private DropdownTextView findLevelDropdownTextviewById(int resId){
+        View test1View = findViewById(resId);
+        return test1View.findViewById(R.id.level_dropdown_textview);
     }
 }

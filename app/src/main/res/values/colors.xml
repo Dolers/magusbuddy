@@ -3,5 +3,18 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
-    <color name="default_text_color">#000000</color>
+    <color name="colorDefaultText">#000000</color>
+    <color name="colorDefaultBackground">#FFFFFF</color>
+    <color name="colorTableHeaderText">#FFFFFF</color>
+    <color name="colorTableHeaderBackground">#000000</color>
+    <color name="colorLevelDescriptionBackground">#efefef</color>
+
+    <color name="colorContrastPrimary">#3F51B5</color>
+    <color name="colorContrastPrimaryDark">#303F9F</color>
+    <color name="colorContrastAccent">#FF4081</color>
+    <color name="colorContrastDefaultText">#FFFFFF</color>
+    <color name="colorContrastDefaultBackground">#000000</color>
+    <color name="colorContrastTableHeaderText">#000000</color>
+    <color name="colorContrastTableHeaderBackground">#FFFFFF</color>
+    <color name="colorContrastLevelDescriptionBackground">#101010</color>
 </resources>

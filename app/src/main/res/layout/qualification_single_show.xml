@@ -3,6 +3,7 @@
     android:layout_height="match_parent"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     app:navGraph="@navigation/nav_graph">
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/qualification_single_show"
@@ -27,53 +28,32 @@
             android:layout_height="wrap_content"
             android:text="TextView" />
 
-        <hakobastvatsatryan.DropdownTextView
-            android:id="@+id/first_level_dropdown_textview"
+        <android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/table_listview"
+            android:name="com.lazyfools.magusbuddy.BattleFragment"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:arrow_drawable="@drawable/ic_arrow"
-            app:title_text_color="#000000"
-            app:title_text_size="14pt"/>
-        <!--app:title_font="@font/your-title-font"
-            app:title_text_size="@dimen/your-title-text-size"
-            app:content_font="@font/your-font"
-            app:content_padding="@dimen/your-content-padding"
-            app:content_text_size="@color/your-content-text-size"
-            app:bg_drawable_regular="@drawable/your-regular-background"
-            app:bg_drawable_expanded="@drawable/your-expanded-background"
-            app:expand_duration="@integer/your-expand-duration"
-            app:panel_padding="@dimen/your-panel-padding"-->
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            app:layoutManager="LinearLayoutManager"
+            tools:context=".page.skill.QualificationActivity"
+            tools:listitem="@layout/skill_table_item" />
 
-        <hakobastvatsatryan.DropdownTextView
-            android:id="@+id/second_level_dropdown_textview"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:arrow_drawable="@drawable/ic_arrow"
-            app:title_text_color="#000000"
-            app:title_text_size="14pt"/>
+        <include layout="@layout/level_description_dropdown_textview"
+            android:id="@+id/first_level_dropdown_textview"/>
 
-        <hakobastvatsatryan.DropdownTextView
-            android:id="@+id/third_level_dropdown_textview"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:arrow_drawable="@drawable/ic_arrow"
-            app:title_text_color="#000000"
-            app:title_text_size="14pt"/>
+        <include layout="@layout/level_description_dropdown_textview"
+            android:id="@+id/second_level_dropdown_textview"/>
 
-        <hakobastvatsatryan.DropdownTextView
-            android:id="@+id/fourth_level_dropdown_textview"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:arrow_drawable="@drawable/ic_arrow"
-            app:title_text_color="#000000"
-            app:title_text_size="14pt"/>
+        <include layout="@layout/level_description_dropdown_textview"
+            android:id="@+id/third_level_dropdown_textview"/>
 
-        <hakobastvatsatryan.DropdownTextView
-            android:id="@+id/fifth_level_dropdown_textview"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:arrow_drawable="@drawable/ic_arrow"
-            app:title_text_color="#000000"
-            app:title_text_size="14pt"/>
+        <include layout="@layout/level_description_dropdown_textview"
+            android:id="@+id/fourth_level_dropdown_textview"/>
+
+        <include layout="@layout/level_description_dropdown_textview"
+            android:id="@+id/fifth_level_dropdown_textview"/>
     </LinearLayout>
 </ScrollView>

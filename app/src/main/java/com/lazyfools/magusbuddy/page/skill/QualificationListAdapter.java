@@ -22,9 +22,9 @@ class QualificationListAdapter extends RecyclerView.Adapter<QualificationListAda
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.fragment_skills_item, parent, false);
+            .inflate(R.layout.fragment_skills_item, parent, false);
         return new QualificationListAdapter.ViewHolder(view);
-    }
+}
 
     @Override
     public void onBindViewHolder(final QualificationListAdapter.ViewHolder holder, int position) {

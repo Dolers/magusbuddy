@@ -21,7 +21,7 @@ public class Converters {
     @TypeConverter
     public static ArrayList<String> fromString(String value) {
         if (value == null)
-            return null;
+            return new ArrayList<>();
 
         return new ArrayList<>(Arrays.asList(value.split("__end__")));
     }

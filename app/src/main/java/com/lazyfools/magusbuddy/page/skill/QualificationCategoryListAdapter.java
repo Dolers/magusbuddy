@@ -88,8 +88,8 @@ public class QualificationCategoryListAdapter extends RecyclerView.Adapter<Quali
         public ViewHolder(View view) {
             super(view);
             mView = view;
-            mContentView = (TextView) view.findViewById(R.id.text);
-            mImageView = (ImageView) view.findViewById(R.id.image);
+            mContentView = view.findViewById(R.id.text);
+            mImageView = view.findViewById(R.id.image);
         }
 
         @Override
