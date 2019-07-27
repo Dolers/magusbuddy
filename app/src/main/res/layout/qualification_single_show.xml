@@ -5,10 +5,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     app:navGraph="@navigation/nav_graph">
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <LinearLayout
         android:id="@+id/qualification_single_show"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginLeft="10sp"
         android:layout_marginRight="10sp"
         android:orientation="vertical">
@@ -28,19 +28,16 @@
             android:layout_height="wrap_content"
             android:text="TextView" />
 
-        <android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:app="http://schemas.android.com/apk/res-auto"
-            xmlns:tools="http://schemas.android.com/tools"
+
+        <android.support.v7.widget.RecyclerView
             android:id="@+id/table_listview"
-            android:name="com.lazyfools.magusbuddy.BattleFragment"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:layout_marginBottom="5dp"
-            app:layoutManager="LinearLayoutManager"
+            app:layoutManager="android.support.v7.widget.LinearLayoutManager"
             tools:context=".page.skill.QualificationActivity"
             tools:listitem="@layout/skill_table_item" />
-
         <include layout="@layout/level_description_dropdown_textview"
             android:id="@+id/first_level_dropdown_textview"/>
 

@@ -2,10 +2,8 @@ package com.lazyfools.magusbuddy.page.skill;
 
 import android.content.Context;
 import android.graphics.Color;
-import android.support.annotation.ColorInt;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -21,9 +19,12 @@ import java.util.List;
 public class QualificationDescTableAdapter extends RecyclerView.Adapter<QualificationDescTableAdapter.ViewHolder> {
     private final Context mContext;
     private List<String> mTableData;
+    private TableRow.LayoutParams mCellParams;
+    private TableRow.LayoutParams mRowParams;
 
     public QualificationDescTableAdapter(Context context) {
         mContext = context;
+        setupLayoutParams();
     }
 
     private void parseTable(TableLayout tableLayout, int position) {
@@ -43,7 +44,7 @@ public class QualificationDescTableAdapter extends RecyclerView.Adapter<Qualific
                 tableRow.addView(cellTextView);
             }
             tableLayout.addView(tableRow);
-            rowIt++;
+            rowIt += 1;
         }
     }
 
@@ -59,19 +60,23 @@ public class QualificationDescTableAdapter extends RecyclerView.Adapter<Qualific
 
         cellTextView.setGravity(Gravity.CENTER);
 
-        TableRow.LayoutParams cellParams = new TableRow.LayoutParams(0, TableRow.LayoutParams.MATCH_PARENT);
-        cellParams.weight = 1;
-        cellParams.gravity = Gravity.CENTER;
+        mCellParams.setMargins(0,2,0,2);
+        cellTextView.setLayoutParams(mCellParams);
+    }
 
-        cellParams.setMargins(0,2,0,2);
-        cellTextView.setLayoutParams(cellParams);
+    private void setupLayoutParams() {
+        mCellParams = new TableRow.LayoutParams(0, TableRow.LayoutParams.MATCH_PARENT);
+        mCellParams.weight = 1;
+        mCellParams.gravity = Gravity.CENTER;
+        mCellParams.width = 0;
+
+        mRowParams = new TableRow.LayoutParams(TableRow.LayoutParams.MATCH_PARENT, TableRow.LayoutParams.MATCH_PARENT);
+        mRowParams.setMargins(0,2,0,2);
     }
 
     private void setRowProperties(TableRow tableRow) {
         tableRow.setBackgroundColor(Color.BLACK);
-        TableRow.LayoutParams rowParams = new TableRow.LayoutParams(TableRow.LayoutParams.MATCH_PARENT, TableRow.LayoutParams.MATCH_PARENT);
-        rowParams.setMargins(0,2,0,2);
-        tableRow.setLayoutParams(rowParams);
+        tableRow.setLayoutParams(mRowParams);
     }
 
     @NonNull
@@ -94,6 +99,9 @@ public class QualificationDescTableAdapter extends RecyclerView.Adapter<Qualific
 
     @Override
     public int getItemCount() {
+        if (mTableData == null){
+            return 0;
+        }
         return mTableData.size();
     }
 

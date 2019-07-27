@@ -5,6 +5,7 @@ import android.arch.lifecycle.ViewModelProviders;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.TextView;
@@ -12,6 +13,7 @@ import android.widget.TextView;
 import com.lazyfools.magusbuddy.DatabaseViewModel;
 import com.lazyfools.magusbuddy.R;
 import com.lazyfools.magusbuddy.database.entity.QualificationEntity;
+import com.lazyfools.magusbuddy.utility.NoScrollLayoutManager;
 
 import java.util.ArrayList;
 
@@ -24,7 +26,8 @@ public class QualificationActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.qualification_single_show);
-
+        /*RecyclerView recyclerView = findViewById(R.id.table_listview);
+        recyclerView.setLayoutManager(new NoScrollLayoutManager(this, LinearLayoutManager.VERTICAL,false));*/
 
         mViewModel = ViewModelProviders.of(this).get(DatabaseViewModel.class);
         Integer id = getIntent().getIntExtra(getResources().getString(R.string.QUALIFICATION_ID),0);
