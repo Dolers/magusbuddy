@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/nav_graph"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
     app:startDestination="@id/navigation_home">
 
     <fragment
@@ -13,6 +15,9 @@
         <action
             android:id="@+id/action_qualificationCategoryListFragment_to_battleFragment"
             app:destination="@id/navigation_battle" />
+        <action
+            android:id="@+id/action_navigation_skills_to_skillSearchActivity"
+            app:destination="@id/skillSearchActivity" />
     </fragment>
     <fragment
         android:id="@+id/qualificationListFragment"
@@ -52,4 +57,9 @@
             app:argType="string"
             android:defaultValue='""' />
     </activity>
+    <activity
+        android:id="@+id/skillSearchActivity"
+        android:name="com.lazyfools.magusbuddy.SkillSearchActivity"
+        android:label="skills_search_activity"
+        tools:layout="@layout/skills_search_activity" />
 </navigation>

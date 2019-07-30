@@ -23,10 +23,10 @@ public abstract class QualificationDao {
     @Query("SELECT DISTINCT type FROM qualifications")
     public abstract LiveData<List<QualificationType>> getTypes();
 
-    @Query("SELECT name FROM qualifications")
+    @Query("SELECT id, name FROM qualifications")
     public abstract LiveData<List<QualificationName>> getAllNames();
 
-    @Query("SELECT name FROM qualifications WHERE name LIKE  '%' || :name || '%'")
+    @Query("SELECT id, name FROM qualifications WHERE name LIKE  '%' || :name || '%'")
     public abstract LiveData<List<QualificationName>> getNamesByFilter(String name);
 
     @Insert

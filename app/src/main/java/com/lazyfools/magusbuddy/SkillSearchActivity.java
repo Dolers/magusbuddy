@@ -2,62 +2,65 @@ package com.lazyfools.magusbuddy;
 
 import android.app.SearchManager;
 import android.arch.lifecycle.Observer;
-import android.arch.lifecycle.ViewModelProviders;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
+import androidx.navigation.Navigation;
+
+import com.lazyfools.magusbuddy.R;
+import com.lazyfools.magusbuddy.SearchActivity;
 import com.lazyfools.magusbuddy.database.entity.QualificationName;
+import com.lazyfools.magusbuddy.page.skill.QualificationActivity;
 
 import java.util.List;
 
-public class SkillSearchActivity extends AppCompatActivity{
+import ir.mirrajabi.searchdialog.core.Searchable;
 
-    private DatabaseViewModel mViewModel;
-    private SkillSearchAdapter mSearchAdapter;
+public class SkillSearchActivity extends SearchActivity {
+
+    private ListView listView;
+
+    SkillSearchActivity() {
+        super(R.layout.skills_search_listitem);
+    }
 
     @Override protected void onCreate(Bundle savedInstanceState) {
-
         super.onCreate(savedInstanceState);
         setContentView(R.layout.skills_search_activity);
 
-        ListView listView = findViewById(R.id.listView);
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-
-            @Override public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                //TODO start activity showing only the skill
-            }
-        });
-
-        mViewModel = ViewModelProviders.of(this).get(DatabaseViewModel.class);
-
-        mSearchAdapter = new SkillSearchAdapter();
+        listView = findViewById(R.id.listView);
         listView.setAdapter(mSearchAdapter);
 
         handleIntent(getIntent());
-
     }
 
+    @Override
+    protected void onItemClicked(Searchable item) {
+        Intent intent = new Intent(this, QualificationActivity.class);
+        intent.putExtra(getResources().getString(R.string.QUALIFICATION_ID), ((QualificationName)item).getId());
+        startActivity(intent);
+        //destroy this activity
+        finish();
+    }
 
     @Override protected void onNewIntent(Intent intent) {
         setIntent(intent);
         handleIntent(intent);
     }
 
-    private void handleIntent(Intent intent) {
+    protected void handleIntent(Intent intent) {
         if (Intent.ACTION_SEARCH.equals(intent.getAction())) {
             String query = intent.getStringExtra(SearchManager.QUERY);
             doMySearch(query);
         }
     }
 
-
-    private void doMySearch(final String query){
+    protected void doMySearch(final String query){
         Log.i("query to find: ", query);
         mViewModel.getQualificationNamesOfFilter(query).observe(this, new Observer<List<QualificationName>>() {
             @Override
