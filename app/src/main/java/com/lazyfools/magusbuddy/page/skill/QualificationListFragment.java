@@ -57,7 +57,7 @@ public class QualificationListFragment extends Fragment {
             });
         }
         else {
-            QualificationEntity.QualificationTypeEnum typeFilter = QualificationEntity.QualificationTypeEnum.valueOf(arg);
+            QualificationEntity.TypeEnum typeFilter = QualificationEntity.TypeEnum.valueOf(arg);
 
             _viewModel.getAllQualificationNamesOfType(typeFilter).observe(this, new Observer<List<QualificationName>>() {
                 @Override

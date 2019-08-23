@@ -4,9 +4,9 @@ import android.arch.persistence.room.ColumnInfo;
 
 public class QualificationType {
     @ColumnInfo(name = "type")
-    public QualificationEntity.QualificationTypeEnum type;
+    public QualificationEntity.TypeEnum type;
 
-    public QualificationEntity.QualificationTypeEnum getType() {
+    public QualificationEntity.TypeEnum getType() {
         return type;
     }
 }

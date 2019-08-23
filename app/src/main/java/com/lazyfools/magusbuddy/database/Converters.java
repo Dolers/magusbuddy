@@ -2,6 +2,7 @@ package com.lazyfools.magusbuddy.database;
 
 import android.arch.persistence.room.TypeConverter;
 
+import com.lazyfools.magusbuddy.database.entity.HighMagicEntity;
 import com.lazyfools.magusbuddy.database.entity.QualificationEntity;
 
 import java.util.ArrayList;
@@ -9,13 +10,23 @@ import java.util.Arrays;
 
 public class Converters {
     @TypeConverter
-    public static String fromQualificationType(QualificationEntity.QualificationTypeEnum value) {
+    public static String fromQualificationType(QualificationEntity.TypeEnum value) {
         return value == null ? null : value.toString();
     }
 
     @TypeConverter
-    public static QualificationEntity.QualificationTypeEnum QualificationTypeToInt(String value) {
-        return QualificationEntity.QualificationTypeEnum.valueOf(value);
+    public static QualificationEntity.TypeEnum QualificationTypeToInt(String value) {
+        return QualificationEntity.TypeEnum.valueOf(value);
+    }
+
+    @TypeConverter
+    public static String fromHighMagicType(HighMagicEntity.TypeEnum value) {
+        return value == null ? null : value.toString();
+    }
+
+    @TypeConverter
+    public static HighMagicEntity.TypeEnum HighMagicTypeToInt(String value) {
+        return HighMagicEntity.TypeEnum.valueOf(value);
     }
 
     @TypeConverter

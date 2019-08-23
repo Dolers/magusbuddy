@@ -2,8 +2,6 @@ package com.lazyfools.magusbuddy.database;
 
 import android.app.Application;
 import android.arch.lifecycle.LiveData;
-import android.os.AsyncTask;
-import android.util.Log;
 
 import com.lazyfools.magusbuddy.database.dao.APIKeyDao;
 import com.lazyfools.magusbuddy.database.dao.CharacterAPIRelationDao;
@@ -14,14 +12,7 @@ import com.lazyfools.magusbuddy.database.entity.CharacterEntity;
 
 import java.util.List;
 
-/**
- * Abstracted Repository as promoted by the Architecture Guide.
- * https://developer.android.com/topic/libraries/architecture/guide.html
- */
-
 public class CharacterRepository {
-
-    enum Operation {INSERT, DELETE, DELETE_ALL}
     private CharacterDao _characterDao;
     private LiveData<List<CharacterEntity>> _allCharacter;
 
@@ -47,10 +38,10 @@ public class CharacterRepository {
     public LiveData<List<CharacterEntity>> getAllCharacter() {
         return _allCharacter;
     }
-    public boolean hasCharacter() {return _allCharacter.getValue().isEmpty();}
     public LiveData<List<APIKeyEntity>> getAllKeys() {
         return _allKeys;
     }
+    public boolean hasCharacter() {return _allCharacter.getValue().isEmpty();}
 
     // You must call this on a non-UI thread or your app will crash.
     // Like this, Room ensures that you're not doing any long running operations on the main
@@ -60,95 +51,31 @@ public class CharacterRepository {
         insert(character);
         insertCharacterAPIRelation(character,APIKeyId);
     }
-
+    private void insert(CharacterEntity character) {new CharacterAsyncTask(_characterDao, AbstractRepository.Operation.INSERT).execute(character);}
     private void insertCharacterAPIRelation(CharacterEntity character, int APIKeyId) {
-        new CharacterAPIRelationAsyncTask(_characterAPIRelationDao,Operation.INSERT).execute(new CharacterAPIRelationEntity(character.getId(),APIKeyId));
-    }
-
-    private static class CharacterAPIRelationAsyncTask extends AsyncTask<CharacterAPIRelationEntity, Void, Void> {
-
-        private CharacterAPIRelationDao _asyncTaskDao;
-        private Operation _op;
-
-        CharacterAPIRelationAsyncTask(CharacterAPIRelationDao dao, CharacterRepository.Operation op) {
-            _asyncTaskDao = dao;
-            _op = op;
-        }
-        @Override
-        protected Void doInBackground(final CharacterAPIRelationEntity... params) {
-            switch (_op){
-                case INSERT:
-                    _asyncTaskDao.insert(params[0]);
-                    break;
-                case DELETE:
-                    Log.i("CharacterAPIAsyncTask", "Unimplemented method delete");
-                    //mAsyncTaskDao.delete(params[0]);
-                    break;
-                case DELETE_ALL:
-                    Log.i("CharacterAPIAsyncTask", "Unimplemented method deleteAll");
-                    //mAsyncTaskDao.deleteAll();
-                    break;
-            }
-            return null;
-        }
-    }
-
-    public void deleteAllCharacter(){new CharacterAsyncTask(_characterDao,Operation.DELETE_ALL).execute();}
-    private void insert(CharacterEntity character) {new CharacterAsyncTask(_characterDao,Operation.INSERT).execute(character);}
-
-    private static class CharacterAsyncTask extends AsyncTask<CharacterEntity, Void, Void> {
-
-        private CharacterDao _asyncTaskDao;
-        private Operation _op;
-
-        CharacterAsyncTask(CharacterDao dao, CharacterRepository.Operation op) {
-            _asyncTaskDao = dao;
-            _op = op;
-        }
-        @Override
-        protected Void doInBackground(final CharacterEntity... params) {
-            switch (_op){
-                case INSERT:
-                    _asyncTaskDao.insert(params[0]);
-                    break;
-                case DELETE:
-                    _asyncTaskDao.delete(params[0]);
-                    break;
-                case DELETE_ALL:
-                    _asyncTaskDao.deleteAll();
-                    break;
-            }
-            return null;
-        }
+        new CharacterAPIRelationAsyncTask(_characterAPIRelationDao, AbstractRepository.Operation.INSERT).execute(new CharacterAPIRelationEntity(character.getId(),APIKeyId));
     }
 
     public void insertAPIKey(String hash, boolean mine){ insert( new APIKeyEntity(hash,mine));}
-    private void insert(APIKeyEntity apiKey) { new APIKeyAsyncTask(_aPIKeyDao,Operation.INSERT).execute(apiKey);}
+    private void insert(APIKeyEntity apiKey) { new APIKeyAsyncTask(_aPIKeyDao, AbstractRepository.Operation.INSERT).execute(apiKey);}
 
-    private static class APIKeyAsyncTask extends AsyncTask<APIKeyEntity, Void, Void> {
-        private APIKeyDao _asyncTaskDao;
-        private Operation _op;
+    public void deleteAllCharacter(){new CharacterAsyncTask(_characterDao, AbstractRepository.Operation.DELETE_ALL).execute();}
 
-        APIKeyAsyncTask(APIKeyDao dao,CharacterRepository.Operation op) {
-            _asyncTaskDao = dao;
-            _op = op;
+    private static class CharacterAPIRelationAsyncTask extends AbstractRepository.RepositoryAsyncTask<CharacterAPIRelationDao,CharacterAPIRelationEntity> {
+        CharacterAPIRelationAsyncTask(CharacterAPIRelationDao dao, AbstractRepository.Operation op) {
+            super(dao, op);
         }
+    }
 
-        @Override
-        protected Void doInBackground(final APIKeyEntity... params) {
-            switch (_op){
-                case INSERT:
-                    _asyncTaskDao.insert(params[0]);
-                    break;
-                case DELETE:
-                    _asyncTaskDao.delete(params[0]);
-                    break;
-                case DELETE_ALL:
-                    _asyncTaskDao.deleteAll();
-                    break;
-            }
+    private static class CharacterAsyncTask extends AbstractRepository.RepositoryAsyncTask<CharacterDao,CharacterEntity> {
+        CharacterAsyncTask(CharacterDao dao, AbstractRepository.Operation op) {
+            super(dao, op);
+        }
+    }
 
-            return null;
+    private static class APIKeyAsyncTask extends AbstractRepository.RepositoryAsyncTask<APIKeyDao,APIKeyEntity> {
+        APIKeyAsyncTask(APIKeyDao dao, AbstractRepository.Operation op) {
+            super(dao, op);
         }
     }
 }

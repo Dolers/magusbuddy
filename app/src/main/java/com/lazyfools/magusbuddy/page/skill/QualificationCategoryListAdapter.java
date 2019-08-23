@@ -21,14 +21,14 @@ public class QualificationCategoryListAdapter extends RecyclerView.Adapter<Quali
     private final Context _context;
     private List<QualificationType> _items;
     private QualificationCategoryListFragment.onClickListener _listener;
-    private final Map<QualificationEntity.QualificationTypeEnum,Integer> qualificationDrawableIds = new HashMap<QualificationEntity.QualificationTypeEnum, Integer>(){
+    private final Map<QualificationEntity.TypeEnum,Integer> qualificationDrawableIds = new HashMap<QualificationEntity.TypeEnum, Integer>(){
         {
-            put(QualificationEntity.QualificationTypeEnum.HARCI,R.drawable.kepzettseg_harci);
-            put(QualificationEntity.QualificationTypeEnum.VILAGI, R.drawable.kepzettseg_vilagi);
-            put(QualificationEntity.QualificationTypeEnum.SZOCIALIS, R.drawable.kepzettseg_szocialis);
-            put(QualificationEntity.QualificationTypeEnum.ALVILAGI, R.drawable.kepzettseg_alvilagi);
-            put(QualificationEntity.QualificationTypeEnum.TUDOMANYOS, R.drawable.kepzettseg_tudomanyos);
-            put(QualificationEntity.QualificationTypeEnum.MISZTIKUS, R.drawable.kepzettseg_misztikus);
+            put(QualificationEntity.TypeEnum.HARCI,R.drawable.kepzettseg_harci);
+            put(QualificationEntity.TypeEnum.VILAGI, R.drawable.kepzettseg_vilagi);
+            put(QualificationEntity.TypeEnum.SZOCIALIS, R.drawable.kepzettseg_szocialis);
+            put(QualificationEntity.TypeEnum.ALVILAGI, R.drawable.kepzettseg_alvilagi);
+            put(QualificationEntity.TypeEnum.TUDOMANYOS, R.drawable.kepzettseg_tudomanyos);
+            put(QualificationEntity.TypeEnum.MISZTIKUS, R.drawable.kepzettseg_misztikus);
         }
     };
 
@@ -62,7 +62,7 @@ public class QualificationCategoryListAdapter extends RecyclerView.Adapter<Quali
         });
     }
 
-    private Drawable getDrawable(QualificationEntity.QualificationTypeEnum type) {
+    private Drawable getDrawable(QualificationEntity.TypeEnum type) {
         return _context.getResources().getDrawable(qualificationDrawableIds.get(type));
     }
 
