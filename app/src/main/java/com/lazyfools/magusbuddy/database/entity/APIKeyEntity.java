@@ -8,26 +8,26 @@ import android.support.annotation.NonNull;
 public class APIKeyEntity {
     @PrimaryKey(autoGenerate = true)
     @ColumnInfo(name = "id")
-    private Integer mId;
+    private Integer _id;
 
     @ColumnInfo(name = "hash")
-    private String mHash;
+    private String _hash;
 
     @ColumnInfo(name = "mine")
-    private boolean mMine;
+    private boolean _mine;
 
     //TODO extend with additional paramters
-    public Integer getId() {return mId;}
-    public void setId(Integer id) {this.mId = id;}
+    public Integer getId() {return _id;}
+    public void setId(Integer id) {this._id = id;}
 
-    public String getHash() { return mHash;}
-    public void setHash(String name) {this.mHash = name;}
+    public String getHash() { return _hash;}
+    public void setHash(String name) {this._hash = name;}
 
-    public boolean isMine() {return mMine;}
-    public void setMine(boolean value) {this.mMine = mMine;}
+    public boolean isMine() {return _mine;}
+    public void setMine(boolean value) {this._mine = _mine;}
 
     public APIKeyEntity(String hash, boolean mine){
-        mHash = hash;
-        mMine = mine;
+        _hash = hash;
+        _mine = mine;
     }
 }

@@ -18,9 +18,9 @@ import java.util.List;
 import java.util.Map;
 
 public class QualificationCategoryListAdapter extends RecyclerView.Adapter<QualificationCategoryListAdapter.ViewHolder> {
-    private final Context mContext;
-    private List<QualificationType> mItems;
-    private QualificationCategoryListFragment.onClickListener mListener;
+    private final Context _context;
+    private List<QualificationType> _items;
+    private QualificationCategoryListFragment.onClickListener _listener;
     private final Map<QualificationEntity.QualificationTypeEnum,Integer> qualificationDrawableIds = new HashMap<QualificationEntity.QualificationTypeEnum, Integer>(){
         {
             put(QualificationEntity.QualificationTypeEnum.HARCI,R.drawable.kepzettseg_harci);
@@ -33,8 +33,8 @@ public class QualificationCategoryListAdapter extends RecyclerView.Adapter<Quali
     };
 
     public QualificationCategoryListAdapter(QualificationCategoryListFragment.onClickListener listener, Context context) {
-        mListener = listener;
-        mContext = context;
+        _listener = listener;
+        _context = context;
     }
 
     @Override
@@ -46,55 +46,55 @@ public class QualificationCategoryListAdapter extends RecyclerView.Adapter<Quali
 
     @Override
     public void onBindViewHolder(final QualificationCategoryListAdapter.ViewHolder holder, int position) {
-        holder.mItem = mItems.get(position);
-        holder.mContentView.setText(mItems.get(position).getType().toString());
-        holder.mImageView.setImageDrawable(getDrawable(holder.mItem.type));
+        holder._item = _items.get(position);
+        holder._contentView.setText(_items.get(position).getType().toString());
+        holder._imageView.setImageDrawable(getDrawable(holder._item.type));
 
-        holder.mView.setOnClickListener(new View.OnClickListener() {
+        holder._view.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (null != mListener) {
+                if (null != _listener) {
                     // Notify the active callbacks interface (the activity, if the
                     // fragment is attached to one) that an item has been selected.
-                    mListener.onClick(holder.mItem);
+                    _listener.onClick(holder._item);
                 }
             }
         });
     }
 
     private Drawable getDrawable(QualificationEntity.QualificationTypeEnum type) {
-        return mContext.getResources().getDrawable(qualificationDrawableIds.get(type));
+        return _context.getResources().getDrawable(qualificationDrawableIds.get(type));
     }
 
     @Override
     public int getItemCount() {
-        if (mItems == null){
+        if (_items == null){
             return 0;
         }
-        return mItems.size();
+        return _items.size();
     }
 
     public void setItems(List<QualificationType> items) {
-        this.mItems = items;
+        this._items = items;
         notifyDataSetChanged();
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
-        public final View mView;
-        public final TextView mContentView;
-        public final ImageView mImageView;
-        public QualificationType mItem;
+        public final View _view;
+        public final TextView _contentView;
+        public final ImageView _imageView;
+        public QualificationType _item;
 
         public ViewHolder(View view) {
             super(view);
-            mView = view;
-            mContentView = view.findViewById(R.id.text);
-            mImageView = view.findViewById(R.id.image);
+            _view = view;
+            _contentView = view.findViewById(R.id.text);
+            _imageView = view.findViewById(R.id.image);
         }
 
         @Override
         public String toString() {
-            return super.toString() + " '" + mContentView.getText() + "'";
+            return super.toString() + " '" + _contentView.getText() + "'";
         }
     }
 }

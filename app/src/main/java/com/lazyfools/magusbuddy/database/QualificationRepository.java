@@ -13,68 +13,68 @@ import java.util.List;
 
 public class QualificationRepository {
     enum Operation {INSERT, DELETE, DELETE_ALL}
-    private QualificationDao mQualificationDao;
+    private QualificationDao _qualificationDao;
 
     public QualificationRepository(Application application) {
         AppDatabase db = AppDatabase.getDatabase(application);
-        mQualificationDao = db.qualificationDao();
+        _qualificationDao = db.qualificationDao();
     }
     public LiveData<List<QualificationEntity>> getAllQualifications() {
-        return mQualificationDao.getLiveAll();
+        return _qualificationDao.getLiveAll();
     }
 
     public LiveData<List<QualificationName>> getAllNames() {
-        return mQualificationDao.getAllNames();
+        return _qualificationDao.getAllNames();
     }
 
     public LiveData<QualificationEntity> getOneByName(String name) {
-        return mQualificationDao.getOneByName(name);
+        return _qualificationDao.getOneByName(name);
     }
 
     public LiveData<QualificationEntity> getOneByID(Integer id) {
-        return mQualificationDao.getOneByID(id);
+        return _qualificationDao.getOneByID(id);
     }
 
     public LiveData<List<QualificationName>> getNamesOfFilter(String name) {
-        return mQualificationDao.getNamesByFilter(name);
+        return _qualificationDao.getNamesByFilter(name);
     }
 
     public LiveData<List<QualificationName>> getAllQualificationNamesOfType(QualificationEntity.QualificationTypeEnum type) {
-        return mQualificationDao.getLiveAllNamesOfType(type);
+        return _qualificationDao.getLiveAllNamesOfType(type);
     }
 
     public LiveData<List<QualificationType>> getAllTypes() {
-        return mQualificationDao.getTypes();
+        return _qualificationDao.getTypes();
     }
 
     public void deleteAllQualification(){
-        new QualificationAsyncTask(mQualificationDao,Operation.DELETE_ALL).execute();
+        new QualificationAsyncTask(_qualificationDao,Operation.DELETE_ALL).execute();
     }
 
     private void insert(QualificationEntity Qualification) {
-        new QualificationAsyncTask(mQualificationDao,Operation.INSERT).execute(Qualification);
+        new QualificationAsyncTask(_qualificationDao,Operation.INSERT).execute(Qualification);
     }
 
     private static class QualificationAsyncTask extends AsyncTask<QualificationEntity, Void, Void> {
 
-        private QualificationDao mAsyncTaskDao;
-        private Operation mOp;
+        private QualificationDao _asyncTaskDao;
+        private Operation _op;
 
         QualificationAsyncTask(QualificationDao dao, QualificationRepository.Operation op) {
-            mAsyncTaskDao = dao;
-            mOp = op;
+            _asyncTaskDao = dao;
+            _op = op;
         }
         @Override
         protected Void doInBackground(final QualificationEntity... params) {
-            switch (mOp){
+            switch (_op){
                 case INSERT:
-                    mAsyncTaskDao.insert(params[0]);
+                    _asyncTaskDao.insert(params[0]);
                     break;
                 case DELETE:
-                    mAsyncTaskDao.delete(params[0]);
+                    _asyncTaskDao.delete(params[0]);
                     break;
                 case DELETE_ALL:
-                    mAsyncTaskDao.deleteAll();
+                    _asyncTaskDao.deleteAll();
                     break;
             }
             return null;

@@ -9,21 +9,21 @@ import android.support.annotation.NonNull;
 public class CharacterEntity {
     @PrimaryKey
     @ColumnInfo(name = "id")
-    private Integer mId;
+    private Integer _id;
 
     @ColumnInfo(name = "name")
-    private String mName;
+    private String _name;
 
     //TODO extend with additional paramters
-    public Integer getId() {return mId;}
-    public void setId(Integer id) {this.mId = id;}
+    public Integer getId() {return _id;}
+    public void setId(Integer id) {this._id = id;}
 
-    public String getName() { return mName;}
-    public void setName(String name) {this.mName = name;}
+    public String getName() { return _name;}
+    public void setName(String name) {this._name = name;}
 
     public CharacterEntity(@NonNull Integer id, String name){
-        mId = id;
-        mName = name;
+        _id = id;
+        _name = name;
     }
 
 

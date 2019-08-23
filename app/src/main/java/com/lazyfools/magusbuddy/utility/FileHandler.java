@@ -13,9 +13,9 @@ import java.util.List;
 
 public final class FileHandler {
     private static final FileHandler ourInstance = new FileHandler();
-    private Context mAppContext;
+    private Context _appContext;
     public void setAppContext(Context appContext) {
-        mAppContext = appContext;
+        _appContext = appContext;
     }
 
     public static FileHandler getInstance() {
@@ -26,11 +26,11 @@ public final class FileHandler {
     }
 
     public static void writeToFile(String fileName, String data) throws NullPointerException {
-        if (ourInstance.mAppContext == null){
+        if (ourInstance._appContext == null){
             throw new NullPointerException("Context is not set");
         }
         try {
-            OutputStreamWriter outputStreamWriter = new OutputStreamWriter(ourInstance.mAppContext.openFileOutput(fileName, Context.MODE_PRIVATE));
+            OutputStreamWriter outputStreamWriter = new OutputStreamWriter(ourInstance._appContext.openFileOutput(fileName, Context.MODE_PRIVATE));
             outputStreamWriter.write(data);
             outputStreamWriter.close();
         }
@@ -40,13 +40,13 @@ public final class FileHandler {
     }
 
     public static String readFromFile(String fileName) throws NullPointerException  {
-        if (ourInstance.mAppContext == null){
+        if (ourInstance._appContext == null){
             throw new NullPointerException("Context is not set");
         }
         String ret = "";
 
         try {
-            InputStream inputStream = ourInstance.mAppContext.openFileInput(fileName);
+            InputStream inputStream = ourInstance._appContext.openFileInput(fileName);
 
             if ( inputStream != null ) {
                 InputStreamReader inputStreamReader = new InputStreamReader(inputStream);

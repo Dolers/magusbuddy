@@ -26,21 +26,21 @@ import android.arch.persistence.room.PrimaryKey;
 public class CharacterAPIRelationEntity {
     @PrimaryKey(autoGenerate = true)
     @ColumnInfo(name = "id")
-    private int mId;
+    private int _id;
 
     @ColumnInfo(name = "characterId")
-    private int mCharacterId;
+    private int _characterId;
 
     @ColumnInfo(name = "apiKeyId")
-    private int mApiKeyId;
+    private int _apiKeyId;
 
-    public int getId() {return mId;}
-    public void setId(int mId) {this.mId = mId;}
-    public int getCharacterId() {return mCharacterId;}
-    public int getApiKeyId() {return mApiKeyId;}
+    public int getId() {return _id;}
+    public void setId(int _id) {this._id = _id;}
+    public int getCharacterId() {return _characterId;}
+    public int getApiKeyId() {return _apiKeyId;}
 
     public CharacterAPIRelationEntity(int characterId, int apiKeyId){
-        mCharacterId = characterId;
-        mApiKeyId = apiKeyId;
+        _characterId = characterId;
+        _apiKeyId = apiKeyId;
     }
 }

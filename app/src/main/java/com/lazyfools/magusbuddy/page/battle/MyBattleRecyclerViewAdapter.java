@@ -30,15 +30,15 @@ import java.util.List;
 public class MyBattleRecyclerViewAdapter extends RecyclerView.Adapter<MyBattleRecyclerViewAdapter.ItemViewHolder>
             implements ItemTouchHelperAdapter {
 
-    private final BasicCallback mUpdateHighlight;
-    private List<BattleItem> mItems;
+    private final BasicCallback _updateHighlight;
+    private List<BattleItem> _items;
 
-    private final OnStartDragListener mDragStartListener;
-    private boolean mASeekBarIsActive = false;
+    private final OnStartDragListener _dragStartListener;
+    private boolean _aSeekBarIsActive = false;
 
     public MyBattleRecyclerViewAdapter(OnStartDragListener dragStartListener, BasicCallback updateHighlight) {
-        mDragStartListener = dragStartListener;
-        mUpdateHighlight = updateHighlight;
+        _dragStartListener = dragStartListener;
+        _updateHighlight = updateHighlight;
     }
 
     @Override
@@ -49,33 +49,33 @@ public class MyBattleRecyclerViewAdapter extends RecyclerView.Adapter<MyBattleRe
 
     @Override
     public void onBindViewHolder(final ItemViewHolder holder, int position) {
-        holder.mItem = mItems.get(position);
-        holder.mContentView.setText(mItems.get(position).getCharacter().getName());
+        holder._item = _items.get(position);
+        holder._contentView.setText(_items.get(position).getCharacter().getName());
 
         // Start a drag whenever the handle view it touched
-        holder.mContentView.setOnTouchListener(new View.OnTouchListener() {
+        holder._contentView.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
                 Log.i("", "onTouch: ");
                 //TODO it should be long touch
-                if (!mASeekBarIsActive) {
-                    mDragStartListener.onStartDrag(holder);
+                if (!_aSeekBarIsActive) {
+                    _dragStartListener.onStartDrag(holder);
                 }
                 return false;
             }
         });
-        holder.mSeekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+        holder._seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
 
             @Override
             public void onStopTrackingTouch(SeekBar seekBar) {
-                holder.mItem.setCurrentSegment(seekBar.getProgress());
-                mUpdateHighlight.callback();
-                mASeekBarIsActive = false;
+                holder._item.setCurrentSegment(seekBar.getProgress());
+                _updateHighlight.callback();
+                _aSeekBarIsActive = false;
             }
 
             @Override
             public void onStartTrackingTouch(SeekBar seekBar) {
-                mASeekBarIsActive = true;
+                _aSeekBarIsActive = true;
             }
 
             @Override
@@ -86,36 +86,36 @@ public class MyBattleRecyclerViewAdapter extends RecyclerView.Adapter<MyBattleRe
 
     @Override
     public void onItemDismiss(int position) {
-        mItems.remove(position);
+        _items.remove(position);
         notifyItemRemoved(position);
     }
 
     @Override
     public boolean onItemMove(int fromPosition, int toPosition) {
-        Collections.swap(mItems, fromPosition, toPosition);
+        Collections.swap(_items, fromPosition, toPosition);
         notifyItemMoved(fromPosition, toPosition);
         return true;
     }
 
     @Override
     public int getItemCount() {
-        if (mItems == null){
+        if (_items == null){
             return 0;
         }
-        return mItems.size();
+        return _items.size();
     }
 
     public void setItems(List<CharacterEntity> items) {
-        mItems = new ArrayList<>();
+        _items = new ArrayList<>();
         for (CharacterEntity item : items){
-            mItems.add(new BattleItem(item,0));
+            _items.add(new BattleItem(item,0));
         }
         notifyDataSetChanged();
     }
     /*
     public void addItem(BattleItem item){
-        mItems.add(item);
-        notifyItemInserted(mItems.size() - 1);
+        _items.add(item);
+        notifyItemInserted(_items.size() - 1);
     }
 */
     /**
@@ -125,16 +125,16 @@ public class MyBattleRecyclerViewAdapter extends RecyclerView.Adapter<MyBattleRe
     public class ItemViewHolder extends RecyclerView.ViewHolder implements
             ItemTouchHelperViewHolder {
 
-        public final View mView;
-        public final TextView mContentView;
-        public SeekBar mSeekBar;
-        public BattleItem mItem;
+        public final View _view;
+        public final TextView _contentView;
+        public SeekBar _seekBar;
+        public BattleItem _item;
 
         public ItemViewHolder(View itemView) {
             super(itemView);
-            mView = itemView;
-            mContentView = itemView.findViewById(R.id.content);
-           mSeekBar = itemView.findViewById(R.id.seekBar);
+            _view = itemView;
+            _contentView = itemView.findViewById(R.id.content);
+           _seekBar = itemView.findViewById(R.id.seekBar);
 
         }
 

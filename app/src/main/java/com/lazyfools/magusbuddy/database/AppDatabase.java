@@ -87,28 +87,28 @@ public abstract class AppDatabase extends RoomDatabase {
      */
     private static class PopulateDbAsync extends AsyncTask<Void, Void, Void> {
 
-        private final CharacterDao mCharacterDao;
-        private final QualificationDao mQualificationDao;
+        private final CharacterDao _characterDao;
+        private final QualificationDao _qualificationDao;
 
         PopulateDbAsync(AppDatabase db) {
-            mCharacterDao = db.characterDao();
-            mQualificationDao = db.qualificationDao();
+            _characterDao = db.characterDao();
+            _qualificationDao = db.qualificationDao();
         }
 
         @Override
         protected Void doInBackground(final Void... params) {
             // Start the app with a clean database every time.
             // Not needed if you only populate on creation.
-            mCharacterDao.deleteAll();
-            mQualificationDao.deleteAll();
+            _characterDao.deleteAll();
+            _qualificationDao.deleteAll();
 
-            mCharacterDao.insertAll(
+            _characterDao.insertAll(
                     new CharacterEntity(0,"Quince"),
                     new CharacterEntity(1,"Jurac"),
                     new CharacterEntity(2,"Sam")
             );
 
-            mQualificationDao.insertAll(
+            _qualificationDao.insertAll(
                 parseQualificationJson(context.getResources().openRawResource(R.raw.qualifications))
             );
             return null;

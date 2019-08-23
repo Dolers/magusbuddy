@@ -24,9 +24,9 @@ import java.util.List;
  * interface.
  */
 public class CharacterListFragment extends Fragment {
-    private onListFragmentLongClickListener mListener;
-    private DatabaseViewModel mViewModel;
-    private MyCharacterListRecyclerViewAdapter mAdapter;
+    private onListFragmentLongClickListener _listener;
+    private DatabaseViewModel _viewModel;
+    private MyCharacterListRecyclerViewAdapter _adapter;
 
     /**
      * Mandatory empty constructor for the fragment manager to instantiate the
@@ -40,13 +40,13 @@ public class CharacterListFragment extends Fragment {
         super.onActivityCreated(savedInstanceState);
 
         ((HomeActivity)getActivity()).setBottomNavigationVisibility(View.VISIBLE);
-        mViewModel = ViewModelProviders.of(this).get(DatabaseViewModel.class);
+        _viewModel = ViewModelProviders.of(this).get(DatabaseViewModel.class);
 
-        mViewModel.getAllCharacters().observe(this, new Observer<List<CharacterEntity>>() {
+        _viewModel.getAllCharacters().observe(this, new Observer<List<CharacterEntity>>() {
             @Override
             public void onChanged(@Nullable final List<CharacterEntity> characters) {
                 // Update the cached copy of the words in the adapter.
-                mAdapter.setItems(characters);
+                _adapter.setItems(characters);
             }
         });
     }
@@ -58,15 +58,15 @@ public class CharacterListFragment extends Fragment {
         RecyclerView recyclerView = new RecyclerView(container.getContext());
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
 
-        mListener = new onListFragmentLongClickListener(){
+        _listener = new onListFragmentLongClickListener(){
             @Override
             public void onListFragmentLongClick(CharacterEntity item) {
                 //TODO define interaction
             }
         };
 
-        mAdapter = new MyCharacterListRecyclerViewAdapter(mListener);
-        recyclerView.setAdapter(mAdapter);
+        _adapter = new MyCharacterListRecyclerViewAdapter(_listener);
+        recyclerView.setAdapter(_adapter);
 
         return recyclerView;
     }
@@ -74,7 +74,7 @@ public class CharacterListFragment extends Fragment {
     @Override
     public void onDetach() {
         super.onDetach();
-        mListener = null;
+        _listener = null;
     }
 
     /**

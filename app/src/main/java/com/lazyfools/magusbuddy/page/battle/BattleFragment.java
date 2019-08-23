@@ -31,9 +31,9 @@ import co.paulburke.android.itemtouchhelper.helper.SimpleItemTouchHelperCallback
  * interface.
  */
 public class BattleFragment extends Fragment implements OnStartDragListener {
-    private ItemTouchHelper mItemTouchHelper;
-    private DatabaseViewModel mViewModel;
-    private MyBattleRecyclerViewAdapter mAdapter;
+    private ItemTouchHelper _itemTouchHelper;
+    private DatabaseViewModel _viewModel;
+    private MyBattleRecyclerViewAdapter _adapter;
 
     /**
      * Mandatory empty constructor for the fragment manager to instantiate the
@@ -48,13 +48,13 @@ public class BattleFragment extends Fragment implements OnStartDragListener {
         super.onActivityCreated(savedInstanceState);
 
         ((HomeActivity)getActivity()).setBottomNavigationVisibility(View.VISIBLE);
-        mViewModel = ViewModelProviders.of(this).get(DatabaseViewModel.class);
+        _viewModel = ViewModelProviders.of(this).get(DatabaseViewModel.class);
 
-        mViewModel.getAllCharacters().observe(this, new Observer<List<CharacterEntity>>() {
+        _viewModel.getAllCharacters().observe(this, new Observer<List<CharacterEntity>>() {
             @Override
             public void onChanged(@Nullable final List<CharacterEntity> characters) {
                 // Update the cached copy of the words in the adapter.
-                mAdapter.setItems(characters);
+                _adapter.setItems(characters);
             }
         });
     }
@@ -74,26 +74,26 @@ public class BattleFragment extends Fragment implements OnStartDragListener {
         if (view instanceof RecyclerView) {
             final RecyclerView recyclerView = (RecyclerView) view;
 
-            mAdapter = new MyBattleRecyclerViewAdapter(this,
+            _adapter = new MyBattleRecyclerViewAdapter(this,
                     new BasicCallback(){
                         @Override
                         public void callback() {updateNextCharacterHighlight(recyclerView);}
                     });
 
             recyclerView.setHasFixedSize(true);
-            recyclerView.setAdapter(mAdapter);
+            recyclerView.setAdapter(_adapter);
             recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
 
-            ItemTouchHelper.Callback callback = new SimpleItemTouchHelperCallback(mAdapter,false);
-            mItemTouchHelper = new ItemTouchHelper(callback);
-            mItemTouchHelper.attachToRecyclerView(recyclerView);
+            ItemTouchHelper.Callback callback = new SimpleItemTouchHelperCallback(_adapter,false);
+            _itemTouchHelper = new ItemTouchHelper(callback);
+            _itemTouchHelper.attachToRecyclerView(recyclerView);
             Log.i("", "onViewCreated: ");
         }
     }
 
     @Override
     public void onStartDrag(RecyclerView.ViewHolder viewHolder) {
-        mItemTouchHelper.startDrag(viewHolder);
+        _itemTouchHelper.startDrag(viewHolder);
     }
 
     public void updateNextCharacterHighlight(RecyclerView recyclerView){
@@ -102,15 +102,15 @@ public class BattleFragment extends Fragment implements OnStartDragListener {
         int nextHighLightedCharacter = 0;
         for (int i = 0; i<max; i++) {
             MyBattleRecyclerViewAdapter.ItemViewHolder holder = (MyBattleRecyclerViewAdapter.ItemViewHolder) recyclerView.findViewHolderForLayoutPosition(i);
-            if (holder.mItem.getCurrentSegment() < minimalSegment){
-                minimalSegment = holder.mItem.getCurrentSegment();
+            if (holder._item.getCurrentSegment() < minimalSegment){
+                minimalSegment = holder._item.getCurrentSegment();
                 nextHighLightedCharacter = i;
             }
-            holder.mContentView.setTextColor(Color.BLACK);
+            holder._contentView.setTextColor(Color.BLACK);
         }
 
         if (minimalSegment != 10) {
-            ((MyBattleRecyclerViewAdapter.ItemViewHolder) recyclerView.findViewHolderForLayoutPosition(nextHighLightedCharacter)).mContentView.setTextColor(Color.RED);
+            ((MyBattleRecyclerViewAdapter.ItemViewHolder) recyclerView.findViewHolderForLayoutPosition(nextHighLightedCharacter))._contentView.setTextColor(Color.RED);
             recyclerView.refreshDrawableState();
         }
 

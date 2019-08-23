@@ -22,27 +22,27 @@ import java.util.List;
 
  */
 public class QualificationDescTableAdapter extends RecyclerView.Adapter<QualificationDescTableAdapter.ViewHolder> {
-    private final Context mContext;
-    private List<String> mTableData;
-    private TableRow.LayoutParams mCellParams;
-    private TableRow.LayoutParams mRowParams;
+    private final Context _context;
+    private List<String> _tableData;
+    private TableRow.LayoutParams _cellParams;
+    private TableRow.LayoutParams _rowParams;
 
     public QualificationDescTableAdapter(Context context) {
-        mContext = context;
+        _context = context;
         setupLayoutParams();
     }
 
     private void parseTable(TableLayout tableLayout, int position) {
         tableLayout.removeAllViews();
-        String tableData = mTableData.get(position);
+        String tableData = _tableData.get(position);
 
         int rowIt = 0;
         for(String tableRowData : tableData.split("\\n")) {
-            TableRow tableRow = new TableRow(mContext);
+            TableRow tableRow = new TableRow(_context);
             setRowProperties(tableRow);
 
             for(String tableCellData : tableRowData.split("\\t")) {
-                TextView cellTextView = new TextView(mContext);
+                TextView cellTextView = new TextView(_context);
                 cellTextView.setText(tableCellData);
                 setCellProperties(cellTextView,rowIt);
 
@@ -55,34 +55,34 @@ public class QualificationDescTableAdapter extends RecyclerView.Adapter<Qualific
 
     private void setCellProperties(TextView cellTextView, int rowIt) {
         if (rowIt == 0) {
-            //ContextCompat.getColor(mContext,R.color.colorTableHeaderBackground)
-            cellTextView.setBackgroundColor(mContext.getResources().getColor(R.color.colorTableHeaderBackground));
-            cellTextView.setTextColor(mContext.getResources().getColor(R.color.colorTableHeaderText));
+            //ContextCompat.getColor(_context,R.color.colorTableHeaderBackground)
+            cellTextView.setBackgroundColor(_context.getResources().getColor(R.color.colorTableHeaderBackground));
+            cellTextView.setTextColor(_context.getResources().getColor(R.color.colorTableHeaderText));
         }
         else {
-            cellTextView.setBackgroundColor(mContext.getResources().getColor(R.color.colorDefaultBackground));
-            cellTextView.setTextColor(mContext.getResources().getColor(R.color.colorDefaultText));
+            cellTextView.setBackgroundColor(_context.getResources().getColor(R.color.colorDefaultBackground));
+            cellTextView.setTextColor(_context.getResources().getColor(R.color.colorDefaultText));
         }
 
         cellTextView.setGravity(Gravity.CENTER);
 
-        mCellParams.setMargins(0,2,0,2);
-        cellTextView.setLayoutParams(mCellParams);
+        _cellParams.setMargins(0,2,0,2);
+        cellTextView.setLayoutParams(_cellParams);
     }
 
     private void setupLayoutParams() {
-        mCellParams = new TableRow.LayoutParams(0, TableRow.LayoutParams.MATCH_PARENT);
-        mCellParams.weight = 1;
-        mCellParams.gravity = Gravity.CENTER;
-        mCellParams.width = 0;
+        _cellParams = new TableRow.LayoutParams(0, TableRow.LayoutParams.MATCH_PARENT);
+        _cellParams.weight = 1;
+        _cellParams.gravity = Gravity.CENTER;
+        _cellParams.width = 0;
 
-        mRowParams = new TableRow.LayoutParams(TableRow.LayoutParams.MATCH_PARENT, TableRow.LayoutParams.MATCH_PARENT);
-        mRowParams.setMargins(0,2,0,2);
+        _rowParams = new TableRow.LayoutParams(TableRow.LayoutParams.MATCH_PARENT, TableRow.LayoutParams.MATCH_PARENT);
+        _rowParams.setMargins(0,2,0,2);
     }
 
     private void setRowProperties(TableRow tableRow) {
         tableRow.setBackgroundColor(Color.BLACK);
-        tableRow.setLayoutParams(mRowParams);
+        tableRow.setLayoutParams(_rowParams);
     }
 
     @NonNull
@@ -95,30 +95,30 @@ public class QualificationDescTableAdapter extends RecyclerView.Adapter<Qualific
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder viewHolder, int position) {
-        parseTable(viewHolder.mTableLayout, position);
+        parseTable(viewHolder._tableLayout, position);
     }
 
     public void setItems(List<String> tableData){
-        mTableData = tableData;
+        _tableData = tableData;
         notifyDataSetChanged();
     }
 
     @Override
     public int getItemCount() {
-        if (mTableData == null){
+        if (_tableData == null){
             return 0;
         }
-        return mTableData.size();
+        return _tableData.size();
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
-        public final View mView;
-        public final TableLayout mTableLayout;
+        public final View _view;
+        public final TableLayout _tableLayout;
 
         public ViewHolder(View view) {
             super(view);
-            mView = view;
-            mTableLayout = view.findViewById(R.id.skill_description_table);
+            _view = view;
+            _tableLayout = view.findViewById(R.id.skill_description_table);
         }
     }
 }

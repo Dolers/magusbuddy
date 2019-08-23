@@ -6,16 +6,16 @@ import ir.mirrajabi.searchdialog.core.Searchable;
 
 public class QualificationName  implements Searchable {
     @ColumnInfo(name = "id")
-    public Integer mId;
+    public Integer _id;
 
     @ColumnInfo(name = "name")
-    public String mName;
+    public String _name;
 
-    public Integer getId() { return mId; }
+    public Integer getId() { return _id; }
     public String getName() {
-        return mName;
+        return _name;
     }
     public String getTitle()  {
-        return mName;
+        return _name;
     }
 }

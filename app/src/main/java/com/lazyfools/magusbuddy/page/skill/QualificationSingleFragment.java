@@ -22,7 +22,7 @@ import java.util.ArrayList;
 import hakobastvatsatryan.DropdownTextView;
 
 public class QualificationSingleFragment extends Fragment {
-    private DatabaseViewModel mViewModel;
+    private DatabaseViewModel _viewModel;
 
     public QualificationSingleFragment() {
     }
@@ -32,7 +32,7 @@ public class QualificationSingleFragment extends Fragment {
         super.onCreate(savedInstanceState);
         ((HomeActivity)getActivity()).setBottomNavigationVisibility(View.GONE);
 
-        mViewModel = ViewModelProviders.of(this).get(DatabaseViewModel.class);
+        _viewModel = ViewModelProviders.of(this).get(DatabaseViewModel.class);
     }
 
     @Override
@@ -45,7 +45,7 @@ public class QualificationSingleFragment extends Fragment {
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         Integer id = getArguments().getInt(getResources().getString(R.string.QUALIFICATION_ID));
 
-        mViewModel.getOneQualificationByID(id).observe(this, new Observer<QualificationEntity>() {
+        _viewModel.getOneQualificationByID(id).observe(this, new Observer<QualificationEntity>() {
             @Override
             public void onChanged(@Nullable final QualificationEntity qualification) {
                 populateWith(qualification);

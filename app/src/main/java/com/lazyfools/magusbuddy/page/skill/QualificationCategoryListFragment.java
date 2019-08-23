@@ -38,10 +38,10 @@ import java.util.List;
 public class QualificationCategoryListFragment extends Fragment {
 
     // TODO: Customize parameters
-    private onClickListener mListener;
-    private DatabaseViewModel mViewModel;
-    private QualificationCategoryListAdapter mAdapter;
-    private RecyclerView mRecyclerView;
+    private onClickListener _listener;
+    private DatabaseViewModel _viewModel;
+    private QualificationCategoryListAdapter _adapter;
+    private RecyclerView _recyclerView;
 
     /**
      * Mandatory empty constructor for the fragment manager to instantiate the
@@ -60,13 +60,13 @@ public class QualificationCategoryListFragment extends Fragment {
         super.onActivityCreated(savedInstanceState);
         ((HomeActivity)getActivity()).setBottomNavigationVisibility(View.VISIBLE);
 
-        mViewModel = ViewModelProviders.of(this).get(DatabaseViewModel.class);
+        _viewModel = ViewModelProviders.of(this).get(DatabaseViewModel.class);
 
-        mViewModel.getAllQualificationTypes().observe(this, new Observer<List<QualificationType>>() {
+        _viewModel.getAllQualificationTypes().observe(this, new Observer<List<QualificationType>>() {
             @Override
             public void onChanged(@Nullable final List<QualificationType> qualifications) {
                 // Update the cached copy of the words in the adapter.
-                mAdapter.setItems(qualifications);
+                _adapter.setItems(qualifications);
             }
         });
     }
@@ -75,26 +75,26 @@ public class QualificationCategoryListFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        mRecyclerView = new RecyclerView(container.getContext());
-        mRecyclerView.setLayoutManager(new GridLayoutManager(container.getContext(),2));
+        _recyclerView = new RecyclerView(container.getContext());
+        _recyclerView.setLayoutManager(new GridLayoutManager(container.getContext(),2));
 
         Intent intent = getActivity().getIntent();
         if (Intent.ACTION_SEARCH.equals(intent.getAction())) {
             String query = intent.getStringExtra(SearchManager.QUERY);
             //TODO do smth with query
         }
-        mListener = new onClickListener(){
+        _listener = new onClickListener(){
             @Override
             public void onClick(QualificationType item) {
                 Bundle bundle = new Bundle();
                 bundle.putString(getResources().getString(R.string.QUALIFICATION_TYPENAME), item.getType().toString());
-                Navigation.findNavController(mRecyclerView).navigate(R.id.action_qualificationCategoryListFragment_to_qualificationListFragment,bundle);
+                Navigation.findNavController(_recyclerView).navigate(R.id.action_qualificationCategoryListFragment_to_qualificationListFragment,bundle);
             }
         };
-        mAdapter = new QualificationCategoryListAdapter(mListener,container.getContext());
-        mRecyclerView.setAdapter(mAdapter);
+        _adapter = new QualificationCategoryListAdapter(_listener,container.getContext());
+        _recyclerView.setAdapter(_adapter);
 
-        return mRecyclerView;
+        return _recyclerView;
     }
 
     @Override
@@ -111,7 +111,7 @@ public class QualificationCategoryListFragment extends Fragment {
                 sv.clearFocus();
                 Bundle bundle = new Bundle();
                 bundle.putString(getResources().getString(R.string.QUALIFICATION_FILTER), query);
-                Navigation.findNavController(mRecyclerView).navigate(R.id.action_qualificationCategoryListFragment_to_qualificationListFragment,bundle);
+                Navigation.findNavController(_recyclerView).navigate(R.id.action_qualificationCategoryListFragment_to_qualificationListFragment,bundle);
                 return true;
             }
 
@@ -142,7 +142,7 @@ public class QualificationCategoryListFragment extends Fragment {
             case R.id.search_item:
                 getActivity().onSearchRequested();
                 /*
-                List<QualificationName> names = mViewModel.getAllQualificationNames().getValue();
+                List<QualificationName> names = _viewModel.getAllQualificationNames().getValue();
 
                 SimpleSearchDialogCompat dialog = new SimpleSearchDialogCompat<QualificationName>(getActivity(), "Search...",
                         "What are you looking for...?", null, (ArrayList) names,
@@ -168,7 +168,7 @@ public class QualificationCategoryListFragment extends Fragment {
     @Override
     public void onDetach() {
         super.onDetach();
-        mListener = null;
+        _listener = null;
     }
 
     /**

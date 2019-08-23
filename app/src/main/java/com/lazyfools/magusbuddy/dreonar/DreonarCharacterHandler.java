@@ -15,24 +15,24 @@ import org.json.JSONObject;
 import java.util.List;
 
 public class DreonarCharacterHandler {
-    private LiveData<List<APIKeyEntity>> mAllKeys;
-    private CharacterRepository mRepository;
+    private LiveData<List<APIKeyEntity>> _allKeys;
+    private CharacterRepository _repository;
 
     public DreonarCharacterHandler(Application app) {
-        mRepository = new CharacterRepository(app);
-        mAllKeys = mRepository.getAllKeys();
+        _repository = new CharacterRepository(app);
+        _allKeys = _repository.getAllKeys();
     }
 
     public void insertKey(String key,boolean mine){
-        mRepository.insertAPIKey(key,mine);
+        _repository.insertAPIKey(key,mine);
         //TODO download only new API key characters
     }
 
     public void updateCharacters(){
-        if (mRepository.hasCharacter()){
-            mRepository.deleteAllCharacter();
+        if (_repository.hasCharacter()){
+            _repository.deleteAllCharacter();
         }
-        for (final APIKeyEntity key : mAllKeys.getValue()){
+        for (final APIKeyEntity key : _allKeys.getValue()){
             //Download character pages
             downloadCharacters(key.getId(),key.getHash());
         }
@@ -524,7 +524,7 @@ public class DreonarCharacterHandler {
         Log.d("parseJSONAllCharacter", Integer.toString(key));
         for (int i = 0; i< characters.length(); i++) {
             JSONObject character = (JSONObject)characters.get(i);
-            mRepository.insertCharacter(key,
+            _repository.insertCharacter(key,
                                         Integer.valueOf(character.getString("karakter_id")),
                                         character.getString("nev"));
         }

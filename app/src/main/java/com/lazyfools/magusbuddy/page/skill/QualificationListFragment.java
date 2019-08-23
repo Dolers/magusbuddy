@@ -27,11 +27,11 @@ import java.util.List;
  * Need a QUALIFICATION_TYPENAME or QUALIFICATION_FILTER as argument to work
  */
 public class QualificationListFragment extends Fragment {
-    private QualificationListAdapter mAdapter;
-    private QualificationListFragment.onClickListener mListener;
+    private QualificationListAdapter _adapter;
+    private QualificationListFragment.onClickListener _listener;
 
     // TODO: Customize parameters
-    private DatabaseViewModel mViewModel;
+    private DatabaseViewModel _viewModel;
 
     public QualificationListFragment(){}
 
@@ -40,7 +40,7 @@ public class QualificationListFragment extends Fragment {
         super.onActivityCreated(savedInstanceState);
         ((HomeActivity)getActivity()).setBottomNavigationVisibility(View.VISIBLE);
 
-        mViewModel = ViewModelProviders.of(this).get(DatabaseViewModel.class);
+        _viewModel = ViewModelProviders.of(this).get(DatabaseViewModel.class);
         initViewModel();
     }
 
@@ -48,22 +48,22 @@ public class QualificationListFragment extends Fragment {
         String arg = getArguments().getString(getResources().getString(R.string.QUALIFICATION_TYPENAME));
         if (arg == null){
             arg = getArguments().getString(getResources().getString(R.string.QUALIFICATION_FILTER));
-            mViewModel.getQualificationNamesOfFilter(arg).observe(this, new Observer<List<QualificationName>>() {
+            _viewModel.getQualificationNamesOfFilter(arg).observe(this, new Observer<List<QualificationName>>() {
                 @Override
                 public void onChanged(@Nullable final List<QualificationName> qualificationNames) {
                     // Update the cached copy of the words in the adapter.
-                    mAdapter.setItems(qualificationNames);
+                    _adapter.setItems(qualificationNames);
                 }
             });
         }
         else {
             QualificationEntity.QualificationTypeEnum typeFilter = QualificationEntity.QualificationTypeEnum.valueOf(arg);
 
-            mViewModel.getAllQualificationNamesOfType(typeFilter).observe(this, new Observer<List<QualificationName>>() {
+            _viewModel.getAllQualificationNamesOfType(typeFilter).observe(this, new Observer<List<QualificationName>>() {
                 @Override
                 public void onChanged(@Nullable final List<QualificationName> qualificationNames) {
                     // Update the cached copy of the words in the adapter.
-                    mAdapter.setItems(qualificationNames);
+                    _adapter.setItems(qualificationNames);
                 }
             });
         }
@@ -76,7 +76,7 @@ public class QualificationListFragment extends Fragment {
 
         final RecyclerView recyclerView = new RecyclerView(container.getContext());
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
-        mListener = new onClickListener(){
+        _listener = new onClickListener(){
             @Override
             public void onClick(QualificationName item) {
                 Bundle bundle = new Bundle();
@@ -84,8 +84,8 @@ public class QualificationListFragment extends Fragment {
                 Navigation.findNavController(recyclerView).navigate(R.id.action_qualificationListFragment_to_qualificationSingleFragment,bundle);
             }
         };
-        mAdapter = new QualificationListAdapter(mListener);
-        recyclerView.setAdapter(mAdapter);
+        _adapter = new QualificationListAdapter(_listener);
+        recyclerView.setAdapter(_adapter);
 
         return recyclerView;
     }
