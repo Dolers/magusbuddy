@@ -3,6 +3,7 @@ package com.lazyfools.magusbuddy.page.skill;
 import android.content.Context;
 import android.graphics.Color;
 import android.support.annotation.NonNull;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.widget.RecyclerView;
 import android.view.Gravity;
 import android.view.LayoutInflater;
@@ -16,6 +17,10 @@ import com.lazyfools.magusbuddy.R;
 
 import java.util.List;
 
+/**
+ Creates tables from formatted texts
+
+ */
 public class QualificationDescTableAdapter extends RecyclerView.Adapter<QualificationDescTableAdapter.ViewHolder> {
     private final Context mContext;
     private List<String> mTableData;
@@ -50,6 +55,7 @@ public class QualificationDescTableAdapter extends RecyclerView.Adapter<Qualific
 
     private void setCellProperties(TextView cellTextView, int rowIt) {
         if (rowIt == 0) {
+            //ContextCompat.getColor(mContext,R.color.colorTableHeaderBackground)
             cellTextView.setBackgroundColor(mContext.getResources().getColor(R.color.colorTableHeaderBackground));
             cellTextView.setTextColor(mContext.getResources().getColor(R.color.colorTableHeaderText));
         }

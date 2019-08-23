@@ -4,12 +4,16 @@ import android.arch.lifecycle.Observer;
 import android.arch.lifecycle.ViewModelProviders;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
+import android.support.v4.app.Fragment;
+import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.lazyfools.magusbuddy.DatabaseViewModel;
+import com.lazyfools.magusbuddy.HomeActivity;
 import com.lazyfools.magusbuddy.R;
 import com.lazyfools.magusbuddy.database.entity.QualificationEntity;
 
@@ -17,16 +21,30 @@ import java.util.ArrayList;
 
 import hakobastvatsatryan.DropdownTextView;
 
-
-public class QualificationActivity extends AppCompatActivity {
+public class QualificationSingleFragment extends Fragment {
     private DatabaseViewModel mViewModel;
 
-    protected void onCreate(Bundle savedInstanceState) {
+    public QualificationSingleFragment() {
+    }
+
+    @Override
+    public void onCreate (Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.qualification_single_show);
+        ((HomeActivity)getActivity()).setBottomNavigationVisibility(View.GONE);
 
         mViewModel = ViewModelProviders.of(this).get(DatabaseViewModel.class);
-        Integer id = getIntent().getIntExtra(getResources().getString(R.string.QUALIFICATION_ID),0);
+    }
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        return inflater.inflate(R.layout.qualification_single_show, null);
+    }
+
+    @Override
+    public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
+        Integer id = getArguments().getInt(getResources().getString(R.string.QUALIFICATION_ID));
+
         mViewModel.getOneQualificationByID(id).observe(this, new Observer<QualificationEntity>() {
             @Override
             public void onChanged(@Nullable final QualificationEntity qualification) {
@@ -36,10 +54,10 @@ public class QualificationActivity extends AppCompatActivity {
     }
 
     private void populateWith(QualificationEntity qualification) {
-        TextView titleTextView = findViewById(R.id.skill_name_textview);
+        TextView titleTextView = getView().findViewById(R.id.skill_name_textview);
         titleTextView.setText(qualification.getName());
 
-        TextView descriptionTextView = findViewById(R.id.skill_description);
+        TextView descriptionTextView = getView().findViewById(R.id.skill_description);
         descriptionTextView.setText(qualification.getDescription());
 
         populateWithTables(qualification);
@@ -47,13 +65,13 @@ public class QualificationActivity extends AppCompatActivity {
     }
 
     private void populateWithTables(QualificationEntity qualification) {
-        RecyclerView tableListView = findViewById(R.id.table_listview);
+        RecyclerView tableListView = getView().findViewById(R.id.table_listview);
         ArrayList<String> descriptionTables = qualification.getDescriptionTables();
         if (descriptionTables.isEmpty()){
             tableListView.setVisibility(View.INVISIBLE);
         }
         else {
-            QualificationDescTableAdapter adapter = new QualificationDescTableAdapter(getApplicationContext());
+            QualificationDescTableAdapter adapter = new QualificationDescTableAdapter(getActivity().getApplicationContext());
             adapter.setItems(qualification.getDescriptionTables());
             tableListView.setAdapter(adapter);
         }
@@ -91,7 +109,7 @@ public class QualificationActivity extends AppCompatActivity {
         }
     }
     private DropdownTextView findLevelDropdownTextviewById(int resId){
-        View test1View = findViewById(resId);
+        View test1View = getView().findViewById(resId);
         return test1View.findViewById(R.id.level_dropdown_textview);
     }
 }

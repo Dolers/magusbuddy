@@ -2,4 +2,5 @@
 <resources>
     <string name="QUALIFICATION_ID">QUALIFICATION_ID</string>
     <string name="QUALIFICATION_TYPENAME">QUALIFICATION_TYPENAME</string>
+    <string name="QUALIFICATION_FILTER">QUALIFICATION_FILTER</string>
 </resources>

@@ -8,11 +8,12 @@ import android.widget.TextView;
 
 import com.lazyfools.magusbuddy.R;
 import com.lazyfools.magusbuddy.database.entity.QualificationEntity;
+import com.lazyfools.magusbuddy.database.entity.QualificationName;
 
 import java.util.List;
 
 class QualificationListAdapter extends RecyclerView.Adapter<QualificationListAdapter.ViewHolder> {
-    private List<QualificationEntity> mItems;
+    private List<QualificationName> mItems;
     private QualificationListFragment.onClickListener mListener;
 
     public QualificationListAdapter(QualificationListFragment.onClickListener listener) {
@@ -51,7 +52,7 @@ class QualificationListAdapter extends RecyclerView.Adapter<QualificationListAda
         return mItems.size();
     }
 
-    public void setItems(List<QualificationEntity> items) {
+    public void setItems(List<QualificationName> items) {
         this.mItems = items;
         notifyDataSetChanged();
     }
@@ -59,7 +60,7 @@ class QualificationListAdapter extends RecyclerView.Adapter<QualificationListAda
     public class ViewHolder extends RecyclerView.ViewHolder {
         public final View mView;
         public final TextView mContentView;
-        public QualificationEntity mItem;
+        public QualificationName mItem;
 
         public ViewHolder(View view) {
             super(view);

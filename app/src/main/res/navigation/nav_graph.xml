@@ -15,17 +15,14 @@
         <action
             android:id="@+id/action_qualificationCategoryListFragment_to_battleFragment"
             app:destination="@id/navigation_battle" />
-        <action
-            android:id="@+id/action_navigation_skills_to_skillSearchActivity"
-            app:destination="@id/skillSearchActivity" />
     </fragment>
     <fragment
         android:id="@+id/qualificationListFragment"
         android:name="com.lazyfools.magusbuddy.page.skill.QualificationListFragment"
         android:label="QualificationListFragment" >
         <action
-            android:id="@+id/action_qualificationListFragment_to_qualificationActivity"
-            app:destination="@id/qualificationActivity"/>
+            android:id="@+id/action_qualificationListFragment_to_qualificationSingleFragment"
+            app:destination="@id/qualificationSingleFragment" />
     </fragment>
     <fragment
         android:id="@+id/navigation_battle"
@@ -48,18 +45,8 @@
             app:popEnterAnim="@anim/nav_default_pop_enter_anim"
             app:popExitAnim="@anim/nav_default_pop_exit_anim" />
     </fragment>
-    <activity
-        android:id="@+id/qualificationActivity"
-        android:name="com.lazyfools.magusbuddy.page.skill.QualificationActivity"
-        android:label="QualificationActivity" >
-        <argument
-            android:name="QUALIFICATION_NAME"
-            app:argType="string"
-            android:defaultValue='""' />
-    </activity>
-    <activity
-        android:id="@+id/skillSearchActivity"
-        android:name="com.lazyfools.magusbuddy.SkillSearchActivity"
-        android:label="skills_search_activity"
-        tools:layout="@layout/skills_search_activity" />
+    <fragment
+        android:id="@+id/qualificationSingleFragment"
+        android:name="com.lazyfools.magusbuddy.page.skill.QualificationSingleFragment"
+        android:label="QualificationSingleFragment" />
 </navigation>

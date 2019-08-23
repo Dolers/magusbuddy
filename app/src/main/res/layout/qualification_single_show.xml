@@ -1,56 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView android:layout_width="match_parent"
-    android:layout_height="match_parent"
+<FrameLayout
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    android:id="@+id/container"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    app:navGraph="@navigation/nav_graph">
-    <LinearLayout
-        android:id="@+id/qualification_single_show"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="10sp"
-        android:layout_marginRight="10sp"
-        android:orientation="vertical">
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-        <TextView
-            android:id="@+id/skill_name_textview"
+    <ScrollView android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:name="com.lazyfools.magusbuddy.QualificationSingleFragment">
+        <LinearLayout
+            android:id="@+id/qualification_single_show"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Skill"
-            android:textAlignment="center"
-            android:textSize="32sp"
-            app:fontFamily="@font/eden_mills_bold"/>
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
+            android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/skill_description"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="TextView" />
+            <TextView
+                android:id="@+id/skill_name_textview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Skill"
+                android:textAlignment="center"
+                android:textSize="32sp"
+                app:fontFamily="@font/eden_mills_bold"/>
+
+            <TextView
+                android:id="@+id/skill_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
 
 
-        <android.support.v7.widget.RecyclerView
-            android:id="@+id/table_listview"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="5dp"
-            app:layoutManager="android.support.v7.widget.LinearLayoutManager"
-            tools:context=".page.skill.QualificationActivity"
-            tools:listitem="@layout/skill_table_item" />
-        <include layout="@layout/level_description_dropdown_textview"
-            android:id="@+id/first_level_dropdown_textview"/>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/table_listview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+                tools:context=".page.skill.QualificationActivity"
+                tools:listitem="@layout/skill_table_item" />
+            <include layout="@layout/level_description_dropdown_textview"
+                android:id="@+id/first_level_dropdown_textview"/>
 
-        <include layout="@layout/level_description_dropdown_textview"
-            android:id="@+id/second_level_dropdown_textview"/>
+            <include layout="@layout/level_description_dropdown_textview"
+                android:id="@+id/second_level_dropdown_textview"/>
 
-        <include layout="@layout/level_description_dropdown_textview"
-            android:id="@+id/third_level_dropdown_textview"/>
+            <include layout="@layout/level_description_dropdown_textview"
+                android:id="@+id/third_level_dropdown_textview"/>
 
-        <include layout="@layout/level_description_dropdown_textview"
-            android:id="@+id/fourth_level_dropdown_textview"/>
+            <include layout="@layout/level_description_dropdown_textview"
+                android:id="@+id/fourth_level_dropdown_textview"/>
 
-        <include layout="@layout/level_description_dropdown_textview"
-            android:id="@+id/fifth_level_dropdown_textview"/>
-    </LinearLayout>
-</ScrollView>
+            <include layout="@layout/level_description_dropdown_textview"
+                android:id="@+id/fifth_level_dropdown_textview"/>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>
+

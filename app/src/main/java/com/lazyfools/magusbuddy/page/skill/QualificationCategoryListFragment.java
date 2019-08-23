@@ -5,33 +5,29 @@ import android.app.SearchManager;
 import android.arch.lifecycle.Observer;
 import android.arch.lifecycle.ViewModelProviders;
 import android.content.Intent;
-import android.graphics.Typeface;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v4.view.MenuItemCompat;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.SearchView;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Toast;
 
 import androidx.navigation.Navigation;
 
 import com.lazyfools.magusbuddy.DatabaseViewModel;
+import com.lazyfools.magusbuddy.HomeActivity;
 import com.lazyfools.magusbuddy.R;
-import com.lazyfools.magusbuddy.database.entity.QualificationName;
 import com.lazyfools.magusbuddy.database.entity.QualificationType;
 
-import java.util.ArrayList;
 import java.util.List;
-
-import ir.mirrajabi.searchdialog.SimpleSearchDialogCompat;
-import ir.mirrajabi.searchdialog.core.BaseSearchDialogCompat;
-import ir.mirrajabi.searchdialog.core.SearchResultListener;
 
 /**
  * A fragment representing a list of Items.
@@ -45,6 +41,7 @@ public class QualificationCategoryListFragment extends Fragment {
     private onClickListener mListener;
     private DatabaseViewModel mViewModel;
     private QualificationCategoryListAdapter mAdapter;
+    private RecyclerView mRecyclerView;
 
     /**
      * Mandatory empty constructor for the fragment manager to instantiate the
@@ -61,6 +58,7 @@ public class QualificationCategoryListFragment extends Fragment {
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
+        ((HomeActivity)getActivity()).setBottomNavigationVisibility(View.VISIBLE);
 
         mViewModel = ViewModelProviders.of(this).get(DatabaseViewModel.class);
 
@@ -77,8 +75,8 @@ public class QualificationCategoryListFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        final RecyclerView recyclerView = new RecyclerView(container.getContext());
-        recyclerView.setLayoutManager(new GridLayoutManager(container.getContext(),2));
+        mRecyclerView = new RecyclerView(container.getContext());
+        mRecyclerView.setLayoutManager(new GridLayoutManager(container.getContext(),2));
 
         Intent intent = getActivity().getIntent();
         if (Intent.ACTION_SEARCH.equals(intent.getAction())) {
@@ -90,24 +88,58 @@ public class QualificationCategoryListFragment extends Fragment {
             public void onClick(QualificationType item) {
                 Bundle bundle = new Bundle();
                 bundle.putString(getResources().getString(R.string.QUALIFICATION_TYPENAME), item.getType().toString());
-                Navigation.findNavController(recyclerView).navigate(R.id.action_qualificationCategoryListFragment_to_qualificationListFragment,bundle);
+                Navigation.findNavController(mRecyclerView).navigate(R.id.action_qualificationCategoryListFragment_to_qualificationListFragment,bundle);
             }
         };
         mAdapter = new QualificationCategoryListAdapter(mListener,container.getContext());
-        recyclerView.setAdapter(mAdapter);
+        mRecyclerView.setAdapter(mAdapter);
 
-        return recyclerView;
+        return mRecyclerView;
     }
 
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
         inflater.inflate(R.menu.search_menu, menu);
-        super.onCreateOptionsMenu(menu, inflater);
+        //super.onCreateOptionsMenu(menu, inflater);
+        final SearchView sv = new SearchView(( (HomeActivity)getActivity()).getSupportActionBar().getThemedContext());
+        initSearchView(menu, sv);
+
+        sv.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                System.out.println("search query submit" + query);
+                sv.clearFocus();
+                Bundle bundle = new Bundle();
+                bundle.putString(getResources().getString(R.string.QUALIFICATION_FILTER), query);
+                Navigation.findNavController(mRecyclerView).navigate(R.id.action_qualificationCategoryListFragment_to_qualificationListFragment,bundle);
+                return true;
+            }
+
+
+            @Override
+            public boolean onQueryTextChange(String newText) {
+                //System.out.println("tap" + newText);
+                return false;
+            }
+        });
     }
 
+    @SuppressWarnings("deprecation")
+    private void initSearchView(Menu menu, SearchView sv) {
+        MenuItem item = menu.findItem(R.id.search_item);
+        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.LOLLIPOP_MR1) {
+            MenuItemCompat.setShowAsAction(item, MenuItemCompat.SHOW_AS_ACTION_COLLAPSE_ACTION_VIEW | MenuItemCompat.SHOW_AS_ACTION_IF_ROOM);
+            MenuItemCompat.setActionView(item, sv);
+        }
+        else {
+            item.setShowAsAction(item.SHOW_AS_ACTION_COLLAPSE_ACTION_VIEW | item.SHOW_AS_ACTION_IF_ROOM);
+            item.setActionView(sv);
+        }
+    }
+/*
     @Override public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
-            case R.id.search_icon:
+            case R.id.search_item:
                 getActivity().onSearchRequested();
                 /*
                 List<QualificationName> names = mViewModel.getAllQualificationNames().getValue();
@@ -127,11 +159,11 @@ public class QualificationCategoryListFragment extends Fragment {
                 );
                 dialog.show();
                 dialog.getSearchBox().setTypeface(Typeface.SERIF);*/
-                return true;
+                /*return true;
             default:
                 return super.onOptionsItemSelected(item);
         }
-    }
+    }*/
 
     @Override
     public void onDetach() {

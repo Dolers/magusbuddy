@@ -43,8 +43,8 @@ public class DatabaseViewModel extends AndroidViewModel {
         return mAllQualifications;
     }
 
-    public LiveData<List<QualificationEntity>> getAllQualificationsOfType(QualificationEntity.QualificationTypeEnum type) {
-        return mQualificationRepository.getAllQualificationsOfType(type);
+    public LiveData<List<QualificationName>> getAllQualificationNamesOfType(QualificationEntity.QualificationTypeEnum type) {
+        return mQualificationRepository.getAllQualificationNamesOfType(type);
     }
 
     public LiveData<List<QualificationType>> getAllQualificationTypes() {

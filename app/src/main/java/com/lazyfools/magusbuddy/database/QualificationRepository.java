@@ -39,8 +39,8 @@ public class QualificationRepository {
         return mQualificationDao.getNamesByFilter(name);
     }
 
-    public LiveData<List<QualificationEntity>> getAllQualificationsOfType(QualificationEntity.QualificationTypeEnum type) {
-        return mQualificationDao.getLiveAllOfType(type);
+    public LiveData<List<QualificationName>> getAllQualificationNamesOfType(QualificationEntity.QualificationTypeEnum type) {
+        return mQualificationDao.getLiveAllNamesOfType(type);
     }
 
     public LiveData<List<QualificationType>> getAllTypes() {

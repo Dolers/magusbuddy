@@ -13,8 +13,8 @@
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="165" />
-                            <option name="y" value="9" />
+                            <option name="x" value="500" />
+                            <option name="y" value="368" />
                           </Point>
                         </option>
                         <option name="myPositions">
@@ -39,8 +39,8 @@
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="-49" />
-                            <option name="y" value="8" />
+                            <option name="x" value="744" />
+                            <option name="y" value="368" />
                           </Point>
                         </option>
                         <option name="myPositions">
@@ -60,17 +60,12 @@
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="397" />
-                            <option name="y" value="12" />
+                            <option name="x" value="256" />
+                            <option name="y" value="76" />
                           </Point>
                         </option>
                         <option name="myPositions">
                           <map>
-                            <entry key="action_navigation_skills_to_skillSearchActivity">
-                              <value>
-                                <LayoutPositions />
-                              </value>
-                            </entry>
                             <entry key="action_qualificationCategoryListFragment_to_battleFragment">
                               <value>
                                 <LayoutPositions />
@@ -86,30 +81,18 @@
                       </LayoutPositions>
                     </value>
                   </entry>
-                  <entry key="qualificationActivity">
-                    <value>
-                      <LayoutPositions>
-                        <option name="myPosition">
-                          <Point>
-                            <option name="x" value="938" />
-                            <option name="y" value="30" />
-                          </Point>
-                        </option>
-                      </LayoutPositions>
-                    </value>
-                  </entry>
                   <entry key="qualificationListFragment">
                     <value>
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="673" />
-                            <option name="y" value="28" />
+                            <option name="x" value="500" />
+                            <option name="y" value="12" />
                           </Point>
                         </option>
                         <option name="myPositions">
                           <map>
-                            <entry key="action_qualificationListFragment_to_qualificationActivity">
+                            <entry key="action_qualificationListFragment_to_qualificationSingleFragment">
                               <value>
                                 <LayoutPositions />
                               </value>
@@ -119,13 +102,13 @@
                       </LayoutPositions>
                     </value>
                   </entry>
-                  <entry key="skillSearchActivity">
+                  <entry key="qualificationSingleFragment">
                     <value>
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="545" />
-                            <option name="y" value="-305" />
+                            <option name="x" value="759" />
+                            <option name="y" value="8" />
                           </Point>
                         </option>
                       </LayoutPositions>
@@ -138,24 +121,7 @@
         </entry>
         <entry key="skill_search_navgraph.xml">
           <value>
-            <LayoutPositions>
-              <option name="myPositions">
-                <map>
-                  <entry key="skillSearchActivity3">
-                    <value>
-                      <LayoutPositions>
-                        <option name="myPosition">
-                          <Point>
-                            <option name="x" value="40" />
-                            <option name="y" value="40" />
-                          </Point>
-                        </option>
-                      </LayoutPositions>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </LayoutPositions>
+            <LayoutPositions />
           </value>
         </entry>
       </map>

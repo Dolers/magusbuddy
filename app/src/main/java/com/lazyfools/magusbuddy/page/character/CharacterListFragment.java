@@ -12,6 +12,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.lazyfools.magusbuddy.DatabaseViewModel;
+import com.lazyfools.magusbuddy.HomeActivity;
 import com.lazyfools.magusbuddy.database.entity.CharacterEntity;
 
 import java.util.List;
@@ -38,6 +39,7 @@ public class CharacterListFragment extends Fragment {
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
 
+        ((HomeActivity)getActivity()).setBottomNavigationVisibility(View.VISIBLE);
         mViewModel = ViewModelProviders.of(this).get(DatabaseViewModel.class);
 
         mViewModel.getAllCharacters().observe(this, new Observer<List<CharacterEntity>>() {

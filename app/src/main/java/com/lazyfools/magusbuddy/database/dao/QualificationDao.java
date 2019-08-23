@@ -17,8 +17,8 @@ public abstract class QualificationDao {
     @Query("SELECT * FROM qualifications")
     public abstract LiveData<List<QualificationEntity>> getLiveAll();
 
-    @Query("SELECT * FROM qualifications WHERE type = :type")
-    public abstract LiveData<List<QualificationEntity>> getLiveAllOfType(QualificationEntity.QualificationTypeEnum type);
+    @Query("SELECT id, name FROM qualifications WHERE type = :type")
+    public abstract LiveData<List<QualificationName>> getLiveAllNamesOfType(QualificationEntity.QualificationTypeEnum type);
 
     @Query("SELECT DISTINCT type FROM qualifications")
     public abstract LiveData<List<QualificationType>> getTypes();
