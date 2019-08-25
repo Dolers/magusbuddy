@@ -12,8 +12,8 @@
         android:title="@string/menu_battle" />
 
     <item
-        android:id="@+id/navigation_skills"
+        android:id="@+id/navigation_codex"
         android:icon="@drawable/ic_notifications_black_24dp"
-        android:title="@string/menu_skills" />
+        android:title="@string/codex" />
 
 </menu>

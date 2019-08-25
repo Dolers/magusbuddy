@@ -9,4 +9,14 @@
     <string name="third_level">3. fok</string>
     <string name="fourth_level">4. fok</string>
     <string name="fifth_level">5. fok</string>
+    <string name="highmagic">HighMagic</string>
+    <string name="description">Description</string>
+    <string name="double_digit_number">99</string>
+    <string name="mp">Mp</string>
+    <string name="emp">E/Mp</string>
+    <string name="magustime">1 sz</string>
+    <string name="casttime">Varázslás ideje </string>
+    <string name="durationTime">Időtartam</string>
+    <string name="range">Hatótáv</string>
+    <string name="codex">Codex</string>
 </resources>

@@ -6,19 +6,22 @@
     app:startDestination="@id/navigation_home">
 
     <fragment
-        android:id="@+id/navigation_skills"
-        android:name="com.lazyfools.magusbuddy.page.skill.QualificationCategoryListFragment"
-        android:label="QualificationCategoryListFragment" >
+        android:id="@+id/navigation_codex"
+        android:name="com.lazyfools.magusbuddy.page.codex.CodexCategoryListFragment"
+        android:label="CodexCategoryListFragment" >
         <action
-            android:id="@+id/action_qualificationCategoryListFragment_to_qualificationListFragment"
-            app:destination="@id/qualificationListFragment" />
-        <action
-            android:id="@+id/action_qualificationCategoryListFragment_to_battleFragment"
+            android:id="@+id/action_navigation_codex_to_battleFragment"
             app:destination="@id/navigation_battle" />
+        <action
+            android:id="@+id/action_navigation_codex_to_highMagicCategoryListFragment"
+            app:destination="@id/highMagicCategoryListFragment" />
+        <action
+            android:id="@+id/action_navigation_codex_to_qualificationCategoryListFragment"
+            app:destination="@id/qualificationCategoryListFragment" />
     </fragment>
     <fragment
         android:id="@+id/qualificationListFragment"
-        android:name="com.lazyfools.magusbuddy.page.skill.QualificationListFragment"
+        android:name="com.lazyfools.magusbuddy.page.codex.qualification.QualificationListFragment"
         android:label="QualificationListFragment" >
         <action
             android:id="@+id/action_qualificationListFragment_to_qualificationSingleFragment"
@@ -30,7 +33,7 @@
         android:label="@string/menu_battle">
         <action
             android:id="@+id/action_battleFragment_to_qualificationCategoryListFragment"
-            app:destination="@+id/navigation_skills" />
+            app:destination="@+id/navigation_codex" />
         <action
             android:id="@+id/action_battleFragment_to_characterListFragment"
             app:destination="@id/navigation_home" />
@@ -47,6 +50,34 @@
     </fragment>
     <fragment
         android:id="@+id/qualificationSingleFragment"
-        android:name="com.lazyfools.magusbuddy.page.skill.QualificationSingleFragment"
+        android:name="com.lazyfools.magusbuddy.page.codex.qualification.QualificationSingleFragment"
         android:label="QualificationSingleFragment" />
+    <fragment
+        android:id="@+id/highMagicCategoryListFragment"
+        android:name="com.lazyfools.magusbuddy.page.codex.highmagic.HighMagicCategoryListFragment"
+        android:label="HighMagicCategoryListFragment" >
+        <action
+            android:id="@+id/action_highMagicCategoryListFragment_to_highMagicListFragment"
+            app:destination="@id/highMagicListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/highMagicListFragment"
+        android:name="com.lazyfools.magusbuddy.page.codex.highmagic.HighMagicListFragment"
+        android:label="HighMagicListFragment" >
+        <action
+            android:id="@+id/action_highMagicListFragment_to_highMagicSingleFragment"
+            app:destination="@id/highMagicSingleFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/highMagicSingleFragment"
+        android:name="com.lazyfools.magusbuddy.page.codex.highmagic.HighMagicSingleFragment"
+        android:label="HighMagicSingleFragment" />
+    <fragment
+        android:id="@+id/qualificationCategoryListFragment"
+        android:name="com.lazyfools.magusbuddy.page.codex.qualification.QualificationCategoryListFragment"
+        android:label="QualificationCategoryListFragment" >
+        <action
+            android:id="@+id/action_qualificationCategoryListFragment_to_qualificationListFragment"
+            app:destination="@id/qualificationListFragment" />
+    </fragment>
 </navigation>

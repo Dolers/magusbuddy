@@ -1,4 +1,4 @@
-package com.lazyfools.magusbuddy.page.skill;
+package com.lazyfools.magusbuddy.page.codex.qualification;
 
 
 import android.arch.lifecycle.Observer;
@@ -18,7 +18,8 @@ import com.lazyfools.magusbuddy.DatabaseViewModel;
 import com.lazyfools.magusbuddy.HomeActivity;
 import com.lazyfools.magusbuddy.R;
 import com.lazyfools.magusbuddy.database.entity.QualificationEntity;
-import com.lazyfools.magusbuddy.database.entity.QualificationName;
+import com.lazyfools.magusbuddy.database.entity.NameEntity;
+import com.lazyfools.magusbuddy.page.codex.NameListAdapter;
 
 import java.util.List;
 
@@ -27,7 +28,7 @@ import java.util.List;
  * Need a QUALIFICATION_TYPENAME or QUALIFICATION_FILTER as argument to work
  */
 public class QualificationListFragment extends Fragment {
-    private QualificationListAdapter _adapter;
+    private NameListAdapter _adapter;
     private QualificationListFragment.onClickListener _listener;
 
     // TODO: Customize parameters
@@ -45,28 +46,38 @@ public class QualificationListFragment extends Fragment {
     }
 
     private void initViewModel() {
-        String arg = getArguments().getString(getResources().getString(R.string.QUALIFICATION_TYPENAME));
-        if (arg == null){
-            arg = getArguments().getString(getResources().getString(R.string.QUALIFICATION_FILTER));
-            _viewModel.getQualificationNamesOfFilter(arg).observe(this, new Observer<List<QualificationName>>() {
-                @Override
-                public void onChanged(@Nullable final List<QualificationName> qualificationNames) {
-                    // Update the cached copy of the words in the adapter.
-                    _adapter.setItems(qualificationNames);
-                }
-            });
+        if (getArguments() != null) {
+            if (getArguments().containsKey(getResources().getString(R.string.QUALIFICATION_TYPE)))
+                initViewModelWithType();
+            else if (getArguments().containsKey(getResources().getString(R.string.QUALIFICATION_FILTER))) {
+                initViewModelWithFilter();
+            }
         }
-        else {
-            QualificationEntity.TypeEnum typeFilter = QualificationEntity.TypeEnum.valueOf(arg);
+    }
 
-            _viewModel.getAllQualificationNamesOfType(typeFilter).observe(this, new Observer<List<QualificationName>>() {
-                @Override
-                public void onChanged(@Nullable final List<QualificationName> qualificationNames) {
-                    // Update the cached copy of the words in the adapter.
-                    _adapter.setItems(qualificationNames);
-                }
-            });
-        }
+    private void initViewModelWithType() {
+        int typeOrdinal = getArguments().getInt(getResources().getString(R.string.QUALIFICATION_TYPE));
+        QualificationEntity.TypeEnum typeFilter = QualificationEntity.TypeEnum.values()[typeOrdinal];
+
+        _viewModel.getAllQualificationNamesOfType(typeFilter).observe(this, new Observer<List<NameEntity>>() {
+            @Override
+            public void onChanged(@Nullable final List<NameEntity> nameEntities) {
+                // Update the cached copy of the words in the adapter.
+                _adapter.setItems(nameEntities);
+            }
+        });
+    }
+
+    private void initViewModelWithFilter() {
+        String filter = getArguments().getString(getResources().getString(R.string.QUALIFICATION_FILTER));
+
+        _viewModel.getQualificationNamesOfFilter(filter).observe(this, new Observer<List<NameEntity>>() {
+            @Override
+            public void onChanged(@Nullable final List<NameEntity> nameEntities) {
+                // Update the cached copy of the words in the adapter.
+                _adapter.setItems(nameEntities);
+            }
+        });
     }
 
 
@@ -78,19 +89,17 @@ public class QualificationListFragment extends Fragment {
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
         _listener = new onClickListener(){
             @Override
-            public void onClick(QualificationName item) {
+            public void onClick(NameEntity item) {
                 Bundle bundle = new Bundle();
                 bundle.putInt(getResources().getString(R.string.QUALIFICATION_ID), item.getId());
                 Navigation.findNavController(recyclerView).navigate(R.id.action_qualificationListFragment_to_qualificationSingleFragment,bundle);
             }
         };
-        _adapter = new QualificationListAdapter(_listener);
+        _adapter = new NameListAdapter(_listener);
         recyclerView.setAdapter(_adapter);
 
         return recyclerView;
     }
 
-    public interface onClickListener {
-        void onClick(QualificationName item);
-    }
+    public interface onClickListener extends com.lazyfools.magusbuddy.page.codex.onClickListener<NameEntity>{ }
 }

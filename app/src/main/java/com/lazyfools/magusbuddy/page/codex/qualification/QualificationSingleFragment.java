@@ -1,11 +1,11 @@
-package com.lazyfools.magusbuddy.page.skill;
+package com.lazyfools.magusbuddy.page.codex.qualification;
 
 import android.arch.lifecycle.Observer;
 import android.arch.lifecycle.ViewModelProviders;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -16,6 +16,7 @@ import com.lazyfools.magusbuddy.DatabaseViewModel;
 import com.lazyfools.magusbuddy.HomeActivity;
 import com.lazyfools.magusbuddy.R;
 import com.lazyfools.magusbuddy.database.entity.QualificationEntity;
+import com.lazyfools.magusbuddy.page.codex.DescTableAdapter;
 
 import java.util.ArrayList;
 
@@ -36,13 +37,13 @@ public class QualificationSingleFragment extends Fragment {
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         return inflater.inflate(R.layout.qualification_single_show, null);
     }
 
     @Override
-    public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         Integer id = getArguments().getInt(getResources().getString(R.string.QUALIFICATION_ID));
 
         _viewModel.getOneQualificationByID(id).observe(this, new Observer<QualificationEntity>() {
@@ -71,18 +72,18 @@ public class QualificationSingleFragment extends Fragment {
             tableListView.setVisibility(View.INVISIBLE);
         }
         else {
-            QualificationDescTableAdapter adapter = new QualificationDescTableAdapter(getActivity().getApplicationContext());
+            DescTableAdapter adapter = new DescTableAdapter(getActivity().getApplicationContext());
             adapter.setItems(qualification.getDescriptionTables());
             tableListView.setAdapter(adapter);
         }
     }
 
     private void populateLevelDescriptionDropdownViews(QualificationEntity qualification) {
-        DropdownTextView firstLevelTextView = findLevelDropdownTextviewById(R.id.first_level_dropdown_textview);
-        DropdownTextView secondLevelTextView = findLevelDropdownTextviewById(R.id.second_level_dropdown_textview);
-        DropdownTextView thirdLevelTextView = findLevelDropdownTextviewById(R.id.third_level_dropdown_textview);
-        DropdownTextView fourthLevelTextView = findLevelDropdownTextviewById(R.id.fourth_level_dropdown_textview);
-        DropdownTextView fifthLevelTextView = findLevelDropdownTextviewById(R.id.fifth_level_dropdown_textview);
+        DropdownTextView firstLevelTextView = findLevelDropdownTextViewById(R.id.first_level_dropdown_textview);
+        DropdownTextView secondLevelTextView = findLevelDropdownTextViewById(R.id.second_level_dropdown_textview);
+        DropdownTextView thirdLevelTextView = findLevelDropdownTextViewById(R.id.third_level_dropdown_textview);
+        DropdownTextView fourthLevelTextView = findLevelDropdownTextViewById(R.id.fourth_level_dropdown_textview);
+        DropdownTextView fifthLevelTextView = findLevelDropdownTextViewById(R.id.fifth_level_dropdown_textview);
 
         if (qualification.getFirstLevelDesc() == null){
             firstLevelTextView.setVisibility(View.INVISIBLE);
@@ -108,7 +109,7 @@ public class QualificationSingleFragment extends Fragment {
             fifthLevelTextView.setContentText(qualification.getFifthLevelDesc());
         }
     }
-    private DropdownTextView findLevelDropdownTextviewById(int resId){
+    private DropdownTextView findLevelDropdownTextViewById(int resId){
         View test1View = getView().findViewById(resId);
         return test1View.findViewById(R.id.level_dropdown_textview);
     }

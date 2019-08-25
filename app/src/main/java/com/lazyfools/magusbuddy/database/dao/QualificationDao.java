@@ -4,8 +4,8 @@ import android.arch.lifecycle.LiveData;
 import android.arch.persistence.room.Dao;
 import android.arch.persistence.room.Query;
 
+import com.lazyfools.magusbuddy.database.entity.NameEntity;
 import com.lazyfools.magusbuddy.database.entity.QualificationEntity;
-import com.lazyfools.magusbuddy.database.entity.QualificationName;
 import com.lazyfools.magusbuddy.database.entity.QualificationType;
 
 import java.util.List;
@@ -16,16 +16,16 @@ public abstract class QualificationDao implements IBaseDao<QualificationEntity> 
     public abstract LiveData<List<QualificationEntity>> getLiveAll();
 
     @Query("SELECT id, name FROM qualifications WHERE type = :type")
-    public abstract LiveData<List<QualificationName>> getLiveAllNamesOfType(QualificationEntity.TypeEnum type);
+    public abstract LiveData<List<NameEntity>> getLiveAllNamesOfType(QualificationEntity.TypeEnum type);
 
     @Query("SELECT DISTINCT type FROM qualifications")
     public abstract LiveData<List<QualificationType>> getTypes();
 
     @Query("SELECT id, name FROM qualifications")
-    public abstract LiveData<List<QualificationName>> getAllNames();
+    public abstract LiveData<List<NameEntity>> getAllNames();
 
     @Query("SELECT id, name FROM qualifications WHERE name LIKE  '%' || :name || '%'")
-    public abstract LiveData<List<QualificationName>> getNamesByFilter(String name);
+    public abstract LiveData<List<NameEntity>> getNamesByFilter(String name);
 
     @Query("DELETE FROM qualifications")
     public abstract void deleteAll();

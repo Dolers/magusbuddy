@@ -1,0 +1,42 @@
+[
+ {
+   "nev": "Képzettség",
+   "tablanev": "QUALIFICATION",
+   "kepnev": "codex_qualification"
+ },
+ {
+   "nev": "Bárdmágia",
+   "tablanev": "BARDMAGIC",
+   "kepnev": "codex_bardmagic"
+ },
+ {
+   "nev": "Boszorkánymágia",
+   "tablanev": "WITCHMAGIC",
+   "kepnev": "codex_witchmagic"
+ },
+ {
+   "nev": "Boszorkánymester mágia",
+   "tablanev": "WARLOCKMAGIC",
+   "kepnev": "codex_warlockmagic"
+ },
+ {
+   "nev": "Magasmágia",
+   "tablanev": "HIGHMAGIC",
+   "kepnev": "codex_highmagic"
+ },
+ {
+   "nev": "Pszi",
+   "tablanev": "PSI",
+   "kepnev": "codex_psi"
+ },
+ {
+   "nev": "Szakrális mágia",
+   "tablanev": "SACRALMAGIC",
+   "kepnev": "codex_sacralmagic"
+ },
+ {
+   "nev": "Tűzvarázsló mágia",
+   "tablanev": "FIREMAGEMAGIC",
+   "kepnev": "codex_firemagemagic"
+ }
+]

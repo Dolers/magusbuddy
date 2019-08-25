@@ -1,4 +1,4 @@
-package com.lazyfools.magusbuddy.page.skill;
+package com.lazyfools.magusbuddy.page.codex.qualification;
 
 
 import android.app.SearchManager;
@@ -26,29 +26,24 @@ import com.lazyfools.magusbuddy.DatabaseViewModel;
 import com.lazyfools.magusbuddy.HomeActivity;
 import com.lazyfools.magusbuddy.R;
 import com.lazyfools.magusbuddy.database.entity.QualificationType;
+import com.lazyfools.magusbuddy.page.codex.onClickListener;
 
 import java.util.List;
 
 /**
- * A fragment representing a list of Items.
+ * A fragment representing a list of picture items.
  * <p/>
  * Activities containing this fragment MUST implement the {@link onClickListener}
  * interface.
  */
 public class QualificationCategoryListFragment extends Fragment {
 
-    // TODO: Customize parameters
-    private onClickListener _listener;
+    private qualificationTypeOnClickListener _listener;
     private DatabaseViewModel _viewModel;
     private QualificationCategoryListAdapter _adapter;
     private RecyclerView _recyclerView;
 
-    /**
-     * Mandatory empty constructor for the fragment manager to instantiate the
-     * fragment (e.g. upon screen orientation changes).
-     */
-    public QualificationCategoryListFragment() {
-    }
+    public QualificationCategoryListFragment() { }
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -83,11 +78,11 @@ public class QualificationCategoryListFragment extends Fragment {
             String query = intent.getStringExtra(SearchManager.QUERY);
             //TODO do smth with query
         }
-        _listener = new onClickListener(){
+        _listener = new qualificationTypeOnClickListener(){
             @Override
             public void onClick(QualificationType item) {
                 Bundle bundle = new Bundle();
-                bundle.putString(getResources().getString(R.string.QUALIFICATION_TYPENAME), item.getType().toString());
+                bundle.putInt(getResources().getString(R.string.QUALIFICATION_TYPE), item.getType().ordinal());
                 Navigation.findNavController(_recyclerView).navigate(R.id.action_qualificationCategoryListFragment_to_qualificationListFragment,bundle);
             }
         };
@@ -107,7 +102,6 @@ public class QualificationCategoryListFragment extends Fragment {
         sv.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
             public boolean onQueryTextSubmit(String query) {
-                System.out.println("search query submit" + query);
                 sv.clearFocus();
                 Bundle bundle = new Bundle();
                 bundle.putString(getResources().getString(R.string.QUALIFICATION_FILTER), query);
@@ -142,15 +136,15 @@ public class QualificationCategoryListFragment extends Fragment {
             case R.id.search_item:
                 getActivity().onSearchRequested();
                 /*
-                List<QualificationName> names = _viewModel.getAllQualificationNames().getValue();
+                List<NameEntity> names = _viewModel.getAllQualificationNames().getValue();
 
-                SimpleSearchDialogCompat dialog = new SimpleSearchDialogCompat<QualificationName>(getActivity(), "Search...",
+                SimpleSearchDialogCompat dialog = new SimpleSearchDialogCompat<NameEntity>(getActivity(), "Search...",
                         "What are you looking for...?", null, (ArrayList) names,
-                        new SearchResultListener<QualificationName>() {
+                        new SearchResultListener<NameEntity>() {
                             @Override
                             public void onSelected(
                                     BaseSearchDialogCompat dialog,
-                                    QualificationName item, int position
+                                    NameEntity item, int position
                             ) {
 
                                 dialog.dismiss();
@@ -181,7 +175,7 @@ public class QualificationCategoryListFragment extends Fragment {
      * "http://developer.android.com/training/basics/fragments/communicating.html"
      * >Communicating with Other Fragments</a> for more information.
      */
-    public interface onClickListener {
+    public interface qualificationTypeOnClickListener extends onClickListener<QualificationType> {
         void onClick(QualificationType item);
     }
 }

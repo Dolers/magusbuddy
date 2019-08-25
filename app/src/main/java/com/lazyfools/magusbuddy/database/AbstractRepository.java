@@ -20,8 +20,8 @@ public abstract class AbstractRepository<Dao extends IBaseDao<Entity>,Entity> {
         new RepositoryAsyncTask(_dao,Operation.DELETE).execute(entity);
     }
 
-    public void deleteAll(Entity... entity){
-        new RepositoryAsyncTask(_dao,Operation.DELETE_ALL).execute(entity);
+    public void deleteAll(){
+        new RepositoryAsyncTask(_dao,Operation.DELETE_ALL).execute();
     }
 
     public static class RepositoryAsyncTask<Dao extends IBaseDao<Entity>,Entity> extends AsyncTask<Entity, Void, Void> {
@@ -47,7 +47,7 @@ public abstract class AbstractRepository<Dao extends IBaseDao<Entity>,Entity> {
                     _asyncTaskDao.delete(params[0]);
                     break;
                 case DELETE_ALL:
-                    _asyncTaskDao.deleteAll(params);
+                    _asyncTaskDao.deleteAll();
                     break;
             }
             return null;

@@ -63,7 +63,7 @@ public class QualificationPopulizer implements Populizer{
                 Log.i("AppDatabase", "képzettség: "+i+" név: "+qJson.getString("képzettség"));
                 QualificationEntity entity = new QualificationEntity(
                         qJson.getString("képzettség"),
-                        QualificationEntity.TypeEnum.valueOf(qJson.getString("tipus")),
+                        QualificationEntity.TypeEnum.valueOf(qJson.getString("tipus").toUpperCase()),
                         qJson.getInt("nehézség"),
                         qJson.getBoolean("erő"),
                         qJson.getBoolean("gyorsasag"),

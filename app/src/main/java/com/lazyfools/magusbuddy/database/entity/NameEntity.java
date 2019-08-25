@@ -4,7 +4,7 @@ import android.arch.persistence.room.ColumnInfo;
 
 import ir.mirrajabi.searchdialog.core.Searchable;
 
-public class QualificationName  implements Searchable {
+public class NameEntity implements Searchable {
     @ColumnInfo(name = "id")
     public Integer _id;
 

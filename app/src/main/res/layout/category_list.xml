@@ -10,5 +10,5 @@
     <android.support.v7.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:listitem="@layout/skills_category_item" />
+        tools:listitem="@layout/category_list_item" />
 </GridLayout>

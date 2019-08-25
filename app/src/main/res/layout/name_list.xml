@@ -15,6 +15,6 @@
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
         app:layoutManager="LinearLayoutManager"
-        tools:listitem="@layout/fragment_skills_item" />
+        tools:listitem="@layout/name_list_item" />
 
 </FrameLayout>

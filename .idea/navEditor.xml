@@ -8,13 +8,67 @@
             <LayoutPositions>
               <option name="myPositions">
                 <map>
+                  <entry key="highMagicCategoryListFragment">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="258" />
+                            <option name="y" value="148" />
+                          </Point>
+                        </option>
+                        <option name="myPositions">
+                          <map>
+                            <entry key="action_highMagicCategoryListFragment_to_highMagicListFragment">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                          </map>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
+                  <entry key="highMagicListFragment">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="502" />
+                            <option name="y" value="148" />
+                          </Point>
+                        </option>
+                        <option name="myPositions">
+                          <map>
+                            <entry key="action_highMagicListFragment_to_highMagicSingleFragment">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                          </map>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
+                  <entry key="highMagicSingleFragment">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="746" />
+                            <option name="y" value="148" />
+                          </Point>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
                   <entry key="navigation_battle">
                     <value>
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="500" />
-                            <option name="y" value="368" />
+                            <option name="x" value="-309" />
+                            <option name="y" value="294" />
                           </Point>
                         </option>
                         <option name="myPositions">
@@ -34,13 +88,44 @@
                       </LayoutPositions>
                     </value>
                   </entry>
+                  <entry key="navigation_codex">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="-83" />
+                            <option name="y" value="283" />
+                          </Point>
+                        </option>
+                        <option name="myPositions">
+                          <map>
+                            <entry key="action_navigation_codex_to_qualificationCategoryListFragment">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                            <entry key="action_navigation_skills_to_highMagicCategoryListFragment">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                            <entry key="action_qualificationCategoryListFragment_to_battleFragment">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                          </map>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
                   <entry key="navigation_home">
                     <value>
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="744" />
-                            <option name="y" value="368" />
+                            <option name="x" value="-549" />
+                            <option name="y" value="299" />
                           </Point>
                         </option>
                         <option name="myPositions">
@@ -55,22 +140,17 @@
                       </LayoutPositions>
                     </value>
                   </entry>
-                  <entry key="navigation_skills">
+                  <entry key="qualificationCategoryListFragment">
                     <value>
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="256" />
-                            <option name="y" value="76" />
+                            <option name="x" value="249" />
+                            <option name="y" value="500" />
                           </Point>
                         </option>
                         <option name="myPositions">
                           <map>
-                            <entry key="action_qualificationCategoryListFragment_to_battleFragment">
-                              <value>
-                                <LayoutPositions />
-                              </value>
-                            </entry>
                             <entry key="action_qualificationCategoryListFragment_to_qualificationListFragment">
                               <value>
                                 <LayoutPositions />
@@ -86,8 +166,8 @@
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="500" />
-                            <option name="y" value="12" />
+                            <option name="x" value="493" />
+                            <option name="y" value="500" />
                           </Point>
                         </option>
                         <option name="myPositions">
@@ -107,8 +187,8 @@
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="759" />
-                            <option name="y" value="8" />
+                            <option name="x" value="737" />
+                            <option name="y" value="500" />
                           </Point>
                         </option>
                       </LayoutPositions>

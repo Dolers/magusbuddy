@@ -42,8 +42,8 @@
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="5dp"
                 app:layoutManager="android.support.v7.widget.LinearLayoutManager"
-                tools:context=".page.skill.QualificationActivity"
-                tools:listitem="@layout/skill_table_item" />
+                tools:context=".page.codex.qualification.QualificationActivity"
+                tools:listitem="@layout/description_table" />
             <include layout="@layout/level_description_dropdown_textview"
                 android:id="@+id/first_level_dropdown_textview"/>
 

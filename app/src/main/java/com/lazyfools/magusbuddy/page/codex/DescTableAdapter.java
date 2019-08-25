@@ -1,9 +1,8 @@
-package com.lazyfools.magusbuddy.page.skill;
+package com.lazyfools.magusbuddy.page.codex;
 
 import android.content.Context;
 import android.graphics.Color;
 import android.support.annotation.NonNull;
-import android.support.v4.content.ContextCompat;
 import android.support.v7.widget.RecyclerView;
 import android.view.Gravity;
 import android.view.LayoutInflater;
@@ -21,13 +20,13 @@ import java.util.List;
  Creates tables from formatted texts
 
  */
-public class QualificationDescTableAdapter extends RecyclerView.Adapter<QualificationDescTableAdapter.ViewHolder> {
+public class DescTableAdapter extends RecyclerView.Adapter<DescTableAdapter.ViewHolder> {
     private final Context _context;
     private List<String> _tableData;
     private TableRow.LayoutParams _cellParams;
     private TableRow.LayoutParams _rowParams;
 
-    public QualificationDescTableAdapter(Context context) {
+    public DescTableAdapter(Context context) {
         _context = context;
         setupLayoutParams();
     }
@@ -89,7 +88,7 @@ public class QualificationDescTableAdapter extends RecyclerView.Adapter<Qualific
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.skill_table_item, parent, false);
+                .inflate(R.layout.description_table, parent, false);
         return new ViewHolder(view);
     }
 
@@ -118,7 +117,7 @@ public class QualificationDescTableAdapter extends RecyclerView.Adapter<Qualific
         public ViewHolder(View view) {
             super(view);
             _view = view;
-            _tableLayout = view.findViewById(R.id.skill_description_table);
+            _tableLayout = view.findViewById(R.id.description_table);
         }
     }
 }

@@ -8,12 +8,23 @@ import java.util.ArrayList;
 @Entity(tableName = "qualifications")
 public class QualificationEntity {
     public enum TypeEnum {
-        HARCI,
-        VILAGI,
-        SZOCIALIS,
-        ALVILAGI,
-        TUDOMANYOS,
-        MISZTIKUS
+        HARCI("Harci"),
+        VILAGI("Világi"),
+        SZOCIALIS("Szociális"),
+        ALVILAGI("Alvilági"),
+        TUDOMANYOS("Tudományos"),
+        MISZTIKUS("Misztikus");
+
+        private final String name;
+
+        private TypeEnum(String s) {
+            name = s;
+        }
+
+        //public boolean equalsName(String otherName) { return name.equals(otherName); }
+        public String toString() {
+            return this.name;
+        }
     }
 
     @PrimaryKey(autoGenerate = true)

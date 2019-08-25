@@ -11,6 +11,8 @@ public class DbPopulizer implements Populizer{
     public DbPopulizer(final Context context, AppDatabase db){
         _populizers.add(new CharacterPopulizer(db));//TODO Shouldn't be in the final product
         _populizers.add(new QualificationPopulizer(context,db));
+        _populizers.add(new HighMagicPopulizer(context,db));
+        _populizers.add(new CodexPopulizer(context,db));
     }
 
     @Override

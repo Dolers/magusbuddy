@@ -11,11 +11,13 @@ import android.support.annotation.NonNull;
 import com.lazyfools.magusbuddy.database.dao.APIKeyDao;
 import com.lazyfools.magusbuddy.database.dao.CharacterAPIRelationDao;
 import com.lazyfools.magusbuddy.database.dao.CharacterDao;
+import com.lazyfools.magusbuddy.database.dao.CodexDao;
 import com.lazyfools.magusbuddy.database.dao.HighMagicDao;
 import com.lazyfools.magusbuddy.database.dao.QualificationDao;
 import com.lazyfools.magusbuddy.database.entity.APIKeyEntity;
 import com.lazyfools.magusbuddy.database.entity.CharacterAPIRelationEntity;
 import com.lazyfools.magusbuddy.database.entity.CharacterEntity;
+import com.lazyfools.magusbuddy.database.entity.CodexEntity;
 import com.lazyfools.magusbuddy.database.entity.HighMagicEntity;
 import com.lazyfools.magusbuddy.database.entity.QualificationEntity;
 import com.lazyfools.magusbuddy.database.populate.DbPopulizer;
@@ -26,9 +28,10 @@ import com.lazyfools.magusbuddy.database.populate.DbPopulizer;
             APIKeyEntity.class,
             CharacterAPIRelationEntity.class,
             QualificationEntity.class,
-            HighMagicEntity.class
+            HighMagicEntity.class,
+            CodexEntity.class
         },
-        version = 4,
+        version = 6,
         exportSchema = false
 )
 @TypeConverters({Converters.class})
@@ -39,13 +42,13 @@ public abstract class AppDatabase extends RoomDatabase {
 
     public abstract QualificationDao qualificationDao();
     public abstract HighMagicDao highMagicDao();
+    public abstract CodexDao codexDao();
+
 
     private static AppDatabase INSTANCE;
-    private static Context context;
 
     static AppDatabase getDatabase(final Context context) {
         if (INSTANCE == null) {
-            AppDatabase.context = context;
             synchronized (AppDatabase.class) {
                 if (INSTANCE == null) {
                     INSTANCE = Room.databaseBuilder(context.getApplicationContext(),
@@ -53,7 +56,15 @@ public abstract class AppDatabase extends RoomDatabase {
                             // Wipes and rebuilds instead of migrating if no Migration object.
                             // Migration is not part of this codelab.
                             .fallbackToDestructiveMigration()
-                            .addCallback(sRoomDatabaseCallback)
+                            .addCallback(new RoomDatabase.Callback() {
+                                     @Override
+                                     public void onOpen(@NonNull SupportSQLiteDatabase db) {
+                                         super.onCreate(db);
+
+                                         new DbPopulizer(context, INSTANCE).populate();
+                                     }
+                                 }
+                            )
                             .build();
                 }
             }
@@ -65,13 +76,4 @@ public abstract class AppDatabase extends RoomDatabase {
      * Override the onOpen method to populate the database.
      * For this sample, we clear the database every time it is created or opened.
      */
-    private static RoomDatabase.Callback sRoomDatabaseCallback = new RoomDatabase.Callback(){
-
-        @Override
-        public void onOpen (@NonNull SupportSQLiteDatabase db){
-            super.onCreate(db);
-
-            new DbPopulizer(context,INSTANCE).populate();
-        }
-    };
 }

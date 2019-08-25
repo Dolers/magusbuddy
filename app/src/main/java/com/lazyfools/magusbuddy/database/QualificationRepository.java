@@ -4,8 +4,8 @@ import android.app.Application;
 import android.arch.lifecycle.LiveData;
 
 import com.lazyfools.magusbuddy.database.dao.QualificationDao;
+import com.lazyfools.magusbuddy.database.entity.NameEntity;
 import com.lazyfools.magusbuddy.database.entity.QualificationEntity;
-import com.lazyfools.magusbuddy.database.entity.QualificationName;
 import com.lazyfools.magusbuddy.database.entity.QualificationType;
 
 import java.util.List;
@@ -21,7 +21,7 @@ public class QualificationRepository extends AbstractRepository<QualificationDao
         return _dao.getLiveAll();
     }
 
-    public LiveData<List<QualificationName>> getAllNames() {
+    public LiveData<List<NameEntity>> getAllNames() {
         return _dao.getAllNames();
     }
 
@@ -33,11 +33,11 @@ public class QualificationRepository extends AbstractRepository<QualificationDao
         return _dao.getOneByID(id);
     }
 
-    public LiveData<List<QualificationName>> getNamesOfFilter(String name) {
+    public LiveData<List<NameEntity>> getNamesOfFilter(String name) {
         return _dao.getNamesByFilter(name);
     }
 
-    public LiveData<List<QualificationName>> getAllQualificationNamesOfType(QualificationEntity.TypeEnum type) {
+    public LiveData<List<NameEntity>> getAllQualificationNamesOfType(QualificationEntity.TypeEnum type) {
         return _dao.getLiveAllNamesOfType(type);
     }
 

@@ -4,11 +4,14 @@ import android.app.Application;
 import android.arch.lifecycle.AndroidViewModel;
 import android.arch.lifecycle.LiveData;
 
+import com.lazyfools.magusbuddy.database.CodexRepository;
 import com.lazyfools.magusbuddy.database.QualificationRepository;
 import com.lazyfools.magusbuddy.database.entity.CharacterEntity;
 import com.lazyfools.magusbuddy.database.CharacterRepository;
+import com.lazyfools.magusbuddy.database.entity.CodexEntity;
+import com.lazyfools.magusbuddy.database.entity.HighMagicType;
 import com.lazyfools.magusbuddy.database.entity.QualificationEntity;
-import com.lazyfools.magusbuddy.database.entity.QualificationName;
+import com.lazyfools.magusbuddy.database.entity.NameEntity;
 import com.lazyfools.magusbuddy.database.entity.QualificationType;
 
 import java.util.List;
@@ -17,6 +20,7 @@ import java.util.List;
 public class DatabaseViewModel extends AndroidViewModel {
     private CharacterRepository _characterRepository;
     private QualificationRepository _qualificationRepository;
+    private CodexRepository _codexRepository;
     // Using LiveData and caching what getAlphabetizedWords returns has several benefits:
     // - We can put an observer on the data (instead of polling for changes) and only update the
     //   the UI when the data actually changes.
@@ -28,6 +32,7 @@ public class DatabaseViewModel extends AndroidViewModel {
         super(application);
         _characterRepository = new CharacterRepository(application);
         _qualificationRepository = new QualificationRepository(application);
+        _codexRepository = new CodexRepository(application);
     }
 
     public LiveData<List<CharacterEntity>> getAllCharacters() {
@@ -43,7 +48,7 @@ public class DatabaseViewModel extends AndroidViewModel {
         return _allQualifications;
     }
 
-    public LiveData<List<QualificationName>> getAllQualificationNamesOfType(QualificationEntity.TypeEnum type) {
+    public LiveData<List<NameEntity>> getAllQualificationNamesOfType(QualificationEntity.TypeEnum type) {
         return _qualificationRepository.getAllQualificationNamesOfType(type);
     }
 
@@ -51,11 +56,11 @@ public class DatabaseViewModel extends AndroidViewModel {
         return _qualificationRepository.getAllTypes();
     }
 
-    public LiveData<List<QualificationName>> getAllQualificationNames() {
+    public LiveData<List<NameEntity>> getAllQualificationNames() {
         return _qualificationRepository.getAllNames();
     }
 
-    public LiveData<List<QualificationName>> getQualificationNamesOfFilter(String name) {
+    public LiveData<List<NameEntity>> getQualificationNamesOfFilter(String name) {
         return _qualificationRepository.getNamesOfFilter(name);
     }
 
@@ -65,5 +70,9 @@ public class DatabaseViewModel extends AndroidViewModel {
 
     public LiveData<QualificationEntity> getOneQualificationByName(String name) {
         return _qualificationRepository.getOneByName(name);
+    }
+
+    public LiveData<List<CodexEntity>> getAllCodex() {
+        return _codexRepository.getLiveAll();
     }
 }

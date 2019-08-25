@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="QUALIFICATION_ID">QUALIFICATION_ID</string>
-    <string name="QUALIFICATION_TYPENAME">QUALIFICATION_TYPENAME</string>
+    <string name="QUALIFICATION_TYPE">QUALIFICATION_TYPENAME</string>
     <string name="QUALIFICATION_FILTER">QUALIFICATION_FILTER</string>
+    <string name="HIGHMAGIC_ID">HIGHMAGIC_ID</string>
+    <string name="HIGHMAGIC_TYPE">HIGHMAGIC_TYPENAME</string>
+    <string name="HIGHMAGIC_FILTER">HIGHMAGIC_FILTER</string>
 </resources>
