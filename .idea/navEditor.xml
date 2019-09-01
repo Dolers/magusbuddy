@@ -99,17 +99,17 @@
                         </option>
                         <option name="myPositions">
                           <map>
+                            <entry key="action_navigation_codex_to_battleFragment">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                            <entry key="action_navigation_codex_to_highMagicCategoryListFragment">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
                             <entry key="action_navigation_codex_to_qualificationCategoryListFragment">
-                              <value>
-                                <LayoutPositions />
-                              </value>
-                            </entry>
-                            <entry key="action_navigation_skills_to_highMagicCategoryListFragment">
-                              <value>
-                                <LayoutPositions />
-                              </value>
-                            </entry>
-                            <entry key="action_qualificationCategoryListFragment_to_battleFragment">
                               <value>
                                 <LayoutPositions />
                               </value>

@@ -19,6 +19,7 @@ import com.lazyfools.magusbuddy.HomeActivity;
 import com.lazyfools.magusbuddy.R;
 import com.lazyfools.magusbuddy.database.entity.HighMagicEntity;
 import com.lazyfools.magusbuddy.page.codex.DescTableAdapter;
+import com.lazyfools.magusbuddy.utility.MarginItemDecoration;
 
 import java.util.ArrayList;
 
@@ -65,8 +66,10 @@ public class HighMagicSingleFragment extends Fragment {
         TextView descriptionTextView = getView().findViewById(R.id.description);
         descriptionTextView.setText(highMagic.getDescription());
 
+        TextView specialTextView = getView().findViewById(R.id.special);
+        specialTextView.setText(highMagic.getSpecial());
+
         populateWithTables(highMagic);
-        //populateLevelDescriptionDropdownViews(HighMagic);
     }
 
     private void populateWithStats(HighMagicEntity highMagic) {
@@ -88,9 +91,10 @@ public class HighMagicSingleFragment extends Fragment {
 
     private void populateWithTables(HighMagicEntity highMagic) {
         RecyclerView tableListView = getView().findViewById(R.id.table_listview);
+        tableListView.addItemDecoration(new MarginItemDecoration(30,30,0,0));
         ArrayList<String> descriptionTables = highMagic.getDescTables();
         if (descriptionTables.isEmpty()){
-            tableListView.setVisibility(View.INVISIBLE);
+            tableListView.setVisibility(View.GONE);
         }
         else {
             DescTableAdapter adapter = new DescTableAdapter(getActivity().getApplicationContext());

@@ -17,6 +17,7 @@ import com.lazyfools.magusbuddy.HomeActivity;
 import com.lazyfools.magusbuddy.R;
 import com.lazyfools.magusbuddy.database.entity.QualificationEntity;
 import com.lazyfools.magusbuddy.page.codex.DescTableAdapter;
+import com.lazyfools.magusbuddy.utility.MarginItemDecoration;
 
 import java.util.ArrayList;
 
@@ -67,9 +68,10 @@ public class QualificationSingleFragment extends Fragment {
 
     private void populateWithTables(QualificationEntity qualification) {
         RecyclerView tableListView = getView().findViewById(R.id.table_listview);
+        tableListView.addItemDecoration(new MarginItemDecoration(30,30,0,0));
         ArrayList<String> descriptionTables = qualification.getDescriptionTables();
         if (descriptionTables.isEmpty()){
-            tableListView.setVisibility(View.INVISIBLE);
+            tableListView.setVisibility(View.GONE);
         }
         else {
             DescTableAdapter adapter = new DescTableAdapter(getActivity().getApplicationContext());

@@ -13,10 +13,12 @@
     <string name="description">Description</string>
     <string name="double_digit_number">99</string>
     <string name="mp">Mp</string>
-    <string name="emp">E/Mp</string>
+    <string name="emp">Mp/E</string>
     <string name="magustime">1 sz</string>
     <string name="casttime">Varázslás ideje </string>
     <string name="durationTime">Időtartam</string>
     <string name="range">Hatótáv</string>
     <string name="codex">Codex</string>
+    <string name="special">Special</string>
+    <string name="skill_name">Skill</string>
 </resources>
