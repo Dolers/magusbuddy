@@ -21,4 +21,8 @@
     <string name="codex">Codex</string>
     <string name="special">Special</string>
     <string name="skill_name">Skill</string>
+    <string name="ekp">Kp/E</string>
+    <string name="kp">Kp</string>
+    <string name="name">Name</string>
+    <string name="bard_magic">Bard Magic</string>
 </resources>

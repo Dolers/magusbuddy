@@ -14,7 +14,7 @@ import android.view.ViewGroup;
 
 import androidx.navigation.Navigation;
 
-import com.lazyfools.magusbuddy.HighMagicDatabaseViewModel;
+import com.lazyfools.magusbuddy.viewmodel.HighMagicDatabaseViewModel;
 import com.lazyfools.magusbuddy.HomeActivity;
 import com.lazyfools.magusbuddy.R;
 import com.lazyfools.magusbuddy.database.entity.NameEntity;

@@ -14,7 +14,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.lazyfools.magusbuddy.DatabaseViewModel;
+import com.lazyfools.magusbuddy.viewmodel.DatabaseViewModel;
 import com.lazyfools.magusbuddy.HomeActivity;
 import com.lazyfools.magusbuddy.database.entity.CharacterEntity;
 import com.lazyfools.magusbuddy.utility.BasicCallback;

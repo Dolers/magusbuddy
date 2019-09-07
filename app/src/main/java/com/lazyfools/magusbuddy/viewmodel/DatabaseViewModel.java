@@ -1,4 +1,4 @@
-package com.lazyfools.magusbuddy;
+package com.lazyfools.magusbuddy.viewmodel;
 
 import android.app.Application;
 import android.arch.lifecycle.AndroidViewModel;

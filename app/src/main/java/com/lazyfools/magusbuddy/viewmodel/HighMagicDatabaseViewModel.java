@@ -1,4 +1,4 @@
-package com.lazyfools.magusbuddy;
+package com.lazyfools.magusbuddy.viewmodel;
 
 import android.app.Application;
 import android.arch.lifecycle.AndroidViewModel;
@@ -17,11 +17,6 @@ import java.util.List;
 //TODO split viewmodel into smaller viewmodels
 public class HighMagicDatabaseViewModel extends AndroidViewModel {
     private HighMagicRepository _repository;
-    // Using LiveData and caching what getAlphabetizedWords returns has several benefits:
-    // - We can put an observer on the data (instead of polling for changes) and only update the
-    //   the UI when the data actually changes.
-    // - Repository is completely separated from the UI through the ViewModel.
-    private LiveData<List<CharacterEntity>> _allCharacters = null;
     private LiveData<List<HighMagicEntity>> _allHighMagic = null;
 
     public HighMagicDatabaseViewModel(Application application) {

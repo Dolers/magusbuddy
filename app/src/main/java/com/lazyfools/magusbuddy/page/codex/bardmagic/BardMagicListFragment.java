@@ -1,4 +1,4 @@
-package com.lazyfools.magusbuddy.page.codex.qualification;
+package com.lazyfools.magusbuddy.page.codex.bardmagic;
 
 
 import android.arch.lifecycle.Observer;
@@ -14,52 +14,52 @@ import android.view.ViewGroup;
 
 import androidx.navigation.Navigation;
 
-import com.lazyfools.magusbuddy.viewmodel.DatabaseViewModel;
 import com.lazyfools.magusbuddy.HomeActivity;
 import com.lazyfools.magusbuddy.R;
-import com.lazyfools.magusbuddy.database.entity.QualificationEntity;
+import com.lazyfools.magusbuddy.database.entity.BardMagicEntity;
 import com.lazyfools.magusbuddy.database.entity.NameEntity;
 import com.lazyfools.magusbuddy.page.codex.NameListAdapter;
+import com.lazyfools.magusbuddy.viewmodel.BardMagicDatabaseViewModel;
 
 import java.util.List;
 
 /**
- * Creates a list of qualifications for UI
- * Need a QUALIFICATION_TYPENAME or QUALIFICATION_FILTER as argument to work
+ * Creates a list of BardMagics for UI
+ * Need a BardMagic_TYPENAME or BardMagic_FILTER as argument to work
  */
-public class QualificationListFragment extends Fragment {
+public class BardMagicListFragment extends Fragment {
     private NameListAdapter _adapter;
-    private QualificationListFragment.onClickListener _listener;
+    private BardMagicListFragment.onClickListener _listener;
 
     // TODO: Customize parameters
-    private DatabaseViewModel _viewModel;
+    private BardMagicDatabaseViewModel _viewModel;
 
-    public QualificationListFragment(){}
+    public BardMagicListFragment(){}
 
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
         ((HomeActivity)getActivity()).setBottomNavigationVisibility(View.VISIBLE);
 
-        _viewModel = ViewModelProviders.of(this).get(DatabaseViewModel.class);
+        _viewModel = ViewModelProviders.of(this).get(BardMagicDatabaseViewModel.class);
         initViewModel();
     }
 
     private void initViewModel() {
         if (getArguments() != null) {
-            if (getArguments().containsKey(getResources().getString(R.string.QUALIFICATION_TYPE)))
+            if (getArguments().containsKey(getResources().getString(R.string.HIGHMAGIC_TYPE)))
                 initViewModelWithType();
-            else if (getArguments().containsKey(getResources().getString(R.string.QUALIFICATION_FILTER))) {
+            else if (getArguments().containsKey(getResources().getString(R.string.HIGHMAGIC_FILTER))) {
                 initViewModelWithFilter();
             }
         }
     }
 
     private void initViewModelWithType() {
-        int typeOrdinal = getArguments().getInt(getResources().getString(R.string.QUALIFICATION_TYPE));
-        QualificationEntity.TypeEnum typeFilter = QualificationEntity.TypeEnum.values()[typeOrdinal];
+        int typeOrdinal = getArguments().getInt(getResources().getString(R.string.HIGHMAGIC_TYPE));
+        BardMagicEntity.TypeEnum typeFilter = BardMagicEntity.TypeEnum.values()[typeOrdinal];
 
-        _viewModel.getAllQualificationNamesOfType(typeFilter).observe(this, new Observer<List<NameEntity>>() {
+        _viewModel.getAllBardMagicNamesOfType(typeFilter).observe(this, new Observer<List<NameEntity>>() {
             @Override
             public void onChanged(@Nullable final List<NameEntity> nameEntities) {
                 // Update the cached copy of the words in the adapter.
@@ -69,9 +69,9 @@ public class QualificationListFragment extends Fragment {
     }
 
     private void initViewModelWithFilter() {
-        String filter = getArguments().getString(getResources().getString(R.string.QUALIFICATION_FILTER));
+        String filter = getArguments().getString(getResources().getString(R.string.HIGHMAGIC_FILTER));
 
-        _viewModel.getQualificationNamesOfFilter(filter).observe(this, new Observer<List<NameEntity>>() {
+        _viewModel.getBardMagicNamesOfFilter(filter).observe(this, new Observer<List<NameEntity>>() {
             @Override
             public void onChanged(@Nullable final List<NameEntity> nameEntities) {
                 // Update the cached copy of the words in the adapter.
@@ -91,8 +91,8 @@ public class QualificationListFragment extends Fragment {
             @Override
             public void onClick(NameEntity item) {
                 Bundle bundle = new Bundle();
-                bundle.putInt(getResources().getString(R.string.QUALIFICATION_ID), item.getId());
-                Navigation.findNavController(recyclerView).navigate(R.id.action_qualificationListFragment_to_qualificationSingleFragment,bundle);
+                bundle.putInt(getResources().getString(R.string.HIGHMAGIC_ID), item.getId());
+                Navigation.findNavController(recyclerView).navigate(R.id.action_bardMagicListFragment_to_bardMagicSingleFragment,bundle);
             }
         };
         _adapter = new NameListAdapter(_listener);

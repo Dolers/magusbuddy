@@ -9,17 +9,21 @@ import android.content.Context;
 import android.support.annotation.NonNull;
 
 import com.lazyfools.magusbuddy.database.dao.APIKeyDao;
+import com.lazyfools.magusbuddy.database.dao.BardMagicDao;
 import com.lazyfools.magusbuddy.database.dao.CharacterAPIRelationDao;
 import com.lazyfools.magusbuddy.database.dao.CharacterDao;
 import com.lazyfools.magusbuddy.database.dao.CodexDao;
 import com.lazyfools.magusbuddy.database.dao.HighMagicDao;
 import com.lazyfools.magusbuddy.database.dao.QualificationDao;
+import com.lazyfools.magusbuddy.database.dao.SacralMagicDao;
 import com.lazyfools.magusbuddy.database.entity.APIKeyEntity;
+import com.lazyfools.magusbuddy.database.entity.BardMagicEntity;
 import com.lazyfools.magusbuddy.database.entity.CharacterAPIRelationEntity;
 import com.lazyfools.magusbuddy.database.entity.CharacterEntity;
 import com.lazyfools.magusbuddy.database.entity.CodexEntity;
 import com.lazyfools.magusbuddy.database.entity.HighMagicEntity;
 import com.lazyfools.magusbuddy.database.entity.QualificationEntity;
+import com.lazyfools.magusbuddy.database.entity.SacralMagicEntity;
 import com.lazyfools.magusbuddy.database.populate.DbPopulizer;
 
 @Database(
@@ -28,10 +32,12 @@ import com.lazyfools.magusbuddy.database.populate.DbPopulizer;
             APIKeyEntity.class,
             CharacterAPIRelationEntity.class,
             QualificationEntity.class,
+            CodexEntity.class,
             HighMagicEntity.class,
-            CodexEntity.class
+            SacralMagicEntity.class,
+            BardMagicEntity.class
         },
-        version = 6,
+        version = 8,
         exportSchema = false
 )
 @TypeConverters({Converters.class})
@@ -42,6 +48,9 @@ public abstract class AppDatabase extends RoomDatabase {
 
     public abstract QualificationDao qualificationDao();
     public abstract HighMagicDao highMagicDao();
+    public abstract SacralMagicDao sacralMagicDao();
+    public abstract BardMagicDao bardMagicDao();
+
     public abstract CodexDao codexDao();
 
 
@@ -52,7 +61,7 @@ public abstract class AppDatabase extends RoomDatabase {
             synchronized (AppDatabase.class) {
                 if (INSTANCE == null) {
                     INSTANCE = Room.databaseBuilder(context.getApplicationContext(),
-                            AppDatabase.class, "Dreonar_database")
+                            AppDatabase.class, "Database")
                             // Wipes and rebuilds instead of migrating if no Migration object.
                             // Migration is not part of this codelab.
                             .fallbackToDestructiveMigration()
@@ -71,9 +80,4 @@ public abstract class AppDatabase extends RoomDatabase {
         }
         return INSTANCE;
     }
-
-    /**
-     * Override the onOpen method to populate the database.
-     * For this sample, we clear the database every time it is created or opened.
-     */
 }

@@ -1,4 +1,4 @@
-package com.lazyfools.magusbuddy.page.codex.qualification;
+package com.lazyfools.magusbuddy.page.codex.sacralmagic;
 
 
 import android.app.SearchManager;
@@ -22,10 +22,10 @@ import android.view.ViewGroup;
 
 import androidx.navigation.Navigation;
 
-import com.lazyfools.magusbuddy.viewmodel.DatabaseViewModel;
+import com.lazyfools.magusbuddy.viewmodel.SacralMagicDatabaseViewModel;
 import com.lazyfools.magusbuddy.HomeActivity;
 import com.lazyfools.magusbuddy.R;
-import com.lazyfools.magusbuddy.database.entity.QualificationType;
+import com.lazyfools.magusbuddy.database.entity.SacralMagicType;
 import com.lazyfools.magusbuddy.page.codex.onClickListener;
 
 import java.util.List;
@@ -36,14 +36,14 @@ import java.util.List;
  * Activities containing this fragment MUST implement the {@link onClickListener}
  * interface.
  */
-public class QualificationCategoryListFragment extends Fragment {
+public class SacralMagicCategoryListFragment extends Fragment {
 
-    private qualificationTypeOnClickListener _listener;
-    private DatabaseViewModel _viewModel;
-    private QualificationCategoryListAdapter _adapter;
+    private SacralMagicTypeOnClickListener _listener;
+    private SacralMagicDatabaseViewModel _viewModel;
+    private SacralMagicCategoryListAdapter _adapter;
     private RecyclerView _recyclerView;
 
-    public QualificationCategoryListFragment() { }
+    public SacralMagicCategoryListFragment() { }
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -55,13 +55,13 @@ public class QualificationCategoryListFragment extends Fragment {
         super.onActivityCreated(savedInstanceState);
         ((HomeActivity)getActivity()).setBottomNavigationVisibility(View.VISIBLE);
 
-        _viewModel = ViewModelProviders.of(this).get(DatabaseViewModel.class);
+        _viewModel = ViewModelProviders.of(this).get(SacralMagicDatabaseViewModel.class);
 
-        _viewModel.getAllQualificationTypes().observe(this, new Observer<List<QualificationType>>() {
+        _viewModel.getAllSacralMagicTypes().observe(this, new Observer<List<SacralMagicType>>() {
             @Override
-            public void onChanged(@Nullable final List<QualificationType> qualifications) {
+            public void onChanged(@Nullable final List<SacralMagicType> SacralMagics) {
                 // Update the cached copy of the words in the adapter.
-                _adapter.setItems(qualifications);
+                _adapter.setItems(SacralMagics);
             }
         });
     }
@@ -78,15 +78,15 @@ public class QualificationCategoryListFragment extends Fragment {
             String query = intent.getStringExtra(SearchManager.QUERY);
             //TODO do smth with query
         }
-        _listener = new qualificationTypeOnClickListener(){
+        _listener = new SacralMagicTypeOnClickListener(){
             @Override
-            public void onClick(QualificationType item) {
+            public void onClick(SacralMagicType item) {
                 Bundle bundle = new Bundle();
-                bundle.putInt(getResources().getString(R.string.QUALIFICATION_TYPE), item.getType().ordinal());
-                Navigation.findNavController(_recyclerView).navigate(R.id.action_qualificationCategoryListFragment_to_qualificationListFragment,bundle);
+                bundle.putInt(getResources().getString(R.string.HIGHMAGIC_TYPE), item.getType().ordinal());
+                Navigation.findNavController(_recyclerView).navigate(R.id.action_sacralMagicCategoryListFragment_to_sacralMagicListFragment,bundle);
             }
         };
-        _adapter = new QualificationCategoryListAdapter(_listener,container.getContext());
+        _adapter = new SacralMagicCategoryListAdapter(_listener,container.getContext());
         _recyclerView.setAdapter(_adapter);
 
         return _recyclerView;
@@ -104,8 +104,8 @@ public class QualificationCategoryListFragment extends Fragment {
             public boolean onQueryTextSubmit(String query) {
                 sv.clearFocus();
                 Bundle bundle = new Bundle();
-                bundle.putString(getResources().getString(R.string.QUALIFICATION_FILTER), query);
-                Navigation.findNavController(_recyclerView).navigate(R.id.action_qualificationCategoryListFragment_to_qualificationListFragment,bundle);
+                bundle.putString(getResources().getString(R.string.HIGHMAGIC_FILTER), query);
+                Navigation.findNavController(_recyclerView).navigate(R.id.action_sacralMagicCategoryListFragment_to_sacralMagicListFragment,bundle);
                 return true;
             }
 
@@ -136,7 +136,7 @@ public class QualificationCategoryListFragment extends Fragment {
             case R.id.search_item:
                 getActivity().onSearchRequested();
                 /*
-                List<NameEntity> names = _viewModel.getAllQualificationNames().getValue();
+                List<NameEntity> names = _viewModel.getAllSacralMagicNames().getValue();
 
                 SimpleSearchDialogCompat dialog = new SimpleSearchDialogCompat<NameEntity>(getActivity(), "Search...",
                         "What are you looking for...?", null, (ArrayList) names,
@@ -175,7 +175,7 @@ public class QualificationCategoryListFragment extends Fragment {
      * "http://developer.android.com/training/basics/fragments/communicating.html"
      * >Communicating with Other Fragments</a> for more information.
      */
-    public interface qualificationTypeOnClickListener extends onClickListener<QualificationType> {
-        void onClick(QualificationType item);
+    public interface SacralMagicTypeOnClickListener extends onClickListener<SacralMagicType> {
+        void onClick(SacralMagicType item);
     }
 }

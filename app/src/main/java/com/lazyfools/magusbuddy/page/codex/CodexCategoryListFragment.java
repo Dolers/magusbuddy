@@ -15,14 +15,13 @@ import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.SearchView;
 import android.view.LayoutInflater;
 import android.view.Menu;
-import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.navigation.Navigation;
 
-import com.lazyfools.magusbuddy.DatabaseViewModel;
+import com.lazyfools.magusbuddy.viewmodel.DatabaseViewModel;
 import com.lazyfools.magusbuddy.HomeActivity;
 import com.lazyfools.magusbuddy.R;
 import com.lazyfools.magusbuddy.database.entity.CodexEntity;
@@ -94,12 +93,12 @@ public class CodexCategoryListFragment extends Fragment {
         //TODO
         switch (item.getTable()){
             case QUALIFICATION: return R.id.action_navigation_codex_to_qualificationCategoryListFragment;
-            case BARDMAGIC:
+            case BARDMAGIC: return R.id.action_navigation_codex_to_bardMagicCategoryListFragment;
             case WITCHMAGIC:
             case WARLOCKMAGIC:
             case HIGHMAGIC: return R.id.action_navigation_codex_to_highMagicCategoryListFragment;
             case PSI:
-            case SACRALMAGIC:
+            case SACRALMAGIC: return R.id.action_navigation_codex_to_sacralMagicCategoryListFragment;
             case FIREMAGEMAGIC:
         }
         return R.id.action_navigation_codex_to_qualificationCategoryListFragment;

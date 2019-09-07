@@ -2,9 +2,11 @@ package com.lazyfools.magusbuddy.database;
 
 import android.arch.persistence.room.TypeConverter;
 
+import com.lazyfools.magusbuddy.database.entity.BardMagicEntity;
 import com.lazyfools.magusbuddy.database.entity.CodexEntity;
 import com.lazyfools.magusbuddy.database.entity.HighMagicEntity;
 import com.lazyfools.magusbuddy.database.entity.QualificationEntity;
+import com.lazyfools.magusbuddy.database.entity.SacralMagicEntity;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -38,6 +40,26 @@ public class Converters {
     @TypeConverter
     public static HighMagicEntity.TypeEnum HighMagicTypeToInt(String value) {
         return HighMagicEntity.TypeEnum.valueOf(value);
+    }
+
+    @TypeConverter
+    public static String fromSacralMagicType(SacralMagicEntity.TypeEnum value) {
+        return value == null ? null : value.name();
+    }
+
+    @TypeConverter
+    public static SacralMagicEntity.TypeEnum SacralMagicTypeToInt(String value) {
+        return SacralMagicEntity.TypeEnum.valueOf(value);
+    }
+    
+    @TypeConverter
+    public static String fromBardMagicType(BardMagicEntity.TypeEnum value) {
+        return value == null ? null : value.name();
+    }
+
+    @TypeConverter
+    public static BardMagicEntity.TypeEnum BardMagicTypeToInt(String value) {
+        return BardMagicEntity.TypeEnum.valueOf(value);
     }
 
     @TypeConverter
