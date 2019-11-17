@@ -1,4 +1,4 @@
-package com.lazyfools.magusbuddy.page.codex.bardmagic;
+package com.lazyfools.magusbuddy.page.codex.pszimagic;
 
 
 import android.arch.lifecycle.Observer;
@@ -16,32 +16,32 @@ import androidx.navigation.Navigation;
 
 import com.lazyfools.magusbuddy.HomeActivity;
 import com.lazyfools.magusbuddy.R;
-import com.lazyfools.magusbuddy.database.entity.BardMagicEntity;
 import com.lazyfools.magusbuddy.database.entity.NameEntity;
+import com.lazyfools.magusbuddy.database.entity.PsziMagicEntity;
 import com.lazyfools.magusbuddy.page.codex.NameListAdapter;
-import com.lazyfools.magusbuddy.viewmodel.BardMagicDatabaseViewModel;
+import com.lazyfools.magusbuddy.viewmodel.PsziMagicDatabaseViewModel;
 
 import java.util.List;
 
 /**
- * Creates a list of BardMagics for UI
- * Need a BardMagic_TYPENAME or BardMagic_FILTER as argument to work
+ * Creates a list of PsziMagics for UI
+ * Need a PsziMagic_TYPENAME or PsziMagic_FILTER as argument to work
  */
-public class BardMagicListFragment extends Fragment {
+public class PsziMagicListFragment extends Fragment {
     private NameListAdapter _adapter;
-    private BardMagicListFragment.onClickListener _listener;
+    private PsziMagicListFragment.onClickListener _listener;
 
     // TODO: Customize parameters
-    private BardMagicDatabaseViewModel _viewModel;
+    private PsziMagicDatabaseViewModel _viewModel;
 
-    public BardMagicListFragment(){}
+    public PsziMagicListFragment(){}
 
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
         ((HomeActivity)getActivity()).setBottomNavigationVisibility(View.VISIBLE);
 
-        _viewModel = ViewModelProviders.of(this).get(BardMagicDatabaseViewModel.class);
+        _viewModel = ViewModelProviders.of(this).get(PsziMagicDatabaseViewModel.class);
         initViewModel();
     }
 
@@ -57,9 +57,9 @@ public class BardMagicListFragment extends Fragment {
 
     private void initViewModelWithType() {
         int typeOrdinal = getArguments().getInt(getResources().getString(R.string.SKILL_TYPE));
-        BardMagicEntity.TypeEnum typeFilter = BardMagicEntity.TypeEnum.values()[typeOrdinal];
+        PsziMagicEntity.TypeEnum typeFilter = PsziMagicEntity.TypeEnum.values()[typeOrdinal];
 
-        _viewModel.getAllBardMagicNamesOfType(typeFilter).observe(this, new Observer<List<NameEntity>>() {
+        _viewModel.getAllPsziMagicNamesOfType(typeFilter).observe(this, new Observer<List<NameEntity>>() {
             @Override
             public void onChanged(@Nullable final List<NameEntity> nameEntities) {
                 // Update the cached copy of the words in the adapter.
@@ -71,7 +71,7 @@ public class BardMagicListFragment extends Fragment {
     private void initViewModelWithFilter() {
         String filter = getArguments().getString(getResources().getString(R.string.SKILL_NAME_FILTER));
 
-        _viewModel.getBardMagicNamesOfFilter(filter).observe(this, new Observer<List<NameEntity>>() {
+        _viewModel.getPsziMagicNamesOfFilter(filter).observe(this, new Observer<List<NameEntity>>() {
             @Override
             public void onChanged(@Nullable final List<NameEntity> nameEntities) {
                 // Update the cached copy of the words in the adapter.
@@ -82,7 +82,8 @@ public class BardMagicListFragment extends Fragment {
 
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
         final RecyclerView recyclerView = (RecyclerView) LayoutInflater.from(container.getContext())
                 .inflate(R.layout.name_list, container, false);
 
@@ -93,7 +94,7 @@ public class BardMagicListFragment extends Fragment {
             public void onClick(NameEntity item) {
                 Bundle bundle = new Bundle();
                 bundle.putInt(getResources().getString(R.string.SKILL_ID), item.getId());
-                Navigation.findNavController(recyclerView).navigate(R.id.action_bardMagicListFragment_to_bardMagicSingleFragment,bundle);
+                Navigation.findNavController(recyclerView).navigate(R.id.action_psziMagicListFragment_to_psziMagicSingleFragment,bundle);
             }
         };
         _adapter = new NameListAdapter(_listener);

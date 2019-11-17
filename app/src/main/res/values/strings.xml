@@ -25,4 +25,7 @@
     <string name="kp">Kp</string>
     <string name="name">Name</string>
     <string name="bard_magic">Bard Magic</string>
+    <string name="pszimagic">PsziMagic</string>
+    <string name="resistance_value">Mentális</string>
+    <string name="resistance_name">ME:</string>
 </resources>

@@ -20,16 +20,17 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/skill_name_textview"
+                android:id="@+id/name_textview"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/skill_name"
                 android:textAlignment="center"
                 android:textSize="32sp"
-                app:fontFamily="@font/eden_mills_bold"/>
+                app:fontFamily="@font/eden_mills_bold"
+                android:background="@drawable/ic_codex"/>
 
             <TextView
-                android:id="@+id/skill_description"
+                android:id="@+id/description"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/description" />

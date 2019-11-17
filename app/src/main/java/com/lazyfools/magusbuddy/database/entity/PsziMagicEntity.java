@@ -6,20 +6,13 @@ import android.arch.persistence.room.PrimaryKey;
 
 import java.util.ArrayList;
 
-@Entity(tableName = "sacralmagic")
-public class SacralMagicEntity {
+@Entity(tableName = "pszimagic")
+public class PsziMagicEntity {
     public enum TypeEnum{
-        NAGY("Nagy Arkánum"),
-        KIS("Kis Arkánum"),
-        AREL("Arel"),
-        DARTON("Darton"),
-        DOMVIK("Domvik"),
-        DREINA("Dreina"),
-        KRAD("Krad"),
-        RANAGOL("Ranagol"),
-        SOGRON("Sogron"),
-        THARR("Tharr"),
-        UWEL("Uwel");
+        PYARRONI("Pyarroni módszer"),
+        GODONI("Godoni örökség"),
+        KYR("Kyr Metódus"),
+        SLAN("Slan útja");
 
         private final String name;
 
@@ -30,8 +23,6 @@ public class SacralMagicEntity {
         public boolean equalsName(String otherName) { return name.equals(otherName); }
         public String toString() { return this.name; }
     }
-
-    public enum SphereEnum {ELET, HALAL, LELEK, TERMESZET}
 
     @PrimaryKey(autoGenerate = true)
     @ColumnInfo(name = "id")
@@ -46,26 +37,23 @@ public class SacralMagicEntity {
     @ColumnInfo(name = "subType")
     private String _subType;
 
-    @ColumnInfo(name = "kp")
-    private Integer _kp;
+    @ColumnInfo(name = "level")
+    private Integer _level;
 
-    @ColumnInfo(name = "ekp")
-    private Integer _ekp;
+    @ColumnInfo(name = "mp")
+    private Integer _mp;
 
-    @ColumnInfo(name = "ekptext")
-    private String _ekpText;
+    @ColumnInfo(name = "emp")
+    private Integer _emp;
+
+    @ColumnInfo(name = "emptext")
+    private String _empText;
 
     @ColumnInfo(name = "magicresistance")
     private String _magicResistance;
 
-    @ColumnInfo(name = "sphere")
-    private byte _sphere;
-
     @ColumnInfo(name = "durationtime")
     private String _durationTime;
-
-    @ColumnInfo(name = "range")
-    private String _range;
 
     @ColumnInfo(name = "casttime")
     private String _castTime;
@@ -76,16 +64,17 @@ public class SacralMagicEntity {
     @ColumnInfo(name = "desctables")
     private ArrayList<String> _descTables;
 
-    public SacralMagicEntity(String name, TypeEnum type, String subType, Integer kp, Integer ekp, String magicResistance, byte sphere, String durationTime, String range, String castTime, String description) {
+    @ColumnInfo(name = "special")
+    private String _special;
+
+    public PsziMagicEntity(String name, TypeEnum type, String subType, Integer level, Integer mp, Integer emp, String durationTime, String castTime, String description) {
         _name = name;
         _type = type;
         _subType = subType;
-        _kp = kp;
-        _ekp = ekp;
-        _magicResistance = magicResistance;
-        _sphere = sphere;
+        _level = level;
+        _mp = mp;
+        _emp = emp;
         _durationTime = durationTime;
-        _range = range;
         _castTime = castTime;
         _description = description;
     }
@@ -122,28 +111,36 @@ public class SacralMagicEntity {
         _subType = subType;
     }
 
-    public Integer getKp() {
-        return _kp;
+    public Integer getLevel() {
+        return _level;
     }
 
-    public void setKp(Integer kp) {
-        _kp = kp;
+    public void setLevel(Integer level) {
+        _level = level;
     }
 
-    public Integer getEkp() {
-        return _ekp;
+    public Integer getMp() {
+        return _mp;
     }
 
-    public void setEkp(Integer ekp) {
-        _ekp = ekp;
+    public void setMp(Integer mp) {
+        _mp = mp;
     }
 
-    public String getEkpText() {
-        return _ekpText;
+    public Integer getEmp() {
+        return _emp;
     }
 
-    public void setEkpText(String ekpText) {
-        _ekpText = ekpText;
+    public void setEmp(Integer emp) {
+        _emp = emp;
+    }
+
+    public String getEmpText() {
+        return _empText;
+    }
+
+    public void setEmpText(String empText) {
+        _empText = empText;
     }
 
     public String getMagicResistance() {
@@ -154,28 +151,12 @@ public class SacralMagicEntity {
         _magicResistance = magicResistance;
     }
 
-    public byte getSphere() {
-        return _sphere;
-    }
-
-    public void setSphere(byte sphere) {
-        _sphere = sphere;
-    }
-
     public String getDurationTime() {
         return _durationTime;
     }
 
     public void setDurationTime(String durationTime) {
         _durationTime = durationTime;
-    }
-
-    public String getRange() {
-        return _range;
-    }
-
-    public void setRange(String range) {
-        _range = range;
     }
 
     public String getCastTime() {
@@ -200,5 +181,13 @@ public class SacralMagicEntity {
 
     public void setDescTables(ArrayList<String> descTables) {
         _descTables = descTables;
+    }
+
+    public String getSpecial() {
+        return _special;
+    }
+
+    public void setSpecial(String special) {
+        _special = special;
     }
 }

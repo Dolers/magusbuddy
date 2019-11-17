@@ -123,8 +123,8 @@ public class SacralMagicPopulizer implements Populizer{
 
     private SacralMagicEntity.TypeEnum stringToSacralMagicTypeEnum(String value){
         switch(value){
-            case "Nagy Arkánium": return SacralMagicEntity.TypeEnum.NAGY;
-            case "Kis Arkánium": return SacralMagicEntity.TypeEnum.KIS;
+            case "Nagy Arkánum": return SacralMagicEntity.TypeEnum.NAGY;
+            case "Kis Arkánum": return SacralMagicEntity.TypeEnum.KIS;
             case "Arel": return SacralMagicEntity.TypeEnum.AREL;
             case "Darton": return SacralMagicEntity.TypeEnum.DARTON;
             case "Domvik": return SacralMagicEntity.TypeEnum.DOMVIK;

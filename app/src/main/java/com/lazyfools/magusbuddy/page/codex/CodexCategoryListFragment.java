@@ -39,7 +39,6 @@ public class CodexCategoryListFragment extends Fragment {
     private CodexCategoryOnClickListener _listener;
     private DatabaseViewModel _viewModel;
     private CodexCategoryListAdapter _adapter;
-    private RecyclerView _recyclerView;
 
     public CodexCategoryListFragment() { }
 
@@ -67,9 +66,9 @@ public class CodexCategoryListFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-
-        _recyclerView = new RecyclerView(container.getContext());
-        _recyclerView.setLayoutManager(new GridLayoutManager(container.getContext(),2));
+        final RecyclerView recyclerView = (RecyclerView) LayoutInflater.from(container.getContext())
+                .inflate(R.layout.category_list, container, false);
+        recyclerView.setLayoutManager(new GridLayoutManager(container.getContext(),2));
 
         Intent intent = getActivity().getIntent();
         if (Intent.ACTION_SEARCH.equals(intent.getAction())) {
@@ -80,13 +79,13 @@ public class CodexCategoryListFragment extends Fragment {
             @Override
             public void onClick(CodexEntity item) {
 
-                Navigation.findNavController(_recyclerView).navigate(getNavigateAction(item));
+                Navigation.findNavController(recyclerView).navigate(getNavigateAction(item));
             }
         };
         _adapter = new CodexCategoryListAdapter(_listener,container.getContext());
-        _recyclerView.setAdapter(_adapter);
+        recyclerView.setAdapter(_adapter);
 
-        return _recyclerView;
+        return recyclerView;
     }
 
     private int getNavigateAction(CodexEntity item) {
@@ -97,7 +96,7 @@ public class CodexCategoryListFragment extends Fragment {
             case WITCHMAGIC:
             case WARLOCKMAGIC:
             case HIGHMAGIC: return R.id.action_navigation_codex_to_highMagicCategoryListFragment;
-            case PSI:
+            case PSZI: return R.id.action_navigation_codex_to_psziMagicCategoryListFragment;
             case SACRALMAGIC: return R.id.action_navigation_codex_to_sacralMagicCategoryListFragment;
             case FIREMAGEMAGIC:
         }

@@ -67,10 +67,10 @@ public class SacralMagicCategoryListFragment extends Fragment {
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        _recyclerView = (RecyclerView) LayoutInflater.from(container.getContext())
+                .inflate(R.layout.category_list, container, false);
 
-        _recyclerView = new RecyclerView(container.getContext());
         _recyclerView.setLayoutManager(new GridLayoutManager(container.getContext(),2));
 
         Intent intent = getActivity().getIntent();
@@ -82,7 +82,7 @@ public class SacralMagicCategoryListFragment extends Fragment {
             @Override
             public void onClick(SacralMagicType item) {
                 Bundle bundle = new Bundle();
-                bundle.putInt(getResources().getString(R.string.HIGHMAGIC_TYPE), item.getType().ordinal());
+                bundle.putInt(getResources().getString(R.string.SKILL_TYPE), item.getType().ordinal());
                 Navigation.findNavController(_recyclerView).navigate(R.id.action_sacralMagicCategoryListFragment_to_sacralMagicListFragment,bundle);
             }
         };
@@ -104,7 +104,7 @@ public class SacralMagicCategoryListFragment extends Fragment {
             public boolean onQueryTextSubmit(String query) {
                 sv.clearFocus();
                 Bundle bundle = new Bundle();
-                bundle.putString(getResources().getString(R.string.HIGHMAGIC_FILTER), query);
+                bundle.putString(getResources().getString(R.string.SKILL_NAME_FILTER), query);
                 Navigation.findNavController(_recyclerView).navigate(R.id.action_sacralMagicCategoryListFragment_to_sacralMagicListFragment,bundle);
                 return true;
             }

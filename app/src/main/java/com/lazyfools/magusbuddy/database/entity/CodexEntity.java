@@ -12,7 +12,7 @@ public class CodexEntity {
         WITCHMAGIC,
         WARLOCKMAGIC,
         HIGHMAGIC,
-        PSI,
+        PSZI,
         SACRALMAGIC,
         FIREMAGEMAGIC;
     }

@@ -45,7 +45,7 @@ public class QualificationSingleFragment extends Fragment {
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
-        Integer id = getArguments().getInt(getResources().getString(R.string.QUALIFICATION_ID));
+        Integer id = getArguments().getInt(getResources().getString(R.string.SKILL_ID));
 
         _viewModel.getOneQualificationByID(id).observe(this, new Observer<QualificationEntity>() {
             @Override
@@ -56,10 +56,10 @@ public class QualificationSingleFragment extends Fragment {
     }
 
     private void populateWith(QualificationEntity qualification) {
-        TextView titleTextView = getView().findViewById(R.id.skill_name_textview);
+        TextView titleTextView = getView().findViewById(R.id.name_textview);
         titleTextView.setText(qualification.getName());
 
-        TextView descriptionTextView = getView().findViewById(R.id.skill_description);
+        TextView descriptionTextView = getView().findViewById(R.id.description);
         descriptionTextView.setText(qualification.getDescription());
 
         populateWithTables(qualification);

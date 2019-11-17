@@ -47,16 +47,16 @@ public class QualificationListFragment extends Fragment {
 
     private void initViewModel() {
         if (getArguments() != null) {
-            if (getArguments().containsKey(getResources().getString(R.string.QUALIFICATION_TYPE)))
+            if (getArguments().containsKey(getResources().getString(R.string.SKILL_TYPE)))
                 initViewModelWithType();
-            else if (getArguments().containsKey(getResources().getString(R.string.QUALIFICATION_FILTER))) {
+            else if (getArguments().containsKey(getResources().getString(R.string.SKILL_NAME_FILTER))) {
                 initViewModelWithFilter();
             }
         }
     }
 
     private void initViewModelWithType() {
-        int typeOrdinal = getArguments().getInt(getResources().getString(R.string.QUALIFICATION_TYPE));
+        int typeOrdinal = getArguments().getInt(getResources().getString(R.string.SKILL_TYPE));
         QualificationEntity.TypeEnum typeFilter = QualificationEntity.TypeEnum.values()[typeOrdinal];
 
         _viewModel.getAllQualificationNamesOfType(typeFilter).observe(this, new Observer<List<NameEntity>>() {
@@ -69,7 +69,7 @@ public class QualificationListFragment extends Fragment {
     }
 
     private void initViewModelWithFilter() {
-        String filter = getArguments().getString(getResources().getString(R.string.QUALIFICATION_FILTER));
+        String filter = getArguments().getString(getResources().getString(R.string.SKILL_NAME_FILTER));
 
         _viewModel.getQualificationNamesOfFilter(filter).observe(this, new Observer<List<NameEntity>>() {
             @Override
@@ -82,16 +82,17 @@ public class QualificationListFragment extends Fragment {
 
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        final RecyclerView recyclerView = (RecyclerView) LayoutInflater.from(container.getContext())
+                .inflate(R.layout.name_list, container, false);
 
-        final RecyclerView recyclerView = new RecyclerView(container.getContext());
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
+
         _listener = new onClickListener(){
             @Override
             public void onClick(NameEntity item) {
                 Bundle bundle = new Bundle();
-                bundle.putInt(getResources().getString(R.string.QUALIFICATION_ID), item.getId());
+                bundle.putInt(getResources().getString(R.string.SKILL_ID), item.getId());
                 Navigation.findNavController(recyclerView).navigate(R.id.action_qualificationListFragment_to_qualificationSingleFragment,bundle);
             }
         };

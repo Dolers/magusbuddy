@@ -43,7 +43,7 @@ public class HighMagicPopulizer implements Populizer{
             // Not needed if you only populate on creation.
             _dao.deleteAll();
             _dao.insertAll(
-                    parseJson(_context.getResources().openRawResource(R.raw.magasmagia))
+                    parseJson(_context.getResources().openRawResource(R.raw.highmagic))
             );
             return null;
         }

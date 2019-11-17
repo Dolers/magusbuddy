@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,11 +14,7 @@ import android.widget.TextView;
 import com.lazyfools.magusbuddy.HomeActivity;
 import com.lazyfools.magusbuddy.R;
 import com.lazyfools.magusbuddy.database.entity.BardMagicEntity;
-import com.lazyfools.magusbuddy.page.codex.DescTableAdapter;
-import com.lazyfools.magusbuddy.utility.MarginItemDecoration;
 import com.lazyfools.magusbuddy.viewmodel.BardMagicDatabaseViewModel;
-
-import java.util.ArrayList;
 
 public class BardMagicSingleFragment extends Fragment {
     private BardMagicDatabaseViewModel _viewModel;
@@ -43,7 +38,7 @@ public class BardMagicSingleFragment extends Fragment {
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
-        Integer id = getArguments().getInt(getResources().getString(R.string.HIGHMAGIC_ID));
+        Integer id = getArguments().getInt(getResources().getString(R.string.SKILL_ID));
 
         _viewModel.getOneBardMagicByID(id).observe(this, new Observer<BardMagicEntity>() {
             @Override

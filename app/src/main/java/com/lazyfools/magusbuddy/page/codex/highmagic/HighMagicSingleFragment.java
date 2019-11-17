@@ -43,7 +43,7 @@ public class HighMagicSingleFragment extends Fragment {
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
-        Integer id = getArguments().getInt(getResources().getString(R.string.HIGHMAGIC_ID));
+        Integer id = getArguments().getInt(getResources().getString(R.string.SKILL_ID));
 
         _viewModel.getOneHighMagicByID(id).observe(this, new Observer<HighMagicEntity>() {
             @Override

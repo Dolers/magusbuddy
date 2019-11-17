@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/navigation_home">
+    app:startDestination="@id/navigation_codex">
 
     <fragment
         android:id="@+id/navigation_codex"
@@ -25,6 +25,9 @@
         <action
             android:id="@+id/action_navigation_codex_to_bardMagicCategoryListFragment"
             app:destination="@id/bardMagicCategoryListFragment" />
+        <action
+            android:id="@+id/action_navigation_codex_to_psziMagicCategoryListFragment"
+            app:destination="@id/psziMagicCategoryListFragment" />
     </fragment>
     <fragment
         android:id="@+id/qualificationListFragment"
@@ -141,4 +144,27 @@
         android:name="com.lazyfools.magusbuddy.page.codex.bardmagic.BardMagicSingleFragment"
         android:label="BardMagicSingleFragment"
         tools:layout="@layout/bardmagic_single_show"/>
+    <fragment
+        android:id="@+id/psziMagicCategoryListFragment"
+        android:name="com.lazyfools.magusbuddy.page.codex.pszimagic.PsziMagicCategoryListFragment"
+        android:label="PsziMagicCategoryListFragment"
+        tools:layout="@layout/category_list">
+        <action
+            android:id="@+id/action_psziMagicCategoryListFragment_to_psziMagicListFragment"
+            app:destination="@id/psziMagicListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/psziMagicListFragment"
+        android:name="com.lazyfools.magusbuddy.page.codex.pszimagic.PsziMagicListFragment"
+        android:label="PsziMagicListFragment"
+        tools:layout="@layout/name_list">
+        <action
+            android:id="@+id/action_psziMagicListFragment_to_psziMagicSingleFragment"
+            app:destination="@id/psziMagicSingleFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/psziMagicSingleFragment"
+        android:name="com.lazyfools.magusbuddy.page.codex.pszimagic.PsziMagicSingleFragment"
+        android:label="PsziMagicSingleFragment"
+        tools:layout="@layout/pszimagic_single_show"/>
 </navigation>

@@ -15,6 +15,7 @@ public class DbPopulizer implements Populizer{
         _populizers.add(new HighMagicPopulizer(context,db));
         _populizers.add(new SacralMagicPopulizer(context,db));
         _populizers.add(new BardMagicPopulizer(context,db));
+        _populizers.add(new PsziMagicPopulizer(context,db));
     }
 
     @Override

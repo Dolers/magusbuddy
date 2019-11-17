@@ -1,4 +1,4 @@
-package com.lazyfools.magusbuddy.page.codex.bardmagic;
+package com.lazyfools.magusbuddy.page.codex.pszimagic;
 
 
 import android.app.SearchManager;
@@ -24,9 +24,9 @@ import androidx.navigation.Navigation;
 
 import com.lazyfools.magusbuddy.HomeActivity;
 import com.lazyfools.magusbuddy.R;
-import com.lazyfools.magusbuddy.database.entity.BardMagicType;
+import com.lazyfools.magusbuddy.database.entity.PsziMagicType;
 import com.lazyfools.magusbuddy.page.codex.onClickListener;
-import com.lazyfools.magusbuddy.viewmodel.BardMagicDatabaseViewModel;
+import com.lazyfools.magusbuddy.viewmodel.PsziMagicDatabaseViewModel;
 
 import java.util.List;
 
@@ -36,14 +36,14 @@ import java.util.List;
  * Activities containing this fragment MUST implement the {@link onClickListener}
  * interface.
  */
-public class BardMagicCategoryListFragment extends Fragment {
+public class PsziMagicCategoryListFragment extends Fragment {
 
-    private BardMagicTypeOnClickListener _listener;
-    private BardMagicDatabaseViewModel _viewModel;
-    private BardMagicCategoryListAdapter _adapter;
+    private PsziMagicTypeOnClickListener _listener;
+    private PsziMagicDatabaseViewModel _viewModel;
+    private PsziMagicCategoryListAdapter _adapter;
     private RecyclerView _recyclerView;
 
-    public BardMagicCategoryListFragment() { }
+    public PsziMagicCategoryListFragment() { }
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -55,13 +55,13 @@ public class BardMagicCategoryListFragment extends Fragment {
         super.onActivityCreated(savedInstanceState);
         ((HomeActivity)getActivity()).setBottomNavigationVisibility(View.VISIBLE);
 
-        _viewModel = ViewModelProviders.of(this).get(BardMagicDatabaseViewModel.class);
+        _viewModel = ViewModelProviders.of(this).get(PsziMagicDatabaseViewModel.class);
 
-        _viewModel.getAllBardMagicTypes().observe(this, new Observer<List<BardMagicType>>() {
+        _viewModel.getAllPsziMagicTypes().observe(this, new Observer<List<PsziMagicType>>() {
             @Override
-            public void onChanged(@Nullable final List<BardMagicType> BardMagics) {
+            public void onChanged(@Nullable final List<PsziMagicType> PsziMagics) {
                 // Update the cached copy of the words in the adapter.
-                _adapter.setItems(BardMagics);
+                _adapter.setItems(PsziMagics);
             }
         });
     }
@@ -79,15 +79,15 @@ public class BardMagicCategoryListFragment extends Fragment {
             String query = intent.getStringExtra(SearchManager.QUERY);
             //TODO do smth with query
         }
-        _listener = new BardMagicTypeOnClickListener(){
+        _listener = new PsziMagicTypeOnClickListener(){
             @Override
-            public void onClick(BardMagicType item) {
+            public void onClick(PsziMagicType item) {
                 Bundle bundle = new Bundle();
                 bundle.putInt(getResources().getString(R.string.SKILL_TYPE), item.getType().ordinal());
-                Navigation.findNavController(_recyclerView).navigate(R.id.action_bardMagicCategoryListFragment_to_bardMagicListFragment,bundle);
+                Navigation.findNavController(_recyclerView).navigate(R.id.action_psziMagicCategoryListFragment_to_psziMagicListFragment,bundle);
             }
         };
-        _adapter = new BardMagicCategoryListAdapter(_listener,container.getContext());
+        _adapter = new PsziMagicCategoryListAdapter(_listener,container.getContext());
         _recyclerView.setAdapter(_adapter);
 
         return _recyclerView;
@@ -106,7 +106,7 @@ public class BardMagicCategoryListFragment extends Fragment {
                 sv.clearFocus();
                 Bundle bundle = new Bundle();
                 bundle.putString(getResources().getString(R.string.SKILL_NAME_FILTER), query);
-                Navigation.findNavController(_recyclerView).navigate(R.id.action_bardMagicCategoryListFragment_to_bardMagicListFragment,bundle);
+                Navigation.findNavController(_recyclerView).navigate(R.id.action_psziMagicCategoryListFragment_to_psziMagicListFragment,bundle);
                 return true;
             }
 
@@ -137,7 +137,7 @@ public class BardMagicCategoryListFragment extends Fragment {
             case R.id.search_item:
                 getActivity().onSearchRequested();
                 /*
-                List<NameEntity> names = _viewModel.getAllBardMagicNames().getValue();
+                List<NameEntity> names = _viewModel.getAllPsziMagicNames().getValue();
 
                 SimpleSearchDialogCompat dialog = new SimpleSearchDialogCompat<NameEntity>(getActivity(), "Search...",
                         "What are you looking for...?", null, (ArrayList) names,
@@ -176,7 +176,7 @@ public class BardMagicCategoryListFragment extends Fragment {
      * "http://developer.android.com/training/basics/fragments/communicating.html"
      * >Communicating with Other Fragments</a> for more information.
      */
-    public interface BardMagicTypeOnClickListener extends onClickListener<BardMagicType> {
-        void onClick(BardMagicType item);
+    public interface PsziMagicTypeOnClickListener extends onClickListener<PsziMagicType> {
+        void onClick(PsziMagicType item);
     }
 }

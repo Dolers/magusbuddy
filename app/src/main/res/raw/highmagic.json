@@ -1,0 +1,1279 @@
+[
+ {
+  "Varázslat neve": "A Tudat adománya",
+  "Típus": "Nekromancia",
+  "MP": 30,
+  "E MP": 0,
+  "Időtartam": "1 nap",
+  "Hatótáv": "Érintés",
+  "Varázslás ideje": "1 perc",
+  "Leírás": "A varázslat segítségével tudat, intelligencia kölcsönözhető egy értelemmel nem bíró élőhalottnak. A varázslás során a nekromanta saját tudatának torz és igen primitív lenyomatát plántálja az élőhalottba. Ami ezáltal rövid, egyszerű parancsokat képes csak végrehajtani, melyek nem lehetnek összetett feladatok. Például: „Senkit ne eressz be az ajtón!” - parancsot képes végrehajtani, míg a „Csak a vendégeimet ereszd be!” - utasítással nem tud mit kezdeni."
+ },
+ {
+  "Varázslat neve": "Akaratátvitel (írás)",
+  "Típus": "Mentálmágia",
+  "MP": 3,
+  "E MP": 0.5,
+  "Időtartam": "3 kör",
+  "Hatótáv": "",
+  "Varázslás ideje": "1 sz",
+  "Leírás": "A varázsló rákényszeríti akaratát az áldozatra. Az akként cselekszik, beszél, harcol, ahogyan a varázsló azt meghatározza. Ez azt jelenti, hogy teljes tudatával hiszi, az, amit tenni kíván, a saját gondolata és vágya. Meg sem fordul a fejében, hogy a motiváció netán mástól származik.\nHa öngyilkos cselekedetre kap parancsot, akkor Akaraterő-próbát tehet. Amennyiben ez sikeres, kiszabadul a varázslat hatása alól, és tudatába kerül a befolyásoltságának, miáltal - sikertelen Asztrálpróba esetén - vak gyűlölet ébred benne a varázsló iránt. Ennek hatása az Asztrálmágia fejezetében leírt Gyűlölet varázslathoz hasonló. Ha Asztrálpróbája sikeres, ura marad érzelmeinek (JK esetén a játékos dönti el, miként érez a varázsló irányában)."
+ },
+ {
+  "Varázslat neve": "Asztrálbélyeg",
+  "Típus": "Rúnamágia",
+  "MP": 15,
+  "E MP": 0,
+  "Időtartam": "végleges",
+  "Hatótáv": "",
+  "Varázslás ideje": "",
+  "Leírás": "Az Asztrálbélyegek alkalmasak arra, hogy viselőjüket az adott Asztrálmágia hatása alá helyezzék. Ez azt jelenti, hogy minden Asztrálmágiánál ismertetett varázslat belefoglalható egy Asztrálbélyegbe. Ez annyi Mana pontba kerül, amennyibe az adott varázslat kerülne 15 E erősítés estén. A bélyeg minden esetben tartalmazza a beléfoglalt érzelem irányát, azaz az adott Asztrálmágia célpontját."
+ },
+ {
+  "Varázslat neve": "Aura",
+  "Típus": "Elemi mágia",
+  "MP": 2,
+  "E MP": 2,
+  "Időtartam": "1 kör",
+  "Hatótáv": "Test",
+  "Varázslás ideje": "1 sz",
+  "Leírás": "Védő varázslat. A varázsló testét egy a teremtett elemből álló Aura övezi. Ez egyfajta személyre szabott Fal. Nagyrészt mágikus védelem céljára szolgál: az ellentétes elemből készült varázslatok ellen véd éppúgy, akár a Fal.\nMásik alkalmazási módja az érintéstől való védelem, mikor annak, aki az Aura védettjét megérinti, vagy puszta kézzel megüti, az elem E-jének megfelelő Sp-t okoz.\nAz Aura nem akadályozza a mozgásban azt, akit óv; mozdulatait - akár valami ruha - követi. Védettjére közvetlen hatással nincs (a Tűzaura nem égeti, a Vízaurától nem lesz nedves, még akkor sem, mikor azok eltűnnek), az érzékelésben (látásban, hallásban) azonban akadályozza, vagy épp lehetetlenné teszi az észlelést (például Őselemi Föld Aurában se nem lát, se nem hall, Vízaurán át csak homályosan lát, a Sötétségaurán át pedig egyáltalán nem). Az Elemi Erő Aura SFÉ-t biztosít, az alkalmazására vonatkozó szabályok az Elemi Erő teremtésénél találhatóak. Azonban az efféle Aura a mágikus (például Őselemi vagy Villámmágikus) támadások ellen nem véd."
+ },
+ {
+  "Varázslat neve": "Aura",
+  "Típus": "Asztrálmágia",
+  "MP": 2,
+  "E MP": 2,
+  "Időtartam": "1 kör",
+  "Hatótáv": "Test",
+  "Varázslás ideje": "1 sz",
+  "Leírás": "Az Elemi mágiánál ismertetett Aura mozaikkal azonos felépítésű gátat emel az Asztrálsíkon a varázsló az adott érzelemből egy tárgy vagy személy köré. A gát alapesetben 1 körig, vagy a hozzákapcsolt Időmágia Időtartamáig áll fent. Az áldozatra a varázslat Asztrál mozaikja akkor próbálja meg kifejteni hatását, mikor amaz megérinti az Aurával védett tárgyat, vagy személyt."
+ },
+ {
+  "Varázslat neve": "Bebörtönző varázskörök",
+  "Típus": "Rúnamágia",
+  "MP": 20,
+  "E MP": 0,
+  "Időtartam": "végleges",
+  "Hatótáv": "",
+  "Varázslás ideje": "",
+  "Leírás": "A Bebörtönző Varázskörök bizonyos lényeknek a belső körbe történő bezárására használatosak. Ez azt jelenti, hogy az adott lény képtelen átlépni a belső kör vonalát, és kijutni azon belülről. Egyébként minden szempontból hasonlóak a Kirekesztő Varázskörökhöz, a Mp-igényük meghatározásában is az ott említett táblázat az irányadó."
+ },
+ {
+  "Varázslat neve": "Beszéltetés (írás)",
+  "Típus": "Mentálmágia",
+  "MP": 1,
+  "E MP": 0.5,
+  "Időtartam": "3 kör",
+  "Hatótáv": "",
+  "Varázslás ideje": "1 sz",
+  "Leírás": "A varázsló az áldozat szájával beszél, pontosabban az áldozat azt mondja, amit a varázsló szeretne. Ez nem helyettesíti az Akaratátvitelt, azaz az áldozat, miközben más beszél a szájával, tisztában van azzal, hogy nem ezt szeretné mondani, de nincs hatalma a saját beszédközpontja felett. Az egyetlen, amit tehet az, hogy igyekszik írásban vagy taglejtésekkel tiltakozni, esetleg mást közölni."
+ },
+ {
+  "Varázslat neve": "Bátorság/Félelem",
+  "Típus": "Asztrálmágia",
+  "MP": 1,
+  "E MP": 1,
+  "Időtartam": "1p",
+  "Hatótáv": "",
+  "Varázslás ideje": "3 sz",
+  "Leírás": "A varázslat áldozata erős bátorságot érez, a varázsló által meghatározott tárgy, személy, vagy eszme kapcsán. Ez anynyit tesz, hogy attól semmiféle módon nem tart, vagy épp ellenkezőleg: könnyű szívvel tesz ellene.\nFélelem esetén retteg az adott személytől, tárgytól, eszmétől; miáltal könnyen megfutamodik, és az összetűzést mindenképp elkerülni igyekszik."
+ },
+ {
+  "Varázslat neve": "Bénultság (Bénítás)",
+  "Típus": "Mentálmágia",
+  "MP": 2,
+  "E MP": 1,
+  "Időtartam": "1 kör",
+  "Hatótáv": "",
+  "Varázslás ideje": "1 sz",
+  "Leírás": "A varázslat hatására az áldozat az Időtartam lejártáig megbénul, mozdulni is képtelen. Fegyvert forgatni, célozni, védekezni, varázsolni képtelen, de szellemi és pszi képességének birtokában marad."
+ },
+ {
+  "Varázslat neve": "Csóva",
+  "Típus": "Elemi mágia",
+  "MP": 1,
+  "E MP": 1,
+  "Időtartam": "1 kör",
+  "Hatótáv": "20 m",
+  "Varázslás ideje": "1 sz",
+  "Leírás": "A kitörés különleges változata, s ebből következően főként támadásra használható. A varázsló itt is fókuszba rántja az általa létrehozott elemet, azonban nem engedi a tér minden irányában szétterülni, hanem fokozatos áramoltatja ki, s így a megidézett elem irányított csóvában tör ki. A Csóva mindig a végpontján éri el az 1 lábnyi átmérőt.\nA Csóvába formázott elem Erőssége (E) az első lábon anynyi, amennyi a teremtett elem Erőssége, attól kezdve pedig lábanként eggyel csökken (akár a Kitörésnél). Ebből máris kiviláglik, hogy a csóva annyi láb hosszú, amennyi az Erőssége. Csak a kiindulási pontja és iránya adható meg, tárgyhoz vagy személyhez nem rendelhető, azzal együtt nem mozgatható vagy forgatható.\nA másik szembeötlő különbség a Kitöréshez képest, hogy a Csóva időtartama nem egyszeri, hanem egy teljes kör. Ez idő alatt a teremtett elem folyamatosan áramlik a Csóva kiindulási pontjától a végpontjáig."
+ },
+ {
+  "Varázslat neve": "Dadogás (Kábítás)",
+  "Típus": "Mentálmágia",
+  "MP": 1,
+  "E MP": 0.333,
+  "Időtartam": "1p",
+  "Hatótáv": "",
+  "Varázslás ideje": "1 sz",
+  "Leírás": "Kába beszédközponttal az áldozat képtelen tisztán ejteni a szavakat, és olyamatosan beszélni. Dadogni fog, vagy szinte az érthetetlenségig torzítja a szavakat, akár a részeg ember. Hogy melyik hatás következzék be, azt a varázsló határozza meg."
+ },
+ {
+  "Varázslat neve": "Destrukció",
+  "Típus": "Egyéb mágikus módszerek",
+  "MP": 1,
+  "E MP": 1,
+  "Időtartam": "végleges",
+  "Hatótáv": "",
+  "Varázslás ideje": "1 sz/E",
+  "Leírás": "A varázslatokat a megidézőjüktől származó mágikus energia táplálja és tartja össze. A varázsló azonban energiáit romboló célzattal is bejuttathatja egy varázslatba, akár másokéiba is. Olyan ez, akár az érzékeny mechanizmusba szórt homokszemcse - hibás működést, rosszabb esetben teljes működésképtelenséget okoz.\nEgy varázslat tönkretétele épp annyi Mp-ba kerül, amenynyibe létrehozása. Ha tehát a varázsló ugyanannyi Mana pontot erőltet ártó célzattal egy már működő varázslatba, mint amennyibe az eredetileg került, a varázslat teljes egészében megszűnik létezni. Ha kevesebbet áldoz: semmi nem történik, ha többet: a fölöslegesen elköltött Mana pontok elvesznek.\nNem szükséges azonban a teljes varázslatot Destruálni. Mozaikmágia esetén lehetséges pusztán egyes kiszemelt mozaikjait is megtámadni. Egy mozaik tönkretételéhez is annyi Mp szükségeltetik amennyibe a létrehozása került. Ha egy varázslatról lebomlik az Időmágia, minden egyes mozaikja még annyi ideig működik, amennyi a mozaikok leírásában az Időtartam rovatban szerepel, azután sorban megszűnnek létezni.\nHa a Térmágia vagy a Szimpatikus mágia bomlik le róla, akkor hirtelenjében ott jön létre, ahol a varázsló a varázslás pillanatában tartózkodott. Természetesen Asztrál- vagy Mentálmágia esetében az áldozat azonnal felszabadul a varázslat hatása alól.\nHa egy varázslatról maguk a magot képező mozaikok bomlanak le, a varázslat teljes egészében megszűnik működni.\nA fentiek ismeretében tehát leszögezhetjük, ha valaki képes felismerni és feltérképezni egy már működő varázslat szerkezetét, alkotóelemeit (azaz mozaikjait) és azok Mp-igényét, akkor képes lesz teljesen szét is bomlasztani az egész varázslatot, jóval kevesebb Mp-ért, mint amennyibe az eredetileg került.\nRúnamágikus hatások Destrukcióval nem szüntethetők meg, csak a rajzolat eltörlésével, illetve a vonalak megszakításával.\nA varázsló a nem Mozaikmágiával létrehozott varázslatokat: boszorkányok, boszorkánymesterek, tűzvarázslók varázslatait is képes Destruálni, ám csak egészben. Ellenben a Szakrális mágia destruálására képtelen."
+ },
+ {
+  "Varázslat neve": "Dezintegráció",
+  "Típus": "Természeti Anyagok Mágiája",
+  "MP": 3,
+  "E MP": 3,
+  "Időtartam": "Végleges",
+  "Hatótáv": "20 m",
+  "Varázslás ideje": "1 kör",
+  "Leírás": "A varázslattal a Természeti Anyag Mágiájára vonatkozó törvények szerint az anyag egyszerűen semmivé tehető. Pontosabban energiává, ami rögvest szétoszlik a Manahálóban.\n3 Mp-ért 1 ynevi font I. csoportba, vagy 1/2 ynevi font\nII. csoportba, vagy 1 ynevi lat III. csoportba tartozó anyag dezintegrálható.\nA Dezintegráció élőlények esetében - ha a Személyes Aura védő hatása nem érvényesül - azonnali halállal jár."
+ },
+ {
+  "Varázslat neve": "Démonidéző litánia",
+  "Típus": "Démonológia",
+  "MP": 30,
+  "E MP": 30,
+  "Időtartam": "Gyertya",
+  "Hatótáv": "",
+  "Varázslás ideje": "1 kör",
+  "Leírás": "A démon más világról származó, szinte sebezhetetlen Anyagi Testével egyetemben jelenik meg, a litánia utolsó szavának elhangzásakor. A démonok - mivel lélekkel nem bírnak - a gyertya kialvásakor erejűit nagy részét elveszítve saját síkjukra kerülnek vissza, és a testükben megkötött energiák pattogva, szikrázva szivárognak el a Manahálóba. Az idézésük hossza 1 Mp-onként 1 szegmens. A démonok megidézésének költsége démonológiai osztályuktól függően a következő:",
+  "tablazatok": [
+   "Osztály\tMana pont\nAlsórendü démon\t30 Mp\nKözdémon\t60 Mp\nDémonurak\t120 Mp\nDémonherceg\t180 Mp"
+  ]
+ },
+ {
+  "Varázslat neve": "Démonűző litánia",
+  "Típus": "Démonológia",
+  "MP": 30,
+  "E MP": 30,
+  "Időtartam": "Végleges",
+  "Hatótáv": "20m",
+  "Varázslás ideje": "?",
+  "Leírás": "Kevesen tudják, hogy az idéző litániákat visszafelé elmondva, azok hatása is megfordítható, azaz a lény nem megidéztetik, hanem elűzetik az Anyagi Síkról. Az űző litániák ugyanazokból a mágikus tartamú szavakból állnak (ugyanannyi a Mana pont igényük és a varázslási idejük), mint az azonos idéző litániának, csak éppen fordított sorrendben, a legutolsó szavakat előrevéve kell elkántálni őket. Az űző litánia utolsó szavának elhangzásakor a lény (akire a varázslat irányul), visszaűzetik - visszakerül - oda, ahonnan korábban megidézték."
+ },
+ {
+  "Varázslat neve": "Elemi Erő teremtése",
+  "Típus": "Elemi mágia",
+  "MP": 4,
+  "E MP": 4,
+  "Időtartam": "?",
+  "Hatótáv": "20 m",
+  "Varázslás ideje": "1 sz/E",
+  "Leírás": "Az Elemi Erő igen különleges jelenség. Nem sorolható a Paraelemek közé, mivel nem származtatható egyetlen Őselemből sem, ugyanakkor számos mágielméleti okból nem tekinthető Őselemnck se. Megjelenési formája az anyagi komponens nélkül jelentkező erőhatás.\nA varázsló 4 Mana pontért olyan mennyiségű Elemi Erőt teremthet, amely képes megtartani 20 ynevi font súlyú vagy ugyan ekkora erővel nekifeszülő tárgyat: avagy semlegesíteni 4 Sp-t, akár egy vért SFÉ-je (az Elemi Erő azonban nem minősül páncélnak, csupán hatásában hasonló, így nem vonatkozik rá semmilyen, a páncélokat SFÉ-jét érintő hatás - például a 00-s szabály vagy a Túlütés esetén érvényesülő SFÉ csökkenés).\nAz Elemi Erőből teremtett Nyíl minden egyes E-je után lk6 Sp-t sebez. Kitörés esetén, az epicentrumban minden egyes E-je után 1k6 Sp-t sebez; kifelé távolodva pedig a varázslat Erőssége lépésenként eggyel csökken; nagy erősítés esetén feldönti a tárgyakat, embereket, kicsavarja a fákat, bokrokat. Elemi Erőből munkált Szőnyeg E-nként 20 ynevi font súlyt tart meg, a Fal ugyanennyi súlyai nekífeszülő terhet tart távol, nem engedvén azt át magán.\nAz Elemi Erőnek nincs ellentétes elempárja, hacsak önmagát nem tekintjük annak, mivel az egymásnak feszülő, ellentétes irányú Elemi Erő az Őselemekhez hasonlóan kioltják egymást.\nA következő táblázat arról tudósít, hogy a tárgyak sebessége miként befolyásolja az Elemi Erő súlyt megtartó képességét.\nA Súlyváltozás oszlop elárulja, hogy az adott sebességgel haladó tárgy'valós súlya mennyivel számít nagyobbnak, amikor az Elemi Erőnek ütközik.\nAz „1 E Elemi Erő megtart” oszlop mutatja, hogy mekkora súlyt képes megtartani 1 E Erősségű Elemi Erő, ha az a megadott sebességgel ütközik neki. Ha a súly meghaladja az Elemi Erő megtartóképességét, az semmilyen hatást nem fejt ki ellene",
+  "tablazatok": [
+   "Súly mozgása\tSúlyváltozás\t1 E Elemi Erő megtart\nÁlló súly\t-\t20 ynevi font\nSéta esetén\tx2\t10 ynevi font\nFutás esetén\tx5\t4 ynevi font"
+  ]
+ },
+ {
+  "Varázslat neve": "Emlékolvasás (Olvasás)",
+  "Típus": "Mentálmágia",
+  "MP": 2,
+  "E MP": 0.25,
+  "Időtartam": "5p",
+  "Hatótáv": "",
+  "Varázslás ideje": "1 sz",
+  "Leírás": "A varázsló képes olvasni az áldozat emlékei között. Sokban hasonlít ez a közismert gondolatolvasásra, a különbség pusztán annyi, hogy a varázsló olyan múltbéli eseményeket fürkészhet ki, melyeknek az áldozat tanúja volt. Egyetlen meghatározott mozzanatról szerezhet azonban csak tudomást, annak is pusztán egy időben éppolyan hosszú szakaszáról, mint amennyi az Időtartam. A valóságban ez valahogy úgy történik, hogy a varázsló felidézi az áldozat emlékezetében az adott mozzanatot, mire az illető önmagában végigéli mindazt, ami annak idején történt vele. A varázsló ennek a filmszerű, valós idejű vetítésnek lesz a tanúja. Ami azt jelenti, hogy az Időmágia segítségével a varázsló akár több óra vagy nap eseményeiről is tudomást szerezhet, ám ez - mivel épp ennyi Emlékolvasással töltött időt igényel - meglehetős türelemről tesz tanúbizonyságot."
+ },
+ {
+  "Varázslat neve": "Fal",
+  "Típus": "Elemi mágia",
+  "MP": 1,
+  "E MP": 1,
+  "Időtartam": "1 kör",
+  "Hatótáv": "20 m",
+  "Varázslás ideje": "1 sz",
+  "Leírás": "Védő varázslat. A varázsló a Zónáján belül eső, és általa meghatározott helyen, az adott elemből megalkotott Falat emel. Ez valójában egy félbevágott, függőleges Szőnyeg. Azaz fél láb vastag, epicentruma a föld szintjén helyezkedik el, és félkörívben emelkedik. Sugarát és Erősségét a Szőnyeghez hasonlóan kell számolni, tehát a Fal E-je a a beleformázott elem E-jének és a Fal kiterjedésének átlaga.\nÚtját állja az ellentétes Elemi Mágiáknak (például Vízfal a Tűznyílnak). Hatásukat vagy teljesen megszünteti, vagy erejéhez mérten mérsékli (az ellentétes elemek kioltásra vonatkozó szabály szerint). Azaz, ha a Fal E-je nagyobb a támadás E-jénél, akkor a támadás megszűnik létezni (még akkor is, ha eredetileg több körig fennmaradt volna, mint például a Kard). Közben persze a Fal is veszít az erejéből. Abban az esetben, ha a támadás E-je a nagyobb, a Fal semmisül meg, ám a támadás is csak meggyengülve jut át rajta.\nElemi Erő falként a fizikai hatásoknak is gátat szab - például az elhajított tőrnek, a kilőtt nyílvesszőnek, vagy a rohamozó lovasnak. Az erre vonatkozó adatokat lásd az Elemi Erő Teremtése nevű mozaiknál.\nDe ellenállhat másként is: a Tűzfal elhamvaszthatja a rajta keresztüldobott tárgyakat, a Földfal pora elvaldthatja a rajta áthaladót. Ám az efféle mellékhatások hatékonyságának megítélése a KM feladata."
+ },
+ {
+  "Varázslat neve": "Feledés (írás)",
+  "Típus": "Mentálmágia",
+  "MP": 2,
+  "E MP": 0.5,
+  "Időtartam": "3 kör",
+  "Hatótáv": "",
+  "Varázslás ideje": "1 sz",
+  "Leírás": "A varázslat sok szempontból hasonlít az Emlékolvasáshoz, ám a Feledés segítségével a varázsló nem kifürkészi, hanem törli az áldozat emlékeit - egyszerre csak egyetlen momentumot, és annak is csak olyan hosszú szakaszát, amennyi a varázslat Időtartama. A törölt emlék soha többé nem szerezhető vissza, mágikus úton sem!\nA varázslat más irányú alkalmazásával a varázsló képes az áldozat elméjébe hamis emlékképeket ültetni - a fent már leírt témára és Időtartamra vonatkozó megszorításokkal. Ettől kezdve ezt az emléket az áldozat teljes mértékben a magáénak tekinti, és úgy emlékszik vissza rá, mint amit maga élt meg. Az, hogy egy emlék hamis, csakis egy másik varázslónak tűnhet fel, amikor épp az adott mozzanat felől kíváncsiskodva Emlékolvasást végez. Ebben az esetben is csak akkor, ha az Emlékolvasás erősítése nagyobb vagy egyenlő, mint a hamis emlék elhelyezésére alkalmazott varázslat Erőssége volt.\nAzt, hogy a Feledés varázslat az említett két változat közül melyik módon működjön, a varázsló határozza meg."
+ },
+ {
+  "Varázslat neve": "Forgás varázsjel",
+  "Típus": "Rúnamágia",
+  "MP": 1,
+  "E MP": 1,
+  "Időtartam": "",
+  "Hatótáv": "",
+  "Varázslás ideje": "",
+  "Leírás": "A Tapadáshoz hasonló jelpár, ám az összeillesztett tárgyak (a rögzítetlen, vagy a kisebb súlyú) a varázsjelek képezte tengely körül forognak. Egy tenyérnyi korong 5 szegmens alatt tesz meg egy teljes kört. A forgás sebessége a teljes Mana pont igény megkétszerezésével megduplázható, háromszorozásával megtriplázható... és így tovább. Egyebekben a jelpár teljes mértékben a Tapadás Varázsjelhez hasonlóan viselkedik"
+ },
+ {
+  "Varázslat neve": "Fúvócső",
+  "Típus": "Egyéb mágikus módszerek",
+  "MP": 7,
+  "E MP": 0,
+  "Időtartam": "",
+  "Hatótáv": "",
+  "Varázslás ideje": "",
+  "Leírás": "Kiteleportálja a fűvócsövet a táskából, telekinézissel ott tartja, Őslevegő csóvával kifújatja, majd visszateszi a táskába a fúvócsövet"
+ },
+ {
+  "Varázslat neve": "Fürkészés",
+  "Típus": "Egyéb mágikus módszerek",
+  "MP": 1,
+  "E MP": 0.5,
+  "Időtartam": "1 sz/E",
+  "Hatótáv": "",
+  "Varázslás ideje": "1 sz/E",
+  "Leírás": "Fürkészés segítségével a varázsló képes meghatározni egy varázslat pontos szerkezetét - mozaikjai, vagy szakrális, esetleg tapasztalati mágia létrehozta varázslatok esetén a pontos működését., erősítését (E) és a beléfektetett Mana pontok számát egyaránt. Természetesen soha nem biztosított a siker, hiszen a Fürkészés gyakran sokáig is elhúzódhat, és nem lehet előre tudni, mennyi Mp-ba kerül.\nAhhoz, hogy a varázsló kifürkészhessen egy varázslatot, annak a Zónáján belül kell esnie (vagy személyes Zónája vagy valamely Zóna Varázsjele körüli 20 ynevi lábnyi sugarú gömbön belül.) A Fürkészést Távolbahatni nem lehetséges.\nA varázslat csak akkor sikeres, ha a Fürkészés E-je meghaladja a kifürkészni kívánt varázslat Erősségét. A Fürkészés kezdetekor a varázsló még nem tudhatja, mennyi idejét veszi majd igénybe, s hogy mennyi Mana pontba fog kerülni. Előfordulhat az is, hogy félúton elfogynak a Mana pontjai, vagy felhagy a próbálkozással. Ilyenkor természetesen semmilyen eredményre nem jut."
+ },
+ {
+  "Varázslat neve": "Gondolatolvasás (Olvasás)",
+  "Típus": "Mentálmágia",
+  "MP": 3,
+  "E MP": 0.25,
+  "Időtartam": "5p",
+  "Hatótáv": "",
+  "Varázslás ideje": "1 sz",
+  "Leírás": "A varázsló az áldozat gondolataiban olvas, azokban, amelyek azt éppen foglalkoztatják. Minél nagyobb az erősítés, annál mélyebb, avagy elvontabb gondolatoknak jut nyomára. Kis átjutott erősítés esetén (1-15 E), ezek csak felületes gondolatok lehetnek, olyanok, amelyek az elkövetkező pillanatok cselekvéseire vonatkoznak. Komolyabb erősítés esetén már hosszabb távú, vagy elvont gondolatok és szándékok is a varázsló tudomására jutnak."
+ },
+ {
+  "Varázslat neve": "Gyorsítás",
+  "Típus": "Időmágia",
+  "MP": 1,
+  "E MP": 1,
+  "Időtartam": "1 kör",
+  "Hatótáv": "",
+  "Varázslás ideje": "3 sz",
+  "Leírás": "A Lassítással éppen ellentétes hatású mozaik. A kiszemelt tárgy vagy személy saját idejének múlását felgyorsítja, miáltal környezete hozzá képest lelassul.\nA felgyorsított személy Gyorsasága 20-ra nő - bármennyi is volt egyébként. TÉ-je és VÉ-je 40-nel növekszik, ám minden sebzés (Sp) amit elszenved, megkétszereződik, s minden ellenfelének +4 SFÉ-je lesz az ő csapásaival és szúrásaival szemben.\nA felgyorsított tárgy kevésbé képes kárt tenni a többiben, ám annál könnyebben rongálódik."
+ },
+ {
+  "Varázslat neve": "Halottmozgatás bélyege",
+  "Típus": "Nekromancia",
+  "MP": 40,
+  "E MP": 0,
+  "Időtartam": "Gyertya",
+  "Hatótáv": "Test",
+  "Varázslás ideje": "20p",
+  "Leírás": "Ez annyit tesz, hogy az Átváltoztatás és a Visszaváltoztatás varázslatoknak nem képezheti alanyát.\nAbban az esetben, ha a varázsló egy kevesebb, mint 66 perce halott lényen helyezi el a bélyeget, a kiköltözött lélek még nem jár messze, így - idézés nélkül is - nyomban visszaköltözik a testbe.\nFigyelem: a Halottmozgatás Bélyege csak akkor akadályozza meg a test elrohadását, ha az minden szempontból működőképes, azaz anyagcserére is alkalmas. Ha nem, akkor a test hónapok alatt, lábon rothad el. A tartósításra csak a papok képesek - vagy a varázsló, folytonos Átformázással."
+ },
+ {
+  "Varázslat neve": "Hullám",
+  "Típus": "Asztrálmágia",
+  "MP": 1,
+  "E MP": 1,
+  "Időtartam": "Egyszeri",
+  "Hatótáv": "E*m",
+  "Varázslás ideje": "1 sz",
+  "Leírás": "A Lélektan avatott ismerője már képes a tudattól függetlenül magán az Asztrálsíkon egyfajta érzelmi hullámot vetni. Ezáltal pusztítva a megidézett érzelemből álló lényeket, vagy épp befolyása alá vonva a közelben tartózkodó elméket.\nA varázsló a Zónáján belül kijelölhet egy tetszés szerinti pontot, ami a hullám epicentruma lesz. Az adott Érzelem Erőssége a Hullám kiindulópontjában a teljes Erősség, majd minden ynevi láb távolság után csökken egy E-vel, megérintve mindenkinek az elméjét, s kifejtve a területen tartózkodók közül azokra az adott érzelem hatását, akik elvétik az Asztrális Mágiaellenállásukat. A továbbiakban a fentebb ismertetett szabályok a mérvadóak, tehát az alkalmazott asztrális mozaik, vagy a varázslathoz kapcsolt Időmágia időtartamára az adott érzelem hatása alá kerülnek a célpontok."
+ },
+ {
+  "Varázslat neve": "Hűség/Hűtlenség",
+  "Típus": "Asztrálmágia",
+  "MP": 1,
+  "E MP": 1,
+  "Időtartam": "1p",
+  "Hatótáv": "",
+  "Varázslás ideje": "3 sz",
+  "Leírás": "A varázslat áldozata a varázsló által meghatározott személy, tárgy, avagy eszme irányában erős hűséget érez, ami a lojalitást kevésbé előtérbe helyező csoportok valamelyikébe tartozó áldozat esetében enyhébb, a becsületükre sokat adó lovagok és kardművészek esetében fokozottabb hatást jelent, mint a Szeretet, és az ott leírtakhoz hasonló cselekedetekre sarkallja. *\nHűtlenség esetén a fentiek irányában semmilyen lojalitást nem érez, saját érdekeit azokénál mindenképp előrébb helyezi"
+ },
+ {
+  "Varázslat neve": "Idéző pentagramma",
+  "Típus": "Nekromancia",
+  "MP": 40,
+  "E MP": 0,
+  "Időtartam": "Gyertya",
+  "Hatótáv": "",
+  "Varázslás ideje": "",
+  "Leírás": "A pentagramma leggyakrabban idézésekhez használatos; ilyenkor a varázsló litániát kántál, a megidézett ennek végeztével jelenik meg. A litánia hossza az idézett teremtmény nekrografiai besorolásától függ. Mint ahogy ez határozza meg azt is, hogy mennyi Mp szükséges az idézéshez.\nA Mp-ok a litánia elmondásakor használódnak fel.\nA pentagrammába mágikus rúnákkal bele kell írni a megidézni kívánt lény megnevezését. A további leírást lásd a Nekromancia című fejezet elején!"
+ },
+ {
+  "Varázslat neve": "Időtartam: Kör",
+  "Típus": "Időmágia",
+  "MP": 4,
+  "E MP": 1,
+  "Időtartam": "1 kör",
+  "Hatótáv": "",
+  "Varázslás ideje": "1 sz",
+  "Leírás": "A mozaik segítségével a varázsló varázslatának Időtartamát növelheti meg további körökkel az alábbi táblázat szerint:",
+  "tablazatok": [
+   "Plusz kör\tMp\n1 kör\t+5 Mp\n2 kör\t+6 Mp\n3 kör\t+7 Mp\n4 kör\t+8 Mp\n5 kör\t+9 Mp"
+  ]
+ },
+ {
+  "Varázslat neve": "Időtartam: Nap",
+  "Típus": "Időmágia",
+  "MP": 43,
+  "E MP": 7,
+  "Időtartam": "1 nap",
+  "Hatótáv": "",
+  "Varázslás ideje": "1 óra",
+  "Leírás": "A mozaik segítségével a varázsló varázslatának Időtartamát növelheti meg további napokkal az alábbi táblázat szerint:",
+  "tablazatok": [
+   "Plusz nap\tMp\n1 nap\t50 Mp\n2 nap\t57 Mp\n3 nap\t64 Mp\n4 nap\t71 Mp\n5 nap\t78 Mp"
+  ]
+ },
+ {
+  "Varázslat neve": "Időtartam: Perc",
+  "Típus": "Időmágia",
+  "MP": 7,
+  "E MP": 3,
+  "Időtartam": "1 p",
+  "Hatótáv": "",
+  "Varázslás ideje": "1 kör",
+  "Leírás": "A mozaik segítségével a varázsló varázslatának Időtartamát növelheti meg további percekkel az alábbi táblázat szerint:",
+  "tablazatok": [
+   "Plusz perc\tMp\n1 perc\t+10 Mp\n2 perc\t+13 Mp\n3 perc\t+16 Mp\n4 perc\t+19 Mp\n5 perc\t+22 Mp"
+  ]
+ },
+ {
+  "Varázslat neve": "Időtartam: Év",
+  "Típus": "Időmágia",
+  "MP": 80,
+  "E MP": 10,
+  "Időtartam": "1 év",
+  "Hatótáv": "",
+  "Varázslás ideje": "6 óra",
+  "Leírás": "A mozaik segítségével a varázsló varázslatának Időtartamát növelheti meg további évekkel az alábbi táblázat szerint:",
+  "tablazatok": [
+   "Plusz év\tMp\n1 év\t90 Mp\n2 év\t100 Mp\n3 év\t110 Mp\n4 év\t120 Mp\n5 év\t130 Mp"
+  ]
+ },
+ {
+  "Varázslat neve": "Időtartam: Óra",
+  "Típus": "Időmágia",
+  "MP": 20,
+  "E MP": 5,
+  "Időtartam": "1 óra",
+  "Hatótáv": "",
+  "Varázslás ideje": "1p",
+  "Leírás": "A mozaik segítségével a varázsló varázslatának Időtartamát növelheti meg további órákkal az alábbi táblázat szerint:",
+  "tablazatok": [
+   "Plusz óra\tMp\n1 óra\t+25 Mp\n2 óra\t+30 Mp\n3 óra\t+35 Mp\n4 óra\t+40 Mp\n5 Óra'\t+45 Mp"
+  ]
+ },
+ {
+  "Varázslat neve": "Időtartam: Örökkévalóság",
+  "Típus": "Időmágia",
+  "MP": 150,
+  "E MP": 0,
+  "Időtartam": "végleges",
+  "Hatótáv": "",
+  "Varázslás ideje": "12 óra",
+  "Leírás": "A mozaik segítségével a varázsló örökkévalóvá teheti egy tetszés szerinti másik varázslat időtartamát. Ez 150 Mp-ba kerül."
+ },
+ {
+  "Varázslat neve": "Időugrás",
+  "Típus": "Időmágia",
+  "MP": 1,
+  "E MP": 1,
+  "Időtartam": "0 sz",
+  "Hatótáv": "Érintés",
+  "Varázslás ideje": "1 sz",
+  "Leírás": "A mozaik segítségével a varázsló személyeket és tárgyakat juttathat előre az időben. Az Időugrás a mágia-filozófusok szerint nem más, mint a tér helyett az idő dimenziójában végrehajtott telepőrt. Az időutazók helyet nem változtatnak, ám eltűnnek a térből, s csak az időugráskor meghatározott időpont elérkeztével jelennek meg ismét. A köztes időben minden szempontból nem létezőnek minősülnek: mágiával sem érzékelhetőek vagy érhetőek el. Számukra azonban nem telik az idő, bármilyen távolra is ugranak, csak egy villanásként érzékelik az utazást. Nem öregszenek a világgal együtt; sebeik, betegségeik sem gyógyulnak.\nA köztes időt egyszerűen átugorják.\nAz Időugrás csak akkor jön létre, ha az érkezés pillanatában semmi nem gátolja az utazókat, hogy belépjenek a térbe. Ellenkező esetben semmi nem történik, az utazók el sem tűnnek, bár a varázslatra felhasznált Mana pontok elvesznek. Vagyis a Teleporthoz hasonlóan az Időugrással sem lehet valakit valamibe, vagy valamit valakibe belejuttatni.\nTárgyat a varázsló a súlytól függően, tetszés szerint küldhet előre az időben, de élőlények esetében bírnia kell az illető beleegyezését. Fontos tény még, hogy a mozaik segítségével az idő csak előrefelé járható, a múltba ugrás módját csak a mágusok ismerik.\nAz alábbi táblázat megmutatja, hogy 3 ynevi font súly hány Mana pontért milyen messzire küldhető előre a jövőbe:",
+  "tablazatok": [
+   "Időugrás\tMp\tVarázslás ideje\n1 körnél kevesebb\t1 Mp\t1 szegmens\n1-6 kör\t2 Mp\t2 szegmens\n1 perc - 1 óra\t3 Mp\t1 kör\n1 óra - 1 nap\t4 Mp\t6 kör\n1 nap - 1 év\t5 Mp\t2 perc\n1-100 év\t6 Mp\t5 perc\n100-000 év\t7 Mp\t15 perc"
+  ]
+ },
+ {
+  "Varázslat neve": "Időzítés",
+  "Típus": "Időmágia",
+  "MP": 15,
+  "E MP": 0,
+  "Időtartam": "1 sz",
+  "Hatótáv": "",
+  "Varázslás ideje": "1p",
+  "Leírás": "Ha a varázsló varázslatára Időzítést olvas rá, akkor annak hatása nem azonnal jön létre, hanem a varázsló által másodpercnyi pontossággal előre meghatározott időpillanatban. Ez persze még nincs hatással a létrejövő varázslat időtartamára - csak arra, hogy mikor aktivizálódjon."
+ },
+ {
+  "Varázslat neve": "Illúzió (írás)",
+  "Típus": "Mentálmágia",
+  "MP": 1,
+  "E MP": 0.5,
+  "Időtartam": "3 kör",
+  "Hatótáv": "",
+  "Varázslás ideje": "1 sz",
+  "Leírás": "A varázsló becsapja az áldozat érzékelését. Nem létező dolgokat láttat, nem hallatszó hangokat hallat vele - de igaz ez a többi érzékszervre is. Az áldozat úgy érezheti, mintha \nvalami egészen más helyen járna, más dolgok történnének meg vele. Ha fejében megfordul annak a gondolata, hogy esetleg mindez nem a valóság, akkor\nIntelligencia-próbára jogosult. Sikeres próba esetén - bár a téves érzékelés továbbra is tart már tisztában van azzal, hogy érzékszervei nem a valóságról tájékoztatják.\nIllúzióval sok minden elérhető, ám soha nem okozható valódi seb, főképp nem halál. Ahhoz azonban, hogy az Illúzió ne pusztán egy előre megtervezett történet legyen, hanem változzon is az áldozat cselekedetei által indokolt módon - röviden, hogy tökéletes pszeudo-valóságot teremtsünk az illető számára - értesülnünk kell arról is, hogy miként cselekszik az érzékszervein át csak számára létező valótlan világban, ezt Gondolatolvasással érhetjük el.\nAhhoz, hogy az illúzió által teremtett pszeudo-valóság folyamatosan változó, és ne valami mozdulatlan világ legyen, a varázslónak a varázslat végéig egyfolytában összpontosítania kell. Ez kizárja más varázslatok alkalmazását, vagy a kézitusát, ám nem teszi lehetetlenné a mozgást vagy a beszédet."
+ },
+ {
+  "Varázslat neve": "Irányítás (írás)",
+  "Típus": "Mentálmágia",
+  "MP": 2,
+  "E MP": 0.5,
+  "Időtartam": "3 kör",
+  "Hatótáv": "",
+  "Varázslás ideje": "1 sz",
+  "Leírás": "A varázsló képes irányítani az áldozat mozdulatait. Ezek csak viszonylagosan egyszerűek lehetnek (pl: varázslás, kard-forgatás nem!), és az áldozat, ha éppen nincs parancsa valamely mozdulatra, vagy ha az előzőt már végrehajtotta, akkor a következőig maga is cselekedhet. Ám ez nyomban félbeszakad, amint az új utasítást megkapja.\nFontos megjegyezni, hogy az életösztön erősebb az Irányításnál, ezért ha a varázsló öngyilkos cselekedetre kényszeríti az áldozatot, akkor az újabb Mágiaellenállásra jogosult, amely, ha sikeres, az illető kitör a varázslat hatása alól; míg ha sikertelen, akkor végrehajtja az öngyilkossághoz vezető mozdulatot."
+ },
+ {
+  "Varázslat neve": "Jégzápor",
+  "Típus": "Egyéb mágikus módszerek",
+  "MP": 11,
+  "E MP": 3,
+  "Időtartam": "",
+  "Hatótáv": "",
+  "Varázslás ideje": "",
+  "Leírás": "Ősvíz kitörés (3+1 MP), Fagy Kitörés (2*3E+1 MP). Ősvíz erősségényi 1k6ot sebez"
+ },
+ {
+  "Varázslat neve": "Kard",
+  "Típus": "Elemi mágia",
+  "MP": 2,
+  "E MP": 2,
+  "Időtartam": "1 kör",
+  "Hatótáv": "Fegyver",
+  "Varázslás ideje": "1 sz",
+  "Leírás": "Támadó varázslat. A varázsló a megteremtett elemmel körbeveheti egy tetszés szerinti fegyver pengéjét. Az elem felveszi a fegyver formáját - legyen az tőr vagy hosszúkard - akár az Aura az ember alakját, akit övez. A fegyvert a markolatánál bárki megfoghatja, ám a penge többszörösen sebez. Természetesen csak akkor, ha a Kardba formázott elem ártalmas a megtámadottra (például a tűzkard éget).\nA Kard E-je egyenlő a teremtett Elem E-jével. Éppúgy viselkedik, akár egy közönséges fegyver: éppúgy harcolni, támadni szükséges vele a harcrendszer szabályai szerint, harcértékei változatlanok maradnak. Bárkinek átadható, forgatásához nem kell varázslónak lenni. Sebzés csak sikeres támadás esetén éri az áldozatot. Ám ez nem csak annyi Sp, amennyi a fegyvereknél feltüntetett táblázatban szerepel, hanem még plusz annyi, amennyit a teremtett elem okoz. Túlütés esetén azonban csak a fegyver okoz automatikus ÉP-sebzést, az Elem nem, illetve természetesen a páncélok SFÉ-je is érvényesül az Elem sebzése ellen."
+ },
+ {
+  "Varázslat neve": "Kirekesztő varázskörök",
+  "Típus": "Rúnamágia",
+  "MP": 20,
+  "E MP": 0,
+  "Időtartam": "végleges",
+  "Hatótáv": "",
+  "Varázslás ideje": "",
+  "Leírás": "A Kirekesztő Varázskörök arra használatosak, hogy bizonyos nem természeti eredetű lényeket visszatartsanak a külső köríven belüli területtől. Ez úgy történik, hogy az adott lény a mágikus hatások miatt képtelen átlépni a körívet, ám varázslatai átjutnak azon. Az, hogy egy efféle varázskor mennyi Mp-ba kerül, attól függ, hogy milyen lény távoltartására készült. (lásd táblázat) A Kirekesztő varázskor az összes Rúnamágikus rajzolathoz hasonlóan addig fejti ki hatását, amíg vonalai sértetlenek.\nMaga a kiszemelt lény képtelen arra, hogy megtörje a varázskor vonalait. Még mágikus úton sem: ez irányú varázslatai létre sem jönnek. Természetesen szép szóval, fenyegetéssel, Asztrál- vagy Mentálmágiával rávehet erre bárkit.",
+  "tablazatok": [
+   "Tudattalan élőholtak\t20 MP\nÉji rémek\t30 MP\nKóborló dögök, Vérivó dögök\t40 MP\nAlsórendú démonok\t40 MP\nLidércek, Szellemek, Lelkek\t50 MP\nKözdémonok\t60 MP\nDémonurak\t80 MP\nDémonhercegek\t100 MP"
+  ]
+ },
+ {
+  "Varázslat neve": "Kisugárzó varázsjel",
+  "Típus": "Rúnamágia",
+  "MP": 20,
+  "E MP": 0,
+  "Időtartam": "",
+  "Hatótáv": "",
+  "Varázslás ideje": "",
+  "Leírás": "A Végrehajtó Varázskor ikertestvére; hatása és működése is ahhoz hasonló. Két válfaja ismeretes: az elsőnél a beleírt varázslat arra hat, aki a varázsjelet megérinti, a másodiknál a varázsjel előtt karnyújtásnyi (1 ynevi láb) távolságon belül elhaladókra - válogatás nélkül. A hatás megnyilvánulása és az érintettek elleni hatékonysága a varázsjelbe írt varázslat természetétől és erősségétől függ. (Például a kicsapó Tűznyíl nem feltétlenül találja el az áldozatot.)\nAz első változat 20 Mana pont, plusz annyi, amennyibe a beleírt varázslat kerül, a második 10 Mp-tal több.\nAz efféle varázsjel elkészítéséhez 5. fokú Rúnamágia képzettség szükséges."
+ },
+ {
+  "Varázslat neve": "Kitörés",
+  "Típus": "Elemi mágia",
+  "MP": 1,
+  "E MP": 1,
+  "Időtartam": "Egyszeri",
+  "Hatótáv": "20 m",
+  "Varázslás ideje": "1 sz",
+  "Leírás": "A varázsló a megidézett elemet egyetlen pontba fókuszálja, majd feloldja róla az őt összesűrítő formát, minek hatására az őselem robbanásszerűen szétoszlik az Elsődleges Anyagi Síkon, s szinte azonnal fel is oldódik a Manahálóban. A varázsló a Zónáján belül bárhol meghatározhatja azt a pontot, amely a Kitörés epicentruma lesz; tanácsos azonban figyelni arra, hogy az elég távol essen tőle, és a robbanás ne sebezze meg őt is!\nA Kitörés által érintett terület nagyságát a varázsló nem képes befolyásolni, az egyedül a szétrobbanó elem mennyiségétől, azaz E-jétól függ. A Kitörés epicentruma körüli egy láb sugarú körben az E egyenlő a megidézett elem E-jével, attól távolodva, pedig ynevi lábanként 1 E-vel csökken, míg végül semmivé enyészik. Ezzel meg is határoztuk az érintett terület nagyságát: annyi ynevi láb sugarú kör, amennyi a Kitöréssé formázott elem E-je.\nA sebzés is ehhez hasonlóan alakul: középen maximális, majd az epicentrumtól távolodva az Erősséggel együtt csökken - annyival, ahány ynevi lábra az áldozat a középponttól tartózkodik."
+ },
+ {
+  "Varázslat neve": "Kupola",
+  "Típus": "Elemi mágia",
+  "MP": 2,
+  "E MP": 2,
+  "Időtartam": "1 kör",
+  "Hatótáv": "20 m",
+  "Varázslás ideje": "1 sz",
+  "Leírás": "Szintén a Szőnyeg egy változata. Azonban magassága nem fél láb, hanem megegyezik a kör sugarával. Röviden: a Kupola nem más, mint egy tömör félgömb. Egyetlen hátránya, hogy ismeretlen okból kizárólag Paraelemekkel működik, Őselemekkel és Elemi Erővel nem. E-je a szőnyeghez hasonlóan számítható ki."
+ },
+ {
+  "Varázslat neve": "Kábaság (Kábítás)",
+  "Típus": "Mentálmágia",
+  "MP": 2,
+  "E MP": 0.333,
+  "Időtartam": "1p",
+  "Hatótáv": "",
+  "Varázslás ideje": "1 sz",
+  "Leírás": "Az áldozat kábán, erőtlenül mozog. Elveszti egyensúlyérzékét - mozdulatai kiszámíthatatlanok, akár a részeg emberé. TÉ-je, VÉ-je, KÉ-je annyival csökken, amennyi a célpont Mágiaellenállásán túljutott varázslat Erőssége (E), a CÉ ennek a duplájával. Varázsolni képtelen, Ereje, Gyorsasága, Ügyessége az Erősséggel (E) fordított arányban lecsökken. Azaz minden bejutott 5 E 1 Képességpont-csökkenést eredményez (pl: 5 E = 1 pont csökkenés, 10 E = 2 pont csökkenés, 15 E = 3 pont, és így tovább)."
+ },
+ {
+  "Varázslat neve": "Kémszem varázsjel",
+  "Típus": "Rúnamágia",
+  "MP": 55,
+  "E MP": 5,
+  "Időtartam": "",
+  "Hatótáv": "",
+  "Varázslás ideje": "",
+  "Leírás": "Jelpár, amely egymással szimpátiaviszonyban álló varázsjelből és bélyegből áll. Az első bárhol, bármilyen tárgyon elhelyezhető, míg a második arra a személyre írandó, aki a varázsjellel látni fog.\nA bélyeg viselője - ha akarja - képes a varázsjellel úgy látni, mintha az a saját szeme lenne. Ilyenkor saját szemével természetesen nem lát. Ha valaki úgy rajzolja fel a bélyeget, hogy az egyszerre több varázsjellel is kapcsolatban áll, tetszése szerint válogathat azok között, egyikről a másikra váltva egymás után több helyszínt is szemmel tarthat. Fontos megjegyezni, hogy a Kémszem nem forgatható, azaz egyetlen, meghatározott irányba mered. Forgatásáról, mozgatásáról más varázslattal, netán kahrei mechanikával szükséges gondoskodni.\nA rajzolat felírásának Mp-igénye a bélyeg és a varázsjel maximális távolságától függ. Ha ennél távolabb kerülnek egymástól, a szimpátiaviszony szünetel, így a Kémszem\nideiglenesen megvakul, s csak akkor használható újból, ha ismét a hatótávba kerül. Lásd táblázatban. Nagyobb távolságra nem alkalmazható.\nA fent feltüntetett Mana pontok a teljes jelpárra vonatkoznak. Több varázsjel egy bélyeghez csatlakoztatása esetén a bélyeget is minden alkalommal újra kell rajzolni, bár vonalai tökéletesen fedhetik a korábban felírt bélyegekét.\nA Kémszem addig működőképes, ameddig mindkét rajzolata töretlen.",
+  "tablazatok": [
+   "Hatótáv\tMp-igény\n0-20 láb\t55 Mp\n20-40 láb\t60 Mp\n40-100 láb\t65 Mp\n100-1000 láb\t70 Mp"
+  ]
+ },
+ {
+  "Varázslat neve": "Körbezáró varázskörök",
+  "Típus": "Rúnamágia",
+  "MP": 0,
+  "E MP": 0,
+  "Időtartam": "?",
+  "Hatótáv": "",
+  "Varázslás ideje": "",
+  "Leírás": "A Körbezáró varázskörök a Védő varázskörökhöz hasonlóan működnek, azzal a különbséggel, hogy a hatást ami ellen készítették őket nem a külső körön kívülre korlátozzák, hanem bezárják a belső körön belülre - megakadályozva, hogy az azon túl is érvényesüljön. A hatásból annyi jut ki, amennyi a Védő Varázskörnél említett módon, ott belülre kerülhet. Azaz: a kijutó E egyenlő a hatás E-je mínusz a varázskor E-je.\nKörnyezeti hatások erőssége minden esetben 15 E-nek számít.\nArról, hogy milyen típusú Körbezáró Varázskörök léteznek, és ezek 1 E-s erősítéséhez mennyi Mp szükséges, a Védő Varázsköröknél ismertetett táblázat tudósít."
+ },
+ {
+  "Varázslat neve": "Követés (Olvasás)",
+  "Típus": "Mentálmágia",
+  "MP": 2,
+  "E MP": 0.25,
+  "Időtartam": "5p",
+  "Hatótáv": "",
+  "Varázslás ideje": "1 sz",
+  "Leírás": "A varázslat segítségével a varázsló tudomást szerez az áldozat minden egyes, az Időtartam alatt bekövetkező mozdulatáról. Legyen az kéz- vág)' lábmozdulat, szemmozgás, de akár még egy mély lélegzetvétel is."
+ },
+ {
+  "Varázslat neve": "Lassítás",
+  "Típus": "Időmágia",
+  "MP": 1,
+  "E MP": 1,
+  "Időtartam": "1 kör",
+  "Hatótáv": "",
+  "Varázslás ideje": "3 sz",
+  "Leírás": "A mozaik segítségével egy kiszemelt élőlény számára minimális mértékben lelassítható az idő. Az áldozat annyit észlel, hogy körülötte hirtelen minden és mindenki felgyorsul.\nA lelassult áldozat Gyorsasága - bármennyi volt is - 3-ra zuhan, minden cselekedetének időigénye a duplájára nő, és elveszíti kezdeményezési jogát mindenkivel szemben. A lassulás időtartama alatt TÉ-je és VÉ-je -40-nel csökken, ellenben - az időtörés miatt - puszta bőre is 4-es SFÉ-vel rendelkezik, sebzése pedig megkétszereződik.\nA mozaik nem mentálisan vagy asztrálisan hat, hanem az áldozat - legyen az személy vagy tárgy - számára az idő múlását valóban lelassítja. Az így aláhulló tárgy jóval lomhábban esik, ám földet érve éppolyan sérüléseket szenved, mint szenvedne egyébként. Ugyanakkor a gyorsabb időben mozgó tárgyakkal szemben hihetetlen ellenállást tanúsít (ennek köszönhető az SFÉ), s általuk rendkívül nehezen mozdítható.\nMivel a Lassítás közvetlenül semmilyen káros hatással nincs az áldozatra, a Személyes Aura nem véd ellene. Mana pont igénye kizárólag a kiszemelt tárgy ill. személy súlyától függ."
+ },
+ {
+  "Varázslat neve": "Leplezés",
+  "Típus": "Egyéb mágikus módszerek",
+  "MP": 1,
+  "E MP": 1,
+  "Időtartam": "Végleges",
+  "Hatótáv": "Varázslat",
+  "Varázslás ideje": "1 kör",
+  "Leírás": "A Leplezés mozaik segítségével a varázsló varázslatának szerkezetét és mágikus kisugárzását képes elpalástolni, azonban a hétköznapi érzékek számára továbbra sem tűnik el, ha van ilyen megnyilvánulása. A leplezett varázslatra végrehajtott bármilyen fürkésző vagy érzékelőmágia mindaddig eredménytelen lesz, ameddig Erőssége kisebb a Leplezés E-jénél. A varázslat erősítésének költsége megegyezik a leplezezendő varázslat erősségével."
+ },
+ {
+  "Varázslat neve": "Láthatatlanság",
+  "Típus": "Természeti Anyagok Mágiája",
+  "MP": 1,
+  "E MP": 1,
+  "Időtartam": "1 kör",
+  "Hatótáv": "20 m",
+  "Varázslás ideje": "1 sz",
+  "Leírás": "A varázslattal tárgyak vagy élőlények - egyszóval az anyagok - tehetőek láthatatlanná. Ami természetesen továbbra sem vonatkozik a mágikus anyagokra - azaz: mágikus anyag nem lehet láthatatlan!\n1 Mp-ért 10 ynevi font I. csoportba, 5 ynevi font II. csoportba, vagy 10 ynevi lat III. csoportba tartozó anyag tehető 1 körre láthatatlanná.\nHa a teljes tárgy vagy lény már láthatatlan, az erősítés 1 E. Ha dupla mennyiségű Mp-ot áldoz a varázsló a láthatatlanságra, akkor az 2 E lesz, tripla esetén 3 E, és így tovább.\nA láthatatlanná tett dolgokat a csupán látással bíró szemlélő nem láthatja, még akkor sem, ha a pszi Érzékélesítés nevű diszciplínájához folyamodik, vagy Infra-, netán Ultralátással szemléli is a varázslat alanyát. A mágia észlelhetetlenné teszi a szem számára a Láthatatlanság célpontjának minden ilyennemű kisugárzását. Láthatatlanságot csak a pszi kyr metódusának Láthatatlanság Észlelése nevű diszciplínájával, vagy mágiával lehet észlelni.\nAz Időtartam lejártával a láthatatlanná tett tárgy vagy lény ismét láthatóvá válik."
+ },
+ {
+  "Varázslat neve": "Légiesség",
+  "Típus": "Természeti Anyagok Mágiája",
+  "MP": 1,
+  "E MP": 1,
+  "Időtartam": "1p",
+  "Hatótáv": "20 m",
+  "Varázslás ideje": "1 sz",
+  "Leírás": "A légiesség a három közismert anyagi halmazállapoton túli további három hasonló állapot. Az ezen halmazállapotú dolgok képesek áthatolni akár a szilárd anyagokon is. A három légies halmazállapotot a Légiesség fokainak nevezik a varázslók.\n1.fokú légies halmazállapotra csak az I. anyagcsoportba tartozó anyagok hozhatóak, II., III. csoportba sorolhatóak nem. Az 1. fokon légies anyagok vagy lények képesek áthatolni a nemtelen anyagokon, míg fémeken, nemesfémeken vagy mágikus anyagokon nem.\n2.fokra csak I. vagy II. csoportba tartozó anyagok hozhatók, a III. csoportba tartozóak nem. A 2. fokon légies anyagok vagy lények akadálytalanul áthatolnak a nemtelen anyagokon és a fémeken, de a nemesfémeken és a mágikus anyagokon nem.\n3.fokú légies halmazállapotba mind az I., mind a II. vagy III.csoportba tartozó anyagok kerülhetnek, mágikus anyagok azonban továbbra sem. A 3. fokon légies tárgyak vagy lények áthatolnak a nemtelen anyagokon, fémeken, nemesfémeken, ám a mágikus anyagokon nem.\nKimondhatjuk tehát, hogy mágikus anyagok nem tehetőek légiessé, és a légies tárgyaknak vagy lényeknek is útját állják. Ebből következik természetesen az is, hogy a mágikus támadások légies alakban is sebzik a varázslat alanyát.\nTermészetesen az élőlények a Légiességgel szemben is bírnak a Személyes Aura kisugározta védelemmel. Légies halmazállapotú lényre vagy tárgyra nem helyezhető Aurává formázott őselem, ha pedig már övezi, akkor azonnal lebomlik róla. Ez annyit tesz, hogy az Őselem teremtés mozaik megszűnik, még ha Időmágiát mondtak is rá. Mindez igaz Karddá formázás esetében is.\nAz Időtartam lejártával a légiessé tett tárgy vagy lény visszanyeri eredeti halmazállapotát.\nAzt, hogy 1 Mp-ért milyen súlyú anyag vagy lény tehető 1 perc időtartamra légiessé, a következő táblázat mutatja meg:",
+  "tablazatok": [
+   "Anyagcsoport\t1. légiességi fok\t2. légiességi fok\t3. légiességi fok\nNemtelen anyag\t6 ynevi font\t4 ynevi font\t2 ynevi font\nFém\t—\t2 ynevi font\t1 ynevi font\nNemesfém\t—\t—\t2 ynevi lat"
+  ]
+ },
+ {
+  "Varázslat neve": "Lélekcsapda bélyeg",
+  "Típus": "Nekromancia",
+  "MP": 30,
+  "E MP": 0,
+  "Időtartam": "Gyertya",
+  "Hatótáv": "Test",
+  "Varázslás ideje": "20p",
+  "Leírás": "Az a test, amelyen a varázsló elhelyezi a Lélekcsapda bélyegét, képes lesz befogadni egy, a varázsló által meghatározott lelket. A beköltözött lélek azonnal kiterjeszti arra Személyes Aurájának védelmét, még akkor is, ha történetesen Halott-mozgatás Bélyeggel mozgatott holttestről van szó.\nHa a kiszemelt testben már lakozik lélek, akkor kettejük közül az fogja irányítani a közös testet, amelyiknek magasabb az Akaratereje. A bélyeg ellen nincs Mágiaellenállás.\nA beköltöztetett lélek addig marad a testben, ameddig arról le nem törlik a varázsjelet. Ha ezt valaki megteszi, a lélek azonnal kikerül onnét."
+ },
+ {
+  "Varázslat neve": "Lélekcsapda varázsjel",
+  "Típus": "Nekromancia",
+  "MP": 30,
+  "E MP": 0,
+  "Időtartam": "Gyertya",
+  "Hatótáv": "Test",
+  "Varázslás ideje": "20p",
+  "Leírás": "Hasonló a Lélekcsapda bélyeghez, de ezt nem lényre, hanem tárgyra írja a varázsló. Az adott tárgy ettől kezdve otthont ad a léleknek, amit az nem hagyhat el. így képtelen lesz visszatérni eredeti testébe, vagy a síkra, ahonnan megidézték. A megidézett lélek ily módon immár kötve lesz az Anyagi Világhoz.\nA beköltözött lélek képes kiterjeszteni annak védelmét arra a tárgyra, amelyben lakozik.\nA beköltöztetett lélek addig marad a tárgyban, ameddig arról le nem törlik a varázsjelet. Ha ezt valaki megteszi, akkor a lélek azonnal kikerül a belőle.\nHalottmozgatás bélyege Mana pont: 40 Mp Időtartam: Ameddig a bélyeg töretlen Rajzolás ideje: 20 perc\nHa a varázsló ezt a bélyeget elhelyezi egy holttesten, akkor az - dacára annak, hogy az élet már elszállt belőle - újból mozgásképes lesz. Ez éppúgy igaz a varázsló által készített (Homonkulusz), gondosan megmunkált (lásd Átformázás) testre is. Mivel a testből már eltűnt - vagy jelen sem volt - az Elet princípiuma, ezentúl a mágia hivatott biztosítani a mozgáshoz szükséges energiát. Ez nem jelenti azt, hogy a test komolyan sérült is lehet, hiszen a csontokra és az izmok munkájára továbbra is szükség van. A bélyeggel felruházott test addig képes erre a mágia vezérelte mozgásra, amíg a bélyeget róla le nem törlik.\nTermészetesen ez még nem jelenti azt, hogy a Halott-mozgatás Bélyegével ellátott lény cselekszik is. Ehhez előbb lelket szükséges a testbe költöztetni, vagy bármely más módon irányító akarattal ellátni (Lélekcsapda bélyeg, Lélekmás stb.), ami vezérli azt."
+ },
+ {
+  "Varázslat neve": "Lélekidézés litánia",
+  "Típus": "Nekromancia",
+  "MP": 70,
+  "E MP": 0,
+  "Időtartam": "Gyertya",
+  "Hatótáv": "",
+  "Varázslás ideje": "7 kör",
+  "Leírás": "A lélek Anyagi Test nélkül jelenik meg, a litánia utolsó szavának elhangzásakor. Az Anyagi Síkhoz egyáltalán nincs is köze, csak az Asztrál- és a Mentálsíkon van jelen. A varázsló, ha transzba kerül képes úgy kommunikálni a lélekkel, mintha csak beszélgetnének. Ha ezt nem teszi meg, akkor a Pszi Telepátia nevű diszciplínájához kell folyamodnia. Ez természetesen megköveteli azt, hogy a lélek is bírjon pszivel.\nA Lélekidézés alapvető feltétele, hogy az idéző ismerje a megidézni kívánt lélek életében viselt nevét, és rendelkezzen testének valamely csontjával vagy az illető valamely kedves, személyes holmijával.\nA lélek képességei életében birtokolt képességeivel egyenlők, azaz ha testében rendelkezett pszivel, akkor lélekként is fog, mi több, ha ismerte a mágiát, varázsolni is képes lesz - olyan szinten, amilyenen életében tette. Természetesen Anyagmágiát egészen addig nem tud használni, míg Anyagi Testre szert nem tesz.\nA megidézett lélekre vonatkozóan a további információkat a KM-edtől kérdezd!"
+ },
+ {
+  "Varázslat neve": "Lélekkötés",
+  "Típus": "Nekromancia",
+  "MP": 2,
+  "E MP": 2,
+  "Időtartam": "1 óra",
+  "Hatótáv": "20 m",
+  "Varázslás ideje": "1 kör",
+  "Leírás": "A varázslat végrehajtásakor a varázsló magasra tartott balja éteri kék fénnyel izzik fel, majd pillanatok alatt kihuny - nem így az Asztrál-, Mentálsíkokon, ahol lámpafényként vonzza magához a nemrég elhunyt, még a Kárpit innenső oldalán keringő lelkeket.\nMegjegyzendő, hogy a halál pillanatától számítva maximum egy órán keresztül marad egy holt lélek a teste mellett, ezen időtartam lejárta után tovább indul a felsőbb szférák félé, és már csak Lélekidézés varázslattal idézhető meg. A Lélekkötés a hatótávon belülről a varázsló köré gyűlt lelkek közül az általa kiválasztottat egy órára a varázsló mellé rendeli, feltéve, hogy annak varázslata képes lebírni a holt lélek Asztrális és Mentális TME-jét. A holt lelkek tudatában vannak kiszolgáltatottságuknak, de csak akkor engedelmeskednek a varázsló parancsainak, ha amaz valami módon rábírja, vagy rákényszeríti őket\nAz efféle módon kötött lelkek játéktechnikailag kísértetnek minősülnek, azaz az Asztrál-, Mentálsíkon léteznek, ott felfedezhetőek, de semmilyen anyagi kivetülésük nincsen, ezért nem is láthatóak. Viszont képesek pszi képességeiket alkalmazni, ha életükben képesek voltak ilyesmire. Megjegyzendő mindenesetre, hogy a halál élménye komolyan megrázó lehet ezen lelkek számára, épp ezért szinte bármire képesek nyugalmuk megzavarójával szemben. Nem egy közülük megőrült az átéltek hatására, szólítójával szemben pedig bármilyen reakciókat mutathat, a rajongástól a gyilkos dühig."
+ },
+ {
+  "Varázslat neve": "Lélekmás",
+  "Típus": "Nekromancia",
+  "MP": 20,
+  "E MP": 0,
+  "Időtartam": "1 nap",
+  "Hatótáv": "Érintés",
+  "Varázslás ideje": "1 óra",
+  "Leírás": "Azon tudattalan élőholtak, melyek semmiféle értelemmel, vagy érzelemmel nem bírnak, megajándékozhatok az értelem és az érzelem adományával. A nekromanta ehhez valamely állati szintű érző lény lelkét tépi ki és plántálja a varázslat alanyába - ez a lény pusztulásával jár. Majd ezen léleknek tiszta lapjára vési fel az értelem betűit, az egy óra hosszan tartó suttogásával.\nJátéktechnikailag ez idő alatt állítja össze azon szabályok és törvények sorát a nekromanta, melyek nyomán az élőholt majd ténykedni kezd. Az évezredes tapasztalatoknak hála, manapság már igen ritkán fordul elő, hogy valamely varázsló elvétse e törvényeket, és teremtménye ellene forduljon. Azaz játéktechnikailag az így teremtett lény teljes hűségével szolgálja majd alkotóját.\nA varázslat egyetlen hátránya az, hogy a teremtmény „személyisége'’ erősen magán viseli a lelke alapjául szolgáló teremtmény jellegzetességeit. Azaz egy macskából megalkotott lény meglehetősen találékony, de független, míg egy farkasból származtatott valószínűleg kevésbé önálló - falkaösztön -, de igen vérszomjas lesz. Az így megalkotott élőholt Intelligenciája és Asztrálja, illetve Akaratereje semmiképpen sem haladhatja meg a 9 pontot. A teremtmény a benne foglalt lélek miatt nem lehet alanya a Természeti Anyag Mágiájának."
+ },
+ {
+  "Varázslat neve": "Megértés (Olvasás)",
+  "Típus": "Mentálmágia",
+  "MP": 1,
+  "E MP": 0.25,
+  "Időtartam": "5p",
+  "Hatótáv": "",
+  "Varázslás ideje": "1 sz",
+  "Leírás": "A varázsló megérti az áldozat szavait, akkor is, ha azokat valamely okból nem hallani, de még akkor is, ha az illető számára ismeretlen nyelven beszél."
+ },
+ {
+  "Varázslat neve": "Mentálbélyeg",
+  "Típus": "Rúnamágia",
+  "MP": 15,
+  "E MP": 0,
+  "Időtartam": "végleges",
+  "Hatótáv": "",
+  "Varázslás ideje": "",
+  "Leírás": "Az Mentálbélyegek alkalmasak arra, hogy viselőjüket az adott Mentálmágia hatása alá helyezzék. Ez azt jelenti, hogy minden Mentálmágiánál ismertetett varázslat belefoglalható egy Mentálbélyegbe. Ez annyi Mana pontba kerül, amenynyibe az adott varázslat kerülne 15 E erősítés estén. Olvasás és írás mozaikok esetén nem egy jelről, hanem egy jelpárról kell beszélnünk, hiszen a kapcsolathoz a varázsló testére is fel kell róni a megfelelő jeleket."
+ },
+ {
+  "Varázslat neve": "Mágia érzékelés",
+  "Típus": "Egyéb mágikus módszerek",
+  "MP": 1,
+  "E MP": 1,
+  "Időtartam": "1 sz/E",
+  "Hatótáv": "",
+  "Varázslás ideje": "1 sz/E",
+  "Leírás": "A varázsló a mágia segítségével felderítheti a Zónájában lévő, számára nem látható, vagy leplezett varázslatokat is, ha az Érzékelés E-je meghaladja a Leplezését."
+ },
+ {
+  "Varázslat neve": "Mágikus aura varázsjel",
+  "Típus": "Rúnamágia",
+  "MP": 13,
+  "E MP": 0,
+  "Időtartam": "",
+  "Hatótáv": "",
+  "Varázslás ideje": "",
+  "Leírás": "A tárgy, amelyre a varázsló felírja a Mágikus Aura Varázsjelét, mágikusnak számít, mivel szerkezetet átmeg átszövi a rajzolatba zárt mana. Ezáltal nem hat rá a Természeti Anyag Mágiája sem. Ez 13 Mp befektetésével érhető el.\nAhhoz azonban, hogy a rajzolat képes legyen magába fogadni a különböző mágikus hatásokat, eltárolni majd aktivizálni azokat, a Mágikus Aura varázsjel köré újabb jelsorokat kell szőni. Ezek bonyolultsága és hatalma szabja meg, hogy a rajzolat milyen gyorsan képes feltöltődni a Manaháló mindent átszövő energiájából. Tehát a befektetett többlet mágikus energia hozza létre azt a managócot, amely újból és újból a varázslat megidézéséhez szükséges mágikus energiákkal tölti fel a jelet. Ha mindezzel elkészült, a varázslónak fel kell vésnie a megidézni kívánt varázslat mágikus jeleit is.\nA Mágikus Aura varázsjelet, illetve az általa misztikus erőkkel ellátott varázslatot egyszerre kell felróni, illetve megidézni, tehát a Mana pont költségük összeadódik.\nA Mágikus Aura Varázsjelnek - bonyolultságától függően - négy formája van:\nAz első esetben a varázstárgyba foglalt varázslat, azaz a tárgy varázsképessége naponta legfeljebb egyszer aktivizálódhat. Ekkor a varázsjel Mp költsége egyenlő a 13 Mana ponton felül a belefoglalt varázslat Erősségének háromszorosával.\nA második esetben, a tárgy képessége óránként egyszer idézhető elő, a varázsjel Mp-költsége pedig egyenlő a 13 Mana ponton felül a belefoglalt varázslat Erősségének hatszorosával.\nA harmadik esetben a mágikus hatás akár körönként megidézhető, s a varázsjel Mp-költsége egyenlő a 13 Mana ponton felül a belefoglalt varázslat Erősségének tizenkétszeresével.\nA negyedik esetben a tárgyba foglalt mágia folyamatosan sugárzik, a varázsjel Mp-költsége pedig egyenlő a 13 Mana ponton félül a belefoglalt varázslat Erősségének huszonnégyszeresével.\nAz elkészült varázstárgy aktiválásának módja az elkészítéskor határozandó meg; ezekből háromféle ismeretes: varázsszó, érintés, illetve gondolati utasítás. Ezek költsége hozzáadódik varázsjel elkészítésekor kiszámolt Mp-költséghez.\nTehát a varázstárgyak Mana pont költsége a következőképpen alakul: 13 Mp + újratöltés gyakorisága + aktiválás módja + varázslat Mp költsége. ",
+  "tablazatok": [
+   "Az újratöltés gyakorisága\tMP igény\nNaponként\t+3 Mp/E\nÓránként\t+6 Mp/E\nKörönként\t+12 Mp/E\nFolyamatosan\t+24 Mp/E",
+   "Az aktiválás módja\tMP igény\nVarázsszó\t0\nÉrintés\t+5\nGondolati úton\t+10"
+  ],
+  "specialis": "Példa: Wilvariennathas, az elf varázsló egy Láthatatlanság köpenyt szeretne készíteni magának, amely folyamatosan kifejti hatását. Ebben az esetben készítenie kell a köpenyre egy 42 Mp-os Mágikus Aura varázsjelet (13 Mp + 24 Mp az 1 E-s Láthatatlanság varázslat miatt, melyet folyamatosan kisugárzóvá szeretne tenni, illetve az érintés alapú aktiválás miatt + 5 Mp) kell felrónia.\nEzen felül bele kell foglalni magát a varázslatot, aminek Mana pont költsége attól függ mekkora tömeget, hány yne- vi fontot szeretne a köpennyel láthatatlanná tenni (80 ynevi font esetén ez 16 Mp). Tehát a köpeny teljes költsége 58 Mp. A ruhadarab egyik gombjának érintésével aktiválható, viselőjét, aki felszerelésével együtt legfeljebb 80 ynevi font súlyú, rejti el a normál látással rendelkező lények elől."
+ },
+ {
+  "Varázslat neve": "Mágikus gyertya készítése",
+  "Típus": "Nekromancia",
+  "MP": 10,
+  "E MP": 10,
+  "Időtartam": "1 óra",
+  "Hatótáv": "Érintés",
+  "Varázslás ideje": "10 p",
+  "Leírás": "A varázsló varázsjeleket helyez el egy speciális viaszból készített gyertyán. Ehhez természetesen rendelkeznie kell a Rúnamágia képzettség 3. fokával. Arról, hogy a gyertyához szükséges alapanyag mennyi pénzbe kerül, és elkészítése mennyi időt és Mp-ot igényel, valamint, hogy a kész mágikus gyertya milyen hosszan ég, az alábbi táblázat tudósít.",
+  "tablazatok": [
+   "Gyertya ára\tKészítés ideje\tMana pont\tÉgés ideje\n1 arany\t10 perc\t10 Mp\t1 óra\n2 arany\t15 perc\t20 Mp\t2 óra\n3 arany\t30 perc\t30 Mp\t6 óra\n5 arany\t45 perc\t40 Mp\t12 óra\n7 arany\t1 óra\t50 Mp\t1 nap\n10 arany\t1,5 óra\t60 Mp\t2 nap\n25 arany\t2 óra\t70 Mp\t6 nap\n50 arany\t3 óra\t80 Mp\t12 nap"
+  ]
+ },
+ {
+  "Varázslat neve": "Nyugalom/Ingerültség",
+  "Típus": "Asztrálmágia",
+  "MP": 1,
+  "E MP": 1,
+  "Időtartam": "1p",
+  "Hatótáv": "",
+  "Varázslás ideje": "3 sz",
+  "Leírás": "A varázslat áldozata a varázsló által meghatározott személlyel, tárggyal, avagy eszmével kapcsolatban irigylésre méltó nyugalomról tesz tanúbizonyságot, még akkor is, ha egyébként minden jel arra mutat, hogy alapos oka lenne az ingerültségre. Másképpen ezt türelemnek is nevezhetnénk.\nIngerültség esetén az áldozat a fentiekkel szemben fokozottan türelmetlen; egyetlen rossz szó vagy mozdulat is azonnal kihozza a sodrából."
+ },
+ {
+  "Varázslat neve": "Nyíl",
+  "Típus": "Elemi mágia",
+  "MP": 0,
+  "E MP": 0,
+  "Időtartam": "Egyszeri",
+  "Hatótáv": "",
+  "Varázslás ideje": "1 sz",
+  "Leírás": "Támadó varázslat. A varázsló egy pillanat alatt megidézi a szükséges mennyiségű elemet, s annak irányát megfelelően megválasztva ujjából egyetlenegy, a teremtett elemből való nyíllövedék tör elő (Zóna varázsjel esetén a varázsjelből, Távolbahatásnál vagy Szimpátiánál a semmiből). Annak eldöntésére, hogy a varázsló eltalálja-e a kiszemelt célt, a harcrendszer célzásra vonatkozó szabályai a mérvadóak.\nA Nyíl CÉ-je 30, félre nem üthető, de sebzése ellen érvényesül a páncélok SFÉ-je, illetve a pajzsok nyújtotta Védő érték. E-je és sebzése egyenlő a teremtett elem E-jével és Sp-jével.\nIrányított Iskolatípus\nA varázsló ezen formázásoknál megidézi az Ős-, vagy Paraelemet, amelyek kiszabadulva, a varázsló akaratától függően, fókuszálva (Kitörés), vagy szétterjedve (Csóva) áradnak szét az Elsődleges Anyagi Síkon. Éppen ezért, mivel feloldódnak a Síkon, ezen formákat képtelenség újabb formába rendezni."
+ },
+ {
+  "Varázslat neve": "Némaság (Bénítás)",
+  "Típus": "Mentálmágia",
+  "MP": 1,
+  "E MP": 1,
+  "Időtartam": "1 kör",
+  "Hatótáv": "",
+  "Varázslás ideje": "1 sz",
+  "Leírás": "Az áldozat megnémul: képtelen egy szót is kiejteni, csak érthetetlen nyögdécselésre képes, egészen addig, míg a varázslat Időtartama tart."
+ },
+ {
+  "Varázslat neve": "Paraelem teremtése - Fagy",
+  "Típus": "Elemi mágia",
+  "MP": 2,
+  "E MP": 2,
+  "Időtartam": "?",
+  "Hatótáv": "20 m",
+  "Varázslás ideje": "1 sz/E",
+  "Leírás": "A varázsló az Ősvíz egyik megjelenési formáját, Elemi Fagyot teremt. A formán belül eső területen hűvös, fokozott erősítés során fagy jön létre. Ez E-nként 10 °C fok hőmérsékletcsökkenést eredményez. A sebzés -50 °C foknál jelentkezik, és innen kezdve minden E után 2 Sp-t okoz.\nA Elemi Fagy ellen meleg ruházattal nem lehet védekezni, hiszen az - mágiáról lévén szó - a felöltött holmik alatt is érvényesül."
+ },
+ {
+  "Varázslat neve": "Paraelem teremtése - Fény",
+  "Típus": "Elemi mágia",
+  "MP": 2,
+  "E MP": 2,
+  "Időtartam": "?",
+  "Hatótáv": "20 m",
+  "Varázslás ideje": "1 sz/E",
+  "Leírás": "A varázsló a Formázás megszabta területen és alakban az Őslég Paraelemét, Elemi Fényt teremt. Ennek Erőssége a varázslat E-jétől függ, az alábbi táblázat szerint:",
+  "tablazatok": [
+   "E\tHasonló erejű fényforrás\n1\tMécsesfény\n3\tNagyobb olvasógyertya lángja\n5\tFáklya lángja\n7\tTábortűz fénye\n9\tMáglya fénye\n11\tNapfény borús időben\n13\tNapsütés\n15+\tVakító fény\n20+\tNyitott szem esetén végleges vakság"
+  ]
+ },
+ {
+  "Varázslat neve": "Paraelem teremtése - Hő",
+  "Típus": "Elemi mágia",
+  "MP": 2,
+  "E MP": 2,
+  "Időtartam": "?",
+  "Hatótáv": "20 m",
+  "Varázslás ideje": "1 sz/E",
+  "Leírás": "A varázsló nem tiszta Östüzet, hanem annak egyik kivetülési formáját, Elemi Hőt teremt. A hőmérséklet az adott formán belül eső területen E-nként 10 “C fokkal növekszik - a formán túl ellenben egyáltalán nem érződik, mint ahogy fényt sem bocsát ki, épp ezért a szem számára láthatatlan (infralátással azonban érzékelhető).\nA sebzés 50 °C fok elérésekor 10 °C fokonként 2 Sp-vel nő."
+ },
+ {
+  "Varázslat neve": "Paraelem teremtése - Sötétség",
+  "Típus": "Elemi mágia",
+  "MP": 2,
+  "E MP": 2,
+  "Időtartam": "?",
+  "Hatótáv": "20 m",
+  "Varázslás ideje": "1 sz/E",
+  "Leírás": "Hasonló a Fény Teremtése varázslathoz, azonban ez az Ősléggel ellentétes elem, az Ősföld megnyilvánulását idézi meg. Úgy szerencsés elképzelni, akár valami negatív, fekete fényt. Éppen ezért az Elemi Sötétet csak az Elemi Fény világíthatja be, a lámpások, és fáklyák világa vagy akár a Nap ehhez nem elegendő: fényük nem is látszik, legfeljebb a hőhatásuk érződik. így a területen, ahol az Elemi Sötét nyilvánul meg, a varázslat által meghatározott fényviszonyok érvényesülnek, függetlenül a napszaktól vagy a mesterséges fényforrásoktól.\nA varázsló az Elemi Sötétséget az alábbi táblázat szerint hozhatja létre:",
+  "tablazatok": [
+   "E\tHasonló félhomály vagy sötétség\n1\tAlkonyat\n3\tFogyó hold\n5\tCsillagos éjszaka\n7\tÉjszaka kivilágítatlan szobában\n9\tVaksötét pl: barlangban\n11\tUltra- és infralátás sem működik\n"
+  ]
+ },
+ {
+  "Varázslat neve": "Parancs",
+  "Típus": "Nekromancia",
+  "MP": 3,
+  "E MP": 3,
+  "Időtartam": "3 perc",
+  "Hatótáv": "20 m",
+  "Varázslás ideje": "1 kör",
+  "Leírás": "A varázslat igéinek elmondása, és rúnajeleinek levegőbe írása után a nekromanta hosszú, elnyújtott sikolyt hallat, mellyel felhívja magára a környéken található tudattalan élőholtak figyelmét, s számukra egyetlen szavas parancsot adhat, melyet legjobb tudásuk szerint igyekeznek majd végrehajtani az Időtartam lejártáig. A varázslattal a varázsló annyi tudattalan élőholtat hajthat az uralma alá, amennyi a varázslat E-je.\nAzonban az Élőholt parancsnokiás E-jénél nagyobb erősítésű varázslatokkal a bűvölet megtörhető, és az irányítása elorozható a nekromantától."
+ },
+ {
+  "Varázslat neve": "Részleges Amnézia (Kábítás)",
+  "Típus": "Mentálmágia",
+  "MP": 2,
+  "E MP": 0.333,
+  "Időtartam": "1p",
+  "Hatótáv": "",
+  "Varázslás ideje": "1 sz",
+  "Leírás": "Az áldozat egyáltalán nem emlékszik közeli múltjára. Mindent, ami az érintett idő alatt esett meg vele, meg nem történtnek tekint. Hogy mennyi idő esik ki az emlékeiből, azt a Kábítás Erőssége (E) határozza meg. Minden egyes, a karakter Mágiaellenállásán átjutott E egy órát jelent. A varázslat Időtartamának elmúltával az elfeledett emlékek maradéktalanul visszatérnek, ám ez nem egyik pillanatról a másikra történik meg, hanem percek alatt."
+ },
+ {
+  "Varázslat neve": "Semlegesség/Elvakultság",
+  "Típus": "Asztrálmágia",
+  "MP": 1,
+  "E MP": 1,
+  "Időtartam": "1p",
+  "Hatótáv": "",
+  "Varázslás ideje": "3 sz",
+  "Leírás": "A varázslat az Asztrálmágia legalapvetőbb eszköze; az eddig bemutatott mozaikoknál általánosabb hatást eredményez.\nSemlegesség esetén az áldozat összes létező érzelme semlegessé válik a megadott cél iránt. Akár szerette, akár gyűlölte, akár vágyott utána, akár undorodott tőle, akár hű volt hozzá, akár hűtlen, mindez a varázslat időtartamára értelmét veszti. Az áldozat az adott személy (személyek vagy eszme) iránt minden szempontból közömbös lesz.\nElvakultság esetén éppen fordítva történik. A varázsló által meghatározott cél iránt minden már létező érzelme az elvakultságig fokozódik (de iránya nem változik!). Ha eddig csak kicsit szerette, a varázslat Időtartama alatt tiszta szívből fogja imádni, ha nem igazán kedvelte, vak gyűlölet lesz rajta úrrá.\nAz Időtartam lejártával természetesen az eredeti érzelmek mindkét esetben visszatérnek.\nMindenképpen szót kell még ejtenünk a Semlegesség gyakran alkalmazott általános formájáról, a Közömbösségről. Ez esetben a varázsló a mindent mint fogalmat határozza meg a Semlegesség céljául, miáltal az áldozat minden iránt közömbössé válik. Gyakorlatilag megszűnik minden érzelme és indulata, úgy is fogalmazhatnánk, elalszik az Asztrálteste. Ilyenkor kizárólag a Mentálja irányítja, azaz döntéseiben csak az önérdek, a tiszta logika fog megnyilvánulni, érzelmek, indulatok nem. Cselekedeteit nem befolyásolja sem szeretet, sem bosszúvágy, legjobb barátait, kalandozótársait - akik iránt most semmit sem érez! - is feladja, vagy megöli saját boldogulása érdekében.\nA Közömbösségnek a Lélekaltatásban jut jelentős szerep, hiszen tudatközpont-bénítással együtt alkalmazva gyakorlatilag elaltatja a lelket."
+ },
+ {
+  "Varázslat neve": "Szabad Elemi Formák",
+  "Típus": "Elemi mágia",
+  "MP": 3,
+  "E MP": 3,
+  "Időtartam": "1 kör",
+  "Hatótáv": "20 m",
+  "Varázslás ideje": "1 sz",
+  "Leírás": "Ezen iskolaformák megidézéséhez a varázslónak bírnia kell az Őselemi mágia képzettség 5. fokával.\nA formáció megjelenésének a varázsló fantáziája, méreteinek pedig csakis a megidézett elem E-je, azaz az idéző hatalma szab határt. Azon kívül, hogy a varázsló bármilyen, általa elképzelt alakzatot megjeleníthet, e formázás segítségével, ezen alakzat mozoghat, vagy akár újabb formákat is vehet fel. Nem ritka a már meglévő iskolaformák ötvözése vagy azok alternatív használata sem (például egy mozgó tűzfal, vagy szétnyíló és összezáródó Aura).\nMindeközben csupán két szabályt kell szem előtt tartania: a megidézett alakzat legfeljebb egy futó ember sebességével mozgatható a Zónán belül, illetve az átalakulásai is maximum ilyen sebességgel mennek végbe. Tehát a mágiahasználó például az általa megidézett Elemből formált sárkányt akár fel, s alá reptetheti ellenfelei között, megtámadva amazokat, egészen a varázslat Időtartamának lejártáig.\nAz alakzat méretét csakis az adott elem E-je korlátozza: E-nként legfeljebb I ynevi köbláb lehet. Sebzése, a korábban tárgyalt Formákhoz hasonlóan, az elem által kitöltött alakzat méretének függvénye: átlagérték, amit úgy kapunk meg, hogy a megidézett elem E-jét elosztjuk az alakzat ynevi köblábban mért méretével. Azaz egy 3 ynevi köblábnyi tűzsárkány, ha 9 E-s Őstűzből idézték meg, akkor 3k6 Sp-t sebez.\nA megformázott Elemekkel való harc mindenben megegyezik a Tűzmágiánál, a Tűzlényekkel való harc. c. fejezetben leírtakkal, lásd a 351. oldalon. A varázsló kreatúrája annyi célpontot képes körönként megtámadni, amennyi a Tapasztalati szintjének fele lefelé kerekítve. Természetesen abban az esetben, ha sok célpont zsúfolódik egy helyre, akkor akár több ellenfelet is megsebezhet a lény, de az aktívan védekező, útjából kitérő áldozatok esetén a fenti megkötések az érvényesek. A varázsló által kreált formák harcmódosítója egységesen 30.\nMivel az így egyben tartott Őselemet körülölelő burok igen összetett és törékeny, ezért az efféle formázásra a varázslónak folyamatosan koncentrálni kell, mert ha megszakad az összpontosítása, akkor a Forma felbomlik, és az Őselem feloldódik a Manahálóban."
+ },
+ {
+  "Varázslat neve": "Szabad Elemi Formák kapcsolása",
+  "Típus": "Elemi mágia",
+  "MP": 1,
+  "E MP": 1,
+  "Időtartam": "1 kör",
+  "Hatótáv": "20 m",
+  "Varázslás ideje": "1 sz",
+  "Leírás": "Ezen iskolaformák megidézéséhez a varázslónak bírnia kell az Őselemi mágia képzettség 5. fokával.\nAz elementalista varázslók tudományának legmagasabb rendű megnyilvánulása, mikor több egyszerre megidézett, és Szabad Elemi Formába kényszerített elemet, adott esetben egyetlen alakba formázva mozgatnak.\nEz játéktechnikailag annyit tesz, hogy a varázsló által megidézett Szabad Elemi Formázásokat azok megidézése után a varázsló képes egyszerre irányítása alá vonni és egyidejűleg mozgatni a közös cél érdekében. Például egy hatalmas Ősvíz gólem, mely egy Elemi Fagyból felépült kardot forgat, is elképzelhető ekképpen, vág)' egy Elemi Hőből és Sötétségből megalkotott hatalmas polip, mely egyszerre égeti meg, illetve taszítja vaksötétbe ellenfeleit.\nTermészetesen az ellentétes Elemekből felépült alakzatok nem olvaszthatóak össze, hiszen ilyenkor az adott Elemek kölcsönösen kioltanák egymást.\nAz összekapcsolást közvetlenül a Formázás mozaikokhoz kell kapcsolni, tehát már az adott közös formák megalkotásakor el kell döntenie a varázslónak, hogy hány, és mekkora erősségű formázást óhajt egybefonni. A kapcsolás költsége az összes jelenlévő elem minden E-je után 1 Mp."
+ },
+ {
+  "Varázslat neve": "Személyes aura varázsjel",
+  "Típus": "Rúnamágia",
+  "MP": 40,
+  "E MP": 0,
+  "Időtartam": "",
+  "Hatótáv": "",
+  "Varázslás ideje": "",
+  "Leírás": "A tárgy, amelyen a varázsló elhelyezi a varázsjelet, Személyes Aurájának védelme alá kerül. Ez azt jelenti, hogy attól kezdve az Aura védelme az adott tárgyra is kiterjed. Természetesen a varázsló nemcsak saját, hanem valaki más Személyes Aurájának is részéve tehet ily módon bármely holmit; ehhez az illetőnek magának kell a varázsjelbe mágikus rúnákkal beleírnia a nevét. Ami persze okozhat némi nehézséget, hiszen a rúnák pontos leírását egyedül a varázslók tanulják. Nem varázsló karakternek, ahhoz, hogy saját nevét rúnákkal képes legyen hibátlanul leírni, 3 hétig minden nap legalább két órát kell gyakorolnia."
+ },
+ {
+  "Varázslat neve": "Szeretet/Gyűlölet",
+  "Típus": "Asztrálmágia",
+  "MP": 1,
+  "E MP": 1,
+  "Időtartam": "1p",
+  "Hatótáv": "",
+  "Varázslás ideje": "3 sz",
+  "Leírás": "A varázslat áldozata a varázsló által meghatározott személy, tárgy, vagy eszme iránt erős szeretetet, másként fogalmazva szimpátiát érez. Ez megakadályozza abban, hogy ellene tegyen, és inkább arra sarkalja, hogy a kedvére cselekedjék.\nNegatív érzelem esetén gyűlölet jelentkezik, ami könnyen lehet vérfürdő indítéka."
+ },
+ {
+  "Varázslat neve": "Szimpátia varázsjel",
+  "Típus": "Rúnamágia",
+  "MP": 20,
+  "E MP": 0,
+  "Időtartam": "",
+  "Hatótáv": "",
+  "Varázslás ideje": "",
+  "Leírás": "Jelpár, mely tárgy-tárgy szimpátiát hoz létre két tárgy között, melyekre írják őket. Ha bármelyik rajzolat megsérül, a szimpátia azonnal megszűnik."
+ },
+ {
+  "Varázslat neve": "Szőnyeg",
+  "Típus": "Elemi mágia",
+  "MP": 1,
+  "E MP": 1,
+  "Időtartam": "1 kör",
+  "Hatótáv": "20 m",
+  "Varázslás ideje": "1 sz",
+  "Leírás": "Védő és támadó varázslat. A varázsló a megteremtett elemet az előbbiekhez képest jóval nagyobb területen osztja el. Ezt csak egyenletesen teheti, s annak formáját sem határozhatja meg; az minden esetben szabályos kör. Ezt a kört nevezzük Szőnyegnek.\nSzőnyeg a föld szintjét fel ynevi láb magasságbán borítja be, és követi a terep egyenetlenségeit. A kör mérete a varázslótól függ, ám nem lehet kisebb 1 ynevi lábnál, és nem lehet nagyobb annyi ynevi láb sugarúnál, amekkora a teremtett elem E-je. Középpontja a varázsló Zónáján belül bárhová eshet.\nA Szőnyeg E-je a teremtett elem E-jének, és a Szőnyeg méretének függvénye. Átlagérték, amit úgy kaphatunk meg, hogy az elem E-jét elosztjuk a Szőnyeg lábban számított sugarával. A Szőnyeg sebzése a Szőnyeg E-jével és nem a teremtett elemével arányos.",
+  "specialis": "Például: 6 E erősségű elem esetén: ha a Szőnyeg sugara 6ynevi láb, az E-je 1; ha sugara 3 ynevi láb, E-je 2; ha sugara 2 ynevi láb, E-je 3, és végül, ha sugara 1 ynevi láb, akkor E-je 6.) Ha a Szőnyeg E-jére tört értéket kapnánk, azt mindig lefelé kerekítjük; például 2.9 is 2, nem pedig 3.\nHa a Szőnyegbe ellentétes Elem alkotta Nyíl, Kard, Fal vagy Aura kerül, azokkal nem átlag E-je kél bírókra, hanem a bele formázott elem összes E-je.\nPéldául: Adott egy 12 E Östüzet tartalmazó 3 ynevi láb sugarú Tűzszőnyeg. Mikor ebbe 6 E erősségű Vízaurát viselő ember lép, az Aura fog megsemmisülni, mert nem a Szőnyeg átlag 4-es E-jével kél harcra, hanem az abba beleformázott őstűz 12 E-jével. Természetesen az Őstűz E-je is csökken: 6-ra, miáltal a Szőnyeg is gyengül: átlag E-je 2 lesz.)"
+ },
+ {
+  "Varázslat neve": "Szőnyeg, Fal",
+  "Típus": "Asztrálmágia",
+  "MP": 1,
+  "E MP": 1,
+  "Időtartam": "1 kör",
+  "Hatótáv": "20 m",
+  "Varázslás ideje": "1 sz",
+  "Leírás": "Az elemi mágiánál ismertetett Formázás mozaikok Szőnyeg és Fal mozaikjaival azonos felépítésű gátat emel az Asztrálsíkon a varázsló, az adott érzelemből. A gát 1 körig, vagy a varázslathoz kapcsolt Időmágia Időtartamáig áll fent és uralja az áldozat érzelmeit. Az Asztrál mozaik akkor fejti ki hatását, ha valaki keresztül halad a védett területen, vagy érinti azt.\nAz alábbi Formázást csak akkor képes alkalmazni a varázsló, ha avatott ismerője a Lélektannak és az Asztrális sík működésének, azaz legalább 5. fokával bír a képzettségnek."
+ },
+ {
+  "Varázslat neve": "Sátor",
+  "Típus": "Elemi mágia",
+  "MP": 2,
+  "E MP": 2,
+  "Időtartam": "1 kör",
+  "Hatótáv": "20 m",
+  "Varázslás ideje": "1 sz",
+  "Leírás": "A Szőnyeg és a Fal egybeolvasztott változata. Hasonló a Kupolához, de itt az Elem a félgömb felett fél ynevi láb széles burkot képez, magában a félgömbben nincs jelen. Pontosan megfogalmazva: a Sátor egy adott sugarú félgömböt zár körül. E-je és sebzése a Falhoz hasonlóan számítandó ki."
+ },
+ {
+  "Varázslat neve": "Tapadás varázsjel",
+  "Típus": "Rúnamágia",
+  "MP": 1,
+  "E MP": 1,
+  "Időtartam": "",
+  "Hatótáv": "",
+  "Varázslás ideje": "",
+  "Leírás": "Varázsjelpár, melyet két különálló tárgyon kell elhelyezni. A két jel tükörképe egymásnak, pontosan egymáshoz illesztve összetapadnak. Minél erősebb a beléjük foglalt mágia, annál nehezebben választhatók szét, azaz annál nagyobb súly megtartására alkalmasak. 1 Mana pontért 5 ynevi font súlyt megtartó jelpár rajzolható fel, s minden további Mp újabb fonttal növeli a súlyhatárt. Az összetapadó tárgyak a tapadás erősségét meghaladó erővel bármikor szétválaszthatok, de ismét összeillesztve újból összetapadnak - amíg a jelek töretlenek, bármennyiszer."
+ },
+ {
+  "Varázslat neve": "Telekinézis",
+  "Típus": "Elemi mágia",
+  "MP": 1,
+  "E MP": 1,
+  "Időtartam": "1 kör",
+  "Hatótáv": "20 m",
+  "Varázslás ideje": "1 sz/E",
+  "Leírás": "Hatásában hasonló a Pszi diszciplínáinál leírt Telekinézishez, valójában azonban az Elemi Erő egyfajta szabad megjelenési formája. A varázslattal a varázsló képes 1 körig a levegőbe emelni, avagy sétáló ember sebességével mozgatni 5 ynevi fontnyi súlyt. Az erősítés növelésével természetesen emelkedik a mozgatható súly mennyisége is. Az egyetlen Elemi Mágiaforma, melyhez nem kapcsolható Formázás mozaik."
+ },
+ {
+  "Varázslat neve": "Teleport",
+  "Típus": "Térmágia",
+  "MP": 1,
+  "E MP": 1,
+  "Időtartam": "Egyszeri",
+  "Hatótáv": "20 m",
+  "Varázslás ideje": "1 sz",
+  "Leírás": "A Teleport tárgyak egyik helyről a másikra való juttatását jelenti. Kiindulási pontról egyszerűen eltűnik, az érkezési oldalon, pedig haladéktalanul megjelenik. 1 Mp felhasználásával 3 ynevi font súlyú tárgy teleportálható.\nEgy Személyes Aura védelme alatt álló élőlény testébe bele teleportálni valamit lehetetlen; magát az élőlényt, pedig csak akkor lehetséges, ha az illető a varázslatba beleegyezik.\nA Teleport Erőssége akkor 1 E, amikor a teljes tárgy máshova juttatására elegendő Mp-ot áldozott rá a varázsló. Ha kétszer ennyit fordít rá, az Erősség 2 E, ha a szükséges tripláját, akkor 3, és így tovább..."
+ },
+ {
+  "Varázslat neve": "Teljes Amnézia (Bénítás)",
+  "Típus": "Mentálmágia",
+  "MP": 2,
+  "E MP": 1,
+  "Időtartam": "1 kör",
+  "Hatótáv": "",
+  "Varázslás ideje": "1 sz",
+  "Leírás": "Az áldozat elfeledi minden emlékét, egész életét, még a gyermekkorára sem képes visszagondolni. Elfelejti klánját, rendjét, neveltetését, Tapasztalati szintjét, képzettségeit, egyszóval mindent. Az emlékközpont bénultságának elmúltával az elfeledett emlékek visszatérnek. Ez nem egyik pillanatról a másikra játszódik le, hanem órák alatt."
+ },
+ {
+  "Varázslat neve": "Teremtés",
+  "Típus": "Természeti Anyagok Mágiája",
+  "MP": 5,
+  "E MP": 5,
+  "Időtartam": "Végleges",
+  "Hatótáv": "20 m",
+  "Varázslás ideje": "1 kör",
+  "Leírás": "A varázsló a semmiből - pontosabban a Világegyetemet átitató manából - anyagot teremt. Hogy ez melyik anyagcsoportba tartozzék, azt meghatározhatja, ettől függ, hogy 5 Mp-ért mennyi anyagot teremt.\n5 Mp-ért 1 ynevi font I. csoportba, vagy 1/2 ynevi font\nII. csoportba, vagy 1 ynevi lat III. csoportba tartozó anyag teremthető.\nA teremtett anyagok nem keverednek egymással, hanem tisztán, valami formátlan rög, avagy tócsa alakjában jönnek létre. Ha ezekből a varázsló tárgyat, netán - az Élet princípiumától mentes - homonkuluszt kíván gyúrni, még az Átformázás varázslatot is használnia kell - az Átformázás hatása ez esetben maradandó, s az alkotás befejeztével az adott tárgy nem minősül varázstárgynak és semmilyen mágiát nem sugároz. További megkötés, hogy a varázsló csak olyan, a fentieknek megfelelő anyagot képes teremteni, melynek összetételét ismeri (lásd Átalakítás)."
+ },
+ {
+  "Varázslat neve": "Testsúly csökkentés",
+  "Típus": "Egyéb mágikus módszerek",
+  "MP": 1,
+  "E MP": 1,
+  "Időtartam": "5 kör",
+  "Hatótáv": "",
+  "Varázslás ideje": "1 kör",
+  "Leírás": "Akár teljesen tömeg nélkülivé tehető vmi. Varázslat lejártával 1 kör alatt fokozatosan nyeri vissza a tömeget"
+ },
+ {
+  "Varázslat neve": "Tompítás (Kábítás)",
+  "Típus": "Mentálmágia",
+  "MP": 1,
+  "E MP": 0.333,
+  "Időtartam": "1p",
+  "Hatótáv": "",
+  "Varázslás ideje": "1 sz",
+  "Leírás": "Az áldozat érzékszervei eltompulnak: homályosan lát, tompán hall, durván tapint, akárha kesztyűt viselne. Szaglása és ízlelése is jelentősen romlik. Ügyességet és figyelmet igénylő kézimunkát végezni képtelen. TÉ-je, VÉ-je, és KÉ-je annyival csökken, amennyi az áldozat Mágiaellenállásán felüli erősítés mértéke; CÉ-je ennek a háromszorosával - ami általában lehetetlenné teszi a céllövést."
+ },
+ {
+  "Varázslat neve": "Transzmutáció",
+  "Típus": "Természeti Anyagok Mágiája",
+  "MP": 2,
+  "E MP": 2,
+  "Időtartam": "1 kör",
+  "Hatótáv": "20 m",
+  "Varázslás ideje": "1 kör",
+  "Leírás": "A varázslattal a különböző anyagcsoportok közötti átalakítás valósítható meg. Ez továbbra sem vonatkozik a mágikus anyagokra és a Személyes Aura által védett testekre és tárgyakra.\n2 Mp-ért:\n* 1 ynevi font nemtelen anyagból 1/2 ynevi font fém vagy 1 ynevi lat nemesfém;\n* 1/2 ynevi font fémből 1 ynevi font nemtelen anyag vagy 1 ynevi lat nemes fém transzmutálható.\n* 1 ynevi lat nemesfémből 1/2 ynevi font fém vagy 1 ynevi font nemtelen anyag;\nTranszmutáció során a tárgy formája nem változik, de a súlya - értelemszerűen - igen. Ez természetesen majd,, minden esetben jelentős méretcsökkenéssel, avagy növekedéssel jár (melynek során - mint már hangsúlyt nyert - a tárgy formája, alakja, halmazállapota nem változik!). További megkötés, hogy a varázsló csak olyan anyaggá képes bármit is transzmutálni, melynek összetételét ismeri (lásd Átalakítás).\nAz Időtartam lejártával a tárgy visszanyeri eredeti anyagi minőségét, miáltal mérete és súlya is változik."
+ },
+ {
+  "Varázslat neve": "Tudattalanság (Bénítás)",
+  "Típus": "Mentálmágia",
+  "MP": 3,
+  "E MP": 1,
+  "Időtartam": "1 kör",
+  "Hatótáv": "",
+  "Varázslás ideje": "1 sz",
+  "Leírás": "Az áldozat elméje lebénul. Képtelen mérlegelni, gondolkodni; pusztán indulatai, érzelmei, vágyai irányítják. Az egyik pillanatban sír, a másikban kacag; elvakultan imádja barátait, társait, aztán a legapróbb sérelem után fegyverrel ront rájuk, és teljes szívéből gyűlöli őket. A varázs hatására minden Asztrálmágiával okozott érzelem elvakultsággá erősödik."
+ },
+ {
+  "Varázslat neve": "Tárgyszimpátia",
+  "Típus": "Szimpatikus mágia",
+  "MP": 30,
+  "E MP": 0,
+  "Időtartam": "",
+  "Hatótáv": "",
+  "Varázslás ideje": "1 kör",
+  "Leírás": "Tárgyszimpátia két tárgy illetve egy tárgy és egy személy között lehetséges.\nTárgy-tárgy szimpátia esetén a két holmi között szoros rokonságának kell fennállnia. Ez jelentheti azt, hogy egy alkotótól származnak, és több hozzájuk hasonló nemigen akad Yneven; netán azt, hogy mindketten több mint egy esztendeig ugyan azon személy Személyes Aurájának részei (védettjei) voltak; esetleg azt, hogy évtizedeken át ugyan azon személy kizárólagos tulajdonát képezték stb... Szimpátiaviszony alakulhat ki két olyan tárgy között is, amelyek évszázadokig egymás mellett hevertek.\nTárgy-személy szimpátia csak olyan tárggyal fordulhat elő, amely legalább egy esztendeje az illető személy Személyes Aurájának része. Ilyen esetben, ha az illető meghal, földi maradványai tárgy-tárgy Szimpátia viszonyba kerülnek egymással, valamint az egykori személy Személyi Aurájába valaha is egy évnél hosszabb ideig tartozó tárgyakkal is. Tárgy-személy szimpátiában áll egykori tulajdonosával a levágott hajtincs vagy testrész is. Személy-tárgy szimpátia nem létezik! A Szimpatikus viszony meglétének vagy hiányának eldöntése minden esetben a KM feladata és jogköre!"
+ },
+ {
+  "Varázslat neve": "Társszimpátia",
+  "Típus": "Szimpatikus mágia",
+  "MP": 40,
+  "E MP": 0,
+  "Időtartam": "",
+  "Hatótáv": "",
+  "Varázslás ideje": "1 kör",
+  "Leírás": "A Társszimpátia két szorosan összetartozó személy, lény között jöhet létre. Mindenképpen Társszimpátia alakul ki gyermek és szülők, valamint az édestestvérek között, még akkor is, ha soha nem látták egymást, netán még csak nem is hallottak a másikról. Ezen túl Társszimpátiának nevezhető a legjobb barátok, szeretők közötti viszony, ha érzelmeik legalább egy esztendeje töretlenek; a lovas és hátasa, a gazda és kutyája közötti meghitt kapcsolat, ha legalább ugyanennyi ideje összetartoznak. Társszimpátiában áll egymással az a két személy ill. lény, akiket Mentálfonál köt össze, addig, amíg a fonál létezik. A szimpatikus viszony meglétének vagy hiányának eldöntése minden esetben a KM feladata és jogköre!"
+ },
+ {
+  "Varázslat neve": "Távolbahatás",
+  "Típus": "Térmágia",
+  "MP": 10,
+  "E MP": 10,
+  "Időtartam": "",
+  "Hatótáv": "lásd leírás",
+  "Varázslás ideje": "4 sz",
+  "Leírás": "A varázsló varázslatait - tartozzanak is a mágia bármelyik fejezete alá - csak Zónáján belül képes létrehozni. Ez azt \njelenti, hogy vagy a maga körüli 20 ynevi láb sugarú gömbön, vagy a különböző helyeken elhelyezett Zóna Varázsjelei körüli ugyanekkora területen belül. Természetesen ez nem jelenti azt, hogy egy, már működő varázslat összeomlana, ha a varázsló távolabb sétál.\nA Távolbahatás lehetővé teszi, hogy a varázsló Zónáján kívül is létrehozzon egy varázslatot. Ez azonban - a Zónán belüli varázslással ellentétben - megköveteli azt, hogy a varázsló lássa azt a pontot, ahol varázslatát megjeleníteni kívánja.\nVagyis Távolbahatni csak olyan helyre képes, amit lát!\nLátása lehet természetes eredetű, de akár mágikus is. Az sem jelent akadályt, ha netán más szemével látja az adott helyet (lásd: Mentálmágia - Érzékelés!). A Távolbahatás Mpigénye a kiszemelt pont a varázslótól mért távolságától függ. Hogy miként, azt a következő táblázat határozza meg:",
+  "tablazatok": [
+   "20-40 láb\t10 Mp\n40-100 láb\t20 Mp\n100-1000 láb\t30 Mp\n1-10 mérföld\t40 Mp\n10-100 mérföld\t50 Mp\n100 mérföld felett\t60 Mp"
+  ]
+ },
+ {
+  "Varázslat neve": "Tércsapda varázsjel",
+  "Típus": "Rúnamágia",
+  "MP": 2,
+  "E MP": 0,
+  "Időtartam": "",
+  "Hatótáv": "",
+  "Varázslás ideje": "",
+  "Leírás": "A Tércsapda a Térgát Varázsjel különleges változata. Hatóterületén nem szab gátat a Térmágiának, hanem a varázsjelhez vonzza. Minden Térmágikus hatás a varázsjelen, ill. annak közvetlen szomszédságában jön létre. A Térkapu oda nyílik - hiába akarta létrehozója máshova nyitni a Teleportált\ntárgyak és lények oda érkeznek, a Távolbahatott varázslatok ott jönnek létre. Mivel a Tércsapda jelenlétét a Térmágiát létrehozó varázsló nem érzi meg előre, Teleportálás során könnyen csapdába kerülhet."
+ },
+ {
+  "Varázslat neve": "Térgát varázsjel",
+  "Típus": "Rúnamágia",
+  "MP": 1,
+  "E MP": 0,
+  "Időtartam": "",
+  "Hatótáv": "",
+  "Varázslás ideje": "",
+  "Leírás": "A Térgát Varázsjel Ynev várainak, palotáinak, erősségeinek mindennapos kelléke, a rúnatornyok leggyakoribb jele. Adott területen belül gátat szab minden Térmágiának: a területről és a területre Teleportálni, Távolbahatni, Térkaput nyitni lehetetlen - hacsak a Térmágia Erőssége (E) meg nem haladja a Varázsjelét.\nA Telepőrt Erőssége akkor számít 1 E-nek, amikor a varázsló az utazó tárgy vagy személy teljes súlyának megfelelő Mana pontot fordít a varázslat létrehozására. Ezen Összérték megduplázásával az Erősség is megkétszerezhető, megtriplázásával pedig megháromszorozható.\nA Térkapu Erőssége alapesetben (60 Mp) 1 E, ami további 60 Mana ponttal 2 E-re növelhető.\nA Iávolbahatás Erőssége a hozzáfűzött legerősebb (legnagyobb E) mozaik Erősségével azonos.\nA Szimpatikus Mágián alapuló varázslatokat a Varázsjel nem rekeszti ki.\nA Térgát Varázsjel gömbterületen fejti ki gátló hatását, melynek középpontja minden esetben maga a jel. Az érintett területen a gátló hatás mindenütt azonos Erősséggel érvényesül, míg a gömb határán kívül azonnal megszűnik. A védett gömb sugarát a Varázsjel felírásakor kell meghatározni, ez befolyásolja a rajzolás Mana pont igényét. Minden 1 ynevi lábnyi sugár 1 Mana pontba kerül, azaz a 20 lábnyi sugár 20 Mp-ba, az 50 lábnyi 50 Mp-ba. Ekkor az adott területen a Térgát Erőssége 1 E. Az Erősség minden ezenfelüli (a sugarat nem növelő) Mana pont befektetésével 1 E-vel növelhető. Azaz 20 lábnyi sugár esetén 20 Mp-ért az Erősség 1 E, 39 Mp-ért 20 E, 50 Mana pontért 31 E; míg 5 lábnyi sugárnál 39 Mana pontért 35 E, 50-ért pedig 46 E.\nAbban az esetben, ha a területre több Térgát Varázsjel is hat egyszerre, akkor csakis a nagyobb erősítésű jel hatása érvényesül."
+ },
+ {
+  "Varázslat neve": "Térkapu",
+  "Típus": "Térmágia",
+  "MP": 60,
+  "E MP": 0,
+  "Időtartam": "3p",
+  "Hatótáv": "20 m",
+  "Varázslás ideje": "1 kör",
+  "Leírás": "A Térkapu megnyitásakor a varázsló a tér két, általa meghatározott pontját köti össze. Az átjáró voltaképp egy kétszer két láb alapterületű függőleges négyszög, melyen bárki átléphet - miáltal a másik helyre jut. A túloldali táj mindvégig látható, akárha egy ablakon pillantanánk ki, és az ottani tárgyak meg is érinthetők. A kapun keresztül nemcsak varázsolni lehetséges, de még a varázsló Zónája is érvényesül.\nA Térkapu mindkét irányból járható és átlátható; 3 percig létezik, aztán összezárul.\nA varázsló Térkaput nyitni csak olyan helyre képes, amely saját Zónáján avagy a Zóna Varázsjele körüli 20 ynevi láb sugarú gömbön belül esik, illetőleg ahová Távolbahatni képes."
+ },
+ {
+  "Varázslat neve": "Térkapu pentagramma",
+  "Típus": "Rúnamágia",
+  "MP": 0,
+  "E MP": 0,
+  "Időtartam": "70 (2x)",
+  "Hatótáv": "",
+  "Varázslás ideje": "",
+  "Leírás": "Az idéző pentagramma után a leggyakrabban alkalmazott pentagramma alapú rajzolat. Hatása hasonló a Térkapu mozaikéhoz, számottevő különbség csak működésének részleteiben mutatkozik. Párban használatos, csak akkor teszi lehetővé az átjárást a tér két pontja között, ha a pentagrammát mind az indulási, mind az érkezési oldalon felrajzolták. A keletkező átjáró nem állandó, csak olyankor nyílik meg, ha valaki vagy valami az indulási pentagramma külső körívén belülre kerül. Ilyenkor sem átlátható - akár a térkapuk - és anyagi minőségen túl semmi nem juttatható át rajta - azaz nem alkalmas varázslatok Távolbahatására és a Zóna sem érvényesül rajta keresztül.\nHogy egy pentagramma érkezési vagy indulási, netán mindkét szerepet betölti-e, azt felrajzolásakor kell meghatározni. Ezért van, hogy az értő szem a rajzolatra pillantva nyomban képes megállapítani annak rendeltetését. Senki nem képes azonban kiolvasni, vajon hol található a pentagramma párja, ezt legfeljebb egy vakmerő próbával, a körívet átlépve lehetséges kideríteni.\nA pentagrammák tárgy-tárgy szimpátiaviszonyban állnak egymással. Az általuk biztosított térkapu addig üzemképes, ameddig mindkét oldali rajzolat vonalai töretlenek."
+ },
+ {
+  "Varázslat neve": "Valóság felfedezése",
+  "Típus": "Egyéb mágikus módszerek",
+  "MP": 15,
+  "E MP": 2,
+  "Időtartam": "1 kör",
+  "Hatótáv": "",
+  "Varázslás ideje": "1 sz",
+  "Leírás": "bárdok, boszorkányok illúzióit átlátja a felruházott. 1-s erősségű, nála gyengébb láthatatlanság is érzékelhető"
+ },
+ {
+  "Varázslat neve": "Visszaváltoztatás",
+  "Típus": "Természeti Anyagok Mágiája",
+  "MP": 1,
+  "E MP": 1,
+  "Időtartam": "Végleges",
+  "Hatótáv": "20 m",
+  "Varázslás ideje": "1 kör",
+  "Leírás": "A varázsló az át- vagy anyaggá változtatott (kővé változtatott) élőlényt annak lelke alapján újrakreálja. 1 Mp-ért 1 ynevi fontnyi súlyú lény változtatható vissza. Egyszerűbb azonban úgy fogalmazni, hogy egy élőlény visszaváltoztatásához annyi Mp szükséges, amennyi a teremtmény igazi testének (visszaváltoztatott) súlya.\nTermészetesen, ha a tudat ébren van, és nem kívánja a visszaváltoztatást, akkor a Személyes Aura miatt az nem működik.\nFontos megjegyezni továbbá, hogy a lélek az általa birtokolt valódi Anyagi Testről egyfajta idealizált képet őriz, vagyis: a visszaváltoztatás során a testről eltűnnek a forradások, a csonkítások; még a hiányzó végtagok is visszakerülnek a helyükre. A test ideális fizikai állapotában - azaz általában fiatalon, de semmiképpen sem szebben - alkotódik meg. (Ebben különbözik a varázslattal visszaváltoztatott élőlény az elváltoztatás időtartamának lejártakor visszaalakulótól!) Az életkort a lélek (karakter esetében a játékos) határozza meg, ám ez nem lehet kevesebb a felnőtté válást jelentő kornál, és több annál, amennyit az illető már leélt. Ha ezt az elváltoztatáskor még nem érte el, akkor annyi esztendős lesz, amennyi akkor volt.\nElváltoztatott Homonkulusz nem változtatható vissza ezzel a varázslattal, csak Átformálással és Átalakítással, akár egy darab kő."
+ },
+ {
+  "Varázslat neve": "Vágy/Undor",
+  "Típus": "Asztrálmágia",
+  "MP": 1,
+  "E MP": 1,
+  "Időtartam": "1p",
+  "Hatótáv": "",
+  "Varázslás ideje": "3 sz",
+  "Leírás": "A varázslat áldozata erős vágyat érez a varázsló által meghatározott személy, tárgy vagy eszme iránt. Személyek esetében - ha jóérzéssel elképzelhető -, akkor ez szexuális vágyat is jelent, egyébként - akárcsak tárgyak esetében - birtoklási vágyat. Különleges esetekben, mint például az étel, ital, annak elfogyasztására sarkall. Eszme iránt érzett vágy az eszmével való azonosulási vágyat jelenti.\nUndor esetén az áldozat megundorodik az adott személytől, igyekszik kerülni a társaságát, és érzelmei könnyen haragba csapnak át irányába. Tárgytól való undor arra sarkallja, hogy váljon meg az adott holmitól, ne tartsa magánál. Eszme iránt érzett undor elidegeníti az adott eszmétől, és mindazoktól, alak azt magukénak vallják."
+ },
+ {
+  "Varázslat neve": "Változás bélyege",
+  "Típus": "Rúnamágia",
+  "MP": 0,
+  "E MP": 0,
+  "Időtartam": "?",
+  "Hatótáv": "",
+  "Varázslás ideje": "",
+  "Leírás": "A Változás bélyege csak annyiban különbözik a Változás Varázsjelétől, hogy személyre, élőlényre írják, bár erőssége a többi bélyeggel ellentétben nem végtelen, hanem megegyezik az azonos hatású mozaik erősségével. Leírásához a varázslónak háromszor annyi Mana pontot kell áldoznia, amennyit a hasonló mozaik alkalmazásakor használna el."
+ },
+ {
+  "Varázslat neve": "Változás varázsjel",
+  "Típus": "Rúnamágia",
+  "MP": 0,
+  "E MP": 0,
+  "Időtartam": "",
+  "Hatótáv": "",
+  "Varázslás ideje": "",
+  "Leírás": "Minden, a Természeti Anyag mágiájának fejezete alá tartozó hatás leírható a Változás Varázsjellel. A varázsjelet arra a tárgyra kell rajzolni, amelyet a varázsjellel a varázsló megváltoztatni kíván, hatása ellen nem véd a Személyes Aura sem. Az adott hatás nem ér véget a mozaiknál feltüntetett Időtartam lejártával, hanem mindaddig érvényesül, ameddig a tárgyon a varázsjel töretlen. A Változás varázsjel megrajzolása háromszor annyi Mana pontba kerül, mint a hasonló varázslat mozaik, ám erőssége ugyan annyi marad."
+ },
+ {
+  "Varázslat neve": "Védő varázskörök",
+  "Típus": "Rúnamágia",
+  "MP": 0,
+  "E MP": 0,
+  "Időtartam": "?",
+  "Hatótáv": "",
+  "Varázslás ideje": "",
+  "Leírás": "A Védő Varázskörök arra használatosak, hogy egy adott mágikus vagy környezeti hatástól megvédjék a varázskor külső körén belül eső területet. \nMágikus hatás esetén: a védett területen, ha a varázskor E-je nagyobb a mágikus hatás E-jénél, a hatás nem érvényesül. A védett terület nagysága 1 ynevi láb sugarú kör, ami a varázskor teljes Mana pont költségének többszörözésével növelhető.\nHa a varázskör E-je kisebb, akkor a hatásból csak annyi jut át a Védő Varázskörön, amennyivel E-je több, mint a varázsköré, (bejutott E egyenlő a hatás E-je mínusz a varázskor E-je). Ebben az esetben a védett területen belül az adott hatás csak bejutott E-jének függvényében érvényesül.\nKörnyezeti hatások esetén ugyanez a metódus a mérvadó, ám ezek erőssége minden esetben 15 E-nek számít.\nArról, hogy milyen típusú Védő Varázskörök léteznek, és ezek 1 E-s erősítéséhez mennyi Mp szükséges, a alábbi táblázat tudósít. A varázskörnek nem kell a teljes varázslat E-jével megbirkóznia, irányulhat annak egyetlen mozaikja ellen is. Ilyenkor a körön belül csak az adott mozaik nem érvényesül, a varázslatba foglalt többi igen.",
+  "tablazatok": [
+   "Hatás\t1 m sugarú varázskör MP igénye 1 E-hez\nElemi Mágia (Ős- és Paraelemek)\t1 Mp\nTermészeti Anyag Mágiája\t2 Mp\nAsztrál- és Mentálmágia\t2 Mp\nTérmágia és Idömágia\t2 Mp\nSzimpatikus Mágia\t3 Mp"
+  ]
+ },
+ {
+  "Varázslat neve": "Végrehajtó varázskor",
+  "Típus": "Rúnamágia",
+  "MP": 40,
+  "E MP": 0,
+  "Időtartam": "?",
+  "Hatótáv": "",
+  "Varázslás ideje": "",
+  "Leírás": "A Rúnamágia egyik kevéssé ismert rajzolata. Sok varázsló még a létéről sem tud, mások, ha hallottak is felőle, nem ismerik rajzolatának titkát. A Pyarronban és Doranban nevelkedett növendékek természetesen elsajátíthatják, ha külön figyelmet szentelnek a Rúnamágia tanulmányozására, bírnak a Rúnamágia képzettség 4. fokával.\nA Végrehajtó varázskört Moress Nobren mágus dolgozta ki, híres lankonti falrajzolatában, a Sydulban. Összefoglaló művében, a Magica Graphicában is említést tesz róla - rajzolatát a mai napig ez alapján oktatják.\nA Végrehajtó varázskörbe bármilyen mozaikokból felépített varázslat beleírható, és csak akkor aktivizálódik, ha valaki a varázskörbe lép. Fontos megkötés, hogy a varázslat - bármekkora is legyen eredeti hatóterülete - csak a varázskor belső körívén belül eső területre, ill. az ott tartózkodókra hat, ott azonban válogatás nélkül mindenkire.\nA Varázskor felrajzolása 40 Mana pont, plusz még annyi, amennyibe a beleírt varázslat kerül. A beleírt varázslatot csak egyszer képes végrehajtani, de a kimerült Varázskor annyi Mana pontért, amennyi a beleírt varázslat Mp-igénye, újra feltölthető. Ha vonalai megtörnek, a varázslat kiszabadul és kifejti hatását, de a rajzolat többé nem használható."
+ },
+ {
+  "Varázslat neve": "Vérszimpátia",
+  "Típus": "Szimpatikus mágia",
+  "MP": 20,
+  "E MP": 0,
+  "Időtartam": "",
+  "Hatótáv": "",
+  "Varázslás ideje": "1 kör",
+  "Leírás": "Vérszimpátia áll fent egy személy (ill. lény) valamint a testéből származó vér (mint testnedv) között. Röviden: vér birtokában Szimpatikus Mágia hajtható végre azon, akitől származik. A felhasznált vérnek folyékony halmazállapotúnak kell lennie (porrá száradva nem alkalmas)."
+ },
+ {
+  "Varázslat neve": "Zavarodottság (Kábítás)",
+  "Típus": "Mentálmágia",
+  "MP": 3,
+  "E MP": 0.333,
+  "Időtartam": "1p",
+  "Hatótáv": "",
+  "Varázslás ideje": "1 sz",
+  "Leírás": "Az áldozat összezavarodik, nincs egy tiszta gondolata sem, nem képes dönteni: a legapróbb ügyekben is tanácstalan. Fejében egymást kergetik az összekeveredett gondolatok. Varázsolni képtelen, harcolni (azaz támadni és védekezni) is csak akkor, ha minden egyes körben sikeres Akaraterő-próbát tesz."
+ },
+ {
+  "Varázslat neve": "Zóna varázsjel",
+  "Típus": "Rúnamágia",
+  "MP": 25,
+  "E MP": 0,
+  "Időtartam": "",
+  "Hatótáv": "",
+  "Varázslás ideje": "",
+  "Leírás": "A Zóna Varázsjel körüli 20 ynevi láb sugarú gömb a varázsló Zónájának számít, akárcsak a teste körüli hasonló méretű terület (lásd még: a varázsló Zónája). Vagyis ahol ezt a varázsjelet a varázsló elhelyezi, ott újabb Zóna jön létre, amelyen belül majdnem úgy varázsolhat Távolbahatás nélkül is, ahogyan azt a teste körüli Zónában teheti. A különbség csupán annyi, hogy a Zóna Varázsjelen keresztül végrehajtott varázslatok Varázslási ideje minden esetben +1 körrel megnő, s az eredeti Mana pont igényhez +5 Mp járul.\nA varázslók éppen ezért gyakran helyeznek el Zóna varázsjelet olyan helyekén, ahová később varázsolni kívánnak. Nemegyszer apróbb tárgyakra írják, és azokat szolgákkal vitetik el a világ azon távoli pontjaira, ahová mágikus befolyásukat kiterjeszteni készülnek.\nA Zóna varázsjel másik felmérhetetlenül hasznos tulajdonsága, hogy lehetővé teszi a varázsló számára, hogy arra a helyre teleportáljon, vagy kaput nyisson a megfelelő varázslat használatával, ahol a jel található.\nMinden Zóna varázsjel egyéni, azaz minden varázslónak saját jele van - amit az avatott szem fél is ismerhet. Minden varázsló csak saját Zóna Varázsjelét használhatja távolba varázslásra és Térmágiára.\nHátránya, hogy Tárgyszimpátia-viszonyban áll a varázslóval, így ellenséges szándékú varázsló kezében veszélyessé lehet."
+ },
+ {
+  "Varázslat neve": "Átalakítás",
+  "Típus": "Természeti Anyagok Mágiája",
+  "MP": 1,
+  "E MP": 1,
+  "Időtartam": "1 kör",
+  "Hatótáv": "20 m",
+  "Varázslás ideje": "1 kör",
+  "Leírás": "A varázsló az anyag minőségét változtathatja meg, de csak az adott anyagcsoporton belül. A tárgy halmazállapota, formája nem változik, színe is csak akkor, ha ezt az anyagminőség változása indokolttá teszi. Az átalakítás során az anyag térfogata a mérvadó: pontosan ugyanakkora, és ugyanolyan formájú marad, ám a súlya megváltozik.\nMana pontonként az anyagcsoporttól függően 1 ynevi font (I. csoport), 1/2 ynevi font (II. csoport), vagy 1 ynevi lat (III. csoport) anyag alakítható át.\nSzigorú megkötés, hogy a varázsló csak olyan anyaggá képes bármit is átalakítani, melynek összetételét ismeri. Például méreggé való átalakításhoz bírnia kell a Méregkeverés vagy az Alkímia, netán a Herbaiizmus képzettséggel.\nA varázslattal élőlények is átalakíthatóak, bármely az I. csoportba tartozó anyaggá (például kővé változtatás). Vagy éppen fordítva, sárból is gyúrható élőlény teste, ám az efféle teremtmény nem fogja magában hordozni az Élet princípiumát, ezért nem számít élőlénynek, csak homonkulusznak.\nHa a varázslat időtartama lejár, a tárgy visszanyeri eredeti minőségét. A Mp-igény kiszámításánál a kiindulási tárgy súlya a mérvadó, nem a keletkezőé."
+ },
+ {
+  "Varázslat neve": "Átformázás",
+  "Típus": "Természeti Anyagok Mágiája",
+  "MP": 1,
+  "E MP": 1,
+  "Időtartam": "1 kör",
+  "Hatótáv": "20 m",
+  "Varázslás ideje": "1 kör",
+  "Leírás": "A varázslattal egy tárgy formáját, színét változtathatja meg a varázsló. A varázslatban egyfajta súly- és anyagmegmaradási törvény érvényesül; azaz pontosan a kiindulásival azonos súlyú és minőségű tárgy keletkezik. Ha kevesebb, akkor az új tárgy kialakításához fel nem használt anyag felesleg formájában megmarad. Az alapanyagnál nagyobb súlyú tárgy nem formázható.\nMana pontonként az anyagcsoporttól függően 1 ynevi font (I. csoport), 1/2 ynevi font (II. csoport), vagy 1 ynevi lat (III. csoport) anyag formázható át.\nTöbb különálló tárgy is szolgáltathat alapanyagot a megformázni kívánt egyetlen holmihoz. Ilyenkor azok összeolvadnak. Ha eleve több különböző minőségű anyagból álló tárgyat kívánunk átformázni, akkor a végtermékben is érvényesül azok egymáshoz viszonyított aránya.\nHa a varázslat Időtartama lejár, a tárgy visszaalakul eredeti formájára, mivel a változást előidéző manatöbblet elillan a tárgyból."
+ },
+ {
+  "Varázslat neve": "Átváltoztatás",
+  "Típus": "Természeti Anyagok Mágiája",
+  "MP": 1,
+  "E MP": 1,
+  "Időtartam": "1 kör",
+  "Hatótáv": "20 m",
+  "Varázslás ideje": "1 kör",
+  "Leírás": "Ha a varázsló élőlényt - mely tartalmazza az Élet princípiumát - más élőlénnyé változtat át, az ynevi fontonként 1 Mp-ba kerül (I. csoport). Az összérték kiszámításakor azon teremtmény súlya a mérvadó, amelyik a nehezebb. A varázslat során az áldozat szemmel is követhetően változik át (ruhái, felszerelése nem).\nAz élőlények azonban lélekkel bírnak, és Személyes Aurát sugároznak ki, ami - mint tudjuk - gátat szab a Természetes Anyag Mágiája alá tartozó összes varázslatnak. Élőlényt tehát átváltoztatni is csak úgy lehetséges, hogy előbb vagy kiemeljük a lelkét a testéből, vagy megszüntetjük a védő kisugárzást (lásd Személyes Aura).\nA varázsló csak olyan teremtménnyé képes bárkit is átváltoztatni, mely teremtmény anatómiáját, szerveit, testi felépítését ismeri, tehát rendelkeznie kell az Élettan képzettség 3. fokával. Minél alaposabban ismeri, annál nagyobb a valószínűsége, hogy az új kreatúra életképes lesz. Ha nem életképes, és a varázslat Időtartama alatt meghal, az Időtartam lejártával hiába változik vissza, nem kel újra életre.\nAz 1. anyagcsoport anyagaiból (például sárból) is lehetséges élőlényt, legalábbis ahhoz sokban hasonlító homonkuluszt gyúrni (Átformázás, majd Átalakítás varázslattal). Ám ne feledjük, hogy az Élet princípiumát ez a test nem hordozza, így az efféle teremtmény nem élőlény, így nem is változtatható át.\nA Időtartam lejártával a kreatúra visszaváltozik az eredeti élőlénnyé."
+ },
+ {
+  "Varázslat neve": "Életerő szipolyozás távolról",
+  "Típus": "Nekromancia",
+  "MP": 10,
+  "E MP": 10,
+  "Időtartam": "Egyszeri",
+  "Hatótáv": "20 m",
+  "Varázslás ideje": "1 sz/E",
+  "Leírás": "A varázslat megidézésekor a varázsló baljában egy rohamosan növekvő sötétséggömböt tart, és magából a gömbből idéz meg egy árnyékszín villámot, mely pillanatnyi ideig összeköti a varázslót és az áldozatot, a varázslóba áramoltatva az elragadott életerőt. A villám CÉ-je 30.\nA sebzés erősítésenként 1k6 Sp, ami minden elszenvedett 5 Fp-sebződés után 1 ÉP elvesztését is magával vonja. A varázslat ellen a páncélok SFÉ-je nem érvényesül.\nA nekromanta az így kiszipolyozott életerőt felhsználhatja saját sebei gyógyítására, vagy ha magának nincsen rá szüksége (azaz teljesen sértetlen), maximum egyetlen percig képes tárolni, utána a felgyülemlett energia elszivárog."
+ },
+ {
+  "Varázslat neve": "Életerő szipolyozás érintéssel",
+  "Típus": "Nekromancia",
+  "MP": 5,
+  "E MP": 5,
+  "Időtartam": "Egyszeri",
+  "Hatótáv": "Érintés",
+  "Varázslás ideje": "1 sz/E",
+  "Leírás": "A varázslat megidézésekor a varázsló baljában egy rohamosan növekvő sötétséggömböt tart. Egyszerű érintéssel szípolyozhatja ki célpontjából az életerőt. Ehhez, ha az áldozat ellenáll, sikeres Támadó dobást kell tennie.\n sebzés erősítésenként 1k6 Sp, ami minden elszenvedett 5 Fp-sebződés után 1 ÉP elvesztését is magával vonja. A varázslat ellen a páncélok SFÉ-je nem érvényesül.\nA nekromanta az így kiszipolyozott életerőt felhsználhatja saját sebei gyógyítására, vagy ha magának nincsen rá szüksége (azaz teljesen sértetlen), maximum egyetlen percig képes tárolni, utána a felgyülemlett energia elszivárog."
+ },
+ {
+  "Varázslat neve": "Életerő átadása",
+  "Típus": "Nekromancia",
+  "MP": 2,
+  "E MP": 2,
+  "Időtartam": "Végleges",
+  "Hatótáv": "Érintés",
+  "Varázslás ideje": "1 kör",
+  "Leírás": "A varázstudó teremtményei életerejét a saját életereje vagy mások rovására növelheti, úgy, hogy a nyers életerőt sötét energiákká alakítva teremtményeibe plántálja. A varázslat során az energia hátborzongató, hangtalan szárazvillámok formájában tör ki a varázsló baljából, majd fut végig a célpont testén, mire amazon az esetleges korábbi sebek beforrnak, bőre, ha van neki, feszessé és ifjontívá változik, ha nincs, ekkor rohamosan pillanatok alatt kinő.\nA varázstudó képes saját ÉP-iből Erősségenként 1 ÉP-t átadni teremtménye számára. Ha mások életerejét kívánja átáramoltatni, akkor először az Életerő szipolyozás mozaikkal kell begyűjtenie amazt, csak eztán adhatja át az élőholtnak. A varázslat célpontja maximálisan a megteremtésekor az Élőhalott teremtés mozaik által ráruházott ÉP duplájával rendelkezhet a varázslat után. Tehát ha egy, az Élőhalott teremtés mozaikkal \"feltámasztott\" zombi ÉP-inek száma 10, akkor az Életerő átadással sem lehet ÉP-i számát 20 fölé növelni.\nEgyes szélsőséges esetekben a nekromanta egy másik élőlénynek is átadhat életerejéből, bár ez nem jellemző. Ezen esetekben a célpont nem \"gyógyítható\" eredeti ÉP menynyisége fölé."
+ },
+ {
+  "Varázslat neve": "Élőhalott pusztítás",
+  "Típus": "Nekromancia",
+  "MP": 5,
+  "E MP": 5,
+  "Időtartam": "Egyszeri",
+  "Hatótáv": "20 m",
+  "Varázslás ideje": "1 sz/E",
+  "Leírás": "Ezen varázslat segítségével a varázsló képes bármely, nem a Túlvilágról megidézett élőhalottat elpusztítani. A mozaik a különböző vajákosok, papok, varázslók által a halott testébe \nbörtönzött evilági mágikus energiákat ragadja el, oszlatja szét, a túlvilágról idézett lények ellen éppen ezért a varázslat hatástalan. A varázslat minden E-je lk6 ÉP-nyi rombolást visz végbe az élőholt létezését biztosító energiákban.\nA mozaik megidézésekor a varázstudó baljából akár 20 ynevi lábnyi villámok vágódnak ki, körbefonva, beborítva a célpontot, felzabálva annak energiáit. A villám CÉ-je 30."
+ },
+ {
+  "Varázslat neve": "Élőhalott teremtés",
+  "Típus": "Nekromancia",
+  "MP": 1,
+  "E MP": 1,
+  "Időtartam": "3 perc",
+  "Hatótáv": "",
+  "Varázslás ideje": "1 kör",
+  "Leírás": "A varázsló a zónáján belül egy, vagy akár több élőhalottat is, mozgásra bírhat, mágikus energiát juttatva testükbe. A varázstudó igéi és kántálása nyomán hatalmas mennyiségű, nyers energia halmozódik fel testében, szemeiben szikrák pattognak, szájából túlvilági lidércfény tör elő, balja kékes fénnyel izzik fel.\nA varázslat elmondása után a Zónája középpontján bal öklével, vagy botjával lesújtva a földre képes az erőket szétosztani a feltámasztani kívánt holtak között. Az erők átáramlása egy pillanatot vesz csak igénybe: a holtak, mintegy a varázsló ütésétől összerázkódva riadnak fel dermedtségükből.\nMivel a holtak nem rendelkeznek tudattal vagy lélekkel, ezért ezen varázslat segítségével nem uralhatóak. Saját akaratuk szerint (a KM belátására bízva) indulnak útnak, és próbálják elpusztítani az életerő minél magasabb szintű megnyilvánulásait, legfőképp a teremtés koronáinak nevezhető, tudattal bíró élőlényeket.\nEgy élőhalott csak akkor bírható mozgásra, ha a nekromanta megfelelő mennyiségű mágikus energiát juttat a szervezetébe. A varázslat minden egyes Erőssége 1 Életerő pontnak felel meg, s a holttest \"életrekeltéséhez\" annyi Életerő pont szükséges, amennyit a test még életében birtokolt. Ebből is látszik, hogy a \"feltámasztott\" holtak számának csak azok korábbi életereje (ÉP-inek száma) és a varázstudó hatalma szab határt.\nA nekromanta rövid megfigyelés után pontosan képes felmérni, hogy az általa feltámasztani kívánt holtak mozgatásához mennyi mágikus energia, azaz hány E erősítésű varázslat szükséges (ez az érték KM belátására van bízva).\nA varázslat Időtartama alatt az élőhalott testében minden bomlási folyamat megtorpan, az Időtartam lejárta után viszont rohamos gyorsasággal indul be újra.\nA varázslattal megteremtett élőhalottak minden értéke megfelel a haláluk előtti értékeiknek, azonban nem rendelkeznek a lelkűk birtokolta képességekkel, képzettségekkel, így a tapasztalatuk nyújtotta HM-ekkel, esetleges képességbeli bonuszaikkal. Csakis a testük birtokolta Tulajdonságok a mérvadóak az értékeik kiszámításánál (például a Harcértékek, vagy' az Erőből származó sebzésbónusz).\nAbban a kivételes esetben, ha az adott lény halála nem teste bárminemű károsodása miatt következett be, hanem lelkét tépték ki testéből, akkor az Élőhalott Teremtés varázslattal időszakosan életre kelthető, az élő test minden funkciójával felruházható."
+ },
+ {
+  "Varázslat neve": "Élőhalott-idéző litánia",
+  "Típus": "Nekromancia",
+  "MP": 50,
+  "E MP": 0,
+  "Időtartam": "Gyertya",
+  "Hatótáv": "",
+  "Varázslás ideje": "5 kör",
+  "Leírás": "Az élőhalott Anyagi Testével egyetemben jelenik meg, a litánia utolsó szavának elhangzásakor. Idézéssel csakis szellemeket, lidérceket, illetve kóborló dögöket lehet megidézni, más élőholtakat nem. Arra nézvést, hogy az élőhalott miként fest, a KM-től tudhatsz meg adatokat, illetve a könyv végén található Bestiáriumban, a 483. oldalon olvashatsz bővebben róluk."
+ },
+ {
+  "Varázslat neve": "Érintés",
+  "Típus": "Asztrálmágia",
+  "MP": 0,
+  "E MP": 0,
+  "Időtartam": "Egyszeri",
+  "Hatótáv": "Érintés",
+  "Varázslás ideje": "1 sz",
+  "Leírás": "A legalapvetőbb formázása az Asztrális mozaikoknak. A varázsló az önnön lelkében felidézett érzelemmel az Asztrálsíkon kinyúl a célpont felé és megérinti annak tudatát. A varázslat, ha sikeres volt, átjutva az Asztrális Mágia-ellenálláson, kifejti a beléfoglalt Asztrál mozaik hatását a mozaik leírásában szereplő időtartam erejéig. Ennél a formázásnál az alany nem lehet messzebb 20 ynevi lábnál és csak egyetlen személy jelölhető ki."
+ },
+ {
+  "Varázslat neve": "Érintés",
+  "Típus": "Szimpatikus mágia",
+  "MP": 7,
+  "E MP": 0,
+  "Időtartam": "?",
+  "Hatótáv": "Érintés",
+  "Varázslás ideje": "1 sz",
+  "Leírás": "Ha a varázsló Asztrál vagy Mentái varázslatához tűzi az Érintés mozaikot, majd a végjei kimondása előtt bal kezével megérinti az áldozatot, a varázslat nagyobb Erősséggel (E) jön létre. Más típusú varázslatok hatását nem befolyásolja.\nAz érintéskor két élőlény - csak és kizárólag élőlény - között pillanatnyi, időleges, de erős személy-személy szimpátiaviszony jön létre, mely a kontaktus megszakításával nyomban véget ér. Ez idő alatt azonban felerősíti a lélekre - azaz az Asztrál- és Mentáltestre - ható varázslatokat. Ez +12 E-t jelent.\nHa az érintés nem jön létre (nem sikerül) a végjei kimondására rendelkezésre álló idő alatt, a varázslat létre sem jön, ám a rááldozott Mana pontok elvesznek."
+ },
+ {
+  "Varázslat neve": "Érzékelés (Olvasás)",
+  "Típus": "Mentálmágia",
+  "MP": 1,
+  "E MP": 0.25,
+  "Időtartam": "5p",
+  "Hatótáv": "",
+  "Varázslás ideje": "1 sz",
+  "Leírás": "A varázsló az áldozat érzékszerveivel érzékel. Látja, amit az Iát, hallja, amit az hall, tapint, ízlel, szagol, mintha csak belekerült volna a másik testébe."
+ },
+ {
+  "Varázslat neve": "Érzéketlenség (Bénítás)",
+  "Típus": "Mentálmágia",
+  "MP": 1,
+  "E MP": 1,
+  "Időtartam": "1 kör",
+  "Hatótáv": "",
+  "Varázslás ideje": "1 sz",
+  "Leírás": "Az áldozat semmit nem érzékel. Vak, süket, nem szagol, nem képes ízlelni, tapintása is érzéketlen, akár valami leprásé. A világ létének jelei számára megszűnnek létezni - annak, aki még soha nem tapasztalt ilyet, erős sokkot okoz, sikertelen Asztrálpróba esetén eszméletlenséget.\nA pszi Hatodik érzék nevű diszciplínájának hatására nincs befolyással. Az Érzékélesítés diszciplína nem szünteti meg a Mentálmágiával okozott Érzéketlenséget."
+ },
+ {
+  "Varázslat neve": "Öregítés",
+  "Típus": "Időmágia",
+  "MP": 0,
+  "E MP": 0,
+  "Időtartam": "1 sz",
+  "Hatótáv": "",
+  "Varázslás ideje": "?",
+  "Leírás": "A mozaik bizonyos értelemben az Időugrás ellentéte. A kiszemelt tárgyat vagy személyt éppúgy kiszakítja az univerzum időszövetéből, ám nem megállítja, hanem felpörgeti számára az idő múlását. Míg az áldozatot körülvevő világban csak egyetlen röpke szegmens telik el, ő - testileg - napokat, heteket vagy akár éveket öregszik.\nMivel a varázslat az Asztrál- és a Mentáltestre nem hat, az élőlények nem észlelik az idő rohamos múlását, csak a testük öregszik egyik pillanatról a másikra. Tárgyak tetszés szerint öregíthetőek, ám az élőlényekre csak a Személyes Aura megszüntetésével, vagy az illető beleegyezésével hat a mozaik. Lényeges körülmény azonban, hogy az élőlények erőszakos öregítése szigorúan Fekete mágia.\nA mozaik Mana pont igénye a kiszemelt tárgy ill. élőlény súlyától, továbbá az öregedés mértékétől függ - az alábbi táblázat szerint:",
+  "tablazatok": [
+   "Öregedés\t\tMp/3 font\n1 hétnél kevesebb\t\t1 Mp\n1 hét - 1 hónap\t\t2 Mp\n1 hónap - 1 év\t\t3 Mp\n1 év - 10 év\t\t4 Mp\n10 év - 50 év\t\t5 Mp\n50 év - 100 év\t\t6 Mp\n100 év - 1000 év\t\t7 Mp"
+  ]
+ },
+ {
+  "Varázslat neve": "Őselem teremtése",
+  "Típus": "Elemi mágia",
+  "MP": 3,
+  "E MP": 3,
+  "Időtartam": "?",
+  "Hatótáv": "20 m",
+  "Varázslás ideje": "1 sz/E",
+  "Leírás": "A varázsló Őselemet (Őstüzet, Ősvizet, Ősföldet, Ősléget) teremt, amit a kívánt formába (Formázás) zár. Ez lehet a Hét Iskolaforma egyike, vagy - ha a varázsló bír efféle tudással - valamely Szabad Elemi Forma. Azt, hogy a teremtett Őselem meddig marad együtt, a Formázás határozza meg.\nA varázslók az Őstüzet általában támadásra, az Ősvizet védekezésre használják, míg a további két Őselemhez csak egyéb céllal, vagy más létsíkok teremtményeivel szemben nyúlnak. Az ellentétes Őselemek gyengítik, akár ki is oltják egymást. Ellentétes Őselemmel való érintkezés 11<6 sebzést okoz.\nA hétköznapi tárgyak és az Őselemek találkozása esetén az említett célpontok az adott Őselem sebzésének megfelelő STP-t sérülnek, azaz elégnek, szétfagynak, összetörnek, illetve például a leginkább Őselemi Földből felépülő eszközök, mondjuk fém fegyverek esetében az Öslégtől elrozsdállnak. Ezen sérülések módozatairól, mikéntjéről a KM jogköre dönteni.\nAzonban azt is le kell szögeznünk, hogy az éteri állapotú Őstüzet leszámítva minden őselemnek van anyagi valója, ezért mindegyikük bizonyos méretű ellenhatást fejt ki az adott formációkon áthaladókra. Ebből kifolyólag bármely' időtartammal rendelkező formázásról is legyen szó, a rajta áthaladó fizikai támadások ellen 1-es SFÉ-t biztosít a mögötte lévő tárgyak, élőlények számára minden egyes, az adott területre formázott 1 E után.\nA fenti szabály alól csak az Őselemi Föld a kivétel, mely E-nként 2 pontos SFÉ-t ad a formáció mögött lévők számára. Az Őselemi Föld azonban másban is eltér a többi Őselemtől, mivel minél nagyobb E-vel idézzük meg, megjelenési formája annál tömörebb, kristályszerűbb; 1-5 E-ig általában por vagy\n \nhomokszerű, 6-10 E-ig nagyobb leginkább kavicsokra emlékeztető rögökbe áll össze, 10 E felett már kristályos sziklaszerű anyag idéződik meg. Ezen tulajdonsága miatt az Őselemi Föld támadóformációban, akár nem ellentétes Őselemből felépülő lény'en is sebezhet, E-nként 2 Sp-t."
+ },
+ {
+  "Varázslat neve": "Űző litánia",
+  "Típus": "Nekromancia",
+  "MP": 0,
+  "E MP": 0,
+  "Időtartam": "Végleges",
+  "Hatótáv": "",
+  "Varázslás ideje": "?",
+  "Leírás": "Kevesen tudják, hogy az idéző litániákat visszafelé elmondva, azok hatása is megfordítható, azaz a lény nem megidéztetik, hanem elűzetik az Anyagi Síkról. Az űző litániák ugyan azokból a mágikus tartamú szavakból állnak (ugyanannyi a Mana pont igényük és a Varázslási idejük), mint az azonos idéző litániának, csak éppen fordított sorrendben, a legutolsó szavakat előre véve kell elkántálni őket. Az űző litánia utolsó szavának elhangzásakor a lény (akire a varázslat irányul), visszaüzetik - visszakerül - oda, ahonnan korábban megidézték. A nem idézéssel hívott teremtményekre a litánia semmilyen hatással nincs.\nA mágiatudomány, célja szerint, háromféle űző litániát ismer: Élőhalottűző, Kísértetűző és Lélekűző litániát."
+ }
+]

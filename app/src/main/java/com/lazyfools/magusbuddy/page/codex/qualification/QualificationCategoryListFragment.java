@@ -70,7 +70,8 @@ public class QualificationCategoryListFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        _recyclerView = new RecyclerView(container.getContext());
+        _recyclerView = (RecyclerView) LayoutInflater.from(container.getContext())
+                .inflate(R.layout.category_list, container, false);
         _recyclerView.setLayoutManager(new GridLayoutManager(container.getContext(),2));
 
         Intent intent = getActivity().getIntent();
@@ -82,7 +83,7 @@ public class QualificationCategoryListFragment extends Fragment {
             @Override
             public void onClick(QualificationType item) {
                 Bundle bundle = new Bundle();
-                bundle.putInt(getResources().getString(R.string.QUALIFICATION_TYPE), item.getType().ordinal());
+                bundle.putInt(getResources().getString(R.string.SKILL_TYPE), item.getType().ordinal());
                 Navigation.findNavController(_recyclerView).navigate(R.id.action_qualificationCategoryListFragment_to_qualificationListFragment,bundle);
             }
         };
@@ -104,7 +105,7 @@ public class QualificationCategoryListFragment extends Fragment {
             public boolean onQueryTextSubmit(String query) {
                 sv.clearFocus();
                 Bundle bundle = new Bundle();
-                bundle.putString(getResources().getString(R.string.QUALIFICATION_FILTER), query);
+                bundle.putString(getResources().getString(R.string.SKILL_NAME_FILTER), query);
                 Navigation.findNavController(_recyclerView).navigate(R.id.action_qualificationCategoryListFragment_to_qualificationListFragment,bundle);
                 return true;
             }
