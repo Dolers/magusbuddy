@@ -22,6 +22,16 @@ public class BardMagicEntity {
 
         public boolean equalsName(String otherName) { return name.equals(otherName); }
         public String toString() { return this.name; }
+
+        static public TypeEnum enumOf(String value){
+            switch(value){
+                case "Dalmágia": return DAL;
+                case "Fénymágia": return FENY;
+                case "Hangmágia": return HANG;
+                case "Egyéb bárdmágia": return EGYEB;
+            }
+            return EGYEB;
+        }
     }
 
     @PrimaryKey(autoGenerate = true)

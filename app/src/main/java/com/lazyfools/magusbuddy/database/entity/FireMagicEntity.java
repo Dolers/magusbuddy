@@ -6,13 +6,17 @@ import android.arch.persistence.room.PrimaryKey;
 
 import java.util.ArrayList;
 
-@Entity(tableName = "pszimagic")
-public class PsziMagicEntity {
+@Entity(tableName = "firemagic")
+public class FireMagicEntity {
     public enum TypeEnum{
-        PYARRONI("Pyarroni módszer"),
-        GODONI("Godoni örökség"),
-        KYR("Kyr Metódus"),
-        SLAN("Slan útja");
+        ALAP("Alapvető tűzmágiák"),
+        VEDO("Védőmágiák"),
+        ISKOLA("Iskolaformák"),
+        SZABAD("Szabad elemi formák"),
+        MAGASISKOLA("Tűzmágia magasiskolája"),
+        KOZONSEGES("Közönséges tüzek befolyásolása"),
+        OSTUZ("Őstüzek befolyásolása"),
+        TUZLENY("Tűzlények idézése");
 
         private final String name;
 
@@ -25,12 +29,16 @@ public class PsziMagicEntity {
 
         static public TypeEnum enumOf(String value){
             switch(value){
-                case "Pyarroni módszer": return PYARRONI;
-                case "Godoni örökség": return GODONI;
-                case "Kyr Metódus": return KYR;
-                case "Slan útja": return SLAN;
+                case "Alapvető tűzmágiák": return ALAP;
+                case "Védőmágiák": return VEDO;
+                case "Iskolaformák": return ISKOLA;
+                case "Szabad elemi formák": return SZABAD;
+                case "Tűzmágia magasiskolája": return MAGASISKOLA;
+                case "Közönséges tüzek befolyásolása": return KOZONSEGES;
+                case "Őstüzek befolyásolása": return OSTUZ;
+                case "Tűzlények idézése": return TUZLENY;
             }
-            return PYARRONI;
+            return ALAP;
         }
     }
 
@@ -44,23 +52,8 @@ public class PsziMagicEntity {
     @ColumnInfo(name = "type")
     private TypeEnum _type;
 
-    @ColumnInfo(name = "subType")
-    private String _subType;
-
-    @ColumnInfo(name = "level")
-    private Integer _level;
-
     @ColumnInfo(name = "mp")
     private Integer _mp;
-
-    @ColumnInfo(name = "emp")
-    private Integer _emp;
-
-    @ColumnInfo(name = "emptext")
-    private String _empText;
-
-    @ColumnInfo(name = "magicresistance")
-    private String _magicResistance;
 
     @ColumnInfo(name = "durationtime")
     private String _durationTime;
@@ -77,13 +70,10 @@ public class PsziMagicEntity {
     @ColumnInfo(name = "special")
     private String _special;
 
-    public PsziMagicEntity(String name, TypeEnum type, String subType, Integer level, Integer mp, Integer emp, String durationTime, String castTime, String description) {
+    public FireMagicEntity(String name, TypeEnum type, Integer mp, String durationTime, String castTime, String description) {
         _name = name;
         _type = type;
-        _subType = subType;
-        _level = level;
         _mp = mp;
-        _emp = emp;
         _durationTime = durationTime;
         _castTime = castTime;
         _description = description;
@@ -113,52 +103,12 @@ public class PsziMagicEntity {
         _type = type;
     }
 
-    public String getSubType() {
-        return _subType;
-    }
-
-    public void setSubType(String subType) {
-        _subType = subType;
-    }
-
-    public Integer getLevel() {
-        return _level;
-    }
-
-    public void setLevel(Integer level) {
-        _level = level;
-    }
-
     public Integer getMp() {
         return _mp;
     }
 
     public void setMp(Integer mp) {
         _mp = mp;
-    }
-
-    public Integer getEmp() {
-        return _emp;
-    }
-
-    public void setEmp(Integer emp) {
-        _emp = emp;
-    }
-
-    public String getEmpText() {
-        return _empText;
-    }
-
-    public void setEmpText(String empText) {
-        _empText = empText;
-    }
-
-    public String getMagicResistance() {
-        return _magicResistance;
-    }
-
-    public void setMagicResistance(String magicResistance) {
-        _magicResistance = magicResistance;
     }
 
     public String getDurationTime() {

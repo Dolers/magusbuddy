@@ -2,7 +2,6 @@ package com.lazyfools.magusbuddy.database.entity;
 
 import android.arch.persistence.room.ColumnInfo;
 import android.arch.persistence.room.Entity;
-import android.arch.persistence.room.Ignore;
 import android.arch.persistence.room.PrimaryKey;
 
 import java.util.ArrayList;
@@ -11,7 +10,7 @@ import java.util.ArrayList;
 public class HighMagicEntity {
     public enum TypeEnum{
         ELEMI("Elemi mágia"),
-        TERMÉSZETI("Természeti Anyagok Mágiája"),
+        TERMESZETI("Természeti Anyagok Mágiája"),
         TER("Térmágia"),
         ASZTRAL("Asztrálmágia"),
         MENTAL("Mentálmágia"),
@@ -30,6 +29,23 @@ public class HighMagicEntity {
 
         public boolean equalsName(String otherName) { return name.equals(otherName); }
         public String toString() { return this.name; }
+
+       static public TypeEnum enumOf(String value){
+            switch(value){
+                case "Elemi mágia": return ELEMI;
+                case "Természeti Anyagok Mágiája": return TERMESZETI;
+                case "Térmágia": return TER;
+                case "Asztrálmágia": return ASZTRAL;
+                case "Mentálmágia": return MENTAL;
+                case "Rúnamágia": return RUNA;
+                case "Időmágia": return IDO;
+                case "Nekromancia": return NEKROMANCIA;
+                case "Démonológia": return DEMONOLOGIA;
+                case "Szimpatikus mágia": return SZIMPATIKUS;
+                case "Egyéb mágikus módszerek": return EGYEB;
+            }
+            return EGYEB;
+        }
     }
 
     @PrimaryKey(autoGenerate = true)

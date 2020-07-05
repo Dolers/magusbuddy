@@ -6,7 +6,7 @@
   "E MP": 0,
   "Időtartam": "1 nap",
   "Hatótáv": "Érintés",
-  "Varázslás ideje": "1 perc",
+  "Varázslás ideje": "1 p",
   "Leírás": "A varázslat segítségével tudat, intelligencia kölcsönözhető egy értelemmel nem bíró élőhalottnak. A varázslás során a nekromanta saját tudatának torz és igen primitív lenyomatát plántálja az élőhalottba. Ami ezáltal rövid, egyszerű parancsokat képes csak végrehajtani, melyek nem lehetnek összetett feladatok. Például: „Senkit ne eressz be az ajtón!” - parancsot képes végrehajtani, míg a „Csak a vendégeimet ereszd be!” - utasítással nem tud mit kezdeni."
  },
  {
@@ -312,7 +312,7 @@
   ]
  },
  {
-  "Varázslat neve": "Időtartam: Perc",
+  "Varázslat neve": "Időtartam: p",
   "Típus": "Időmágia",
   "MP": 7,
   "E MP": 3,
@@ -370,7 +370,7 @@
   "Varázslás ideje": "1 sz",
   "Leírás": "A mozaik segítségével a varázsló személyeket és tárgyakat juttathat előre az időben. Az Időugrás a mágia-filozófusok szerint nem más, mint a tér helyett az idő dimenziójában végrehajtott telepőrt. Az időutazók helyet nem változtatnak, ám eltűnnek a térből, s csak az időugráskor meghatározott időpont elérkeztével jelennek meg ismét. A köztes időben minden szempontból nem létezőnek minősülnek: mágiával sem érzékelhetőek vagy érhetőek el. Számukra azonban nem telik az idő, bármilyen távolra is ugranak, csak egy villanásként érzékelik az utazást. Nem öregszenek a világgal együtt; sebeik, betegségeik sem gyógyulnak.\nA köztes időt egyszerűen átugorják.\nAz Időugrás csak akkor jön létre, ha az érkezés pillanatában semmi nem gátolja az utazókat, hogy belépjenek a térbe. Ellenkező esetben semmi nem történik, az utazók el sem tűnnek, bár a varázslatra felhasznált Mana pontok elvesznek. Vagyis a Teleporthoz hasonlóan az Időugrással sem lehet valakit valamibe, vagy valamit valakibe belejuttatni.\nTárgyat a varázsló a súlytól függően, tetszés szerint küldhet előre az időben, de élőlények esetében bírnia kell az illető beleegyezését. Fontos tény még, hogy a mozaik segítségével az idő csak előrefelé járható, a múltba ugrás módját csak a mágusok ismerik.\nAz alábbi táblázat megmutatja, hogy 3 ynevi font súly hány Mana pontért milyen messzire küldhető előre a jövőbe:",
   "tablazatok": [
-   "Időugrás\tMp\tVarázslás ideje\n1 körnél kevesebb\t1 Mp\t1 szegmens\n1-6 kör\t2 Mp\t2 szegmens\n1 perc - 1 óra\t3 Mp\t1 kör\n1 óra - 1 nap\t4 Mp\t6 kör\n1 nap - 1 év\t5 Mp\t2 perc\n1-100 év\t6 Mp\t5 perc\n100-000 év\t7 Mp\t15 perc"
+   "Időugrás\tMp\tVarázslás ideje\n1 körnél kevesebb\t1 Mp\t1 szegmens\n1-6 kör\t2 Mp\t2 szegmens\n1 perc - 1 óra\t3 Mp\t1 kör\n1 óra - 1 nap\t4 Mp\t6 kör\n1 nap - 1 év\t5 Mp\t2 perc\n1-100 év\t6 Mp\t5 perc\n100-000 év\t7 Mp\t15 p"
   ]
  },
  {
@@ -741,7 +741,7 @@
   "Típus": "Nekromancia",
   "MP": 3,
   "E MP": 3,
-  "Időtartam": "3 perc",
+  "Időtartam": "3 p",
   "Hatótáv": "20 m",
   "Varázslás ideje": "1 kör",
   "Leírás": "A varázslat igéinek elmondása, és rúnajeleinek levegőbe írása után a nekromanta hosszú, elnyújtott sikolyt hallat, mellyel felhívja magára a környéken található tudattalan élőholtak figyelmét, s számukra egyetlen szavas parancsot adhat, melyet legjobb tudásuk szerint igyekeznek majd végrehajtani az Időtartam lejártáig. A varázslattal a varázsló annyi tudattalan élőholtat hajthat az uralma alá, amennyi a varázslat E-je.\nAzonban az Élőholt parancsnokiás E-jénél nagyobb erősítésű varázslatokkal a bűvölet megtörhető, és az irányítása elorozható a nekromantától."
@@ -1188,7 +1188,7 @@
   "Típus": "Nekromancia",
   "MP": 1,
   "E MP": 1,
-  "Időtartam": "3 perc",
+  "Időtartam": "3 p",
   "Hatótáv": "",
   "Varázslás ideje": "1 kör",
   "Leírás": "A varázsló a zónáján belül egy, vagy akár több élőhalottat is, mozgásra bírhat, mágikus energiát juttatva testükbe. A varázstudó igéi és kántálása nyomán hatalmas mennyiségű, nyers energia halmozódik fel testében, szemeiben szikrák pattognak, szájából túlvilági lidércfény tör elő, balja kékes fénnyel izzik fel.\nA varázslat elmondása után a Zónája középpontján bal öklével, vagy botjával lesújtva a földre képes az erőket szétosztani a feltámasztani kívánt holtak között. Az erők átáramlása egy pillanatot vesz csak igénybe: a holtak, mintegy a varázsló ütésétől összerázkódva riadnak fel dermedtségükből.\nMivel a holtak nem rendelkeznek tudattal vagy lélekkel, ezért ezen varázslat segítségével nem uralhatóak. Saját akaratuk szerint (a KM belátására bízva) indulnak útnak, és próbálják elpusztítani az életerő minél magasabb szintű megnyilvánulásait, legfőképp a teremtés koronáinak nevezhető, tudattal bíró élőlényeket.\nEgy élőhalott csak akkor bírható mozgásra, ha a nekromanta megfelelő mennyiségű mágikus energiát juttat a szervezetébe. A varázslat minden egyes Erőssége 1 Életerő pontnak felel meg, s a holttest \"életrekeltéséhez\" annyi Életerő pont szükséges, amennyit a test még életében birtokolt. Ebből is látszik, hogy a \"feltámasztott\" holtak számának csak azok korábbi életereje (ÉP-inek száma) és a varázstudó hatalma szab határt.\nA nekromanta rövid megfigyelés után pontosan képes felmérni, hogy az általa feltámasztani kívánt holtak mozgatásához mennyi mágikus energia, azaz hány E erősítésű varázslat szükséges (ez az érték KM belátására van bízva).\nA varázslat Időtartama alatt az élőhalott testében minden bomlási folyamat megtorpan, az Időtartam lejárta után viszont rohamos gyorsasággal indul be újra.\nA varázslattal megteremtett élőhalottak minden értéke megfelel a haláluk előtti értékeiknek, azonban nem rendelkeznek a lelkűk birtokolta képességekkel, képzettségekkel, így a tapasztalatuk nyújtotta HM-ekkel, esetleges képességbeli bonuszaikkal. Csakis a testük birtokolta Tulajdonságok a mérvadóak az értékeik kiszámításánál (például a Harcértékek, vagy' az Erőből származó sebzésbónusz).\nAbban a kivételes esetben, ha az adott lény halála nem teste bárminemű károsodása miatt következett be, hanem lelkét tépték ki testéből, akkor az Élőhalott Teremtés varázslattal időszakosan életre kelthető, az élő test minden funkciójával felruházható."
@@ -1264,7 +1264,7 @@
   "Időtartam": "?",
   "Hatótáv": "20 m",
   "Varázslás ideje": "1 sz/E",
-  "Leírás": "A varázsló Őselemet (Őstüzet, Ősvizet, Ősföldet, Ősléget) teremt, amit a kívánt formába (Formázás) zár. Ez lehet a Hét Iskolaforma egyike, vagy - ha a varázsló bír efféle tudással - valamely Szabad Elemi Forma. Azt, hogy a teremtett Őselem meddig marad együtt, a Formázás határozza meg.\nA varázslók az Őstüzet általában támadásra, az Ősvizet védekezésre használják, míg a további két Őselemhez csak egyéb céllal, vagy más létsíkok teremtményeivel szemben nyúlnak. Az ellentétes Őselemek gyengítik, akár ki is oltják egymást. Ellentétes Őselemmel való érintkezés 11<6 sebzést okoz.\nA hétköznapi tárgyak és az Őselemek találkozása esetén az említett célpontok az adott Őselem sebzésének megfelelő STP-t sérülnek, azaz elégnek, szétfagynak, összetörnek, illetve például a leginkább Őselemi Földből felépülő eszközök, mondjuk fém fegyverek esetében az Öslégtől elrozsdállnak. Ezen sérülések módozatairól, mikéntjéről a KM jogköre dönteni.\nAzonban azt is le kell szögeznünk, hogy az éteri állapotú Őstüzet leszámítva minden őselemnek van anyagi valója, ezért mindegyikük bizonyos méretű ellenhatást fejt ki az adott formációkon áthaladókra. Ebből kifolyólag bármely' időtartammal rendelkező formázásról is legyen szó, a rajta áthaladó fizikai támadások ellen 1-es SFÉ-t biztosít a mögötte lévő tárgyak, élőlények számára minden egyes, az adott területre formázott 1 E után.\nA fenti szabály alól csak az Őselemi Föld a kivétel, mely E-nként 2 pontos SFÉ-t ad a formáció mögött lévők számára. Az Őselemi Föld azonban másban is eltér a többi Őselemtől, mivel minél nagyobb E-vel idézzük meg, megjelenési formája annál tömörebb, kristályszerűbb; 1-5 E-ig általában por vagy\n \nhomokszerű, 6-10 E-ig nagyobb leginkább kavicsokra emlékeztető rögökbe áll össze, 10 E felett már kristályos sziklaszerű anyag idéződik meg. Ezen tulajdonsága miatt az Őselemi Föld támadóformációban, akár nem ellentétes Őselemből felépülő lény'en is sebezhet, E-nként 2 Sp-t."
+  "Leírás": "A varázsló Őselemet (Őstüzet, Ősvizet, Ősföldet, Ősléget) teremt, amit a kívánt formába (Formázás) zár. Ez lehet a Hét Iskolaforma egyike, vagy - ha a varázsló bír efféle tudással - valamely Szabad Elemi Forma. Azt, hogy a teremtett Őselem meddig marad együtt, a Formázás határozza meg.\nA varázslók az Őstüzet általában támadásra, az Ősvizet védekezésre használják, míg a további két Őselemhez csak egyéb céllal, vagy más létsíkok teremtményeivel szemben nyúlnak. Az ellentétes Őselemek gyengítik, akár ki is oltják egymást. Ellentétes Őselemmel való érintkezés 11<6 sebzést okoz.\nA hétköznapi tárgyak és az Őselemek találkozása esetén az említett célpontok az adott Őselem sebzésének megfelelő STP-t sérülnek, azaz elégnek, szétfagynak, összetörnek, illetve például a leginkább Őselemi Földből felépülő eszközök, mondjuk fém fegyverek esetében az Öslégtől elrozsdállnak. Ezen sérülések módozatairól, mikéntjéről a KM jogköre dönteni.\nAzonban azt is le kell szögeznünk, hogy az éteri állapotú Őstüzet leszámítva minden őselemnek van anyagi valója, ezért mindegyikük bizonyos méretű ellenhatást fejt ki az adott formációkon áthaladókra. Ebből kifolyólag bármely' időtartammal rendelkező formázásról is legyen szó, a rajta áthaladó fizikai támadások ellen 1-es SFÉ-t biztosít a mögötte lévő tárgyak, élőlények számára minden egyes, az adott területre formázott 1 E után.\nA fenti szabály alól csak az Őselemi Föld a kivétel, mely E-nként 2 pontos SFÉ-t ad a formáció mögött lévők számára. Az Őselemi Föld azonban másban is eltér a többi Őselemtől, mivel minél nagyobb E-vel idézzük meg, megjelenési formája annál tömörebb, kristályszerűbb; 1-5 E-ig általában por vagy homokszerű, 6-10 E-ig nagyobb leginkább kavicsokra emlékeztető rögökbe áll össze, 10 E felett már kristályos sziklaszerű anyag idéződik meg. Ezen tulajdonsága miatt az Őselemi Föld támadóformációban, akár nem ellentétes Őselemből felépülő lény'en is sebezhet, E-nként 2 Sp-t."
  },
  {
   "Varázslat neve": "Űző litánia",

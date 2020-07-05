@@ -62,6 +62,60 @@
                       </LayoutPositions>
                     </value>
                   </entry>
+                  <entry key="fireMagicCategoryListFragment">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="253" />
+                            <option name="y" value="-656" />
+                          </Point>
+                        </option>
+                        <option name="myPositions">
+                          <map>
+                            <entry key="action_fireMagicCategoryListFragment_to_fireMagicListFragment">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                          </map>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
+                  <entry key="fireMagicListFragment">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="496" />
+                            <option name="y" value="-657" />
+                          </Point>
+                        </option>
+                        <option name="myPositions">
+                          <map>
+                            <entry key="action_fireMagicListFragment_to_fireMagicSingleFragment">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                          </map>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
+                  <entry key="fireMagicSingleFragment">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="758" />
+                            <option name="y" value="-656" />
+                          </Point>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
                   <entry key="highMagicCategoryListFragment">
                     <value>
                       <LayoutPositions>
@@ -109,7 +163,7 @@
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="744" />
+                            <option name="x" value="742" />
                             <option name="y" value="12" />
                           </Point>
                         </option>
@@ -121,8 +175,8 @@
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="256" />
-                            <option name="y" value="724" />
+                            <option name="x" value="-915" />
+                            <option name="y" value="849" />
                           </Point>
                         </option>
                         <option name="myPositions">
@@ -163,7 +217,17 @@
                                 <LayoutPositions />
                               </value>
                             </entry>
+                            <entry key="action_navigation_codex_to_fireMagicCategoryListFragment">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
                             <entry key="action_navigation_codex_to_highMagicCategoryListFragment">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                            <entry key="action_navigation_codex_to_psziMagicCategoryListFragment">
                               <value>
                                 <LayoutPositions />
                               </value>
@@ -188,8 +252,8 @@
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="500" />
-                            <option name="y" value="724" />
+                            <option name="x" value="-824" />
+                            <option name="y" value="1281" />
                           </Point>
                         </option>
                         <option name="myPositions">
@@ -199,7 +263,66 @@
                                 <LayoutPositions />
                               </value>
                             </entry>
+                            <entry key="action_navigation_home_to_navigation_battle">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
                           </map>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
+                  <entry key="psziMagicCategoryListFragment">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="255" />
+                            <option name="y" value="-319" />
+                          </Point>
+                        </option>
+                        <option name="myPositions">
+                          <map>
+                            <entry key="action_psziMagicCategoryListFragment_to_psziMagicListFragment">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                          </map>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
+                  <entry key="psziMagicListFragment">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="507" />
+                            <option name="y" value="-323" />
+                          </Point>
+                        </option>
+                        <option name="myPositions">
+                          <map>
+                            <entry key="action_psziMagicListFragment_to_psziMagicSingleFragment">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                          </map>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
+                  <entry key="psziMagicSingleFragment">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="753" />
+                            <option name="y" value="-320" />
+                          </Point>
                         </option>
                       </LayoutPositions>
                     </value>

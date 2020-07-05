@@ -13,6 +13,7 @@ import com.lazyfools.magusbuddy.database.dao.BardMagicDao;
 import com.lazyfools.magusbuddy.database.dao.CharacterAPIRelationDao;
 import com.lazyfools.magusbuddy.database.dao.CharacterDao;
 import com.lazyfools.magusbuddy.database.dao.CodexDao;
+import com.lazyfools.magusbuddy.database.dao.FireMagicDao;
 import com.lazyfools.magusbuddy.database.dao.HighMagicDao;
 import com.lazyfools.magusbuddy.database.dao.PsziMagicDao;
 import com.lazyfools.magusbuddy.database.dao.QualificationDao;
@@ -22,6 +23,7 @@ import com.lazyfools.magusbuddy.database.entity.BardMagicEntity;
 import com.lazyfools.magusbuddy.database.entity.CharacterAPIRelationEntity;
 import com.lazyfools.magusbuddy.database.entity.CharacterEntity;
 import com.lazyfools.magusbuddy.database.entity.CodexEntity;
+import com.lazyfools.magusbuddy.database.entity.FireMagicEntity;
 import com.lazyfools.magusbuddy.database.entity.HighMagicEntity;
 import com.lazyfools.magusbuddy.database.entity.PsziMagicEntity;
 import com.lazyfools.magusbuddy.database.entity.QualificationEntity;
@@ -38,9 +40,10 @@ import com.lazyfools.magusbuddy.database.populate.DbPopulizer;
             HighMagicEntity.class,
             SacralMagicEntity.class,
             BardMagicEntity.class,
-            PsziMagicEntity.class
+            PsziMagicEntity.class,
+            FireMagicEntity.class
         },
-        version = 9,
+        version = 10,
         exportSchema = false
 )
 @TypeConverters({Converters.class})
@@ -54,6 +57,7 @@ public abstract class AppDatabase extends RoomDatabase {
     public abstract SacralMagicDao sacralMagicDao();
     public abstract BardMagicDao bardMagicDao();
     public abstract PsziMagicDao psziMagicDao();
+    public abstract FireMagicDao fireMagicDao();
 
     public abstract CodexDao codexDao();
 

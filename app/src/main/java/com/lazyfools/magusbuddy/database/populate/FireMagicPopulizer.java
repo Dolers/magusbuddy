@@ -6,8 +6,8 @@ import android.util.Log;
 
 import com.lazyfools.magusbuddy.R;
 import com.lazyfools.magusbuddy.database.AppDatabase;
-import com.lazyfools.magusbuddy.database.dao.HighMagicDao;
-import com.lazyfools.magusbuddy.database.entity.HighMagicEntity;
+import com.lazyfools.magusbuddy.database.dao.FireMagicDao;
+import com.lazyfools.magusbuddy.database.entity.FireMagicEntity;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -17,13 +17,13 @@ import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class HighMagicPopulizer implements Populizer{
-    private final HighMagicDao _dao;
+public class FireMagicPopulizer implements Populizer{
+    private final FireMagicDao _dao;
     private final Context _context;
 
-    HighMagicPopulizer(final Context context, AppDatabase db){
+    FireMagicPopulizer(final Context context, AppDatabase db){
         _context = context;
-        _dao = db.highMagicDao();
+        _dao = db.fireMagicDao();
     }
 
     public void populate(){
@@ -31,9 +31,9 @@ public class HighMagicPopulizer implements Populizer{
     }
 
     private class DbPopulateAsync extends AsyncTask<Void, Void, Void> {
-        private final HighMagicDao _dao;
+        private final FireMagicDao _dao;
 
-        DbPopulateAsync(HighMagicDao QualificationDao) {
+        DbPopulateAsync(FireMagicDao QualificationDao) {
             _dao = QualificationDao;
         }
 
@@ -43,33 +43,31 @@ public class HighMagicPopulizer implements Populizer{
             // Not needed if you only populate on creation.
             _dao.deleteAll();
             _dao.insertAll(
-                    parseJson(_context.getResources().openRawResource(R.raw.highmagic))
+                    parseJson(_context.getResources().openRawResource(R.raw.firemagic))
             );
             return null;
         }
     }
 
-    private HighMagicEntity[] parseJson(InputStream text) {
+    private FireMagicEntity[] parseJson(InputStream text) {
         Scanner scanner = new Scanner(text);
         String qualifications_text = scanner.useDelimiter("\\A").next();
         scanner.close();
 
-        HighMagicEntity[] entities = null;
+        FireMagicEntity[] entities = null;
         try {
             JSONArray qualificationsJson = new JSONArray(qualifications_text);
-            entities = new HighMagicEntity[qualificationsJson.length()];
+            entities = new FireMagicEntity[qualificationsJson.length()];
             for (int i = 0; i< qualificationsJson.length();i++) {
                 JSONObject qJson = (JSONObject)qualificationsJson.get(i);
-                Log.i("AppDatabase", "magasmágia: "+i+" név: "+qJson.getString("Varázslat neve"));
-                HighMagicEntity entity = new HighMagicEntity(
-                        qJson.getString("Varázslat neve"),
-                        HighMagicEntity.TypeEnum.enumOf(qJson.getString("Típus")),
-                        qJson.getInt("MP"),
-                        qJson.getInt("E MP"),
-                        qJson.getString("Időtartam"),
-                        qJson.getString("Hatótáv"),
-                        qJson.getString("Varázslás ideje"),
-                        qJson.getString("Leírás")
+                Log.i("AppDatabase", "Tűzvarázsló: "+i+" név: "+qJson.getString("nev"));
+                FireMagicEntity entity = new FireMagicEntity(
+                        qJson.getString("nev"),
+                        FireMagicEntity.TypeEnum.enumOf(qJson.getString("tipus")),
+                        qJson.getInt("mp"),
+                        qJson.getString("idotartam"),
+                        qJson.getString("idoigeny"),
+                        qJson.getString("leiras")
                 );
 
                 parseDescriptionTables(qJson, entity);
@@ -84,13 +82,13 @@ public class HighMagicPopulizer implements Populizer{
         return entities;
     }
 
-    private void parseSpecialDescription(JSONObject qJson, HighMagicEntity entity) throws JSONException {
+    private void parseSpecialDescription(JSONObject qJson, FireMagicEntity entity) throws JSONException {
         if (qJson.has("specialis")){
             entity.setSpecial(qJson.getString("specialis"));
         }
     }
 
-    private void parseDescriptionTables(JSONObject qJson, HighMagicEntity entity) throws JSONException {
+    private void parseDescriptionTables(JSONObject qJson, FireMagicEntity entity) throws JSONException {
         if (qJson.has("tablazatok")){
             ArrayList<String> listdata = new ArrayList<String>();
             JSONArray jArray = qJson.getJSONArray("tablazatok");

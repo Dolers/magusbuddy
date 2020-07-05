@@ -65,7 +65,7 @@ public class BardMagicPopulizer implements Populizer{
                 Log.i("AppDatabase", "bárdmágia: "+i+" név: "+qJson.getString("nev"));
                 BardMagicEntity entity = new BardMagicEntity(
                         qJson.getString("nev"),
-                        stringToBardMagicTypeEnum(qJson.getString("tipus")),
+                        BardMagicEntity.TypeEnum.enumOf(qJson.getString("tipus")),
                         qJson.getInt("mp"),
                         qJson.getInt("emp"),
                         qJson.getString("idotartam"),
@@ -89,15 +89,5 @@ public class BardMagicPopulizer implements Populizer{
         if (qJson.has("me")){
             entity.setMagicResistance(qJson.getString("me"));
         }
-    }
-
-    private BardMagicEntity.TypeEnum stringToBardMagicTypeEnum(String value){
-        switch(value){
-            case "Dalmágia": return BardMagicEntity.TypeEnum.DAL;
-            case "Fénymágia": return BardMagicEntity.TypeEnum.FENY;
-            case "Hangmágia": return BardMagicEntity.TypeEnum.HANG;
-            case "Egyéb bárdmágia": return BardMagicEntity.TypeEnum.EGYEB;
-        }
-        return BardMagicEntity.TypeEnum.EGYEB;
     }
 }

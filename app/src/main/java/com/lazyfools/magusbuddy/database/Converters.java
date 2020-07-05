@@ -4,6 +4,7 @@ import android.arch.persistence.room.TypeConverter;
 
 import com.lazyfools.magusbuddy.database.entity.BardMagicEntity;
 import com.lazyfools.magusbuddy.database.entity.CodexEntity;
+import com.lazyfools.magusbuddy.database.entity.FireMagicEntity;
 import com.lazyfools.magusbuddy.database.entity.HighMagicEntity;
 import com.lazyfools.magusbuddy.database.entity.PsziMagicEntity;
 import com.lazyfools.magusbuddy.database.entity.QualificationEntity;
@@ -71,6 +72,16 @@ public class Converters {
     @TypeConverter
     public static PsziMagicEntity.TypeEnum PsziMagicTypeToInt(String value) {
         return PsziMagicEntity.TypeEnum.valueOf(value);
+    }
+
+    @TypeConverter
+    public static String fromFireMagicType(FireMagicEntity.TypeEnum value) {
+        return value == null ? null : value.name();
+    }
+
+    @TypeConverter
+    public static FireMagicEntity.TypeEnum FireMagicTypeToInt(String value) {
+        return FireMagicEntity.TypeEnum.valueOf(value);
     }
 
     @TypeConverter

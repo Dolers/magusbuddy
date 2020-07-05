@@ -14,7 +14,7 @@ public class HighMagicCategoryListAdapter extends CategoryListAdapter<HighMagicT
     private final Map<HighMagicEntity.TypeEnum,Integer> HighMagicDrawableIds = new HashMap<HighMagicEntity.TypeEnum, Integer>(){
         {
             put(HighMagicEntity.TypeEnum.ELEMI,       R.drawable.kepzettseg_harci);
-            put(HighMagicEntity.TypeEnum.TERMÉSZETI,  R.drawable.kepzettseg_harci);
+            put(HighMagicEntity.TypeEnum.TERMESZETI,  R.drawable.kepzettseg_harci);
             put(HighMagicEntity.TypeEnum.TER,         R.drawable.kepzettseg_harci);
             put(HighMagicEntity.TypeEnum.ASZTRAL,     R.drawable.kepzettseg_harci);
             put(HighMagicEntity.TypeEnum.MENTAL,      R.drawable.kepzettseg_harci);

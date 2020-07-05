@@ -29,6 +29,23 @@ public class SacralMagicEntity {
 
         public boolean equalsName(String otherName) { return name.equals(otherName); }
         public String toString() { return this.name; }
+
+        static public TypeEnum enumOf(String value){
+            switch(value){
+                case "Nagy Arkánum": return NAGY;
+                case "Kis Arkánum": return KIS;
+                case "Arel": return AREL;
+                case "Darton": return DARTON;
+                case "Domvik": return DOMVIK;
+                case "Dreina": return DREINA;
+                case "Krad": return KRAD;
+                case "Ranagol": return RANAGOL;
+                case "Sogron": return SOGRON;
+                case "Tharr": return THARR;
+                case "Uwel": return UWEL;
+            }
+            return NAGY;
+        }
     }
 
     public enum SphereEnum {ELET, HALAL, LELEK, TERMESZET}

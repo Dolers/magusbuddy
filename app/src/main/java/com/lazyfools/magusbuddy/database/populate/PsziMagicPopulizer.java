@@ -63,7 +63,7 @@ public class PsziMagicPopulizer implements Populizer{
                 Log.i("AppDatabase", "pszi diszciplina: "+i+" név: "+qJson.getString("nev"));
                 PsziMagicEntity entity = new PsziMagicEntity(
                         qJson.getString("nev"),
-                        stringToPsziMagicTypeEnum(qJson.getString("tipus")),
+                        PsziMagicEntity.TypeEnum.enumOf(qJson.getString("tipus")),
                         qJson.getString("fatipus"),
                         qJson.getInt("fok"),
                         qJson.getInt("pszipont"),
@@ -114,15 +114,5 @@ public class PsziMagicPopulizer implements Populizer{
         if (qJson.has("erosites szovege")){
             entity.setEmpText(qJson.getString("erosites szovege"));
         }
-    }
-
-    private PsziMagicEntity.TypeEnum stringToPsziMagicTypeEnum(String value){
-        switch(value){
-            case "Pyarroni módszer": return PsziMagicEntity.TypeEnum.PYARRONI;
-            case "Godoni örökség": return PsziMagicEntity.TypeEnum.GODONI;
-            case "Kyr Metódus": return PsziMagicEntity.TypeEnum.KYR;
-            case "Slan útja": return PsziMagicEntity.TypeEnum.SLAN;
-        }
-        return PsziMagicEntity.TypeEnum.PYARRONI;
     }
 }

@@ -63,7 +63,7 @@ public class SacralMagicPopulizer implements Populizer{
                 Log.i("AppDatabase", "szakrális magia: "+i+" név: "+qJson.getString("nev"));
                 SacralMagicEntity entity = new SacralMagicEntity(
                         qJson.getString("nev"),
-                        stringToSacralMagicTypeEnum(qJson.getString("tipus")),
+                        SacralMagicEntity.TypeEnum.enumOf(qJson.getString("tipus")),
                         qJson.getString("altipus"),
                         qJson.getInt("kegypont"),
                         qJson.getInt("erosites"),
@@ -119,22 +119,5 @@ public class SacralMagicPopulizer implements Populizer{
         if (qJson.has("erosites szovege")){
             entity.setEkpText(qJson.getString("erosites szovege"));
         }
-    }
-
-    private SacralMagicEntity.TypeEnum stringToSacralMagicTypeEnum(String value){
-        switch(value){
-            case "Nagy Arkánum": return SacralMagicEntity.TypeEnum.NAGY;
-            case "Kis Arkánum": return SacralMagicEntity.TypeEnum.KIS;
-            case "Arel": return SacralMagicEntity.TypeEnum.AREL;
-            case "Darton": return SacralMagicEntity.TypeEnum.DARTON;
-            case "Domvik": return SacralMagicEntity.TypeEnum.DOMVIK;
-            case "Dreina": return SacralMagicEntity.TypeEnum.DREINA;
-            case "Krad": return SacralMagicEntity.TypeEnum.KRAD;
-            case "Ranagol": return SacralMagicEntity.TypeEnum.RANAGOL;
-            case "Sogron": return SacralMagicEntity.TypeEnum.SOGRON;
-            case "Tharr": return SacralMagicEntity.TypeEnum.THARR;
-            case "Uwel": return SacralMagicEntity.TypeEnum.UWEL;
-        }
-        return SacralMagicEntity.TypeEnum.NAGY;
     }
 }

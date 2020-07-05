@@ -28,6 +28,9 @@
         <action
             android:id="@+id/action_navigation_codex_to_psziMagicCategoryListFragment"
             app:destination="@id/psziMagicCategoryListFragment" />
+        <action
+            android:id="@+id/action_navigation_codex_to_fireMagicCategoryListFragment"
+            app:destination="@id/fireMagicCategoryListFragment" />
     </fragment>
     <fragment
         android:id="@+id/qualificationListFragment"
@@ -60,6 +63,9 @@
             app:destination="@id/navigation_battle"
             app:popEnterAnim="@anim/nav_default_pop_enter_anim"
             app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_battle"
+            app:destination="@id/navigation_battle" />
     </fragment>
     <fragment
         android:id="@+id/qualificationSingleFragment"
@@ -167,4 +173,24 @@
         android:name="com.lazyfools.magusbuddy.page.codex.pszimagic.PsziMagicSingleFragment"
         android:label="PsziMagicSingleFragment"
         tools:layout="@layout/pszimagic_single_show"/>
+    <fragment
+        android:id="@+id/fireMagicCategoryListFragment"
+        android:name="com.lazyfools.magusbuddy.page.codex.firemagic.FireMagicCategoryListFragment"
+        android:label="FireMagicCategoryListFragment" >
+        <action
+            android:id="@+id/action_fireMagicCategoryListFragment_to_fireMagicListFragment"
+            app:destination="@id/fireMagicListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fireMagicListFragment"
+        android:name="com.lazyfools.magusbuddy.page.codex.firemagic.FireMagicListFragment"
+        android:label="FireMagicListFragment" >
+        <action
+            android:id="@+id/action_fireMagicListFragment_to_fireMagicSingleFragment"
+            app:destination="@id/fireMagicSingleFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fireMagicSingleFragment"
+        android:name="com.lazyfools.magusbuddy.page.codex.firemagic.FireMagicSingleFragment"
+        android:label="FireMagicSingleFragment" />
 </navigation>
