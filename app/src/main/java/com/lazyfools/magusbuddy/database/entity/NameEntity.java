@@ -18,4 +18,9 @@ public class NameEntity implements Searchable {
     public String getTitle()  {
         return _name;
     }
+
+    @Override
+    public String toString() {
+        return _name;
+    }
 }

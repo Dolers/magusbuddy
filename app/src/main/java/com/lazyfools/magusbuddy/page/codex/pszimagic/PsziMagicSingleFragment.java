@@ -15,7 +15,7 @@ import android.widget.TextView;
 import com.lazyfools.magusbuddy.HomeActivity;
 import com.lazyfools.magusbuddy.R;
 import com.lazyfools.magusbuddy.database.entity.PsziMagicEntity;
-import com.lazyfools.magusbuddy.page.codex.DescTableAdapter;
+import com.lazyfools.magusbuddy.page.common.DescTableAdapter;
 import com.lazyfools.magusbuddy.utility.MarginItemDecoration;
 import com.lazyfools.magusbuddy.viewmodel.PsziMagicDatabaseViewModel;
 

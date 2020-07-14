@@ -43,4 +43,5 @@ public class BardMagicRepository extends AbstractRepository<BardMagicDao, BardMa
     public LiveData<List<BardMagicType>> getAllTypes() {
         return _dao.getTypes();
     }
+
 }

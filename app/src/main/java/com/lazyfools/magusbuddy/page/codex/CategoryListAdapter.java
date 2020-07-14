@@ -10,12 +10,13 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.lazyfools.magusbuddy.R;
+import com.lazyfools.magusbuddy.page.common.onClickListener;
 
 import java.util.List;
 
 import static com.lazyfools.magusbuddy.utility.Utility.getSmallCapsString;
 
-public abstract class CategoryListAdapter<Item,Listener extends onClickListener<Item>> extends RecyclerView.Adapter<CategoryListAdapter.ViewHolder> {
+public abstract class CategoryListAdapter<Item,Listener extends onClickListener<Item>> extends RecyclerView.Adapter<CategoryListAdapter<Item,Listener>.ViewHolder> {
     protected final Context _context;
     protected List<Item> _items;
     protected Listener _listener;
@@ -27,14 +28,14 @@ public abstract class CategoryListAdapter<Item,Listener extends onClickListener<
 
     @NonNull
     @Override
-    public CategoryListAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public CategoryListAdapter<Item, Listener>.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int position) {
         View view = LayoutInflater.from(parent.getContext())
                 .inflate(R.layout.category_list_item, parent, false);
-        return new CategoryListAdapter.ViewHolder(view);
+        return new CategoryListAdapter<Item,Listener>.ViewHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(final CategoryListAdapter.ViewHolder holder, int position) {
+    public void onBindViewHolder(final CategoryListAdapter<Item,Listener>.ViewHolder holder, int position) {
         holder.item = _items.get(position);
         holder.contentView.setText(getSmallCapsString(getItemText(holder,position)));
         holder.imageView.setImageDrawable(_context.getResources().getDrawable(getItemDrawable(holder,position)));
@@ -43,18 +44,14 @@ public abstract class CategoryListAdapter<Item,Listener extends onClickListener<
             @Override
             public void onClick(View v) {
                 if (null != _listener) {
-                    // Notify the active callbacks interface (the activity, if the
-                    // fragment is attached to one) that an item has been selected.
                     _listener.onClick((Item) holder.item);
                 }
             }
         });
     }
 
-    protected abstract String getItemText(final CategoryListAdapter.ViewHolder view, int position);
-    protected abstract Integer getItemDrawable(final CategoryListAdapter.ViewHolder view, int position);
-        //(qualificationDrawableIds.get(holder.item.type)));
-
+    protected abstract String getItemText(final CategoryListAdapter<Item,Listener>.ViewHolder view, int position);
+    protected abstract Integer getItemDrawable(final CategoryListAdapter<Item,Listener>.ViewHolder view, int position);
 
     @Override
     public int getItemCount() {

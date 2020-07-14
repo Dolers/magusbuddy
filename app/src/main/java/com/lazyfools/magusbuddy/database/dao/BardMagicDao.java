@@ -18,6 +18,9 @@ public abstract class BardMagicDao implements IBaseDao<BardMagicEntity> {
     @Query("SELECT id, name FROM bardmagic WHERE type = :type")
     public abstract LiveData<List<NameEntity>> getLiveAllNamesOfType(BardMagicEntity.TypeEnum type);
 
+    @Query("SELECT id, name FROM bardmagic WHERE type = :type")
+    public abstract List<NameEntity> getAllNamesOfType(BardMagicEntity.TypeEnum type);
+
     @Query("SELECT id, name FROM bardmagic")
     public abstract LiveData<List<NameEntity>> getAllNames();
 

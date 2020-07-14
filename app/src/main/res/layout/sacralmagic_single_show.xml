@@ -18,8 +18,9 @@
             android:layout_height="wrap_content"
             android:text="@string/highmagic"
             android:textAlignment="center"
+            android:gravity="center_horizontal"
             android:textSize="32sp"
-            app:fontFamily="@font/eden_mills_bold"/>
+            app:fontFamily="@font/eden_mills_bold" />
 
         <LinearLayout
             android:id="@+id/stat_layout"
@@ -155,11 +156,13 @@
                 android:layout_weight="1"
                  />
         </LinearLayout>
+
         <TextView
             android:id="@+id/description"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/description" />
+
         <android.support.v7.widget.RecyclerView
             android:id="@+id/table_listview"
             android:layout_width="match_parent"

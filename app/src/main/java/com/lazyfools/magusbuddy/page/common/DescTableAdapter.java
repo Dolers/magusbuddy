@@ -1,4 +1,4 @@
-package com.lazyfools.magusbuddy.page.codex;
+package com.lazyfools.magusbuddy.page.common;
 
 import android.content.Context;
 import android.graphics.Color;
@@ -18,7 +18,6 @@ import java.util.List;
 
 /**
  Creates tables from formatted texts
-
  */
 public class DescTableAdapter extends RecyclerView.Adapter<DescTableAdapter.ViewHolder> {
     private final Context _context;

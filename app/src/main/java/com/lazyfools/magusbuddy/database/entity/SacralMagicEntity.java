@@ -9,8 +9,8 @@ import java.util.ArrayList;
 @Entity(tableName = "sacralmagic")
 public class SacralMagicEntity {
     public enum TypeEnum{
-        NAGY("Nagy Arkánum"),
         KIS("Kis Arkánum"),
+        NAGY("Nagy Arkánum"),
         AREL("Arel"),
         DARTON("Darton"),
         DOMVIK("Domvik"),
@@ -32,8 +32,8 @@ public class SacralMagicEntity {
 
         static public TypeEnum enumOf(String value){
             switch(value){
-                case "Nagy Arkánum": return NAGY;
                 case "Kis Arkánum": return KIS;
+                case "Nagy Arkánum": return NAGY;
                 case "Arel": return AREL;
                 case "Darton": return DARTON;
                 case "Domvik": return DOMVIK;

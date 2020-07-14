@@ -33,15 +33,6 @@
             app:destination="@id/fireMagicCategoryListFragment" />
     </fragment>
     <fragment
-        android:id="@+id/qualificationListFragment"
-        android:name="com.lazyfools.magusbuddy.page.codex.qualification.QualificationListFragment"
-        android:label="QualificationListFragment"
-        tools:layout="@layout/name_list">
-        <action
-            android:id="@+id/action_qualificationListFragment_to_qualificationSingleFragment"
-            app:destination="@id/qualificationSingleFragment" />
-    </fragment>
-    <fragment
         android:id="@+id/navigation_battle"
         android:name="com.lazyfools.magusbuddy.page.battle.BattleFragment"
         android:label="@string/menu_battle"
@@ -78,16 +69,7 @@
         android:label="HighMagicCategoryListFragment"
         tools:layout="@layout/category_list">
         <action
-            android:id="@+id/action_highMagicCategoryListFragment_to_highMagicListFragment"
-            app:destination="@id/highMagicListFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/highMagicListFragment"
-        android:name="com.lazyfools.magusbuddy.page.codex.highmagic.HighMagicListFragment"
-        android:label="HighMagicListFragment"
-        tools:layout="@layout/name_list">
-        <action
-            android:id="@+id/action_highMagicListFragment_to_highMagicSingleFragment"
+            android:id="@+id/action_highMagicCategoryListFragment_to_highMagicSingleFragment"
             app:destination="@id/highMagicSingleFragment" />
     </fragment>
     <fragment
@@ -101,8 +83,8 @@
         android:label="QualificationCategoryListFragment"
         tools:layout="@layout/category_list" >
         <action
-            android:id="@+id/action_qualificationCategoryListFragment_to_qualificationListFragment"
-            app:destination="@id/qualificationListFragment" />
+            android:id="@+id/action_qualificationCategoryListFragment_to_qualificationSingleFragment"
+            app:destination="@id/qualificationSingleFragment" />
     </fragment>
     <fragment
         android:id="@+id/sacralMagicCategoryListFragment"
@@ -110,16 +92,7 @@
         android:label="SacralMagicCategoryListFragment"
         tools:layout="@layout/category_list">
         <action
-            android:id="@+id/action_sacralMagicCategoryListFragment_to_sacralMagicListFragment"
-            app:destination="@id/sacralMagicListFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/sacralMagicListFragment"
-        android:name="com.lazyfools.magusbuddy.page.codex.sacralmagic.SacralMagicListFragment"
-        android:label="SacralMagicListFragment"
-        tools:layout="@layout/name_list">
-        <action
-            android:id="@+id/action_sacralMagicListFragment_to_sacralMagicSingleFragment"
+            android:id="@+id/action_sacralMagicCategoryListFragment_to_sacralMagicSingleFragment"
             app:destination="@id/sacralMagicSingleFragment" />
     </fragment>
     <fragment
@@ -133,16 +106,7 @@
         android:label="BardMagicCategoryListFragment"
         tools:layout="@layout/category_list">
         <action
-            android:id="@+id/action_bardMagicCategoryListFragment_to_bardMagicListFragment"
-            app:destination="@id/bardMagicListFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/bardMagicListFragment"
-        android:name="com.lazyfools.magusbuddy.page.codex.bardmagic.BardMagicListFragment"
-        android:label="BardMagicListFragment"
-        tools:layout="@layout/name_list">
-        <action
-            android:id="@+id/action_bardMagicListFragment_to_bardMagicSingleFragment"
+            android:id="@+id/action_bardMagicCategoryListFragment_to_bardMagicSingleFragment"
             app:destination="@id/bardMagicSingleFragment" />
     </fragment>
     <fragment
@@ -156,16 +120,7 @@
         android:label="PsziMagicCategoryListFragment"
         tools:layout="@layout/category_list">
         <action
-            android:id="@+id/action_psziMagicCategoryListFragment_to_psziMagicListFragment"
-            app:destination="@id/psziMagicListFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/psziMagicListFragment"
-        android:name="com.lazyfools.magusbuddy.page.codex.pszimagic.PsziMagicListFragment"
-        android:label="PsziMagicListFragment"
-        tools:layout="@layout/name_list">
-        <action
-            android:id="@+id/action_psziMagicListFragment_to_psziMagicSingleFragment"
+            android:id="@+id/action_psziMagicCategoryListFragment_to_psziMagicSingleFragment"
             app:destination="@id/psziMagicSingleFragment" />
     </fragment>
     <fragment
@@ -178,15 +133,7 @@
         android:name="com.lazyfools.magusbuddy.page.codex.firemagic.FireMagicCategoryListFragment"
         android:label="FireMagicCategoryListFragment" >
         <action
-            android:id="@+id/action_fireMagicCategoryListFragment_to_fireMagicListFragment"
-            app:destination="@id/fireMagicListFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/fireMagicListFragment"
-        android:name="com.lazyfools.magusbuddy.page.codex.firemagic.FireMagicListFragment"
-        android:label="FireMagicListFragment" >
-        <action
-            android:id="@+id/action_fireMagicListFragment_to_fireMagicSingleFragment"
+            android:id="@+id/action_fireMagicCategoryListFragment_to_fireMagicSingleFragment"
             app:destination="@id/fireMagicSingleFragment" />
     </fragment>
     <fragment
