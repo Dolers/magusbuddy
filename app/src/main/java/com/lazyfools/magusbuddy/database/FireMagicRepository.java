@@ -32,10 +32,6 @@ public class FireMagicRepository extends AbstractRepository<FireMagicDao, FireMa
         return _dao.getOneByID(id);
     }
 
-    public LiveData<List<NameEntity>> getNamesOfFilter(String name) {
-        return _dao.getNamesByFilter(name);
-    }
-
     public LiveData<List<NameEntity>> getAllFireMagicNamesOfType(FireMagicEntity.TypeEnum type) {
         return _dao.getLiveAllNamesOfType(type);
     }

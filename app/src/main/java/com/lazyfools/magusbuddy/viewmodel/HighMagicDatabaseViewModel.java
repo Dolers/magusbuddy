@@ -43,10 +43,6 @@ public class HighMagicDatabaseViewModel extends AndroidViewModel {
         return _repository.getAllNames();
     }
 
-    public LiveData<List<NameEntity>> getHighMagicNamesOfFilter(String name) {
-        return _repository.getNamesOfFilter(name);
-    }
-
     public LiveData<HighMagicEntity> getOneHighMagicByID(Integer id) {
         return _repository.getOneByID(id);
     }

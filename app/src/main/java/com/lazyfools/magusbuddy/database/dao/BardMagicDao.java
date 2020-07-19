@@ -18,17 +18,11 @@ public abstract class BardMagicDao implements IBaseDao<BardMagicEntity> {
     @Query("SELECT id, name FROM bardmagic WHERE type = :type")
     public abstract LiveData<List<NameEntity>> getLiveAllNamesOfType(BardMagicEntity.TypeEnum type);
 
-    @Query("SELECT id, name FROM bardmagic WHERE type = :type")
-    public abstract List<NameEntity> getAllNamesOfType(BardMagicEntity.TypeEnum type);
-
     @Query("SELECT id, name FROM bardmagic")
     public abstract LiveData<List<NameEntity>> getAllNames();
 
     @Query("SELECT DISTINCT type FROM bardmagic")
     public abstract LiveData<List<BardMagicType>> getTypes();
-
-    @Query("SELECT id, name FROM bardmagic WHERE name LIKE  '%' || :name || '%'")
-    public abstract LiveData<List<NameEntity>> getNamesByFilter(String name);
 
     @Query("DELETE FROM bardmagic")
     public abstract void deleteAll();

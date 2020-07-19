@@ -7,6 +7,7 @@ import android.util.Log;
 import com.lazyfools.magusbuddy.R;
 import com.lazyfools.magusbuddy.database.AppDatabase;
 import com.lazyfools.magusbuddy.database.dao.SacralMagicDao;
+import com.lazyfools.magusbuddy.database.entity.PsziMagicEntity;
 import com.lazyfools.magusbuddy.database.entity.SacralMagicEntity;
 
 import org.json.JSONArray;
@@ -67,7 +68,6 @@ public class SacralMagicPopulizer implements Populizer{
                         qJson.getString("altipus"),
                         qJson.getInt("kegypont"),
                         qJson.getInt("erosites"),
-                        qJson.getString("magiaellenallas"),
                         parseSphere(qJson),
                         qJson.getString("idotartam"),
                         qJson.getString("hatotav"),
@@ -75,6 +75,7 @@ public class SacralMagicPopulizer implements Populizer{
                         qJson.getString("leiras")
                 );
 
+                parseMagicResistance(qJson, entity);
                 parseDescriptionTables(qJson, entity);
                 parseStrengtheningText(qJson, entity);
 
@@ -85,6 +86,12 @@ public class SacralMagicPopulizer implements Populizer{
         }
 
         return entities;
+    }
+
+    private void parseMagicResistance(JSONObject qJson, SacralMagicEntity entity) throws JSONException  {
+        if(qJson.has("ellenallas")){
+            entity.setMagicResistance(qJson.getString("ellenallas"));
+        }
     }
 
     private byte parseSphere(JSONObject qJson) {

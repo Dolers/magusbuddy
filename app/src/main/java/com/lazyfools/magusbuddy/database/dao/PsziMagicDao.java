@@ -24,9 +24,6 @@ public abstract class PsziMagicDao implements IBaseDao<PsziMagicEntity> {
     @Query("SELECT DISTINCT type FROM pszimagic")
     public abstract LiveData<List<PsziMagicType>> getTypes();
 
-    @Query("SELECT id, name FROM pszimagic WHERE name LIKE  '%' || :name || '%'")
-    public abstract LiveData<List<NameEntity>> getNamesByFilter(String name);
-
     @Query("DELETE FROM pszimagic")
     public abstract void deleteAll();
 

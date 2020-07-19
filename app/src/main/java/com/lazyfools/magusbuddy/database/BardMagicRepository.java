@@ -32,10 +32,6 @@ public class BardMagicRepository extends AbstractRepository<BardMagicDao, BardMa
         return _dao.getOneByID(id);
     }
 
-    public LiveData<List<NameEntity>> getNamesOfFilter(String name) {
-        return _dao.getNamesByFilter(name);
-    }
-
     public LiveData<List<NameEntity>> getAllBardMagicNamesOfType(BardMagicEntity.TypeEnum type) {
         return _dao.getLiveAllNamesOfType(type);
     }

@@ -40,6 +40,7 @@ public class HighMagicCategoryListFragment extends SearchableRecycleViewFragment
             @Override
             public void onChanged(@Nullable List<HighMagicType> typeList) {
                 assert typeList != null;
+                _adapter.setSize(typeList.size());
                 for (final HighMagicType type : typeList){
                     _viewModel.getAllHighMagicNamesOfType(type.type).observe(fragment, new Observer<List<NameEntity>>() {
                         @Override

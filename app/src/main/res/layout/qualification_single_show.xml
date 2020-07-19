@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout
-    android:layout_height="fill_parent"
+<FrameLayout android:layout_height="fill_parent"
     android:layout_width="fill_parent"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/container"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <ScrollView android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/scrollView"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:name="com.lazyfools.magusbuddy.QualificationSingleFragment">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
         <LinearLayout
             android:id="@+id/qualification_single_show"
             android:layout_width="match_parent"
@@ -25,9 +23,9 @@
                 android:layout_height="wrap_content"
                 android:text="@string/skill_name"
                 android:textAlignment="center"
+                android:gravity="center_horizontal"
                 android:textSize="32sp"
-                app:fontFamily="@font/eden_mills_bold"
-                android:background="@drawable/ic_codex"/>
+                app:fontFamily="@font/eden_mills_bold"/>
 
             <TextView
                 android:id="@+id/description"
@@ -45,20 +43,41 @@
                 app:layoutManager="android.support.v7.widget.LinearLayoutManager"
                 tools:context=".page.codex.qualification.QualificationActivity"
                 tools:listitem="@layout/description_table" />
-            <include layout="@layout/level_description_dropdown_textview"
-                android:id="@+id/first_level_dropdown_textview"/>
 
             <include layout="@layout/level_description_dropdown_textview"
-                android:id="@+id/second_level_dropdown_textview"/>
+                android:id="@+id/first_level_dropdown_textview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"/>
 
             <include layout="@layout/level_description_dropdown_textview"
-                android:id="@+id/third_level_dropdown_textview"/>
+                android:id="@+id/second_level_dropdown_textview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"/>
 
             <include layout="@layout/level_description_dropdown_textview"
-                android:id="@+id/fourth_level_dropdown_textview"/>
+                android:id="@+id/third_level_dropdown_textview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"/>
 
             <include layout="@layout/level_description_dropdown_textview"
-                android:id="@+id/fifth_level_dropdown_textview"/>
+                android:id="@+id/fourth_level_dropdown_textview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"/>
+
+            <include layout="@layout/level_description_dropdown_textview"
+                android:id="@+id/fifth_level_dropdown_textview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"/>
         </LinearLayout>
     </ScrollView>
 </FrameLayout>

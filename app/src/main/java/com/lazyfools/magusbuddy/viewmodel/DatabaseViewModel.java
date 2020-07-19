@@ -60,10 +60,6 @@ public class DatabaseViewModel extends AndroidViewModel {
         return _qualificationRepository.getAllNames();
     }
 
-    public LiveData<List<NameEntity>> getQualificationNamesOfFilter(String name) {
-        return _qualificationRepository.getNamesOfFilter(name);
-    }
-
     public LiveData<QualificationEntity> getOneQualificationByID(Integer id) {
         return _qualificationRepository.getOneByID(id);
     }

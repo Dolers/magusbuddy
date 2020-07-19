@@ -32,10 +32,6 @@ public class PsziMagicRepository extends AbstractRepository<PsziMagicDao, PsziMa
         return _dao.getOneByID(id);
     }
 
-    public LiveData<List<NameEntity>> getNamesOfFilter(String name) {
-        return _dao.getNamesByFilter(name);
-    }
-
     public LiveData<List<NameEntity>> getAllPsziMagicNamesOfType(PsziMagicEntity.TypeEnum type) {
         return _dao.getLiveAllNamesOfType(type);
     }

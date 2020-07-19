@@ -38,7 +38,8 @@ public class HighMagicSingleFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.highmagic_single_show, null);
+        return LayoutInflater.from(container.getContext())
+                .inflate(R.layout.magic_single_show, container, false);
     }
 
     @Override
@@ -86,15 +87,14 @@ public class HighMagicSingleFragment extends Fragment {
     }
 
     private void populateWithTables(HighMagicEntity highMagic) {
-        RecyclerView tableListView = getView().findViewById(R.id.table_listview);
-        tableListView.addItemDecoration(new MarginItemDecoration(30,30,0,0));
         ArrayList<String> descriptionTables = highMagic.getDescTables();
-        if (descriptionTables.isEmpty()){
-            tableListView.setVisibility(View.GONE);
-        }
-        else {
+        if (!descriptionTables.isEmpty()){
+            RecyclerView tableListView = getView().findViewById(R.id.table_listview);
+            tableListView.setVisibility(View.VISIBLE);
+            tableListView.addItemDecoration(new MarginItemDecoration(30,30,0,0));
+
             DescTableAdapter adapter = new DescTableAdapter(getActivity().getApplicationContext());
-            adapter.setItems(highMagic.getDescTables());
+            adapter.setItems(descriptionTables);
             tableListView.setAdapter(adapter);
         }
     }

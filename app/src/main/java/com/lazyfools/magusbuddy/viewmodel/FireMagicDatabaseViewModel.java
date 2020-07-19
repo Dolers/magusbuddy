@@ -40,10 +40,6 @@ public class FireMagicDatabaseViewModel extends AndroidViewModel {
         return _repository.getAllNames();
     }
 
-    public LiveData<List<NameEntity>> getFireMagicNamesOfFilter(String name) {
-        return _repository.getNamesOfFilter(name);
-    }
-
     public LiveData<FireMagicEntity> getOneFireMagicByID(Integer id) {
         return _repository.getOneByID(id);
     }

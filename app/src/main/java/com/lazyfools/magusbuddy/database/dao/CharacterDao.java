@@ -13,6 +13,9 @@ public abstract class CharacterDao implements IBaseDao<CharacterEntity> {
     @Query("SELECT * FROM characters")
     public abstract LiveData<List<CharacterEntity>> getLiveAll();
 
+    @Query("DELETE FROM characters")
+    public abstract void deleteAll();
+
     @Query("SELECT c.id, c.name FROM characters c, apikeys a WHERE a.mine = 1")
     public abstract List<CharacterEntity> getMine();
 
@@ -24,7 +27,4 @@ public abstract class CharacterDao implements IBaseDao<CharacterEntity> {
 
     @Query("SELECT * FROM characters WHERE name LIKE :name LIMIT 1")
     public abstract CharacterEntity findByName(String name);
-
-    @Query("DELETE FROM characters")
-    public abstract void deleteAll();
 }

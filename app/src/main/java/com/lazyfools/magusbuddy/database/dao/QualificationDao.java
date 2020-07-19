@@ -24,9 +24,6 @@ public abstract class QualificationDao implements IBaseDao<QualificationEntity> 
     @Query("SELECT id, name FROM qualifications")
     public abstract LiveData<List<NameEntity>> getAllNames();
 
-    @Query("SELECT id, name FROM qualifications WHERE name LIKE  '%' || :name || '%'")
-    public abstract LiveData<List<NameEntity>> getNamesByFilter(String name);
-
     @Query("DELETE FROM qualifications")
     public abstract void deleteAll();
 

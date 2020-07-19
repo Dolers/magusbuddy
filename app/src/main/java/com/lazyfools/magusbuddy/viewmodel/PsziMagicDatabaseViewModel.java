@@ -40,10 +40,6 @@ public class PsziMagicDatabaseViewModel extends AndroidViewModel {
         return _repository.getAllNames();
     }
 
-    public LiveData<List<NameEntity>> getPsziMagicNamesOfFilter(String name) {
-        return _repository.getNamesOfFilter(name);
-    }
-
     public LiveData<PsziMagicEntity> getOnePsziMagicByID(Integer id) {
         return _repository.getOneByID(id);
     }

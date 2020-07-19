@@ -41,10 +41,6 @@ public class SacralMagicDatabaseViewModel extends AndroidViewModel {
         return _repository.getAllNames();
     }
 
-    public LiveData<List<NameEntity>> getSacralMagicNamesOfFilter(String name) {
-        return _repository.getNamesOfFilter(name);
-    }
-
     public LiveData<SacralMagicEntity> getOneSacralMagicByID(Integer id) {
         return _repository.getOneByID(id);
     }

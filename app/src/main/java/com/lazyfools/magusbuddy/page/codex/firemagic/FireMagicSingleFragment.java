@@ -38,7 +38,8 @@ public class FireMagicSingleFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.firemagic_single_show, null);
+        return LayoutInflater.from(container.getContext())
+                .inflate(R.layout.magic_single_show, container, false);
     }
 
     @Override
@@ -72,6 +73,9 @@ public class FireMagicSingleFragment extends Fragment {
         TextView mpValue = getView().findViewById(R.id.mp_value);
         mpValue.setText(Integer.toString(fireMagic.getMp()));
 
+        TextView empValue = getView().findViewById(R.id.emp_value);
+        empValue.setText(Integer.toString(fireMagic.getMp()));
+
         TextView castTimeValue = getView().findViewById(R.id.casttime_value);
         castTimeValue.setText(fireMagic.getCastTime());
 
@@ -80,15 +84,14 @@ public class FireMagicSingleFragment extends Fragment {
     }
 
     private void populateWithTables(FireMagicEntity fireMagic) {
-        RecyclerView tableListView = getView().findViewById(R.id.table_listview);
-        tableListView.addItemDecoration(new MarginItemDecoration(30,30,0,0));
         ArrayList<String> descriptionTables = fireMagic.getDescTables();
-        if (descriptionTables.isEmpty()){
-            tableListView.setVisibility(View.GONE);
-        }
-        else {
+        if (!descriptionTables.isEmpty()){
+            RecyclerView tableListView = getView().findViewById(R.id.table_listview);
+            tableListView.setVisibility(View.VISIBLE);
+            tableListView.addItemDecoration(new MarginItemDecoration(30,30,0,0));
+
             DescTableAdapter adapter = new DescTableAdapter(getActivity().getApplicationContext());
-            adapter.setItems(fireMagic.getDescTables());
+            adapter.setItems(descriptionTables);
             tableListView.setAdapter(adapter);
         }
     }

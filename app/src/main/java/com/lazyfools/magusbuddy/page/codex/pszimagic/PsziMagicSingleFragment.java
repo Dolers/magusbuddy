@@ -38,7 +38,8 @@ public class PsziMagicSingleFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.pszimagic_single_show, null);
+        return LayoutInflater.from(container.getContext())
+                .inflate(R.layout.magic_single_show, container, false);
     }
 
     @Override
@@ -69,37 +70,45 @@ public class PsziMagicSingleFragment extends Fragment {
     }
 
     private void populateWithStats(PsziMagicEntity psziMagic) {
+        TextView mpTitle = getView().findViewById(R.id.mp);
+        mpTitle.setText(getText(R.string.pszi));
+
         TextView mpValue = getView().findViewById(R.id.mp_value);
         mpValue.setText(Integer.toString(psziMagic.getMp()));
+
+        TextView emp = getView().findViewById(R.id.emp);
+        if (psziMagic.getEmpText() != null)
+            emp.setText(psziMagic.getEmpText());
+        else
+            emp.setText(R.string.epszi);
 
         TextView empValue = getView().findViewById(R.id.emp_value);
         empValue.setText(Integer.toString(psziMagic.getEmp()));
 
-        if (psziMagic.getEmpText() != null) {
-            TextView emp = getView().findViewById(R.id.emp);
-            emp.setText(psziMagic.getEmpText());
-        }
-
         TextView castTimeValue = getView().findViewById(R.id.casttime_value);
         castTimeValue.setText(psziMagic.getCastTime());
 
-        TextView resistanceValue = getView().findViewById(R.id.resistance_value);
-        resistanceValue.setText(psziMagic.getMagicResistance());
-
         TextView durationTimeValue = getView().findViewById(R.id.durationtime_value);
         durationTimeValue.setText(psziMagic.getDurationTime());
+
+        if (psziMagic.getMagicResistance() != null) {
+            TextView magicResistance = getView().findViewById(R.id.resistance);
+            magicResistance.setVisibility(View.VISIBLE);
+            TextView magicResistanceValue = getView().findViewById(R.id.resistance_value);
+            magicResistanceValue.setVisibility(View.VISIBLE);
+            magicResistanceValue.setText(psziMagic.getMagicResistance());
+        }
     }
 
     private void populateWithTables(PsziMagicEntity psziMagic) {
-        RecyclerView tableListView = getView().findViewById(R.id.table_listview);
-        tableListView.addItemDecoration(new MarginItemDecoration(30,30,0,0));
         ArrayList<String> descriptionTables = psziMagic.getDescTables();
-        if (descriptionTables.isEmpty()){
-            tableListView.setVisibility(View.GONE);
-        }
-        else {
+        if (!descriptionTables.isEmpty()){
+            RecyclerView tableListView = getView().findViewById(R.id.table_listview);
+            tableListView.setVisibility(View.VISIBLE);
+            tableListView.addItemDecoration(new MarginItemDecoration(30,30,0,0));
+
             DescTableAdapter adapter = new DescTableAdapter(getActivity().getApplicationContext());
-            adapter.setItems(psziMagic.getDescTables());
+            adapter.setItems(descriptionTables);
             tableListView.setAdapter(adapter);
         }
     }

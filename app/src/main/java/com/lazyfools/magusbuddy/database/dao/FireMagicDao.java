@@ -24,9 +24,6 @@ public abstract class FireMagicDao implements IBaseDao<FireMagicEntity> {
     @Query("SELECT DISTINCT type FROM firemagic")
     public abstract LiveData<List<FireMagicType>> getTypes();
 
-    @Query("SELECT id, name FROM firemagic WHERE name LIKE  '%' || :name || '%'")
-    public abstract LiveData<List<NameEntity>> getNamesByFilter(String name);
-
     @Query("DELETE FROM firemagic")
     public abstract void deleteAll();
 

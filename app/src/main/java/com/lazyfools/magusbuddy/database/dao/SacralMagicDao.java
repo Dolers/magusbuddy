@@ -26,9 +26,6 @@ public abstract class SacralMagicDao implements IBaseDao<SacralMagicEntity> {
     @Query("SELECT DISTINCT type FROM sacralmagic")
     public abstract LiveData<List<SacralMagicType>> getTypes();
 
-    @Query("SELECT id, name FROM sacralmagic WHERE name LIKE  '%' || :name || '%'")
-    public abstract LiveData<List<NameEntity>> getNamesByFilter(String name);
-
     @Query("DELETE FROM sacralmagic")
     public abstract void deleteAll();
 

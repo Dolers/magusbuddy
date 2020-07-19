@@ -22,18 +22,19 @@ import static com.lazyfools.magusbuddy.utility.Utility.getSmallCapsString;
 
 public class GroupListAdapter<Listener extends onClickListener<NameEntity>> extends RecyclerView.Adapter<GroupListAdapter.ViewHolder>
 {
-    final private SparseArray<GroupListItem> _permanentGroups;
+    private SparseArray<GroupListItem> _permanentGroups;
     private SparseArray<GroupListItem> _filteredGroups;
     public Activity _activity;
     private Listener _listener;
+    private Integer _presetSize = 0;
 
     public GroupListAdapter(Activity act, Listener listener) {
         _activity = act;
         _listener = listener;
         _permanentGroups = new SparseArray<>();
         _filteredGroups = new SparseArray<>();
-
     }
+
     public GroupListAdapter(Activity act, Listener listener,  SparseArray<GroupListItem> groups) {
         _activity = act;
         _listener = listener;
@@ -76,9 +77,14 @@ public class GroupListAdapter<Listener extends onClickListener<NameEntity>> exte
     }
 
     public void setItem(Integer key, GroupListItem group) {
+        if (_presetSize == 0)
+            throw new ExceptionInInitializerError("Cannot use setItem, if size not set");
+
         _permanentGroups.put(key,group);
         _filteredGroups.put(key,group);
-        notifyDataSetChanged();
+
+        if (_presetSize == _permanentGroups.size())
+            notifyDataSetChanged();
     }
 
     public void filter(String text) {
@@ -105,6 +111,16 @@ public class GroupListAdapter<Listener extends onClickListener<NameEntity>> exte
             }
         }
         notifyDataSetChanged();
+    }
+
+    public void setItems(SparseArray<GroupListItem> array) {
+        _permanentGroups = array;
+        _filteredGroups = _permanentGroups.clone();
+        notifyDataSetChanged();
+    }
+
+    public void setSize(int size) {
+        _presetSize = size;
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {

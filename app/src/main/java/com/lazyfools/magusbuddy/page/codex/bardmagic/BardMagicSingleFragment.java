@@ -33,7 +33,8 @@ public class BardMagicSingleFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.bardmagic_single_show, null);
+        return LayoutInflater.from(container.getContext())
+                .inflate(R.layout.magic_single_show, container, false);
     }
 
     @Override

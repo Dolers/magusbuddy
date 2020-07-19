@@ -24,9 +24,6 @@ public abstract class HighMagicDao implements IBaseDao<HighMagicEntity> {
     @Query("SELECT DISTINCT type FROM highmagic")
     public abstract LiveData<List<HighMagicType>> getTypes();
 
-    @Query("SELECT id, name FROM highmagic WHERE name LIKE  '%' || :name || '%'")
-    public abstract LiveData<List<NameEntity>> getNamesByFilter(String name);
-
     @Query("DELETE FROM highmagic")
     public abstract void deleteAll();
 

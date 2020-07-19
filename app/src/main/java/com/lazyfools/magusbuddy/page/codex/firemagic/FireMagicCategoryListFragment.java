@@ -41,6 +41,7 @@ public class FireMagicCategoryListFragment extends SearchableRecycleViewFragment
             @Override
             public void onChanged(@Nullable List<FireMagicType> typeList) {
                 assert typeList != null;
+                _adapter.setSize(typeList.size());
                 for (final FireMagicType type : typeList){
                     _viewModel.getAllFireMagicNamesOfType(type.type).observe(fragment, new Observer<List<NameEntity>>() {
                         @Override

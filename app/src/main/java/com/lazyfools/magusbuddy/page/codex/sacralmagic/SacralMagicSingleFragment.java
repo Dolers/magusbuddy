@@ -38,7 +38,8 @@ public class SacralMagicSingleFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.sacralmagic_single_show, null);
+        return LayoutInflater.from(container.getContext())
+                .inflate(R.layout.magic_single_show, container, false);
     }
 
     @Override
@@ -66,16 +67,20 @@ public class SacralMagicSingleFragment extends Fragment {
     }
 
     private void populateWithStats(SacralMagicEntity sacralMagic) {
-        TextView mpValue = getView().findViewById(R.id.kp_value);
+        TextView mpTitle = getView().findViewById(R.id.mp);
+        mpTitle.setText(getText(R.string.kp));
+
+        TextView mpValue = getView().findViewById(R.id.mp_value);
         mpValue.setText(Integer.toString(sacralMagic.getKp()));
 
-        TextView empValue = getView().findViewById(R.id.ekp_value);
-        empValue.setText(Integer.toString(sacralMagic.getEkp()));
-
-        if (sacralMagic.getEkpText() != null) {
-            TextView ekp = getView().findViewById(R.id.ekp);
+        TextView ekp = getView().findViewById(R.id.emp);
+        if (sacralMagic.getEkpText() != null)
             ekp.setText(sacralMagic.getEkpText());
-        }
+        else
+            ekp.setText(getText(R.string.ekp));
+
+        TextView empValue = getView().findViewById(R.id.emp_value);
+        empValue.setText(Integer.toString(sacralMagic.getEkp()));
 
         TextView castTimeValue = getView().findViewById(R.id.casttime_value);
         castTimeValue.setText(sacralMagic.getCastTime());
@@ -85,18 +90,25 @@ public class SacralMagicSingleFragment extends Fragment {
 
         TextView durationTimeValue = getView().findViewById(R.id.durationtime_value);
         durationTimeValue.setText(sacralMagic.getDurationTime());
+
+        if (sacralMagic.getMagicResistance() != null) {
+            TextView magicResistance = getView().findViewById(R.id.resistance);
+            magicResistance.setVisibility(View.VISIBLE);
+            TextView magicResistanceValue = getView().findViewById(R.id.resistance_value);
+            magicResistanceValue.setVisibility(View.VISIBLE);
+            magicResistanceValue.setText(sacralMagic.getMagicResistance());
+        }
     }
 
     private void populateWithTables(SacralMagicEntity sacralMagic) {
-        RecyclerView tableListView = getView().findViewById(R.id.table_listview);
-        tableListView.addItemDecoration(new MarginItemDecoration(30,30,0,0));
         ArrayList<String> descriptionTables = sacralMagic.getDescTables();
-        if (descriptionTables.isEmpty()){
-            tableListView.setVisibility(View.GONE);
-        }
-        else {
+        if (!descriptionTables.isEmpty()){
+            RecyclerView tableListView = getView().findViewById(R.id.table_listview);
+            tableListView.setVisibility(View.VISIBLE);
+            tableListView.addItemDecoration(new MarginItemDecoration(30,30,0,0));
+
             DescTableAdapter adapter = new DescTableAdapter(getActivity().getApplicationContext());
-            adapter.setItems(sacralMagic.getDescTables());
+            adapter.setItems(descriptionTables);
             tableListView.setAdapter(adapter);
         }
     }

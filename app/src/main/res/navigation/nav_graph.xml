@@ -113,7 +113,7 @@
         android:id="@+id/bardMagicSingleFragment"
         android:name="com.lazyfools.magusbuddy.page.codex.bardmagic.BardMagicSingleFragment"
         android:label="BardMagicSingleFragment"
-        tools:layout="@layout/bardmagic_single_show"/>
+        tools:layout="@layout/magic_single_show"/>
     <fragment
         android:id="@+id/psziMagicCategoryListFragment"
         android:name="com.lazyfools.magusbuddy.page.codex.pszimagic.PsziMagicCategoryListFragment"

@@ -68,12 +68,13 @@ public class QualificationSingleFragment extends Fragment {
 
     private void populateWithTables(QualificationEntity qualification) {
         RecyclerView tableListView = getView().findViewById(R.id.table_listview);
-        tableListView.addItemDecoration(new MarginItemDecoration(30,30,0,0));
         ArrayList<String> descriptionTables = qualification.getDescriptionTables();
         if (descriptionTables.isEmpty()){
             tableListView.setVisibility(View.GONE);
+            tableListView.removeAllViews();
         }
         else {
+            tableListView.addItemDecoration(new MarginItemDecoration(30,30,0,0));
             DescTableAdapter adapter = new DescTableAdapter(getActivity().getApplicationContext());
             adapter.setItems(qualification.getDescriptionTables());
             tableListView.setAdapter(adapter);
@@ -88,11 +89,11 @@ public class QualificationSingleFragment extends Fragment {
         DropdownTextView fifthLevelTextView = findLevelDropdownTextViewById(R.id.fifth_level_dropdown_textview);
 
         if (qualification.getFirstLevelDesc() == null){
-            firstLevelTextView.setVisibility(View.INVISIBLE);
-            secondLevelTextView.setVisibility(View.INVISIBLE);
-            thirdLevelTextView.setVisibility(View.INVISIBLE);
-            fourthLevelTextView.setVisibility(View.INVISIBLE);
-            fifthLevelTextView.setVisibility(View.INVISIBLE);
+            firstLevelTextView.setVisibility(View.GONE);
+            secondLevelTextView.setVisibility(View.GONE);
+            thirdLevelTextView.setVisibility(View.GONE);
+            fourthLevelTextView.setVisibility(View.GONE);
+            fifthLevelTextView.setVisibility(View.GONE);
         }
         else {
             firstLevelTextView.setTitleText(R.string.first_level);

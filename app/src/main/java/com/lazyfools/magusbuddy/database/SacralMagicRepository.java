@@ -32,10 +32,6 @@ public class SacralMagicRepository extends AbstractRepository<SacralMagicDao, Sa
         return _dao.getOneByID(id);
     }
 
-    public LiveData<List<NameEntity>> getNamesOfFilter(String name) {
-        return _dao.getNamesByFilter(name);
-    }
-
     public LiveData<List<NameEntity>> getAllSacralMagicNamesOfType(SacralMagicEntity.TypeEnum type) {
         return _dao.getLiveAllNamesOfType(type);
     }

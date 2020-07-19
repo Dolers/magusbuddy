@@ -33,10 +33,6 @@ public class QualificationRepository extends AbstractRepository<QualificationDao
         return _dao.getOneByID(id);
     }
 
-    public LiveData<List<NameEntity>> getNamesOfFilter(String name) {
-        return _dao.getNamesByFilter(name);
-    }
-
     public LiveData<List<NameEntity>> getAllQualificationNamesOfType(QualificationEntity.TypeEnum type) {
         return _dao.getLiveAllNamesOfType(type);
     }

@@ -19,7 +19,4 @@ public abstract class CharacterAPIRelationDao implements IBaseDao<CharacterAPIRe
     @Query("SELECT * FROM characterApiRelation WHERE characterId = :charID LIMIT 1")
     public abstract CharacterAPIRelationEntity findByCharacter(int charID);
 
-    @Query("DELETE FROM characterApiRelation")
-    public abstract void deleteAll();
-
 }

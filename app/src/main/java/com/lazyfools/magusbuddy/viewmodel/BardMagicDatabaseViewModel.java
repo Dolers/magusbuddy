@@ -41,10 +41,6 @@ public class BardMagicDatabaseViewModel extends AndroidViewModel {
         return _repository.getAllNames();
     }
 
-    public LiveData<List<NameEntity>> getBardMagicNamesOfFilter(String name) {
-        return _repository.getNamesOfFilter(name);
-    }
-
     public LiveData<BardMagicEntity> getOneBardMagicByID(Integer id) {
         return _repository.getOneByID(id);
     }
