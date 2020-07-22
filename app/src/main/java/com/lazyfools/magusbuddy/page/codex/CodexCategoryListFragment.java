@@ -81,8 +81,8 @@ public class CodexCategoryListFragment extends Fragment {
         switch (item.getTable()){
             case QUALIFICATION: return R.id.action_navigation_codex_to_qualificationCategoryListFragment;
             case BARDMAGIC: return R.id.action_navigation_codex_to_bardMagicCategoryListFragment;
-            case WITCHMAGIC:
-            case WARLOCKMAGIC:
+            case WITCHMAGIC: return R.id.action_navigation_codex_to_witchMagicCategoryListFragment;
+            case WARLOCKMAGIC: return R.id.action_navigation_codex_to_warlockMagicCategoryListFragment;
             case HIGHMAGIC: return R.id.action_navigation_codex_to_highMagicCategoryListFragment;
             case PSZI: return R.id.action_navigation_codex_to_psziMagicCategoryListFragment;
             case SACRALMAGIC: return R.id.action_navigation_codex_to_sacralMagicCategoryListFragment;

@@ -18,6 +18,9 @@ import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+import static com.lazyfools.magusbuddy.utility.JSONUtility.parseDescriptionTables;
+import static com.lazyfools.magusbuddy.utility.JSONUtility.parseStringWithDefault;
+
 public class SacralMagicPopulizer implements Populizer{
     private final SacralMagicDao _dao;
     private final Context _context;
@@ -62,36 +65,27 @@ public class SacralMagicPopulizer implements Populizer{
             for (int i = 0; i< qualificationsJson.length();i++) {
                 JSONObject qJson = (JSONObject)qualificationsJson.get(i);
                 Log.i("AppDatabase", "szakrális magia: "+i+" név: "+qJson.getString("nev"));
-                SacralMagicEntity entity = new SacralMagicEntity(
+                entities[i] = new SacralMagicEntity(
                         qJson.getString("nev"),
                         SacralMagicEntity.TypeEnum.enumOf(qJson.getString("tipus")),
                         qJson.getString("altipus"),
                         qJson.getInt("kegypont"),
                         qJson.getInt("erosites"),
+                        parseStringWithDefault(qJson, "erosites szovege"),
+                        parseStringWithDefault(qJson, "ellenallas"),
                         parseSphere(qJson),
                         qJson.getString("idotartam"),
                         qJson.getString("hatotav"),
                         qJson.getString("hossz"),
-                        qJson.getString("leiras")
+                        qJson.getString("leiras"),
+                        parseDescriptionTables(qJson)
                 );
-
-                parseMagicResistance(qJson, entity);
-                parseDescriptionTables(qJson, entity);
-                parseStrengtheningText(qJson, entity);
-
-                entities[i] = entity;
             }
         } catch (JSONException e) {
             e.printStackTrace();
         }
 
         return entities;
-    }
-
-    private void parseMagicResistance(JSONObject qJson, SacralMagicEntity entity) throws JSONException  {
-        if(qJson.has("ellenallas")){
-            entity.setMagicResistance(qJson.getString("ellenallas"));
-        }
     }
 
     private byte parseSphere(JSONObject qJson) {
@@ -109,22 +103,5 @@ public class SacralMagicPopulizer implements Populizer{
             value &= (1 >> SacralMagicEntity.SphereEnum.TERMESZET.ordinal());
         }
         return value;
-    }
-
-    private void parseDescriptionTables(JSONObject qJson, SacralMagicEntity entity) throws JSONException {
-        if (qJson.has("tablazatok")){
-            ArrayList<String> listdata = new ArrayList<>();
-            JSONArray jArray = qJson.getJSONArray("tablazatok");
-            for (int j=0;j<jArray.length();j++){
-                listdata.add(jArray.getString(j));
-            }
-            entity.setDescTables(listdata);
-        }
-    }
-
-    private void parseStrengtheningText(JSONObject qJson, SacralMagicEntity entity) throws JSONException {
-        if (qJson.has("erosites szovege")){
-            entity.setEkpText(qJson.getString("erosites szovege"));
-        }
     }
 }

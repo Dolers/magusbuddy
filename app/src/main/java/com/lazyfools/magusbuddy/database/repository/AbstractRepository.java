@@ -1,4 +1,4 @@
-package com.lazyfools.magusbuddy.database;
+package com.lazyfools.magusbuddy.database.repository;
 
 import android.os.AsyncTask;
 import com.lazyfools.magusbuddy.database.dao.IBaseDao;

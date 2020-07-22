@@ -4,10 +4,7 @@ import android.app.Application;
 import android.arch.lifecycle.AndroidViewModel;
 import android.arch.lifecycle.LiveData;
 
-import com.lazyfools.magusbuddy.database.CharacterRepository;
-import com.lazyfools.magusbuddy.database.HighMagicRepository;
-import com.lazyfools.magusbuddy.database.HighMagicRepository;
-import com.lazyfools.magusbuddy.database.entity.CharacterEntity;
+import com.lazyfools.magusbuddy.database.repository.HighMagicRepository;
 import com.lazyfools.magusbuddy.database.entity.NameEntity;
 import com.lazyfools.magusbuddy.database.entity.HighMagicEntity;
 import com.lazyfools.magusbuddy.database.entity.HighMagicType;

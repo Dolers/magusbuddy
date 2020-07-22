@@ -4,7 +4,7 @@ import android.app.Application;
 import android.arch.lifecycle.AndroidViewModel;
 import android.arch.lifecycle.LiveData;
 
-import com.lazyfools.magusbuddy.database.FireMagicRepository;
+import com.lazyfools.magusbuddy.database.repository.FireMagicRepository;
 import com.lazyfools.magusbuddy.database.entity.FireMagicEntity;
 import com.lazyfools.magusbuddy.database.entity.FireMagicType;
 import com.lazyfools.magusbuddy.database.entity.NameEntity;

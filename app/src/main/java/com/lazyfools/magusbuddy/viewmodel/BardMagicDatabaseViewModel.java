@@ -3,9 +3,8 @@ package com.lazyfools.magusbuddy.viewmodel;
 import android.app.Application;
 import android.arch.lifecycle.AndroidViewModel;
 import android.arch.lifecycle.LiveData;
-import android.util.SparseArray;
 
-import com.lazyfools.magusbuddy.database.BardMagicRepository;
+import com.lazyfools.magusbuddy.database.repository.BardMagicRepository;
 import com.lazyfools.magusbuddy.database.entity.BardMagicEntity;
 import com.lazyfools.magusbuddy.database.entity.BardMagicType;
 import com.lazyfools.magusbuddy.database.entity.NameEntity;

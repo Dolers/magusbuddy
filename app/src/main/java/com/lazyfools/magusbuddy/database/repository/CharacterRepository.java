@@ -1,8 +1,9 @@
-package com.lazyfools.magusbuddy.database;
+package com.lazyfools.magusbuddy.database.repository;
 
 import android.app.Application;
 import android.arch.lifecycle.LiveData;
 
+import com.lazyfools.magusbuddy.database.AppDatabase;
 import com.lazyfools.magusbuddy.database.dao.APIKeyDao;
 import com.lazyfools.magusbuddy.database.dao.CharacterAPIRelationDao;
 import com.lazyfools.magusbuddy.database.dao.CharacterDao;

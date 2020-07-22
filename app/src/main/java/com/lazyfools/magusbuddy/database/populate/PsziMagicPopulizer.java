@@ -17,6 +17,9 @@ import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+import static com.lazyfools.magusbuddy.utility.JSONUtility.parseDescriptionTables;
+import static com.lazyfools.magusbuddy.utility.JSONUtility.parseStringWithDefault;
+
 public class PsziMagicPopulizer implements Populizer{
     private final PsziMagicDao _dao;
     private final Context _context;
@@ -61,24 +64,21 @@ public class PsziMagicPopulizer implements Populizer{
             for (int i = 0; i< qualificationsJson.length();i++) {
                 JSONObject qJson = (JSONObject)qualificationsJson.get(i);
                 Log.i("AppDatabase", "pszi diszciplina: "+i+" név: "+qJson.getString("nev"));
-                PsziMagicEntity entity = new PsziMagicEntity(
+                entities[i] = new PsziMagicEntity(
                         qJson.getString("nev"),
                         PsziMagicEntity.TypeEnum.enumOf(qJson.getString("tipus")),
                         qJson.getString("fatipus"),
                         qJson.getInt("fok"),
                         qJson.getInt("pszipont"),
                         qJson.getInt("erosites"),
+                        parseStringWithDefault(qJson,"erosites szovege"),
+                        parseStringWithDefault(qJson,"ellenallas"),
                         qJson.getString("idotartam"),
                         qJson.getString("hossz"),
-                        qJson.getString("leiras")
+                        qJson.getString("leiras"),
+                        parseDescriptionTables(qJson),
+                        parseStringWithDefault(qJson,"specialis")
                 );
-
-                parseMagicResistance(qJson, entity);
-                parseDescriptionTables(qJson, entity);
-                parseSpecialDescription(qJson, entity);
-                parseStrengtheningText(qJson, entity);
-
-                entities[i] = entity;
             }
         } catch (JSONException e) {
             e.printStackTrace();
@@ -87,32 +87,4 @@ public class PsziMagicPopulizer implements Populizer{
         return entities;
     }
 
-    private void parseMagicResistance(JSONObject qJson, PsziMagicEntity entity) throws JSONException  {
-        if(qJson.has("ellenallas")){
-            entity.setMagicResistance(qJson.getString("ellenallas"));
-        }
-    }
-
-    private void parseDescriptionTables(JSONObject qJson, PsziMagicEntity entity) throws JSONException {
-        if (qJson.has("tablazatok")){
-            ArrayList<String> listdata = new ArrayList<>();
-            JSONArray jArray = qJson.getJSONArray("tablazatok");
-            for (int j=0;j<jArray.length();j++){
-                listdata.add(jArray.getString(j));
-            }
-            entity.setDescTables(listdata);
-        }
-    }
-
-    private void parseSpecialDescription(JSONObject qJson, PsziMagicEntity entity) throws JSONException {
-        if (qJson.has("specialis")){
-            entity.setSpecial(qJson.getString("specialis"));
-        }
-    }
-
-    private void parseStrengtheningText(JSONObject qJson, PsziMagicEntity entity) throws JSONException {
-        if (qJson.has("erosites szovege")){
-            entity.setEmpText(qJson.getString("erosites szovege"));
-        }
-    }
 }

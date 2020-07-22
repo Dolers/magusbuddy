@@ -4,8 +4,7 @@ import android.app.Application;
 import android.arch.lifecycle.AndroidViewModel;
 import android.arch.lifecycle.LiveData;
 
-import com.lazyfools.magusbuddy.database.SacralMagicRepository;
-import com.lazyfools.magusbuddy.database.entity.CharacterEntity;
+import com.lazyfools.magusbuddy.database.repository.SacralMagicRepository;
 import com.lazyfools.magusbuddy.database.entity.SacralMagicEntity;
 import com.lazyfools.magusbuddy.database.entity.SacralMagicType;
 import com.lazyfools.magusbuddy.database.entity.NameEntity;

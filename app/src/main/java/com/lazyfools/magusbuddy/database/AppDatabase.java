@@ -18,6 +18,8 @@ import com.lazyfools.magusbuddy.database.dao.HighMagicDao;
 import com.lazyfools.magusbuddy.database.dao.PsziMagicDao;
 import com.lazyfools.magusbuddy.database.dao.QualificationDao;
 import com.lazyfools.magusbuddy.database.dao.SacralMagicDao;
+import com.lazyfools.magusbuddy.database.dao.WarlockMagicDao;
+import com.lazyfools.magusbuddy.database.dao.WitchMagicDao;
 import com.lazyfools.magusbuddy.database.entity.APIKeyEntity;
 import com.lazyfools.magusbuddy.database.entity.BardMagicEntity;
 import com.lazyfools.magusbuddy.database.entity.CharacterAPIRelationEntity;
@@ -28,6 +30,8 @@ import com.lazyfools.magusbuddy.database.entity.HighMagicEntity;
 import com.lazyfools.magusbuddy.database.entity.PsziMagicEntity;
 import com.lazyfools.magusbuddy.database.entity.QualificationEntity;
 import com.lazyfools.magusbuddy.database.entity.SacralMagicEntity;
+import com.lazyfools.magusbuddy.database.entity.WarlockMagicEntity;
+import com.lazyfools.magusbuddy.database.entity.WitchMagicEntity;
 import com.lazyfools.magusbuddy.database.populate.DbPopulizer;
 
 @Database(
@@ -41,9 +45,11 @@ import com.lazyfools.magusbuddy.database.populate.DbPopulizer;
             SacralMagicEntity.class,
             BardMagicEntity.class,
             PsziMagicEntity.class,
-            FireMagicEntity.class
+            FireMagicEntity.class,
+            WitchMagicEntity.class,
+            WarlockMagicEntity.class,
         },
-        version = 10,
+        version = 11,
         exportSchema = false
 )
 @TypeConverters({Converters.class})
@@ -58,13 +64,14 @@ public abstract class AppDatabase extends RoomDatabase {
     public abstract BardMagicDao bardMagicDao();
     public abstract PsziMagicDao psziMagicDao();
     public abstract FireMagicDao fireMagicDao();
+    public abstract WitchMagicDao witchMagicDao();
+    public abstract WarlockMagicDao warlockMagicDao();
 
     public abstract CodexDao codexDao();
 
-
     private static AppDatabase INSTANCE;
 
-    static AppDatabase getDatabase(final Context context) {
+    public static AppDatabase getDatabase(final Context context) {
         if (INSTANCE == null) {
             synchronized (AppDatabase.class) {
                 if (INSTANCE == null) {

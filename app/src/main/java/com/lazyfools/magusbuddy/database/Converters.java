@@ -9,6 +9,8 @@ import com.lazyfools.magusbuddy.database.entity.HighMagicEntity;
 import com.lazyfools.magusbuddy.database.entity.PsziMagicEntity;
 import com.lazyfools.magusbuddy.database.entity.QualificationEntity;
 import com.lazyfools.magusbuddy.database.entity.SacralMagicEntity;
+import com.lazyfools.magusbuddy.database.entity.WarlockMagicEntity;
+import com.lazyfools.magusbuddy.database.entity.WitchMagicEntity;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -82,6 +84,36 @@ public class Converters {
     @TypeConverter
     public static FireMagicEntity.TypeEnum FireMagicTypeToInt(String value) {
         return FireMagicEntity.TypeEnum.valueOf(value);
+    }
+
+    @TypeConverter
+    public static String fromWitchMagicType(WitchMagicEntity.TypeEnum value) {
+        return value == null ? null : value.name();
+    }
+
+    @TypeConverter
+    public static WitchMagicEntity.TypeEnum WitchMagicTypeToInt(String value) {
+        return WitchMagicEntity.TypeEnum.valueOf(value);
+    }
+
+    @TypeConverter
+    public static String fromWarlockMagicType(WarlockMagicEntity.TypeEnum value) {
+        return value == null ? null : value.name();
+    }
+
+    @TypeConverter
+    public static WarlockMagicEntity.TypeEnum WarlockMagicTypeToInt(String value) {
+        return WarlockMagicEntity.TypeEnum.valueOf(value);
+    }
+
+    @TypeConverter
+    public static String fromWarlockMagicSubType(WarlockMagicEntity.SubTypeEnum value) {
+        return value == null ? null : value.name();
+    }
+
+    @TypeConverter
+    public static WarlockMagicEntity.SubTypeEnum WarlockMagicSubTypeToInt(String value) {
+        return WarlockMagicEntity.SubTypeEnum.valueOf(value);
     }
 
     @TypeConverter

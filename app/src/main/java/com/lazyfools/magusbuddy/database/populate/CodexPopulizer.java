@@ -63,13 +63,11 @@ public class CodexPopulizer implements Populizer{
             for (int i = 0; i< allEntityJson.length();i++) {
                 JSONObject entityJson = (JSONObject)allEntityJson.get(i);
                 Log.i("AppDatabase", "codex: "+i+" név: "+entityJson.getString("nev"));
-                CodexEntity entity = new CodexEntity(
+                entities[i] = new CodexEntity(
                         entityJson.getString("nev"),
                         CodexTableToInt(entityJson.getString("tablanev")),
                         entityJson.getString("kepnev")
                 );
-
-                entities[i] = entity;
             }
         } catch (JSONException e) {
             e.printStackTrace();

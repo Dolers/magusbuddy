@@ -17,6 +17,9 @@ import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+import static com.lazyfools.magusbuddy.utility.JSONUtility.parseDescriptionTables;
+import static com.lazyfools.magusbuddy.utility.JSONUtility.parseStringWithDefault;
+
 public class QualificationPopulizer implements Populizer{
     private final QualificationDao _qualificationDao;
     private final Context _context;
@@ -54,67 +57,41 @@ public class QualificationPopulizer implements Populizer{
         String qualifications_text = scanner.useDelimiter("\\A").next();
         scanner.close();
 
-        QualificationEntity[] qualificationEntities = null;
+        QualificationEntity[] entities = null;
         try {
             JSONArray qualificationsJson = new JSONArray(qualifications_text);
-            qualificationEntities = new QualificationEntity[qualificationsJson.length()];
+            entities = new QualificationEntity[qualificationsJson.length()];
             for (int i = 0; i< qualificationsJson.length();i++) {
                 JSONObject qJson = (JSONObject)qualificationsJson.get(i);
-                Log.i("AppDatabase", "képzettség: "+i+" név: "+qJson.getString("képzettség"));
-                QualificationEntity entity = new QualificationEntity(
-                        qJson.getString("képzettség"),
+                Log.i("AppDatabase", "képzettség: "+i+" név: "+qJson.getString("nev"));
+                entities[i] = new QualificationEntity(
+                        qJson.getString("nev"),
                         QualificationEntity.TypeEnum.valueOf(qJson.getString("tipus").toUpperCase()),
-                        qJson.getInt("nehézség"),
-                        qJson.getBoolean("erő"),
+                        qJson.getInt("nehezseg"),
+                        qJson.getBoolean("ero"),
                         qJson.getBoolean("gyorsasag"),
-                        qJson.getBoolean("ügyesség"),
-                        qJson.getBoolean("állóképesség"),
-                        qJson.getBoolean("egészség"),
+                        qJson.getBoolean("ugyesseg"),
+                        qJson.getBoolean("allokepesseg"),
+                        qJson.getBoolean("egeszseg"),
                         qJson.getBoolean("karizma"),
                         qJson.getBoolean("intelligencia"),
-                        qJson.getBoolean("akaraterő"),
-                        qJson.getBoolean("asztrál"),
-                        qJson.getBoolean("érzékelés"),
-                        qJson.getString("leírás")
+                        qJson.getBoolean("akaratero"),
+                        qJson.getBoolean("asztral"),
+                        qJson.getBoolean("erzekeles"),
+                        qJson.getString("leiras"),
+                        parseStringWithDefault(qJson,"1_fok"),
+                        parseStringWithDefault(qJson,"2_fok"),
+                        parseStringWithDefault(qJson,"3_fok"),
+                        parseStringWithDefault(qJson,"4_fok"),
+                        parseStringWithDefault(qJson,"5_fok"),
+                        parseStringWithDefault(qJson,"specialis"),
+                        parseDescriptionTables(qJson)
                 );
-
-                parseDescriptionLevels(qJson, entity);
-                parseDescriptionTables(qJson, entity);
-                parseSpecialDescription(qJson, entity);
-
-                qualificationEntities[i] = entity;
             }
         } catch (JSONException e) {
             e.printStackTrace();
         }
 
-        return qualificationEntities;
-    }
-
-    private static void parseSpecialDescription(JSONObject qJson, QualificationEntity entity) throws JSONException {
-        if (qJson.has("specialis")){
-            entity.setSpecialDesc(qJson.getString("specialis"));
-        }
-    }
-
-    private static void parseDescriptionLevels(JSONObject qJson, QualificationEntity entity) throws JSONException {
-        if (qJson.has("1_fok")){
-            entity.setFirstLevelDesc(qJson.getString("1_fok"));
-            entity.setSecondLevelDesc(qJson.getString("2_fok"));
-            entity.setThirdLevelDesc(qJson.getString("3_fok"));
-            entity.setFourthLevelDesc(qJson.getString("4_fok"));
-            entity.setFifthLevelDesc(qJson.getString("5_fok"));
-        }
-    }
-
-    private static void parseDescriptionTables(JSONObject qJson, QualificationEntity entity) throws JSONException {
-        if (qJson.has("tablazatok")){
-            ArrayList<String> listdata = new ArrayList<String>();
-            JSONArray jArray = qJson.getJSONArray("tablazatok");
-            for (int j=0;j<jArray.length();j++){
-                listdata.add(jArray.getString(j));
-            }
-            entity.setDescriptionTables(listdata);
-        }
+        return entities;
     }
 }

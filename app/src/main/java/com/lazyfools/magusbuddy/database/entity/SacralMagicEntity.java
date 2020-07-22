@@ -93,17 +93,20 @@ public class SacralMagicEntity {
     @ColumnInfo(name = "desctables")
     private ArrayList<String> _descTables;
 
-    public SacralMagicEntity(String name, TypeEnum type, String subType, Integer kp, Integer ekp, byte sphere, String durationTime, String range, String castTime, String description) {
+    public SacralMagicEntity(String name, TypeEnum type, String subType, Integer kp, Integer ekp, String ekpText, String magicResistance, byte sphere, String durationTime, String range, String castTime, String description, ArrayList<String> descTables) {
         _name = name;
         _type = type;
         _subType = subType;
         _kp = kp;
         _ekp = ekp;
+        _ekpText = ekpText;
+        _magicResistance = magicResistance;
         _sphere = sphere;
         _durationTime = durationTime;
         _range = range;
         _castTime = castTime;
         _description = description;
+        _descTables = descTables;
     }
 
     public Integer getId() {

@@ -31,6 +31,12 @@
         <action
             android:id="@+id/action_navigation_codex_to_fireMagicCategoryListFragment"
             app:destination="@id/fireMagicCategoryListFragment" />
+        <action
+            android:id="@+id/action_navigation_codex_to_warlockMagicCategoryListFragment"
+            app:destination="@id/warlockMagicCategoryListFragment" />
+        <action
+            android:id="@+id/action_navigation_codex_to_witchMagicCategoryListFragment"
+            app:destination="@id/witchMagicCategoryListFragment" />
     </fragment>
     <fragment
         android:id="@+id/navigation_battle"
@@ -140,4 +146,28 @@
         android:id="@+id/fireMagicSingleFragment"
         android:name="com.lazyfools.magusbuddy.page.codex.firemagic.FireMagicSingleFragment"
         android:label="FireMagicSingleFragment" />
+    <fragment
+        android:id="@+id/warlockMagicCategoryListFragment"
+        android:name="com.lazyfools.magusbuddy.page.codex.warlockmagic.WarlockMagicCategoryListFragment"
+        android:label="WarlockMagicCategoryListFragment" >
+        <action
+            android:id="@+id/action_warlockMagicCategoryListFragment_to_warlockMagicSingleFragment"
+            app:destination="@id/warlockMagicSingleFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/warlockMagicSingleFragment"
+        android:name="com.lazyfools.magusbuddy.page.codex.warlockmagic.WarlockMagicSingleFragment"
+        android:label="WarlockMagicSingleFragment" />
+    <fragment
+        android:id="@+id/witchMagicCategoryListFragment"
+        android:name="com.lazyfools.magusbuddy.page.codex.witchmagic.WitchMagicCategoryListFragment"
+        android:label="WitchMagicCategoryListFragment" >
+        <action
+            android:id="@+id/action_witchMagicCategoryListFragment_to_witchMagicSingleFragment"
+            app:destination="@id/witchMagicSingleFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/witchMagicSingleFragment"
+        android:name="com.lazyfools.magusbuddy.page.codex.witchmagic.WitchMagicSingleFragment"
+        android:label="WitchMagicSingleFragment" />
 </navigation>

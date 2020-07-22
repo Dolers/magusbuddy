@@ -17,6 +17,9 @@ import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+import static com.lazyfools.magusbuddy.utility.JSONUtility.parseDescriptionTables;
+import static com.lazyfools.magusbuddy.utility.JSONUtility.parseStringWithDefault;
+
 public class HighMagicPopulizer implements Populizer{
     private final HighMagicDao _dao;
     private final Context _context;
@@ -61,7 +64,7 @@ public class HighMagicPopulizer implements Populizer{
             for (int i = 0; i< qualificationsJson.length();i++) {
                 JSONObject qJson = (JSONObject)qualificationsJson.get(i);
                 Log.i("AppDatabase", "magasmágia: "+i+" név: "+qJson.getString("Varázslat neve"));
-                HighMagicEntity entity = new HighMagicEntity(
+                entities[i] = new HighMagicEntity(
                         qJson.getString("Varázslat neve"),
                         HighMagicEntity.TypeEnum.enumOf(qJson.getString("Típus")),
                         qJson.getInt("MP"),
@@ -69,13 +72,10 @@ public class HighMagicPopulizer implements Populizer{
                         qJson.getString("Időtartam"),
                         qJson.getString("Hatótáv"),
                         qJson.getString("Varázslás ideje"),
-                        qJson.getString("Leírás")
+                        qJson.getString("Leírás"),
+                        parseDescriptionTables(qJson),
+                        parseStringWithDefault(qJson,"specialis")
                 );
-
-                parseDescriptionTables(qJson, entity);
-                parseSpecialDescription(qJson, entity);
-
-                entities[i] = entity;
             }
         } catch (JSONException e) {
             e.printStackTrace();
@@ -84,20 +84,4 @@ public class HighMagicPopulizer implements Populizer{
         return entities;
     }
 
-    private void parseSpecialDescription(JSONObject qJson, HighMagicEntity entity) throws JSONException {
-        if (qJson.has("specialis")){
-            entity.setSpecial(qJson.getString("specialis"));
-        }
-    }
-
-    private void parseDescriptionTables(JSONObject qJson, HighMagicEntity entity) throws JSONException {
-        if (qJson.has("tablazatok")){
-            ArrayList<String> listdata = new ArrayList<String>();
-            JSONArray jArray = qJson.getJSONArray("tablazatok");
-            for (int j=0;j<jArray.length();j++){
-                listdata.add(jArray.getString(j));
-            }
-            entity.setDescTables(listdata);
-        }
-    }
 }

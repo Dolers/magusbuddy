@@ -6,13 +6,20 @@ import android.arch.persistence.room.PrimaryKey;
 
 import java.util.ArrayList;
 
-@Entity(tableName = "pszimagic")
-public class PsziMagicEntity {
+@Entity(tableName = "warlockmagic")
+public class WarlockMagicEntity {
     public enum TypeEnum{
-        PYARRONI("Pyarroni módszer"),
-        GODONI("Godoni örökség"),
-        KYR("Kyr Metódus"),
-        SLAN("Slan útja");
+        ALAP("Alap varázslat"),
+        VILLAM("Villám mágia"),
+        ANYAG("Anyagmágia"),
+        NEKROMANCIA("Nekromancia"),
+        NEKROGRAFIA("Necrográfia"),
+        ELETERO("Életerő manipulálás"),
+        ATOK("Átok"),
+        BETEGSEG("Betegségmágia"),
+        MEREG("Méregmágia"),
+        TERMESZETI("Természeti mágia"),
+        ASZTRALMENTAL("Asztrál-mentál mágia");
 
         private final String name;
 
@@ -23,14 +30,46 @@ public class PsziMagicEntity {
         public boolean equalsName(String otherName) { return name.equals(otherName); }
         public String toString() { return this.name; }
 
-        static public TypeEnum enumOf(String value){
+       static public TypeEnum enumOf(String value){
             switch(value){
-                case "Pyarroni módszer": return PYARRONI;
-                case "Godoni örökség": return GODONI;
-                case "Kyr Metódus": return KYR;
-                case "Slan útja": return SLAN;
+                case "Alap varázslat": return ALAP;
+                case "Villám mágia": return VILLAM;
+                case "Anyagmágia": return ANYAG;
+                case "Nekromancia": return NEKROMANCIA;
+                case "Necrográfia": return NEKROGRAFIA;
+                case "Életerő manipulálás": return ELETERO;
+                case "Átok": return ATOK;
+                case "Betegségmágia": return BETEGSEG;
+                case "Méregmágia": return MEREG;
+                case "Természeti mágia": return TERMESZETI;
+                case "Asztrál-mentál mágia": return ASZTRALMENTAL;
             }
-            return PYARRONI;
+            return ALAP;
+        }
+    }
+
+    public enum SubTypeEnum{
+        IDEZES("Idézés"),
+        FORMAZAS("Formázás"),
+        FELRUHAZAS("Felruházás"),
+        NULL("");
+
+        private final String name;
+
+        private SubTypeEnum(String s) {
+            name = s;
+        }
+
+        public boolean equalsName(String otherName) { return name.equals(otherName); }
+        public String toString() { return this.name; }
+
+        static public SubTypeEnum enumOf(String value){
+            switch(value){
+                case "Idézés": return IDEZES;
+                case "Formázás": return FORMAZAS;
+                case "Felruházás": return FELRUHAZAS;
+            }
+            return NULL;
         }
     }
 
@@ -45,10 +84,7 @@ public class PsziMagicEntity {
     private TypeEnum _type;
 
     @ColumnInfo(name = "subType")
-    private String _subType;
-
-    @ColumnInfo(name = "level")
-    private Integer _level;
+    private SubTypeEnum _subType;
 
     @ColumnInfo(name = "mp")
     private Integer _mp;
@@ -56,14 +92,17 @@ public class PsziMagicEntity {
     @ColumnInfo(name = "emp")
     private Integer _emp;
 
-    @ColumnInfo(name = "emptext")
-    private String _empText;
+    @ColumnInfo(name = "basice")
+    private Integer _basice;
 
     @ColumnInfo(name = "magicresistance")
     private String _magicResistance;
 
     @ColumnInfo(name = "durationtime")
     private String _durationTime;
+
+    @ColumnInfo(name = "range")
+    private String _range;
 
     @ColumnInfo(name = "casttime")
     private String _castTime;
@@ -77,16 +116,16 @@ public class PsziMagicEntity {
     @ColumnInfo(name = "special")
     private String _special;
 
-    public PsziMagicEntity(String name, TypeEnum type, String subType, Integer level, Integer mp, Integer emp, String empText, String magicResistance, String durationTime, String castTime, String description, ArrayList<String> descTables, String special) {
+    public WarlockMagicEntity(String name, TypeEnum type, SubTypeEnum subType, Integer mp, Integer emp, Integer basice, String magicResistance, String durationTime, String range, String castTime, String description, ArrayList<String> descTables, String special) {
         _name = name;
         _type = type;
         _subType = subType;
-        _level = level;
         _mp = mp;
         _emp = emp;
-        _empText = empText;
+        _basice = basice;
         _magicResistance = magicResistance;
         _durationTime = durationTime;
+        _range = range;
         _castTime = castTime;
         _description = description;
         _descTables = descTables;
@@ -117,20 +156,12 @@ public class PsziMagicEntity {
         _type = type;
     }
 
-    public String getSubType() {
+    public SubTypeEnum getSubType() {
         return _subType;
     }
 
-    public void setSubType(String subType) {
+    public void setSubType(SubTypeEnum subType) {
         _subType = subType;
-    }
-
-    public Integer getLevel() {
-        return _level;
-    }
-
-    public void setLevel(Integer level) {
-        _level = level;
     }
 
     public Integer getMp() {
@@ -141,20 +172,16 @@ public class PsziMagicEntity {
         _mp = mp;
     }
 
-    public Integer getEmp() {
-        return _emp;
+    public Integer getEmp() { return _emp; }
+
+    public void setEmp(Integer eMp) {_emp = eMp; }
+
+    public Integer getBasice() {
+        return _basice;
     }
 
-    public void setEmp(Integer emp) {
-        _emp = emp;
-    }
-
-    public String getEmpText() {
-        return _empText;
-    }
-
-    public void setEmpText(String empText) {
-        _empText = empText;
+    public void setBasice(Integer basice) {
+        _basice = basice;
     }
 
     public String getMagicResistance() {
@@ -171,6 +198,14 @@ public class PsziMagicEntity {
 
     public void setDurationTime(String durationTime) {
         _durationTime = durationTime;
+    }
+
+    public String getRange() {
+        return _range;
+    }
+
+    public void setRange(String range) {
+        _range = range;
     }
 
     public String getCastTime() {

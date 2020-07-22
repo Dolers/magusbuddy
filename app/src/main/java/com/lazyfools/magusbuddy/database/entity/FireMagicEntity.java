@@ -70,13 +70,15 @@ public class FireMagicEntity {
     @ColumnInfo(name = "special")
     private String _special;
 
-    public FireMagicEntity(String name, TypeEnum type, Integer mp, String durationTime, String castTime, String description) {
+    public FireMagicEntity(String name, TypeEnum type, Integer mp, String durationTime, String castTime, String description, ArrayList<String> descTables, String special) {
         _name = name;
         _type = type;
         _mp = mp;
         _durationTime = durationTime;
         _castTime = castTime;
         _description = description;
+        _descTables = descTables;
+        _special = special;
     }
 
     public Integer getId() {

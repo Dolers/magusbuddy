@@ -94,22 +94,28 @@ public class QualificationEntity {
     @ColumnInfo(name = "descriptionTables")
     private ArrayList<String> _descriptionTables;
 
-
-    public QualificationEntity(String name, TypeEnum type, Integer difficulty, Boolean strengthReq, Boolean speedReq, Boolean agilityReq, Boolean staminaReq, Boolean healthReq, Boolean charismaReq, Boolean intelligenceReq, Boolean willReq, Boolean astralReq, Boolean perceptionReq, String description) {
-        this._name = name;
-        this._type = type;
-        this._difficulty = difficulty;
-        this._strengthReq = strengthReq;
-        this._speedReq = speedReq;
-        this._agilityReq = agilityReq;
-        this._staminaReq = staminaReq;
-        this._healthReq = healthReq;
-        this._charismaReq = charismaReq;
-        this._intelligenceReq = intelligenceReq;
-        this._willReq = willReq;
-        this._astralReq = astralReq;
-        this._perceptionReq = perceptionReq;
-        this._description = description;
+    public QualificationEntity(String name, TypeEnum type, Integer difficulty, Boolean strengthReq, Boolean speedReq, Boolean agilityReq, Boolean staminaReq, Boolean healthReq, Boolean charismaReq, Boolean intelligenceReq, Boolean willReq, Boolean astralReq, Boolean perceptionReq, String description, String firstLevelDesc, String secondLevelDesc, String thirdLevelDesc, String fourthLevelDesc, String fifthLevelDesc, String specialDesc, ArrayList<String> descriptionTables) {
+        _name = name;
+        _type = type;
+        _difficulty = difficulty;
+        _strengthReq = strengthReq;
+        _speedReq = speedReq;
+        _agilityReq = agilityReq;
+        _staminaReq = staminaReq;
+        _healthReq = healthReq;
+        _charismaReq = charismaReq;
+        _intelligenceReq = intelligenceReq;
+        _willReq = willReq;
+        _astralReq = astralReq;
+        _perceptionReq = perceptionReq;
+        _description = description;
+        _firstLevelDesc = firstLevelDesc;
+        _secondLevelDesc = secondLevelDesc;
+        _thirdLevelDesc = thirdLevelDesc;
+        _fourthLevelDesc = fourthLevelDesc;
+        _fifthLevelDesc = fifthLevelDesc;
+        _specialDesc = specialDesc;
+        _descriptionTables = descriptionTables;
     }
 
     public Integer getId() { return _id;}

@@ -82,7 +82,7 @@ public class HighMagicEntity {
     @ColumnInfo(name = "special")
     private String _special;
 
-    public HighMagicEntity(String name, TypeEnum type, Integer mp, Integer emp, String durationTime, String range, String castTime, String description) {
+    public HighMagicEntity(String name, TypeEnum type, Integer mp, Integer emp, String durationTime, String range, String castTime, String description, ArrayList<String> descTables, String special) {
         _name = name;
         _type = type;
         _mp = mp;
@@ -91,6 +91,8 @@ public class HighMagicEntity {
         _range = range;
         _castTime = castTime;
         _description = description;
+        _descTables = descTables;
+        _special = special;
     }
 
     public Integer getId() {

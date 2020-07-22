@@ -1,0 +1,728 @@
+[
+ {
+   "tipus": "Alap varázslat",
+   "nev": "Mágia felfedezése",
+   "mp": 1,
+   "emp": 1,
+   "idoigeny": "1 sz",
+   "hatotav": "20 m",
+   "idotartam": "1 kör/szint",
+   "leiras": "A varázslat segítségével a boszorkánymester érzékelheti bármilyen típusú mágia jelenlétét,és meghatározhatja hozzávetőleges helyét, legyen annak forrása tárgy, személy, hely vagy bármi más.\nA varázslóval ellentétben ő nem látja a Manaháló áramvonalait, csupán mágikus fogékonyságának köszönhetően puszta benyomásokhoz, megérzésekhez jut amik  azonban ritkán csalják meg.\nFigyelmét elkerülik azonban mindazok a mágiaformák, melyeket Leplezés véd, illetve a boszorkányok Megbélyegzés csókja által létrehozott bélyeg sem észlelhető ilyen módon."
+ },
+ {
+   "tipus": "Villám mágia",
+   "altipus": "Idézés",
+   "nev": "Villámkeltés",
+   "mp": 3,
+   "emp": 3,
+   "idoigeny": "3 sz",
+   "hatotav": "Önmaga",
+   "idotartam": "1 kör/szint",
+   "leiras": "A boszorkánymester ezzel a varázslattal szabad folyást enged testén keresztül a nyers mágikus energiáknak;az időtartam alatt a Villámidézés varázslatot feleannyi Mana pontért lesz képes végrehajtani\n(csak a Villámidézést, tehát a formázások és a felruházások továbbra is teljes Mana pontba kerülnek és a varázslat nem befolyásolja a varázslás idejét sem, az továbbra is egy szegmens minden egyes E után!).\nIlyenkor a boszorkánymester ujjai és fogai között kékes szikrák pattognak, ajkai közül félelmetes morajlás tör elő, karjain és ruháján derengő energiaszálak cikáznak végig.\nA zabolázatlanul tomboló energiáknak köszönhetően azonban minden egyes E-jéért a boszorkánymester is 2 Fp-t veszít (ÉP-t csak Fp-i esetleges elfogytakor). Egy-egy komolyabb (10 E feletti) varázslat után nem ritka, hogy szeme bevérzik, körmei megfeketednek, hajába ősz csíkok vegyülnek vagy bőrén májfoltok jelennek meg.\nA boszorkánymester ezzel a varázslattal szabad folyást enged testén keresztül a nyers mágikus energiáknak;\naz időtartam alatt a Villámidézés varázslatot feleannyi Mana pontért lesz képes végrehajtani (csak a Villámidézést, tehát a formázások és a felruházások\ntovábbra is teljes Mana pontba kerülnek és a varázslat nem befolyásolja a varázslás idejét sem, az továbbra is egy szegmens minden egyes E után!).\nIlyenkor a boszorkánymester ujjai és fogai között kékes szikrák pattognak, ajkai közül félelmetes morajlás tör elő, karjain és ruháján derengő energiaszálak cikáznak végig.\nA zabolázatlanul tomboló energiáknak köszönhetően azonban minden egyes E-jéért a boszorkánymester is 2 Fp-t veszít (ÉP-t csak Fp-i esetleges elfogytakor).\nEgy-egy komolyabb (10 E feletti) varázslat után nem ritka, hogy szeme bevérzik, körmei megfeketednek, hajába ősz csíkok vegyülnek vagy bőrén májfoltok jelennek meg."
+ },
+ {
+   "tipus": "Villám mágia",
+   "altipus": "Idézés",
+   "nev": "Vilámtagadás",
+   "mp": 5,
+   "emp": 5,
+   "idoigeny": "1 sz/E",
+   "hatotav": "Önmaga",
+   "idotartam": "1 kör/szint",
+   "leiras": "A boszorkánymester megvédheti magát mindenfajta nyers energia sebzésétől.\nA villám energiája ártalmatlanul eloszlik a környező Manahálóban, és közben semmilyen módon nem károsítja a varázslat használóját, amennyiben erőssége nem haladja meg a védelem Erősségét.\nHa mégis meghaladja, csak annyi E-t sebez rajta, amennyivel Erőssége magasabb a védelemErősségénél (azaz egy 7 E-s Villámvarázs a 3 E-s Villámtagadással felvértezett boszorkánymesterbe csapódva mindössze 4kl0-et sebez).\nHátulütője, hogy megidézése után a boszorkánymester sem Villámidézést, sem Villámkeltést nem alkalmazhat, mivel a varázslat nem csak a mások által szabadjára bocsátott energia, hanem saját rombolói erői ellen is „védelmet” nyújt."
+ },
+ {
+   "tipus": "Villám mágia",
+   "altipus": "Idézés",
+   "nev": "Villámidézés",
+   "mp": 4,
+   "emp": 4,
+   "idoigeny": "1 sz/E",
+   "idotartam": "1 kör",
+   "leiras": "A Villámidézés formulája segítségével a boszorkánymester felszabadítja mágikus hatalmat, és nyers, formálatlan energiával sűríti.\nA kéken, ibolyaszínben, olykor fehéren viliódzó nyers Mana a bal tenyerében ölt formát, és sercegő, pattogó energiaszikrákat vet, míg a boszorkánymester útjára nem engedi.\nEz a varázslat a legtöbb Villámmágia alapja. Ha a boszorkánymester a nyers energiákat varázslat formájába kívánja önteni, akkor először mindig Villámidézéshez kell folyamodnia, majd az így fókuszált erőknek formát adni (ezek a különböző formázás és felruházás formulák)\n1-es Erősségű villám idézési költsége 4 Mp, ami minden újabb 4 Mana pontért eggyel Erősíthető, s az Erősítés a varázslási időt is kitolja minden egyes plusz E után 1 szegmenssel.\nA villám minden E-je lklO sebzést okoz.\nMiután a boszorkánymester felhalmozta a nyers mágikus energiát, formát kell rendelnie hozzá, az idézésnek megfelelő E-vel.\nEz egy oly rövid gondolati formula, hogy a külön erre szánt idő gyakorlatilag elhanyagolható.\nEzt az idézés befejeztétől számított egy körön belül bármikor megteheti, azonban a tíz szívdobbanás elteltével a boszorkánymesternek döntenie kell\nvagy azonnal formába önti a varázslatot, vagy ugyanannyi idő alatt, mint amíg összegyűjtötte, most lassan visszaáramoltatja a Manahálóba.\nEbben az esetben a varázslathoz felhasznált Mana pontok értelemszerűen ugyanúgy elvesznek, mintha felhasználta volna egy varázslathoz őket.\nAmennyiben ezt nem teszi meg, úgy a Manát fogva tartó kötés felszakad, és az energia elszabadul (lásd Kisülés varázslat)."
+ },
+ {
+   "tipus": "Villám mágia",
+   "altipus": "Formázás",
+   "nev": "Kisülés",
+   "mp": 0,
+   "emp": 0,
+   "hatotav": "Érintés v 5 m",
+   "leiras": "A boszorkánymester a Villámidézéssel tenyerébe gyűjtött lüktető energiát az összegyűjtés befejeztével hirtelen szabadon engedi.\nMivel a mágikus energiákat béklyóban tartó varázs megtörik, a nyers Mana robbanásszerűen szétveti magát, és az erősségnek megfelelően sebez mindenkit, aki a robbanás pillanatában 5 láb sugarú körön belül tartózkodik (magát a boszorkánymestert is!).\nAhhoz, hogy a boszorkánymester ezt elkerülje, és irányított módon kisüthesse a tenyerében felhalmozódott energiát, meg kell érintenie egy kiszemelt áldozatot - ami harci helyzetben természetesen sikeres támadást igényel.\nTalálat esetén az áldozat annyiszor lklO Sp-t veszít, amennyi az előzőleg végrehajtott Villámidézés Erőssége."
+ },
+ {
+   "tipus": "Villám mágia",
+   "altipus": "Formázás",
+   "nev": "Villámtűk",
+   "mp": 1,
+   "emp": 0,
+   "hatotav": "20 m",
+   "idotartam": "1 kör/szint",
+   "leiras": "A varázslat során a boszorkánymester - a Villámidézéssel korábban már a kezébe összegyűjtött - sercegő energiagömbből több tucat apró villámot idéz meg, melyeket kinyújtott tenyeréből lőhet ki.\nEgyszerre annyi ellenfél támadható, amennyi az idézett villám Erőssége.\nA tűkkel nehéz pontosan célozni, csak az irány adható meg, aztán a többi már a véletlen dolga.\nMinden kiszemelt áldozat - ha érzékeli a veszélyt - megpróbálhat félreugrani a villámtűk elől, ám kísérletét csak akkor koronázza siker, ha eredményes Érzékelés- és Gyorsaságpróbát dob.\nEz esetben semmilyen sebzést nem szenved el. Ha bármelyik (ha mindkét próbát elvétette, akkor a kettő összegét szenvedi el sebzésként).\nAz energiatűk komoly sebzést ritkán okoznak, darabonként mindössze 1 Sp-t - ami annyit tesz, hogy vastagabb ruházat, vértezet esetén semmilyen sebzés nincs.\nTulajdonságpróba kudarcot vallott, az áldozatot annyi tű találja el, amennyivel a próbát elvétette. "
+ },
+ {
+   "tipus": "Villám mágia",
+   "altipus": "Formázás",
+   "nev": "Villámvarázs",
+   "mp": 2,
+   "emp": 0,
+   "hatotav": "20 m",
+   "idotartam": "Pillanat",
+   "leiras": "A boszorkánymester a varázslattal a kezében viliódzó Manát energianyalábbá sűríti, és bal kezének mutatóujjából ellenfele felé lövi.\nA sercegő mágikus lövedék a szívdobbanás törtrésze alatt átszeli a köztük lévő távolságot, ám a boszorkánymesternek a villámmal céloznia kell, s célpontjának csak akkor okozhat sebet, ha el is találja.\nEhhez sikeres Célzó dobást kell tennie, ahol saját CÉ-jéhez hozzáadhatja a villám 20-as CÉ-jét.\nA villámmal csak egyenes vonalban, maximum 20 ynevi láb távolságig lehet ellőni a célzásnál leírt megkötésekkel, ezen a távolságon túl a villám egyszerűen elenyészik.\nAz energianyalábot értelemszerűen nem lehet fegyverrel hárítani, mint ahogy nem érvényesül ellenük a pajzsok nyújtotta Védő érték sem (hiszen a pajzsba vagy fegyverbe csapódva ugyanúgy megégeti a pajzsot tartó kart).\nA villámok pörkös szélű, fájdalmas égési sebeket okoznak;a ruha, a bőr a találat helyén elszenesedik, az izmok gyakran huzamosabb időre lebénulnak.\nA boszorkánymester villámaihoz bizonyos varázserő befektetését cserébe különböző tulajdonságokat rendelhet (lásd lentebb).\nIlyenkor a varázslat Mana pont igényéhez hozzá kell adnia a tulajdonság Mp költségét is, de csak egyetlen egyszer (tehát nem E-nként).\nEgyetlen Villámvarázs több tulajdonsággal is felruházható, ilyenkor a tulajdonságok Mp értéke összeadódik"
+ },
+ {
+   "tipus": "Villám mágia",
+   "altipus": "Felruházás",
+   "nev": "Visszaverődő villám",
+   "mp": 3,
+   "emp": 0,
+   "leiras": "A víllámnyaláb, amit ezzel a tulajdonsággal ruháztak föl a kőfelületről, fáról, üvegről - és egyéb szilárd anyagokról\n- visszaverődik, azokban semmilyen kárt nem tesz. Irányát megváltoztatva eltalálhatja a takarásban rejtőző célpontot. Az efféle - visszaverődésre alapozó - célzás visszaverődésenként 10-zel csökkenti a célzás pontosságát. Ha a visszaverésre kiszemelt felület tükör, a CÉ nem változik.\nFigyelem! A visszaverődés révén a célpont távolsága nő\n- ez a célzásnál szerepet kap, viszont a varázslat hatótá-volsága nem csökken, mert az nem a villám által megtett utat jelenti, hanem a boszorkánymester körüli 20 ynevi láb sugarú kört."
+ },
+ {
+   "tipus": "Villám mágia",
+   "altipus": "Felruházás",
+   "nev": "Villámlánc",
+   "mp": 15,
+   "emp": 0,
+   "leiras": "A Villámlánccal több ellenfél is támadható, azonban mindegyiküknek 20 ynevi láb sugarú körön belül kell tartózkodniuk.\nA boszorkánymester célba veszi az első áldozatot;ha eltalálja, a villám a szokásos módon sebez. Eztán a boszorkánymester kijelölheti a következő célpontot;a villám az ő irányában folytatja az útját - ám CÉ-je 10-zel csökken.\nÚj Célzó dobást kell dobni, a következő célpontra. Ha ez is célba talál, újból sebez és CÉ-je újabb 10-zel kevesebb lesz.\nEz így folytatódik addig, míg a villám egyszer célt nem téveszt, vagy míg a boszorkánymester be nem szünteti a varázslatot.\nA varázslat tetszőleges számú ellenféllel szemben alkalmazható."
+ },
+ {
+   "tipus": "Villám mágia",
+   "altipus": "Formázás",
+   "nev": "Villámpenge",
+   "mp": 2,
+   "emp": 2,
+   "hatotav": "Érintés",
+   "idotartam": "1 kör/szint",
+   "leiras": "A varázslattal a boszorkánymester nyers energiával övezhet egy tetszés szerinti egy-, vagy kétkezes tőrt, vagy kardot, amit bal kezének mutatóujjával érint.\nA kékes derengés körbefonja a pengét, s ha élő húsba mar, a beléfoglalt energiák borzalmas roncsolást visznek végbe az élő szöveten.\nA fegyver eredeti sebzésén túl megégeti mindazokat, akiken a fegyver sebet ejt.\nA kardot nemcsak a mágia létrehozója, hanem bárki megfoghatja, ha ügyel arra, hogy ne érintse a viliódzó pengét.\nHa ezt elmulasztaná megtenni, maga is sebződik. Ez alól csupán a varázslatot létrehozó boszorkánymester mentesül.\nA mágiával felruházott karddal a továbbiakban is harcolni szükséges, KÉ-je, TÉ-je, VÉ-je nem változik;sebzéséhez a kard eredeti sebzésén túl az energia sebzése járul, ami annyiszor IklO Sp, amennyi a korábban megidézett villám Erőssége.\nTúlütés esetén azonban a villám továbbra is csak Fp-t sebez, s csupán a fegyver sebzése vonódik le az áldozat Ép-iből (természetesen ha az Fp-k elfogynak, immár a villám is Ép-sebet okoz, illetve érvényes a kötelező Ép-vesztés szabálya.)\nA Villámpenge a boszorkánymester tapasztalati szintjével megegyező körig marad fönt, aztán semmivé lesz, s a fegyver ismét közönséges pengévé változik."
+ },
+ {
+   "tipus": "Villám mágia",
+   "altipus": "Formázás",
+   "nev": "Villámvért - testre",
+   "mp": 1,
+   "emp": 0,
+   "hatotav": "Érintés",
+   "idotartam": "1 kör/szint",
+   "leiras": "A varázslat során nyers Manából formált, kéken viliózó aurát hoz létre a boszorkánymester - illetve azon személy körül, akit a boszorkánymester megérint.\nA villámvértet kétféleképpen alkalmazhatja boszorkánymester.\nAz első változat csupán +1 Mana pontba kerül minden egyes erősítés után, s ilyenkor a villámból szőtt aura csak a célpont testét fonja körül, felszerelését és kézben tartott fegyverét nem.\nAkik a villámok útját keresztezik, vagy akiket az így felvértezett személy megérint, sebzést szenvednek el.\nAnnyiszor IklO Sp-t, amennyi a Villámidézés Erőssége.\nUgyanez történik azzal, aki kézifegyverrel sikeres támadást hajt végre ellene, ilyenkor ugyanis a vért végigkúszik a támadó pengéjén, és a fegyvert tartó kézbe mar.\nA villámvért a boszorkánymester tapasztalati szintjével megegyező körig marad fönt, aztán elenyészik."
+ },
+ {
+   "tipus": "Villám mágia",
+   "altipus": "Formázás",
+   "nev": "Villámvért - mindenre",
+   "mp": 3,
+   "emp": 0,
+   "hatotav": "Érintés",
+   "idotartam": "1 kör/szint",
+   "leiras": "A varázslat során nyers Manából formált, kéken viliózó aurát hoz létre a boszorkánymester - illetve azon személy körül, akit a boszorkánymester megérint.\nA villámvértet kétféleképpen alkalmazhatja boszorkánymester.\nA második változat költésegesebb ugyan, ám ilyenkor az alany felszerelése, sőt fegyvere is a villámvért „védelmét” élvezi. így a boszorkánymester a varázslattal támadhat is.\nUgyanez történik azzal, aki kézifegyverrel sikeres támadást hajt végre ellene, ilyenkor ugyanis a vért végigkúszik a támadó pengéjén, és a fegyvert tartó kézbe mar.\nA villámvért a boszorkánymester tapasztalati szintjével megegyező körig marad fönt, aztán elenyészik."
+ },
+ {
+   "tipus": "Villám mágia",
+   "altipus": "Formázás",
+   "nev": "Villámbörtön",
+   "mp": 4,
+   "emp": 0,
+   "hatotav": "10 m",
+   "idotartam": "1 óra/szint",
+   "leiras": "A varázslat segítségével a boszorkánymester nyers energiából való erőtérketrecbe zárhat egy emberi méretű, vagy kisebb teremtményt.\nA ketrec kör alakú, sugara 1 ynevi láb,rácsai anyagtalanok és derengő kék fényt sugároznak - gyakorlatilag villámnak minősülnek.\nA bezárt lény nem képes kitörni börtönéből, csak ha vállalja a„rácsokkal\" való érintkezés kockázatát.\nHa hozzájuk ér, vagy áthatol rajtuk, körönként a villám E-jének megfelelően sebződik - ami érthetően erős fájdalommal jár -, s ha elvéti Egészségpróbáját, izmai 1k6 körre felmondják a szolgálatot.\nBénultan rogy a földre, és szerencsésnek mondhatja magát, ha kellő távolságra zuhan az irtózatos energiarácsoktól.\nA ketrecből biztonságosan kijutni csak mágia segítségével lehet.\nA varázslat a boszorkánymester szintjeinek megfelelő számú óráig tart."
+ },
+ {
+   "tipus": "Anyagmágia",
+   "nev": "Anyapusztítás",
+   "mp": 3,
+   "emp": 3,
+   "idoigeny": "1 sz",
+   "hatotav": "20 m",
+   "idotartam": "Egyszeri",
+   "leiras": "A varázslat segítségével bármilyen szilárd vagy folyadék halmazállapotú, nem mágikus természetű anyag elpusztítható (nem levegővé tehető, hanem tökéletesen semmivé foszlatható).\nAz anyag mennyisége a minőségétől függ.\nA következő csoportok szerint:\nI. Nemtelen anyagok. Kő, fa, víz, bor és minden egyéb, ami nem sorolható a többi csoportba\nII. Fémek. Réz, bronz, vas és minden egyéb fém, ami nem sorolható a nemesfémek és a mágikus anyagok közé.\nIII. Nemesfémek. Arany, ezüst (nemesfémnek számít az az ötvözet, melyben ötvöző anyagként legalább 10 százalék tiszta nemesfém található), a mérgek, valamint a savak és a lúgok is.\nA varázslattal minden E után 1 ynevi font I. csoportba, 1/2 ynevi font II. csoportba, vagy 1 ynevi lat III. csoportba tartozó anyag változtatható semmivé.\nTovábbi kikötés, hogy csak önálló és egész tárgyakra alkalmazható, tárgyak részeire nem.\nMint ahogy élőlények teste, tárgyai, felszerelése sem képezhetik a varázslat tárgyát (hiszen azok a lény Személyes Aurájának részei)."
+ },
+ {
+   "tipus": "Anyagmágia",
+   "nev": "Savfelhő",
+   "mp": 12,
+   "emp": 12,
+   "idoigeny": "1 sz/E",
+   "hatotav": "20 m",
+   "idotartam": "1 kör/szint",
+   "leiras": "A boszorkánymester a varázslat segítségével zöldes-sárgás savpermetből álló maró felhőt hozhat létre.\nEz a felhő a széllel elszáll - a varázslattal így nem irányítható - csak megjelenésének helyét jelölheti ki a varázslat megidézője.\nA felhő minden egyes E-je után körönként lkl0 Sp-t sebez annyi láb sugarú körben, amennyi a varázslat Erőssége, s hosszú időn keresztül a felhőben tartózkodva átrágja magát ruhán, páncélon.\nNyomában égett szag és gyenge füst kezd el terjengeni, savpermet csapódik ki a tárgyakra és fekete csíkokat szánt beléjük a lefolyó anyag.\nA ruhák kilyukadnak, a fegyverek, vértek, pajzsok sisteregve pezsegni kezdenek, ahogy a maró oldalt kikezdi őket.\nA varázslat a boszorkánymester szintjeivel egyező számú körig tartható fenn, de előbb is eloszlatható.\nA boszorkánymester sem áll ellen a felhőben lévő savnak, így a varázslatot néha hamar megszünteti, hogy ne essen ő maga is áldozatul."
+ },
+ {
+   "tipus": "Anyagmágia",
+   "nev": "Savteremtés",
+   "mp": 8,
+   "emp": 8,
+   "idoigeny": "1 sz/E",
+   "hatotav": "20 m",
+   "idotartam": "1 kör/szint",
+   "leiras": "A boszorkánymester erős savat teremthet vízből, borból, egyéb folyadékból.\nA sav mennyisége 8 Mp-ként egy gyűszűnyi.\nA sav Erősségenként lklO Sp sebet okoz, s esetenként - a helyzettől függően - Ép-vesztést, vakságot, Tulajdonságok (például Karizma) csökkenését is eredményezheti.\nA sav annyi körig marad sav és maró, amennyi a boszorkánymester szintje - utána visszaalakul közönséges folyadékká.\nAmennyiben a savat más folyadékkal vegyítik, úgy sebzése a hígulás arányában csökken."
+ },
+ {
+   "tipus": "Anyagmágia",
+   "nev": "Szilánkokra robbantás",
+   "mp": 5,
+   "emp": 5,
+   "idoigeny": "2 sz",
+   "hatotav": "20 m",
+   "idotartam": "Egyszeri",
+   "leiras": "A boszorkánymester másik szilárd anyagot pusztító varázslata ez.\nHatására a mágikus energiák beférkőznek az anyag szerkezetébe és a gyenge pontoknál szétfeszítik azt.\nA folyamat eredményeképpen egy szilárd anyagú, nem mágikus természetű tárgy (amennyiben nem védi a Személyes Aura sem) hirtelen felmelegszik, majd apró, tűhegyes szilánkokra robban.\nEz mágia mindenben megegyezik az Anyagpusztítás varázslattal, azzal a különbséggel, hogy a szétrobbanó tárgy közvetlen közelében (5 ynevi láb sugarú kör)\ntartózkodók a tárgy minden egyes fontja után lk6 Sp-sebet szenvednek el a repeszektől, míg az 1 ynevi fontnál jelentősen könnyebb tárgyak sebzése egységesen 1 Sp."
+ },
+ {
+   "tipus": "Nekromancia",
+   "nev": "Húsmaszk",
+   "mp": 30,
+   "emp": 0,
+   "idoigeny": "10 p",
+   "hatotav": "Önmaga",
+   "idotartam": "1 óra/szint",
+   "leiras": "A boszorkánymester mágiájának egyik leghátborzongatóbb varázslata.\nÁldozata frissen lenyúzott bőrét magára öltve, húsából fogyasztva, teste rendkívüli módon hasonlatossá válik a meggyilkolt személyéhez.\nA varázslat végrehajtására csak meztelenül képes, mivel testének minél nagyobb felületen kell érintkeznie az áldozat húsával és bőrével.\nFontos, hogy legalább az arcbőr sértetlen legyen, ne csúfítsák el sebhelyek, különben a varázslat sikertelen.\nMindazonáltal a varázslat csak az arcot és a bőrt érinti, a boszorkánymester testalkata ettől még nem változik, hiába volt az áldozata magasabb vagy alacsonyabb, kövérebb vagy soványabb.\nHa megfelelő testalkatú célpontot választ, csak az áldozat közelebbi ismerősei képesek felismerni a szörnyű különbséget\n(Érzékeléspróba a KM megítélése szerinti módosítókkal), a sápadtabb bőrt, az enyhén eltorzult vonásokat - másoknak legfeljebb megmagyarázhatatlan rossz érzésük támadhat az álca láttán.\nA Húsmaszk csak a boszorkánymester fizikai valóját leplezi, ha megszólal, hangja könnyen árulójává válhat.\nA felöltött „héj” azonban rendkívül sérülékeny: egyetlen Ép vagy 3 Fp-sérüléstől is rohamosan oszlásnak indul és lefoszlik viselőjéről.\nAlkalmazása a legsötétebb Feketemágiának minősül."
+ },
+ {
+   "tipus": "Nekromancia",
+   "nev": "Magzat megrontása",
+   "mp": 90,
+   "emp": 0,
+   "idoigeny": "10 p",
+   "hatotav": "Érintés",
+   "idotartam": "Maradandó",
+   "leiras": "Csak a legsötétebb praktikákat folytatóknak, és a legvakmerőbbeknek adatik meg a lehetőség, hogy esszenciájukat a reinkarnáció és az idő bilincseit ledobva új testbe menekíthessék.\nEme varázslat segedelmével a boszorkánymester képessé válik lelkét egy arra alkalmas (hímnemű), azonos fajba tartozó magzatba átmenekíteni.\nA varázslás ideje alatt a boszorkánymester bal tenyerének folyamatosan érintkeznie kell a várandós anya testével, különben a varázslat sikertelen.\nA kántálás végeztével a boszorkánymester esszenciája lk6 nap alatt a megszületendő magzat testébe vándorol át, és elfoglalja a még fejletlen gyermeki lélekcsíra helyét.\nA boszorkánymester tudata a transzferáció előrehaladtával lassan kihuny;régi porhüvelye fokozatosan elsorvad, végezetül elpusztul.\nA fiúgyermek csak teljes fizikai kifejlődése (serdülőkora) után kerül tudatába korábbi inkarnációja emlékeinek, addig csupán egy pszeudószemélyiség uralja testét.\nTudata ébredésével a boszorkánymesternek sikeres Akaraterőpróbát kell tennie, különben visszafordíthatatlanul megtébolyodik, és mindörökre elveszíti varázshatalmát.\nA varázslat minden egyes használatával a karakter Akaratereje 1 ponttal permanensen csökken.\nHa Tulajdonságpróbája sikeres volt, levetkőzi magáról a pszeudószemélyiséget, de megtarthatja annak emlékeit és esetleges új képzettségeit.\nKizárólag fizikai Tulajdonságai (Erő, Gyorsaság, Ügyesség, Egészség, Karizma, Állóképesség) változnak a gyermek alkatától függően.\nAmennyiben a boszorkány mester a transzferáció befejező-dése előtt elhalálozik, lelke azonnal a magzat testébe kerül át, de Akaratereje véglegesen újabb 1 ponttal csökken.\nHa a gyermek a transzferáció kiteljesedése előtt születik meg, a varázslat sikertelen lesz, és a boszorkánymester teste lassan elsorvad.\nHa a magzat ugyanilyen körülmények között elhalálozik, a boszorkánymester lelke kiragadtatik a lélekvándorlásból - teste tudattalan élőhalottként fog bolyongani az idők végezetéig."
+ },
+ {
+   "tipus": "Nekromancia",
+   "nev": "Öregítés - ideiglenes",
+   "mp": 20,
+   "emp": 1,
+   "idoigeny": "1 perc",
+   "hatotav": "20 m",
+   "idotartam": "1 nap/szint",
+   "leiras": "A boszorkánymester szentségtelen hatalmával az élőlényeket tápláló életerőt szipolyozza ki a testből, romlott energiáival az Élet Princípiumát sorvasztja el, hogy áldozatából csak a szikkadt porhüvely maradjon.\nA boszorkánymester két célzattal használhatja a varázslatot.\nAz első mód kevésbé Mana pontigényes, ellenben csak időleges hatású;a másik változat hatása maradandó, viszont éppen emiatt energiaigényesebb is.\nAz első módszerrel a boszorkánymester egy általa kiválasztott lényt évekkel öregíthet.\nA varázslat az alap költségen túl annyi Mana pontot igényel, amennyi évvel az áldozat öregszik.\nEz esetben a varázslat időtartama mindössze Tapasztalati szintenként 1 nap, leteltével az áldozat visszaíiatalodik eredeti életkorára.\nA varázslat különösen romboló hatással van a Nekromaciával szemben sokkalta érzékenyebb fajokra: az elfekre és félelfekre.\nElfek esetében egyetlen évnyi öregítés 10 esztendőt rabol el az elf életéből, míg a félelféből egy év helyett kettőt.\nAz öregedés jelei mindkét esetben azonnal megmutatkoznak: az áldozat gyengébbé, lassabb mozgásúvá válik, látása megromlik, arcán ráncok futnak végig, bőre megszikkad, hajába őszes csíkok keverednek.\nCsak a test öregszik, a lélek nem, ami komoly belső konfliktusokhoz vezethet.\nA mindennapos cselekvések is nehezebbekké válnak, hiszen az áldozat nem lesz tisztában megöregedett testének tulajdonságaival, tűrőképességével."
+ },
+ {
+   "tipus": "Nekromancia",
+   "nev": "Öregítés - maradandó",
+   "mp": 10,
+   "emp": 10,
+   "idoigeny": "1 perc",
+   "hatotav": "20 m",
+   "idotartam": "Végleges",
+   "leiras": "A boszorkánymester szentségtelen hatalmával az élőlényeket tápláló életerőt szipolyozza ki a testből, romlott energiáival az Élet Princípiumát sorvasztja el, hogy áldozatából csak a szikkadt porhüvely maradjon.\nA boszorkánymester két célzattal használhatja a varázslatot.\nAz első mód kevésbé Mana pontigényes, ellenben csak időleges hatású;a másik változat hatása maradandó, viszont éppen emiatt energiaigényesebb is.\nA második módszer az alap Mp-költségen túl évenként további 10 Mana pontba kerül, ám a hatás maradandó, és kiteljesedése után csupán mágiával szüntethető meg.\nA varázslat az alap költségen túl annyi Mana pontot igényel, amennyi évvel az áldozat öregszik.\nEz esetben a varázslat időtartama mindössze Tapasztalati szintenként 1 nap, leteltével az áldozat visszaíiatalodik eredeti életkorára.\nA varázslat különösen romboló hatással van a Nekromaciával szemben sokkalta érzékenyebb fajokra: az elfekre és félelfekre.\nElfek esetében egyetlen évnyi öregítés 10 esztendőt rabol el az elf életéből, míg a félelféből egy év helyett kettőt.\nAz öregedés jelei mindkét esetben azonnal megmutatkoznak: az áldozat gyengébbé, lassabb mozgásúvá válik, látása megromlik, arcán ráncok futnak végig, bőre megszikkad, hajába őszes csíkok keverednek.\nCsak a test öregszik, a lélek nem, ami komoly belső konfliktusokhoz vezethet.\nA mindennapos cselekvések is nehezebbekké válnak, hiszen az áldozat nem lesz tisztában megöregedett testének tulajdonságaival, tűrőképességével."
+ },
+ {
+   "tipus": "Nekromancia",
+   "nev": "Szentségtelen kapu",
+   "mp": 100,
+   "emp": 0,
+   "alape": 50,
+   "idoigeny": "10 p",
+   "hatotav": "1 m",
+   "idotartam": "?",
+   "leiras": "Ez az egyik legerősebb démonidéző mágiaforma.\nÉszak tudós fői erre a varázslatra alapozzák azon nézetüket, miszerint a Boszorkánymesteri mágia egykoron emberek és démonok szentségtelen paktumából született.\nA feltevés nem nélkülöz minden valóságalapot, hiszen meglepő módon ez az idéző formula mindmáig közel tökéletesen őrizte meg eredeti formáját.\nAlkalmazásához nem szükséges köröket és pentagrammákat rajzolnia a boszorkánymesternek, s idéző gyertyákra sincs szükség.\nEz a leggyorsabb - ám legveszélyesebb és legkiszámíthatatlanabb metódus: a kántálás végeztével a boszorkánymester bal tenyeréből elővágódó éjszín villanás repedést hasít a Síkok között, melyen át lények özönlenek az Elsődleges Anyagi Síkra.\nEzen túlvilági teremtmények kiválasztása a Kalandmester feladata, de irányelvként fontos lefektetni, hogy általában közdémonok érkeznek, démonurak, s főként démonhercegek soha.\nA boszorkánymester bármikor bezárhatja a kaput, ám ez további 50 Mana pontot igényel."
+ },
+ {
+   "tipus": "Nekromancia",
+   "nev": "Szépség elorzása",
+   "mp": 22,
+   "emp": 0,
+   "idoigeny": "10 perc",
+   "hatotav": "Önmaga",
+   "idotartam": "1 óra/szint",
+   "leiras": "A boszorkánymester képessé válik emberi vagy félemberi lények vérében megfürödve, szépségük elorzására.\nA különleges rituálé időtartamára a boszorkánymester Karizmája földöntúlivá, romlottan gyönyörűvé válik (20-as);vonásai életerővel telnek meg,\nkisugárzása láttán minden tiszta szívű, gondolkodó lényen, amennyiben jellemében szerepet kap az Élet, iszonyat lesz úrrá, a balgákat és a sötétség Halál jellemű halandó szolgáit pedig hódolattal, áhítattal tölti el."
+ },
+ {
+   "tipus": "Nekromancia",
+   "nev": "Túlvilági birtok",
+   "mp": 45,
+   "emp": 0,
+   "alape": 50,
+   "idoigeny": "10 perc",
+   "hatotav": "5 m/szint sugarú kör",
+   "idotartam": "Maradandó",
+   "leiras": "A varázslathoz a boszorkánymesternek saját vérének néhány cseppjével kell kijelölnie az adott területet.\nEttől kezdve ott az Élet nem kívánatos Princípiummá lesz;a túlvilági energiák minden élet elpusztítására törekszenek majd.\nA mágia kiszipolyozza az életerőt a környezetből, a nagyobb növények látványosan elrohadnak, a fű kiszikkad, a föld feltöredezik és csak sívó, kiégett, fekete törmelék marad hátra.\nA másvilági gyűlölet gennyes csomókba gyűlik, ahogy az Asztrálsík szennyes hullámokat vet, és megmételyezi az anyagi világot.\nHa értelmes lény lépi át a vérrel kijelölt kör vonalát, jeges borzongás markol a gyomrába, hullabűzt érez, és páni félelem fogja el.\nMinden élőlénytől, aki az érintett területen tartózkodik, vagy oda belép, a Túlvilági birtok körönként lk6 Fp életenergiát oroz el.\nHa Fp-i elfogynak, elájul, s a továbbiakban már Ép-i csökkennek - ezek nullára csökkenésekor életét veszti.\nHa pedig halála után sem távolítják el onnan, szellemként reked a világok között (bővebben lásd a Necrografia leírásánál).\nAz állatok messzire elkerülik az ilyen területeteket, míg az élőholtakat - ha tartózkodnak a környéken - ellenállhatatlanul vonzza magához.\nA boszorkánymester, ha életét veszíti, és nem temetik el szertartásosan, közvetlenül a sírja fölött egy éven belül Túlvilági birtok alakul ki.\nA varázslatot csakis a terület középpontján végrehajtott papi Szertartás varázslattal vagy varázslói Destrukcióval lehet megszüntetni."
+ },
+ {
+   "tipus": "Nekromancia",
+   "nev": "Enyészet posványa",
+   "mp": 35,
+   "emp": 0,
+   "alape": 50,
+   "idoigeny": "10 perc",
+   "hatotav": "5 m/szint sugarú kör",
+   "idotartam": "Maradandó",
+   "leiras": "Sokban hasonlít a Túlvilági birtok varázslathoz.\nA meg-átkozott területen a rothadás és az enyészet sebessége többszörösére gyorsul.\nA folyamat szemmel nem követhető, annál jóval lassabban zajlik, ám a természetes sebességnek így is vagy százszorosa.\nMinden tárgy gyorsan széthull, a szövetek és fatárgyak egy-két napig maradnak csak használhatók.\nA területen tartózkodó, vág)' oda betévedő lények percenként kötelesek fertőzés elleni Egészségpróbát dobni, különben a Rontásoknál leírt Rútság varázslat áldozatául esnek.\nA terület és az átok feloldásának módja ez esetben is csak a papi Szertartás varázslat vagy a varázslói Destrukció."
+ },
+ {
+   "tipus": "Necrográfia",
+   "nev": "Azonosítás",
+   "mp": 15,
+   "emp": 0,
+   "idoigeny": "1 perc",
+   "idotartam": "Egyszeri",
+   "leiras": "A varázslattal még a legvénebb csontok története is kifürkészhető.\nA boszorkánymester egyetlen elhunyt holttestét, vagy annak valamely maradványát vizsgálhatja meg.\nHosszas koncentrálás után összetett érzelem- és gondolatfoszlányokként megismeri az elhunyt élettörténetét, származását.\nEzáltal akár történelmi eseményekről is gyűjthet információkat.\nMint ahogy hasznára válik a Lélekidézés varázslat előkészítésében is, hiszen világossá válik számára az elhunyt hovatartozása, múltja, halálának oka és körülményei."
+ },
+ {
+   "tipus": "Necrográfia",
+   "nev": "Csontészlelés",
+   "mp": 5,
+   "emp": 0,
+   "idoigeny": "1 perc",
+   "hatotav": "20 m",
+   "idotartam": "10 p",
+   "leiras": "A boszorkánymester ezen varázslattal elhalálozott teremtmények mélyen föld alatt nyugvó csontjait, maradványait fedezheti fel.\nHa nem fekszenek 20 ynevi lábnál mélyebben, az érzékeléshez elegendő elhaladnia felettük, miközben a varázslat igéit mormolja."
+ },
+ {
+   "tipus": "Necrográfia",
+   "nev": "Bomlás megfékezése",
+   "mp": 10,
+   "emp": 0,
+   "idoigeny": "3 sz",
+   "hatotav": "Önmaga",
+   "idotartam": "1 perc/szint",
+   "leiras": "A boszorkánymester lidércekkel és más kísértetekkel, valamint saját teremtményeivel sem képes emberi nyelven szót váltani, mig csak lelket nem idéz beléjük.\nHa mégis ez áll szándékában, a halottak különös, soha nem létezett nyelvén kell szólnia, melyet élők a mágia törvényei szerint soha nem sajátíthatnak el.\nA varázslat segítségével az Időtartam alatt, a boszorkánymester beszéli és érti a Halottak nyelvét, ami furcsa, sikoltá-sokkal és nyögésekkel, elhaló suttogással és zihálással terhes hátborzongató hangok kavalkádjából áll.\nKülső szemlélő szá-mára a boszorkánymester pusztán maga elé mered, és néha érthetetlenül mormog, míg az alkalmazó nemcsak hallja, látja is a síron túli teremtmények felé sugárzott gondolatait, érzelmeit.\nEzek olyannyira távol esnek az élők világától, annyi keserűség és harag gyülemlett fel bennük, hogy az nem ritkán a boszorkánymester elméjének épségét veszélyezteti.\nGyakran előfordul, hogy a varázslat alkalmazása közben elered az orra vére, vagy nyál csordul le a szája szélén, körmeivel mélyen saját húsába mar vagy véreset köhög.\nTermészetesen a varázslattal is csak értelemmel, intelligenciával - felruházott élőhalottakkal társaloghat érdemben: győzködheti őket, hogy szegődjenek a szolgálatába;ígérettel, fenyegetéssel ráveheti őket valamely feladat teljesítésére.\nMinél intelligensebb egy élőhalott, annál erősebben ragaszkodik a létezéshez.\nHa tehát a boszorkánymester hatalma elegendő az elpusztítására, és főként, ha efelöl őt is meggyőzi, az erő pozíciójából tárgyalhat.\nHa a fent említett módok bármelyikén kicsikarta a szolgálatot, nincs szükség Élőholt parancsnokiás varázslatra, elnyerte az élőholt(ak) kétes hűségét."
+ },
+ {
+   "tipus": "Necrográfia",
+   "nev": "Élőholt teremtés",
+   "mp": 20,
+   "emp": 0,
+   "idoigeny": "1 perc",
+   "idotartam": "Maradandó",
+   "leiras": "A boszorkánymester a varázslattal új életet lehelhet egy halottba.\nBár az élet nem szerencsés kifejezés, hiszen a lélek és értelem nélküli testet csak egyfajta torz energia mozgatja.\nA boszorkánymester egy síkok között rekedt, ellenállni is képtelen alacsonyrendű Mentállényt, vagy eltorzult lélekcsírát plántál teremtményébe.\nAz így alkotott lényt nevezzük tudattalan élőhalottnak.\nA varázslat egyetlen Életerő ponttal ruházza fel az élőhalottat - a boszorkánymester teremtménye további Ép-iről az Életerővel felruházás nevű varázslattal gondoskodhat.\nAz átadott Életerő pontokat a boszorkánymester vagy saját magától vonja el, vagy mástól rabolja.\nEgy élőholtban maximálisan annyi Ép tárolható, mint amennyit a lény életében is hordozott.\nTermészetesen az élőhalott már 1 Ép-vel is „életképes”, ám ajánlatos továbbiakkal is ellátni, mert a mozgását biztosító energia csak addig marad a testben, míg az élőhalott életerő pontjai el nem fogynak.\nHa pedig ez megtörténik, az élőhalott elpusztul.\nAmennyiben a test nem sérül súlyosan, akár újból élőhalott teremthető belőle.\nAz ilyen élőhalottak sorolhatók a Necrografia I. osztályába, a tudattalan élőholtak közé.\nA megteremtett élőhalottba a boszorkánymester egyetlen egyszerű parancsot plántálhat  ez lesz a teremtmény „életcélja”.\nÉrtelme, tudata ezen egyetlen alapparancsra korlátozódik, a maga határtalanul ostoba, korlátolt módján (Intelligencia 1) mindent megtesz ennek végrehajtása érdekében.\nA parancs ilyen lehet: „Ölj!”, „Őrizz!”, „Senki nem léphet be az ajtón!”.\nLátni kell tehát, hogy a megfogalmazás több szavas is lehet, csak a feladat ne számítson összetettnek. Remek ellenpélda a „Szolgálj!”, ezt nem lesz képes teljesíteni, egyszerűen vakon követi teremtőjét."
+ },
+ {
+   "tipus": "Necrográfia",
+   "nev": "Élőholt idézés",
+   "mp": 10,
+   "emp": 0,
+   "idoigeny": "1 kör",
+   "idotartam": "1 perc/szint",
+   "leiras": "A varázslat segítségével a boszorkánymester egy képletes „kiáltást” hallat a síkok között, amire halandó fül nem, csak az életből távozott, de a léthez mindennél jobban kapaszkodó lelkek figyelnek fel.\nA boszorkánymester egyetlen módon csábíthatja őket magához: a vér, a velő, az élet ígéretével.\nA különböző típusú élőholtak közös tulajdonsága ugyanis, hogy határtalanul és engesztelhetetlenül gyűlölik mindazokat, akiknek még megadatott az élet élvezete.\nA 100 ynevi láb sugarú kör területén a boszorkánymester magához szólíthat minden élőholtat.\nAzok köré gyűlnek, de csak akkor engedelmeskednek parancsainak, ha önálló akarattal nem rendelkeznek, pusztán annyi értelemmel, hogy a parancs tartalmát felfogják (például közönséges éji rémek, amilyen az Izar, a Bosszúálló vagy a Múmia).\nŐket a boszorkánymester könnyedén befolyásolhatja, és pislákoló tudatukat sem nehéz maga alá gyűrnie, így azok vakon engedelmeskednek neki.\nA varázslattal maximum Tapasztalati szintjével megegyező számú élőholtra terjesztheti ki hatalmát, választása szerint.\nA többi teremtmény, akik szintén a boszorkánymester köré gyűltek, de nem kerültek a varázslat hatása alá, törvényszerűen megtámadják őt, amiért zaklatta síron túli nyugalmukat.\nÍgy egy boszorkánymester százszor is meggondolja, hogy egy élőhalottak megszállta területen alkalmazza-e a varázslatot vagy sem.\nAz intelligens élőholtak akkor engedelmeskednek, ha érdekeik is ezt kívánják (például az életerővel táplálkozó szellemek, amilyen a Lesath és a Hatyasa).\nA boszorkánymester, ha megfelelő módon tárgyal velük, és kellő ellenszolgáltatást ígér, netán képes megfélemlíteni őket, ideiglenesen elnyerheti szolgálatukat.\nÁm jobb, ha mindig észben tartja, hogy az önálló akarattal rendelkező élőholtak velejéig romlottak, lelkűket annyira elgyötörte a lét nélküli lét, hogy gondolati sémáik az álnokság legmélyebb vermeiben merítkeztek meg."
+ },
+ {
+   "tipus": "Necrográfia",
+   "nev": "Élőholt parancsolása",
+   "mp": 2,
+   "emp": 2,
+   "idoigeny": "1 sz",
+   "hatotav": "20 m",
+   "idotartam": "Egyszeri",
+   "me": "Mentális",
+   "leiras": "A varázslat használatakor a boszorkány mester hangja hirtelen elmélyül és félhangosan valamely ismeretlen nyelv szavait mormolja.\nAz Élőholt parancsnoklással egyszerű utasítást adhat a kiszemelt élőholtnak, hasonlót ahhoz, mint amit élőhalott teremtésekor beléplántál.\nA parancs a halottak embertől idegen, hátborzongató nyelvén hangzik el, s a félintelligens, vagy még ostobább élőhalottak azonnal teljesítik a parancsot.\nAz intelligensek Mentái Mágiaellenállásra jogosultak."
+ },
+ {
+   "tipus": "Necrográfia",
+   "nev": "Érzékelés holtakon keresztül",
+   "mp": 10,
+   "emp": 0,
+   "idoigeny": "1 perc",
+   "idotartam": "1 óra/szint",
+   "leiras": "A varázslat csak Tudattal vagy Személyiséggel nem rendelkező (I. és II. Necrográfiai osztályba sorolt) élőholtakra alkalmazható.\nA boszorkánymester elméje az érintés pillanatában kinyúl az élőholt felé, és utat keres a beléplántált Mentállény vagy lélekcsíra felé.\nMiután a korlátozott tudatot maga alá gyűrte, képessé válik az általa teremtett élőholtak érzékszervein keresztül látni és hallani.\nA varázslat csak akkor működik, ha az élőhalott még rendelkezik látó- és hallószer- vekkel.\nAz érzékelés Erőssége pusztán fele egy átlagos ember képességeinek.\nA varázslat végrehajtása után az élőhalott bármilyen távolságra eltávolodhat a boszorkánymestertől,\nhiszen a két tudat között feszülő Mentálfonál továbbra is biztosítja a kapcsolatot, urának csak koncentrálnia kell, ha kedve támad az érzékszervek felidézésére."
+ },
+ {
+   "tipus": "Necrográfia",
+   "nev": "Beszéd holtakon keresztül",
+   "mp": 10,
+   "emp": 0,
+   "idoigeny": "1 perc",
+   "idotartam": "1 óra/szint",
+   "leiras": "A varázslat mindenben megegyezik az Érzékelés holtakon keresztül varázslattal, azzal a különbséggel, hogy a boszorkánymester immár nem látni és hallani,\nhanem beszélni képes az általa teremtett élőhalott szájával, pontosabban az élőholt azt mondja, amit ura és parancsolója kíván.\nA varázslat csak akkor működik, ha az élőhalott még rendelkezik hangképző szervekkel.\nA varázslat végrehajtása után az élőhalott bármilyen távolságra eltávolodhat a boszorkánymestertől, urának csak koncentrálnia kell, ha szólni támad kedve, de nem varázsolhat rajta keresztül."
+ },
+ {
+   "tipus": "Necrográfia",
+   "altipus": "Felruházás",
+   "nev": "Értelemmel felruházás",
+   "mp": 30,
+   "emp": 0,
+   "idoigeny": "1 óra",
+   "idotartam": "1 nap/szint",
+   "leiras": "A varázslat hosszas előkészítést, a halott testbe vésett varázsjelek, idéző körök felrovását, lélekgyertyát és hosszas kántálást igényel (ezek Mana pont költségét a varázslat már tartalmazza).\nSegítségével a reinkarnációból kisodródott, torz lélek költöztethető az élőhalottba.\nAz efféle lelkeket a Necrografia „kóborló dögökéként említi - számtalan fajtájuk ismeretes, élőhalottba költöztetve a legkülönfélébb teremtmények hozhatók létre.\nAz értelemmel nem bíró élőholtak  melyek még egyszavas parancsokat sem értenek meg, csupán valamely beléjük plántált, egyszerű utasítástól vezérelve cselekszenek  a varázslat hatására olyan egyszerűbb utasítások elvégzésére is alkalmassá válnak, mint például:\n„Csak a szolgáimat engedd be az ajtón!”, vagy „Kövess és oltalmazz!”. Az élőholt Intelligenciája 5 lesz.\nEz annyit tesz, hogy a parancsokat megérti, és korlátozott mértékben önálló cselekvésre is alkalmas. Megfontolt döntéseket azonban nem hozhat.\nA varázslat áldásos mellékhatásaként az élőholt mindenképpen hűséges lesz parancsolójához, s mástól nem is fogad el utasításokat.\nA varázslat csak és kizárólag egyetlen, értelemmel nem bíró élőhalottra hat, más teremtmények ellen teljességgel hatástalan.\nAz időtartam leteltével az élőhalottat elhagyja a beleplántált lélek, s a teremtmény visszasüllyed az értelem nélküli létbe."
+ },
+ {
+   "tipus": "Necrográfia",
+   "altipus": "Felruházás",
+   "nev": "Tudattal felruházás",
+   "mp": 50,
+   "emp": 0,
+   "idoigeny": "1 óra",
+   "idotartam": "1 nap/szint",
+   "leiras": "A varázslat segítségével tudat, intelligencia kölcsönözhető egy értelemmel nem bíró élőhalottnak.\nEzáltal önállóan, logikusan fog gondolkodni.\nParancsokat adhat társainak, döntéseket hozhat, de mindeközben a végletekig hűséges lesz a boszorkánymesterhez.\nAz élőhalott Intelligenciája a varázslat időtartama alatt 10 lesz.\nA varázslat csak és kizárólag az említett kategóriába tartozó egyetlen élőhalottra hat, más teremtményekre nem.\nA varázslattal a boszorkánymester olyan lelket idéz az élőhalottba, amit Abdul al Sahred a „vérivó dögök” Anyagi Síkon fellelhető válfajaként említ.\nEzek a lelkek az Anyagi Síkon rekedtek, s nem ragadtattak el valamelyik Külső Síkra. Anyagi Testüket már elhagyták, s puszta lélekként bolyongnak a Világegyetemben - szinte várva, kívánva a megidézést.\nMár-már hálásak a boszorkánymesternek, amiért ismét lehetővé teszi számukra az Anyagi test birtoklásával járó örömöket."
+ },
+ {
+   "tipus": "Necrográfia",
+   "altipus": "Felruházás",
+   "nev": "Személyiséggel felruházás",
+   "mp": 70,
+   "emp": 0,
+   "idoigeny": "1 óra",
+   "idotartam": "1 nap/szint",
+   "leiras": "A varázslathoz az Értelemmel felruházásnál felsorolt procedúrákra van szükség, melyek segítségével a boszorkány mester megidézheti egy elhunyt lelkét,\nha birtokolja földi maradványait, vagy akár csak egyetlen csontját, és ha a lélek az Örök Körforgás valamely stációjában rekedt éppen (tehát még nem született újjá).\nA lélek emlékezni fog életére, rendelkezik a megboldogult minden szellemi tulajdonságával és képességével. Azaz, ha ismerte a mágiát, eztán is ismerni fogja, ha használt pszit, most is fog.\nHa élőhalott teste erre alkalmas, a fizikai jellegű Képzettségek és a Harcérték is öröklődik.\nGyakorlatilag úgy is tekinthető, hogy a boszorkánymester feltámasztotta a halottat.\nA varázslattal lélek plántálható egy értelemmel nem bíró élőhalottba.\nEzáltal az képessé válik a logikus, önálló gondolkodásra;saját személyisége, egyénisége lesz: Mentális és Asztrális szempontból teljes értékű emberré válik.\nTeste ugyan hagy némi kívánnivalót maga után - végül is élőhalott: fizikailag szemlélve nem több az egyszerű Zauraknál.\nSzellemiségét tekintve azonban akár óriás is lehet: varázsló, bölcs, netán egy letűnt ország királya. Gondolkodására, érzelmeire nem feltétlenül jellemző a gonoszság, az élet gyűlölete - mint az alacsonyabb rendű élőhalottakéra.\nÉrzelmeinagy valószínűséggel megegyeznek az elhunytéival.\nA személyiséggel felruházott élőhalott nem lesz hűséges megidézőjéhez, csak akkor cselekszik annak utasításai szerint, ha saját érdekei is ezt kívánják. Könnyen előfordulhat, hogy hatalma meghaladja a boszorkánymesterét, ilyenkor az istenek adják, hogy hálás természetű legyen.A varázslat csak és kizárólag egyetlen, értelemmel nem bíró élőhalottra hat, más teremtmények ellen teljességgel hatástalan"
+ },
+ {
+   "tipus": "Életerő manipulálás",
+   "nev": "Életerőszívás",
+   "mp": 4,
+   "emp": 4,
+   "hatotav": "Érintés",
+   "leiras": "A boszorkánymester kezéből smaragdszín derengés tör elő, ami egy szegmensre feldereng az érintés helyén, s égett szélű stigmával pecsételi meg az áldozatot, aki az érintés lassan halványuló nyomát élete végéig magán kell hordozza.\nA boszorkánymester kezéből előtörő, megidézett energiák beférkőznek az anyagi szövetbe és hirtelen fájdalomhullámmal mohón szipolyozzák, pusztítják a lény életerejét.\nAz áldozat fájdalmasan megvonaglik, s lklO Sp-t veszít a varázslat minden egyes E-je után.\nA hatást csak súlyosbítja, hogy minden 5 Fp elvesztése 1 Ép vesztésével is jár.\nAmennyiben azonban az áldozatnak elfogynak a Fájdalomtűrés pontjai, úgy a fennmaradó sebzés mind az Életerő pontjaiból vonódik le."
+ },
+ {
+   "tipus": "Életerő manipulálás",
+   "nev": "Életerő rablás",
+   "mp": 6,
+   "emp": 6,
+   "hatotav": "Érintés",
+   "leiras": "Az Életerőszívás összetettebb formája.\nA boszorkánymester az elszívott Sp-ket saját sebeinek gyógyítására használhatja fel. 1 elrablott Fp-vel 1 Fp-t, 1 Ép-vel 1 Ép-t vagy 5 Fp-t gyógyíthat saját magán\n(az Életerő fejezetben leírtaknak megfelelően minden 1 Ép gyógyulás után 2 Fp is regenerálódik)."
+ },
+ {
+   "tipus": "Életerő manipulálás",
+   "nev": "Életerő átadása",
+   "mp": 8,
+   "emp": 8,
+   "hatotav": "Érintés",
+   "leiras": "A boszorkánymesterek Fekete mágiája eredetéből, módszereiből adódóan nem teremthet életerőt, igazi életet.\nGondoskodhat azonban a kedvezőbb újraelosztásáról.\nA boszorkánymester érintése - akárcsak az Életerőszívásnál - energiát csapol le az áldozattól.\nAz így szerzett életerőt a boszorkánymester átadhatja bárkinek (saját magának nincs értelme, akkor egyszerűbb - és kevesebb Mana pontból megoldható - az Életerőrablás alkalmazása).\nAz átadás pontosan úgy történik, mintha a boszorkánymester saját magát gyógyítaná.\nAz eddigiek alapján a varázslatból nem sok haszna származik magának a boszorkánymesternek.\nÁm most következik a lényeg.\nA varázslat alkalmazója a „gyógyítást” követően az átadott Életerőt mindenféle mágia használata nélkül visszaveheti, és saját testének építésére használhatja fel.\nEhhez csupán meg kell érintenie a személyt, akinek korábban az életerőt átadta.\nNem tesz hát mást, mint raktározza az energiát más szervezetében.\nAz időtartam 6 óra szintenként, ha ez az idő letelt, az energia már nem nyerhető vissza többé, az időtartamon belül azonban bármikor.\nMeglehetősen kínos lehet ez egy csatában például, amikor az áldozat már alig áll a lábán az energia visszavételének pillanatában."
+ },
+ {
+   "tipus": "Életerő manipulálás",
+   "altipus": "Felruházás",
+   "nev": "Életerővel felruházás",
+   "mp": 8,
+   "emp": 8,
+   "hatotav": "Érintés",
+   "leiras": "Ez a varázslat is Életerőszívással indul, ám a nyert életenergiát a boszorkánymester ezúttal egy kiválasztott élőholtnak adhatja át.\nAz élőhalott annyi Ép-hez jut, amennyit az áldozat elveszített - az Fp-k számára semmit nem érnek, hiszen az élőhalott nem érez fájdalmat.\nEgy élőholtban azonban legfeljebb annyi Ép raktározható, amennyit a test életében is hordozott.\nA varázslat alkalmazásakor  miután a boszorkánymester kiszipolyozta áldozatából az életerőt  kezében smaragdszín pulzáló gömbbe gyűlik az energia,\nmajd a varázslat végeztével 1 percen belül az élőholtat is meg kell érintenie, ellenkező esetben a begyűjtött életerő egyszerűen semmivé foszlik."
+ },
+ {
+   "tipus": "Életerő manipulálás",
+   "nev": "Életerő raktározása",
+   "mp": 12,
+   "emp": 4,
+   "hatotav": "Érintés",
+   "leiras": "Az Életerő raktározása egyike azon boszorkánymesteri varázslatoknak, melyek varázserőn kívül egyéb kellékeket is megkövetelnek.\nAz Életerő raktározásához ugyanis drágakőre vagy varázsjelre van szükség, hogy az elorzott Életerőt abban tárolja el.\nA drágakőnek alkalmasnak kell lennie az életerő befogadására, így erre a célra kizárólag smaragd használható.\nA karátok száma megmutatja a maximálisan tárolható Ép-k és Fp-k számát.\nEgy karát 1 Ép avagy 5 Fp befogadására alkalmas. A varázslat első része mindenben megegyezik az Életerőszívással.\nA második rész, a nyert életerő felhasználása különös - a boszorkánymester ugyanis az energiát az előkészített drágakőben helyezheti el.\nA kőből csak a boszorkánymester nyerheti vissza az életerőt, azaz kizárólag saját maga gyógyítására alkalmazhatja.\nA belehelyezett életerő korlátlan ideig a kőben maradhat, állandóan jelenlévő forrást jelentve veszély esetére.\nAz Ép-k és Fp-k kinyerése Mana pontot nem igényel, a szükséges koncentráció is csak 1 szegmens hosszú, és használata közben bal kezével meg kell érintenie a követ.\nA másik lehetőség, hogy rajzolatban tárolja el a begyűjtött életerőt.\nA drágakővel ellentétben  aminek tiszta szerkezete Önmagában is képes az életerő tárolására  itt a rajzolatba foglalt rúnáknak kell megkötniük a nyers életenergiát.\nA boszorkánymesterek tudástárából azonban régen kikoptak azok a formulák, melyek önmagukban képesek lettek volna erre,\nezért az egyre inkább torzuló rúnajelek felhasználásával új módszereket kellett keresniük, s így alakult ki a boszorkánymesteri Tetoválásmágia (bővebben lásd később)."
+ },
+ {
+   "tipus": "Átok",
+   "nev": "Agyhalál",
+   "mp": 30,
+   "emp": 30,
+   "hatotav": "Érintés v 20 m",
+   "leiras": "Lappangás ideje: Azonnali hatású\nA varázslattal egy lény elméjének Mentális Képességei csökkenthetőek  ha az elvétette a betegség szintjének megfelelő Egészségpróbát.\nA varázslat a keringési rendszert támadja meg, s amíg jelen van, meggátolja az agy vérellátását,\nminek következményeként az áldozat annyi pontot veszít maradandóan az Intelligenciájából, amennyi az adott súlyossági fokon szerepel a táblázatban.\nA betegség olyan gyors lefolyású, hogy gyakorlatilag semmilyen gyógymód nem alkalmazható ellene. "
+ },
+ {
+   "tipus": "Átok",
+   "nev": "Álomkór",
+   "mp": 8,
+   "emp": 8,
+   "hatotav": "Érintés v 20 m",
+   "leiras": "Lappangás ideje: Közepes lefolyású\nA fertőzött áldozat egyre többet fog aludni, s aktív cselekvésre egyre kevesebb ideje marad.\nElőször napi 8, majd a betegség súlyossági szintjével megegyező órával több alvásra lesz szüksége a pihenéshez.\nHa erre nincs módja, minden egyes hiányzó óra után 5-tel csökken KÉ-je, TÉ-je, VÉ-je, CÉ-je és százalékos jártasságai\n(ha tehát 11 órát kellett volna aludnia, de csak hetet aludt, a következő nap -20-as módosítóval kénytelen harcolni)."
+ },
+ {
+   "tipus": "Átok",
+   "nev": "Bélsorvadás",
+   "mp": 12,
+   "emp": 12,
+   "hatotav": "Érintés v 20 m",
+   "leiras": "Lappangás ideje: Lassú lefolyású\nA boszorkánymester ezen varázslata elpusztítja az áldozat bélrendszerét.\nA mágia azonnal hat, de csak a Válságos vagy azt meghaladó súlyossági állapotban veszedelmes igazán.\nHa a beteg állapota ezt a fokot nem is éri el, belei sorvadásnak indulnak, miáltal szüntelen hasmenés gyötri, s alig képes szilárd táplálékot megemészteni.\nHa a betegség eleve Válságos súlyossági fokon, vagy még erősebben hat, egyetlen kör alatt elsorvadnak a belei, ami iszonyú kínnal jár.\nEttől kezdve bármennyit eszik is, lassan éhen hal.\nEgy ember általában kétszer annyi napig bírja élelem nélkül, amennyi az Állóképessége.\nA Bélsorvadás emésztőrendszert károsító betegség;a borsos keserűfű hideg kivonatának rendszeres fogyasztásával a romlás a súlyosság fokával megegyező számú hónap alatt visszafordítható."
+ },
+ {
+   "tipus": "Átok",
+   "altipus": "Felruházás",
+   "nev": "Bűvragály",
+   "mp": 10,
+   "emp": 0,
+   "idoigeny": "5 sz",
+   "hatotav": "Érintés v 20 m",
+   "leiras": "Eme varázslat segítségével a Rontásnál leírt kórságok java fertőzővé tehető.\nA Bűvragály áldozata, legyen akár ember, akár állat, annyi további élőlényre lesz képes érintéssel ráragasztani betegségét, amennyi a Rontás szintje.\nA Rontás szintje a másodlagos, harmadlagos stb. fertőzötteknél mindig eggyel csökken,\ns a Bűvragály egészen addig terjed, amíg a varázslat frissen megfertőzött áldozatainál a betegség szintje 0-ra csökken.\nEzután a mágikusan gerjesztett járvány kimerül.\nA Bűvragály áldozatainak holttestei még egy teljes napon keresztül a betegség hordozói maradnak. Ha a boszorkánymester óvatlan, akár saját varázslata áldozatául is eshet."
+ },
+ {
+   "tipus": "Átok",
+   "nev": "Fekete halál",
+   "mp": 30,
+   "emp": 30,
+   "hatotav": "Érintés v 20 m",
+   "leiras": "Lappangás ideje: Gyors lefolyású\nYnev egyik legrettegettebb fertőzését, a Fekete halált idézi elő áldozata szervezetében.\nSikertelen Egészségpróba esetén a bőr azonnali megfeketedésésvel, majd 10 perc múltán, kómával, azután az Fp-k elfogytával halállal végződik az esetek 75%-ában.\nAz áldozat Halállalfenyegető állapotban óránként lklO Fp-t, Halálos esetben óránként 2kl0 Fp-t, végül Biztosan halálos lefolyás estén percenként lk3 Fp-t veszít.\nA maradék 25% is csak gondolja, hogy rá nem hatott a szörnyű kórság  de nagyot téved. Hordozóvá válik, s minden vele érintkező személynek Egészségpróbát kell dobnia a betegség szintjének függvényében, különben elkapja a fertőzést.\nA beteg állapota magától soha nem javul, ám óránként romlik."
+ },
+ {
+   "tipus": "Átok",
+   "nev": "Idegroncsolás",
+   "mp": 25,
+   "emp": 25,
+   "hatotav": "Érintés v 20 m",
+   "leiras": "Lappangás ideje: Azonnali hatású\nA varázslat által okozott betegség az idegrendszerre hat.\nHa az áldozat elvéti Egészségpróbáját, a betegség befészkeli magát a szervezetébe.\nHatására 10 körön keresztül zavaró ingerek kerülnek az áldozat mozgásért felelős idegeibe, ami az Izzó Idegekhez hasonló görcsös rángatózást eredményez.\nSikertelen Egészségpróba esetén az első körben 10% az esélye, hogy a görcs bekövetkezzék, a másodikban 20, a harmadikban 30, és így tovább a 10. körig és 100%-ig.\nHa a görcs lecsap az áldozatra, a hatóidő leteltével még 1 percig izomgörcsök rázzák a testét, aztán a hatás nyomtalanul elenyészilc Ha azonban a Rontás súlyossága Halálos, az áldozatnak már csak ez az egy perce van hátra a végső hatásig.\nHa ezalatt sem gyógyítják meg, a betegség véglegesen szétroncsolja idegeit, miáltal teljes teste megbénul Beszélni, enni, mozdulni nem képes."
+ },
+ {
+   "tipus": "Átok",
+   "nev": "Izomsorvadás",
+   "mp": 20,
+   "emp": 20,
+   "hatotav": "Érintés v 20 m",
+   "leiras": "Lappangás ideje: Közepes lefolyású\nA varázslat Izomsorvadás betegséget juttat az áldozat szervezetébe, ha az elvéti a fertőzés elleni Egészségpróbáját.\nHatására az áldozat izmai rohamos sorvadásnak indulnak, melynek következtében az Erő és Gyorsaság,\nÁllóképesség a súlyosságnak megfelelő módon csökken.\nA csökkenés eredménye minden, a tulajdonsághoz kapcsolódó értékben és képzettségben megjelenik.\nA beteg állapota magától nem javul, sőt a fent említett módon rohamosan romlik. Ha akármelyik képessége nullára csökken, szíve megbénul, és belehal a kórságba."
+ },
+ {
+   "tipus": "Átok",
+   "nev": "Izzó idegek",
+   "mp": 8,
+   "emp": 8,
+   "hatotav": "Érintés v 20 m",
+   "leiras": "Lappangás ideje: Azonnali hatású\nA varázslat szokatlan betegséget okoz áldozatának, ha az elvéti Egészségpróbáját.\nAz idegrendszert stimuláló betegség hatására az áldozat érző és mozgatóidegeibe véletlenszerű, ismeretlen jelek érkeznek, hatásukra a test rángatózni kezd.\nHa a betegség nem éri el a Válságos stádiumot és immunrendszere nem sérült, gyorsan legyűri a szervezetbe jutott kórokozót, egyetlen perc alatt utóhatás nélkül meggyógyul.A kérdéses időtartam alatt azonban az áldozat a földre zuhanva vonaglik, arcát hideg verejték veri ki, ajkáról nyál csorog és artikulálatlanul nyögdécsel, tagjain görcsös rángások futnak végig.\nSemmilyen fizikai cselekvésre vagy varázslásra nem képes, de pszit használhat.\nAmennyiben az immunrendszere sérült - tehát valamilyen betegségben szenved -, vagy a súlyosság eléri a Válságos állapotot, akkor a varázslat hatására 1k6 órára lebénul."
+ },
+ {
+   "tipus": "Átok",
+   "nev": "Lepra",
+   "mp": 20,
+   "emp": 20,
+   "hatotav": "Érintés v 20 m",
+   "leiras": "Lappangás ideje: Lassú lefolyású\nA varázslattal a boszorkánymester leprával fertőzheti meg áldozatát  ha az elvéti a fertőzés elleni Egészségpróbáját.\nLepra esetén a végtagok lassan érzéketlenné válnak.\nA Válságos állapotú leprás a fájdalmat már nem is érzi, így Fájdalomtűrés pontjai gyakorlatilag végtelenek.\nA végtagok érzéketlensége miatt minden finom, érzékeny kézmozgást és tapintást igénylő művelet eleve kudarcra van ítélve.\nHa a betegség eléri a Halálos stádiumot, előbb csak az ujjak, a fül vagy az orr, majd a végtagok heges forradásokat hagyva leválnak, s a beteg másnapra belehal.\nA betegség Fp-vesztéssel nem jár, ellenben az Erő, Gyorsaság és Ügyesség Tulajdonságok a súlyosság függvényében csökkennek.\nA beteg állapota magától nem javul, csak naponta romlik."
+ },
+ {
+   "tipus": "Átok",
+   "nev": "Nyelv rothadás",
+   "mp": 15,
+   "emp": 15,
+   "hatotav": "Érintés v 20 m",
+   "leiras": "Lappangás ideje: Lassú lefolyású\nA varázslattal az egyik legkíméletlenebb, leggyalázatosabb betegség okozható, amit csak az orvostudomány ismer.\nHatására súlyossági fokonként az áldozat nyelve elszíneződik, lehelete kibírhatatlan rothadásszagot áraszt, elveszti ízlelő képességét, majd a nyelv elfeketedik.\nBeszélni ekkorra már nem tud, s a Válságos stádiumba érve nyelve maradék nélkül elrohad.\nA betegség magától nem javul, ám a herbaiisták harmatfű teájával való napi öblögetés megállítja a romlást."
+ },
+ {
+   "tipus": "Átok",
+   "nev": "Rútság",
+   "mp": 5,
+   "emp": 5,
+   "hatotav": "Érintés v 20 m",
+   "leiras": "Lappangás ideje: Közepes lefolyású\nA varázslat sikertelen Egészségpróba esetén súlyos betegsé-get ragaszt az áldozatra.\nHatására csak a Karizma csökken a súlyosság függvényében: mély ráncok jelennek meg a bőrön, a szemek méretei, színük, tengelyük iránya eltorzul, kelések, hólyagok tűnnek elő az arcon, testen, haja hullásnak indul, fogai elszíneződnek, majd lassan elrohadnak.\nA betegség mágiával vagy kenderkefű tinktúrából készült borogatással gyógyítható. Ez utóbbi +5-öt ad az Egészség-próbára."
+ },
+ {
+   "tipus": "Átok",
+   "nev": "Szívbénítás",
+   "mp": 30,
+   "emp": 30,
+   "hatotav": "Érintés v 20 m",
+   "leiras": "Lappangás ideje: Lassú lefolyású\nEzzel a varázslattal a boszorkánymester áldozatánál szívrohamot idézhet elő.\nA betegség a súlyosságtól függően magas vérnyomást, ijesztő, szúró fájdalmat okoz a mellkas tájékán,a Válságos szintet elérve pedig az áldozat szíve nyomban megáll,\naz illető egy kör múltán elveszíti eszméletét, és ha a következő egy percben a Szakrális mágia Gyógyítás varázslatával nem kezdik meg kezelését, menthetetlenül meghal."
+ },
+ {
+   "tipus": "Átok",
+   "nev": "Tüdősorvadás",
+   "mp": 16,
+   "emp": 16,
+   "hatotav": "Érintés v 20 m",
+   "leiras": "Lappangás ideje: Lassú lefolyású\nA varázslattal Tüdősorvadás betegség okozható ha a kiszemelt áldozat elvéti a fertőzés elleni Egészségpróbáját.\nA betegség a tüdő térfogatát csökkenti, miáltal az izmok és az agy levegőellátása jelentősen csökkenni fog.\nSúlyosságtól függően Állóképesség-csökkenést, heveny légszomjat, szédülést, véres köhögést idéz elő, s Halálos stádiumba érve az áldozat egyszerűen megfullad.\nA Tüdősorvadás frissen tépett kender, vérfű és boróka forrázatának inhalálásával orvosolható. Ez utóbbi gyógymód +3-at ad az Egészségpróbára."
+ },
+ {
+   "tipus": "Átok",
+   "nev": "Vakságokozás",
+   "mp": 15,
+   "emp": 15,
+   "hatotav": "Érintés v 20 m",
+   "leiras": "Lappangás ideje: Közepes lefolyású\nA varázslat olyan mágikus természetű kórokozót juttat az áldozat szervezetébe, amely - ha az illető elvétette Egészség-próbáját - megbénítja a látóidegeket.\nSúlyosságától függően az Érzékelés Tulajdonság csökkenését, homályos látást, a szemre ereszkedő hályogot idéz elő.\nHa a Rontás eléri a Válságos stádiumot, az áldozat időlegesen megvakul, s csak akkor nyeri vissza újból a szeme világát, ha a betegség meggyógyul, vagy súlyossága a Válságos kategória alá csökken.\nA Válságos állapotig a gyógyulás nadragulya kenőcs alkalmazásával lassan visszafordítható (+6 az Egészségpróbára)."
+ },
+ {
+   "tipus": "Átok",
+   "nev": "Végtagsorvasztás",
+   "mp": 15,
+   "emp": 15,
+   "hatotav": "Érintés v 20 m",
+   "leiras": "Lappangás ideje: Azonnali hatású\nA varázslat hatására olyan kórokozó kerül az áldozat szervezetébe, mely az Egészségpróba elvétése esetén az illető egyik végtagjában izomsorvadást idéz elő.\nA végtagot a boszorkánymester választhatja ki - de csak valamelyik kar vagy láb lehet.\nA beteget azon végtagjával végzett cselekvésénél Erő, Gyorsaság és Ügyesség negatívumok sújtják az adott súlyossági foknak megfelelően.\nHa a beteg állapota eléri a Válságos stádiumot, a végtag izmai véglegesen elsorvadnak, miáltal az teljesen használhatatlanná, bénává válik."
+ },
+ {
+   "tipus": "Átok",
+   "nev": "Vérdermesztés",
+   "mp": 10,
+   "emp": 10,
+   "hatotav": "Érintés v 20 m",
+   "leiras": "Lappangás ideje: Gyors lefolyású\nA boszorkány mester ezzel a varázslattal megalvaszthatja a vért az erekben, vagy azon kívül.\nKét alkalmazása lehetséges, az egyik a boszorkánymesterre, a másik egy áldozatra használható.\nA boszorkánymester  ha a varázslatot saját magára használja sokkal gyorsabban forrasztja be friss sebeit, mert a vér az erekből kilépve szinte azonnal megalvad, s nem okoz több vérveszteséget\nEnnek következtében minden, a varázslat létrehozása előtt és a rákövetkező 10 percben elszenvedett éles vagy hegyes fegyver okozta sebe ötszörös sebességgel gyógyul.\nA másik alkalmazáskor az áldozat vére már az erekben alvadni kezd, s a súlyosságnak megfelelő negatív Tulajdonságmódosítót szenved el.\nHa Álló-képessége vagy Intelligenciája 0-ra csökken, a vér áramlása teljesen leáll a szervezetben."
+ },
+ {
+   "tipus": "Átok",
+   "nev": "Vérzékenység",
+   "mp": 20,
+   "emp": 20,
+   "hatotav": "Érintés v 20 m",
+   "leiras": "Lappangás ideje: Lassú lefolyású\nA varázslat okozta betegség a véralvadás képességét gátolja meg az áldozat szervezetében  természetesen csak akkor, ha az illető a fertőzés elleni Egészségpróbát elvétette.\nHatására, ha az áldozat éles vagy hegyes fegyver ejtette sebet kap, az el nem álló vérzés következtében percenként annyi Fp-t veszít, amennyit a fegyver sebzése okozott.\nHa Fp-i elfogynak, elájul. A vérzés sikeres Egészségpróba esetén magától eláll, ellenkező esetben Fp-i elfogytával a sebződés Életerő pontjaiból vonódik le.\nA próbát minden eltelt perc után meg lehet ismételni.A vérzés egyébként csak sikeres Orvosláspróbával, vagy herbaiista által készített körömvirágkenőccsel állítható el.\nEzzel az adott Fp-vesztés is véget ér, ám a betegség nem múlik el: a következő seb újabb bonyodalmat okoz.\nSokkal veszedelmesebbek a zúzófegyverek okozta Ép-sebzések, mert ezek minden esetben belső vérzéssel járnak.\nIlyen esetben az áldozat percenként a súlyossági foknak megfelelő Fp-t veszít. Fp-i elfogytával a sebződés Életerő pontjaiból vonódik le.\nAz efféle vérzés csak Szakrális mágiával, vagy -4 módosítóval megdobott sikeres Orvoslás képzettségpróbával állítható el."
+ },
+ {
+   "tipus": "Átok",
+   "nev": "Veszettség",
+   "mp": 15,
+   "emp": 15,
+   "hatotav": "Érintés v 20 m",
+   "leiras": "Lappangás ideje: Lassú lefolyású\nA varázslat az állatok által terjesztett Veszettséget plántálja az áldozat szervezetébe.\nA betegség a lefolyási idő elteltéig észrevétlen marad, lappang.\nUtána az izmok görcsösebbé válnak, a száj szélén fehér hab jelenik meg, az áldozat pedig egyre szomjasabb és vadabb lesz.\nA súlyossági foktól függően csupán hordozó lesz, vagy hetente rohamokban jön rá az őrjöngés, a Válságos stádiumot elérve azonban megtámad minden körülötte fellelhető élőlényt, de nem fegyverrel vagy mágiával, hanem foggal, körömmel.\nA megsebzett lényeknek Egészségpróbát kell dobniuk, különben ők is elkapják a veszettséget.\nA beteg állapota magától soha nem javul, s ha eléri a Halálos fokozatot, az áldozat menthetetlenül elpusztul."
+ },
+ {
+   "tipus": "Átok",
+   "nev": "Vörös halál",
+   "mp": 60,
+   "emp": 60,
+   "hatotav": "Érintés v 20 m",
+   "leiras": "Lappangás ideje: Azonnali hatásúEz a varázslat az egyik leghalálosabb betegség okozója. A Vörös halál keringési rendszert károsító, biztosan halálos betegség. Hatására az áldozatok bőre elvékonyodik, áttetszővé válik, majd a következő körben a lény elkezd pórusain át vérezni, ami teljes elvérzéshez, halálhoz vezet. A vérzés alatt az áldozat körönként lk6 Ép-t veszít, s nullára érve meghal. A beteg állapota magától soha nem javul vagy romlik, a betegség lefolyása minden esetben halálos kimenetelű."
+ },
+ {
+   "tipus": "Betegségmágia",
+   "nev": "Betegség azonosítása",
+   "mp": 4,
+   "emp": 0,
+   "idoigeny": "1 perc",
+   "hatotav": "Érintés",
+   "idotartam": "Egyszeri",
+   "leiras": "Ezzel a varázslattal a boszorkánymesternek lehetősége nyílik minden fontos információt megtudni egy betegségről.\nA varázslat megidézése után ismerni fogja a lefolyás súlyosságát, a betegség pontos hatásait, terjedésének körülményeit.\nA gyógyítás módjáról természetesen csak akkor lesznek elképzelései, ha ismeri a betegség lehetséges ellenszereit, vagy mágiához folyamodik.\nA varázslat felismeri a Boszorkánymesteri mágia eredményeként megjelent kórokat is  az azonosító tehát minden efféle esetben tudni fogja, hogy a beteg boszorkánymesteri mágiának esett áldozatul."
+ },
+ {
+   "tipus": "Betegségmágia",
+   "nev": "Betegésg befolyásolása",
+   "mp": 6,
+   "emp": 6,
+   "idoigeny": "1 kör",
+   "hatotav": "Érintés",
+   "idotartam": "Végleges",
+   "leiras": "A varázslat hatására a boszorkánymester vagy megbolygatja a szervezet életenergia-áramlását, és megzavarja az immunrendszert\n(ezzel elősegítve, hogy a betegség kiteljesedhessen és még nagyobb pusztítást vigyen végbe az áldozat testén), vagy időlegesen többlet életerőt juttat az áldozat szervezetébe, hogy könnyebben leküzdhesse a kórt.\nA rontás hasznát kár lenne ecsetelni: kellő gonoszsággal és Mana ponttal egy egyszerű meghűlés is halálos kórrá válhat, a varázslat jótékony változata azonban még a boszorkánymester számára is veszélyeket rejteget.\nMivel mágiája híján van a gyógyító formuláknak, ezért egyetlen módon tud segíteni a szerencsétlenül járt lényen,\nsaját Életerő pontjaiból időlegesen annyit ad át az áldozatnak, amennyivel a betegség súlyosságát csökkenteni akarja.\nA mágia bevégeztével az Ép-k azonnal visszatérnek, kivéve, ha a boszorkánymestert megzavarják a varázslás közben\n(Fp- vagy Ép-sérülést szenved). Ilyenkor ugyanis nemcsak a felhasznált Mana és Életerő pontok vésznek el, hanem az alkalmazónak Egészségpróbát kell tennie a betegség ellen, s ha elvéti, maga is fertőzött lesz.\nÉrthető tehát, hogy a boszorkánymesterek milyen körültekintéssel járnak el, ha mégis az áldozat megsegítésére szánják magukat.\nA varázslat Mana pont igénye attól függ, hány kategóriával kívánja a boszorkánymester megváltoztatni a betegség lefolyásának súlyosságát.\nMinden egyes E egyet javít, vagy egyet ront a kór állapotán.\nAmennyiben a varázslat hatására a beteg stádiuma Enyhe lefolyású alá csökken, a kór sikeresen kiűzetett a szervezetből.\nHa a súlyosság szintje a varázslat hatására a Biztosan halálos szintre emelkedik, az áldozat azonnal életét veszti, persze csak akkor, ha erre a betegség esetében reális esély van.\n(A Rútság rontás nem okozhat halált, míg egy egyszerű megfázásnál például tüdőgyulladás léphet fel szövődményként)."
+ },
+ {
+   "tipus": "Betegségmágia",
+   "nev": "Betegség átadása",
+   "mp": 22,
+   "emp": 0,
+   "idoigeny": "1 sz",
+   "hatotav": "Érintés",
+   "idotartam": "Végleges",
+   "leiras": "Ez a mágia remekül példázza a boszorkánymesterek életfelfogását: „ha lehet, akkor inkább valaki más dögöljön meg helyettem”.\nA varázslat segítségével (akárcsak a Méreg átadá-sánál) érintése nyomán megszabadul az őt kínzó kórságtól egy idegen kárára - s ha az történetesen valamely ellenfele, úgy megoldotta a leszámolást is.\nA mágia alkalmazásakor semmi egyéb nem történik, minthogy a boszorkánymester áthelyezi a szervezetében jelenlévő betegséget.\nA varázslat alkalmazásához mindenképpen kell egy élőlény, aki a kór további hordozója lesz. Az áldozat megfelelő módosítókkal Egészségpróbát tehet a betegség legyőzésére.\nAmennyiben a próba sikeres, a kór eljutott ugyan a kiszemelt áldozat szervezetébe, de ott nem tudott megtelepedni, megsemmisült.\nHa az Egészségpróba sikertelen, a betegséget legfeljebb egy képzett herbaiista, orvos, vagy mágia állíthatja meg."
+ },
+ {
+   "tipus": "Méregmágia",
+   "nev": "Méregismeret",
+   "mp": 3,
+   "emp": 0,
+   "idoigeny": "1 kör",
+   "hatotav": "Érintés",
+   "idotartam": "Egyszeri",
+   "leiras": "A boszorkány mester bal keze mutatóujjának hegyét kell a méreghez, vagy a vizsgálandó személyhez, ételhez, italba stb. érintenie.\nSegítségével bármilyen mérget azonosítani tud, tisztában lesz leghatékonyabb felhasználási módjával, pontos hatásával és szintjével is.\nEgyszerre egyféle méreg vizsgálható, a vizsgálat 1 kört vesz igénybe, s amíg csak a bal mutatóujja ér a méreghez, nem fog megfertőződni tőle."
+ },
+ {
+   "tipus": "Méregmágia",
+   "nev": "Méregvarázs",
+   "mp": 3,
+   "emp": 3,
+   "idoigeny": "1 kör",
+   "hatotav": "Érintés",
+   "idotartam": "Maradandó",
+   "leiras": "A varázslat segítségével a boszorkánymester bármilyen folyadékot mérgező tulajdonságokkal ruházhat fel.\nA folyadék íze, színe, szaga nem fog megváltozni, így a Méregkeverés képzettség is hatástalan az efféle matéria felderítésére avagy azonosítására, ám a hatásból már következtethet az ellenszerre.\nEgy varázslattal több adag méreg is készíthető, ebben az esetben természetesen a Mana pontok többszörözése szükséges.\nA több komponensű mérgek egyes komponenseit külön-külön kell elkészíteni.\nHa a mérget valamilyen folyadékba vagy ételbe keverik, akkor a méreg arányosan akkora erősségű lesz, amennyi mérget az áldozat elfogyasztott,\ntehát a méreg minden elfogyasztott adagja után a méreg szintje 1-gyel erősebbnek számít, míg ha az áldozat egy adagnál kevesebbet fogyaszt el, akkor arányosan kevesebb. 0. szint alatt a méreg semmilyen hatást nem fejt ki.\nA varázslattal készített méreg, hatásai és képességei a következő módon állapíthatóak meg: a Méregvarázs minden egyes E-je után a boszorkánymester a Méregkeverés képzettségnél\n(lásd a 154. oldalon) leírtaknak megfelelő egy Ismeret pontot kap, és ebből állíthatja össze az általa létrehozni kívánt mérget.\nA varázslat természetesen nem juttatja az áldozat szervezetébe a mérget, ahhoz más eszközöket, netán varázslatot kell alkalmazni.\nA létrehozott méreg mindig a boszorkánymester bal mutató-ujjából szivárog elő, s egy körig, legyen bármiféle is, nem fejti ki hatását a boszorkánymesterre;ennyi idő alatt kell biztonságosan megszabadulnia tőle, vagy elraktároznia valami módon. "
+ },
+ {
+   "tipus": "Méregmágia",
+   "nev": "Méreg semlegesítése",
+   "mp": 5,
+   "emp": 5,
+   "idoigeny": "1 kör",
+   "hatotav": "Érintés",
+   "idotartam": "Maradandó",
+   "leiras": "A boszorkánymester a varázslattal bármilyen mérget semlegesíthet a kiválasztott lény szervezetében.\nA méreg addig kiváltott hatásait a semlegesítés nem fogja megszüntetni, ehhez gyógyító mágiára, vagy természetes gyógyulásra van szükség, de a további hatás azonnal felfüggeszthető.\nSemlegesítés esetén a hatás nem, csupán a méreg szintje a mérvadó.\nMinden egyes méregszint semlegesítése 5 Mp-ba kerül az alap Erősítéshez (0. szintű méreg ellen) szükséges 5 Mp-on felül.\nA varázslat csak akkor hat, ha a semlegesítés szintje egyenlő vagy magasabb, mint a méreg szintje.\nEllenkező esetben a hatás elmarad.\nA Varázslás idő leteltével az áldozat teste megvonaglik, homlokára veríték ül ki, arca elfehéredik és görcsösen öklendezi föl a véréből és testnedvei közül kicsapódó és gyomrába gyűlő mérget, mely immáron minden káros hatását elveszítette.\nAz erőssítés a méreg szintjét növeli."
+ },
+ {
+   "tipus": "Méregmágia",
+   "nev": "Méreg átadása",
+   "mp": 22,
+   "emp": 0,
+   "idoigeny": "1 sz",
+   "hatotav": "Érintés",
+   "idotartam": "Végleges",
+   "leiras": "A boszorkánymester bal tenyere a varázslat elmormolása után izzadni kezd, és apró verejtékcseppek jelennek meg rajta.\nHa képes áldozata bőrfélületét teljes tenyérrel megérinteni, a testében felgyülemlett méreg (akárha kontaktméreg lenne) egy töredékmásodperc alatt átáramlik az áldozat testébe.\nAz érintés helyén még egy percen keresztül vörhenyes kiütések rajzolják ki a boszorkánymester keze nyomát.\nA varázslat a méreg addigi hatásait természetesen nem semlegesíti, az áldozatban azonban a méreg minden tekintetben úgy fog működni, mint a boszorkánymester szervezetében.\nAmennyiben egy méreg hatása egyszeri volt (például azonnali Fp-vesztés), a varázslatot a mérgezést követő 10 körön belül érdemes alkalmazni, utána ugyanis a szervezet semlegesíti az ártalmas anyagot.\nHa a méreg hatása görcs, bénulás vagy hasonló állapot előidézése volt, a varázslat alkalmazásával a hatás a boszorkánymesteren azonnal megszűnik, az áldozat testébe pedig teljes értékű méreg kerül.\nHa a boszorkánymester megmérgezésekor sikeres Egészségpróbát dobott, tehát a méreg rajta nem fejtette ki hatását, még 10 körön át elegendő mennyiségben áll rendelkezésre a szervezetben ahhoz, hogy a varázslat alkalmazható legyen.\nA 10. kör leteltével a méreg lebomlik, és nem adható tovább. Az áldozat ellenállhat a varázslatnak, sikeres Egészségpróbával. A próba módosítójának meghatározásakor mindig a méreg szintje a mérvadó."
+ },
+ {
+   "tipus": "Méregmágia",
+   "nev": "Átokvarázs",
+   "mp": -1,
+   "emp": -1,
+   "idoigeny": "4 sz",
+   "hatotav": "Hallótávolság",
+   "idotartam": "1 hónap",
+   "me": "Asztrális",
+   "leiras": "A varázslat segítségével a legkülönbözőbb átkok szórhatok a kiszemelt áldozatra.\nA boszorkánymesterek átkai testi gyengeséget okoznak;használatukkal bármelyik Tulajdonság csökkenthető, a maximális Fp-k mennyisége változtatható, vagy lehet gyengeséget előidézni, mely által az áldozat harc- értékei fogyatkoznak meg.\nAz átok Mana pont igényéről a következő táblázat tudósít:",
+   "tablazatok": ["Átok természete\\tMp-igény\n\\tKépesség csökkenés\\t6 Mp/képesség-pont\nMax. Fp csökkenés\\t4 Mp / 1 Fp\nGyengeség\\t2 Mp / 1 TÉ, VÉ\n"],
+   "specialis": "A hatás nem azonnal teljesedik ki, hanem napról-napra egy fokozattal romlik (tehát minden egyes nappal 1-gyel csökken a Tulajdonság, 2-vel a max. Fp, 4-gyel a harcértékek) egészen a varázslat kiteljesedéséig,\nmajd egy egész holdhónapig ül az áldozaton, s csak utána foszlik szét. Két azonos természetű átok módosítói nem adódnak össze, hanem csak az erősebb hatása érvényesül.\nAz átok Erőssége egyenlő befektetett Mana pont mennyiségével.\nTehát egy 36 Mana pontos átok 6 ponttal csökkent egy Tulajdonságot vagy 9 ponttal a maximális Fp-t vagy 18-cal az áldozat Támadó és Védő értékét, az Erőssége pedig 36 lesz.\nHa a boszorkánymester a halálán van, Mana pont feláldozása nélkül - vagy Mana pontok hiányában - is elmondhat egy átkot.\nEz esetben az átok mindig a lehető legnagyobb E-vel jön létre, s elemészti a boszorkánymester minden maradék Mana pontját és életerejét.\n\n1 Fp = 1 Mp, 1 TSZ = 3 Mp, 1 Ép = 5 Mp\n\nAz ilyen átok nem egy hónapig, hanem addig ül a meg-átkozott személyen, míg mágiával el nem oszlatják (Szakrális, vagy boszorkány mesteri Átokűzéssel, esetleg varázslói Destrukcióval) - így akár egy életre is megkeserítheti az áldozat mindennapjait.\nElőfordul azonban, hogy a boszorkánymester halálakor nem a fentebb taglalt levonásokkal bünteti meg ellenfelét, hanem olyan átkot mond rá, hogy az valóban gyilkosa hátralévő életének minden pillanatát megkeserítse.\nA lehetőségeknek csak a boszorkánymester fantáziája és elvetemültsége szab határt, az Erősségtől függően a KM belátására van bízva, milyen módon fogan meg az átok."
+ },
+ {
+   "tipus": "Méregmágia",
+   "nev": "Átokfejtés",
+   "mp": 10,
+   "emp": 0,
+   "idoigeny": "10 kör",
+   "hatotav": "Érintés",
+   "idotartam": "1 személy vizsgálata",
+   "leiras": "A varázslat más boszorkánymesterek átkainak felfedésére, mibenlétük kiderítésére szolgál.\nSegítségével kifürkészhető az átkot szóró neve, valamint nyilvánvalóvá lesz az átok valódi természete, erőssége és az átok teljes szövege is.\nAzonban csak boszorkánymesterek átkai fedhetők fel általa, a boszorkányok és papok átkairól semmit sem árul el.\nAlkalmazása szinte elengedhetetlen feltétele az Átokűzés varázslatnak, hisz a boszorkánymester csak így tudhatja meg pontosan, mivel is kell szembenéznie."
+ },
+ {
+   "tipus": "Méregmágia",
+   "nev": "Átokűzés",
+   "mp": 1,
+   "emp": 1,
+   "idoigeny": "10 kör",
+   "hatotav": "Érintés",
+   "idotartam": "Maradandó",
+   "leiras": "E varázs sokszor az egyetlen megoldás az átkok eltávolí-tására, segítségével azonban csak boszorkánymesteri átkok távolíthatók el.\nElengedhetetlen előfeltétele, hogy a boszorkánymester ismerje az átok pontos szövegét (ennek hiányában, vagy akár egyetlen szó elvétése esetén is csődöt mond a varázslat és az átok az áldozat helyett a boszorkánymesterre száll).\nErre akár az áldozat is emlékezhet, vagy megtudhatja Átokfejtés használatával.\nA boszorkánymester - mivel mágiája alapvetően a pusztítást, mintsem az építést szolgálja - önmagában képtelen felszabadítani az áldozatot a rontó hatás alól, ehhez egy másik, állatinál fejlettebb értelmes élőlényre van szüksége, akire átruházza az átkot.\nJobb kezével az átkozott személyt, ballal a leendő áldozatot kell megérintenie, s közben visszafelé előcitálnia az átok szövegét - ehhez sikeres Intellígendapróbára van szükség, vétés esetén a fent felsorolt hátrányok sújtják a boszorkánymestert.\nAz űzéshez legalább annyi Mana pontot kell elhasználnia, hogy erőssége meghaladja az átok erősségét. A varázslattal csak boszorkánymesterek átkai távolíthatóak el, papoké és boszorkányoké nem.\nEgy boszorkánymester azonnal megérzi, ha átkát egy másik lénybe plántálták."
+ },
+ {
+   "tipus": "Természeti mágia",
+   "nev": "Tenger felkorbácsolása",
+   "mp": 4,
+   "emp": 4,
+   "leiras": "A varázslat csak nagyobb vízfelületeken, tavon és tengeren, nagyobb folyamokon használható. 10-es Erősség mellett a varázslat hatására heves szél támad, a víz viharossá válik, sós permet szitál, a haragvó tenger tarajos hullámokat vet.\nA feltornyosuló víztömeg felborítja, vagy összetöri az 5 yne- vi lábnál rövidebb csónakokat, megrongálja a kikötőben veszteglő hajókat, és komoly megpróbáltatást jelent még a mélymerülésű hadihajók számára is.\nA hajózást teljesen lehetetlenné és életveszélyessé teszi.\nA vihar 1 ynevi mérföld sugarú körön belül tombol, átvészeléséhez legalább 4. fokú Hajózás képzettség szükséges, míg a vízbe került áldozatoknak csak legalább 4. fokú Úszás képzettséggel van esélyük a túlélésre.\n15-ös Erősség mellett akár örvény is képezhető. A hatalmas (50 ynevi láb átmérőjű víztölcsér) mélybe rántja a 10 ynevi lábnál rövidebb hajókat-csónakokat, vízbe kerülő embereket, állatokat.\nA legalább 4. fokon úszni tudó emberek körönként sikeres Állóképesség-próbát kell, hogy dobjanak,\nellenkező esetben 5 ynevi lábbal közelebb kerülnek az örvény közepéhez, s ha azt elérik, sorsuk megpecsételődött.\nAz örvény elmúltával a tenger újra kisimul, s a felszínre okádja mindazt, amit korábban oly mohón emésztett el: holttesteket, törmelékfát, szétzúzott hajódeszkákat.\n20-as Erősség esetén a varázslat szökőárat idéz elő.\nA víz lassú hullámokat vet, amelyek vészes sebességgel nő-nek egyre hatalmasabbra, majd szinte a semmiből szökőár emelkedik húsz ynevi lábbal a vízszint fölé, és elemi erővel árasztja el a partokat vagy a hajót.\nErősségétől függően csó-nakokat, hajókat boríthat fél vagy medréből kiöntve kikötőket, falvakat söpörhet el.\nIszonytató dühe azonban ezután sem csillapodik, háromszor sújt végig a területen haragos fekete hullámtaréjaival, a víz levonultával tócsákat, sártengert, s elsősorban romokat hagyva hátra.?"
+ },
+ {
+   "tipus": "Természeti mágia",
+   "nev": "Jégverés",
+   "mp": 5,
+   "emp": 5,
+   "leiras": "A varázslattal a boszorkánymester vad jégesőt idézhet. Ennek feltétele, hogy a látótávolságban legalább minimális mennyiségben, de akadjanak esőfelhők.\nA varázslat hatására a felhő óriásira duzzad, és haragosfekete színt ölt, elemészteni látszik a láthatárt.\nA varázslatot négy, félelmetes hangú mennydörgés, négy égből lecsapó villám kíséri.\n10-es Erősség esetén az első dörgésre a levegő hirtelen párás és fülledt lesz, a másodikra az eső lassan szemerkélni kezd.\nHeves szél kerekedik, majd a harmadik villámlásra nagy cseppekben záporozni kezd az eső, s néhány perc múlva, az utolsó villámsújtásra,\nmely a jégvihar epicentrumát jelöli ki, már diónyi jégdarabok hullnak az égből.\nA termést, a jószágot elveri, a házak tetejét megrongálja, az utakra ujjnyi vastag hófehér jégréteget von, meghiúsítva az utazást, a vizeken pedig életveszélyessé teszi a hajózást.\nA vihar eloszlásával újból kitisztul az ég."
+ },
+ {
+   "tipus": "Természeti mágia",
+   "nev": "Szélirányítás",
+   "mp": 3,
+   "emp": 3,
+   "leiras": "A varázslattal a szél sebessége, iránya változtatható meg.\nA varázslat feltétele, hogy az érintett területen legyen legalább minimális légmozgás.\nAz irány egy perc alatt maximum kilencven fokkal, a sebesség 2 ynevi niéríöld/órával változtatható akár pozitív, akár negatív irányban.\nA változtatásokra a varázslat megidézőjének folyamatosan koncentrálnia kell.\n10-es Erősség esetén a gyenge fuvallat váratlanul erősödni kezd, majd hihetetlen sebességgel csap át orkánerejű széllé.\nFalhoz csapja a spalettákat, betöri az ablakokat, a rozogább pajták, istállók tetejét letépi, az emberek alig tudnak talpon maradni, a hajók vitorláit tépik-szaggatják a váltakozó irányú széllökések.\nHa nem vonják be a vitorlákat azonnal, csak a nagy óceánjárók, vagy nehéz hadihajók szegülhetnek ellen haragjának.\nAz embereket így is lesodorja a fedélzetről, a vitorlázatba ijedten kapaszkodó tengerészek közül is sokan rongybabaként zuhannak az óceánba.\n15-ös Erősség esetén sivatagos, homokos területen a szélirányítással homokvihart kavarhat a boszorkánymester A homokvihar sújtotta területen az aranyszín szemcsék kavargásba kezdenek,\na dűnék között váratlanul sivatagi szél kerekedik, ami egyre több port kavar föl, s pár percen belül az egész látóhatárt beteríti a fakóbarna homokfüggöny, majd hangos robajjal zúdul a védtelen áldozatokra.\nA sivítva száguldó homok (hacsak nem védekeznek ellene) eltömíti az orrot, szájat, éles szúrással kezdi ki a bőrt, betemeti áldozatait,\nnemritkán csontig marja a húst bőrükről, hogy elvonultával csak hófehér, simára koptatott mementójukat hagyja hátra.\n20-as Erősség esetén a varázslat valóságos tornádót kavar.\nAz égbe nyúló széltölcsér a 100 ynevi fontnál könnyebb tárgyakat és élőlényeket játszi könnyedséggel a levegőbe emeli és elragadja, házak tetejét sodorja el.\nPorral telített, szürke, pusztító örvényként söpör végig a tájon.\nSzédületes tempóval halad, másodpercenként, majd 30 ynevi láb távolságot tesz meg, ami több mint 100 ynevi mérföld/órás sebességnek felel meg, így gyakorlatilag lehetetlen elmenekülni előle.\nAzonban haladási irányát körönként változtatja.\nEnnek eldöntésére a KM dob k6-tal: 1-nél visszafordul, 2-nél helyben marad, 3-nál balra, 4-nél jobbra fordul és 5-6-nál halad tovább egyenesen."
+ },
+ {
+   "tipus": "Természeti mágia",
+   "nev": "Földmozgás",
+   "mp": 5,
+   "emp": 5,
+   "leiras": "A varázslat kisebb földrengést idéz elő. 10-es Erősség esetén a föld remegni kezd, a házakban felborulnak a vázák, a képek leesnek a falról, majd megvonaglik a talaj.\nA földmozgások nem túl hevesek, de az ingatag épületek így is összeomlanak, a korhadt fák tövestül kicsavarodnak, a kövezet fclrepedezik, a padlások beomlanak.\nMeredek lejtőjű, hófödte hegyek között a varázslat lavinát is elindíthat.\nKőgörgetegek záporoznak alá, szakadékok nyílnak meg, a hegygerinc felől pedig morajló hang tör föl,\nmajd repedés hasad végig, s a hegyoldal 1 mérföldes sávjában több ezer mázsányi hó indul meg a völgy felé, útjában erdőket söpörve el, sziklákat forgatva ki, és sodorva maga előtt.\nA lezúduló lavina 10k6 Sp-t sebez mindenkin, aki az útjába kerül.\nÁldozatait 80%-ban betemeti, miáltal komoly esélyük támad arra, hogy megfagyjanak vagy megfulladjanak.\nA hó börtönében annyiszor fél óráig maradhatnak életben, amennyi az Egészség Tulajdonságuk."
+ },
+ {
+   "tipus": "Asztrál-mentál mágia",
+   "nev": "Láthatatlanság felfedezése",
+   "mp": 1,
+   "emp": 1,
+   "idoigeny": "1 sz",
+   "hatotav": "20 m",
+   "idotartam": "1 perc/szint",
+   "me": "Mentális",
+   "leiras": "Ez a varázslat a láthatatlan személy gondolatainak forrását kutatja, s ennek segítségével teszi ismertté annak helyét.\nA gondolatok közül az illető külseje is kiolvasásra kerül, s a boszorkánymester tulajdonképpen csak egy, a saját elméje által a láthatatlan lény helyére vetített képet lát.\nA láthatatlanság ezúton történő leleplezésével egyszerre csak egyetlen személy pillantható meg.\nHa a láthatatlan lény Mentális Mágiaellenállása sikeres, továbbra is láthatatlan marad."
+ },
+ {
+   "tipus": "Asztrál-mentál mágia",
+   "nev": "Sötétté gyalázás",
+   "mp": 3,
+   "emp": 3,
+   "idoigeny": "1 sz/E",
+   "hatotav": "Érintés",
+   "idotartam": "1 nap/szint",
+   "me": "Asztrális és Mentális",
+   "leiras": "A boszorkánymester ezzel a varázslattal a legtisztább szívű teremtményt is a gonosz feltétlen szolgájává teheti.\nHa az áldozat mindkét Mágiaellenállása sikertelen, gondolatai eltorzulnak, értékrendje teljes átalakuláson esik át.\nMinden gonosz szándék lelkes hívévé válik, s feltétlen engedelmességgel fog adózni minden olyan gonosz kreatúrának, akit önmagánál hatalmasabbnak ismer meg, vagy amelyik bebizonyítja ezt számára.\nSemmilyen képessége nem szenved csorbát, de a másik oldal szolgálatában fogja kamatoztatni őket, legyen az harc- vagy mágiahasználat."
+ },
+ {
+   "tipus": "Asztrál-mentál mágia",
+   "nev": "Gyilokvágy",
+   "mp": 5,
+   "emp": 5,
+   "idoigeny": "1 sz/E",
+   "hatotav": "20 m",
+   "idotartam": "1 kör/szint",
+   "me": "Asztrális",
+   "leiras": "A boszorkánymester a varázslattal őrjöngő gyilkolási vágyat olthat áldozatának leikébe.\nHa az elvéti Asztrális Mágiaellen-állását, még a legbékésebb és legjámborabb ember is a mesterségesen gerjesztett érzelmek játékszerévé válik.\nA varázslat hatása alatt álló személy válogatás nélkül, minden körülötte fellelhető élőlényt megpróbál a lehető leghatékonyabb,\nlegkegyetlenebb módon elpusztítani - olyan eszeveszett erővel küzd, mintha démonok szállták volna meg (KÉ: +10, TÉ +30, VÉ: -40;+2 Erő).\nSebezhetetlennek érzi magát, a gyilkolás szinte fizikai gyö-nyört okoz számára, mely még mélyebbre lovallja a őrjöngésébe. Fp-i elfogytával nem veszíti el eszméletét, az utolsó Ép-ig harcol.\nHa a varázslat kiteljesedésekor egyetlen élőlény sem tartózkodik közelében, és elrontja az Akaraterőpróbáját, még saját magában is megpróbál kárt tenni.\nTombolása végeztével annyi körig érvényesek rá a Kábultság módosítói, ameddig a varázslat tartott."
+ },
+ {
+   "tipus": "Asztrál-mentál mágia",
+   "nev": "Orgyilkosság",
+   "mp": 4,
+   "emp": 4,
+   "idoigeny": "1 sz/E",
+   "hatotav": "Érintés",
+   "idotartam": "Lásd leírás",
+   "me": "Mentális",
+   "leiras": "A boszorkánymester a varázslattal gyilkos szándékot ültethet a varázslat alanyának leikébe.\nHa az elvéti Mentális Mágiaellenállását, a szándék befészkeli magát a tudata mélyére.\nA boszorkánymesternek a varázsigék elmormolásakor koncentrálnia kell, és elméjében felidézni a gyilkosság áldozatának arcát és nevét.\nA varázslat hatása alatt álló, kiszemelt gyilkos szintén látja az arcot, a vonások mindörökre bevésődnek emlékezetébe.\nEttől a ponttól fogva a varázslat két módon használható.\nAz első módszer alkalmazásával a gyilkosnak mániájává válik az áldozat meggyilkolása.\nRafináltabbnál rafináltabb terveket készít, minden információt megszerez célpontjáról. Ezek után sort kerít a kivitelezésre.\nSemmi nem állíthatja meg, mindenképpen megpróbálja megölni a számára kijelölt lényt, még saját élete árán is.\nPersze ez nem jelenti azt, hogy feleslegesen lemészároltatná magát a testőrökkel, katonákkal.\nA másik módszer esetén a gyilkosban nem tudatosul, ki a boszorkánymester varázslatának célja - tán a természetéről sem szerez tudomást.\nBizonyára hamarosan el is felejti az eseményt.\nA tudata mélyén megbúvó gyilkos szándék csak akkor lángol fél benne, mikor megpillantja az áldozatot.\nEkkor, a körülményektől függően, vagy azonnal megtámadja, vagy ettől kezdve az első módszernél leírtak szerint jár el.\nA varázslat csak a kijelölt áldozat halálakor, vagy semlegesítő mágia hatására szűnik meg."
+ }
+]

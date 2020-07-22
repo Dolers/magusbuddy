@@ -50,6 +50,9 @@ public class BardMagicEntity {
     @ColumnInfo(name = "emp")
     private Integer _emp;
 
+    @ColumnInfo(name = "magicresistance")
+    private String _magicResistance;
+
     @ColumnInfo(name = "durationtime")
     private String _durationTime;
 
@@ -62,14 +65,12 @@ public class BardMagicEntity {
     @ColumnInfo(name = "description")
     private String _description;
 
-    @ColumnInfo(name = "magicresistance")
-    private String _magicResistance;
-
-    public BardMagicEntity(String name, TypeEnum type, Integer mp, Integer emp, String durationTime, String range, String castTime, String description) {
+    public BardMagicEntity(String name, TypeEnum type, Integer mp, Integer emp, String magicResistance, String durationTime, String range, String castTime, String description) {
         _name = name;
         _type = type;
         _mp = mp;
         _emp = emp;
+        _magicResistance = magicResistance;
         _durationTime = durationTime;
         _range = range;
         _castTime = castTime;
@@ -112,6 +113,14 @@ public class BardMagicEntity {
 
     public void setEmp(Integer eMp) {_emp = eMp; }
 
+    public String getMagicResistance() {
+        return _magicResistance;
+    }
+
+    public void setMagicResistance(String magicResistance) {
+        _magicResistance = magicResistance;
+    }
+
     public String getDurationTime() {
         return _durationTime;
     }
@@ -142,13 +151,5 @@ public class BardMagicEntity {
 
     public void setDescription(String description) {
         _description = description;
-    }
-
-    public String getMagicResistance() {
-        return _magicResistance;
-    }
-
-    public void setMagicResistance(String magicResistance) {
-        _magicResistance = magicResistance;
     }
 }

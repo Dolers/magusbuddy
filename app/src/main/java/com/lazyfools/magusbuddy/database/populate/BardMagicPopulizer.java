@@ -18,6 +18,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 import static com.lazyfools.magusbuddy.database.Converters.BardMagicTypeToInt;
+import static com.lazyfools.magusbuddy.utility.JSONUtility.parseStringWithDefault;
 
 public class BardMagicPopulizer implements Populizer{
     private final BardMagicDao _dao;
@@ -63,31 +64,22 @@ public class BardMagicPopulizer implements Populizer{
             for (int i = 0; i< qualificationsJson.length();i++) {
                 JSONObject qJson = (JSONObject)qualificationsJson.get(i);
                 Log.i("AppDatabase", "bárdmágia: "+i+" név: "+qJson.getString("nev"));
-                BardMagicEntity entity = new BardMagicEntity(
+                entities[i] = new BardMagicEntity(
                         qJson.getString("nev"),
                         BardMagicEntity.TypeEnum.enumOf(qJson.getString("tipus")),
                         qJson.getInt("mp"),
                         qJson.getInt("emp"),
+                        parseStringWithDefault(qJson, "me"),
                         qJson.getString("idotartam"),
                         qJson.getString("hatotav"),
                         qJson.getString("idoigeny"),
                         qJson.getString("leiras")
                 );
-
-                parseMagicResistance(qJson, entity);
-
-                entities[i] = entity;
             }
         } catch (JSONException e) {
             e.printStackTrace();
         }
 
         return entities;
-    }
-
-    private void parseMagicResistance(JSONObject qJson, BardMagicEntity entity) throws JSONException {
-        if (qJson.has("me")){
-            entity.setMagicResistance(qJson.getString("me"));
-        }
     }
 }
