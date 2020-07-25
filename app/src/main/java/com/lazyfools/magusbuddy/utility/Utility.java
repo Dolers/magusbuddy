@@ -56,6 +56,25 @@ public class Utility {
         return output;
     }
 
+    public static String join(Character delimiter, String... args)
+    {
+        if (args.length == 0)
+            return "";
+
+        String delimiterWithSeparator = delimiter + " ";
+
+        StringBuilder sb = new StringBuilder();
+        sb.append(args[0]);
+        for (int i = 1; i < args.length; i++) {
+            if (!args[i].isEmpty()){
+                sb.append(delimiterWithSeparator);
+                sb.append(args[i]);
+            }
+        }
+
+        return sb.toString();
+    }
+
     private static boolean isHungarianLowercase(char c) {
         return (c == 'é' || c == 'á' || c == 'ű' || c == 'ú' || c == 'ő' || c == 'ó' || c == 'ü' || c == 'ö' || c == 'í');
     }

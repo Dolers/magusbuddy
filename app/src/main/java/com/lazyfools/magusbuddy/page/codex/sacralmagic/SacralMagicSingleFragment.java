@@ -5,26 +5,22 @@ import android.arch.lifecycle.ViewModelProviders;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
-import android.support.v7.widget.RecyclerView;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
+import android.widget.GridLayout;
 import android.widget.TextView;
 
+import com.lazyfools.magusbuddy.page.codex.SingleFragment;
 import com.lazyfools.magusbuddy.viewmodel.SacralMagicDatabaseViewModel;
 import com.lazyfools.magusbuddy.HomeActivity;
 import com.lazyfools.magusbuddy.R;
 import com.lazyfools.magusbuddy.database.entity.SacralMagicEntity;
-import com.lazyfools.magusbuddy.page.common.DescTableAdapter;
-import com.lazyfools.magusbuddy.utility.MarginItemDecoration;
 
-import java.util.ArrayList;
+import static com.lazyfools.magusbuddy.utility.Utility.join;
 
-public class SacralMagicSingleFragment extends Fragment {
-    private SacralMagicDatabaseViewModel _viewModel;
+public class SacralMagicSingleFragment extends SingleFragment<SacralMagicDatabaseViewModel> {
 
     public SacralMagicSingleFragment() {
+        super(SacralMagicDatabaseViewModel.class);
     }
 
     @Override
@@ -36,80 +32,50 @@ public class SacralMagicSingleFragment extends Fragment {
     }
 
     @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        return LayoutInflater.from(container.getContext())
-                .inflate(R.layout.magic_single_show, container, false);
-    }
-
-    @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         Integer id = getArguments().getInt(getResources().getString(R.string.SKILL_ID));
 
         _viewModel.getOneSacralMagicByID(id).observe(this, new Observer<SacralMagicEntity>() {
             @Override
-            public void onChanged(@Nullable final SacralMagicEntity SacralMagic) {
-                populateWith(SacralMagic);
+            public void onChanged(@Nullable final SacralMagicEntity sacralMagic) {
+                populateWith(sacralMagic);
             }
         });
     }
 
-    private void populateWith(SacralMagicEntity sacralMagic) {
-        TextView titleTextView = getView().findViewById(R.id.name_textview);
-        titleTextView.setText(sacralMagic.getName());
+    private void populateWith(SacralMagicEntity entity) {
+        ((TextView)getView().findViewById(R.id.title_value)).setText(entity.getName());
 
-        populateWithStats(sacralMagic);
+        populateWithStats(entity);
 
-        TextView descriptionTextView = getView().findViewById(R.id.description);
-        descriptionTextView.setText(sacralMagic.getDescription());
+        ((TextView)getView().findViewById(R.id.description)).setText(entity.getDescription());
 
-        populateWithTables(sacralMagic);
+        entity.setDescTables(populateWithTables());
     }
 
-    private void populateWithStats(SacralMagicEntity sacralMagic) {
-        TextView mpTitle = getView().findViewById(R.id.mp);
-        mpTitle.setText(getText(R.string.kp));
+    private void populateWithStats(SacralMagicEntity entity) {
+        ((TextView) getView().findViewById(R.id.mp)).setText(getText(R.string.kp));
+        ((TextView) getView().findViewById(R.id.mp_value)).setText(Integer.toString(entity.getKp()));
 
-        TextView mpValue = getView().findViewById(R.id.mp_value);
-        mpValue.setText(Integer.toString(sacralMagic.getKp()));
+        //Set EKp text
+        if (entity.getEkpText().isEmpty()) {
+            ((TextView) getView().findViewById(R.id.emp)).setText(getText(R.string.ekp));
+        }
+        else {
+            ((TextView) getView().findViewById(R.id.emp)).setText(entity.getEkpText());
+        }
 
-        TextView ekp = getView().findViewById(R.id.emp);
-        if (sacralMagic.getEkpText() != null)
-            ekp.setText(sacralMagic.getEkpText());
-        else
-            ekp.setText(getText(R.string.ekp));
-
-        TextView empValue = getView().findViewById(R.id.emp_value);
-        empValue.setText(Integer.toString(sacralMagic.getEkp()));
+        setOrHide(getView(), entity.getEkp(), R.id.emp_value, R.id.emp_layout);
 
         TextView castTimeValue = getView().findViewById(R.id.casttime_value);
-        castTimeValue.setText(sacralMagic.getCastTime());
+        castTimeValue.setText(entity.getCastTime());
 
-        TextView rangeValue = getView().findViewById(R.id.range_value);
-        rangeValue.setText(sacralMagic.getRange());
+        setAndMakeVisible(getView(), join(',', entity.getType().toString(), entity.getSubType()), R.id.type_value);
 
-        TextView durationTimeValue = getView().findViewById(R.id.durationtime_value);
-        durationTimeValue.setText(sacralMagic.getDurationTime());
-
-        if (sacralMagic.getMagicResistance() != null) {
-            TextView magicResistance = getView().findViewById(R.id.resistance);
-            magicResistance.setVisibility(View.VISIBLE);
-            TextView magicResistanceValue = getView().findViewById(R.id.resistance_value);
-            magicResistanceValue.setVisibility(View.VISIBLE);
-            magicResistanceValue.setText(sacralMagic.getMagicResistance());
-        }
-    }
-
-    private void populateWithTables(SacralMagicEntity sacralMagic) {
-        ArrayList<String> descriptionTables = sacralMagic.getDescTables();
-        if (!descriptionTables.isEmpty()){
-            RecyclerView tableListView = getView().findViewById(R.id.table_listview);
-            tableListView.setVisibility(View.VISIBLE);
-            tableListView.addItemDecoration(new MarginItemDecoration(30,30,0,0));
-
-            DescTableAdapter adapter = new DescTableAdapter(getActivity().getApplicationContext());
-            adapter.setItems(descriptionTables);
-            tableListView.setAdapter(adapter);
-        }
+        GridLayout propertiesLayout = getView().findViewById(R.id.properties_layout);
+        setOrHide(propertiesLayout, entity.getCastTime(), R.id.casttime_value, R.id.casttime_value, R.id.casttime);
+        setOrHide(propertiesLayout, entity.getRange(), R.id.range_value,  R.id.range_value, R.id.range);
+        setOrHide(propertiesLayout, entity.getDurationTime(), R.id.durationtime_value, R.id.durationtime_value, R.id.durationtime);
+        setOrHide(propertiesLayout, entity.getMagicResistance(), R.id.resistance_value, R.id.resistance_value, R.id.resistance);
     }
 }

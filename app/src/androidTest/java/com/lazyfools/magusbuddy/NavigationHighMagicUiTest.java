@@ -39,7 +39,7 @@ public class NavigationHighMagicUiTest {
         onView(withId(R.id.name_list))
                 .perform(clickOnRecycleViewElement("Nyíl"));
 
-        onView(withId(R.id.name_textview))
+        onView(withId(R.id.title_value))
                 .check(matches(withText("Nyíl")));
     }
 
@@ -51,7 +51,7 @@ public class NavigationHighMagicUiTest {
         onView(withId(R.id.name_list))
                 .perform(clickOnRecycleViewElement("Teremtés"));
 
-        onView(withId(R.id.name_textview))
+        onView(withId(R.id.title_value))
                 .check(matches(withText("Teremtés")));
     }
 
@@ -63,7 +63,7 @@ public class NavigationHighMagicUiTest {
         onView(withId(R.id.name_list))
                 .perform(clickOnRecycleViewElement("Teleport"));
 
-        onView(withId(R.id.name_textview))
+        onView(withId(R.id.title_value))
                 .check(matches(withText("Teleport")));
     }
 
@@ -75,7 +75,7 @@ public class NavigationHighMagicUiTest {
         onView(withId(R.id.name_list))
                 .perform(clickOnRecycleViewElement("Semlegesség/Elvakultság"));
 
-        onView(withId(R.id.name_textview))
+        onView(withId(R.id.title_value))
                 .check(matches(withText("Semlegesség/Elvakultság")));
     }
 
@@ -87,7 +87,7 @@ public class NavigationHighMagicUiTest {
         onView(withId(R.id.name_list))
                 .perform(clickOnRecycleViewElement("Tompítás (Kábítás)"));
 
-        onView(withId(R.id.name_textview))
+        onView(withId(R.id.title_value))
                 .check(matches(withText("Tompítás (Kábítás)")));
     }
 
@@ -99,7 +99,7 @@ public class NavigationHighMagicUiTest {
         onView(withId(R.id.name_list))
                 .perform(clickOnRecycleViewElement("Szimpátia varázsjel"));
 
-        onView(withId(R.id.name_textview))
+        onView(withId(R.id.title_value))
                 .check(matches(withText("Szimpátia varázsjel")));
     }
 
@@ -111,7 +111,7 @@ public class NavigationHighMagicUiTest {
         onView(withId(R.id.name_list))
                 .perform(clickOnRecycleViewElement("Gyorsítás"));
 
-        onView(withId(R.id.name_textview))
+        onView(withId(R.id.title_value))
                 .check(matches(withText("Gyorsítás")));
     }
 
@@ -123,7 +123,7 @@ public class NavigationHighMagicUiTest {
         onView(withId(R.id.name_list))
                 .perform(clickOnRecycleViewElement("Parancs"));
 
-        onView(withId(R.id.name_textview))
+        onView(withId(R.id.title_value))
                 .check(matches(withText("Parancs")));
     }
 
@@ -135,7 +135,7 @@ public class NavigationHighMagicUiTest {
         onView(withId(R.id.name_list))
                 .perform(clickOnRecycleViewElement("Démonidéző litánia"));
 
-        onView(withId(R.id.name_textview))
+        onView(withId(R.id.title_value))
                 .check(matches(withText("Démonidéző litánia")));
     }
 
@@ -147,7 +147,7 @@ public class NavigationHighMagicUiTest {
         onView(withId(R.id.name_list))
                 .perform(clickOnRecycleViewElement("Tárgyszimpátia"));
 
-        onView(withId(R.id.name_textview))
+        onView(withId(R.id.title_value))
                 .check(matches(withText("Tárgyszimpátia")));
     }
 
@@ -159,7 +159,7 @@ public class NavigationHighMagicUiTest {
         onView(withId(R.id.name_list))
                 .perform(clickOnRecycleViewElement("Testsúly csökkentés"));
 
-        onView(withId(R.id.name_textview))
+        onView(withId(R.id.title_value))
                 .check(matches(withText("Testsúly csökkentés")));
     }
 

@@ -1,40 +1,23 @@
 package com.lazyfools.magusbuddy.page.codex.bardmagic;
 
 import android.arch.lifecycle.Observer;
-import android.arch.lifecycle.ViewModelProviders;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
+import android.widget.GridLayout;
 import android.widget.TextView;
 
-import com.lazyfools.magusbuddy.HomeActivity;
 import com.lazyfools.magusbuddy.R;
 import com.lazyfools.magusbuddy.database.entity.BardMagicEntity;
+import com.lazyfools.magusbuddy.page.codex.SingleFragment;
 import com.lazyfools.magusbuddy.viewmodel.BardMagicDatabaseViewModel;
 
-public class BardMagicSingleFragment extends Fragment {
-    private BardMagicDatabaseViewModel _viewModel;
+
+public class BardMagicSingleFragment extends SingleFragment<BardMagicDatabaseViewModel> {
 
     public BardMagicSingleFragment() {
-    }
-
-    @Override
-    public void onCreate (Bundle savedInstanceState){
-        super.onCreate(savedInstanceState);
-        ((HomeActivity)getActivity()).setBottomNavigationVisibility(View.GONE);
-
-        _viewModel = ViewModelProviders.of(this).get(BardMagicDatabaseViewModel.class);
-    }
-
-    @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        return LayoutInflater.from(container.getContext())
-                .inflate(R.layout.magic_single_show, container, false);
+        super(BardMagicDatabaseViewModel.class);
     }
 
     @Override
@@ -43,36 +26,32 @@ public class BardMagicSingleFragment extends Fragment {
 
         _viewModel.getOneBardMagicByID(id).observe(this, new Observer<BardMagicEntity>() {
             @Override
-            public void onChanged(@Nullable final BardMagicEntity BardMagic) {
-                populateWith(BardMagic);
+            public void onChanged(@Nullable final BardMagicEntity bardMagic) {
+                populateWith(bardMagic);
             }
         });
     }
 
-    private void populateWith(BardMagicEntity bardMagic) {
-        TextView titleTextView = getView().findViewById(R.id.name_textview);
-        titleTextView.setText(bardMagic.getName());
+    private void populateWith(BardMagicEntity entity)
+    {
+        ((TextView)getView().findViewById(R.id.title_value)).setText(entity.getName());
 
-        populateWithStats(bardMagic);
+        populateWithStats(entity);
 
-        TextView descriptionTextView = getView().findViewById(R.id.description);
-        descriptionTextView.setText(bardMagic.getDescription());
+        ((TextView)getView().findViewById(R.id.description)).setText(entity.getDescription());
     }
 
-    private void populateWithStats(BardMagicEntity bardMagic) {
-        TextView mpValue = getView().findViewById(R.id.mp_value);
-        mpValue.setText(Integer.toString(bardMagic.getMp()));
+    private void populateWithStats(BardMagicEntity entity) {
+        ((TextView) getView().findViewById(R.id.mp_value)).setText(Integer.toString(entity.getMp()));
 
-        TextView empValue = getView().findViewById(R.id.emp_value);
-        empValue.setText(Integer.toString(bardMagic.getEmp()));
+        setOrHide(getView(), entity.getEmp(), R.id.emp_value, R.id.emp_layout);
 
-        TextView castTimeValue = getView().findViewById(R.id.casttime_value);
-        castTimeValue.setText(bardMagic.getCastTime());
+        setAndMakeVisible(getView(), entity.getType().toString(), R.id.type_value);
 
-        TextView rangeValue = getView().findViewById(R.id.range_value);
-        rangeValue.setText(bardMagic.getRange());
-
-        TextView durationTimeValue = getView().findViewById(R.id.durationtime_value);
-        durationTimeValue.setText(bardMagic.getDurationTime());
+        GridLayout propertiesLayout = getView().findViewById(R.id.properties_layout);
+        setOrHide(propertiesLayout, entity.getCastTime(), R.id.casttime_value, R.id.casttime_value, R.id.casttime);
+        setOrHide(propertiesLayout, entity.getRange(), R.id.range_value,  R.id.range_value, R.id.range);
+        setOrHide(propertiesLayout, entity.getDurationTime(), R.id.durationtime_value, R.id.durationtime_value, R.id.durationtime);
+        setOrHide(propertiesLayout, "", R.id.resistance_value, R.id.resistance_value, R.id.resistance);
     }
 }

@@ -1,6 +1,7 @@
 package com.lazyfools.magusbuddy.page.common;
 
 import android.os.Bundle;
+import android.os.Parcelable;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -11,11 +12,25 @@ import androidx.navigation.Navigation;
 
 import com.lazyfools.magusbuddy.R;
 import com.lazyfools.magusbuddy.database.entity.NameEntity;
+import com.lazyfools.magusbuddy.utility.BasicCallback;
 
 abstract public class SearchableRecycleViewFragment extends SearchableFragment
 {
     protected NameEntityOnClickListener _listener;
     protected RecyclerView _recyclerView;
+    protected Parcelable _state;
+
+    @Override
+    public void onPause() {
+        _state = _recyclerView.getLayoutManager().onSaveInstanceState();
+        super.onPause();
+    }
+
+    @Override
+    public void onStop() {
+        _state = _recyclerView.getLayoutManager().onSaveInstanceState();
+        super.onStop();
+    }
 
     protected abstract int onItemClickNavigateTo();
 
@@ -28,12 +43,14 @@ abstract public class SearchableRecycleViewFragment extends SearchableFragment
 
         _recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
 
+        final SearchableFragment fragment = this;
+
         _listener = new NameEntityOnClickListener() {
             @Override
             public void onClick(NameEntity item) {
                 Bundle bundle = new Bundle();
                 bundle.putInt(getResources().getString(R.string.SKILL_ID), item.getId());
-                Navigation.findNavController(_recyclerView).navigate(onItemClickNavigateTo(),bundle);
+                Navigation.findNavController(fragment.getView()).navigate(onItemClickNavigateTo(),bundle);
             }
         };
 
@@ -48,5 +65,17 @@ abstract public class SearchableRecycleViewFragment extends SearchableFragment
 
     public interface NameEntityOnClickListener extends onClickListener<NameEntity> {
         void onClick(NameEntity item);
+    }
+
+    public BasicCallback restoreScrollCalback(){
+        return new BasicCallback() {
+            @Override
+            public void callback() {
+                if(_state != null) {
+                    _recyclerView.getLayoutManager().onRestoreInstanceState(_state);
+                }
+
+            }
+        };
     }
 }

@@ -43,6 +43,7 @@ public class QualificationCategoryListFragment extends SearchableRecycleViewFrag
             public void onChanged(@Nullable final List<QualificationType> typeList) {
                 assert typeList != null;
                 _adapter.setSize(typeList.size());
+                _adapter.addAllItemLoadedCallback(restoreScrollCalback());
                 for (final QualificationType type : typeList){
                     _viewModel.getAllQualificationNamesOfType(type.type).observe(fragment, new Observer<List<NameEntity>>() {
                         @Override

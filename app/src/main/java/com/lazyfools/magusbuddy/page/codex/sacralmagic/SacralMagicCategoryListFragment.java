@@ -42,6 +42,7 @@ public class SacralMagicCategoryListFragment extends SearchableRecycleViewFragme
             public void onChanged(@Nullable List<SacralMagicType> typeList) {
                 assert typeList != null;
                 _adapter.setSize(typeList.size());
+                _adapter.addAllItemLoadedCallback(restoreScrollCalback());
                 for (final SacralMagicType type : typeList){
                     _viewModel.getAllSacralMagicNamesOfType(type.type).observe(fragment, new Observer<List<NameEntity>>() {
                         @Override

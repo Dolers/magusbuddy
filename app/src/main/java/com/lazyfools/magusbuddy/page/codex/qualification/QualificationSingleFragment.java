@@ -56,7 +56,7 @@ public class QualificationSingleFragment extends Fragment {
     }
 
     private void populateWith(QualificationEntity qualification) {
-        TextView titleTextView = getView().findViewById(R.id.name_textview);
+        TextView titleTextView = getView().findViewById(R.id.title_value);
         titleTextView.setText(qualification.getName());
 
         TextView descriptionTextView = getView().findViewById(R.id.description);

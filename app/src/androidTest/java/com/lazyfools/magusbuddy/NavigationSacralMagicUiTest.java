@@ -36,7 +36,7 @@ public class NavigationSacralMagicUiTest {
                 .perform(clickOnRecycleViewElement("NAGY ARKÁNUM"));
         onView(withId(R.id.name_list))
                 .perform(clickOnRecycleViewElement("Égi szekér"));
-        onView(withId(R.id.name_textview))
+        onView(withId(R.id.title_value))
                 .check(matches(withText("Égi szekér")));
     }
 
@@ -46,7 +46,7 @@ public class NavigationSacralMagicUiTest {
                 .perform(clickOnRecycleViewElement("KIS ARKÁNUM"));
         onView(withId(R.id.name_list))
                 .perform(clickOnRecycleViewElement("Élelemteremtés"));
-        onView(withId(R.id.name_textview))
+        onView(withId(R.id.title_value))
                 .check(matches(withText("Élelemteremtés")));
     }
 
@@ -56,7 +56,7 @@ public class NavigationSacralMagicUiTest {
                 .perform(clickOnRecycleViewElement("AREL"));
         onView(withId(R.id.name_list))
                 .perform(clickOnRecycleViewElement("Csábítás"));
-        onView(withId(R.id.name_textview))
+        onView(withId(R.id.title_value))
                 .check(matches(withText("Csábítás")));
     }
 
@@ -66,7 +66,7 @@ public class NavigationSacralMagicUiTest {
                 .perform(clickOnRecycleViewElement("DARTON"));
         onView(withId(R.id.name_list))
                 .perform(clickOnRecycleViewElement("Méregizzadás"));
-        onView(withId(R.id.name_textview))
+        onView(withId(R.id.title_value))
                 .check(matches(withText("Méregizzadás")));
     }
 
@@ -76,7 +76,7 @@ public class NavigationSacralMagicUiTest {
                 .perform(clickOnRecycleViewElement("DOMVIK"));
         onView(withId(R.id.name_list))
                 .perform(clickOnRecycleViewElement("Isteni fegyver"));
-        onView(withId(R.id.name_textview))
+        onView(withId(R.id.title_value))
                 .check(matches(withText("Isteni fegyver")));
     }
 
@@ -86,7 +86,7 @@ public class NavigationSacralMagicUiTest {
                 .perform(clickOnRecycleViewElement("DREINA"));
         onView(withId(R.id.name_list))
                 .perform(clickOnRecycleViewElement("Földabrosz"));
-        onView(withId(R.id.name_textview))
+        onView(withId(R.id.title_value))
                 .check(matches(withText("Földabrosz")));
     }
 
@@ -96,7 +96,7 @@ public class NavigationSacralMagicUiTest {
                 .perform(clickOnRecycleViewElement("KRAD"));
         onView(withId(R.id.name_list))
                 .perform(clickOnRecycleViewElement("Emlékezet"));
-        onView(withId(R.id.name_textview))
+        onView(withId(R.id.title_value))
                 .check(matches(withText("Emlékezet")));
     }
 
@@ -106,7 +106,7 @@ public class NavigationSacralMagicUiTest {
                 .perform(clickOnRecycleViewElement("RANAGOL"));
         onView(withId(R.id.name_list))
                 .perform(clickOnRecycleViewElement("Döbbenet"));
-        onView(withId(R.id.name_textview))
+        onView(withId(R.id.title_value))
                 .check(matches(withText("Döbbenet")));
     }
 
@@ -116,7 +116,7 @@ public class NavigationSacralMagicUiTest {
                 .perform(clickOnRecycleViewElement("SOGRON"));
         onView(withId(R.id.name_list))
                 .perform(clickOnRecycleViewElement("Kigyótűz"));
-        onView(withId(R.id.name_textview))
+        onView(withId(R.id.title_value))
                 .check(matches(withText("Kigyótűz")));
     }
 
@@ -126,7 +126,7 @@ public class NavigationSacralMagicUiTest {
                 .perform(clickOnRecycleViewElement("THARR"));
         onView(withId(R.id.name_list))
                 .perform(clickOnRecycleViewElement("Istenalak"));
-        onView(withId(R.id.name_textview))
+        onView(withId(R.id.title_value))
                 .check(matches(withText("Istenalak")));
     }
 
@@ -136,7 +136,7 @@ public class NavigationSacralMagicUiTest {
                 .perform(clickOnRecycleViewElement("UWEL"));
         onView(withId(R.id.name_list))
                 .perform(clickOnRecycleViewElement("Jutalom"));
-        onView(withId(R.id.name_textview))
+        onView(withId(R.id.title_value))
                 .check(matches(withText("Jutalom")));
     }
 

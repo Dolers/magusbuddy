@@ -41,6 +41,7 @@ public class BardMagicCategoryListFragment extends SearchableRecycleViewFragment
             public void onChanged(@Nullable List<BardMagicType> typeList) {
                 assert typeList != null;
                 _adapter.setSize(typeList.size());
+                _adapter.addAllItemLoadedCallback(restoreScrollCalback());
                 for (final BardMagicType type : typeList){
                     _viewModel.getAllBardMagicNamesOfType(type.type).observe(fragment, new Observer<List<NameEntity>>() {
                         @Override

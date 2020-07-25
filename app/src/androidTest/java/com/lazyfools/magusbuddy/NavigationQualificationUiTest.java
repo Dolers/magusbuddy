@@ -36,7 +36,7 @@ public class NavigationQualificationUiTest {
                 .perform(clickOnRecycleViewElement("HARCI"));
         onView(withId(R.id.name_list))
                 .perform(clickOnRecycleViewElement("Fegyverhasználat"));
-        onView(withId(R.id.name_textview))
+        onView(withId(R.id.title_value))
                 .check(matches(withText("Fegyverhasználat")));
     }
 
@@ -46,7 +46,7 @@ public class NavigationQualificationUiTest {
                 .perform(clickOnRecycleViewElement("VILÁGI"));
         onView(withId(R.id.name_list))
                 .perform(clickOnRecycleViewElement("Akrobatika"));
-        onView(withId(R.id.name_textview))
+        onView(withId(R.id.title_value))
                 .check(matches(withText("Akrobatika")));
     }
 
@@ -56,7 +56,7 @@ public class NavigationQualificationUiTest {
                 .perform(clickOnRecycleViewElement("SZOCIÁLIS"));
         onView(withId(R.id.name_list))
                 .perform(clickOnRecycleViewElement("Lélektan"));
-        onView(withId(R.id.name_textview))
+        onView(withId(R.id.title_value))
                 .check(matches(withText("Lélektan")));
     }
 
@@ -66,7 +66,7 @@ public class NavigationQualificationUiTest {
                 .perform(clickOnRecycleViewElement("ALVILÁGI"));
         onView(withId(R.id.name_list))
                 .perform(clickOnRecycleViewElement("Orvtámadás"));
-        onView(withId(R.id.name_textview))
+        onView(withId(R.id.title_value))
                 .check(matches(withText("Orvtámadás")));
     }
 
@@ -76,7 +76,7 @@ public class NavigationQualificationUiTest {
                 .perform(clickOnRecycleViewElement("TUDOMÁNYOS"));
         onView(withId(R.id.name_list))
                 .perform(clickOnRecycleViewElement("Alkímia"));
-        onView(withId(R.id.name_textview))
+        onView(withId(R.id.title_value))
                 .check(matches(withText("Alkímia")));
     }
 
@@ -86,7 +86,7 @@ public class NavigationQualificationUiTest {
                 .perform(clickOnRecycleViewElement("MISZTIKUS"));
         onView(withId(R.id.name_list))
                 .perform(clickOnRecycleViewElement("Pszi"));
-        onView(withId(R.id.name_textview))
+        onView(withId(R.id.title_value))
                 .check(matches(withText("Pszi")));
     }
 }

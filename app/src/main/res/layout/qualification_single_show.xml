@@ -18,7 +18,7 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/name_textview"
+                android:id="@+id/title_value"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/skill_name"

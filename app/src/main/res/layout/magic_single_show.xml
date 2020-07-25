@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView android:layout_width="fill_parent"
+<ScrollView
+    android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/scrollView"
@@ -14,26 +15,45 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/name_textview"
+            android:id="@+id/title_value"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
             android:text="@string/magic_title"
             android:textAlignment="center"
             android:textSize="32sp"
             app:fontFamily="@font/eden_mills_bold"
             android:gravity="center_horizontal" />
 
-        <LinearLayout
-            android:id="@+id/stat_layout"
+
+        <TextView
+            android:id="@+id/type_value"
+            android:layout_weight="1"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:gravity="center_horizontal"
+            android:textSize="12sp"
+            android:visibility="gone"
+            android:text="tipusnev" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginHorizontal="15dp"
+            android:background="#202020" />
+
+        <RelativeLayout
+            android:id="@+id/stat_layout"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
             <LinearLayout
                 android:id="@+id/mp_emp_layout"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:minWidth="35dp"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:layout_marginRight="5dp">
 
                 <RelativeLayout
                     android:id="@+id/mp_layout"
@@ -55,7 +75,7 @@
                         android:layout_toEndOf="@id/mp_value"
                         android:layout_toRightOf="@id/mp_value"
                         android:text="@string/mp"
-                        android:textSize="16sp" />
+                        android:textSize="16sp"/>
                 </RelativeLayout>
 
                 <RelativeLayout
@@ -75,7 +95,6 @@
                         android:id="@+id/emp"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:layout_alignParentBottom="true"
                         android:layout_toEndOf="@id/emp_value"
                         android:layout_toRightOf="@id/emp_value"
                         android:text="@string/emp"
@@ -83,75 +102,85 @@
                 </RelativeLayout>
             </LinearLayout>
 
-            <RelativeLayout
+            <GridLayout
+                android:id="@+id/properties_layout"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_width="wrap_content">
-                <GridLayout
+                android:columnCount="2"
+                android:columnOrderPreserved="true"
+                android:rowOrderPreserved="true"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true">
+
+                <TextView
+                    android:id="@+id/casttime"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:columnCount="2"
-                    android:columnOrderPreserved="true"
-                    android:rowOrderPreserved="true"
-                    android:layout_alignParentEnd="true"
-                    android:layout_alignParentRight="true">
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="5dp"
+                    android:text="@string/casttime" />
+                <TextView
+                    android:id="@+id/casttime_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end"
+                    android:text="@string/magustime" />
 
-                    <TextView
-                        android:id="@+id/casttime"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:text="@string/casttime" />
-                    <TextView
-                        android:id="@+id/casttime_value"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_gravity="end"
-                        android:text="@string/magustime" />
+                <TextView
+                    android:id="@+id/durationtime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="5dp"
+                    android:text="@string/durationTime" />
+                <TextView
+                    android:id="@+id/durationtime_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end"
+                    android:text="@string/magustime" />
 
-                    <TextView
-                        android:id="@+id/durationtime"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:text="@string/durationTime" />
-                    <TextView
-                        android:id="@+id/durationtime_value"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_gravity="end"
-                        android:text="@string/magustime" />
+                <TextView
+                    android:id="@+id/range"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="5dp"
+                    android:text="@string/range" />
+                <TextView
+                    android:id="@+id/range_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/default_range_value"
+                    android:layout_gravity="end"/>
 
-                    <TextView
-                        android:id="@+id/range"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:text="@string/range" />
-                    <TextView
-                        android:id="@+id/range_value"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:text="@string/default_range_value"
-                        android:layout_gravity="end"/>
+                <TextView
+                    android:id="@+id/resistance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="5dp"
+                    android:visibility="gone"
+                    android:text="@string/resistance_name" />
+                <TextView
+                    android:id="@+id/resistance_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end"
+                    android:visibility="gone"
+                    android:text="@string/resistance_value" />
+            </GridLayout>
+        </RelativeLayout>
 
-                    <TextView
-                        android:id="@+id/resistance"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:visibility="gone"
-                        android:text="@string/resistance_name" />
-                    <TextView
-                        android:id="@+id/resistance_value"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_gravity="end"
-                        android:visibility="gone"
-                        android:text="@string/resistance_value" />
-                </GridLayout>
-            </RelativeLayout>
-        </LinearLayout>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginHorizontal="15dp"
+            android:background="#202020" />
+
         <TextView
             android:id="@+id/description"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/description" />
+            android:layout_marginVertical="5dp"
+            android:text="@string/description"/>
         <android.support.v7.widget.RecyclerView
             android:id="@+id/table_listview"
             android:layout_width="match_parent"

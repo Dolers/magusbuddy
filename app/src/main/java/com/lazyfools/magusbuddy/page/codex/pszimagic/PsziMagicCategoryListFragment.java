@@ -41,6 +41,7 @@ public class PsziMagicCategoryListFragment extends SearchableRecycleViewFragment
             public void onChanged(@Nullable List<PsziMagicType> typeList) {
                 assert typeList != null;
                 _adapter.setSize(typeList.size());
+                _adapter.addAllItemLoadedCallback(restoreScrollCalback());
                 for (final PsziMagicType type : typeList){
                     _viewModel.getAllPsziMagicNamesOfType(type.type).observe(fragment, new Observer<List<NameEntity>>() {
                         @Override

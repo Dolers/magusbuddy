@@ -4,7 +4,6 @@ import android.support.test.filters.LargeTest;
 import android.support.test.rule.ActivityTestRule;
 import android.support.test.runner.AndroidJUnit4;
 
-import org.junit.After;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
@@ -40,7 +39,7 @@ public class NavigationPsziUiTest {
         onView(withId(R.id.name_list))
                 .perform(clickOnRecycleViewElement("Abszolút látás"));
 
-        onView(withId(R.id.name_textview))
+        onView(withId(R.id.title_value))
                 .check(matches(withText("Abszolút látás")));
     }
 
@@ -53,7 +52,7 @@ public class NavigationPsziUiTest {
         onView(withId(R.id.name_list))
                 .perform(clickOnRecycleViewElement("Aranyharang"));
 
-        onView(withId(R.id.name_textview))
+        onView(withId(R.id.title_value))
                 .check(matches(withText("Aranyharang")));
     }
 
@@ -67,7 +66,7 @@ public class NavigationPsziUiTest {
         onView(withId(R.id.name_list))
                 .perform(clickOnRecycleViewElement("Asztrálszem"));
 
-        onView(withId(R.id.name_textview))
+        onView(withId(R.id.title_value))
                 .check(matches(withText("Asztrálszem")));
     }
 
@@ -80,7 +79,7 @@ public class NavigationPsziUiTest {
         onView(withId(R.id.name_list))
                 .perform(clickOnRecycleViewElement("Felfedés"));
 
-        onView(withId(R.id.name_textview))
+        onView(withId(R.id.title_value))
                 .check(matches(withText("Felfedés")));
     }
 }

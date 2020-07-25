@@ -41,6 +41,7 @@ public class WarlockMagicCategoryListFragment extends SearchableRecycleViewFragm
             public void onChanged(@Nullable List<WarlockMagicType> typeList) {
                 assert typeList != null;
                 _adapter.setSize(typeList.size());
+                _adapter.addAllItemLoadedCallback(restoreScrollCalback());
                 for (final WarlockMagicType type : typeList){
                     _viewModel.getAllWarlockMagicNamesOfType(type.type).observe(fragment, new Observer<List<NameEntity>>() {
                         @Override
@@ -51,7 +52,6 @@ public class WarlockMagicCategoryListFragment extends SearchableRecycleViewFragm
                 }
             }
         });
-
     }
 
     @Override

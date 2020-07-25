@@ -4,7 +4,6 @@ import android.support.test.filters.LargeTest;
 import android.support.test.rule.ActivityTestRule;
 import android.support.test.runner.AndroidJUnit4;
 
-import org.junit.After;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
@@ -37,7 +36,7 @@ public class NavigationBardMagicUiTest {
                 .perform(clickOnRecycleViewElement("DALMÁGIA"));
         onView(withId(R.id.name_list))
                 .perform(clickOnRecycleViewElement("Álom dala"));
-        onView(withId(R.id.name_textview))
+        onView(withId(R.id.title_value))
                 .check(matches(withText("Álom dala")));
     }
 
@@ -47,7 +46,7 @@ public class NavigationBardMagicUiTest {
                 .perform(clickOnRecycleViewElement("FÉNYMÁGIA"));
         onView(withId(R.id.name_list))
                 .perform(clickOnRecycleViewElement("Színvarázs"));
-        onView(withId(R.id.name_textview))
+        onView(withId(R.id.title_value))
                 .check(matches(withText("Színvarázs")));
     }
 
@@ -57,7 +56,7 @@ public class NavigationBardMagicUiTest {
                 .perform(clickOnRecycleViewElement("HANGMÁGIA"));
         onView(withId(R.id.name_list))
                 .perform(clickOnRecycleViewElement("Zajkeltés"));
-        onView(withId(R.id.name_textview))
+        onView(withId(R.id.title_value))
                 .check(matches(withText("Zajkeltés")));
     }
 
@@ -67,7 +66,7 @@ public class NavigationBardMagicUiTest {
                 .perform(clickOnRecycleViewElement("EGYÉB BÁRDMÁGIA"));
         onView(withId(R.id.name_list))
                 .perform(clickOnRecycleViewElement("Tanulás"));
-        onView(withId(R.id.name_textview))
+        onView(withId(R.id.title_value))
                 .check(matches(withText("Tanulás")));
     }
 

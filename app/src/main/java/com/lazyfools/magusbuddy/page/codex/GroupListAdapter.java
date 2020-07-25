@@ -15,7 +15,11 @@ import com.lazyfools.magusbuddy.R;
 import com.lazyfools.magusbuddy.database.entity.NameEntity;
 import com.lazyfools.magusbuddy.page.common.NestedListView;
 import com.lazyfools.magusbuddy.page.common.onClickListener;
+import com.lazyfools.magusbuddy.utility.BasicCallback;
 
+import java.nio.file.attribute.BasicFileAttributes;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.regex.Pattern;
 
 import static com.lazyfools.magusbuddy.utility.Utility.getSmallCapsString;
@@ -27,12 +31,14 @@ public class GroupListAdapter<Listener extends onClickListener<NameEntity>> exte
     public Activity _activity;
     private Listener _listener;
     private Integer _presetSize = 0;
+    private List<BasicCallback> _allItemLoadedCallback;
 
     public GroupListAdapter(Activity act, Listener listener) {
         _activity = act;
         _listener = listener;
         _permanentGroups = new SparseArray<>();
         _filteredGroups = new SparseArray<>();
+        _allItemLoadedCallback = new ArrayList<>();
     }
 
     public GroupListAdapter(Activity act, Listener listener,  SparseArray<GroupListItem> groups) {
@@ -40,6 +46,7 @@ public class GroupListAdapter<Listener extends onClickListener<NameEntity>> exte
         _listener = listener;
         _permanentGroups = groups;
         _filteredGroups = groups;
+        _allItemLoadedCallback = new ArrayList<>();
     }
 
     @NonNull
@@ -68,6 +75,13 @@ public class GroupListAdapter<Listener extends onClickListener<NameEntity>> exte
         });
     }
 
+    public void addAllItemLoadedCallback(BasicCallback cb){
+        if (_presetSize == 0)
+            throw new ExceptionInInitializerError("Cannot use addAllItemLoadedCallback, if size not set");
+
+        _allItemLoadedCallback.add(cb);
+    }
+
     @Override
     public int getItemCount() {
         if (_filteredGroups == null){
@@ -83,8 +97,12 @@ public class GroupListAdapter<Listener extends onClickListener<NameEntity>> exte
         _permanentGroups.put(key,group);
         _filteredGroups.put(key,group);
 
-        if (_presetSize == _permanentGroups.size())
+        if (_presetSize == _permanentGroups.size()){
             notifyDataSetChanged();
+            for (BasicCallback cb : _allItemLoadedCallback) {
+                cb.callback();
+            }
+        }
     }
 
     public void filter(String text) {
