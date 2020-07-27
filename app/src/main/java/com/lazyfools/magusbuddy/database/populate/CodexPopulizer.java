@@ -14,10 +14,9 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.InputStream;
-import java.util.ArrayList;
 import java.util.Scanner;
 
-import static com.lazyfools.magusbuddy.database.Converters.CodexTableToInt;
+import static com.lazyfools.magusbuddy.database.Converters.CodexTypeToInt;
 
 public class CodexPopulizer implements Populizer{
     private final CodexDao _dao;
@@ -65,8 +64,7 @@ public class CodexPopulizer implements Populizer{
                 Log.i("AppDatabase", "codex: "+i+" név: "+entityJson.getString("nev"));
                 entities[i] = new CodexEntity(
                         entityJson.getString("nev"),
-                        CodexTableToInt(entityJson.getString("tablanev")),
-                        entityJson.getString("kepnev")
+                        CodexTypeToInt(entityJson.getString("tipus"))
                 );
             }
         } catch (JSONException e) {

@@ -74,7 +74,6 @@ abstract public class SearchableRecycleViewFragment extends SearchableFragment
                 if(_state != null) {
                     _recyclerView.getLayoutManager().onRestoreInstanceState(_state);
                 }
-
             }
         };
     }

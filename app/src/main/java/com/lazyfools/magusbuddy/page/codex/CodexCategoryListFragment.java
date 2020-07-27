@@ -3,6 +3,7 @@ package com.lazyfools.magusbuddy.page.codex;
 import android.arch.lifecycle.Observer;
 import android.arch.lifecycle.ViewModelProviders;
 import android.os.Bundle;
+import android.os.Parcelable;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.GridLayoutManager;
@@ -32,12 +33,24 @@ public class CodexCategoryListFragment extends Fragment {
     private CodexCategoryOnClickListener _listener;
     private DatabaseViewModel _viewModel;
     private CodexCategoryListAdapter _adapter;
+    private Parcelable _state;
+    private RecyclerView _recyclerView;
 
+    @Override
+    public void onPause() {
+        _state = _recyclerView.getLayoutManager().onSaveInstanceState();
+        super.onPause();
+    }
+
+    @Override
+    public void onStop() {
+        _state = _recyclerView.getLayoutManager().onSaveInstanceState();
+        super.onStop();
+    }
     public CodexCategoryListFragment() { }
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setHasOptionsMenu(true);
     }
 
     @Override
@@ -51,6 +64,7 @@ public class CodexCategoryListFragment extends Fragment {
             @Override
             public void onChanged(@Nullable final List<CodexEntity> entities) {
                 _adapter.setItems(entities);
+                _recyclerView.getLayoutManager().onRestoreInstanceState(_state);
             }
         });
     }
@@ -59,34 +73,34 @@ public class CodexCategoryListFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState)
     {
-        final RecyclerView recyclerView = (RecyclerView) LayoutInflater.from(container.getContext())
+        _recyclerView = (RecyclerView) LayoutInflater.from(container.getContext())
                 .inflate(R.layout.category_list, container, false);
-        recyclerView.setLayoutManager(new GridLayoutManager(container.getContext(),2));
+        _recyclerView.setLayoutManager(new GridLayoutManager(container.getContext(),2));
 
         _listener = new CodexCategoryOnClickListener(){
             @Override
             public void onClick(CodexEntity item) {
-                Navigation.findNavController(recyclerView).navigate(getNavigateAction(item));
+                Navigation.findNavController(_recyclerView).navigate(getNavigateAction(item));
             }
         };
 
         _adapter = new CodexCategoryListAdapter(_listener,container.getContext());
-        recyclerView.setAdapter(_adapter);
+        _recyclerView.setAdapter(_adapter);
 
-        return recyclerView;
+        return _recyclerView;
     }
 
-    private int getNavigateAction(CodexEntity item) {
-        //TODO
-        switch (item.getTable()){
+    private int getNavigateAction(CodexEntity item)
+    {
+        switch (item.getType()){
             case QUALIFICATION: return R.id.action_navigation_codex_to_qualificationCategoryListFragment;
             case BARDMAGIC: return R.id.action_navigation_codex_to_bardMagicCategoryListFragment;
             case WITCHMAGIC: return R.id.action_navigation_codex_to_witchMagicCategoryListFragment;
             case WARLOCKMAGIC: return R.id.action_navigation_codex_to_warlockMagicCategoryListFragment;
             case HIGHMAGIC: return R.id.action_navigation_codex_to_highMagicCategoryListFragment;
-            case PSZI: return R.id.action_navigation_codex_to_psziMagicCategoryListFragment;
+            case PSZIMAGIC: return R.id.action_navigation_codex_to_psziMagicCategoryListFragment;
             case SACRALMAGIC: return R.id.action_navigation_codex_to_sacralMagicCategoryListFragment;
-            case FIREMAGEMAGIC: return R.id.action_navigation_codex_to_fireMagicCategoryListFragment;
+            case FIREMAGIC: return R.id.action_navigation_codex_to_fireMagicCategoryListFragment;
         }
         return R.id.action_navigation_codex_to_qualificationCategoryListFragment;
     }

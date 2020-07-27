@@ -6,16 +6,17 @@ import android.arch.persistence.room.PrimaryKey;
 
 @Entity(tableName = "codextable")
 public class CodexEntity {
-    public enum TableEnum{
+    public enum TypeEnum{
         QUALIFICATION,
         BARDMAGIC,
         WITCHMAGIC,
         WARLOCKMAGIC,
         HIGHMAGIC,
-        PSZI,
+        PSZIMAGIC,
         SACRALMAGIC,
-        FIREMAGEMAGIC;
+        FIREMAGIC
     }
+
     @PrimaryKey(autoGenerate = true)
     @ColumnInfo(name = "id")
     private Integer _id;
@@ -23,16 +24,12 @@ public class CodexEntity {
     @ColumnInfo(name = "name")
     private String _name;
 
-    @ColumnInfo(name = "table")
-    private TableEnum _table;
+    @ColumnInfo(name = "type")
+    private TypeEnum _type;
 
-    @ColumnInfo(name = "imagename")
-    private String _imageName;
-
-    public CodexEntity(String name, TableEnum table, String imageName) {
+    public CodexEntity(String name, TypeEnum type) {
         _name = name;
-        _table = table;
-        _imageName = imageName;
+        _type = type;
     }
 
     public Integer getId() {
@@ -51,19 +48,11 @@ public class CodexEntity {
         _name = name;
     }
 
-    public TableEnum getTable() {
-        return _table;
+    public TypeEnum getType() {
+        return _type;
     }
 
-    public void setTable(TableEnum table) {
-        _table = table;
-    }
-
-    public String getImageName() {
-        return _imageName;
-    }
-
-    public void setImageName(String imageName) {
-        _imageName = imageName;
+    public void setType(TypeEnum type) {
+        _type = type;
     }
 }

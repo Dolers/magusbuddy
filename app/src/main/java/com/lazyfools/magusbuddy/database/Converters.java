@@ -17,13 +17,13 @@ import java.util.Arrays;
 
 public class Converters {
     @TypeConverter
-    public static String fromCodexTable(CodexEntity.TableEnum value) {
+    public static String fromCodexType(CodexEntity.TypeEnum value) {
         return value == null ? null : value.name();
     }
 
     @TypeConverter
-    public static CodexEntity.TableEnum CodexTableToInt(String value) {
-        return CodexEntity.TableEnum.valueOf(value);
+    public static CodexEntity.TypeEnum CodexTypeToInt(String value) {
+        return CodexEntity.TypeEnum.valueOf(value);
     }
 
     @TypeConverter

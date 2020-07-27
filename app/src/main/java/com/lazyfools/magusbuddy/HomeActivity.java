@@ -22,25 +22,11 @@ public class HomeActivity extends AppCompatActivity {
         navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         bottomNavigation = findViewById(R.id.navigation);
         NavigationUI.setupWithNavController(bottomNavigation,navController);
+
+        setBottomNavigationVisibility(View.GONE);
     }
 
     public void setBottomNavigationVisibility(int value){
-        bottomNavigation.setVisibility(value);
+        bottomNavigation.setVisibility(View.GONE);
     }
-    /*
-    @Override public boolean onCreateOptionsMenu(Menu menu) {
-        MenuInflater menuInflater = getMenuInflater();
-        menuInflater.inflate(R.menu.search_menu, menu);
-        return true;
-    }
-/*
-    @Override public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case R.id.search_icon:
-                onSearchRequested();
-                return true;
-            default:
-                return super.onOptionsItemSelected(item);
-        }
-    }*/
 }
