@@ -1,9 +1,14 @@
 package com.lazyfools.magusbuddy.page.codex.witchmagic;
 
 import android.arch.lifecycle.Observer;
+import android.graphics.Paint;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
+import android.text.Spannable;
+import android.text.SpannableString;
+import android.text.style.AbsoluteSizeSpan;
+import android.text.style.LineHeightSpan;
 import android.view.View;
 import android.widget.GridLayout;
 import android.widget.TextView;
@@ -12,6 +17,9 @@ import com.lazyfools.magusbuddy.R;
 import com.lazyfools.magusbuddy.database.entity.WitchMagicEntity;
 import com.lazyfools.magusbuddy.page.codex.SingleFragment;
 import com.lazyfools.magusbuddy.viewmodel.WitchMagicDatabaseViewModel;
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class WitchMagicSingleFragment extends SingleFragment<WitchMagicDatabaseViewModel> {
 
@@ -37,7 +45,9 @@ public class WitchMagicSingleFragment extends SingleFragment<WitchMagicDatabaseV
 
         populateWithStats(entity);
 
-        ((TextView)getView().findViewById(R.id.description)).setText(entity.getDescription());
+        ((TextView)getView().findViewById(R.id.description)).setText(
+                spacingParagraphFrom(entity.getDescription())
+        );
 
         entity.setDescTables(populateWithTables());
 

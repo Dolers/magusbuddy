@@ -41,6 +41,7 @@ public class WitchMagicCategoryListFragment extends SearchableRecycleViewFragmen
             public void onChanged(@Nullable List<WitchMagicType> typeList) {
                 assert typeList != null;
                 _adapter.setSize(typeList.size());
+                _adapter.addAllItemLoadedCallback(restoreScrollCalback());
                 for (final WitchMagicType type : typeList){
                     _viewModel.getAllWitchMagicNamesOfType(type.type).observe(fragment, new Observer<List<NameEntity>>() {
                         @Override

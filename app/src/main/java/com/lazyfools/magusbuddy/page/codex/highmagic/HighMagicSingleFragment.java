@@ -37,7 +37,9 @@ public class HighMagicSingleFragment extends SingleFragment<HighMagicDatabaseVie
 
         populateWithStats(entity);
 
-        ((TextView)getView().findViewById(R.id.description)).setText(entity.getDescription());
+        ((TextView)getView().findViewById(R.id.description)).setText(
+                spacingParagraphFrom(entity.getDescription())
+        );
 
         entity.setDescTables(populateWithTables());
 

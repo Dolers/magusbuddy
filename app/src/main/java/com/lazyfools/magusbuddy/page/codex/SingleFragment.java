@@ -6,6 +6,9 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.RecyclerView;
+import android.text.Spannable;
+import android.text.SpannableString;
+import android.text.style.AbsoluteSizeSpan;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,8 +19,8 @@ import com.lazyfools.magusbuddy.R;
 import com.lazyfools.magusbuddy.page.common.DescTableAdapter;
 import com.lazyfools.magusbuddy.utility.MarginItemDecoration;
 import java.util.ArrayList;
-import java.util.List;
-
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 abstract public class SingleFragment<ViewModel extends AndroidViewModel> extends Fragment {
     protected ViewModel _viewModel;
@@ -83,5 +86,16 @@ abstract public class SingleFragment<ViewModel extends AndroidViewModel> extends
         else {
             ((TextView)layout.findViewById(idToSet)).setText(Integer.toString(value));
         }
+    }
+
+    public SpannableString spacingParagraphFrom(String text){
+        SpannableString spannableString = new SpannableString(text);
+
+        Matcher matcher = Pattern.compile("\n\n").matcher(text);
+        while (matcher.find()) {
+            spannableString.setSpan(new AbsoluteSizeSpan(6, true), matcher.start() + 1, matcher.end(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+        }
+
+        return spannableString;
     }
 }

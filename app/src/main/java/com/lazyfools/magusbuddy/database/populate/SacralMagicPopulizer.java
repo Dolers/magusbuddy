@@ -91,16 +91,16 @@ public class SacralMagicPopulizer implements Populizer{
     private byte parseSphere(JSONObject qJson) {
         byte value = 0;
         if (qJson.has("elet")){
-            value &= (1 >> SacralMagicEntity.SphereEnum.ELET.ordinal());
+            value |= (1 << SacralMagicEntity.SphereEnum.ELET.ordinal());
         }
         if (qJson.has("halal")){
-            value &= (1 >> SacralMagicEntity.SphereEnum.HALAL.ordinal());
+            value |= (1 << SacralMagicEntity.SphereEnum.HALAL.ordinal());
         }
         if (qJson.has("lelek")){
-            value &= (1 >> SacralMagicEntity.SphereEnum.LELEK.ordinal());
+            value |= (1 << SacralMagicEntity.SphereEnum.LELEK.ordinal());
         }
         if (qJson.has("termeszet")){
-            value &= (1 >> SacralMagicEntity.SphereEnum.TERMESZET.ordinal());
+            value |= (1 << SacralMagicEntity.SphereEnum.TERMESZET.ordinal());
         }
         return value;
     }

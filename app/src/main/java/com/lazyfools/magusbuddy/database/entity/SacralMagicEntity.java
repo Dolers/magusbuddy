@@ -6,6 +6,8 @@ import android.arch.persistence.room.PrimaryKey;
 
 import java.util.ArrayList;
 
+import static com.lazyfools.magusbuddy.utility.Utility.join;
+
 @Entity(tableName = "sacralmagic")
 public class SacralMagicEntity {
     public enum TypeEnum{
@@ -48,7 +50,34 @@ public class SacralMagicEntity {
         }
     }
 
-    public enum SphereEnum {ELET, HALAL, LELEK, TERMESZET}
+    public enum SphereEnum {
+        ELET("Élet"),
+        HALAL("Halál"),
+        LELEK("Lélek"),
+        TERMESZET("Természet");
+
+        private final String name;
+
+        private SphereEnum(String s) {
+            name = s;
+        }
+
+        public String toString() { return this.name; }
+
+        public static String toString(byte sphere) {
+            String delimiterWithSeparator = ", ";
+            StringBuilder sb = new StringBuilder();
+
+            for (SphereEnum elem: SphereEnum.values()) {
+                if ((sphere & ( 1 << elem.ordinal())) > 0) {
+                    if (sb.length() != 0)
+                        sb.append(delimiterWithSeparator);
+                    sb.append(elem.toString());
+                }
+            }
+            return sb.toString();
+        }
+    }
 
     @PrimaryKey(autoGenerate = true)
     @ColumnInfo(name = "id")

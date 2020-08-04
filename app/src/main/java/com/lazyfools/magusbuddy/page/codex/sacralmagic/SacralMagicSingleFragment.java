@@ -46,9 +46,18 @@ public class SacralMagicSingleFragment extends SingleFragment<SacralMagicDatabas
     private void populateWith(SacralMagicEntity entity) {
         ((TextView)getView().findViewById(R.id.title_value)).setText(entity.getName());
 
+        setAndMakeVisible(getView(),
+            join(',',
+                entity.getType().toString(),
+                entity.getSubType(),
+                SacralMagicEntity.SphereEnum.toString(entity.getSphere())),
+            R.id.type_value);
+
         populateWithStats(entity);
 
-        ((TextView)getView().findViewById(R.id.description)).setText(entity.getDescription());
+        ((TextView)getView().findViewById(R.id.description)).setText(
+                spacingParagraphFrom(entity.getDescription())
+        );
 
         entity.setDescTables(populateWithTables());
     }
@@ -69,8 +78,6 @@ public class SacralMagicSingleFragment extends SingleFragment<SacralMagicDatabas
 
         TextView castTimeValue = getView().findViewById(R.id.casttime_value);
         castTimeValue.setText(entity.getCastTime());
-
-        setAndMakeVisible(getView(), join(',', entity.getType().toString(), entity.getSubType()), R.id.type_value);
 
         GridLayout propertiesLayout = getView().findViewById(R.id.properties_layout);
         setOrHide(propertiesLayout, entity.getCastTime(), R.id.casttime_value, R.id.casttime_value, R.id.casttime);
