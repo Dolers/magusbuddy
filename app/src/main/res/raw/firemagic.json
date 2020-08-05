@@ -117,7 +117,7 @@
    "mp": "5",
    "idoigeny": "1 szegmens/E",
    "idotartam": "Egyszeri",
-   "leiras": "A tűzvarázsló a Zónáján belül eső területen meghatározhat egy tetszés szerinti pontot, amely a robbanás epicentrumaként fog szolgálni. A robbanás mindazoknál«, akik a középpont 1 ynevi láb körzetén belül tartózkodnak, minden E után lkő sebet fog okozni. Ha a tűzvarázsló a tűzkitörést - több Mp felhasználásával - nagyobb erősséggel idézi meg, akkor már a távolabb állók is részesülnek a hatásából - minél távolabb tartózkodnak, annál kevésbé. A sebzés az epicentrumtól távolodva lábanként 1 kő-tál csökken."
+   "leiras": "A tűzvarázsló a Zónáján belül eső területen meghatározhat egy tetszés szerinti pontot, amely a robbanás epicentrumaként fog szolgálni. A robbanás mindazoknál«, akik a középpont 1 ynevi láb körzetén belül tartózkodnak, minden E után lkő sebet fog okozni. Ha a tűzvarázsló a tűzkitörést - több Mp felhasználásával - nagyobb erősséggel idézi meg, akkor már a távolabb állók is részesülnek a hatásából - minél távolabb tartózkodnak, annál kevésbé. A sebzés az epicentrumtól távolodva lábanként 1k6-tál csökken."
  },
  {
    "tipus": "Iskolaformák",
@@ -165,7 +165,7 @@
    "mp": "12",
    "idoigeny": "1 szegmens/E",
    "idotartam": "3 kör",
-   "leiras": "A varázslat létrejöttekor gyűrű alakban egyre erősebb lánghullámok indulnak útnak a középpontban álló tűzvarázsló felől, aki bal nyitott tenyerével a föld felé sújtva indítja útnak a lángokat, egészen Zónájának határáig (20 ynevi láb). A hullámok 1 kör alatt megteszik ezt a távolságot, és minden útjukba eső éghető anyagot lángra lobbantanak. Minden körben egy-egy új hullám születik, az első annyiszor lkő-ot sebez, amennyi a varázslat E-je, a második hullám 1k6-tal többet, a harmadik újabb 1k6-tal többet, és így tovább, az Időtartam végeztéig."
+   "leiras": "A varázslat létrejöttekor gyűrű alakban egyre erősebb lánghullámok indulnak útnak a középpontban álló tűzvarázsló felől, aki bal nyitott tenyerével a föld felé sújtva indítja útnak a lángokat, egészen Zónájának határáig (20 ynevi láb). A hullámok 1 kör alatt megteszik ezt a távolságot, és minden útjukba eső éghető anyagot lángra lobbantanak. Minden körben egy-egy új hullám születik, az első annyiszor lk6-ot sebez, amennyi a varázslat E-je, a második hullám 1k6-tal többet, a harmadik újabb 1k6-tal többet, és így tovább, az Időtartam végeztéig."
  },
  {
    "tipus": "Szabad elemi formák",

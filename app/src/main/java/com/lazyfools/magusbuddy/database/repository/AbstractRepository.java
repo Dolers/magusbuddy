@@ -9,7 +9,7 @@ public abstract class AbstractRepository<Dao extends IBaseDao<Entity>,Entity> {
     protected Dao _dao;
 
     public void insert(Entity entity) {
-        new RepositoryAsyncTask(_dao,Operation.INSERT).execute(entity);
+        new RepositoryAsyncTask<>(_dao,Operation.INSERT).execute(entity);
     }
 
     public void insertAll(Entity... entity) {
@@ -45,9 +45,6 @@ public abstract class AbstractRepository<Dao extends IBaseDao<Entity>,Entity> {
                     break;
                 case DELETE:
                     _asyncTaskDao.delete(params[0]);
-                    break;
-                case DELETE_ALL:
-                    _asyncTaskDao.deleteAll();
                     break;
             }
             return null;

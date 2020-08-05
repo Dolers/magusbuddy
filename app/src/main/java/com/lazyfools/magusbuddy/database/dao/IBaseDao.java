@@ -12,7 +12,4 @@ public interface IBaseDao<Entity> {
 
     @Delete
     void delete(Entity entity);
-
-    @Delete
-    void deleteAll(Entity... entity);
 }
