@@ -37,12 +37,7 @@
                 android:textSize="12sp"
                 android:text="@string/tipusnev" />
 
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_marginHorizontal="15dp"
-                android:layout_marginVertical="5dp"
-                android:background="#202020" />
+            <include layout="@layout/horizontal_line" />
 
             <TextView
                 android:id="@+id/description"

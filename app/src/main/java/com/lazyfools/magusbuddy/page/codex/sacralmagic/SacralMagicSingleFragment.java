@@ -64,14 +64,14 @@ public class SacralMagicSingleFragment extends SingleFragment<SacralMagicDatabas
 
     private void populateWithStats(SacralMagicEntity entity) {
         ((TextView) getView().findViewById(R.id.mp)).setText(getText(R.string.kp));
-        ((TextView) getView().findViewById(R.id.mp_value)).setText(Integer.toString(entity.getKp()));
+        ((TextView) getView().findViewById(R.id.mp_value)).setText(String.valueOf(entity.getKp()));
 
         //Set EKp text
         if (entity.getEkpText().isEmpty()) {
             ((TextView) getView().findViewById(R.id.emp)).setText(getText(R.string.ekp));
         }
         else {
-            ((TextView) getView().findViewById(R.id.emp)).setText(entity.getEkpText());
+            ((TextView) getView().findViewById(R.id.emp)).setText(String.format("Kp/%s", entity.getEkpText()));
         }
 
         setOrHide(getView(), entity.getEkp(), R.id.emp_value, R.id.emp_layout);

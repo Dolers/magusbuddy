@@ -4,6 +4,7 @@ import android.app.Application;
 import android.arch.lifecycle.AndroidViewModel;
 import android.arch.lifecycle.LiveData;
 
+import com.lazyfools.magusbuddy.database.repository.BattlesituationRepository;
 import com.lazyfools.magusbuddy.database.repository.CodexRepository;
 import com.lazyfools.magusbuddy.database.repository.QualificationRepository;
 import com.lazyfools.magusbuddy.database.entity.CharacterEntity;

@@ -94,6 +94,7 @@ public class CodexCategoryListFragment extends Fragment {
     {
         switch (item.getType()){
             case QUALIFICATION: return R.id.action_navigation_codex_to_qualificationCategoryListFragment;
+            case BATTLESITUATION: return R.id.action_navigation_codex_to_battlesituationCategoryListFragment;
             case BARDMAGIC: return R.id.action_navigation_codex_to_bardMagicCategoryListFragment;
             case WITCHMAGIC: return R.id.action_navigation_codex_to_witchMagicCategoryListFragment;
             case WARLOCKMAGIC: return R.id.action_navigation_codex_to_warlockMagicCategoryListFragment;

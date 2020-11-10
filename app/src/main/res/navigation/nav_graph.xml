@@ -37,6 +37,9 @@
         <action
             android:id="@+id/action_navigation_codex_to_witchMagicCategoryListFragment"
             app:destination="@id/witchMagicCategoryListFragment" />
+        <action
+            android:id="@+id/action_navigation_codex_to_battlesituationCategoryListFragment"
+            app:destination="@id/battlesituationCategoryListFragment" />
     </fragment>
     <fragment
         android:id="@+id/navigation_battle"
@@ -170,4 +173,16 @@
         android:id="@+id/witchMagicSingleFragment"
         android:name="com.lazyfools.magusbuddy.page.codex.witchmagic.WitchMagicSingleFragment"
         android:label="WitchMagicSingleFragment" />
+    <fragment
+        android:id="@+id/battlesituationCategoryListFragment"
+        android:name="com.lazyfools.magusbuddy.page.codex.battlesituation.BattlesituationCategoryListFragment"
+        android:label="BattlesituationCategoryListFragment" >
+        <action
+            android:id="@+id/action_battlesituationCategoryListFragment_to_battlesituationSingleFragment"
+            app:destination="@id/battlesituationSingleFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/battlesituationSingleFragment"
+        android:name="com.lazyfools.magusbuddy.page.codex.battlesituation.BattlesituationSingleFragment"
+        android:label="BattlesituationSingleFragment" />
 </navigation>

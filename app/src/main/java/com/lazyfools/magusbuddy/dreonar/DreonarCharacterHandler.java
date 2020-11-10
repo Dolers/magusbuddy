@@ -521,7 +521,7 @@ public class DreonarCharacterHandler {
 
     private void parseJSONAllCharacter(int key, JSONArray characters) throws JSONException {
         if (characters == null) return;
-        Log.d("parseJSONAllCharacter", Integer.toString(key));
+        Log.d("parseJSONAllCharacter", String.valueOf(key));
         for (int i = 0; i< characters.length(); i++) {
             JSONObject character = (JSONObject)characters.get(i);
             _repository.insertCharacter(key,

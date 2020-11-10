@@ -31,4 +31,10 @@
     <string name="default_range_value">20 m</string>
     <string name="pszipont">Ψp</string>
     <string name="tipusnev">tipusnev</string>
+    <string name="default_range">20 m</string>
+    <string name="strengthening_sign">E</string>
+    <string name="ke">KÉ:</string>
+    <string name="te">TÉ:</string>
+    <string name="ve">VÉ:</string>
+    <string name="ce">CÉ:</string>
 </resources>

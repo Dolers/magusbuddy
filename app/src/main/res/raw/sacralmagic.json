@@ -675,7 +675,7 @@
   "me": "Mentális",
   "leiras": "A mágia áldozata mozdulatlanságba dermed, amiből természetes úton csak a fohász időtartamának lejártakor riad fel. E különös tetszhalál megtorpantja az életfolyamatokat, és szinte teljesen megállítja az öregedést: minden tíz Időtlen álomban töltött év alatt csak egy hónapot vénül a célpont. A papnak a fohász elkántálása után egy körön belül meg kell érintenie áldozatát, s amennyiben az ellenkezik, úgy a mágiaalkalmazónak sikeres Támadó dobást kell tennie. Ezután a mágia alanya az alábbi táblázat szerinti, véletlenszerű időtartamra Időtlen álomba merül.\n\nA pap semmilyen módon nem tudja befolyásolni az időtartamot, az minden esetben a véletlen függvénye. A fohász magasabb erősítésű Mágia szétoszlatással megszüntethető.\n\nA fohász nem evilági vagy élőholt lényeken nem fejti ki hatását.\n\n",
   "tablazatok": [
-   "k100\tIdőtlen álomban töltött idő\n\n01-09\t1 nap\n\n 10-16\t2 hét\n\n 17-20\t5 év\n\n 21-25\t6 perc\n\n 26-30\t4 óra\n\n 31-50\t3 nap\n\n 51-57\t10 óra\n\n 58-75\t3 kör\n\n 76-80\t3 szegmens\n\n 81-85\t22 év\n\n 86-88\t7 nap\n\n 89-92\t100 év\n\n 93\t17 év\n\n 94-96\t21 nap\n\n 97-98\t9 óra\n\n 99\t44 nap\n\n 00\t333 év"
+   "k100\tIdőtlen álomban töltött idő\n\n01-09\t1 nap\n\n10-16\t2 hét\n\n17-20\t5 év\n\n21-25\t6 perc\n\n26-30\t4 óra\n\n31-50\t3 nap\n\n51-57\t10 óra\n\n58-75\t3 kör\n\n76-80\t3 szegmens\n\n81-85\t22 év\n\n86-88\t7 nap\n\n89-92\t100 év\n\n93\t17 év\n\n94-96\t21 nap\n\n97-98\t9 óra\n\n99\t44 nap\n\n00\t333 év"
   ]
  },
  {
@@ -1505,7 +1505,7 @@
   "hossz": "1 kör",
   "hatotav": "Speciális",
   "idotartam": "Végleges",
-  "leiras": "Az utazók istene nem hagyja cserben híveit, ha azok valamilyen oknál fogva nem találják a helyes utat céljukhoz. Ez a fohász megmutatja számukra, hogy merre is van az általuk keresett város, folyó, keresztút. Csupán arról tájékoztat, hogy milyen irányban van a keresett cél.\n\n A fohász sikeréhez elengedhetetlenül szükséges, hogy vagy ő, vagy valamelyik útitársa legalább egyszer a múltban már járt az így keresett helyen. Az Útmutatás fohásztól eltérően az így szerzett ismeretek pontosak és a hatóidő elmúltával sem halványodnak el. Személyek és tárgyak viszont nem kereshetők vele.\n\n"
+  "leiras": "Az utazók istene nem hagyja cserben híveit, ha azok valamilyen oknál fogva nem találják a helyes utat céljukhoz. Ez a fohász megmutatja számukra, hogy merre is van az általuk keresett város, folyó, keresztút. Csupán arról tájékoztat, hogy milyen irányban van a keresett cél.\n\nA fohász sikeréhez elengedhetetlenül szükséges, hogy vagy ő, vagy valamelyik útitársa legalább egyszer a múltban már járt az így keresett helyen. Az Útmutatás fohásztól eltérően az így szerzett ismeretek pontosak és a hatóidő elmúltával sem halványodnak el. Személyek és tárgyak viszont nem kereshetők vele.\n\n"
  },
  {
   "tipus": "Krad",
@@ -1644,7 +1644,7 @@
   "hossz": "Rajzolás hossza",
   "hatotav": "10 m",
   "idotartam": "1 nap",
-  "leiras": "A Vérmágia védőfohásza, mely távol tarthatja a nem kívánt behatolókat a pap által kijelölt területről. Ehhez a területet vérrel kell megjelölni, illetve a rituálé szőve gének citálása közben körberajzolni határait. A fohász eredményeképp a gátat csak az az egy lény nem lépheti át, melynek vérével azt felrajzolták.\n\n A rajzoláshoz felhasznált vér lehet kevert is. Annyi személy vagy lény vérét tartalmazhatja, ahányadik szintű a pap. A lények tartozhatnak egyazon fajba, avagy több különböző fajba is, ez utóbbi esetben minden képviselt faj egyedei számára áttörhetetlen lesz a gát.\n\nA Vérgát vonalát bárki megtörheti, akinek vérét (illetve a második esetben vele egy fajba tartozó vérét) nem tartalmazza a rajzolat. A Vérgátat felrajzoló pap istenének többi felkentje szabadon keresztülsétálhat a Vérgát vonalán, még akkor is, ha ahhoz a fajhoz tartozik, amelynek véréből rajzolták.\n\nA Kegy pontok többszörözésével a Vérgát mérete és a védelem időtartama egyaránt növelhető."
+  "leiras": "A Vérmágia védőfohásza, mely távol tarthatja a nem kívánt behatolókat a pap által kijelölt területről. Ehhez a területet vérrel kell megjelölni, illetve a rituálé szőve gének citálása közben körberajzolni határait. A fohász eredményeképp a gátat csak az az egy lény nem lépheti át, melynek vérével azt felrajzolták.\n\nA rajzoláshoz felhasznált vér lehet kevert is. Annyi személy vagy lény vérét tartalmazhatja, ahányadik szintű a pap. A lények tartozhatnak egyazon fajba, avagy több különböző fajba is, ez utóbbi esetben minden képviselt faj egyedei számára áttörhetetlen lesz a gát.\n\nA Vérgát vonalát bárki megtörheti, akinek vérét (illetve a második esetben vele egy fajba tartozó vérét) nem tartalmazza a rajzolat. A Vérgátat felrajzoló pap istenének többi felkentje szabadon keresztülsétálhat a Vérgát vonalán, még akkor is, ha ahhoz a fajhoz tartozik, amelynek véréből rajzolták.\n\nA Kegy pontok többszörözésével a Vérgát mérete és a védelem időtartama egyaránt növelhető."
  },
  {
   "tipus": "Kis Arkánum",

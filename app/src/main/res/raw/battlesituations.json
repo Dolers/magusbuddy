@@ -1,0 +1,146 @@
+[
+{
+  "nev": "Meglepetésszerű támadás",
+  "ke": "T-é",
+  "te": "+30",
+  "ve": "-",
+  "ce": "-",
+  "leiras": "Akkor beszélhetünk meglepetésszerű támadásról, ha a célpontot teljesen váratlanul éri a támadás, nincs felkészülve a hárításra vagy kitérésre. Így — értelemszerűen — a támadóé a kezdeményezés joga, és az adott körben, a küzdelemben is fölénybe kerül. Az ebből származó előnyök a következő harci körben odalesznek a meglepetéssel együtt."
+},
+{
+  "nev": "Harc magasabbról",
+  "ke": "-",
+  "te": "+5",
+  "ve": "+5",
+  "ce": "-",
+  "leiras": "Ha az ellenfelek a küzdelem során szintkülönbségbe kerülnek egymáshoz képest (egyikük két fokkal lejjebb áll a lépcsőn, netán egy asztal tetejéről tornyosul a másik fölé), akkor a feljebb tartózkodó előnyt élvez, hiszen csapásaiba nagyobb erőt képes belevinni, míg védekezésnél kisebb és könnyebben védhető felületet nyújt ellenfelének."
+},
+{
+  "nev": "Harc helyhez kötve",
+  "ke": "-10",
+  "te": "-",
+  "ve": "-10",
+  "ce": "-",
+  "leiras": "A Harc helyhez kötve annyit tesz, hogy az egyik harcoló fél képtelen a helyváltoztatásra. Vagy mert a küzdelem során a falhoz szorult, vagy mert derékig a sárba süppedt stb. Ebből természetesen jelentős hátránya származik."
+},
+{
+  "nev": "Harc fekve",
+  "ke": "0",
+  "te": "-20",
+  "ve": "-10",
+  "ce": "0",
+  "leiras": "Harc közben gyakran előfordul, hogy valaki felbukik, hanyatt zuhan. Az illető ilyenkor súlyos hátránnyal képes csak folytatni a küzdelmet. A kezdeményezést automatikusan elveszíti. Az érintett felállni csak akkor képes, ha sikeres mozgás értékű cselekedetet hajt végre anélkül, hogy közben bárki sikeres Támadó dobást hajtana végre ellene. Ha mindezen feltételek teljesülnek, a kör végére újból talpra állhat.\nKözelharc közben fekve lehetetlen célzófegyvert használni. Egyébként — harcon kívül — kizárólag nyílpuskával és fúvócsővel lehet eredményesen célozni fekve."
+},
+{
+  "nev": "Harc mozgó lóról",
+  "ke": "-",
+  "te": "+20",
+  "ve": "+10",
+  "ce": "-",
+  "leiras": "A küzdő felek egyike - és csak egyike! - lovon ülve harcol, ebből (ha rendelkezik az adott képzettséggel) jelentős előnyt kovácsolhat. Ehhez egyrészt 3. fokú Lovaglás képzettséggel kell rendelkeznie, másrészt az általa megült hátasnak szünet nélkül mozognia, rúgkapálnia kell. Ha ezen feltételek valamelyike nem teljesül, a lovas csak a Harc magasabbról előnyeit élvezi."
+},
+{
+  "nev": "Harc vakon vagy vaksötétben",
+  "ke": "0",
+  "te": "-60",
+  "ve": "-60",
+  "ce": "-150",
+  "leiras": "Mindazok, akik — vagy, mert vakok, vagy bármely más okból — nem látják ellenfelüket, valamint nem érzékelik pontosan a környezetüket, jelentős hátránnyal képesek csak harcolni, a kezdeményezést ís automatikusan elveszítik."
+},
+{
+  "nev": "Harc láthatatlan ellenféllel",
+  "ke": "0",
+  "te": "-40",
+  "ve": "-40",
+  "ce": "-75",
+  "leiras": "Különbséget kell tegyünk azonban két eset között, amikor teljesen vakon küzd valaki, illetve amikor a környezetével tőkéletesen tisztában van, csupán ellenfelét nem látja. Ha nem is olyan szigorúak, mint a vakharc esetében, de ilyenkor is komoly levonások sújtják hátrányba került felet, a kezdeményezést is automatikusan elveszíti."
+},
+{
+  "nev": "Harc gyűlölettel eltelve",
+  "ke": "+5",
+  "te": "+5",
+  "ve": "-10",
+  "ce": "-",
+  "leiras": "Mindazok, akik parttalanul gyűlölik ellenfelüket — vagy rettegnek tőle, de sarokba szorulnak, és szembefordulni kényszerülnek vele - gyakorta merítenek erőt ebből az érzésből. Nem törődnek a rájuk hulló csapásokkal, vakon törnek előre, csak hogy minél hamarabb elpusztítsák ellenfelüket."
+},
+{
+  "nev": "Roham",
+  "ke": "-",
+  "te": "+20",
+  "ve": "-20",
+  "ce": "-20",
+  "leiras": "Küzdelem során - leginkább egy harc kezdetekor - gyakran előfordul, hogy az egyik fél lerohanja a másikat, lendületét fordítva a maga hasznára. A támadás ennek következtében átütő erejű lesz, míg a védekezés háttérbe szorul. Roham során megkísérelt célzáson futás közben vagy vágtató hátasról leadott lövést értünk. Roham esetén gyakran egy kör alatt eldől a küzdelem sorsa. Az eredmény legtöbbször attól függ, hogy a rohamozó, vagy a nyugton várakozó ellenfél ragadja-e magához a kezdeményezést. Sikeres roham, illetve a rohamozó ellen végrehajtott sikeres feltartó támadás esetén az okozott sebzés mindig kétszerese a közönségesnek (lásd még Egészkörös cselekedetek). A sebzés kétszereződése nem vonatkozik sem a hajítófegyverekre, sem a célzófegyverek lövedékei által okozott veszteségekre.\nHa mindkét fél rohamra lendül, az összecsapáskor mindketten élvezik és elszenvedik jelen szabály előnyeit és hátrányait, azonban a sebzés nem négyszereződik.\nRohammal csak akkor lehet több támadást is leadni, ha a rohamozót semmi sem kényszeríti lendülete megtörésére, lelassulásra, tehát senki nem dob ellene sikeres Támadó dobást, és nem kerül akadály az útjába, ellenkező esetben a roham megtörik."
+},
+{
+  "nev": "Harc elfogásáért",
+  "ke": "-",
+  "te": "-10",
+  "ve": "-",
+  "ce": "0",
+  "leiras": "Erről a harci helyzetről akkor beszélhetünk, ha a küzdök egyike ellenfele foglyul ejtésére vagy ártalmatlanná tételére törekszik. Nem az a célja, hogy súlyos sebet ejtsen ellenfelén, pusztán az, hogy jobb belátásra bírja vagy elkábítsa. A túlütés ilyen feltételek mellett nem jelent Ép sebzést, ellenben kétszeres Fp sebet okoz. Az utolsó támadásnál, az áldozat Fp-inek elfogytával a sebzés nem csúszik át Ép-re, hanem az áldozat egyszerűen elájul.\nFoglyul ejtés csak Közelharcban alkalmazható. Hajítófegyvert dobni, távolsági fegyverrel lőni ilyen szándékkal nem lehet."
+},
+{
+  "nev": "Harc kábultan",
+  "ke": "-10",
+  "te": "-20",
+  "ve": "-10",
+  "ce": "-30",
+  "leiras": "Mindazok, akik valamilyen okból nincsenek teljesen tudatában cselekedeteiknek. (akár alkohol, akár különböző mákonyok hatása miatt)"
+},
+{
+  "nev": "Harc bénultan",
+  "ke": "-",
+  "te": "-",
+  "ve": "0",
+  "ce": "-",
+  "leiras": "A karakter lebénult végtagját nem használhatja harc közben, így elveszíti például a pajzs, alkarvédő vagy a fegyver nyújtotta módosítókat. Amennyiben képtelen a helyváltoztatásra, úgy a Harc fekve vagy a Harc helyhez kötve módosítói érvényesek rá.\nAmennyiben teljesen lebénul, úgy magatehetetlen célpontnak tekintendő, Védő értéke 0-ra csökken."
+},
+{
+  "nev": "Támadás hátulról",
+  "ke": "-",
+  "te": "-",
+  "ve": "*",
+  "ce": "-",
+  "leiras": "A támadó hátulról ront ellenfelére, aki így kevésbé képes védekezni ellene. Akit a támadás ért, elveszíti a fegyvere és a pajzsa nyújtotta VÉ módosítókat. A hátrányt azonban szigorúan csak addig szenvedi el, ameddig a másik mögötte tud maradni."
+},
+{
+  "nev": "Támadás oldalról/félhátulról",
+  "ke": "-",
+  "te": "-",
+  "ve": "*",
+  "ce": "-",
+  "leiras": "A támadó úgy harcol ellenfelével, hogy annak félig-meddig — de semmiképpen sem teljesen — a háta mögött marad, vagy pedig oldalról ront rá. Akit a támadás ért, elveszíti a fegyvere vagy a pajzsa nyújtotta VÉ módosítókat (attól függően, melyik oldalról éri a támadás), egészen addig, míg ellenfelével szembe nem fordul."
+},
+{
+  "nev": "Harc félelem hatása alatt",
+  "ke": "T-é",
+  "te": "-20",
+  "ve": "+10",
+  "ce": "-",
+  "leiras": "Mindazok, akik rettegnek ellenfelüktől, hogy életüket megóvják, tudat alatt is a védekezésre összpontosítanak a támadás hátrányára."
+},
+{
+  "nev": "Védekező harc",
+  "ke": "T-é",
+  "te": "-",
+  "ve": "+40",
+  "ce": "-",
+  "leiras": "Az érintett fél egyetlen célja, hogy megóvja magát a támadásoktól. Kizárólag a védekezésre összpontosít, ami (míg a körülmények engedik), folyamatos hátrálást jelenthet, ehhez pedig jelentős helyre van szükség (lásd még Egészkörös cselekedetek).\nHa kizárólag a védekezésre összpontosít a célpont és van helye is a hátrálásra, akkor a VÉ-je +40-nel nő, míg a kezdeményezés az ellenfélé lesz. A védekező harcban visszatámadásra nincs mód.\nEz esetben azonban más cselekvést nem tud végrehajtani. A védekezéssel egyidejűleg nem használhat pszit, mágiát, nem vehet elő addig elrakott fegyvereket, felszerelési tárgyakat, nem tud előre menni, egy helyben maradni, hanem folyamatosan hátrál és hárít."
+},
+{
+  "nev": "Védekező harc (helyhez kötve)",
+  "ke": "-",
+  "te": "-",
+  "ve": "+25",
+  "ce": "-",
+  "leiras": "Az érintett fél egyetlen célja, hogy megóvja magát a támadásoktól. Kizárólag a védekezésre összpontosít, ami (míg a körülmények engedik), folyamatos hátrálást jelenthet, ehhez pedig jelentös helyre van szükség (lásd még Egészkörös cselekedetek. Védekező harc során a következő módosítók az érvényesek:\nHa falhoz szorítják, vagy szorosan körbeveszik —  \"Harc helyhez kötve\" - hiába változatlan az erőfeszítése, a védekezés kevésbé lesz hatékony, a Védő érték mindössze +25-tel nő."
+},
+{
+  "nev": "Védekező harc (mást csinálva)",
+  "ke": "-",
+  "te": "-",
+  "ve": "+10",
+  "ce": "-",
+  "leiras": "Az érintett fél egyetlen célja, hogy megóvja magát a támadásoktól. Kizárólag a védekezésre összpontosít, ami (míg a körülmények engedik), folyamatos hátrálást jelenthet, ehhez pedig jelentös helyre van szükség (lásd még Egészkörös cselekedetek. Védekező harc során a következő módosítók az érvényesek:\nHa kénytelen megosztani a figyelmét, mert a védekezés közben pszit, mágiát, stb. kíván használni, a védekezés koránsem olyan hatékony, mint teljes összpontosítás esetén. Ekkor a Védő érték csupán +10-zel nő."
+}
+]

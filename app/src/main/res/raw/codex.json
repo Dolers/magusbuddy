@@ -4,6 +4,10 @@
    "tipus": "QUALIFICATION"
  },
  {
+   "nev": "Harci helyzetek",
+   "tipus": "BATTLESITUATION"
+ },
+ {
    "nev": "Bárdmágia",
    "tipus": "BARDMAGIC"
  },

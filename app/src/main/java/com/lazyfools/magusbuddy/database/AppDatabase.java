@@ -10,6 +10,7 @@ import android.support.annotation.NonNull;
 
 import com.lazyfools.magusbuddy.database.dao.APIKeyDao;
 import com.lazyfools.magusbuddy.database.dao.BardMagicDao;
+import com.lazyfools.magusbuddy.database.dao.BattlesituationDao;
 import com.lazyfools.magusbuddy.database.dao.CharacterAPIRelationDao;
 import com.lazyfools.magusbuddy.database.dao.CharacterDao;
 import com.lazyfools.magusbuddy.database.dao.CodexDao;
@@ -22,6 +23,7 @@ import com.lazyfools.magusbuddy.database.dao.WarlockMagicDao;
 import com.lazyfools.magusbuddy.database.dao.WitchMagicDao;
 import com.lazyfools.magusbuddy.database.entity.APIKeyEntity;
 import com.lazyfools.magusbuddy.database.entity.BardMagicEntity;
+import com.lazyfools.magusbuddy.database.entity.BattlesituationEntity;
 import com.lazyfools.magusbuddy.database.entity.CharacterAPIRelationEntity;
 import com.lazyfools.magusbuddy.database.entity.CharacterEntity;
 import com.lazyfools.magusbuddy.database.entity.CodexEntity;
@@ -40,6 +42,7 @@ import com.lazyfools.magusbuddy.database.populate.DbPopulizer;
             APIKeyEntity.class,
             CharacterAPIRelationEntity.class,
             QualificationEntity.class,
+            BattlesituationEntity.class,
             CodexEntity.class,
             HighMagicEntity.class,
             SacralMagicEntity.class,
@@ -49,7 +52,7 @@ import com.lazyfools.magusbuddy.database.populate.DbPopulizer;
             WitchMagicEntity.class,
             WarlockMagicEntity.class,
         },
-        version = 12,
+        version = 13,
         exportSchema = false
 )
 @TypeConverters({Converters.class})
@@ -59,6 +62,7 @@ public abstract class AppDatabase extends RoomDatabase {
     public abstract CharacterAPIRelationDao characterAPIKeyRelationDao();
 
     public abstract QualificationDao qualificationDao();
+    public abstract BattlesituationDao battlesituationDao();
     public abstract HighMagicDao highMagicDao();
     public abstract SacralMagicDao sacralMagicDao();
     public abstract BardMagicDao bardMagicDao();

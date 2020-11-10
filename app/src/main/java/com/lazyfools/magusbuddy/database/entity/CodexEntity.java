@@ -8,6 +8,7 @@ import android.arch.persistence.room.PrimaryKey;
 public class CodexEntity {
     public enum TypeEnum{
         QUALIFICATION,
+        BATTLESITUATION,
         BARDMAGIC,
         WITCHMAGIC,
         WARLOCKMAGIC,

@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/scrollView"
     android:name="com.lazyfools.magusbuddy.QualificationSingleFragment"
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -19,29 +18,23 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
             android:text="@string/magic_title"
             android:textAlignment="center"
             android:textSize="32sp"
-            app:fontFamily="@font/eden_mills_bold"
-            android:gravity="center_horizontal" />
-
+            app:fontFamily="@font/eden_mills_bold" />
 
         <TextView
             android:id="@+id/type_value"
-            android:layout_weight="1"
             android:layout_width="match_parent"
             android:layout_height="0dp"
+            android:layout_weight="1"
             android:gravity="center_horizontal"
+            android:text="@string/tipusnev"
             android:textSize="12sp"
-            android:visibility="gone"
-            android:text="@string/tipusnev" />
+            android:visibility="gone" />
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:layout_marginHorizontal="15dp"
-            android:layout_marginVertical="5dp"
-            android:background="#202020" />
+        <include layout="@layout/horizontal_line" />
 
         <RelativeLayout
             android:id="@+id/stat_layout"
@@ -76,7 +69,7 @@
                         android:layout_toEndOf="@id/mp_value"
                         android:layout_toRightOf="@id/mp_value"
                         android:text="@string/mp"
-                        android:textSize="16sp"/>
+                        android:textSize="16sp" />
                 </RelativeLayout>
 
                 <RelativeLayout
@@ -98,8 +91,7 @@
                         android:layout_height="match_parent"
                         android:layout_toEndOf="@id/emp_value"
                         android:layout_toRightOf="@id/emp_value"
-                        android:text="@string/emp"
-                        android:textSize="16sp" />
+                        android:text="@string/emp" />
                 </RelativeLayout>
             </LinearLayout>
 
@@ -107,21 +99,21 @@
                 android:id="@+id/properties_layout"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="6dp"
                 android:columnCount="2"
                 android:columnOrderPreserved="true"
-                android:rowOrderPreserved="true"
-                android:layout_marginBottom="6dp"
-                android:layout_centerVertical="true"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentRight="true">
+                android:rowOrderPreserved="true">
 
                 <TextView
                     android:id="@+id/casttime"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:layout_marginRight="5dp"
                     android:layout_marginEnd="5dp"
-                    android:text="@string/casttime"/>
+                    android:layout_marginRight="5dp"
+                    android:text="@string/casttime" />
                 <TextView
                     android:id="@+id/casttime_value"
                     android:layout_width="wrap_content"
@@ -133,9 +125,9 @@
                     android:id="@+id/durationtime"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:layout_marginRight="5dp"
                     android:layout_marginEnd="5dp"
-                    android:text="@string/durationTime"/>
+                    android:layout_marginRight="5dp"
+                    android:text="@string/durationTime" />
                 <TextView
                     android:id="@+id/durationtime_value"
                     android:layout_width="wrap_content"
@@ -147,39 +139,35 @@
                     android:id="@+id/range"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:layout_marginRight="5dp"
                     android:layout_marginEnd="5dp"
-                    android:text="@string/range"/>
+                    android:layout_marginRight="5dp"
+                    android:text="@string/range" />
                 <TextView
                     android:id="@+id/range_value"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:text="@string/default_range_value"
-                    android:layout_gravity="end"/>
+                    android:layout_gravity="end"
+                    android:text="@string/default_range_value" />
 
                 <TextView
                     android:id="@+id/resistance"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:layout_marginRight="5dp"
                     android:layout_marginEnd="5dp"
-                    android:visibility="gone"
-                    android:text="@string/resistance_name" />
+                    android:layout_marginRight="5dp"
+                    android:text="@string/resistance_name"
+                    android:visibility="gone" />
                 <TextView
                     android:id="@+id/resistance_value"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_gravity="end"
-                    android:visibility="gone"
-                    android:text="@string/resistance_value" />
+                    android:text="@string/resistance_value"
+                    android:visibility="gone" />
             </GridLayout>
         </RelativeLayout>
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:layout_marginHorizontal="15dp"
-            android:background="#202020" />
+        <include layout="@layout/horizontal_line" />
 
         <TextView
             android:id="@+id/description"

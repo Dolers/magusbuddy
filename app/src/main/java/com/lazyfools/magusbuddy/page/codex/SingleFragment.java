@@ -84,7 +84,7 @@ abstract public class SingleFragment<ViewModel extends AndroidViewModel> extends
             }
         }
         else {
-            ((TextView)layout.findViewById(idToSet)).setText(Integer.toString(value));
+            ((TextView)layout.findViewById(idToSet)).setText(String.valueOf(value));
         }
     }
 

@@ -47,7 +47,7 @@ public class FireMagicSingleFragment extends SingleFragment<FireMagicDatabaseVie
     }
 
     private void populateWithStats(FireMagicEntity entity) {
-        ((TextView) getView().findViewById(R.id.mp_value)).setText(Integer.toString(entity.getMp()));
+        ((TextView) getView().findViewById(R.id.mp_value)).setText(String.valueOf(entity.getMp()));
         setOrHide(getView(), entity.getMp(), R.id.emp_value, R.id.emp_layout);
 
         setAndMakeVisible(getView(), entity.getType().toString(), R.id.type_value);

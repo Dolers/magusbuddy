@@ -44,7 +44,7 @@ public class BardMagicSingleFragment extends SingleFragment<BardMagicDatabaseVie
     }
 
     private void populateWithStats(BardMagicEntity entity) {
-        ((TextView) getView().findViewById(R.id.mp_value)).setText(Integer.toString(entity.getMp()));
+        ((TextView) getView().findViewById(R.id.mp_value)).setText(String.valueOf(entity.getMp()));
 
         setOrHide(getView(), entity.getEmp(), R.id.emp_value, R.id.emp_layout);
 

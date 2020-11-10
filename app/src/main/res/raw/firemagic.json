@@ -349,7 +349,7 @@
    "mp": "4",
    "idoigeny": "2 sz",
    "idotartam": "3 kör",
-   "leiras": "A varázslat hatására a tűz fény- és hőhatásai térben el- választhatóak. Ez azt jelenti, hogy a láng e két összetevője a tűzvarázsló körüli tíz ynevi láb sugarú körben tetszőleges helyen fejtheti ki hatását. A varázslat használatát korlátozza, hogy az egyik komponensnek mindenképpen a láng eredeti helyén kell maradnia. A tűzvarázsló ezzel a varázslattal komoly károkat okozhat ellenfeleinek, ugyanis megteheti, hogy a tűz képét a kandallóban hagyja, de a hővel támad, és minden látható jel nélkül sebez. A sikeres találathoz a tűzvarázslónak Célzó dobást kell tennie, +30-cal. A találat majdnem bizonyos, hiszen a láthatatlan láng elől szinte lehetetlen kitérni.\n\nAz áldozaton persze meglátszanak az égés nyomai, még az esetleges gyúlékony anyagok is lángra lobbanhatnak. A tűzvarázsló előszeretettel alkalmazza a Tűzválasztást nagyobb ütközetek, ostromok alkalmával is, hiszen a legtöbb efféle esemény alatt akár mágia, akár fáklyák hatására is gyúlhat- nak nagy, elszabaduló tüzek.\n\nAmennyiben a tűzvarázsló a hőhatást hagyja a láng eredeti helyén, és a fényt mozgatja, ezzel nagy csarnokokat, termeket deríthet fel."
+   "leiras": "A varázslat hatására a tűz fény- és hőhatásai térben elválaszthatóak. Ez azt jelenti, hogy a láng e két összetevője a tűzvarázsló körüli tíz ynevi láb sugarú körben tetszőleges helyen fejtheti ki hatását. A varázslat használatát korlátozza, hogy az egyik komponensnek mindenképpen a láng eredeti helyén kell maradnia. A tűzvarázsló ezzel a varázslattal komoly károkat okozhat ellenfeleinek, ugyanis megteheti, hogy a tűz képét a kandallóban hagyja, de a hővel támad, és minden látható jel nélkül sebez. A sikeres találathoz a tűzvarázslónak Célzó dobást kell tennie, +30-cal. A találat majdnem bizonyos, hiszen a láthatatlan láng elől szinte lehetetlen kitérni.\n\nAz áldozaton persze meglátszanak az égés nyomai, még az esetleges gyúlékony anyagok is lángra lobbanhatnak. A tűzvarázsló előszeretettel alkalmazza a Tűzválasztást nagyobb ütközetek, ostromok alkalmával is, hiszen a legtöbb efféle esemény alatt akár mágia, akár fáklyák hatására is gyúlhat- nak nagy, elszabaduló tüzek.\n\nAmennyiben a tűzvarázsló a hőhatást hagyja a láng eredeti helyén, és a fényt mozgatja, ezzel nagy csarnokokat, termeket deríthet fel."
  },
  {
    "tipus": "Őstüzek befolyásolása",
@@ -390,7 +390,7 @@
    "mp": "16",
    "idoigeny": "5 sz",
    "idotartam": "6 kör",
-   "leiras": "Harcmodosító: +20\n\nméret: 6\n\nA tűzlény kígyó alakot vesz fel, ami leginkább egy nyolc ynevi lábnyi kobrára emlékeztet. A levegőben kígyózva halad, spirálszerűen repülve. Kétszer támad körönként, egyszer fejével csapva le, másszor pedig farkával. Nagy hosszúsága miatt (8 ynevi láb) egymástól igen távoli áldozatokat képes támadni."
+   "leiras": "Harcmodosító: +20\n\nMéret: 6\n\nA tűzlény kígyó alakot vesz fel, ami leginkább egy nyolc ynevi lábnyi kobrára emlékeztet. A levegőben kígyózva halad, spirálszerűen repülve. Kétszer támad körönként, egyszer fejével csapva le, másszor pedig farkával. Nagy hosszúsága miatt (8 ynevi láb) egymástól igen távoli áldozatokat képes támadni."
  },
  {
    "tipus": "Tűzlények idézése",
@@ -398,7 +398,7 @@
    "mp": "24",
    "idoigeny": "5 sz",
    "idotartam": "6 kör",
-   "leiras": "Harcmodosító: +25\n\nméret: 2\n\n Egy főnixalak jelenik meg, magasan a tűzvarázsló fölött. Onnan csap le a harcolókra, körönként egyszer, élvezve a Harc magasabbról és Roham módosítókat, s minden sikeres támadásával automatikusan átsuhan ellenfelén."
+   "leiras": "Harcmodosító: +25\n\nMéret: 2\n\nEgy főnixalak jelenik meg, magasan a tűzvarázsló fölött. Onnan csap le a harcolókra, körönként egyszer, élvezve a Harc magasabbról és Roham módosítókat, s minden sikeres támadásával automatikusan átsuhan ellenfelén."
  },
  {
    "tipus": "Tűzlények idézése",
@@ -406,7 +406,7 @@
    "mp": "20",
    "idoigeny": "5 sz",
    "idotartam": "6 kör",
-   "leiras": "Harcmodosító: +25\n\nméret: 3\n\n Egy lángnyelvekből álló fantom jelenik meg a varázslat eredményeképp, mely leginkább egy hatalmas fekete párducra emlékeztet. Körönként kétszer támad, fejével, mancsával, mintha harapna, vagy ütne, ha túlüti ellenfelét, akkor egy párducra jellemző ugrással átveti magát rajta."
+   "leiras": "Harcmodosító: +25\n\nMéret: 3\n\nEgy lángnyelvekből álló fantom jelenik meg a varázslat eredményeképp, mely leginkább egy hatalmas fekete párducra emlékeztet. Körönként kétszer támad, fejével, mancsával, mintha harapna, vagy ütne, ha túlüti ellenfelét, akkor egy párducra jellemző ugrással átveti magát rajta."
  },
  {
    "tipus": "Tűzlények idézése",
@@ -414,7 +414,7 @@
    "mp": "36",
    "idoigeny": "5 sz",
    "idotartam": "6 kör",
-   "leiras": "Harcmodosító: +35\n\nméret: 7\n\nA tűz nyolckarú polip alakját vesz föl, ami képes minden körben négy támadásra. Mind a négy a polip karjával történik, amik ostorokhoz hasonlóan csapkodják a támadókat, a harc magasabbról módosítókkal együtt, mivel a polip a harctér fölött képes lebegni, ahonnan az egész Zóna területét képes elérni."
+   "leiras": "Harcmodosító: +35\n\nMéret: 7\n\nA tűz nyolckarú polip alakját vesz föl, ami képes minden körben négy támadásra. Mind a négy a polip karjával történik, amik ostorokhoz hasonlóan csapkodják a támadókat, a harc magasabbról módosítókkal együtt, mivel a polip a harctér fölött képes lebegni, ahonnan az egész Zóna területét képes elérni."
  },
  {
    "tipus": "Tűzlények idézése",
@@ -422,7 +422,7 @@
    "mp": "24",
    "idoigeny": "5 sz",
    "idotartam": "6 kör",
-   "leiras": "Harcmodosító: +40\n\nméret: 6\n\nA megidézett tűz a tűzvarázsló akarata által formázva sárkány alakját veszi fel, ami tüzet okád az ellenfeleire 20 ynevi láb magasból. A sárkánynak ahhoz, hogy eltalálja áldozatát, sikeres Célzó dobást kell véghezvinnie. A sárkány körönként egyszer támadhat, harcérték módosítója 40. Ha támadása sikeres, úgy számolandó, mintha teljes felületen érte volna az áldozatot. Ha teheti, akkor nem ereszkedik olyan mélyre, hogy eltalálhassák, repülés híján az áldozatok csak célzófegyverekkel és mágiával támadhatják."
+   "leiras": "Harcmodosító: +40\n\nMéret: 6\n\nA megidézett tűz a tűzvarázsló akarata által formázva sárkány alakját veszi fel, ami tüzet okád az ellenfeleire 20 ynevi láb magasból. A sárkánynak ahhoz, hogy eltalálja áldozatát, sikeres Célzó dobást kell véghezvinnie. A sárkány körönként egyszer támadhat, harcérték módosítója 40. Ha támadása sikeres, úgy számolandó, mintha teljes felületen érte volna az áldozatot. Ha teheti, akkor nem ereszkedik olyan mélyre, hogy eltalálhassák, repülés híján az áldozatok csak célzófegyverekkel és mágiával támadhatják."
  },
  {
    "tipus": "Tűzlények idézése",
@@ -430,7 +430,7 @@
    "mp": "28",
    "idoigeny": "5 sz",
    "idotartam": "6 kör",
-   "leiras": "Harcmodosító: +30\n\nméret: 4\n\n A tűzgólem nyúlánk majd' 3 ynevi láb magas humanoid alakú tűzlény, mely leginkább karjaival támad ellenfeleire, vagy megpróbál átrohanni rajtuk. Körönként kétszer képes támadni, azonban, ha a körben mindkét találata sikeres, akkor belekapaszkodik az ellenfelébe, és innentől kezdve az áldozatra a Harc helyhez kötve módosítók érvényesek. Szavadulni öleléséből csakis egy, a megidézett Őstűz E-jével megegyező mínuszokkal végrehajtott sikeres Erőpróbával lehet."
+   "leiras": "Harcmodosító: +30\n\nMéret: 4\n\nA tűzgólem nyúlánk majd' 3 ynevi láb magas humanoid alakú tűzlény, mely leginkább karjaival támad ellenfeleire, vagy megpróbál átrohanni rajtuk. Körönként kétszer képes támadni, azonban, ha a körben mindkét találata sikeres, akkor belekapaszkodik az ellenfelébe, és innentől kezdve az áldozatra a Harc helyhez kötve módosítók érvényesek. Szavadulni öleléséből csakis egy, a megidézett Őstűz E-jével megegyező mínuszokkal végrehajtott sikeres Erőpróbával lehet."
  },
  {
    "tipus": "Tűzlények idézése",
@@ -438,6 +438,6 @@
    "mp": "25",
    "idoigeny": "5 sz",
    "idotartam": "6 kör",
-   "leiras": "Harcmodosító: +20\n\nméret: 1\n\n A varázslat nagyjából ökölnyi, a megidézett Őstűz E-jével megegyező számú lángból formált darazsat teremt, melyek dühödten rontanak a célpontra. A darazsak körönként csupán egyszer támadnak, azonban darabonként külön ellenfélként viselkednek, azaz kulön Támadó dobást tesznek és darabonkénti 1k6 Sp-sebzésük is külön-külön érvényes; igazán veszedelmessé nagy tömegben válnak, a vonatkozó túlerőszabályok miatt. Emellett még megjegyzendő, hogy a darazsak mindig igyekeznek hátulról lecsapni az ellenfélre, s folyamatosan védtelen oldala felől támadni. Az összeadódó negatív módosítók alól mentesülni csak sikeres Gyorsaságpróbával elugorva, vagy a Harctéri gyakorlat képzettségre tett sikeres próbával elmanőverezve lehetséges."
+   "leiras": "Harcmodosító: +20\n\nMéret: 1\n\nA varázslat nagyjából ökölnyi, a megidézett Őstűz E-jével megegyező számú lángból formált darazsat teremt, melyek dühödten rontanak a célpontra. A darazsak körönként csupán egyszer támadnak, azonban darabonként külön ellenfélként viselkednek, azaz kulön Támadó dobást tesznek és darabonkénti 1k6 Sp-sebzésük is külön-külön érvényes; igazán veszedelmessé nagy tömegben válnak, a vonatkozó túlerőszabályok miatt. Emellett még megjegyzendő, hogy a darazsak mindig igyekeznek hátulról lecsapni az ellenfélre, s folyamatosan védtelen oldala felől támadni. Az összeadódó negatív módosítók alól mentesülni csak sikeres Gyorsaságpróbával elugorva, vagy a Harctéri gyakorlat képzettségre tett sikeres próbával elmanőverezve lehetséges."
  }
 ]

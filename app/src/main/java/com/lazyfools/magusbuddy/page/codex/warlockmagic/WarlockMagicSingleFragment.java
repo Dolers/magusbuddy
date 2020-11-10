@@ -49,11 +49,11 @@ public class WarlockMagicSingleFragment extends SingleFragment<WarlockMagicDatab
     }
 
     private void populateWithStats(WarlockMagicEntity entity) {
-        ((TextView) getView().findViewById(R.id.mp_value)).setText(Integer.toString(entity.getMp()));
+        ((TextView) getView().findViewById(R.id.mp_value)).setText(String.valueOf(entity.getMp()));
 
         if(entity.getBasice() > 1 && entity.getEmp() == 0){
-            ((TextView) getView().findViewById(R.id.emp_value)).setText(Integer.toString(entity.getBasice()));
-            ((TextView) getView().findViewById(R.id.emp)).setText("E");
+            ((TextView) getView().findViewById(R.id.emp_value)).setText(String.valueOf(entity.getBasice()));
+            ((TextView) getView().findViewById(R.id.emp)).setText(String.format("Mp/%s", getString(R.string.strengthening_sign)));
         }
         else{
             setOrHide(getView(), entity.getEmp(), R.id.emp_value, R.id.emp_layout);

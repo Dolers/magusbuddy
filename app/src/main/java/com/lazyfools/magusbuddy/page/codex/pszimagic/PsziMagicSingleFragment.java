@@ -49,15 +49,15 @@ public class PsziMagicSingleFragment extends SingleFragment<PsziMagicDatabaseVie
     }
 
     private void populateWithStats(PsziMagicEntity entity) {
-        ((TextView) getView().findViewById(R.id.mp)).setText(getText(R.string.kp));
-        ((TextView) getView().findViewById(R.id.mp_value)).setText(Integer.toString(entity.getMp()));
+        ((TextView) getView().findViewById(R.id.mp)).setText(getText(R.string.pszipont));
+        ((TextView) getView().findViewById(R.id.mp_value)).setText(String.valueOf(entity.getMp()));
 
-        //Set EKp text
+        //Set Emp text
         TextView ekp = getView().findViewById(R.id.emp);
         if (entity.getEmpText().isEmpty())
             ekp.setText(getText(R.string.pszipont));
         else
-            ekp.setText(entity.getEmpText());
+            ekp.setText(String.format("%s/%s", getText(R.string.pszipont), entity.getEmpText()));
 
         setOrHide(getView(), entity.getEmp(), R.id.emp_value, R.id.emp_layout);
 
@@ -65,7 +65,7 @@ public class PsziMagicSingleFragment extends SingleFragment<PsziMagicDatabaseVie
 
         GridLayout propertiesLayout = getView().findViewById(R.id.properties_layout);
         setOrHide(propertiesLayout, entity.getCastTime(), R.id.casttime_value, R.id.casttime_value, R.id.casttime);
-        setOrHide(propertiesLayout, "20 m", R.id.range_value,  R.id.range_value, R.id.range);
+        setOrHide(propertiesLayout, getString(R.string.default_range), R.id.range_value,  R.id.range_value, R.id.range);
         setOrHide(propertiesLayout, entity.getDurationTime(), R.id.durationtime_value, R.id.durationtime_value, R.id.durationtime);
         setOrHide(propertiesLayout, entity.getMagicResistance(), R.id.resistance_value, R.id.resistance_value, R.id.resistance);
     }

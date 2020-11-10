@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/qualification_single_show"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title_value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/skill_name"
+                android:textAlignment="center"
+                android:gravity="center_horizontal"
+                android:textSize="32sp"
+                app:fontFamily="@font/eden_mills_bold"/>
+
+            <include layout="@layout/horizontal_line" />
+
+            <RelativeLayout
+                android:id="@+id/stat_layout"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+                <LinearLayout
+                    android:id="@+id/mp_emp_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginEnd="5dp">
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal">
+                        <TextView
+                            android:id="@+id/ke"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="@string/ke"
+                            android:textSize="26sp"
+                            app:fontFamily="@font/eden_mills_bold" />
+                        <TextView
+                            android:id="@+id/ke_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="@string/double_digit_number"
+                            android:textSize="26sp"
+                            app:fontFamily="@font/eden_mills_bold"
+                            android:layout_toEndOf="@id/ke"
+                            android:layout_toRightOf="@id/ke"
+                            />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal">
+                        <TextView
+                            android:id="@+id/te"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="@string/te"
+                            android:textSize="26sp"
+                            app:fontFamily="@font/eden_mills_bold" />
+                        <TextView
+                            android:id="@+id/te_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="@string/double_digit_number"
+                            android:textSize="26sp"
+                            app:fontFamily="@font/eden_mills_bold"
+                            android:layout_toEndOf="@id/te"
+                            android:layout_toRightOf="@id/te" />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal">
+                        <TextView
+                            android:id="@+id/ve"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="@string/ve"
+                            android:textSize="26sp"
+                            app:fontFamily="@font/eden_mills_bold" />
+                        <TextView
+                            android:id="@+id/ve_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="@string/double_digit_number"
+                            android:textSize="26sp"
+                            app:fontFamily="@font/eden_mills_bold"
+                            android:layout_toEndOf="@id/ve"
+                            android:layout_toRightOf="@id/ve" />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal">
+                        <TextView
+                            android:id="@+id/ce"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="@string/ce"
+                            android:textSize="26sp"
+                            app:fontFamily="@font/eden_mills_bold" />
+                        <TextView
+                            android:id="@+id/ce_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="@string/double_digit_number"
+                            android:textSize="26sp"
+                            app:fontFamily="@font/eden_mills_bold"
+                            android:layout_toEndOf="@id/ce"
+                            android:layout_toRightOf="@id/ce" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <include layout="@layout/horizontal_line" />
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/description" />
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>
+

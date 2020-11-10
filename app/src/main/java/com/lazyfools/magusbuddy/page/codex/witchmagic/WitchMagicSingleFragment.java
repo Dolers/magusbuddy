@@ -55,7 +55,7 @@ public class WitchMagicSingleFragment extends SingleFragment<WitchMagicDatabaseV
     }
 
     private void populateWithStats(WitchMagicEntity entity) {
-        ((TextView) getView().findViewById(R.id.mp_value)).setText(Integer.toString(entity.getMp()));
+        ((TextView) getView().findViewById(R.id.mp_value)).setText(String.valueOf(entity.getMp()));
         setOrHide(getView(), entity.getEmp(), R.id.emp_value, R.id.emp_layout);
 
         setAndMakeVisible(getView(), entity.getType().toString(), R.id.type_value);

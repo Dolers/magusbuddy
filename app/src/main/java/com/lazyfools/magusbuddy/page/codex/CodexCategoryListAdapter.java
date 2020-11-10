@@ -14,6 +14,7 @@ public class CodexCategoryListAdapter extends CategoryListAdapter<CodexEntity, C
     static Integer matchImageToResource(CodexEntity.TypeEnum imageEnum)
     {
         switch (imageEnum){
+            case BATTLESITUATION: return R.drawable.battlesituation_512;
             case BARDMAGIC: return R.drawable.bard_512;
             case WITCHMAGIC: return R.drawable.witch_512;
             case WARLOCKMAGIC: return R.drawable.warlock_512;
