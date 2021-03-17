@@ -2,17 +2,15 @@ package com.lazyfools.magusbuddy.page.battle;
 
 import android.graphics.Color;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.LayoutInflater;
-import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.SeekBar;
 import android.widget.TextView;
 
 import com.lazyfools.magusbuddy.R;
 import com.lazyfools.magusbuddy.database.entity.CharacterEntity;
 import com.lazyfools.magusbuddy.utility.BasicCallback;
+import com.lazyfools.magusbuddy.utility.CustomNumberPicker;
 
 import co.paulburke.android.itemtouchhelper.helper.ItemTouchHelperAdapter;
 import co.paulburke.android.itemtouchhelper.helper.ItemTouchHelperViewHolder;
@@ -27,16 +25,15 @@ import java.util.List;
  * specified {@link OnStartDragListener}.
  * TODO: Replace the implementation with code for your data type.
  */
-public class MyBattleRecyclerViewAdapter extends RecyclerView.Adapter<MyBattleRecyclerViewAdapter.ItemViewHolder>
+public class BattleListAdapter extends RecyclerView.Adapter<BattleListAdapter.ItemViewHolder>
             implements ItemTouchHelperAdapter {
 
     private final BasicCallback _updateHighlight;
     private List<BattleItem> _items;
 
     private final OnStartDragListener _dragStartListener;
-    private boolean _aSeekBarIsActive = false;
 
-    public MyBattleRecyclerViewAdapter(OnStartDragListener dragStartListener, BasicCallback updateHighlight) {
+    public BattleListAdapter(OnStartDragListener dragStartListener, BasicCallback updateHighlight) {
         _dragStartListener = dragStartListener;
         _updateHighlight = updateHighlight;
     }
@@ -50,36 +47,14 @@ public class MyBattleRecyclerViewAdapter extends RecyclerView.Adapter<MyBattleRe
     @Override
     public void onBindViewHolder(final ItemViewHolder holder, int position) {
         holder._item = _items.get(position);
-        holder._contentView.setText(_items.get(position).getCharacter().getName());
+        holder._tvCharacterName.setText(_items.get(position).getCharacter().getName());
 
-        // Start a drag whenever the handle view it touched
-        holder._contentView.setOnTouchListener(new View.OnTouchListener() {
+        holder._numberPicker.setOnValueChangedListener(new CustomNumberPicker.OnValueChangeListener() {
             @Override
-            public boolean onTouch(View v, MotionEvent event) {
-                Log.i("", "onTouch: ");
-                //TODO it should be long touch
-                if (!_aSeekBarIsActive) {
-                    _dragStartListener.onStartDrag(holder);
-                }
-                return false;
-            }
-        });
-        holder._seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
-
-            @Override
-            public void onStopTrackingTouch(SeekBar seekBar) {
-                holder._item.setCurrentSegment(seekBar.getProgress());
+            public void onValueChange(int newValue) {
+                holder._item.setCurrentSegment(newValue);
                 _updateHighlight.callback();
-                _aSeekBarIsActive = false;
             }
-
-            @Override
-            public void onStartTrackingTouch(SeekBar seekBar) {
-                _aSeekBarIsActive = true;
-            }
-
-            @Override
-            public void onProgressChanged(SeekBar seekBar, int progress,boolean fromUser) {}
         });
     }
 
@@ -126,15 +101,15 @@ public class MyBattleRecyclerViewAdapter extends RecyclerView.Adapter<MyBattleRe
             ItemTouchHelperViewHolder {
 
         public final View _view;
-        public final TextView _contentView;
-        public SeekBar _seekBar;
+        public final TextView _tvCharacterName;
+        public CustomNumberPicker _numberPicker;
         public BattleItem _item;
 
         public ItemViewHolder(View itemView) {
             super(itemView);
             _view = itemView;
-            _contentView = itemView.findViewById(R.id.content);
-           _seekBar = itemView.findViewById(R.id.seekBar);
+            _tvCharacterName = itemView.findViewById(R.id.content);
+            _numberPicker = itemView.findViewById(R.id.initiation_number_picker);
 
         }
 

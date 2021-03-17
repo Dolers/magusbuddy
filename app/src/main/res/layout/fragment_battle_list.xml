@@ -5,16 +5,42 @@
     android:id="@+id/container"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:id="@+id/list"
-        android:name="com.lazyfools.magusbuddy.BattleFragment"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
-        app:layoutManager="LinearLayoutManager"
-        tools:context=".page.battle.BattleFragment"
-        tools:listitem="@layout/fragment_battle_item" />
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="@dimen/text_margin"
+                android:gravity="center"
+                android:text="Név"/>
+            <View
+                android:layout_width="2dip"
+                android:layout_height="fill_parent"
+                android:layout_marginHorizontal="@dimen/bar_margin"
+                android:background="#FFCCCCCC" />
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/text_margin"
+                android:layout_marginEnd="@dimen/text_margin"
+                android:gravity="center"
+                android:text="Szegmens" /><!-- 150dp is the length of custom_number_picker -->
+        </LinearLayout>
+        <android.support.v7.widget.RecyclerView xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/list"
+            android:name="com.lazyfools.magusbuddy.BattleFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layoutManager="LinearLayoutManager"
+            tools:context=".page.battle.BattleFragment"
+            tools:listitem="@layout/fragment_battle_item" />
+    </LinearLayout>
 </FrameLayout>

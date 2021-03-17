@@ -9,7 +9,6 @@ import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.helper.ItemTouchHelper;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -24,23 +23,16 @@ import java.util.List;
 import co.paulburke.android.itemtouchhelper.helper.OnStartDragListener;
 import co.paulburke.android.itemtouchhelper.helper.SimpleItemTouchHelperCallback;
 
-/**
- * A fragment representing a list of Items.
- * <p/>
- * Activities containing this fragment MUST implement the {@link OnStartDragListener}
- * interface.
- */
 public class BattleFragment extends Fragment implements OnStartDragListener {
     private ItemTouchHelper _itemTouchHelper;
     private DatabaseViewModel _viewModel;
-    private MyBattleRecyclerViewAdapter _adapter;
+    private BattleListAdapter _adapter;
 
     /**
      * Mandatory empty constructor for the fragment manager to instantiate the
      * fragment (e.g. upon screen orientation changes).
      */
-    public BattleFragment() {
-    }
+    public BattleFragment() {}
 
 
     @Override
@@ -62,7 +54,6 @@ public class BattleFragment extends Fragment implements OnStartDragListener {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        Log.i("", "onCreateView: ");
         return new RecyclerView(container.getContext());
     }
 
@@ -74,10 +65,11 @@ public class BattleFragment extends Fragment implements OnStartDragListener {
         if (view instanceof RecyclerView) {
             final RecyclerView recyclerView = (RecyclerView) view;
 
-            _adapter = new MyBattleRecyclerViewAdapter(this,
+            _adapter = new BattleListAdapter(this,
                     new BasicCallback(){
                         @Override
-                        public void callback() {updateNextCharacterHighlight(recyclerView);}
+                        public void callback() {
+                            markNextCharacter(recyclerView);}
                     });
 
             recyclerView.setHasFixedSize(true);
@@ -87,7 +79,6 @@ public class BattleFragment extends Fragment implements OnStartDragListener {
             ItemTouchHelper.Callback callback = new SimpleItemTouchHelperCallback(_adapter,false);
             _itemTouchHelper = new ItemTouchHelper(callback);
             _itemTouchHelper.attachToRecyclerView(recyclerView);
-            Log.i("", "onViewCreated: ");
         }
     }
 
@@ -96,23 +87,28 @@ public class BattleFragment extends Fragment implements OnStartDragListener {
         _itemTouchHelper.startDrag(viewHolder);
     }
 
-    public void updateNextCharacterHighlight(RecyclerView recyclerView){
-        int max = recyclerView.getAdapter().getItemCount();
-        int minimalSegment = 10;
-        int nextHighLightedCharacter = 0;
-        for (int i = 0; i<max; i++) {
-            MyBattleRecyclerViewAdapter.ItemViewHolder holder = (MyBattleRecyclerViewAdapter.ItemViewHolder) recyclerView.findViewHolderForLayoutPosition(i);
+    public void markNextCharacter(RecyclerView recyclerView){
+        int itemCount = _adapter.getItemCount();
+        int minimalSegment = Integer.MAX_VALUE;
+        BattleListAdapter.ItemViewHolder nextMarkedItem = null;
+        for (int i = 0; i < itemCount; i++) {
+            BattleListAdapter.ItemViewHolder holder = (BattleListAdapter.ItemViewHolder) recyclerView.findViewHolderForLayoutPosition(i);
             if (holder._item.getCurrentSegment() < minimalSegment){
                 minimalSegment = holder._item.getCurrentSegment();
-                nextHighLightedCharacter = i;
+                nextMarkedItem = holder;
             }
-            holder._contentView.setTextColor(Color.BLACK);
+            unMarkCharacter(holder);
         }
 
-        if (minimalSegment != 10) {
-            ((MyBattleRecyclerViewAdapter.ItemViewHolder) recyclerView.findViewHolderForLayoutPosition(nextHighLightedCharacter))._contentView.setTextColor(Color.RED);
-            recyclerView.refreshDrawableState();
-        }
+        markCharacter(nextMarkedItem);
+        recyclerView.refreshDrawableState();
+    }
 
+    private void markCharacter(BattleListAdapter.ItemViewHolder item) {
+        item._tvCharacterName.setTextColor(Color.RED);
+    }
+
+    private void unMarkCharacter(BattleListAdapter.ItemViewHolder item) {
+        item._tvCharacterName.setTextColor(Color.BLACK);
     }
 }
