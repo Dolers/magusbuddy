@@ -21,6 +21,9 @@
                 <action android:name="android.intent.action.VIEW" />
             </intent-filter>
             <meta-data android:name="android.app.default_searchable" android:value=".SkillSearchActivity" />
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.lazyfools.magusbuddy.HomeActivity" />
         </activity>
     </application>
     <!-- Tested locally, it works with API 15-->

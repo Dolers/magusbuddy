@@ -31,7 +31,7 @@
   "erosites": 1,
   "hossz": "1 kör",
   "idotartam": "Egyszeri",
-  "ellenallas": "Asztrális",
+  "me": "Asztrális",
   "leiras": "Az Asztrálszem mások érzelmeinek, indulatainak kifürkészésére alkalmas, az Auraérzékeléshez hasonlóan az Aurát vizsgálja de annál célirányosabb módon, az Asztrálsík felől. A diszciplína ellen az áldozat Asztrális Mágiaellenállásra jogosult. Amennyiben ez sikeres, a diszciplína alkalmazója nem jutott át a kiszemelt áldozat Asztrális védelmén, így semmilyen információhoz nem juthat. Ha a diszciplína erőssége elegendő ahhoz, hogy az alkalmazó átlásson a pajzsokon, akkor az aura rétegeire vethet pillantást. Mindenféle egyéb ismeret nélkül képes hozzávetőlegesen megállapítani az illető érzelmi kiegyensúlyozottságát, azaz az Asztrál Tulajdonságát. Az Aura ezen rétegeiben fellelhető valamennyi információhoz hozzájuthat, természetesen csak azokhoz, amelyek az áldozat Asztráltestével kapcsolatosak, ha sikerül rétegenként 2 E-vel áttörni a célpont ME-jét.\n\nA diszciplína egyszerre egyetlen személy ellen alkalmazható, és a feltüntetett 1 kör alatt a teljes információcsere lezajlik.\n\nAz Asztrálszem használatáról a diszciplína áldozata nem szerez tudomást, hacsak nem védekezik Membránnal."
  },
  {
@@ -43,7 +43,7 @@
   "erosites": 3,
   "hossz": "1 sz",
   "idotartam": "Egyszeri",
-  "ellenallas": "Asztrális/Mentális",
+  "me": "Asztrális/Mentális",
   "leiras": "A diszciplína alkalmazója képes arra, hogy különleges érzékeivel szemügyre vegye az Aurát. Az efféle szemlélődés a Telepátiához hasonló szellemi kapcsolat felépülésével lehetséges, azzal a különbséggel, hogy ezúttal nem egyesül a két elme, hanem a varázsló elméje erővel vizsgálja át a célpont Auráját.\n\nHa már máskor is látta és megjegyezte, az Aura alapján felismeri a lelket, bármely testben lakozik is. Képes észlelni a szembeötlő természetellenességet is, mint mikor az emberi lélek állatban lakozik vagy fordítva. A diszciplínát így előszeretettel használják alakjukat megváltoztatott személyek felismerésére, netán vélt azonosság vagy ennek ellenkezőjének tisztázására, mivel az Aura ilyen fokú elváltoztatására nincs mód! \n\nTovábbá meg tudja állapítani, hogy az illető mely fajba tartozik. A varázslónak minden egyes újabb réteg eléréséhez 2 ponttal kell túllépnie a célpont Mágiaellenállását. Emellett pedig minden egyes réteg vizsgálata legalább 1 kör vesz igénybe, így egy komolyabb vizsgálat akár egy percbe is telhet.\n\nAzaz, ha csak az első réteget kívánja a magiszter vizsgálni és információkat kinyerni, akkor az ME-nél eggyel több E-vel elérte célját. A második réteghez már legalább három E-vel, a harmadikhoz már öt E-vel kell átjutni a védműveken. Természetesen mindkét ME-n átjutva képes csak az alkalmazó bármilyen tudás megszerzésére. Mindaddig, míg ez nem történik meg, a diszciplína csak a pajzsok erősségéről szolgáltat adatokat. Ez nem számszerűen történik, ám a következő táblázat alapján hozzávetőlegesen megtudhatja, milyen nagyságrendű az illető Statikus Asztrál és Mentái pajzsa, valamint Dinamikus Asztrál és Mentái pajzsa.",
   "tablazatok": [
    "Védelem Erőssége\tNagyágrend\n\n1-10\telenyésző\n\n10-20\tgyenge\n\n20-30\tmérsékelt\n\n30-40\tközepes\n\n40-50\terős\n\n50-\tnagyon erős\n\n"
@@ -93,7 +93,7 @@
   "erosites": 1,
   "hossz": "1 kör",
   "idotartam": "1 év",
-  "ellenallas": "Mentális",
+  "me": "Mentális",
   "leiras": "A transzállapot nem csak a szellemi összpontosítást, de az emlékek bevésődését is elősegíti. Az alkalmazó ezzel a diszciplínával egy rövid, önnön belső csendjében való megmerítkezés után fogékony állapotba hozza elméjét, hogy helyszíneket, szövegeket vagy eseményeket jegyezhessen meg, illetve régi - egyébként már elfelejtett - eseményeket idézhessen fel.\n\nHa a pszialkalmazó szeretne valamit úgy az elméjébe vésni, hogy arra később - minden részletében - visszaemlékezzen, akkor rövid meditációval mintegy beleégeti a kívánt dolgot az emlékei közé. Ezek után az emlék még egy éven át tökéletesen tisztán él benne, s minden különösebb erőfeszítés (vagy diszciplína alkalmazása) nélkül felidézhető. Az emlék egy év után ugyanúgy halványodni kezd, mint egy nem efféle bevéséssel szerzett kép.\n\nHa a psziaikalmazó rég elfeledett vagy töredékes emléket kíván felidézni, akkor a diszciplína használatával erre is mód nyílik. Az így felidézett emlék 10 percig tökéletesen éles lesz, ám utána elhomályosul, s csak a diszciplína segítségével kerül elő megint.\n\nHa másnak szeretné az emlékeit a felszínre hozni, ahhoz meg kell érintenie a célpontot. A diszciplína azonban csak akkor hatásos, ha átüti az ellenfél Mágiaellenállását. A dolog furcsasága, hogy a közvetlen szellemi kapcsolat miatt az adott emléket ekkor nem csak a célpont, de az alkalmazó is átéli."
  },
  {
@@ -105,7 +105,7 @@
   "erosites": 1,
   "hossz": "1 kör",
   "idotartam": "10 perc",
-  "ellenallas": "Mentális",
+  "me": "Mentális",
   "leiras": "A transzállapot nem csak a szellemi összpontosítást, de az emlékek előidézését is elősegíti. Az alkalmazó ezzel a diszciplínával egy rövid, önnön belső csendjében való megmerítkezés után fogékony állapotba hozza elméjét, hogy rég elfelejtett helyszíneket, szövegeket vagy eseményeket idézhessen fel.\n\nHa a psziaikalmazó rég elfeledett vagy töredékes emléket kíván felidézni, akkor a diszciplína használatával erre is mód nyílik. Az így felidézett emlék 10 percig tökéletesen éles lesz, ám utána elhomályosul, s csak a diszciplína segítségével kerül elő megint.\n\nHa másnak szeretné az emlékeit a felszínre hozni, ahhoz meg kell érintenie a célpontot. A diszciplína azonban csak akkor hatásos, ha átüti az ellenfél Mágiaellenállását. A dolog furcsasága, hogy a közvetlen szellemi kapcsolat miatt az adott emléket ekkor nem csak a célpont, de az alkalmazó is átéli."
  },
  {
@@ -150,7 +150,7 @@
   "erosites": 1,
   "hossz": "1 kör",
   "idotartam": "Egyszeri",
-  "ellenallas": "Mentális",
+  "me": "Mentális",
   "leiras": "A Fájdalomcsillapításhoz hasonló elvű, de ellentétes működésű diszciplína, mely fogékonyabbá teszi az elmét tudat alatt a test jelzéseire.\n\nA pszialkalmazó képes szellemét felkészíteni arra, hogy egy meghatározott időben minden külső befolyásolás nélkül felébredjen. Az önszuggessziónak vagy arra kell irányulnia, hogy mennyi idő múlva szakadjon ki az álomból, vagy egy külső jelhez kell kapcsolódnia. Mivel az érzékszervek az álom alatt is működnek - noha normális esetben a gyenge ingereket a tudat figyelmen kívül hagyja - a diszciplína alkalmazója olyasféle jeleket határozhat meg ébredési pontnak, mint hajnali kakasszó, az Éjközép teljes sötétje, lova ideges horkantása, léptek zaja, reccsenő padló stb.\n\nA diszciplína nem működik, ha a karakter elájult, bódult álomba merült, vagy valamely mentális támadás hatására vesztette el eszméletét és a hatás még mindig tart."
  },
  {
@@ -173,7 +173,7 @@
   "erosites": 1,
   "hossz": "1 kör",
   "idotartam": "6 kör",
-  "ellenallas": "Mentális",
+  "me": "Mentális",
   "leiras": "Az ébresztéshez hasonlóan a test, ebben az esetben az öt érzékszerv egyikének jelzéseit erősíti fel, vagy tompítja le. A diszciplína arra ad módot, hogy a látást, hallást, szaglást, tapintást vagy ízlelést akaratunk szerint befolyásoljuk.\n\nA látás befolyásolásával élesíthetjük a szemet (esetleg elhomályosíthatjuk). A látás élesítésével maximum megkétszereződik a látótávolság, tompításával azonban vakság is okozható.\n\nA hallás élesítése kétszeresére növeli a hallótávolságot, míg tompítása akár süketséghez is vezethet.\n\nA szaglás, a tapintás és az ízlelés felerősítése megkétszerezi ezen érzékszervek hatásfokát, tompításuk az érzékszervek teljes kikapcsolásával is járhat.\n\nAz alkalmazó a diszciplínát végrehajtva önmagán, már 1pszi-pontért képes megtisztítani egyik érzékszervét a korábbi túlterheléstől. Például éles fény után sötét helyre belépve káprázó szem okozta kellemetlenségtől, vág)' az iszonytató bűz orrunkban maradt utóhatásaitól.\n\nA diszciplína hatása a célponton az átjutott Erősítés függvénye: 1 E = 10%, illetve -1 módosító az Érzékeléspróbákra, ha az adott érzékszervre támaszkodva hajtja végre a karakter a próbát. Az alkalmazó másokat csakis kizárólag a 4. fokú Pszi képzettség elérése után befolyásolhat.\n\nFigyelem! A diszciplína nem alkalmas arra, hogy bármely érzékszerv befolyásolásával valós kárt okozzon. Pl. Nem lehet a hőérzetet annyira fokozni, ami már Fp vesztéssel jár."
  },
  {
@@ -196,7 +196,7 @@
   "erosites": 1,
   "hossz": "1 kör",
   "idotartam": "Végleges",
-  "ellenallas": "Mentális",
+  "me": "Mentális",
   "leiras": "A legalapvetőbb a testre ható diszciplínák közül, az első lépés az elme test feletti teljes uralmát eredményező út elején. Segítségével a tudat fájdalomközpontjára gyakorolhatunk hatást. Lehetőségünk nyílik fájdalomérzet tompítására vagy keltésére. Akaratunktól és energiáinktól függően egyszerű fejfájástól az elevenen elégés minden kínjáig.\n\nMiután nem gyógyít vagy okoz valódi sebesüléseket, az Életerő pontokra nincs befolyással az alkalmazás, csak Fp-t képes adni vagy elorozni. A Fp-ok teljes elvonásával - 0 Fp- ra kínzás - elérhetjük, hogy az áldozat elájuljon, ám igazi sérülés ekkor sem keletkezik rajta. Maximum Fp fölé sem önmagunkat, sem másokat nem juttathatunk, bármennyi Ψ-pontot is áldoznánk rá energiáinkból. A diszciplína 1 E-je 1 Fp-t ad vissza az alkalmazónak, vagy célpontjának.\n\nfokú Pszi képzettség alkalmazása esetén a kiszemelt áldozatnak annyi Fp sebzést okozunk, amennyivel a diszciplína erőssége meghaladta az illető Mentális ME-jét"
  },
  {
@@ -278,7 +278,7 @@
   "erosites": 3,
   "hossz": "1 kör",
   "idotartam": "6 kör",
-  "ellenallas": "Mentális",
+  "me": "Mentális",
   "leiras": "Olykor - különleges vészhelyzetekben - az emberi fizikum látszólag csodákra képes. Egy vadállattól megrémült gyermek hihetetlen gyorsasággal képes felkúszni egy sudár, ág nélküli fa törzsén, s miután a veszély elmúlt, nem csak azon csodálkozik, hogy miképp sikerült ez neki, hanem gyakorta lemászni sem tud magától. Ez jellemző példája a pszi akaratlan megnyilvánulásának, hiszen ilyenkor a tudat szabadít fel a testben olyan erőforrásokat, melyek egyébként nem hozzáférhetőek.\n\nA diszciplína ugyanezt képes végrehajtani, természetesen a tudat teljes irányítása alatt. A pszi erők segítségével a fizikai képességek - Erő, Gyorsaság, Ügyesség, Állóképesség, Egészség - megváltoztathatóak, a diszciplína mindegy egyes E-je után eggyel. A változtatás időleges, s a diszciplína hatásának elmúltával visszatérnek az eredeti értékek. Ugyanakkor lehetetlent nem szabad elvárnunk a pszitől sem: egyik képességünket sem emelhetjük 20 fölé.\n\nFigyelem! Bármely képesség nullára - vagy nulla alá - csökkentése azonnali halálhoz vezet.\n\nA Képességjavítás az egyik legkedveltebb általános diszciplína. Gyakorta használják az Egészség - s ezáltal a Méregellenállás - megnövelésére. Valójában hasznos minden olyan esetben, amikor Tulajdonságpróbára kényszerülünk, hiszen az adott pillanatban valóban erősebbek, gyorsabbak, egészségesebbek vagy ügyesebbek leszünk. Nem szabad elfelejteni, hogy ha harc folyamán megnöveljük Egészségünket - és egy csapást csak az így nyert Ép-kel éltünk túl amint a diszciplína hatása elmúlik, a nyert Ép-k is semmivé lesznek, s ebbe akár bele is halhatunk.\n\nHa Rontással az ellenfelünk Egészségét annyira lecsökkentettük, hogy ettől elveszíti maradék Ép-it, akkor meghal. Hiába jönnének vissza az Ép-k a diszciplína hatásának megszűntével, a lélek nem költözik vissza a halott testbe.\n\nA diszciplína használatával 3 Pszi-pontért 1 pontot változtathatunk egy Tulajdonságunkon. Az alkalmazás Erőssége ennek megfelelően 3 Y-ponként 1 E.\n\nAzonban, ha a diszciplína célpontja egy másik személy, akkor Tulajdonsága annyi ponttal romlik, vág)' javul, ahány E átjut a Mágiaellenállásán.\n\nA felhasznált Ψ-pontok megduplázásával a hatás időtartamának megduplázását érhetjük el, megtriplázásával a hatás ideje megháromszorozódik, és így tovább."
  },
  {
@@ -324,7 +324,7 @@
   "erosites": 2,
   "hossz": " 1 kör",
   "idotartam": "Egyszeri",
-  "ellenallas": "Mentális",
+  "me": "Mentális",
   "leiras": "A Mentálszem felépítését tekintve, az Asztrálszemmel rokon diszciplína egyetlen személy gondolati életének minőségéről ad felvilágosítást.\n\nA diszciplína használat ellen a kiszemelt áldozat Mentális Mágiaellenállásra jogosult. Ha ez sikeres, akkor az alkalmazó semmit nem tud meg kiszemelt áldozatáról.\n\nHa az áldozat elvéti a Mágiaellenállását, a diszciplína alkalmazója az Aura rétegeit figyelheti meg, valamint az Intelligenciájáról is fogalmat alkothat (megtudja az Intelligencia Tulajdonság értékét). Ráadásul az Aura rétegeiben fellelhető valamennyi információhoz hozzájuthat. Természetesen csak azokhoz, amelyek az áldozat Mentáltestével kapcsolatosak, s csak akkor, ha sikerül rétegenként 2 E-vel áttörni a célpont ME-jét. Sikeres támadás esetén a diszciplína alkalmazója ilyen esetben arról is tudomást szerez, ha az illetőt Mentálfonál köti Össze valakivel.\n\nA diszciplína egyszerre egyetlen személy ellen alkalmazható, és a feltüntetett 1 kör alatt a teljes infomációcsere lezajlik. A Mentálszem használatáról a diszciplína áldozata nem szerez tudomást, hacsak nem védekezik Membránnal."
  },
  {
@@ -336,7 +336,7 @@
   "erosites": 4,
   "hossz": "1 sz",
   "idotartam": "Leírásban",
-  "ellenallas": "Mentális",
+  "me": "Mentális",
   "leiras": "A diszciplína a Kyr Metódus egyik telepatív csúcspontját jelenti. Kifejezetten újkeletű, bár évek alatt széles körben elterjedt; kifejlesztése egy Ynev-szerte csak a Smaragd Uraként ismert pyarroni mágus nevéhez fűződik. Alapja az okkult tan, miszerint az anyagi porhüvelyben a szem a legrövidebb út a lélek felé. Éppen ezért az alkalmazónak minden esetben a kiszemelt áldozat szemébe kell néznie.\n\nBárki, aki a diszciplína alkalmazójának szemébe néz, Akaraterő próbát köteles dobni az erősítésnek megfelelő negatív módosítóval, amit ha elvét többé nem képes tekintetét a varázslóétól elszakítani. Bármit tehet, hátrálhat, akár rá is támadhat az alkalmazóra, de nem cselekedhet semmi olyat, minek eredményeként kiszabadulna a Mágikus tekintet béklyójából. (vagyis nem helyezhet semmit az összekapcsolódó tekintetek útjába, nem fordulhat el, nem léphet takarásba, a kapcsolat megtartása minden célja előtt való). A Mágikus tekintettől csak akkor szabadulhat, ha az alkalmazó - tekintetének elfordításával - szabadon engedi, illetőleg ha harmadik személy akár csak egy szemvillanásra is akadályt gördít a két pillantás kereszttüzébe.\n\nHa az áldozat kiszabadult, a diszciplína időtartama azonnal lejár, egyébként percekig, órákig, de elméletileg akár a végtelenségig is tarthat.\n\nA varázsló az ellen a személy ellen, aki Mágikus tekintetének rabja, magasabb hatásfokon képes diszciplínákat, illetve Asztrál- és Mentálmágiát alkalmazni. Ami természetesen feltételezi, hogy az áldozat közben nem szabadul. Varázslatai Erősségéhez a Mágikus tekintet Erősségét adhatja hozzá.\n\nA varázslat vagy diszciplína létrejöttével - de még időtartamának lejártával sem - az áldozat nem szabadul a Mágikus tekintet bilincséből. Ez csak a fent említett esetekben történhet, addig a varázsló annyiszor hat rá a leírt kedvezménnyel, ahányszor csak jónak látja, illetve ameddig Mana vagy Ψ-pontjai el nem fogynak."
  },
 
@@ -492,7 +492,7 @@
   "erosites szovege": "fok",
   "hossz": "1 kör",
   "idotartam": "1 óra",
-  "ellenallas": "Mentális",
+  "me": "Mentális",
   "leiras": "A diszciplína alkalmazója képes saját - 4. fokú Pszi képzettséggel más - testével közvetlenül szellemi energiát közölni, annak hőmérsékletét növelni vagy csökkenteni. így lehetősége nyílik a vizes ruhát megszárítani magán, vág)' egy lángoló házból kimenekülni komolyabb égési sérülések nélkül. Minden felhasznált pszi-pont 2 fokkal képes megváltoztatni a testhőmérsékletet.\n\nAz ötven fok fölé emelt testhő hat kör után ájulást eredményez, 70 fok felett pedig azonnali halállal jár. A húsz fokra csökkentett hőmérséklet Tetszhalálhoz vezet - ilyen formán még egy felkészületlen szervezet is képes életben maradni néhány hónapig -, a húsz fok alá csökkentett testhő maradandó károsodással jár, míg a negyedórát meghaladó öt fok alatti állapot visszafordíthatatlan folyamatot indít el a szervezetben, és az áldozat meghal.\n\nA diszciplína lehetőséget ad arra, hogy' 1 pszi-pontért a 2 fokkal eltérő hőmérséklet 1 óráig fennmaradjon, 4 pszi-pontért a 8 fokos befolyásolást 1 óráig, vagy az 2 fokos változtatást 4 órán keresztül biztosítsa stb.\n\nfokú Pszi képzettséggel bíró alkalmazó esetén az áldozat testhője annyiszor 2 fokkal, vagy annyiszor 1 óráig változhat, amennyivel a diszciplína Erőssége (E) meghaladta az illető Mentái ME-jét."
  },
  {
@@ -505,7 +505,7 @@
   "erosites szovege": "3 kg",
   "hossz": "1 kör",
   "idotartam": "6 kör",
-  "ellenallas": "Mentális",
+  "me": "Mentális",
   "leiras": "A Testhőmérséklet befolyásolásához hasonlatosan az alkalmazó ezúttal is szellemi erejét fókuszálja testébe, de gyakorlottabb felhasználóként, a diszciplína használatával képes saját testsúlyát megnövelni vagy lecsökkenteni. Ezáltal képessé válik több emelet magasba felugrani, a havon futni anélkül, hogy mély nyomot hagyna, esetleg gyorsabban úszni. A karakter mozdulataiban a szellemi erő tökéletessége tükröződik vissza, a tudat majdhogynem teljes irányítása a test felett.\n\nA diszciplínával nem változtatható meg az alkalmazó által hordott vagy viselt tárgyak súlya, és másokra nem alkalmazható.\n\nA metódus 1 E-je 3 ynevi fonttal változtatja meg a test tömegét az eredetihez képest pozitív vagy negatív irányba. A felhasznált pszi-pontok többszörözésével a diszciplína időtartama is a többszörösére nyúlik.\n\nHáromszorosnál nagyobbra növeli, vagy harmadánál kevesebbre csökkenteni a testsúlyt bármennyi pszip rááldozásával sem lehet.\n\nA diszciplína képzettségekre gyakorolt pontos hatásairól az adott helyzet ismeretében a KM jogköre dönteni."
  },
  {
@@ -564,7 +564,7 @@
   "erosites": 5,
   "hossz": "1 sz",
   "idotartam": "1 kör",
-  "ellenallas": "Akaraterőpróba",
+  "me": "Akaraterőpróba",
   "leiras": "A Zavarás a Slan pszi kiterjesztett Aurára épülő alkalmazásainak legmagasabb szintű formája. Végrehajtásakor a Slan saját Auráját lepelként kiterjesztve borítja be ellenfelét, elzárva őt a Belső Síkoktól, illetve a Manahálótól. Az áldozat ezt egyfajta elcsendesülésként, kifakulásként éli meg. A körötte lévő világ elveszti minden érdekességét, az illatok eltompulnak az emberek mosolya vagy haragja hiteltelenné válik, mivel az öntudatlan észlelése az Asztrál- és Mentálsíkon immáron nem látja el benyomásokkal, nem egészíti ki az érzékszervei által nyújtott információkat, észleléseket.\n\nEnnek hatásai többféleképpen is megnyilvánulnak: minden már megfogant varázslat, fohász és pszi alkalmazás, mely koncentrációt igényel, és nem az alkalmazó saját testére hat azonnal megszakad, az időtartam alatt pedig az áldozat nem képes Mana pontjai visszaszerzésére sem, illetve újabb varázslatok, fohászok, vagy pedig pszi alkalmazások végrehajtására.\n\nA sikeres alkalmazáshoz azonban a Slannek meg kell érintenie áldozatát, hogy Aurájuk érintkezhessen. Ez után sem távolodhat el a célponttól 5 ynevi lábnál messzebb, mivel ekkor a diszciplína azonnal megszakad. Emellett a megtámadott másféleképpen is védekezhet: sikeres Akaraterőpróbával legyűrheti a reá boruló Aurát, azonban próbáját a diszciplína E-jének megfelelő negatív módosítóval dobja. Minden egyes E után -1-gyel. Az Akaraterőpróbát csakis a diszciplína megfoganásakor dobhatja a célpont, s ha ez sikertelen, akkor önnön erejéből képtelen szabadulni."
  }
 ]

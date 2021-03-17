@@ -65,6 +65,6 @@ public class WarlockMagicSingleFragment extends SingleFragment<WarlockMagicDatab
         setOrHide(propertiesLayout, entity.getCastTime(), R.id.casttime_value, R.id.casttime_value, R.id.casttime);
         setOrHide(propertiesLayout, entity.getRange(), R.id.range_value,  R.id.range_value, R.id.range);
         setOrHide(propertiesLayout, entity.getDurationTime(), R.id.durationtime_value, R.id.durationtime_value, R.id.durationtime);
-        setOrHide(propertiesLayout, entity.getMagicResistance(), R.id.resistance_value, R.id.resistance_value, R.id.resistance);
+        setAndMakeVisible(propertiesLayout, entity.getMagicResistance(), R.id.resistance_value, R.id.resistance_value, R.id.resistance);
     }
 }

@@ -67,6 +67,6 @@ public class PsziMagicSingleFragment extends SingleFragment<PsziMagicDatabaseVie
         setOrHide(propertiesLayout, entity.getCastTime(), R.id.casttime_value, R.id.casttime_value, R.id.casttime);
         setOrHide(propertiesLayout, getString(R.string.default_range), R.id.range_value,  R.id.range_value, R.id.range);
         setOrHide(propertiesLayout, entity.getDurationTime(), R.id.durationtime_value, R.id.durationtime_value, R.id.durationtime);
-        setOrHide(propertiesLayout, entity.getMagicResistance(), R.id.resistance_value, R.id.resistance_value, R.id.resistance);
+        setAndMakeVisible(propertiesLayout, entity.getMagicResistance(), R.id.resistance_value, R.id.resistance_value, R.id.resistance);
     }
 }

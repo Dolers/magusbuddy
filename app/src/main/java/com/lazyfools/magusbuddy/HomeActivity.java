@@ -3,6 +3,7 @@ package com.lazyfools.magusbuddy;
 import android.os.Bundle;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
+import android.view.MenuItem;
 import android.view.View;
 
 import androidx.navigation.NavController;
@@ -23,10 +24,21 @@ public class HomeActivity extends AppCompatActivity {
         bottomNavigation = findViewById(R.id.navigation);
         NavigationUI.setupWithNavController(bottomNavigation,navController);
 
-        setBottomNavigationVisibility(View.GONE);
+        setBottomNavigationVisibility(View.VISIBLE);
     }
 
     public void setBottomNavigationVisibility(int value){
-        bottomNavigation.setVisibility(View.GONE);
+        bottomNavigation.setVisibility(value);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            // Respond to the action bar's Up/Home button
+            case android.R.id.home:
+                navController.navigateUp();
+                return true;
+        }
+        return super.onOptionsItemSelected(item);
     }
 }

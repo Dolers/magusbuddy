@@ -58,11 +58,23 @@ abstract public class SingleFragment<ViewModel extends AndroidViewModel> extends
         }
         return descriptionTables;
     }
+
     public void setAndMakeVisible(View layout, String value, int idToSet){
         if (!value.isEmpty()){
             TextView textView = layout.findViewById(idToSet);
             textView.setText(value);
             textView.setVisibility(View.VISIBLE);
+        }
+    }
+
+    public void setAndMakeVisible(View layout, String value, int idToSet, Integer... idsToShow){
+        if (!value.isEmpty()){
+            TextView textView = layout.findViewById(idToSet);
+            textView.setText(value);
+            for (Integer idToShow : idsToShow) {
+                layout.findViewById(idToShow).setVisibility(View.VISIBLE);
+            }
+
         }
     }
 

@@ -72,7 +72,7 @@ public class PsziMagicPopulizer implements Populizer{
                         qJson.getInt("pszipont"),
                         qJson.getInt("erosites"),
                         parseStringWithDefault(qJson,"erosites szovege"),
-                        parseStringWithDefault(qJson,"ellenallas"),
+                        parseStringWithDefault(qJson,"me"),
                         qJson.getString("idotartam"),
                         qJson.getString("hossz"),
                         qJson.getString("leiras"),

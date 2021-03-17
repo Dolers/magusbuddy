@@ -72,7 +72,7 @@ public class SacralMagicPopulizer implements Populizer{
                         qJson.getInt("kegypont"),
                         qJson.getInt("erosites"),
                         parseStringWithDefault(qJson, "erosites szovege"),
-                        parseStringWithDefault(qJson, "ellenallas"),
+                        parseStringWithDefault(qJson, "me"),
                         parseSphere(qJson),
                         qJson.getString("idotartam"),
                         qJson.getString("hatotav"),
