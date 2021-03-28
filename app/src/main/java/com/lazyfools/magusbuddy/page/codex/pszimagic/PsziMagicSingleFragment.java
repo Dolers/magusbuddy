@@ -61,7 +61,7 @@ public class PsziMagicSingleFragment extends SingleFragment<PsziMagicDatabaseVie
 
         setOrHide(getView(), entity.getEmp(), R.id.emp_value, R.id.emp_layout);
 
-        setAndMakeVisible(getView(), join(',', entity.getType().toString(), entity.getSubType()), R.id.type_value);
+        setAndMakeVisible(getView(), join(',', entity.getLevel() + ". fok", entity.getType().toString(), entity.getSubType()), R.id.type_value);
 
         GridLayout propertiesLayout = getView().findViewById(R.id.properties_layout);
         setOrHide(propertiesLayout, entity.getCastTime(), R.id.casttime_value, R.id.casttime_value, R.id.casttime);
