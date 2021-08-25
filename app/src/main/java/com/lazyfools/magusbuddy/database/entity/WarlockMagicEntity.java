@@ -19,7 +19,9 @@ public class WarlockMagicEntity {
         BETEGSEG("Betegségmágia"),
         MEREG("Méregmágia"),
         TERMESZETI("Természeti mágia"),
-        ASZTRALMENTAL("Asztrál-mentál mágia");
+        ASZTRALMENTAL("Asztrál-mentál mágia"),
+        ASCENSMORGA("Ascens Morga"),
+        HERGOLI("Hergoli Villámmesterek");        ;
 
         private final String name;
 
@@ -43,6 +45,8 @@ public class WarlockMagicEntity {
                 case "Méregmágia": return MEREG;
                 case "Természeti mágia": return TERMESZETI;
                 case "Asztrál-mentál mágia": return ASZTRALMENTAL;
+                case "Ascens Morga": return ASCENSMORGA;
+                case "Hergoli Villámmesterek": return HERGOLI;
             }
             return ALAP;
         }

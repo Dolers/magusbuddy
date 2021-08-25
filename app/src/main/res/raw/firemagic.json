@@ -83,7 +83,7 @@
    "tipus": "Iskolaformák",
    "nev": "Tűzaura",
    "mp": "6",
-   "idoigeny": "1 szegmens/E",
+   "idoigeny": "1 sz/E",
    "idotartam": "3 kör",
    "leiras": "A varázslat befejeztekor a tűzvarázslót - vagy azt a kizárólag egyetlenegy, Zónáján belül tartózkodó személyt, akit meghatároz - Tűzaura veszi körül. Ez úgy hat, mint valami lángokból álló vértezet: beborítja, védelmezi az illetőt. Testétől mintegy tíz ynevi hüvelyk távolságra lobog, védettjét a mozgásban és a látásban egyáltalán nem akadályozza, és nem is sebzi; mi több, a ruháit, tárgyait sem lobbantja lángra; befelé semmilyen hőhatást nem fejt ki. Ellenben azoknak, akik azAura védettjét megérinteni, puszta kézzel megütni szándékoznak - vagyis az Aurán átnyúlni kívánnak - égési sebet okoz, valamint a kívülről behatoló éghető anyagokat lángra lobbantja. Ez a sebzés minden benyúlási kísérlet esetén Erősségenként lkó Sp."
  },
@@ -91,7 +91,7 @@
    "tipus": "Iskolaformák",
    "nev": "Tűzcsóva",
    "mp": "5",
-   "idoigeny": "1 szegmens/E",
+   "idoigeny": "1 sz/E",
    "idotartam": "1 kör",
    "leiras": "A Tűzkitörés különleges változata, s ebből következően főként támadásra használható. A tűzvarázsló itt is összesűríti az általa létrehozott elemet, ami azonban nem a tér minden irányában, hanem egyetlen irányított Csóvában tör ki. A Csóva mindig a végpontján éri el az 1 ynevi lábnyi átmérőt.\n\nA Csóvába formázott elem Erőssége (E) az első lábon any- nyi, amennyi a teremtett elem erőssége, attól kezdve pedig ynevi lábanként eggyel csökken (akár a Kitörésnél). Ebből máris kiviláglik, hogy a Csóva annyi láb hosszú, amennyi az Erőssége. A másik szembeötlő különbség a Kitöréshez képest, hogy a Csóva időtartama nem egyszeri, hanem egy teljes kör. Ez idő alatt a teremtett elem folyamatosan áramlik a Csóva kiindulási pontjától a végpontjáig.\n\nA tűzvarázsló, mikor a mágikus igék elkántálása és rúnák felrajzolása után létrehozta a varázslatot még köteles meghatározni a Csóva irányát, amerre az idézett Őstűz majd kitör. A Csóvát később már nem irányíthatja új célpontra."
  },
@@ -99,7 +99,7 @@
    "tipus": "Iskolaformák",
    "nev": "Tűzfal",
    "mp": "8",
-   "idoigeny": "1 szegmens/E",
+   "idoigeny": "1 sz/E",
    "idotartam": "3 kör",
    "leiras": "E varázslattal a tűzvarázsló a Zónáján belül létrehozhat egy fél ynevi láb vastag, 2 ynevi láb sugarú függőleges Tűzfalat - ami valójában egy félbevágott, függőleges Tűzszőnyeg. Alsó vonala követi a terep egyenetlenségeit.\n\nA Tűzfal lángra lobbant minden éghető anyagot, ami belekerül, és körönként a varázslat minden egye E-je után 1k6 Sp sebet okoz azoknak, akik érintkeznek vele, vagy rajta keresztülhatolni kívánnak.\n\nA Mana pontok többszörözésével az Időtartam és az Erősség igen, a Tűzfal mérete nem növelhető."
  },
@@ -107,7 +107,7 @@
    "tipus": "Iskolaformák",
    "nev": "Tűzkard",
    "mp": "6",
-   "idoigeny": "1 szegmens/E",
+   "idoigeny": "1 sz/E",
    "idotartam": "3 kör",
    "leiras": "A varázslattal a tűzvarázsló lángokkal övezheti egy tetszés szerinti formájú fegyvert. A tűz körülöleli a pengét - akár a Tűzaura az embert -, és a fegyver sebzésén túl égési sebeket okoz, valamint lángra lobbantja a gyúlékony anyagokat, melyeket megérint.\n\nA Tüzkardot a markolatánál bárki megfoghatja és forgathatja; a harc során éppúgy viselkedik, akár egy hétköznapi fegyver: támadni szükséges vele, s éppúgy használható védekezésre is - a Harcrendszer szabályai szerint. Sebzés csak sikeres támadás esetén éri az áldozatot: a fegyver eredeti sebzésén túl a varázslat minden egyes E-je után lkő Sp. Azonban túlütés estén csak a fegyver sebez automatikusan Ép-t, a tűzvarázslat nem!"
  },
@@ -115,7 +115,7 @@
    "tipus": "Iskolaformák",
    "nev": "Tűzkitörés",
    "mp": "5",
-   "idoigeny": "1 szegmens/E",
+   "idoigeny": "1 sz/E",
    "idotartam": "Egyszeri",
    "leiras": "A tűzvarázsló a Zónáján belül eső területen meghatározhat egy tetszés szerinti pontot, amely a robbanás epicentrumaként fog szolgálni. A robbanás mindazoknál«, akik a középpont 1 ynevi láb körzetén belül tartózkodnak, minden E után lkő sebet fog okozni. Ha a tűzvarázsló a tűzkitörést - több Mp felhasználásával - nagyobb erősséggel idézi meg, akkor már a távolabb állók is részesülnek a hatásából - minél távolabb tartózkodnak, annál kevésbé. A sebzés az epicentrumtól távolodva lábanként 1k6-tál csökken."
  },
@@ -123,7 +123,7 @@
    "tipus": "Iskolaformák",
    "nev": "Tűznyíl",
    "mp": "4",
-   "idoigeny": "1 szegmens/E",
+   "idoigeny": "1 sz/E",
    "idotartam": "Egyszeri",
    "leiras": "A tűzvarázsló bal kezének mutatóujjából Tűznyíl csap elő. Ezzel akkor találja el ellenfelét, ha sikeres Célzó Dobást tesz. A Tűznyíl CÉ-je 30, amihez a tűzvarázsló fegyver nélküli CÉ-je is hozzáadódik, sebzése pedig Erősségenként lkő Sp."
  },
@@ -131,7 +131,7 @@
    "tipus": "Iskolaformák",
    "nev": "Tűzszőnyeg",
    "mp": "8",
-   "idoigeny": "1 szegmens/E",
+   "idoigeny": "1 sz/E",
    "idotartam": "3 kör",
    "leiras": "A varázslattal a tűzvarázsló egy 5 ynevi láb sugarú körben fél ynevi láb magas Tűzszőnyeget hoz létre. Ezt úgy a legegyszerűbb elképzelni, mint egy hosszú szárú fűvel benőtt területet - csakhogy a fűszálak itt lobogó lángnyelvek. Mindazok, akik ebbe belekerülnek vagy belelépnek, a varázslat minden egyes E-je után körönként lkő Sp sebet szenvednek. Minden éghető anyag, melyet a szőnyeg lángnyelvei érnek, tüzet fog.\n\nA Tűzszőnyegnek csupán Erőssége és Időtartama növelhető, mérete nem."
  },
@@ -139,7 +139,7 @@
    "tipus": "Szabad elemi formák",
    "nev": "Tűzgolyó",
    "mp": "6",
-   "idoigeny": "1 szegmens/E",
+   "idoigeny": "1 sz/E",
    "idotartam": "3 kör",
    "leiras": "A varázslat utolsó igéjének elhangzása után 1 ynevi láb átmérőjű Tűzgolyó jön létre a tűzvarázsló Zónáján belül eső, tetszés szerinti ponton. A tűzvarázsló a Zónáján belül az időtartam lejártáig tetszés szerint mozgathatja a golyót, mely körönként 20 ynevi lábat képes megtenni. Belsejében iszonyú forróság uralkodik - akit megérint, E-nként lkő Sp-t szenved el. Ha az áldozatok félreugrani igyekszenek a Tűzgolyó útjából, sikeres Gyorsaságpróbát kell tenniük, hogy elkerülhessék."
  },
@@ -147,7 +147,7 @@
    "tipus": "Szabad elemi formák",
    "nev": "Tűzgyűrű",
    "mp": "6",
-   "idoigeny": "1 szegmens/E",
+   "idoigeny": "1 sz/E",
    "idotartam": "4 kör",
    "leiras": "A varázslat létrejöttekor a tűzvarázsló egyetlen mozdulattal kijelöl egy 3 ynevi láb átmérőjű körívet, ahol Tűzgyűrű keletkezik, melynek lángnyelvei maximum húsz\n\nyneví hüvelyk magasak. Mikor bárki vagy bármi áthatolni kíván a gyűrűn, a tűz felcsap és lángba borítja a behatolót. Az éghető anyagok nyomban meggyulladnak, az élőlények Erősségenként 1k6 Sp sebet szenvednek el."
  },
@@ -155,7 +155,7 @@
    "tipus": "Szabad elemi formák",
    "nev": "Tűzhenger",
    "mp": "5",
-   "idoigeny": "1 szegmens/E",
+   "idoigeny": "1 sz/E",
    "idotartam": "6 kör",
    "leiras": "A varázslat hatására a tűzvarázsló Zónáján belül bárhol egy 3 ynevi láb hosszú, 1 ynevi láb magas Tűzhenger keletkezik, s gurulni kezd. Haladásának iránya nem befolyásolható, az kizárólag a domborzati viszonyoktól függ. A henger haladási sebessége 10 lépés körönként. 6 kör múltán magától eltűnik, de amerre elhaladt, az éghető anyagok lángra kapnak - így a tűz könnyen elharapózhat. Akit a tűzhenger elér, az a varázslat minden egyes E-je után lkő Sp égési sebet szenved el."
  },
@@ -163,7 +163,7 @@
    "tipus": "Szabad elemi formák",
    "nev": "Tűzhullám",
    "mp": "12",
-   "idoigeny": "1 szegmens/E",
+   "idoigeny": "1 sz/E",
    "idotartam": "3 kör",
    "leiras": "A varázslat létrejöttekor gyűrű alakban egyre erősebb lánghullámok indulnak útnak a középpontban álló tűzvarázsló felől, aki bal nyitott tenyerével a föld felé sújtva indítja útnak a lángokat, egészen Zónájának határáig (20 ynevi láb). A hullámok 1 kör alatt megteszik ezt a távolságot, és minden útjukba eső éghető anyagot lángra lobbantanak. Minden körben egy-egy új hullám születik, az első annyiszor lk6-ot sebez, amennyi a varázslat E-je, a második hullám 1k6-tal többet, a harmadik újabb 1k6-tal többet, és így tovább, az Időtartam végeztéig."
  },
@@ -171,7 +171,7 @@
    "tipus": "Szabad elemi formák",
    "nev": "Tűzzápor",
    "mp": "10",
-   "idoigeny": "1 szegmens/E",
+   "idoigeny": "1 sz/E",
    "idotartam": "3 kör",
    "leiras": "A varázslat hatására a tűzvarázsló Zónáján belül a levegőben 20 ynevi láb magasan lángfellegek jelennek meg, melyekből 3 körön keresztül tüzzápor hull a földre. Az érintett terület 5 ynevi láb sugarú kör. Mindenki, aki ezen belül tartózkodik, körönként 1k6 Sp-t veszít - a vértek SFÉ-tényezője azonban ilyenkor is érvényesül."
  },
@@ -195,7 +195,7 @@
    "tipus": "Tűzmágia magasiskolája",
    "nev": "Fémizzítás",
    "mp": "6",
-   "idoigeny": "1 szegmens/E",
+   "idoigeny": "1 sz/E",
    "idotartam": "1 kör/E",
    "leiras": "A tűzvarázsló bármely, a Zónáján belül eső nem mágikus fémtárgyat megjelölhet a varázslat célpontjául (de egyszerre csak egyet), mely ettől kezdve rohamos sebességgel forrósodni kezd. Az első körben még csak éget, a másodikban sötétvörösen, a harmadikban sárgán, a negyedikben fehéren izzik, az ötödikben megolvad, a hatodikban pedig már képlékennyé válik. Ha az érintett tárgyat valaki a testén viseli, akkor minden körben annyiszor lkő Sp-t veszít, ahányadik az adott kör a fentebb ismertetett fokozatok sorában.\n\nAbban az esetben, ha a tárgy kikerül a tűzvarázsló Zónájából, vagy az Időtartam lejár, körönként egy fokozatot hűl - és ennek megfelelően továbbra is sebez. Természetesen, ha újra izzítani kezdik, a folyamat nem elölről, hanem az éppen aktuális fokozattól folytatódik."
  },
@@ -211,7 +211,7 @@
    "tipus": "Tűzmágia magasiskolája",
    "nev": "Hamvasztó tekintet",
    "mp": "10",
-   "idoigeny": "1 szegmens/E",
+   "idoigeny": "1 sz/E",
    "idotartam": "6 kör",
    "leiras": "A varázslat létrejöttével a tűzvarázsló az időtartam lejártáig képes arra, hogy tekintetével megperzselje azokat a Zónáján belül eső tárgyakat, amelyekre pillant. Ez az éghető anyagokat nyomban lángra lobbantja, a kevésbé éghetőeket pedig megperzseli, fémek felolvasztására nem alkalmas. A gyújtópontban a hőmérséklet E-nként megközelítőleg 100 Celsius- fok, amely az élőlényeknek a varázslat minden Erőssége után 1k6 Sp sebet okoz körönként.\n\nA varázslat hatóideje alatt a tűzvarázsló szeme halvány vörös fénnyel parázslik."
  },
@@ -227,7 +227,7 @@
    "tipus": "Tűzmágia magasiskolája",
    "nev": "Izzó érintés",
    "mp": "8",
-   "idoigeny": "1 szegmens/E",
+   "idoigeny": "1 sz/E",
    "idotartam": "6 kör",
    "leiras": "Mindenben megegyezik a Hamvasztó tekintet nevű varázslattal, a különbség annyi, hogy itt a tűzvarázsló bal kezének érintésével tudja megperzselni áldozatát. Ehhez sikeres Támadó dobást kell tennie. Kezét halványvörös izzás veszi körül, érintése az éghető anyagokat nyomban lángra lobbantja, a kevésbé éghetőket csak megperzseli. Az érintési pontban a hőmérséklet E-nként megközelítőleg 100 C fok, ami 1k6 Sp égési sebet okoz."
  },
@@ -259,7 +259,7 @@
    "tipus": "Tűzmágia magasiskolája",
    "nev": "Perzselő aura",
    "mp": "10",
-   "idoigeny": "1 szegmens/E",
+   "idoigeny": "1 sz/E",
    "idotartam": "4 kör",
    "leiras": "\n\n\n\nA varázslat szinte mindenben megegyezik a Tűzaura varázslattal, csupán egy fontos különbség van a kettő között. A Perzselő aura nem a testtől 5-10 ynevi hüvelykih öleli körül a tűzvarázsló testét, hanem annál távolabb. Az aura testtől való távolsága 1-120 ynevi hüvelyk között változtatható a tűzvarázsló kívánsága szerint. így sokkal könnyebb lesz egyszerre védekezni és támadni is, hiszen a kicsivel több, mint egy ynevi lábnyi maximális távolságú aura már minden 5. kategóriánál kisebb fegyver forgatóján sebez, ha a támadó megpróbál közelharcra alkalmas távolságon belülre kerülni.\n\nAz aura éppen aktuális távolsága egy szegmensnyi koncentráció után egy újabb szegmens alatt megváltoztatható. A tűzvarázsló természetesen támadásra is felhasználhatja a Perzselő aurát, amely minden rajta keresztülhaladón 1k6 Sp-t sebez a varázslat minden E-je után."
  },
@@ -355,7 +355,7 @@
    "tipus": "Őstüzek befolyásolása",
    "nev": "Átformázás",
    "mp": "6",
-   "idoigeny": "1 szegmens/E",
+   "idoigeny": "1 sz/E",
    "idotartam": "Egyszeri",
    "leiras": "A tűzvarázsló e varázslat által képessé lesz arra, hogy más varázshasználók által idézett Östüzet átformáljon a saját igényeinek megfelelő formába. A formázás tekintetébencsak a hét iskolaformát használhatja, míg az átalakítandó tűz formája tetszőleges. Azok az Őstüzek, melyeket egy tűzvarázsló, vagy egy elementalista akarata irányít (lásd a Tűzlényeknél, de ilyen a Tűzgolyó és a Tűzpenge is, és a szabad elemi formák) nem reagálnak az átformázásra. A felhasznált mana elvész.\n\nEzzel a varázslattal elképzelhető az a jelenet is, hogy a tűzvarázsló ellen harcoló ellenfélt körülvevő aura tűzkitöréssé alakul. Az Erősségnek legalább annyinak kell lenni, mint az átformázni kívánt tűz erőssége. A személyes aura nem véd ellene, mert a tűzvarázsló misztikus tűzzel való kapcsolata miatt (melyet a varázslat által használ ki) olyan lesz, mintha az Őstűz a saját Személyes Aurájának lenne a része és nem az áldozaté."
  },
@@ -371,7 +371,7 @@
    "tipus": "Őstüzek befolyásolása",
    "nev": "Tűzrablás",
    "mp": "4",
-   "idoigeny": "Leírásban",
+   "idoigeny": "Lásd leírás",
    "idotartam": "Egyszeri",
    "leiras": "A varázslat képessé teszi használóját arra, hogy varázslatát megformálva kevesebb manát használjon fel. A Zónán belül égő összes tűz E-jét felhasználhatja varázslatához, amik annak Erősségét fogják ezentúl növelni. A tűzvarázslónak legalább 1 E Erősségű varázslatot kell létrehoznia, és ahhoz hozzáfűznie annyi E Tűzrablást, amennyit szükségesnek lát. Minden E Tűzrablás a Zónán belül lobogó Őstüzek E-jéből kiolt 1 E-t. A tűz ezután a tűzvarázsló varázslatát erősíti. Ha több E Tűzrablást varázsolt, mint amennyi E Őstűz a Zónán belül jelen van, akkor a Mana pontok elvesznek.\n\nA tűzvarázsló ezt a varázslatot csak a hét iskolaformával és a szabálytalan elemi formákkal kapcsolatban alkalmazhatja."
  },
@@ -379,8 +379,8 @@
    "tipus": "Őstüzek befolyásolása",
    "nev": "Lángfestés",
    "mp": "2",
-   "idoigeny": "1 szegmens/E",
-   "idotartam": "Leírásban",
+   "idoigeny": "1 sz/E",
+   "idotartam": "Lásd leírás",
    "leiras": "Misztikus varázslat, melynek segítségével a tűzvarázsló megváltoztathatja az Őstűz mágikus tulajdonságait, olyan praktika, melyet önmagában soha nem alkalmaznak, hanem mindig valamilyen tűzvarázslathoz fűznek hozzá, vagy már létező tűzmágiát alakítanak át vele. A varázslás idejénél feltüntetheti 1 szegmens/E mindig hozzáadandó az eredeti varázslat varázslási idejéhez.",
    "tablazatok": ["Szín\tHatás\tMp/E\n\nVakító fehér\tA tüzek E-jét magába olvasztja\t6\n\nKék\tŐsvíz ellen 2xE\t2\n\nMéregzöld\tCsak a célpontokra hat\t4+2\n\nAranysárga\tA tűzvarázslóra nem hat\t3\n\nBíborvörös\tFele sebzés, kétszeres időtartam\t2\n\nFekete\tCsak a tűzvarázslóra hat\tSpeciális"]
  },

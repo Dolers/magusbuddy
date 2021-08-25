@@ -80,7 +80,7 @@
   "erosites szovege": "Mágia szétoszlatása",
   "hossz": "1 kör",
   "hatotav": "20 m",
-  "idotartam": "15 perc",
+  "idotartam": "15 p",
   "leiras": "A hit pajzsa nevezetű fohász segítségével a kegyelt egy rövid fohásszal felhívja magára pártfogója figyelmét, hogy óvja meg az elkövetkezendőkben. Az ima nyomán a pap, vagy paplovag hatalma egy, a kegyelt kör üli 20 ynevi láb sugarú gömbben nyilvánul meg; itt az időtartam lejártáig minden létrejövő ártó szándékú varázslat, vagy fohász ellen kinyilváníthatja istene hatalmát. Ez annyit tesz, hogy a kegyelt akár 1 szegmenses varázslatokat is képes még létrejöttük előtt szétoszlatni a Mágia szétoszlatása nevezetű fohásznál leírtaknak megfelelően, az ott részletezett Kegy pont mennyiségért. Azonban a pap képtelen előre felmérni egy megfoganó varázslat erejét, így, ha a fohász segítségével ellenszegül és nem bír a varázslat szétoszlatásához szükséges Kegy pontokkal, akkor a varázslat a fohász félbeszakadásának pillanatában ismét teljes erősítésével fogan meg.\n\nA fohászt a kegyelt az Időtartam lejárta előtt bármikor megszüntetheti, addig azonban nem képes semmilyen más fohászt alkalmazni."
  },
  {
@@ -92,7 +92,7 @@
   "erosites": 4,
   "hossz": "5 sz",
   "hatotav": "Érintés",
-  "idotartam": "10 perc",
+  "idotartam": "10 p",
   "leiras": "A Hétarcú szolgálói gyakorta kerülhetnek olyan helyzetbe, amikor kivételes Akaraterővel lehet csak szembeszegülni az ellenük forduló hatalmakkal. Ez a fohászuk éppen az ilyen lehetőségek esetén nyújt segítséget Domvik híveinek. A pap nemcsak magára, hanem egy általa kiválasztott személyre is rámondhatja.\n\nA fohász hatására az illető Akaratereje a fohász minden E-je után 1-gyel megnő (nem emelkedhet azonban 20 fölé), s a fohász ideje alatt ez lesz a meghatározó pl. a TME kiszámolásánál is."
  },
  {
@@ -119,7 +119,7 @@
   "erosites": 2,
   "hossz": "2 sz",
   "hatotav": "Érintés",
-  "idotartam": "5 perc",
+  "idotartam": "5 p",
   "leiras": "A rövid suttogásnyi fohász kezdetkor a papnak választania kell, hogy Asztrál- vagy Mentálfátylat kér-e urától, úrnőjétől. A fohász egyetlen személyre hat, s ha az valamely ok miatt ellenszegülne, akkor sem jogosult Mágiaellenállásra. A fohász alkalmazásakor meg kell érinteni a kijelölt személyt jobb kezével, s eközben kell elmormolni a védő ige szavait. A Fátyol elrejti az Asztrál- vagy a Mentáltestet, így megnehezíti annak megtámadását, megfigyelését. Ez annyit jelent, hogy a fohász idejére a célpont Asztrál vagy Mentái Mágiaellenállása minden mágia ellen a Fátyol Erősségével nő. A védelem nem növelhető a varázslat megismétlésével."
  },
  {
@@ -173,7 +173,7 @@
   "erosites": 25,
   "hossz": "3 kör",
   "hatotav": "Önmaga",
-  "idotartam": "10 perc",
+  "idotartam": "10 p",
   "leiras": "A fürkésző mágiák, fohászok és diszciplínák elől rejtheti el magát a pap ily módon. Az összes típusú, őt fürkésző hatást nem lehetetlenné teszi, hanem megtéveszti (többet vagy kevesebbet mutat a pap képességeiből, az elméjét óvó pajzsokból, magánál hordott varázstárgyakból stb.). A KM feladata annak eldöntése, hogy az adott varázslat ismeretében „félretájékoztassa” azt, aki a fohász alanyára kíváncsi. A különféle befolyásoló varázslatok ellen nem nyújt védelmet, csupán az érzékelő jellegűeket vezeti félre."
  },
  {
@@ -201,7 +201,7 @@
   "erosites": 10,
   "hossz": "1 kör",
   "hatotav": "20 m",
-  "idotartam": "5 perc",
+  "idotartam": "5 p",
   "leiras": "Ennek a fohásznak az alkalmazásával lehetővé válik, hogy a Vadak irányítása fohász segítségével ne csak parancsokat adhasson egy adott állatnak, hanem annak érzékszerveit a sajátjaként is használhassa. Ekkor kizárólag az adott állat szemével lát, fülével hall stb., mindaz, ami valójában körülötte történik, nem jut el hozzá. Az állatnak csak a fohász meg- foganásának pillanatában kell a pap közelében tartózkodnia, utána bármilyen messze eltávolodhat tőle."
  },
  {
@@ -225,7 +225,7 @@
   "lelek": true,
   "kegypont": 4,
   "erosites": 4,
-  "hossz": "Leírásban",
+  "hossz": "Lásd leírás",
   "hatotav": "20 m",
   "idotartam": "Végleges",
   "me": "Asztrális",
@@ -239,7 +239,7 @@
   "lelek": true,
   "kegypont": 10,
   "erosites": 10,
-  "hossz": "10 perc",
+  "hossz": "10 p",
   "hatotav": "Érintés",
   "idotartam": "Egyszeri",
   "leiras": "A fohász megfelel a boszorkányok és boszorkánymesterek Átokfejtés varázslatának, de minden típusú átkot képes felismerni, s ismérveit a pap tudomására hozni, ki az imádság során istenétől kér útmutatást. A fohász megmutatja az átok pontos hatását, s hogy ki alkalmazta azt az áldozaton."
@@ -264,7 +264,7 @@
   "lelek": true,
   "kegypont": 2,
   "erosites": 2,
-  "hossz": "10 perc",
+  "hossz": "10 p",
   "hatotav": "Speciális",
   "idotartam": "1 óra",
   "me": "Asztrális/Mentális",
@@ -354,7 +354,7 @@
   "erosites": 1,
   "hossz": "5 sz",
   "hatotav": "Önmaga",
-  "idotartam": "5 perc",
+  "idotartam": "5 p",
   "me": "Asztrális",
   "leiras": "Arel papjai nem vetik meg a másik nemet, mi sem példázza ezt jobban, mint ez a fohász. Segítségével a pap szebbnek, kellemtelibbnek tüntetheti fel magát egy választott személy előtt. A fohász eggyel növeli alkalmazója Karizmáját, és ha az áldozat elvéti Mágiaellenállását, kívánatosnak és bizalomgerjesztőnek fogja találni a papot még akkor is, ha a fohász hatóideje már elmúlt. Feltéve persze, hogy a pap nem tesz semmi olyat, amit az áldozat fenyegetésnek foghatna fel, ilyenkor ugyanis a hatás szertefoszlik."
  },
@@ -380,7 +380,7 @@
   "erosites": 35,
   "hossz": "6 kör",
   "hatotav": "20 m",
-  "idotartam": "10 perc",
+  "idotartam": "10 p",
   "leiras": "Ezen idéző fohász a pap istenéhez szóló segítségkérésből, majd az adott őselemi sík jelének levegőbe rovásából áll. A litánia kisebb erősségű elementál hívását teszi lehetővé. A fohász kaput nyit az Elemi Síkok egyikére, s egy, a pap által kiválasztott elemi szolga megjelenik a pap által megjelölt helyen az Elsődleges Anyagi Síkon. A lény engedelmeskedik a pap parancsainak, de önálló gondolkodásra nem képes, s bonyolult utasításokat követni is képtelen.\n\nTulajdonságai a Bestiárium c. fejezetben olvashatóak a 489. oldalon."
  },
  {
@@ -415,7 +415,7 @@
   "termeszet": true,
   "kegypont": 65,
   "erosites": 65,
-  "hossz": "10 perc",
+  "hossz": "10 p",
   "hatotav": "1 óra",
   "idotartam": "1 óra",
   "leiras": "A fohász megidéz egy energiákból szőtt kocsit, melyet két légelementál vontat. A kocsin legfeljebb hat személy utazhat, s akit a pap nem enged fel a kocsira, az egyszerűen átesik rajta. A szekér jogosult utasai ezzel szemben teljes biztonságban érezhetik magukat, az energiaszövedék biztosan tartja őket a levegőben. A kocsi messziről alig látható, s közelről is inkább csak a levegő furcsa vibrálásához hasonlítható. A két elementál is teljesen átlátszó, de lehetséges megérinteni őket. A szekér képes repülni, és akár égen, akár szárazföldön 40 ynevi mérföldet képes megtenni óránként. Ha a két légelementált elpusztítják, a kocsi lassan ereszkedni kezd, s egy percen belül földet ér."
@@ -467,7 +467,7 @@
   "erosites szovege": "fő",
   "hossz": "6 kör",
   "hatotav": "10 m",
-  "idotartam": "5 perc",
+  "idotartam": "5 p",
   "leiras": "Csak a pap szövetségeseire van hatással,  NJK-katonák harci kedvének növelésére használatos. A közös imádság hatására a katonák Bátorsága 6 ponttal emelkedik, szinte verhetetlennek érzik majd magukat. Erejük látszólag megsokszorozódik, a legkisebb esélyekkel szemben is harcolni fognak. A papnak hosszan, hangosan kell elmondania a fohász igéit, s az 100 ynevi láb sugarú körön belül minden kiválasztottra hatni fog. Ebben az esetben a 15 alaphoz +1 Kegy pont elköltése szükséges fejenként.\n\n"
  },
  {
@@ -480,7 +480,7 @@
   "erosites szovege": "fő",
   "hossz": "6 kör",
   "hatotav": "10 m",
-  "idotartam": "5 perc",
+  "idotartam": "5 p",
   "leiras": "Csak a pap szövetségeseire van hatással. Az első alkalmazási mód inkább játékos karakterek esetében hasznos. A pap istenéhez intézett fohászának hatására a harcban minden félelmük elvész, különös, belső energiák árasztják el őket, sokszoros erővel vetik magukat a küzdelembe. Minden közelharci harcértékük, KÉ, TÉ, VÉ-jük 10-zel emelkedik, és semmiféle félelem alapú mágia nem érintheti őket a fohász hatóideje alatt. Az első módszer alkalmazásakor a Kegy pont igény a 15 alapponton kívül 5 pont fejenként.\n\n\n\n"
  },
  {
@@ -492,7 +492,7 @@
   "erosites": 6,
   "hossz": "1 kör",
   "hatotav": "Önmaga",
-  "idotartam": "Végleges/ 1óra",
+  "idotartam": "Végleges v 1 óra",
   "leiras": "Ez a fohász kétféleképpen alkalmazható. Az egyik formája szerint a pap elméjébe vési mindazon helyek, városok, utak, keresztutak, folyók stb. nevét, elhelyezkedését, egymáshoz való viszonyát, ahol az elmúlt napon megfordult. Mindez az ismeretanyag az elméjében rendeződik, kapcsolódik a már meglévő információkhoz és idővel könnyen átlátható, használható térképpé rendeződik.\n\nA pap megteheti azt is, hogy nem közvetlenül a nap végén vési be az ismereteit, de akkor az ily módon rögzített ismeret- anyag homályosabb lesz, nem kapcsolódik esetleg pontosan a már meglévő részletekhez, a későbbiekben zavarossá válhat. Az ilyen utólagos rögzítésre egy hétig képes.\n\nA másik felhasználási mód természetesen az, amikor a meglévő tudást a pap alkalmazni is akarja. Ilyenkor a fejében lévő térkép bármely részéhez 1 órán keresztül hozzáférhet."
  },
  {
@@ -504,7 +504,7 @@
   "erosites": 85,
   "hossz": "20 kör",
   "hatotav": "5 km",
-  "idotartam": "5 perc",
+  "idotartam": "5 p",
   "leiras": "Ez a hatalmas erejű fohász vad földrengést idézhet, s ezzel falvakat, kisebb városokat, városrészeket dönthet romba. A pap kijelölheti a rengések epicentrumát, egy tőle maximum 5 mérföldre levő pontot A rengések 3-4 mérföldre terjednek középpontjuktól, s legerősebben az epicentrumban lesznek érezhetők. Még a házak és fák sem állhatnak ellen a földrengés erejének. A fából és agyagból tákolt épületek összeroskadnak, a kőből épültek csak megrongálódnak.\n\nAnnak megállapítása, hogy a területen tartózkodók mekkora sérülést szenvednek el, a KM jogkőre."
  },
  {
@@ -558,7 +558,7 @@
   "lelek": true,
   "kegypont": 12,
   "erosites": 12,
-  "hossz": "1 perc",
+  "hossz": "1 p",
   "hatotav": "Korlátlan",
   "idotartam": "Egyszeri",
   "leiras": "A fohász segítségével a pap telepatikus üzenetet küldhet egy konkrét, általa ismert személynek. Az üzenet a címzett elméjében szólal meg, a pap hangján. A szöveg vagy dallam hossza nem haladhatja meg az 1 percet, de más megkötés nem vonatkozik rá."
@@ -609,7 +609,7 @@
   "erosites": 25,
   "hossz": "1 kör",
   "hatotav": "20 m",
-  "idotartam": "5 perc",
+  "idotartam": "5 p",
   "leiras": "A rituálék ezen fohászának segítségével a pap pillanatnyi uralmat nyerhet az elhunytak teste felett. A pap könyörgése nyomán a holttestek megrázkódnak és túlvilági életet nyernek, tetemek emelkednek fel a földről (emberi és állati holttestek egyaránt), és megelevenedvén engedelmeskednek megidézőjük utasításainak.\n\nA testek lassú mozgással követik mozgatójuk parancsait, s zaurakként harcolnak (lásd a Bestiárium c. fejezetet a 484. oldalon). Ha a fohász időtartama lejár, a holtak a földre rogynak, s visszaváltoznak egyszerű tetemekké."
  },
  {
@@ -621,7 +621,7 @@
   "erosites": 35,
   "hossz": "1 kör",
   "hatotav": "Érintés",
-  "idotartam": "5 perc",
+  "idotartam": "5 p",
   "leiras": "Igen veszélyes része ez annak a tudásnak, amelyet Darton tár fel szolgálói előtt. Segítségével ugyanis képesek lesznek arra, hogy egy hónaposnál nem régebbi holttestbe férkőzve, hozzájussanak utolsó emlékeihez. Az utolsó 5 perc és a halál emléke oly szörnyű, hogy a papnak sikeres Asztrál próbát kell tennie, különben csak zavaros rémképek maradnak meg benne.\n\nAmennyiben sikeres a próbája, akkor az minden mozdulatát átéli az áldozat utolsó 30 körének (5 perc), legyen az akármilyen rémisztő is. Ez alatt az idő alatt egyfajta transzba kerül és semmilyen más tevékenységre nem képes. A transzból kizökkenthető ugyan, ám ekkor mind a Kegy pontjai, mind az addig megszerzett információ kárba vész.\n\nHa kettővel, vagy annál többel véti el Asztrálpróbáját, akkor még komolyabb következményei is lehetnek a fohásznak. A pap ilyenkor annyi pontot veszít Asztráljából, amennyivel a próbát elvétette, s ezeket a pontokat csak 1k6 nap alatt nyeri vissza.\n\nA fohász időtartama a Kegy pontok megtöbbszörözésével sem hosszabbítható meg."
  },
  {
@@ -656,7 +656,7 @@
   "termeszet": true,
   "kegypont": 45,
   "erosites": 45,
-  "hossz": "10 perc",
+  "hossz": "10 p",
   "hatotav": "2 km",
   "idotartam": "1 óra",
   "leiras": "A fohász hatalmat ad a papnak az időjárás felett. A rituálé segítségével egészen szélsőséges időjárás is előidézhető (bármilyen, ami az adott tájegységen egyáltalán elképzelhető), jóllehet például a sivatagban így sem kerekedhet hóvihar. Az egy óra eltelte után azonban az idő változni kezd, lassan, természetes úton, végül pedig az adott körülményeknek megfelelő idő fog kialakulni, meglehet, éppen a pap által létrehozott stabilizálódik."
@@ -687,7 +687,7 @@
   "erosites": 1,
   "hossz": "1 sz",
   "hatotav": "20 m",
-  "idotartam": "5 perc",
+  "idotartam": "5 p",
   "me": "Mentális",
   "leiras": "A fohász hatására a fohász hatókőrén belül a jelenlévők száját csak igaz szó hagyhatja el. A fohász hátránya, hogy a papra is hat, így ő sem hazudhat a körülötte állóknak, illetve senki nem tud hazudni, viszont semmi sem kényszeríti őket, hogy megszólaljanak. Komoly tárgyalásoknál sokszor van jelen pap csak azért, hogy a fohászt megidézze, s a tárgyaló felek még véletlenül se állíthassanak valótlant. A fohász ellen Mentái ME-ra jogosult minden érintett, s ha ez sikeres, rájuk a fohász nem hat."
  },
@@ -715,7 +715,7 @@
   "halal": true,
   "kegypont": 35,
   "erosites": 35,
-  "hossz": "5 perc",
+  "hossz": "5 p",
   "hatotav": "Önmaga",
   "idotartam": "1 óra",
   "leiras": "Magasabb szinten Tliarr papja képessé válik e fohász segítségével urának alakját magára ölteni. Nincs ennél nagyobb megtiszteltetés a Háromfejű szolgáinak, éppen ezért csakis kivételes esetekben, szakrális események alkalmával, Tharr nagyobb ünnepein stb. használják ezt a fohászt. Kizárólag a jelenlévők között rangban legelöl álló alkalmazhatja, s ha valaki más mégis ehhez a fohászhoz folyamodik, az nyílt kihívásként értékelhető.\n\nAmennyiben Tharr méltatlannak találja erre a kegyre, a hatás létrejön és a pap ezután őrökre elveszíti ura jóindulatát, és minden szakrális hatalmát.\n\nA fohász hatására a pap feje oroszlánfejjé változik, mely mellől egy bak és egy kígyófej nő ki. Az alany ruházata és testének többi része változatlan marad. A fenséges megjelenésen és a neki kijáró tiszteleten kívül más előnyei is vannak ennek a fohásznak.\n\nA pap ugyanis megmaradt Kegy pontjait három részre oszthatja, és ha úgy tartja kedve, egyszerre akár három különböző fohászt is alkalmazhat. Mindhárom feje képes a beszédre és az egyidejű cselekvésre. A pap megszüntetheti a fohászt akár az időtartam lejárta előtt is, de erre igen ritkán kerül sor."
@@ -756,7 +756,7 @@
   "erosites": 90,
   "hossz": "1 sz",
   "hatotav": "20 m",
-  "idotartam": "10 perc",
+  "idotartam": "10 p",
   "leiras": "A fohász felhívja a pap istenének figyelmét az érte harcoló halandókra. A rituálé során a pap fennhangon szólítva istenét idézi meg annak akaratát, ha céljai valóban égi pártfogója érdekeit szolgálják, s helyzete valóban igényli a közbeavatkozást.\n\nA pap és körülötte lévő segítőtársai a fohász megidézésének pillanatában az időtartam alatt bármikor 3k10 Fp-t és 1k10 Ép-t gyógyulnak (a maximális értékeiket azonban így sem haladhatják meg). Harcértékeik mindegyikéhez 30 pont adódik (KÉ, TÉ, VÉ, CÉ-hez egyaránt), Asztrális és Mentális védelmük 10 ponttal nő, harci kedvük felülmúlhatatlan lesz, és immunissá válnak minden félelem alapú mágiával szemben. (NJK-k esetében a Bátorság 10 ponttal emelkedik).\n\nHa a pap indokolatlan esetben folyamodik a fohászhoz, a hatás elmarad és maximális Kegy pontjainak száma 10-zel csökken."
  },
  {
@@ -922,7 +922,7 @@
   "erosites": 100,
   "hossz": "2 óra / 1 sz",
   "hatotav": "20 m",
-  "idotartam": "1 nap/veszély ideje",
+  "idotartam": "1 nap v veszély ideje",
   "leiras": "A pap ezt a fohászt két módon használhatja fel, s oly lényeket szabadíthat e világra, melyek könnyen kisebb városok, falvak pusztulását okozhatják. Az első alkalmazási mód esetén a pap hosszasan előkészül a szertartáshoz, oltárt épít, áldozatot mutat be és felrajzolja istenének szimbólumát a megidézés helyére. Ezek után hozzákezd az idéző rituáléhoz, s várja a lény érkezését.\n\nA Külső Síkról érkező lény minden esetben a pap istenének síkjáról kerül át az Elsődleges Anyagi Síkra, az istenség szolgáinak, angyalainak vagy küldötteinek egyike lesz. Segíteni fogja a papot, egy napig vele marad, mindenben követi, majd nyomtalanul eltűnik; visszatér saját lakhelyére.\n\nA gyorsabb segítségért fontos küldetés veszélybe kerülésekor könyöröghet a kegyelt. Ha az isten a veszélyt valósnak és súlyosnak érzi, leküldheti valamely szolgáját a pap megsegítésére. A szolga a veszély elmúltával azonnal visszatér saját síkjára.\n\nHa a pap indokolatlan esetben folyamodik a fohászhoz, a küldött nem érkezik meg és maximális Kegy pontjainak száma 10-zel csökken."
  },
  {
@@ -1108,7 +1108,7 @@
   "erosites": 6,
   "hossz": "2 sz",
   "hatotav": "Érintés",
-  "idotartam": "Leírásban",
+  "idotartam": "Lásd leírás",
   "leiras": "A fohász hatására a méreg hatóideje a fohász minden egyes E-je után egy kategóriával lassul."
  },
  {
@@ -1133,7 +1133,7 @@
   "kegypont": 5,
   "erosites": 5,
   "hossz": "1 kör",
-  "hatotav": "Leírásban",
+  "hatotav": "Lásd leírás",
   "idotartam": "3 kör",
   "leiras": "A pap ezen fohásza segítségével meg tudja mondani, hogy a megérintett tárgy vagy személy mérgezett-e, illetve az a helyiség, amelyben tartózkodik, körülötte 3 ynevi láb sugarú területen belül tartalmaz-e valamilyen légmérget. A fohász minden mérget érzékel, megállapítja típusát, szintjét és hatását is."
  },
@@ -1245,7 +1245,7 @@
   "erosites": 4,
   "hossz": "2 sz",
   "hatotav": "200 m",
-  "idotartam": "30 perc",
+  "idotartam": "30 p",
   "leiras": "A Tharr-papok különleges fohásza, mellyel 30+5kl0 patkányt képesek magukhoz szólítani és ellenfeleikre zúdítani. A fohász létrehozásához mindössze 2 szegmensnyi időre, egyetlen visításra van szükség, melynek élethűen kell a patkányok hangját utánozni, különben a fohász hatástalan marad (ehhez Hangutánzás képzettség legalább 2. fokára van szükség).\n\nA patkányok 1k6 perc alatt érkeznek és csak olyan helyen érdemes hívásukhoz folyamodni, ahol természetesen előfordulnak, hiszen máskülönben egy sem jelenik meg.\n\nA patkányok mindenben engedelmeskednek a pap parancsainál«, és igen hasznos segítőnek bizonyulhatnak, akár harcban is, ám az Időtartam lejárta előtt minden patkánynak el kell pusztulnia, hiszen ezen állatok Tliarr tanításai szerint olyan halott emberek, kik méltatlanok voltak a tisztességre, hogy haláluk után a Lindigassra, Tharr vérsíkjára kerüljenek, és lelkük azóta is itt sínylődik bebocsátásra várva. Mivel szolgálatukkal kiérdemelték, hogy az isten magához vegye őket, ezért ha a pap egyet is futni hagy a szolgálat végeztével, akkor istene haragját vonja a fejére, maximális Kegy pontja 1-gyel csökken.\n\nA patkányok harci képességeiről a Bestiárium c. fejezetben olvashatsz bővebben a 479. oldalon."
  },
  {
@@ -1256,7 +1256,7 @@
   "kegypont": 6,
   "erosites": 6,
   "hossz": "1 sz",
-  "hatotav": "Leírásban",
+  "hatotav": "Lásd leírás",
   "idotartam": "Egyszeri",
   "leiras": "Ezzel a fohásszal a tűz őselemi síkjának melegéből formál egy csóvát a Tűzkobra szolgája. Hangos üvöltésével pokoli forróságot szabadít arra, aki a fohász idején előtte áll. De nem csak támadó jelleggel szokás alkalmazni, bizonyos esetekben az adott környezet kiszárítására - gyúlékonyabbá tételére használják. A fohász minden E-je egy ynevi lábbal növeli a hőcsóva hosszát és 1kő-tal az okozott sebzést."
  },
@@ -1286,7 +1286,7 @@
   "erosites": 2,
   "hossz": "5 sz",
   "hatotav": "20 m",
-  "idotartam": "5 perc",
+  "idotartam": "5 p",
   "me": "Asztrális",
   "leiras": "A fohász hatására a pap sokkal hatalmasabbnak és félelmetesebbnek tűnik ellenfelei szemében, szinte legyőzhetetlennek látszik. Ezért a hatótávolságon belül minden ellenfél legjobb képessége szerint menekülni kezd, ha nem sikerül a Mágiaellenállása. Az időtartam lejártával csak akkor térnek vissza, ha eredendően komoly céljuk volt a pappal és kísérőivel. Ily módon például útonállók bandája nem fog visszatérni, ha egyszer lélekszakadva elmenekült, hiszen továbbra is tartanak a pap hatalmától.\n\nHa mégis harcra kényszerítik őket, a Harc félelem hatása alatt negatív módosítóival küzdenek:\n\nKÉ: a támadóé, TÉ: -20, VÉ: +10, CÉ: —"
  },
@@ -1405,7 +1405,7 @@
   "erosites": 10,
   "hossz": "6 kör",
   "hatotav": "50 m",
-  "idotartam": "5 perc",
+  "idotartam": "5 p",
   "leiras": "Arel papjai kisebb szelet hívhatnak létre ily módon, feltéve, hogy a szabad ég alatt tartózkodnak. A szél erőssége nem lesz elegendő ahhoz, hogy tárgyakat sodorjon el, de a fáklyákat és a kisebb tüzeket már képes kioltani. Csak kisebb hajók tartós irányítására alkalmas, nemcsak gyengesége, de rövid időtartama miatt is. Ködök, mérgező gőzök elhajtására viszont kiválóan alkalmas."
  },
  {
@@ -1441,7 +1441,7 @@
   "erosites": 15,
   "hossz": "1 kör",
   "hatotav": "20 m",
-  "idotartam": "5 perc",
+  "idotartam": "5 p",
   "leiras": "A fohász hatására minden nővény a pap céljainak szolgálatába áll. A papnak nem kell irányítania őket, csupán céljának végrehajtásán kell munkálkodnia, vagy annak beteljesülésére gondolnia. Ez lehet győztes közelharc, egy menekülő foglyul ejtése, esetleg feljutás egy falra vagy egy fa tetejére. A fohász nem idéz meg állatokat, csupán a növényzetre fejti ki hatását, de a növekedésüket nem befolyásolja.\n\nA nővények ágaikkal óvhatják a papot, esetleg lesújthatnak az ellenségre, vagy körül fonhatják, szinte megbilincselhetik. Akadályozhatják látását, rátekeredhetnek a lábára, terméseket, magokat zúdíthatnak rá.\n\nA fohász félelmetes és egyben rendkívül látványos. Sokszor a pap nem is csinál egyebet, mint szilárdan áll, körülötte pedig a megelevenedett erdő küzd az ellenféllel. A fohász természetesen csak ott lehet igazán hasznos, ahol megfelelő mennyiségű és minőségű nővény áll rendelkezésre. A nővények fajtája sokat számít - hiába van egy kisebb réten rengeteg fűféle, ezek legfeljebb lelassíthatják az ellenfél haladását. Ezért a fohászt leginkább sűrű erdőben alkalmazzák.\n\nA hatás minden egyes esetben más, a döntő szó ebben is a KM-é. A fohász sebzése még a legideálisabb körülmények kőzt sem haladhatja meg a 3k6 Sp-t személyenként. Ez a magas sebzés is csak akkor adható meg, ha a KM és játékosa valóban ötletes, és a sebzés valóban indokolt.\n\nMindemellett nem szabad elfelejteni, hogy a nővények ösztönösen menekülnek a tűztől, ezért arra kényszeríteni őket, hogy áthaladjanak rajta, vagy esetleg egy tűzzel védett célpontot támadjanak meg, nem lehet."
  },
  {
@@ -1540,7 +1540,7 @@
   "erosites": 1,
   "hossz": "1 kör",
   "hatotav": "Speciális",
-  "idotartam": "10 perc",
+  "idotartam": "10 p",
   "me": "Mentális",
   "leiras": "A fohász lehetővé teszi, hogy a pap tárgyak vagy személyek irányát felderítse. A fohász hatására a papnak felfedi a keresett tárgyak vagy személyek helyét, illetve irányát. Ez nem jelenti a távolság tökéletes ismeretét és az irányzók teljes pontosságát, ám ha a pap az isteni gondviselésre bízza magát, megérzései mindig a helyes útra vezérlik. A fohász időtartamának lejártáig hozzávetőlegesen érzi, hogy milyen messze és merrefelé lehet a célja, majd az érzések elvesznek - de a már így betájolt irányban tovább haladhatnak. Megjegyzendő, hogy a fohásszal nemcsak tárgyak, de városok, épületek is kereshetőek, így a pap nemigen tévedhet el. Hasznos tudomány Ynev hatalmas világában.\n\nTárgyak kereséséhez igen pontos leírással kell rendelkezni. Elbeszélés alapján csak igen érzékletes leírás esetén van esély a megtalálására, a biztos sikerhez egy rajzra vagy emlékképre van szükség. Nem egy esetben megtörtént, hogy a kísérletező papot hasonló, de nem a keresett tárgyhoz vezette el a fohász.\n\nSzemély keresése esetén tudni kell az illető életkorát, hozzávetőleges kinézetét, és azt a nevét, amit születésekor a névadás szertartás keretében adományoztak neki. Később felvett álnevek esetén a varázslat csak a leírásra támaszkodik, s könnyen tévútra vezetheti alkalmazóját.\n\nA keresett személy Mágiaellenállásra jogosult a fohász ellen, ha ez sikeres, jelenléte titokban marad."
  },
@@ -1554,7 +1554,7 @@
   "erosites": 15,
   "hossz": "1 kör",
   "hatotav": "20 m",
-  "idotartam": "5 perc",
+  "idotartam": "5 p",
   "leiras": "Ezzel a fohásszal a pap szintenként egy állatra tudja rákényszeríteni akaratát. Mentálisan képes utasítani őket, ehhez szavakat nem kell használnia, mindössze arra koncentrálnia, mit cselekedjék az adott állat. Egy körben legfeljebb 10 állatnak képes utasítást adni, a többi addig mozdulatlanul áll, vagy ha megtámadják, védekezik. Egy parancs teljesítése nem tart szükségszerűen csak egyetlen körig, az őrzés vagy támadás például mind az 30 kört (5 perc) kitöltheti. Ez a fohász csak állatokra alkalmazható, a fejlett tudattal vagy mágikus képességekkel rendelkező lényekre nem."
  },
  {
@@ -1566,7 +1566,7 @@
   "erosites": 20,
   "hossz": "1 kör",
   "hatotav": "2 km",
-  "idotartam": "10 perc",
+  "idotartam": "10 p",
   "leiras": "Ezen fohásszal a pap bármiféle, mágikus képességekkel nem rendelkező állatot megidézhet. A fohász kántálása közben meg kell neveznie az állat faját, s ha ilyen tartózkodik a hatóterületen, akkor közülük a legközelebb lévő 1k10 példány haladéktalanul a paphoz siet. Ha ezen a területen nincs ilyen állat, a fohász hatástalan marad, s a Kegy pontok is elvesznek.\n\nAz állatok, miután megérkeztek, barátsággal viseltetnek a pap iránt, és az Időtartam lejártáig maradnak vele. Ha képesek kommunikálni, a pap parancsokat is adhat nekik, amiket a józan ész határain belül az állatok megkísérelnek teljesíteni. Ha nem találnak közös nyelvet, az állatok akkor is megvédik a papot harc esetén, de mást nem tehetnek érte."
  },
  {
@@ -1580,7 +1580,7 @@
   "erosites": 5,
   "hossz": "6 kör",
   "hatotav": "20 m",
-  "idotartam": "15 perc",
+  "idotartam": "15 p",
   "leiras": "Istene segítségével a pap tudomást szerez a rá leselkedő veszélyek létezéséről - pontos helyéről, természetéről azonban nem. Az iránnyal és távolsággal nagyjából tisztában lesz, ám a veszély mibenléte teljesen ismeretlen marad. A fohász csupán annyi segítséget nyújt, hogy különbséget tesz a veszély fokozatai között, ám mindig csak a legveszélyesebbet jelzi."
  },
  {
@@ -1631,7 +1631,7 @@
   "erosites": 15,
   "hossz": "2 sz",
   "hatotav": "20 m",
-  "idotartam": "5 perc",
+  "idotartam": "5 p",
   "leiras": "A Vérmágia ezen fohásza segítségével a pap a kívánt személy vérét összegyűjtheti és további praktikákhoz fel- használhatóvá teheti. A fohász elején ki kell jelölnie egy edényt, melybe a vért fel kívánja fogni. Ezek után az áldozaton ütött sebből a fohász hatására a vér az edénybe áramlik, méghozzá igen látványos, hátborzongató módon. Ahogy a sebből kifolyik, a levegőben vagy a talajon lassan az edény felé kúszik, majd belecsorog. Az így gyűjtött vér soha nem alvad meg, tehát mindig felhasználható marad. Minden egyéb módon lecsapolt vér esetében meg kell gátolni az alvadást, ami különböző anyagok felhasználásával lehetséges. A vér mennyisége attól függ, hogy az áldozat mennyi Fp-t és Ép-t veszített a fohász időtartama alatt. Egy Fp veszteség 1 gyűszűnyi, egy Ép pedig egy kis pohárnyi vért jelent."
  },
  {
@@ -1729,7 +1729,7 @@
   "erosites": 21,
   "hossz": "1 kör",
   "hatotav": "Érintés",
-  "idotartam": "5 perc",
+  "idotartam": "5 p",
   "leiras": "Ez a fohász lehetővé teszi a pap, vagy az általa megérintett személy számára, hogy természetes módon kapjon levegőt a víz alatt is, ameddig a fohász hatóideje azt megengedi. Nem teszi viszont lehetővé továbbra sem a víz alatti beszédet vagy a szabad mozgást."
  }
 ]

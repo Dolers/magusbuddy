@@ -52,7 +52,7 @@ import com.lazyfools.magusbuddy.database.populate.DbPopulizer;
             WitchMagicEntity.class,
             WarlockMagicEntity.class,
         },
-        version = 13,
+        version = 14,
         exportSchema = false
 )
 @TypeConverters({Converters.class})

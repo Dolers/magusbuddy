@@ -186,7 +186,7 @@
    "emp": 0,
    "idoigeny": "3 sz",
    "hatotav": "20 m",
-   "idotartam": " 6 kör",
+   "idotartam": "6 kör",
    "leiras": "A rövid koncentráció után, mely leginkább egy metsző pillantáshoz hasonlatos, a boszorkány a varázslat Időtartama alatt tekintetét igazi fegyverként használhatja. Ahová pillantását szegezi, az a pont 1 kör alatt felforrósodik - a hatás az anyag minősége szerint változik: a hő az élőlényeknek égési sebet okoz, a ruhát, fát meggyújtja, a fémet felforrósítja. Élőlényeken a varázslat körönként 1k6 Sp sebet ejt, a ruhák, fa és egyéb gyúlékony anyagok pedig egy kör után lángra kapnak. A fémek 5 kör alatt izzási hőmérsékletig melegszenek, s a 8. körben olvadni kezdenek. Persze mindez azt feltételezi, hogy a boszorkány a varázslat Időtartama alatt nem kapja el pillantását a kiszemelt pontról.\n\nA boszorkány tömegben is felfedezhető az avatott szem számára, hiszen ezen varázslat közben tekintete rezzenéstelenül mered a célpontra és nem pislog a legnagyobb riadalom közepette sem."
  },
  {
@@ -245,7 +245,7 @@
    "mp": 6,
    "emp": 0,
    "idoigeny": "2 sz",
-   "hatotav": " 20 m",
+   "hatotav": "20 m",
    "idotartam": "1 kör",
    "leiras": "A varázslattal gyenge szél kelthető akár zárt helyen is. A fuvallat elfújja a gyertyák, a fáklyák lángját. A hatás elérése érdekében a boszorkánynak egyetlen legyintésre van csupán szüksége bal kezével a kívánt irányba."
  },
@@ -254,7 +254,7 @@
    "nev": "Kígyóvarázs II.",
    "mp": 7,
    "emp": 0,
-   "idoigeny": "6",
+   "idoigeny": "6 sz",
    "hatotav": "Érintés",
    "idotartam": "6 kör",
    "leiras": "A varázslat igéivel a boszorkány egy egyszerű kötelet, melyet a varázslás során mágikus hurokba rendez, mérges kígyóvá alakíthat. A kígyó engedelmeskedik a boszorkány parancsainak. Méregfogai harapásával támad; KÉ-je 45, TÉ- je 65, VÉ-je 75, sebzése lk3 Sp. A befecskendezett méreg 1. szintű, sikeres Méregellenállás estén lk10 Sp-t, sikertelen esetén 3kl0 Sp-t sebez. A véráramba jutva fejti ki azonnali, de csak egyszeri hatását, (lásd Mérgek c. fejezetben a 186. oldalon!)\n\nA kígyó 5 Fp-vel és 3 Ép-vel rendelkezik. A varázslat Időtartamának lejártával, vagy ha a kígyó nulla Fp-re illetve Ép-re esik, visszaalakul kötéllé."
@@ -266,7 +266,7 @@
    "emp": 1,
    "idoigeny": "1 kör",
    "hatotav": "3 m",
-   "idotartam": "10p",
+   "idotartam": "10 p",
    "me": "Asztrális",
    "leiras": "A varázslat tárgya, ha Mágiaellenállása sikertelen volt, köteles a boszorkány egy kérdésére igazat, és csakis az igazat válaszolni. A boszorkánynak a varázslat időtartama alatt mindvégig 3 ynevi láb távolságon belül kell tartózkodnia a válaszolóhoz, különben azonnal megszűnik a hatás. Amíg a bűbáj töretlen, vagy a válaszadás még nem történt meg, az áldozat semmilyen módon nem árthat a boszorkánynak."
  },
@@ -570,7 +570,7 @@
    "nev": "Tiszteletlenség",
    "mp": 2,
    "emp": 2,
-   "idoigeny": "5kör",
+   "idoigeny": "5 kör",
    "hatotav": "Érintés",
    "idotartam": "Végleges",
    "me": "Asztrális",
@@ -889,7 +889,7 @@
    "nev": "Izzó csók",
    "mp": 3,
    "emp": 3,
-   "idoigeny": "5",
+   "idoigeny": "5 sz",
    "hatotav": "Csók",
    "idotartam": "Egyszeri",
    "leiras": "A legegyszerűbb Csókmágia. Azon a ponton, ahol a boszorkány ajkait a varázslat áldozatának bőréhez érinti, égett seb keletkezik, ami lkő FP-t sebez. Természetesen a seb - attól függően, hogy hol érte az áldozatot - sokkal kellemetlenebb is lehet. Az okozott seb más égési sebekhez hasonlóan gyógyul. A varázslat színtiszta Tűzmágía, így Mágiaellenállásnak ellene helye nincs.\n\nA varázslat erőssége emelhető, ezzel a sebzés is k6-tal nő - de legtöbb 10k6 Sp lehet."
@@ -910,7 +910,7 @@
    "mp": 2,
    "emp": 2,
    "idoigeny": "5 sz",
-   "hatotav": " Csók",
+   "hatotav": "Csók",
    "idotartam": "Végleges",
    "me": "Mentális",
    "leiras": "A csók helyén az áldozat auráján bélyeg marad, melyet a boszorkány ruhán keresztül is lát, azt semmivel el nem lehet tüntetni a szeme elől. A bélyeg hordozóját a boszorkány bárhol, bármilyen álcában vagy átváltoztatott alakban felismeri. A varázslat ellen Mentális Mágiaellenállás dohhátó, sikere esetén a bélyeg az áldozatról lefoszlik. A Megbélyegzés csókja állatokra is hatásos, mivel a bélyeg Mentális részének jelentős hányada az érzékeléssel, az érzékszervekkel kapcsolatos. A megbélyegzettre a boszorkány, a Megfigyelés varázslat együttes alkalmazásával, bármilyen távolságból varázsolhatja azokat a varázslatokat, melynek végrehajtásához elegendő látni az áldozatot. A megbélyegzett a boszorkány varázslatai ellen Asztrális Mágiaellenállására -20 módosító járul, Mentális ME-re pedig nem jogosult - ez állatokra nem vonatkozik."
@@ -931,7 +931,7 @@
    "nev": "Akarat elorzása",
    "mp": 2,
    "emp": 2,
-   "idoigeny": "1 jür",
+   "idoigeny": "1 kör",
    "hatotav": "Érintés",
    "idotartam": "1 óra",
    "me": "Mentális",
@@ -953,7 +953,7 @@
    "nev": "Féltékenység",
    "mp": 1,
    "emp": 1,
-   "idoigeny": "3",
+   "idoigeny": "3 sz",
    "hatotav": "Érintés",
    "idotartam": "1 óra",
    "me": "Asztrális",
@@ -986,7 +986,7 @@
    "mp": 2,
    "emp": 2,
    "idoigeny": "5 sz",
-   "hatotav": " Érintés",
+   "hatotav": "Érintés",
    "idotartam": "Lásd leírás",
    "me": "Mentális",
    "leiras": "Ez a varázslat több időt vesz igénybe mint a többi, és Mágiaellenállás is csak egyszer dobható ellene. Amennyiben az áldozat elvéti ezt a dobását, utána képtelen lesz ellenállni a boszorkánynak és praktikáinak. Nem szenved majd annak híján, ám mihelyt meglátja, félbehagyja legfontosabb dolgait, és csakis a nő kiszolgálására szorítkozik majd. Minden újabb együttlétük ugyanis - hacsak valami módon meg nem szakítják a varázst - 3 pontot fog elhabzsolni az áldozat Egészségéből, amelyeket a boszorkány a Hatalom Italának elfogyasztása utáni Egészségcsökkenésének ellensúlyozására - és csakis arra - használhat fel. Az így nyert pontoknak mindaddig hasznát látja, amíg áldozata életben van. Ha azonban annak Egészsége 0-ra csökken, a férfi meghal, és az addig fel nem használt pontok is kárba vesznek. Értelemszerűen nem érdeke hát a boszorkánynak, hogy áldozata végleg elsorvadjon, s nem is szokták megölni őket, csak abban az esetben, ha valamely személyes bosszú úgy diktálja.\n\nA beteg látványos sorvadásnak indul, s nemcsak testi, de lelkiereje is csökken. Mélabússá, kedvetlenné válik, s ő maga képtelen összefüggésbe hozni betegségét a nővel. Mindaddig nem lehet meggyógyítani, amíg a kapcsolat fennáll közöttük, vagy a boszorkány életben van."
@@ -1157,7 +1157,7 @@
    "nev": "Madártávlat",
    "mp": 12,
    "emp": 0,
-   "idoigeny": "5sz",
+   "idoigeny": "5 sz",
    "hatotav": "5 km",
    "idotartam": "10 p",
    "leiras": "A boszorkány a varázslattal egy égben szárnyaló madár szemszögéből tekinthet le az alanti tájra. Ennek egyetlen feltétele, hogy lásson legalább egy madarat. Ha többet is észrevesz, tetszése szerint választhat közülük. A varázslat 12 Mana pontba kerül, de ha alkalmazója további 6-t áldoz rá, irányíthatja is a madarat. Feljebb vagy alább reptetheti, esetleg épületekbe is beviheti.\n\nA varázslat nem erősíthető, és csak állati intelligenciájú szárnyasra alkalmazható."

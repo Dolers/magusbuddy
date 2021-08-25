@@ -6,7 +6,7 @@
   "emp": "0",
   "idoigeny": "1 kör",
   "hatotav": "Önmaga",
-  "idotartam": "10 perc/szint",
+  "idotartam": "10 p/szint",
   "me": "",
   "leiras": "A bárd megváltoztathatja külsejét, de ez is csak látvány illúzió lesz. A formának nem kell emberinek lennie, a nem, a testmagasság, a testalkat is szabadon változhat, de a megjelenített lény maximálisan ember méretű lehet. Ha a bárd konkrét személy vonásait kívánja felvenni, ahhoz előbb a bárdnak Tanulmányt kell végeznie az adott személyről.\n\nA hang is a bárd saját hangja lesz, így ennek használata, ha a varázslatot más módszerekkel nem támogatják meg, minden képpen felfedi az illúziót. Fontos, hogy az illúzió követhesse a bárd mozgását, így hihető maradjon, ezért a felvett alaknak egyetlen fejjel és legfeljebb négy végtaggal kell rendelkeznie. Az illúzióra így nem kell folyamatosan koncentrálnia, hiszen a kép saját mozgásmintát követhet.\n\nAmennyiben a felvett lény alakja a fent leírtaknak nem felel meg, az illúzió könnyen felfedezhető. A bárd a lény semmiféle tulajdonságát nem kapja meg, az átváltozás csak fényjáték lesz, semmi egyéb. Az illúzió annál hihetőbb, minél közelebb áll az utánzott lény az emberhez, s minél többször vette fel az adott alakot a bárd a korábbiakban - hiszen utánoznia kell a lény jellegzetes mozgásformáit (kutya esetében például négykézlábra kell ereszkednie stb.)."
  },
@@ -61,7 +61,7 @@
   "emp": "4",
   "idoigeny": "1 kör",
   "hatotav": "A bárd hangszere",
-  "idotartam": "10 perc/szint",
+  "idotartam": "10 p/szint",
   "me": "",
   "leiras": "A bárd hangszerének hangját változtathatja meg a varázslat segítségével. A hangszer bármilyen, a bárd által ismert hangszer hangján megszólalhat, s tökéletesen utánozza azt. A bárd új hangokat, hangzást is létrehozhat, ha talál egy viszonyítási hangot, amiből a dallamskála létrejöhet. Lehet ez madárhang vagy akár távoli, ismeretlen hangszer egy-egy dallamfoszlánya is. További Mana pontok felhasználásával a hangzás megsokszorozható, avagy más hangszerek is szólhatnak a mű alatt. A Mana pontok többszörözésével újabb hangszerek vagy szólamok is megszólaltathatók egyszerre. így egy igazi, magas Tapasztalati szintű bárd tíz-tizenöt ember helyett is játszhat több, egymástól különböző hangszeren, kánonhatást keltve."
  },
@@ -105,7 +105,7 @@
   "emp": "0",
   "idoigeny": "1 p",
   "hatotav": "1 ynevi mérföld",
-  "idotartam": "10 perc/szint",
+  "idotartam": "10 p/szint",
   "me": "",
   "leiras": "A varázslat egy hatalmas, függőleges felületet hoz létre, melynek méretét a bárd határozhatja meg. A felület nagysága akár az egész horizont is lehet. A képnek nincsenek igazi dimenziói, és csak lassú változásra képes, így célszerű a megfigyelőktől minél távolabb elhelyezni. A kép bármilyen természeti formációt, várost, felhőket, akár egy sereget is ábrázolhat, ám megközelítőleg 100 ynevi lábról már felfedezhető illúzió mivolta."
  },
@@ -138,7 +138,7 @@
   "emp": "0",
   "idoigeny": "3 sz",
   "hatotav": "20 m",
-  "idotartam": "1 perc/szint",
+  "idotartam": "1 p/szint",
   "me": "",
   "leiras": "A bárd ezen varázslattal láthatatlanná válhat, ám képe mégsem tűnik el a szemlélők elől. Az Önnön testéről visszaverődő fénysugarakat ugyanis „áthelyezi” a tér egy tetszőleges, ám 20 ynevi lábon belül eső pontjára. A bárd képe tehát ott jelenik meg. Az illúzió tökéletes, s mindenben híven követi létrehozója mozdulatait.\n\nFigyelem! A mozdulatok nem hamisíthatóak, s a hang is mindig a valódi bárd irányából érkezik. A bárd egyébként bármely pillanatban belesétálhat saját illúzióképébe, a varázslatot ez nem befolyásolja. A varázslat kiválóan kombinálható a Hangkivetítés varázslattal."
  },
@@ -149,7 +149,7 @@
   "emp": "0",
   "idoigeny": "1 sz",
   "hatotav": "100 m",
-  "idotartam": "1 perc/szint",
+  "idotartam": "1 p/szint",
   "me": "",
   "leiras": "Ez a varázslat is fény alapú megtévesztés. Segítségével a bárd egy egész csapatot vagy sereget jeleníthet meg. A csapat csak egyféle lényből állhat, tehát ha a „sereg\" 35 kreatúrából áll, azoknak mind egy fajba kell tartozniuk. Az öltözködésnek és a felszerelésnek is hasonlónak kell lennie, bár itt apró eltérések azért lehetnek. A sereg még 30-40 ynevi lábról szemlélve is valóságosnak tűnik, de közelebbről látható, hogy az alakok nem kidolgozottak, s inkább csak formák kavalkádja az egész látomás. A sereg bármely irányból vagy távolságból érkezhet, a lényeg az, hogy az áldozatokhoz ne kerüljenek 30 ynevi lábnál közelebb, mert akkor az illúzió tökéletlensége azonnal felfedezhető."
  },
@@ -215,7 +215,7 @@
   "emp": "0",
   "idoigeny": "1 kör",
   "hatotav": "20 m",
-  "idotartam": "1 perc/szint",
+  "idotartam": "1 p/szint",
   "me": "",
   "leiras": "A varázslat segítségével a bárd környezetének fényviszonyait változtathatja meg, a teljes sötétségtől a verőfényig. A varázslat 20 ynevi láb sugarú körben hat, azon túl minden változatlan marad. A fényerősség és a megvilágító fény színe, forrása is megkötés nélkül változtatható, de e fény semmiképpen nem okozhat vakságot, nem sebezhet - legfeljebb a sötétség olyan kreatúráin, melyek érzékenyek a fényre."
  },
@@ -226,7 +226,7 @@
   "emp": "0",
   "idoigeny": "1 sz",
   "hatotav": "Önmaga",
-  "idotartam": "10 perc/szint",
+  "idotartam": "10 p/szint",
   "me": "",
   "leiras": "A varázslat segítségével a bárd magára idézhet egy tetszőleges vértezetet, s egy pajzsot. Mindkét tárgy illúzió, de alakja, kidolgozása maga lesz a tökéletesség. A varázslat egyrészt elkápráztathatja a szemlélőt, másrészt megtévesztheti. Kiválóan alkalmas a varázslat lovagi tornákon való megjelenésre, vagy bármi más, nemesek részvételével zajló társadalmi eseményre. Fontos szerepe a varázslatnak harcban lehet, ahol az ellenfél nem sejti a vért illúzió voltát. Ezért megpróbál a páncéllal nem fedett, pajzzsal nem védett területekre támadni, minek következtében Támadó értéke 10-zel csökken.\n\nAzonban mivel a Fényvért hangot nem ad (a teljes vérte- zet nem csörömpöl, az eresztékek nem nyikorognak), ezért csendes helyen hamar lelepleződhet. Ha ellenfele a vért illúzió voltára rájött, a negatív módosító is érvényét veszti. Ugyanakkor a bárd még így is használhatja a pajzsot - ha rejtett mozgásra készül, ez tökéletesen álcázhatja azt, mivel továbbra sem válik átlátszóvá."
  },
@@ -259,7 +259,7 @@
   "emp": "0",
   "idoigeny": "1 sz",
   "hatotav": "10 m",
-  "idotartam": "1 perc/szint",
+  "idotartam": "1 p/szint",
   "me": "",
   "leiras": "Ezzel a varázslattal a bárd maga beszélhet a kiválasztott célpont helyett. Az áldozat, bár kiejti a szavakat, azokat csak ő maga hallja, a többiek számára a bárd által kiejtett hangok törnek elő a szájából. Azonban a hang a bárd hangja lesz, tehát, ha nem akar azonnal lelepleződni, utánoznia kell az áldozat hangját, beszédének stílusát, sebességét (ehhez rendelkeznie kell a Hangutánzás képzettség legalább 3. fokával és előzőleg legalább egyszer Hangtanulmány varázslatot kell alkalmaznia rajta).\n\nA hihetőség kedvéért a bárdnak figyelnie kell áldozatát, hiszen ha az beszél, s tátog, neki is mondania kell valamit, nehogy gyanút keltsen. Ha a másik hallgat, ajánlatos a bárdnak is hallgatnia."
  },
@@ -270,7 +270,7 @@
   "emp": "0",
   "idoigeny": "1 kör",
   "hatotav": "10 m",
-  "idotartam": "1 perc/szint",
+  "idotartam": "1 p/szint",
   "me": "",
   "leiras": "A bárd ezzel a varázslattal valamely rég történt esemény hangjait idézheti fel. Csak olyan események jöhetnek szóba, melyeknek a bárd fültanúja volt: a hangok az emlékezetéből származnak. A varázslat folyamatos koncentrálást igényel, tartama alatt szokványos tevékenység nem végezhető - kivételt csak az éneklés vagy muzsikálás jelent, melyekre a bárd ilyen állapotban is képes. A varázslat segítségével a bárd, miközben hősi éneket dalol, megidézheti annak valódi hangjait is, ezzel színesítve előadását."
  },
@@ -281,7 +281,7 @@
   "emp": "0",
   "idoigeny": "1 sz",
   "hatotav": "20 m",
-  "idotartam": "1 perc/szint",
+  "idotartam": "1 p/szint",
   "me": "",
   "leiras": "A bárd ebben az esetben nem teremt hangot, hanem saját és közvetlen környezetének hangjait vetíti ki más helyre. A varázslat önmagában is használható, de különös előszeretettel alkalmazzák a bárdok a Fantom varázslattal együtt. Ekkor ugyanis a képhez a hang is megteremtődik, s az illúzió majdnem tökéletessé válik. Például a bárd megteheti, hogy egy folyosón haladva léptei nem közeledni, hanem távolodni fognak az ajtó előtt posztoló őrtől.\n\nAdódhatnak persze apró hibák, például az illúzió száraz úton halad, mialatt a bárd mély pocsolyába lép - ilyenkor ugyanis a loccsanás hangjának is az illúzió lesz a forrása, s ez bizony gyanús lehet."
  },
@@ -314,7 +314,7 @@
   "emp": "0",
   "idoigeny": "1 sz",
   "hatotav": "20 m",
-  "idotartam": "1 perc/szint",
+  "idotartam": "1 p/szint",
   "me": "",
   "leiras": "A varázslat hasonlít a Lényteremtéshez, csak épp hanggal hajtja végre a bárd. A kiválasztott lény hangja tetszőleges pontból szólaltatható meg, s ez nemcsak a hangszálak keltette rezgéseket, de a lény által csapott egyéb zajokat is magába foglalja. Értelemszerűen a bárd csak olyan hangokat képes felidézni, amiket maga is hallott és legalább egyszer Hangtanulmány varázslatot alkalmazott rajtuk.\n\nA varázslat bármilyen lény hangját létrehozhatja, s a bárdnak csak akkor kell rá koncentrálnia, ha a teremtett hang beszéd. A bárd csak számára ismert nyelveket használhat a varázslatban, s ennek szavait is meg kell formálnia elméjében, csak akkor kerülhetnek kimondásra. A hang a hatóterületen belül a bárd akaratának megfelelően mozoghat is, ez azonban már koncentrációt igényel. Lényalkotással együtt alkalmazva pedig mindig követi a megalkotott képet."
  },
@@ -336,7 +336,7 @@
   "emp": "3",
   "idoigeny": "1 p",
   "hatotav": "5 m",
-  "idotartam": "1 Perc/szint ",
+  "idotartam": "1 p/szint",
   "me": "Asztrális",
   "leiras": "A varázslat segítségével a bárd egy ezüstösen ragyogó fény- gömböcskét teremthet, mely lassan imbolyogva mozog az áldozat szeme előtt. A fény hatása álomba, vagy hipnotikus állapotba ringathatja célpontját, a bárd óhaja szerint. Ha az áldozat elvéti Mágiaellenállását, akkor álomba merül, vagy félig öntudatlan állapotba kerül. Ha elalszik, akkor csak két óra elteltével lehet felébreszteni, addig szinte reménytelen; csakis Sp-t sebet okozó sérülés esetén ébred fel, vagy mágia segítségével ébreszthető fel. Ha hipnotikus állapotba került, akkor a bárd utasításokat adhat neki, melyeket teljesítenie kell. Az utasítások száma csakis a végrehajtásukhoz szükséges idő hosszától és a varázslat időtartamától függ. A parancs nem lehet olyan, mely öngyilkosságra sarkallja a célpontot, ilyen utasítás kiadása esetén azonnal szétfoszlik a varázslat."
  },
@@ -347,7 +347,7 @@
   "emp": "0",
   "idoigeny": "1 kör",
   "hatotav": "20 m",
-  "idotartam": "10 perc/szint",
+  "idotartam": "10 p/szint",
   "me": "",
   "leiras": "A bárd szintenként 1 ynevi köbláb térfogatú területen belül akármilyen általa elképzelt dolgot megjeleníthet. A kép pusztán fényillúzíó, hangja, szaga, tapintása nincs. Az illúzió helyhez kötött, tehát mindvégig megidézése helyén marad, azonban az adott területen belül mozgatható a bárd kívánsága szerint (ebben az esetben a bárdnak mindvégig látnia és koncentrálnia kell rá).\n\nHa az illúzió mozdulatlan, a bárdnak nem szükséges koncentrálnia, bármilyen más tevékenységet végezhet. Ameny- nyiben a bárd megszakítja a koncentrációt, a kép nem tűnik el, csak mozdulatlanná merevedik ott, ahol a koncentráció végeztével maradt. A bárd később bármikor bekapcsolódhat ismét a kép mozgatásába, további Mana pont ráfordítása nélkül."
  },
@@ -358,7 +358,7 @@
   "emp": "0",
   "idoigeny": "1 p",
   "hatotav": "50 m sugarú kör",
-  "idotartam": "10 perc/szint",
+  "idotartam": "10 p/szint",
   "me": "",
   "leiras": "Igen egyszerű illúzió, jelentősége mégis méreteiben rejlik - a bárd 50 ynevi láb sugarú kör alapterületű talaj képét változtathatja meg. Az illúzióval bármilyen talajtípus képe létrehozható, legyen az tó, mocsár, legelő, kőút avagy ezek kombinációja. Az egyetlen hátrány az, hogy a befolyásolható magasság csupán 1/2 ynevi láb. így erdők, sziklafalak, hegyek ezzel a varázslattal nem teremthetők. Mindettől függetlenül kiválóan alkalmas például csapdák elfedésére."
  },
@@ -369,7 +369,7 @@
   "emp": "0",
   "idoigeny": "1 kör",
   "hatotav": "20 m",
-  "idotartam": "10 perc/szint",
+  "idotartam": "10 p/szint",
   "me": "",
   "leiras": "Ez az összetett illúzió tévútra vezetheti áldozatait, legyenek bár épületben vagy szabadban. A varázslat hatására jellegzetes viszonyítási pontok (például egy erdőben a furcsa alakú fák, források, föld alatt ismerős szobrok, fali díszek) újra megjelennek az áldozatként kijelölt személy útjában - mintha körben járna. Ezek lehetnek valós tereptárgyak, vagy akár a bárd által megidézett fényjátékok.\n\nEzzel tökéletesen össze lehet zavarni mindenkit, különösen, ha nem készített térképet addigi útjáról. A varázslat megidézésekor az áldozatnak 20 ynevi láb sugarú körzetben kell tartózkodnia, később azonban eltávolodhat a bárdtól, a varázslat nem szűnik meg. Megjegyzendő, hogy a varázslat által létrehozott illúziókat az áldozat kísérői is látják, tehát ők sem igazíthatják ki őt."
  },
@@ -391,7 +391,7 @@
   "emp": "0",
   "idoigeny": "1 kör",
   "hatotav": "20 m",
-  "idotartam": "1 perc/szint",
+  "idotartam": "1 p/szint",
   "me": "",
   "leiras": "A Hangteremtés párja, de ez a látvány megidézésére alkalmas. Segítségével a bárd emlékezete alapján egy megtörtént esemény részletei valósághűen, látványillúzióként jelennek meg. A varázslat alatt koncentráció szükségeltetik, a felhasználó ebben az esetben is legfeljebb csak énekelhet-zenélhet, egyéb figyelmet igénylő cselekvésre képtelen. A bárd ily módon képekkel teheti lenyűgözőbbé előadását."
  },
@@ -400,7 +400,7 @@
   "nev": "Ködalak",
   "mp": "4",
   "emp": "0",
-  "idoigeny": "1 szegmens ",
+  "idoigeny": "1 sz",
   "hatotav": "Érintés",
   "idotartam": "1 kör/szint",
   "me": "",
@@ -413,7 +413,7 @@
   "emp": "0",
   "idoigeny": "1 sz",
   "hatotav": "Önmaga",
-  "idotartam": "1 perc/szint",
+  "idotartam": "1 p/szint",
   "me": "",
   "leiras": "Ez a varázslat kétélű fegyver. Alkalmazásakor a bárd normál látással nem felfedezhető. A fény egyszerűen átsiklik rajta, ebből adódik azon kellemetlen következmény, hogy a bárd számára is láthatatlan lesz: nem képes érzékelni azt. Röviden szólva, a varázslat idejére megvakul.\n\nA varázslat ideális lehet rövid rejtőzésre, vagy olyan alkalommal, amikor a mozdulatlanság, a világtalanság valamilyen oknál fogva nem okoz gondot az alkalmazónak. Ugyanakkor például az infralátás elől nem bújhat el, hiszen az nem a fényt, hanem a teste által kibocsátott hőt érzékeli."
  },
@@ -424,7 +424,7 @@
   "emp": "0",
   "idoigeny": "1 kör",
   "hatotav": "20 m",
-  "idotartam": "1 perc/szint",
+  "idotartam": "1 p/szint",
   "me": "",
   "leiras": "A varázslattal valamely lény képe jeleníthető meg egy szintenként 1 köbláb térfogatú területen. A lény lehet bármilyen szörny, elképzelt kreatúra, de akár humanoid is. A varázslat előnye az Illúzióval szemben, hogy a megalkotott lény mozgása nem korlátozódik az eredeti területre, hanem fennmaradásáig szabadon változtathatja helyét. Minden tekintetben valóságos lényre hasonlít, de csak a látvány szempontjából.\n\nEngedelmeskedik a bárd minden parancsának, melyeket elegendő gondolati úton megfogalmaznia. Az illúzió hihetősége sokban múlik azon, hogy a bárd mennyire ismeri az adott lényt. Tanulmány varázslat nélkül a megteremtett lény egyszerű Érzékeléspróbával leleplezhető."
  },
@@ -435,7 +435,7 @@
   "emp": "0",
   "idoigeny": "1 kör",
   "hatotav": "Önmaga",
-  "idotartam": "1 perc/szint",
+  "idotartam": "1 p/szint",
   "me": "",
   "leiras": "A varázslat nem infralátást ad a bárdnak, hanem valódi éjszakai látást. A bárd varázslata ugyanis felerősíti a szembe érkező fényt, így bárhol, ahol egy minimális mennyiségű fény is rendelkezésre áll, a bárd tökéletesen fog látni. Érzékelni fogja a tárgyak színét is, látása sokkal kifinomultabb lesz, mint a hőlátás esetében. A varázslat sikeres működéséhez egy kevés fény mindenképpen szükséges, tökéletes sötétségben nem működik.\n\nHátulütője, hogy a hirtelen felvillanó fény akár meg is vakíthatja a bárdot. Ez leginkább attól függ, hogy mennyire erősítette föl a szemébe érkező fénysugarakat. Például, ha az alkonyati félhomályban akart tökéletesen látni, akkor ennek valószínűsége elenyésző, míg ha egy barlangjárat sötétje után hirtelen lép ki a verőfényes napsütésre, azonnal megvakul."
  },
@@ -446,7 +446,7 @@
   "emp": "0",
   "idoigeny": "1 kör",
   "hatotav": "Önmaga",
-  "idotartam": "10 perc/szint",
+  "idotartam": "10 p/szint",
   "me": "",
   "leiras": "A varázslatot kétféleképpen is alkalmazhatja a bárd, helyzetének megfelelően. Az egyik felhasználási mód hasonlatos az Alakváltáshoz, de csak a bárd arca változtatható meg így. Az arc csak akkor utánozhat konkrét személyt, ha a bárd előtte Tanulmányt végzett rajta.\n\nEllenkező esetben a varázslat csak arra szolgál, hogy a bárd érzelmeit leplezni tudja. Az illúzió saját arcát fogja megjeleníteni, de rajta az érzelmek a gondolatainak, és nem érzelmeinek megfelelően látszanak meg. így a bárdot sokkal nehezebb hazugságon kapni, s kártyában vagy egyéb szerencsejátékban is komoly ellenfél lehet. Arcvonásai nem árulhatnak el meglepetést, csak ha ő maga kívánja."
  },
@@ -468,7 +468,7 @@
   "emp": "0",
   "idoigeny": "1 sz",
   "hatotav": "10 m",
-  "idotartam": "1 perc/szint",
+  "idotartam": "1 p/szint",
   "me": "",
   "leiras": "A bárd ezt a varázslatot bármely lény ellen alkalmazhatja. Hatására a személy vagy kreatúra által kiejtett szavak csak a célpont számára érthetők, mindenki más számára másként hangzanak el, mint ahogy az illető kimondta őket: a szavakon belül a hangok felcserélődnek, a mondat szavai összekeverednek.\n\nEz lehetetlenné tesz mindenfajta kommunikációs kísérletet. A mágia ellen nincs ellenállás, de a varázslást nem akadályozza, mert kizárólag a már kiejtett hangokat változtatja meg."
  },
@@ -523,7 +523,7 @@
   "emp": "0",
   "idoigeny": "1 kör",
   "hatotav": "20 m",
-  "idotartam": "1 Perc/szint ",
+  "idotartam": "1 Perc/szint",
   "me": "",
   "leiras": "A varázslat egyszerre hat a hang- és a látványillúziók területén. A bárd ennek segítségével ellenfelei számára látszólagosan felgyorsíthatja az idő múlását, legalábbis környezetükben. Az illúzió lényege, hogy az áldozatok környezetében minden a felgyorsult idő szerint reagál. Például, ha az ellenfél egy erdei úton áll, akkor a növények szemmel látható sebességgel növekedni kezdenek, az állatok szinte követhetetlen gyorsasággal mozognak, a nap sebesen halad pályáján. Ha barlangban, földalatti folyosón járt láthatja, ahogy a por lerakódik a padlón, pókhálók terjeszkednek a sarokban. A múló idő persze csak illúzió, de hang és kép is tartozik hozzá A történések sebességét a bárd választhatja meg, de legfeljebb százszorosra gyorsíthatja az idő folyását A varázslat ideje alatt az áldozatok csupán az illúziót látják, s a normál tér hangjai is csak gyengén jutnak el hozzájuk. Azonban, ha valamelyik célpont elhagyja a kijelölt területet, akkor a varázslat feloszlik róla."
  },
@@ -534,7 +534,7 @@
   "emp": "0",
   "idoigeny": "1 sz",
   "hatotav": "20 m",
-  "idotartam": "1 perc/szint",
+  "idotartam": "1 p/szint",
   "me": "",
   "leiras": "A bárd ezen varázslata valamely (egy ló méreténél nem nagyobb) rettenetes lény képét idézheti meg. A szörny megjelenése után üldözőbe vesz egy, a bárd által kiválasztott lényt. A szörny áthaladhat a falakon, ajtókon, azonban csak kergeti az áldozatot, soha nem éri el. Ha az áldozat megáll, így tesz a szörny is, de csak 1-2 kurta arasznyira tőle. A megidézés után mind a célpont, mind az illúziólény eltávolodhat a bárdtól, csupán a megidézés pillanatában kell 20 ynevi láb sugarú körön belül tartózkodnia az áldozatnak."
  },
@@ -644,7 +644,7 @@
   "emp": "0",
   "idoigeny": "1 kör",
   "hatotav": "Lásd a leírást!",
-  "idotartam": "1 perc/szint",
+  "idotartam": "1 p/szint",
   "me": "",
   "leiras": "Ezzel az illúzióval a bárd a célpont számára minden távolságot nagyobbnak vagy kisebbnek láttathat, mint amekkora az valójában. Ezt a varázslatot saját magán is alkalmazhatja, ekkor a távcsövet helyettesíti, ám máson egészen más szerepe is lehet. Folyosók hossza, utak távolsága torzítható el teljesen a varázslattal.\n\nA maximális kezelhető távolság 10 ynevi mérföld, s a legnagyobb torzítási arány 1 az 50-hez lehet. Azaz 50 ynevi lábnyí távolság egy ynevi lábnak vagy 2500 ynevi lábnak tűnhet.\n\nEz azonban a célzást nem könnyíti meg jelentősen, mivel a torz távolság lehetetlenné teszi a lövedék ívének kiszámítását."
  },
@@ -655,7 +655,7 @@
   "emp": "0",
   "idoigeny": "1 kör",
   "hatotav": "Önmaga",
-  "idotartam": "10 perc/szint",
+  "idotartam": "10 p/szint",
   "me": "",
   "leiras": "A bárd ezen varázslata igen-igen összetett, s rendkívül jól alkalmazható több esetben is. Lehetővé teszi, hogy a bárd, szeme világa nélkül is (pl. vakon, vagy bekötött szemmel) láthassa környezetét. E tudomány a fény világának tökéletes ismeretén alapszik, s kiválóan alkalmazható együtt a láthatatlanság varázslattal."
  },
@@ -699,7 +699,7 @@
   "emp": "2",
   "idoigeny": "1 p",
   "hatotav": "Hallótávolság",
-  "idotartam": "Lásd a leírás!",
+  "idotartam": "Lásd leírás",
   "me": "Mentális",
   "leiras": "A bárd lágy, dallomos énekének hatására azon célpontok, akik hallótávolságon beiül tartózkodnak és Mágiaellenállásuk sikertelen, fokozatosan elálmosodnak. A melankolikus dallam lassan kúszik be gondolataik közé, szempilláik elnehezülnek, nagyokat, álmosakat pislognak, majd ásítva elszenderednek. Az igazi alváshoz a bárd énekét legalább 1 percig kell hallgatniuk, a perc végére minden célpont mély álomba merül. Az alvás ezek után minden tekintetben természetesnek számít, az áldozatok akár hangos szóval vagy rázogatással is felébreszthetők."
  }
