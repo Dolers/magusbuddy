@@ -56,7 +56,6 @@ public class CodexCategoryListFragment extends Fragment {
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        ((HomeActivity)getActivity()).setBottomNavigationVisibility(View.VISIBLE);
 
         _viewModel = ViewModelProviders.of(this).get(DatabaseViewModel.class);
 

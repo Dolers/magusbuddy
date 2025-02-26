@@ -24,11 +24,13 @@ public class HomeActivity extends AppCompatActivity {
         bottomNavigation = findViewById(R.id.navigation);
         NavigationUI.setupWithNavController(bottomNavigation,navController);
 
-        setBottomNavigationVisibility(View.VISIBLE);
+        // Other views not used yet, keep it hidden
+        bottomNavigation.setVisibility(View.GONE);
     }
 
     public void setBottomNavigationVisibility(int value){
-        bottomNavigation.setVisibility(value);
+        // Other views not used yet, keep it hidden
+        //bottomNavigation.setVisibility(value);
     }
 
     @Override
